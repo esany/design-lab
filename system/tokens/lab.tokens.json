@@ -1,0 +1,57 @@
+{
+  "$description": "Design-Tokens des Labors selbst (DTCG 2025.10). Quelle der Wahrheit für assets/tokens.css.",
+  "color": {
+    "$type": "color",
+    "paper":  { "$value": { "colorSpace": "srgb", "components": [0.957, 0.949, 0.929], "hex": "#f4f2ed" } },
+    "ink":    { "$value": { "colorSpace": "srgb", "components": [0.071, 0.071, 0.067], "hex": "#121211" } },
+    "grey":   { "$value": { "colorSpace": "srgb", "components": [0.443, 0.439, 0.420], "hex": "#71706b" } },
+    "rule":   { "$value": { "colorSpace": "srgb", "components": [0.812, 0.800, 0.773], "hex": "#cfccc5" } },
+    "signal": { "$value": { "colorSpace": "srgb", "components": [0.851, 0.176, 0.090], "hex": "#d92d17" },
+                "$description": "Einzige Akzentfarbe. Sparsam: Markierung, Fokus, aktiver Zustand." },
+    "night":  { "$value": { "colorSpace": "srgb", "components": [0.082, 0.082, 0.078], "hex": "#151514" } },
+    "chalk":  { "$value": { "colorSpace": "srgb", "components": [0.910, 0.902, 0.878], "hex": "#e8e6e0" } },
+    "ash":    { "$value": { "colorSpace": "srgb", "components": [0.627, 0.620, 0.600], "hex": "#a09e99" } },
+    "slate":  { "$value": { "colorSpace": "srgb", "components": [0.212, 0.208, 0.200], "hex": "#363533" } }
+  },
+  "theme": {
+    "light": {
+      "bg":     { "$type": "color", "$value": "{color.paper}" },
+      "fg":     { "$type": "color", "$value": "{color.ink}" },
+      "muted":  { "$type": "color", "$value": "{color.grey}" },
+      "line":   { "$type": "color", "$value": "{color.rule}" },
+      "accent": { "$type": "color", "$value": "{color.signal}" }
+    },
+    "dark": {
+      "bg":     { "$type": "color", "$value": "{color.night}" },
+      "fg":     { "$type": "color", "$value": "{color.chalk}" },
+      "muted":  { "$type": "color", "$value": "{color.ash}" },
+      "line":   { "$type": "color", "$value": "{color.slate}" },
+      "accent": { "$type": "color", "$value": "{color.signal}" }
+    }
+  },
+  "font": {
+    "$type": "fontFamily",
+    "sans": { "$value": ["Helvetica Neue", "Helvetica", "Arial", "system-ui", "sans-serif"],
+              "$description": "Systemschriften: keine externen Schriftserver (Datenschutz, Unabhängigkeit)." },
+    "mono": { "$value": ["ui-monospace", "SFMono-Regular", "Menlo", "Consolas", "monospace"] }
+  },
+  "space": {
+    "$type": "dimension",
+    "unit": { "$value": { "value": 8, "unit": "px" }, "$description": "Grundmodul. Alle Abstände sind Vielfache." },
+    "1": { "$value": { "value": 8,   "unit": "px" } },
+    "2": { "$value": { "value": 16,  "unit": "px" } },
+    "3": { "$value": { "value": 24,  "unit": "px" } },
+    "4": { "$value": { "value": 32,  "unit": "px" } },
+    "6": { "$value": { "value": 48,  "unit": "px" } },
+    "8": { "$value": { "value": 64,  "unit": "px" } },
+    "12": { "$value": { "value": 96, "unit": "px" } }
+  },
+  "size": {
+    "$type": "dimension",
+    "text-s":  { "$value": { "value": 0.8125, "unit": "rem" } },
+    "text-m":  { "$value": { "value": 1,      "unit": "rem" } },
+    "text-l":  { "$value": { "value": 1.5,    "unit": "rem" } },
+    "text-xl": { "$value": { "value": 3,      "unit": "rem" } },
+    "measure": { "$value": { "value": 38,     "unit": "rem" }, "$description": "Maximale Zeilenlänge für Fließtext." }
+  }
+}
