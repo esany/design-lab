@@ -34,6 +34,8 @@ jederzeit rückgängig („… rückgängig“ genügt). Zum Verstehen helfen vi
 | Ort | Inhalt |
 |---|---|
 | [`stand.md`](stand.md) | **Entwicklungsstand: was passiert ist, was offen ist** |
+| [`intent.md`](intent.md) | **Maßstab: Intent, Ziel, Anforderungen — mit ehrlichem Stand** |
+| [`herkunft-d3sign.md`](herkunft-d3sign.md) | Was aus D3sign übernommen ist und was fehlt |
 | [`principles.md`](principles.md) | Haltung und Prinzipien |
 | [`AGENTS.md`](AGENTS.md) | Arbeitsvertrag für alle Agenten |
 | [`decisions/`](decisions/) | Entscheidungen mit Status und Begründung |

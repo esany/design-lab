@@ -31,6 +31,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 | 2026-10-27 | Geplante Aufgaben: Radar-Scan montags 7:38, Pflege am 1. um 7:42 (Berlin) | Wunsch Pflege/Radar | „Radar-Scan/Pflege stoppen“ |
 | 2026-10-27 | Erledigte Arbeitszweige werden automatisch gelöscht | Ordnung im Repo | in GitHub-Einstellungen umstellbar |
 | 2026-10-27 | Studie „Reihe und Verschiebung“ abgeschlossen, bleibt als Referenz | Ihre Entscheidung: nicht weiterarbeiten | „Studie wieder öffnen“ |
+| 2026-10-27 | Maßstab festgehalten: `intent.md` (27 Anforderungen, ehrlich bewertet) und `herkunft-d3sign.md` (33 Prinzipien abgeglichen) | Ihr Audit-Auftrag | „Maßstab rückgängig“ |
 
 ## Offene Punkte — für uns gemeinsam
 
