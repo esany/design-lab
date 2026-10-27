@@ -61,3 +61,23 @@ Begründung (Skill `pflege`). Stand des Radars: **2026-10-27**.
 ## Neu — zu bewerten
 
 *Hier trägt der wöchentliche Radar-Scan Funde ein.*
+
+| Was | Warum relevant | Quelle | Stand |
+|---|---|---|---|
+| Generative Gestaltung — Code-Paket p5.js (Apache-2.0) | Referenz für regelbasierte Gestaltung, Fachpaket „Ordnung“ (Issue #9) | [GitHub](https://github.com/generative-design/Code-Package-p5.js) | 2026-10 |
+| VIKUS Viewer (FH Potsdam, offen) | Sammlungen als Zeitleisten-Bildfeld — Bildwissenschaft, Skizze S1 | [UCLAB](https://uclab.fh-potsdam.de/projects/vikus-viewer/) | 2026-10 |
+| ml5.js (NYU ITP) | „freundliches“ ML im Browser, KI als Material — Skizze S2 | [ml5js.org](https://ml5js.org/about) | 2026-10 |
+| „un/learn ai“-Bände (KITeGG, Open Science Mainz) | Haltung und Lehre zu KI in ästhetischer Praxis — Korpus | [Open Science Mainz](https://openscience.ub.uni-mainz.de/items/02c2fbdd-fdc9-4bd6-a809-1174bd50714f/full) | 2026-10 |
+
+### Feld: Hochschulen und Konferenzen (beobachten)
+
+| Was | Warum | Quelle | Stand |
+|---|---|---|---|
+| KINDLAB Trier / TRANSFORM | KI als Material, Nachhaltigkeit, „Verlernen“ | [kind-lab.de](https://kind-lab.de/) | 2026-10 |
+| re:shape forum (HfG Gmünd) | Mensch-KI-Interaktion, „designing with uncertainty“; Vorträge als Video | [AI+D Lab](https://aid-lab.hfg-gmuend.de/appearances/2025-reshape-summer-school-hfg-schwaebisch-gmuend/) | 2026-10 |
+| Correlations (HfG Offenbach), Hidden Layers (KISD) | Winter-/Summer Schools des KITeGG-Verbunds | [Hidden Layers](https://ground-zero.khm.de/hidden-layers-kisd/) | 2026-10 |
+| UdK Designing_AI Lab | Mensch–Roboter-Kollaboration im Produktdesign | [UdK](https://produktdesign.udk-berlin.de/2026/08/designing_ai-lab-wraps-up-its-first-semester/) | 2026-10 |
+| FH Potsdam UCLAB | Datenvisualisierung, Kultursammlungen, kritische Interfaces | [UCLAB](https://uclab.fh-potsdam.de/courses) | 2026-10 |
+| Burg Halle XLab | KI und Robotik, Material und Nachhaltigkeit | [Burg Halle](https://www.burg-halle.de/en/university/facilities/burglabs) | 2026-10 |
+
+Details: [`research/2026-10-feldforschung/`](research/2026-10-feldforschung/befunde.md)
