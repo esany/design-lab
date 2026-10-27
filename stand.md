@@ -33,6 +33,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 | 2026-10-27 | Studie „Reihe und Verschiebung“ abgeschlossen, bleibt als Referenz | Ihre Entscheidung: nicht weiterarbeiten | „Studie wieder öffnen“ |
 | 2026-10-27 | D3sign-Prinzipien übernommen: Werk vor System, Vertrauen statt Scheinreife, Stoppen statt simulieren, Widerspruchspflicht, Priorisierung, Skill `fundstueck`, Modul „System“ | Ihr „ja“ (0020) | „D3sign-Übernahme rückgängig“ |
 | 2026-10-27 | Feldforschung KI × Gestaltung (KINDLAB, KITeGG, UdK, FHP, Burg, KHM …): Befunde, Einordnung, 4 Entwürfe als Issues #6–#9, Radar ergänzt | Ihr Rechercheauftrag | „Feldforschung rückgängig“ |
+| 2026-10-27 | **Korpus als Daten** (Issue #6): 49 Quellen — 22 aus Ihren Referenzen (UCLAB, Dörk, Müller, Bremer, Lupi, Stefaner, Munzner, Manovich, Gerstner, Pinterest), 27 recherchiert. Der Build prüft jede Quelle und jeden Verweis `[k:…]`; Übersicht in `corpus/uebersicht.md` | Fachpakete brauchen belegte Quellen (A04, A07) | „Korpus rückgängig“ |
 | 2026-10-27 | Maßstab festgehalten: `intent.md` (27 Anforderungen, ehrlich bewertet) und `herkunft-d3sign.md` (33 Prinzipien abgeglichen) | Ihr Audit-Auftrag | „Maßstab rückgängig“ |
 
 ## Offene Punkte — für uns gemeinsam
@@ -41,10 +42,14 @@ machen — es genügt zu sagen: **„… rückgängig“**.
    ChatGPT (Codex mit GitHub verbinden, Code-Review für `design-lab`
    einschalten). Ohne sie prüft vorerst ein frischer Claude-Durchgang —
    gleiche Qualität der Regeln, aber nicht „anderes Modell“.
+2. **Ihre Pinterest-Sammlung** lässt sich nicht automatisch lesen (Pinterest
+   sperrt das). Sie steht als Referenz im Korpus. Wenn Sie wollen, dass ein Agent
+   sie nutzt, nennen Sie mir einzelne Boards, die für ein Feld stehen, oder
+   beschreiben Sie in ein paar Worten, was sie zusammenhält.
 
 ## In Arbeit
 
-- Fachpaket „Vermitteln“: Issues #6 → #7 → #8 (Ihr „ja“)
+- Fachpaket „Vermitteln“: #6 erledigt → #7 → #8 (Ihr „ja“)
 
 ## Nächste Schritte (laufen ohne Sie)
 

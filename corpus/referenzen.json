@@ -1,0 +1,361 @@
+[
+  {
+    "id": "uclab",
+    "titel": "Urban Complexity Lab (UCLAB), FH Potsdam",
+    "autor": "Marian Dörk, Boris Müller (Leitung)",
+    "jahr": null,
+    "art": "Labor",
+    "url": "https://uclab.fh-potsdam.de/",
+    "lizenz": "unbekannt",
+    "felder": [
+      "vermitteln",
+      "interaktion",
+      "erkennen"
+    ],
+    "status": "belegt",
+    "notiz": "Visualisierungsforschung zwischen Gestaltung, Informatik und Geisteswissenschaften. Ziel laut Lab: neue Zugänge zu umfassenden Informationsräumen, kreativ und kritisch. Projekte u. a. Raoul-Hausmann-Sammlung (Berlinische Galerie), Un/Foldables (101 faltbare Visualisierungen), GraDiM (Fotoarchiv Diaspora).",
+    "zugang": "offen",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "doerk-2011",
+    "titel": "The Information Flaneur: A Fresh Look at Information Seeking",
+    "autor": "Marian Dörk, Sheelagh Carpendale, Carey Williamson",
+    "jahr": 2011,
+    "art": "Paper",
+    "url": "https://innovis.cpsc.ucalgary.ca/Profiles/Marian",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "vermitteln",
+      "interaktion"
+    ],
+    "status": "belegt",
+    "notiz": "CHI '11, S. 1215–1224. Kurzfassung (abgeleitet): Gegenbild zur zielgerichteten Suche — neugieriges, kreatives, kritisches Umherstreifen in Informationsräumen; Denkrahmen für Sammlungs-Interfaces wie den VIKUS Viewer.",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "doerk-2013",
+    "titel": "Critical InfoVis: Exploring the Politics of Visualization",
+    "autor": "Marian Dörk u. a.",
+    "jahr": 2013,
+    "art": "Paper",
+    "url": "https://innovis.cpsc.ucalgary.ca/Profiles/Marian",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "vermitteln"
+    ],
+    "status": "belegt",
+    "notiz": "alt.chi 2013. Kurzfassung (abgeleitet): Visualisierung ist nicht neutral; sie entscheidet, was sichtbar wird, und soll ihre Entscheidungen offenlegen. Mitautoren hier nicht geprüft.",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "mueller-esono",
+    "titel": "esono — Boris Müller",
+    "autor": "Boris Müller",
+    "jahr": 2001,
+    "art": "Person",
+    "url": "https://www.esono.com/",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "interaktion",
+      "vermitteln",
+      "ordnung"
+    ],
+    "status": "belegt",
+    "notiz": "Interface- und Interaktionsgestalter, Professor an der FH Potsdam, Ko-Leiter des UCLAB. Website seit 2001: künstlerische, kommerzielle und spielerische Arbeiten (Poetry-Reihe, generative Gestaltung) und Essays, u. a. über Datenvisualisierung als kulturelles Bild. Leitbegriff: Eleganz.",
+    "zugang": "offen",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "bremer-visualcinnamon",
+    "titel": "Visual Cinnamon — Nadieh Bremer",
+    "autor": "Nadieh Bremer",
+    "jahr": 2017,
+    "art": "Person",
+    "url": "https://www.visualcinnamon.com/about/",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "vermitteln",
+      "ordnung"
+    ],
+    "status": "belegt",
+    "notiz": "Datenvisualisierung und Datenkunst, Studio seit 2017, Hintergrund Astronomie und Data Science. Arbeitet mit d3.js. Haltung: maßgeschneidert statt Standarddiagramm („rather than using generic charts“), Arbeit ab den tatsächlichen Daten, Iteration.",
+    "zugang": "offen",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "bremer-wu-2021",
+    "titel": "Data Sketches: A journey of imagination, exploration, and beautiful data visualizations",
+    "autor": "Nadieh Bremer, Shirley Wu",
+    "jahr": 2021,
+    "art": "Buch",
+    "url": "https://www.routledge.com/product/isbn/9780367000080",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "vermitteln"
+    ],
+    "status": "belegt",
+    "notiz": "A K Peters/CRC Press. Legt den Entstehungsprozess von Datenvisualisierungen offen: Daten, Skizze, Code, Verwerfen.",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "lupi",
+    "titel": "Giorgia Lupi",
+    "autor": "Giorgia Lupi",
+    "jahr": null,
+    "art": "Person",
+    "url": "https://giorgialupi.com/",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "vermitteln",
+      "raum-zeit"
+    ],
+    "status": "belegt",
+    "notiz": "Informationsgestalterin, seit 2019 Partnerin bei Pentagram, 2011 Mitgründerin von Accurat. Arbeiten u. a. „My Life with Long Covid“ (NYT), Installation MTA Fulton Center, Ausstellung „Data Humanism“ (Gallerie d'Italia, Vicenza). NYT-Essay „In Defense of the Detour“ über Handwerk und KI.",
+    "zugang": "offen",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "lupi-data-humanism",
+    "titel": "Data Humanism",
+    "autor": "Giorgia Lupi",
+    "jahr": 2017,
+    "art": "Artikel",
+    "url": "https://en.wikipedia.org/wiki/Giorgia_Lupi",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "vermitteln"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Haltung: die menschliche Seite der Daten zurückgewinnen. Kontext, qualitative Erzählung, Unvollkommenheit und fehlende Werte zeigen statt glätten. Jahr unsicher: Wikipedia nennt 2016 im Text und einen Print-Magazine-Artikel vom 30.1.2017 in den Belegen.",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "lupi-posavec-2016",
+    "titel": "Dear Data",
+    "autor": "Giorgia Lupi, Stefanie Posavec",
+    "jahr": 2016,
+    "art": "Buch",
+    "url": "https://www.pentagram.com/work/dear-data",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "vermitteln"
+    ],
+    "status": "belegt",
+    "notiz": "Ein Jahr lang (ab 2014) wöchentlich handgezeichnete Daten-Postkarten über den eigenen Alltag. Small Data, Zeichnen als Erkenntnisweg. Verlag hier nicht geprüft.",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "stefaner",
+    "titel": "Truth & Beauty — Moritz Stefaner",
+    "autor": "Moritz Stefaner",
+    "jahr": null,
+    "art": "Person",
+    "url": "https://truth-and-beauty.net/",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "vermitteln",
+      "interaktion"
+    ],
+    "status": "belegt",
+    "notiz": "Unabhängiger Datenvisualisierungs-Gestalter, Berater und Forscher in Lilienthal. Motto: „Always chasing the perfect form for information.“ Projekte u. a. OECD Better Life Index, Impfdashboard (Bund), WHO Data Design Language, Peak Spotting (Bahn), A Hidden Infrastructure (Pilznetzwerke).",
+    "zugang": "offen",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "munzner-2014",
+    "titel": "Visualization Analysis and Design",
+    "autor": "Tamara Munzner",
+    "jahr": 2014,
+    "art": "Buch",
+    "url": "https://www.routledge.com/product/isbn/9781466508910",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "vermitteln"
+    ],
+    "status": "belegt",
+    "notiz": "A K Peters/CRC Press, erschienen 30.11.2014 (Copyright 2015). Ordnet Visualisierung nach drei Fragen: was (Daten), warum (Aufgaben), wie (Kodierung und Interaktion). Standard-Lehrbuch.",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "munzner-2009",
+    "titel": "A Nested Model for Visualization Design and Validation",
+    "autor": "Tamara Munzner",
+    "jahr": 2009,
+    "art": "Paper",
+    "url": "https://www.cs.ubc.ca/labs/imager/tr/2009/NestedModel/",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "vermitteln"
+    ],
+    "status": "belegt",
+    "notiz": "IEEE TVCG 15(6), 921–928 (InfoVis 2009). Kurzfassung (abgeleitet): vier verschachtelte Ebenen — Problem der Domäne, Abstraktion von Daten und Aufgaben, Kodierung und Interaktion, Algorithmus; jede Ebene mit eigenen Fehlerquellen und Prüfmethoden.",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "sedlmair-2012",
+    "titel": "Design Study Methodology: Reflections from the Trenches and the Stacks",
+    "autor": "Michael Sedlmair, Miriah Meyer, Tamara Munzner",
+    "jahr": 2012,
+    "art": "Paper",
+    "url": "https://www.cs.ubc.ca/labs/imager/tr/2012/dsm/",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "vermitteln",
+      "erkennen"
+    ],
+    "status": "belegt",
+    "notiz": "IEEE TVCG 18(12), 2431–2440 (InfoVis 2012). Kurzfassung (abgeleitet): Methode für Gestaltungsstudien mit Fachleuten, Phasenmodell mit Fallstricken.",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "pinterest-el0631",
+    "titel": "Pinterest-Sammlung el0631",
+    "autor": "Eigentümer des Labors",
+    "jahr": null,
+    "art": "Sammlung",
+    "url": "https://de.pinterest.com/el0631/",
+    "lizenz": "unbekannt",
+    "felder": [
+      "labor",
+      "form",
+      "ordnung",
+      "vermitteln"
+    ],
+    "status": "belegt",
+    "notiz": "Persönliche Bildsammlung des Eigentümers, also sein Blick. Pinterest sperrt den automatischen Abruf (robots.txt). Inhalte gelangen nur ins Labor, wenn der Eigentümer einzelne Boards oder Bilder nennt; Bilder selbst kommen nicht ins Repo (Urheberrecht).",
+    "zugang": "blockiert",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "manovich",
+    "titel": "Lev Manovich",
+    "autor": "Lev Manovich",
+    "jahr": null,
+    "art": "Person",
+    "url": "https://manovich.net/",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "vermitteln"
+    ],
+    "status": "belegt",
+    "notiz": "Medientheoretiker und Künstler: Software Studies, Cultural Analytics, KI-Ästhetik. Aktuelle Texte (2026) u. a. „A Medium That Thinks: AI and Media Cognition“.",
+    "zugang": "offen",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "manovich-2001",
+    "titel": "The Language of New Media",
+    "autor": "Lev Manovich",
+    "jahr": 2001,
+    "art": "Buch",
+    "url": "https://en.wikipedia.org/wiki/Lev_Manovich",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen"
+    ],
+    "status": "belegt",
+    "notiz": "MIT Press. Grundlagenwerk zur Theorie digitaler Medien.",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "manovich-2013",
+    "titel": "Software Takes Command",
+    "autor": "Lev Manovich",
+    "jahr": 2013,
+    "art": "Buch",
+    "url": "https://library.oapen.org/bitstream/20.500.12657/58738/1/9781623566722.pdf",
+    "lizenz": "Open Access (Lizenz nicht geprüft)",
+    "felder": [
+      "erkennen",
+      "interaktion"
+    ],
+    "status": "belegt",
+    "notiz": "Bloomsbury Academic, Open-Access-Ausgabe bei OAPEN. Software als Kulturtechnik: Wie Programme wie Photoshop oder After Effects die Gestaltung selbst verändern.",
+    "zugang": "offen",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "manovich-2020",
+    "titel": "Cultural Analytics",
+    "autor": "Lev Manovich",
+    "jahr": 2020,
+    "art": "Buch",
+    "url": "https://en.wikipedia.org/wiki/Lev_Manovich",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "vermitteln"
+    ],
+    "status": "belegt",
+    "notiz": "MIT Press. Große Bild- und Videosammlungen mit Datenwissenschaft und Visualisierung untersuchen; explorative Medienanalyse ohne Vorab-Hypothese.",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "manovich-2024",
+    "titel": "Artificial Aesthetics: Generative AI, Art and Visual Media",
+    "autor": "Lev Manovich (mit Emanuele Arielli — nicht geprüft)",
+    "jahr": 2024,
+    "art": "Buch",
+    "url": "https://manovich.net/",
+    "lizenz": "unbekannt",
+    "felder": [
+      "erkennen",
+      "labor"
+    ],
+    "status": "belegt",
+    "notiz": "Ästhetik generativer KI. Übersetzungen ins Spanische (2025), Italienische (2026), Japanische (angekündigt 2026).",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "gerstner",
+    "titel": "Karl Gerstner",
+    "autor": "Karl Gerstner",
+    "jahr": "1930–2017",
+    "art": "Person",
+    "url": "https://zkm.de/de/personen/karl-gerstner",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "ordnung",
+      "form",
+      "system"
+    ],
+    "status": "belegt",
+    "notiz": "Basel. Schüler von Emil Ruder; 1959 Agentur Gerstner + Kutter (später GGK), ab 1970 nur noch künstlerisch tätig. Werke u. a. Linsenbild (1962), Carro 64 (1964), Variables Bild (1965), Diagon 312 (1967). Ausstellungen: „Konkrete Kunst“ Zürich 1960, documenta 3 (1964), „think program“ MoMA 1973. Werk in der ZKM-Sammlung.",
+    "zugang": "offen",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "gerstner-1957",
+    "titel": "Kalte Kunst – zum Standpunkt der heutigen Malerei",
+    "autor": "Karl Gerstner",
+    "jahr": 1957,
+    "art": "Buch",
+    "url": "https://zkm.de/de/personen/karl-gerstner",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "ordnung"
+    ],
+    "status": "belegt",
+    "notiz": "Programmschrift zur konkreten Kunst. Titel nach ZKM-Seite; die Erstausgabe wird auch als „Kalte Kunst?“ zitiert — vor dem Zitieren am Original prüfen.",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "gerstner-1964",
+    "titel": "Programme entwerfen (engl. Designing Programmes)",
+    "autor": "Karl Gerstner",
+    "jahr": 1964,
+    "art": "Buch",
+    "url": "https://www.lars-mueller-publishers.com/designing-programmes",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "ordnung",
+      "form",
+      "system"
+    ],
+    "status": "belegt",
+    "notiz": "Vier Essays zur Gestaltungsmethode und ein Modell systematischer Gestaltung; Verlag: „a model for systematic design at the dawn of the computer era“. Faksimile bei Lars Müller. Einordnung (abgeleitet): Gestaltung als Programm aus Regeln statt als Einzellösung — Vorläufer von generativer Gestaltung und Design-Systemen.",
+    "geprueft": "2026-10-27"
+  }
+]

@@ -137,6 +137,75 @@ const template = readFileSync(join(root, "tools/index.template.html"), "utf8");
 outputs.set("index.html", template.replace("<!--STUDIES-->", cards || "      <li>Noch keine Studien.</li>")
   .replace("<!--COUNT-->", String(studies.length)));
 
+// ---------- Korpus → prüfen, Übersicht ----------
+const CORPUS = { "referenzen.json": "Mensch", "recherche.json": "Agent" };
+const C_REQ = ["id", "titel", "autor", "jahr", "art", "url", "lizenz", "felder", "status", "geprueft"];
+const C_ART = ["Buch", "Paper", "Artikel", "Repo", "Werkzeug", "Projekt", "Konferenz", "Datensatz", "Person", "Labor", "Sammlung", "Werk"];
+const C_FELD = ["vermitteln", "form", "ordnung", "erkennen", "raum-zeit", "interaktion", "system", "labor"];
+const C_STATUS = ["belegt", "abgeleitet", "nicht belegt"];
+const C_ZUGANG = ["offen", "eingeschränkt", "blockiert"];
+const corpus = new Map();
+for (const [file, auswahl] of Object.entries(CORPUS)) {
+  const p = join(root, "corpus", file);
+  if (!existsSync(p)) { errors.push(`corpus/${file} fehlt`); continue; }
+  let list;
+  try { list = JSON.parse(readFileSync(p, "utf8")); } catch (e) { errors.push(`corpus/${file}: kein gültiges JSON (${e.message})`); continue; }
+  for (const [i, q] of list.entries()) {
+    const at = `corpus/${file} #${i + 1}${q.id ? ` (${q.id})` : ""}`;
+    for (const k of C_REQ) if (!(k in q) || q[k] === "" || (k !== "jahr" && q[k] == null)) errors.push(`${at}: Feld „${k}“ fehlt`);
+    if (q.id && !/^[a-z0-9]+(-[a-z0-9]+)*$/.test(q.id)) errors.push(`${at}: id nur Kleinbuchstaben, Ziffern, Bindestrich`);
+    if (q.id && corpus.has(q.id)) errors.push(`${at}: id doppelt`);
+    if (q.art && !C_ART.includes(q.art)) errors.push(`${at}: art „${q.art}“ unbekannt`);
+    if (!Array.isArray(q.felder) || !q.felder.length) errors.push(`${at}: felder braucht mindestens einen Eintrag`);
+    else for (const f of q.felder) if (!C_FELD.includes(f)) errors.push(`${at}: Feld „${f}“ unbekannt`);
+    if (q.status && !C_STATUS.includes(q.status)) errors.push(`${at}: status muss ${C_STATUS.join(" | ")} sein`);
+    if (q.zugang && !C_ZUGANG.includes(q.zugang)) errors.push(`${at}: zugang muss ${C_ZUGANG.join(" | ")} sein`);
+    if (q.url && !/^https:\/\//.test(q.url)) errors.push(`${at}: url muss mit https:// beginnen`);
+    if (q.geprueft && !/^\d{4}-\d{2}-\d{2}$/.test(q.geprueft)) errors.push(`${at}: geprueft als JJJJ-MM-TT`);
+    if (q.wikidata && !/^Q\d+$/.test(q.wikidata)) errors.push(`${at}: wikidata als Q-Nummer`);
+    if (q.id) corpus.set(q.id, { ...q, auswahl });
+  }
+}
+
+// Verweise [k:id] in allen Markdown-Dateien müssen existieren
+function* mdFiles(dir) {
+  for (const name of readdirSync(dir)) {
+    if (name.startsWith(".") && name !== ".agents") continue;
+    if (name === "node_modules" || name === "archive") continue;
+    const p = join(dir, name);
+    if (statSync(p).isDirectory()) yield* mdFiles(p);
+    else if (name.endsWith(".md")) yield p;
+  }
+}
+const cited = new Map();
+for (const p of mdFiles(root)) {
+  const rel = p.slice(root.length + 1);
+  if (rel === "corpus/uebersicht.md") continue;
+  for (const m of readFileSync(p, "utf8").matchAll(/\[k:([a-z0-9-]+)\]/g)) {
+    if (!corpus.has(m[1])) errors.push(`${rel}: Verweis [k:${m[1]}] — keine solche Quelle im Korpus`);
+    else if (!rel.startsWith("corpus/")) cited.set(m[1], (cited.get(m[1]) ?? new Set()).add(rel));
+  }
+}
+
+const cell = (s) => String(s ?? "—").replace(/\|/g, "\\|").replace(/\n/g, " ");
+const byField = C_FELD.map((f) => {
+  const rows = [...corpus.values()].filter((q) => q.felder?.includes(f))
+    .sort((a, b) => (a.auswahl === b.auswahl ? a.id.localeCompare(b.id) : a.auswahl === "Mensch" ? -1 : 1));
+  if (!rows.length) return "";
+  return `## ${f}\n\n| ID | Titel | Autor | Jahr | Art | Status | Auswahl | genutzt in |\n|---|---|---|---|---|---|---|---|\n` +
+    rows.map((q) => `| \`${q.id}\` | [${cell(q.titel)}](${q.url}) | ${cell(q.autor)} | ${cell(q.jahr)} | ${q.art} | ${q.status}${q.zugang === "blockiert" ? " · blockiert" : ""} | ${q.auswahl} | ${[...(cited.get(q.id) ?? [])].map((r) => `\`${r}\``).join(", ") || "—"} |`).join("\n") + "\n";
+}).filter(Boolean).join("\n");
+const nMensch = [...corpus.values()].filter((q) => q.auswahl === "Mensch").length;
+outputs.set("corpus/uebersicht.md", `# Korpus — Übersicht
+
+> Erzeugt von \`node tools/build.mjs\` aus \`referenzen.json\` und \`recherche.json\`. Nicht von Hand ändern.
+> Schema: [\`schema.md\`](schema.md).
+
+**${corpus.size} Quellen** — ${nMensch} ausgewählt vom Eigentümer, ${corpus.size - nMensch} recherchiert vom Agenten.
+Je Feld zuerst die Auswahl des Eigentümers. Eine Quelle kann in mehreren Feldern stehen.
+
+${byField}`);
+
 // ---------- Schreiben oder prüfen ----------
 let stale = 0;
 for (const [rel, content] of outputs) {
@@ -151,4 +220,4 @@ if (errors.length) {
   console.error("✗ " + errors.length + " Problem(e):\n  - " + errors.join("\n  - "));
   process.exit(1);
 }
-console.log(`✓ ${Object.keys(flat).length} Tokens, ${studies.length} Studie(n)${check ? " — alles aktuell" : " — erzeugt"}`);
+console.log(`✓ ${Object.keys(flat).length} Tokens, ${studies.length} Studie(n), ${corpus.size} Quellen (${[...cited.values()].length} zitiert)${check ? " — alles aktuell" : " — erzeugt"}`);
