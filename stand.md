@@ -11,8 +11,8 @@ machen — es genügt zu sagen: **„… rückgängig“**.
   jeder Übernahme selbst.
 - **Arbeitsweise:** Agenten arbeiten im freigegebenen Rahmen selbstständig;
   offene Punkte und Gestaltungsfragen klären wir gemeinsam (`decisions/0019`).
-- **Inhalt:** 9 Prinzipien · 9 Methoden (Skills) · 1 Studie · Radar ·
-  19 Entscheidungen.
+- **Inhalt:** 9 Prinzipien · 9 Methoden (Skills) · 1 Studie (abgeschlossen) ·
+  Radar · 19 Entscheidungen.
 - **Status:** Experiment, Laufzeit bis Ende November 2026
   (`experiments/2026-10-labor-aufbau.md`).
 
@@ -30,6 +30,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 | 2026-10-27 | Website veröffentlicht automatisch nach jeder Übernahme | Wunsch „Website automatisch“ | in GitHub-Einstellungen umstellbar |
 | 2026-10-27 | Geplante Aufgaben: Radar-Scan montags 7:38, Pflege am 1. um 7:42 (Berlin) | Wunsch Pflege/Radar | „Radar-Scan/Pflege stoppen“ |
 | 2026-10-27 | Erledigte Arbeitszweige werden automatisch gelöscht | Ordnung im Repo | in GitHub-Einstellungen umstellbar |
+| 2026-10-27 | Studie „Reihe und Verschiebung“ abgeschlossen, bleibt als Referenz | Ihre Entscheidung: nicht weiterarbeiten | „Studie wieder öffnen“ |
 
 ## Offene Punkte — für uns gemeinsam
 
@@ -37,11 +38,6 @@ machen — es genügt zu sagen: **„… rückgängig“**.
    ChatGPT (Codex mit GitHub verbinden, Code-Review für `design-lab`
    einschalten). Ohne sie prüft vorerst ein frischer Claude-Durchgang —
    gleiche Qualität der Regeln, aber nicht „anderes Modell“.
-2. **Itten-Texte fachlich:** Stimmen die Erklärungen für Ihr Verständnis?
-3. **Itten-Farben am Bildschirm:** Passt die Annäherung der zwölf Farben an
-   Ihr Auge? (`decisions/0017`, als „nicht belegt“ markiert)
-4. **Studie „Reihe und Verschiebung“:** Ihre Beobachtung fehlt noch —
-   behalten, weiterführen oder verwerfen?
 
 ## Nächste Schritte (laufen ohne Sie)
 
