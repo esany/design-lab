@@ -1,7 +1,7 @@
 ---
-status: Vorschlag
+status: freigegeben als Startversion
 datum: 2026-10-27
-entschieden_von: Agent (Claude) — Freigabe ausstehend
+entschieden_von: Vorschlag Agent (Claude) · Entscheidung Mensch am 2026-10-27
 ---
 
 # 0012 · Radar und seine Bewertungen
@@ -14,4 +14,4 @@ entschieden_von: Agent (Claude) — Freigabe ausstehend
 
 **Betrifft:** radar.md
 
-**Deine Entscheidung:** <!-- ok · ändern: … · streichen -->
+**Deine Entscheidung:** Als Startversion übernommen. OpenClaw ausdrücklich nicht ins Radar.

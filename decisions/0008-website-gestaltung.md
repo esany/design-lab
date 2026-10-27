@@ -1,7 +1,7 @@
 ---
-status: Vorschlag
+status: freigegeben als Startversion
 datum: 2026-10-27
-entschieden_von: Agent (Claude) — Freigabe ausstehend
+entschieden_von: Vorschlag Agent (Claude) · Entscheidung Mensch am 2026-10-27
 ---
 
 # 0008 · Website des Labors und ihre Gestaltung
@@ -14,4 +14,4 @@ entschieden_von: Agent (Claude) — Freigabe ausstehend
 
 **Betrifft:** tools/index.template.html, assets/lab.css, index.html
 
-**Deine Entscheidung:** <!-- ok · ändern: … · streichen -->
+**Deine Entscheidung:** Als Startversion übernommen. Veröffentlichung: siehe 0001 (privat) — Weg offen.

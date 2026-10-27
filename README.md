@@ -1,9 +1,9 @@
 # design-lab
 
 Persönliches Labor für Gestaltung mit KI-Assistenz — Methoden, Studien,
-Werkzeuge. Offen, toolunabhängig, lebendig.
+Werkzeuge. Toolunabhängig, auf offenen Formaten, lebendig.
 
-**Website:** https://esany.github.io/design-lab/ (nach Aktivierung von GitHub Pages)
+**Sichtbarkeit:** privat. Website: Vorschau-Weg siehe `decisions/0010`.
 
 ## Wie das Labor arbeitet
 
@@ -61,7 +61,6 @@ Agenten: Claude Code · Codex · Gemini CLI (alle lesen `AGENTS.md`).
 Kanäle: Code (SVG, D3, Observable Plot, Typst …), Penpot, Blender, Miro.
 Details und Bewertung: [`radar.md`](radar.md).
 
-## Lizenz
+## Rechte
 
-Code: MIT ([`LICENSE`](LICENSE)). Texte, Bilder, Studien: CC BY 4.0
-([`LICENSE-CONTENT.md`](LICENSE-CONTENT.md)).
+© esany. Alle Rechte vorbehalten. Zitierte Werke Dritter sind nur als Verweis enthalten.

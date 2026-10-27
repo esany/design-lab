@@ -2,7 +2,7 @@
 
 Hier liegen **Verweise**, keine Volltexte: Literaturlisten, Normdaten-IDs,
 Links auf offene Sammlungen. PDFs und geschützte Abbildungen gehören nicht in
-dieses öffentliche Repository.
+dieses Repository.
 
 ## Quellen, die Agenten bevorzugt nutzen
 

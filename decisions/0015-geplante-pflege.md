@@ -1,7 +1,7 @@
 ---
-status: Vorschlag (nicht umgesetzt)
+status: freigegeben — wird nach dem Merge eingerichtet
 datum: 2026-10-27
-entschieden_von: Agent (Claude) — Freigabe ausstehend
+entschieden_von: Vorschlag Agent (Claude) · Entscheidung Mensch am 2026-10-27
 ---
 
 # 0015 · Geplante Pflege-Aufgaben
@@ -14,4 +14,4 @@ entschieden_von: Agent (Claude) — Freigabe ausstehend
 
 **Betrifft:** .agents/skills/pflege
 
-**Deine Entscheidung:** <!-- ok · ändern: … · streichen -->
+**Deine Entscheidung:** Wöchentlicher Radar-Scan und monatliche Pflege gewünscht.

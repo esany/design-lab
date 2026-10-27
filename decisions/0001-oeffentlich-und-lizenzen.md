@@ -1,10 +1,10 @@
 ---
-status: Vorschlag
+status: geändert und freigegeben
 datum: 2026-10-27
-entschieden_von: Agent (Claude) — Freigabe ausstehend
+entschieden_von: Vorschlag Agent (Claude) · Entscheidung Mensch am 2026-10-27
 ---
 
-# 0001 · Öffentliches Repo und Lizenzen
+# 0001 · Sichtbarkeit und Lizenz
 
 **Entscheidung:** Das Repo ist öffentlich. Code steht unter MIT, Inhalte (Texte, Studien, Bilder) unter CC BY 4.0.
 
@@ -14,4 +14,4 @@ entschieden_von: Agent (Claude) — Freigabe ausstehend
 
 **Betrifft:** README.md, LICENSE, LICENSE-CONTENT.md
 
-**Deine Entscheidung:** <!-- ok · ändern: … · streichen -->
+**Deine Entscheidung:** Privat. Keine offene Lizenz — alle Rechte vorbehalten. (Antwort im Chat, 2026-10-27)

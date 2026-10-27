@@ -1,7 +1,7 @@
 ---
-status: Vorschlag
+status: freigegeben (auf Probe)
 datum: 2026-10-27
-entschieden_von: Agent (Claude) — Freigabe ausstehend
+entschieden_von: Vorschlag Agent (Claude) · Entscheidung Mensch am 2026-10-27
 ---
 
 # 0013 · Vorlagen für Anforderungen und Pull Requests
@@ -14,4 +14,4 @@ entschieden_von: Agent (Claude) — Freigabe ausstehend
 
 **Betrifft:** .github/ISSUE_TEMPLATE/, .github/pull_request_template.md
 
-**Deine Entscheidung:** <!-- ok · ändern: … · streichen -->
+**Deine Entscheidung:** Passt — erst einmal auf Probe.

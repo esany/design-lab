@@ -1,7 +1,7 @@
 ---
-status: Vorschlag
+status: freigegeben (auf Probe)
 datum: 2026-10-27
-entschieden_von: Agent (Claude) — Freigabe ausstehend
+entschieden_von: Vorschlag Agent (Claude) · Entscheidung Mensch am 2026-10-27
 ---
 
 # 0002 · Freigabe per Pull Request
@@ -14,4 +14,4 @@ entschieden_von: Agent (Claude) — Freigabe ausstehend
 
 **Betrifft:** AGENTS.md (Schreibregeln), .claude/settings.json
 
-**Deine Entscheidung:** <!-- ok · ändern: … · streichen -->
+**Deine Entscheidung:** Passt — erst einmal auf Probe.

@@ -1,7 +1,7 @@
 ---
-status: Vorschlag
+status: freigegeben als Startversion
 datum: 2026-10-27
-entschieden_von: Agent (Claude) auf Anforderung — Freigabe ausstehend
+entschieden_von: Vorschlag Agent (Claude) · Entscheidung Mensch am 2026-10-27
 ---
 
 # 0017 · Ittens Farbkontraste als Methode — übersetzt in OKLCH
@@ -30,4 +30,4 @@ nachbauen.
 **Betrifft:** `.agents/skills/farbkontraste-itten`, Studie „Reihe und
 Verschiebung“ (`studie.js`, `texte.js`).
 
-**Deine Entscheidung:** <!-- ok · ändern: … · streichen -->
+**Deine Entscheidung:** Als Startversion übernommen.

@@ -37,8 +37,8 @@ Sie legen Optionen mit Begründung vor.
 3. Nichts löschen, was nicht im eigenen Branch entstanden ist. Veraltetes
    wird markiert oder nach `archive/` verschoben.
 4. Keine Geheimnisse, keine personenbezogenen Daten, keine Kundendaten,
-   keine urheberrechtlich geschützten Werke oder PDFs ins Repo. Das Repo ist
-   öffentlich.
+   keine urheberrechtlich geschützten Werke oder PDFs ins Repo — auch wenn das
+   Repo privat ist (Sichtbarkeit kann sich ändern).
 5. Jede strukturelle Entscheidung (Regel, Werkzeug, Gestaltung des Labors,
    Automatisierung) bekommt eine Datei in `decisions/` mit Status
    `Vorschlag`. Gültig wird sie erst durch den Menschen.
@@ -70,6 +70,13 @@ Spezifikation (Mensch) → Erzeugen (Agent A) → Rendern/Screenshot
 
 Ein Agent bewertet seine eigene Arbeit nicht als „bestanden“. Er beschreibt,
 was er geprüft hat und was nicht.
+
+## Freigabe in Alltagssprache
+
+Der Mensch ist Gestalter, nicht Entwickler. Entscheidungen werden ihm als
+höchstens vier Fragen in Alltagssprache mit Empfehlung vorgelegt — nicht als
+Dateien oder Code zum Durchlesen. Antworten trägt der Agent in `decisions/` ein.
+Technische Details stehen im Pull Request für alle, die sie sehen wollen.
 
 ## Anforderungen annehmen
 

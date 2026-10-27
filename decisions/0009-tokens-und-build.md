@@ -1,7 +1,7 @@
 ---
-status: Vorschlag
+status: freigegeben als Startversion
 datum: 2026-10-27
-entschieden_von: Agent (Claude) — Freigabe ausstehend
+entschieden_von: Vorschlag Agent (Claude) · Entscheidung Mensch am 2026-10-27
 ---
 
 # 0009 · DTCG-Tokens und eigener Build ohne Abhängigkeiten
@@ -14,4 +14,4 @@ entschieden_von: Agent (Claude) — Freigabe ausstehend
 
 **Betrifft:** system/, tools/build.mjs, assets/tokens.css
 
-**Deine Entscheidung:** <!-- ok · ändern: … · streichen -->
+**Deine Entscheidung:** Als Startversion übernommen.

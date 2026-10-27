@@ -1,7 +1,7 @@
 ---
-status: Vorschlag
+status: freigegeben als Startversion
 datum: 2026-10-27
-entschieden_von: Agent (Claude) — Freigabe ausstehend
+entschieden_von: Vorschlag Agent (Claude) · Entscheidung Mensch am 2026-10-27
 ---
 
 # 0006 · Auswahl und Inhalt der Start-Methoden
@@ -14,4 +14,4 @@ entschieden_von: Agent (Claude) — Freigabe ausstehend
 
 **Betrifft:** .agents/skills/
 
-**Deine Entscheidung:** <!-- ok · ändern: … · streichen -->
+**Deine Entscheidung:** Als Startversion übernommen; Änderungen jederzeit im Gespräch.

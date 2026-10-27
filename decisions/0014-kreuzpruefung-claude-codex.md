@@ -1,7 +1,7 @@
 ---
-status: Vorschlag (nicht umgesetzt)
+status: freigegeben — wird nach dem Merge eingerichtet
 datum: 2026-10-27
-entschieden_von: Agent (Claude) — Freigabe ausstehend
+entschieden_von: Vorschlag Agent (Claude) · Entscheidung Mensch am 2026-10-27
 ---
 
 # 0014 · Kreuzprüfung Claude ↔ Codex über GitHub
@@ -14,4 +14,4 @@ entschieden_von: Agent (Claude) — Freigabe ausstehend
 
 **Betrifft:** würde AGENTS.md und GitHub-Einstellungen betreffen
 
-**Deine Entscheidung:** <!-- ok · ändern: … · streichen -->
+**Deine Entscheidung:** Gegenprüfung durch Codex gewünscht.

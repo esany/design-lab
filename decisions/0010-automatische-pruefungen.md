@@ -1,7 +1,7 @@
 ---
-status: Vorschlag
+status: freigegeben; Veröffentlichung offen
 datum: 2026-10-27
-entschieden_von: Agent (Claude) — Freigabe ausstehend
+entschieden_von: Vorschlag Agent (Claude) · Entscheidung Mensch am 2026-10-27
 ---
 
 # 0010 · Automatische Prüfungen und Veröffentlichung
@@ -14,4 +14,4 @@ entschieden_von: Agent (Claude) — Freigabe ausstehend
 
 **Betrifft:** .github/workflows/, tools/smoke.mjs
 
-**Deine Entscheidung:** <!-- ok · ändern: … · streichen -->
+**Deine Entscheidung:** Prüfungen ja. Automatische Website gewünscht — bei privatem Repo ist der Weg noch zu klären.

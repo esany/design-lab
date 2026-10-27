@@ -1,7 +1,7 @@
 ---
-status: Vorschlag
+status: freigegeben (auf Probe)
 datum: 2026-10-27
-entschieden_von: Agent (Claude) auf Anforderung — Freigabe ausstehend
+entschieden_von: Vorschlag Agent (Claude) · Entscheidung Mensch am 2026-10-27
 ---
 
 # 0016 · Erklärbarkeit in Stufen für alle Studien
@@ -25,4 +25,4 @@ guter Vorsatz. Getrennte Texte erlauben fachliche Bearbeitung ohne Code.
 **Betrifft:** `.agents/skills/studie` (Abschnitt Erklärbarkeit), Studie
 „Reihe und Verschiebung“.
 
-**Deine Entscheidung:** <!-- ok · ändern: … · streichen -->
+**Deine Entscheidung:** Passt — erst einmal auf Probe.
