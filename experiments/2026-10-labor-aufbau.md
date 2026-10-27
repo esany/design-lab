@@ -13,7 +13,7 @@ lebendiges Labor ohne Git-Kenntnisse und ohne Kontrollverlust, weil jede
 Änderung sichtbar, umkehrbar und begründet ist.
 
 **Aufbau:**
-- Repo `esany/design-lab` (privat), Regeln in `AGENTS.md`, Methoden als Skills.
+- Repo `esany/design-lab` (öffentlich), Regeln in `AGENTS.md`, Methoden als Skills.
 - Agenten: Claude Code (Cloud), Codex, Gemini — alle lesen `AGENTS.md`.
 - Automatische Prüfung bei jedem PR (`.github/workflows/pruefen.yml`).
 - Geplante Pflege: wöchentlich Radar, monatlich Gesundheits-Check.

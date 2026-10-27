@@ -3,7 +3,7 @@
 Persönliches Labor für Gestaltung mit KI-Assistenz — Methoden, Studien,
 Werkzeuge. Toolunabhängig, auf offenen Formaten, lebendig.
 
-**Sichtbarkeit:** privat. Website: Vorschau-Weg siehe `decisions/0010`.
+**Website:** https://esany.github.io/design-lab/ · Repo öffentlich einsehbar, alle Rechte vorbehalten.
 
 ## Wie das Labor arbeitet
 

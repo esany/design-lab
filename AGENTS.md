@@ -37,8 +37,8 @@ Sie legen Optionen mit Begründung vor.
 3. Nichts löschen, was nicht im eigenen Branch entstanden ist. Veraltetes
    wird markiert oder nach `archive/` verschoben.
 4. Keine Geheimnisse, keine personenbezogenen Daten, keine Kundendaten,
-   keine urheberrechtlich geschützten Werke oder PDFs ins Repo — auch wenn das
-   Repo privat ist (Sichtbarkeit kann sich ändern).
+   keine urheberrechtlich geschützten Werke oder PDFs ins Repo. Das Repo ist
+   öffentlich einsehbar.
 5. Jede strukturelle Entscheidung (Regel, Werkzeug, Gestaltung des Labors,
    Automatisierung) bekommt eine Datei in `decisions/` mit Status
    `Vorschlag`. Gültig wird sie erst durch den Menschen.

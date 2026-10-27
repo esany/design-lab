@@ -14,4 +14,4 @@ entschieden_von: Vorschlag Agent (Claude) · Entscheidung Mensch am 2026-10-27
 
 **Betrifft:** README.md, LICENSE, LICENSE-CONTENT.md
 
-**Deine Entscheidung:** Privat. Keine offene Lizenz — alle Rechte vorbehalten. (Antwort im Chat, 2026-10-27)
+**Deine Entscheidung:** Öffentlich (damit die Website kostenlos und automatisch läuft), aber **keine offene Lizenz — alle Rechte vorbehalten**. Ein Repo ohne Lizenz darf man ansehen, aber nicht weiterverwenden. Eine offene Lizenz kann später jederzeit ergänzt werden. (Chat, 2026-10-27; zwischenzeitlich „privat“, revidiert wegen der Website.)

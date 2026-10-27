@@ -14,4 +14,4 @@ entschieden_von: Vorschlag Agent (Claude) · Entscheidung Mensch am 2026-10-27
 
 **Betrifft:** tools/index.template.html, assets/lab.css, index.html
 
-**Deine Entscheidung:** Als Startversion übernommen. Veröffentlichung: siehe 0001 (privat) — Weg offen.
+**Deine Entscheidung:** Als Startversion übernommen; Website öffentlich über GitHub Pages.
