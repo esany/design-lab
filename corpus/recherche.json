@@ -1,0 +1,437 @@
+[
+  {
+    "id": "bertin-1967",
+    "titel": "Sémiologie graphique (dt. Graphische Semiologie, 1974)",
+    "autor": "Jacques Bertin",
+    "jahr": 1967,
+    "art": "Buch",
+    "url": "https://de.wikipedia.org/wiki/Jacques_Bertin",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "vermitteln"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Visuelle Variablen und ihre Leistung (assoziativ, selektiv, geordnet, quantitativ). Grundlage des Skills bertin-semiologie. Fundstelle in dieser Sitzung nicht geöffnet.",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "neurath-isotype",
+    "titel": "Isotype (International System of Typographic Picture Education)",
+    "autor": "Otto Neurath, Marie Neurath, Gerd Arntz",
+    "jahr": "ab 1925",
+    "art": "Werk",
+    "url": "https://de.wikipedia.org/wiki/Isotype",
+    "lizenz": "unbekannt",
+    "felder": [
+      "vermitteln",
+      "raum-zeit"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Bildstatistik am Gesellschafts- und Wirtschaftsmuseum Wien; gesellschaftliches Wissen für alle lesbar. Grundlage des Skills isotype. Fundstelle in dieser Sitzung nicht geöffnet.",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "tufte-1983",
+    "titel": "The Visual Display of Quantitative Information",
+    "autor": "Edward R. Tufte",
+    "jahr": 1983,
+    "art": "Buch",
+    "url": "https://www.edwardtufte.com/",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "vermitteln"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Graphics Press. Daten-Tinte-Verhältnis, Chartjunk, Small Multiples. Fundstelle in dieser Sitzung nicht geöffnet.",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "cleveland-mcgill-1984",
+    "titel": "Graphical Perception: Theory, Experimentation, and Application to the Development of Graphical Methods",
+    "autor": "William S. Cleveland, Robert McGill",
+    "jahr": 1984,
+    "art": "Paper",
+    "url": "https://en.wikipedia.org/wiki/Graphical_perception",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "vermitteln"
+    ],
+    "status": "belegt",
+    "notiz": "Journal of the American Statistical Association. Experimentelle Rangfolge, wie genau Menschen Werte ablesen (Position vor Länge vor Winkel, Fläche, Farbe).",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "mackinlay-1986",
+    "titel": "Automating the Design of Graphical Presentations of Relational Information",
+    "autor": "Jock D. Mackinlay",
+    "jahr": 1986,
+    "art": "Paper",
+    "url": "https://courses.ischool.berkeley.edu/i247/f05/readings/Mackinlay_APT_TOG86.pdf",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "vermitteln"
+    ],
+    "status": "belegt",
+    "notiz": "ACM Transactions on Graphics, DOI 10.1145/22949.22950. Zwei Kriterien: Ausdrucksfähigkeit (zeigt genau die Daten, nicht mehr) und Wirksamkeit (am besten wahrnehmbare Kodierung zuerst). Basis automatischer Diagrammwahl bis heute.",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "borland-taylor-2007",
+    "titel": "Rainbow Color Map (Still) Considered Harmful",
+    "autor": "David Borland, Russell M. Taylor II",
+    "jahr": 2007,
+    "art": "Paper",
+    "url": "https://www.sci.utah.edu/~kpotter/Library/Papers/borland:2007:RCCH/index.html",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "vermitteln",
+      "form"
+    ],
+    "status": "belegt",
+    "notiz": "IEEE Computer Graphics and Applications. Regenbogen-Farbskalen verzerren Ordnung und erzeugen Scheinkanten. Gegenposition: „Rainbow Colormaps Are Not All Bad“ (UNH CCOM).",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "dignazio-klein-2020",
+    "titel": "Data Feminism",
+    "autor": "Catherine D'Ignazio, Lauren F. Klein",
+    "jahr": 2020,
+    "art": "Buch",
+    "url": "https://en.wikipedia.org/wiki/Data_Feminism",
+    "lizenz": "Open Access (Lizenz nicht geprüft)",
+    "felder": [
+      "vermitteln"
+    ],
+    "status": "belegt",
+    "notiz": "MIT Press. Wer zählt, wer wird gezählt, wessen Wissen gilt — Machtfragen in Daten und Visualisierung.",
+    "zugang": "offen",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "viseval-2024",
+    "titel": "VisEval: A Benchmark for Data Visualization in the Era of Large Language Models",
+    "autor": "Nan Chen, Yuge Zhang, Jiahang Xu, Kan Ren, Yuqing Yang",
+    "jahr": 2024,
+    "art": "Paper",
+    "url": "https://arxiv.org/abs/2407.00981",
+    "lizenz": "unbekannt",
+    "felder": [
+      "vermitteln",
+      "labor"
+    ],
+    "status": "belegt",
+    "notiz": "2.524 Anfragen, Prüfung auf Gültigkeit, Regelkonformität, Lesbarkeit. Bestes Modell (GPT-4) 2,89 von 5. Typische Fehler: erfundene Spaltennamen, falsche Datenumformung, überlappende Balken, falsche Legenden, falsche Sortierung, Textüberlauf, invertierte Achsen. Mehr Kanäle → schlechter; überflüssige Tabellen im Kontext → schlechter.",
+    "zugang": "offen",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "plotcraft-2025",
+    "titel": "PlotCraft: Pushing the Limits of LLMs for Complex and Interactive Data Visualization",
+    "autor": "Jiajun Zhang u. a. (USTC, Qwen-Team u. a.)",
+    "jahr": 2025,
+    "art": "Paper",
+    "url": "https://arxiv.org/abs/2511.00010",
+    "lizenz": "unbekannt",
+    "felder": [
+      "vermitteln",
+      "labor"
+    ],
+    "status": "belegt",
+    "notiz": "23 Modelle, 982 Aufgaben: einfache Einzeldiagramme gelingen, mehrteilige und zusammengesetzte scheitern meist („struggle to generate plots with multiple subplots“).",
+    "zugang": "offen",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "observable-plot",
+    "titel": "Observable Plot",
+    "autor": "Observable",
+    "jahr": 2026,
+    "art": "Werkzeug",
+    "url": "https://www.npmjs.com/package/@observablehq/plot",
+    "lizenz": "ISC",
+    "felder": [
+      "vermitteln"
+    ],
+    "status": "belegt",
+    "notiz": "Version 0.6.17 (npm, 6.4.2026). Kurze, lesbare Grammatik für explorative Diagramme; erzeugt SVG.",
+    "zugang": "offen",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "d3",
+    "titel": "D3",
+    "autor": "Mike Bostock u. a.",
+    "jahr": 2025,
+    "art": "Werkzeug",
+    "url": "https://www.npmjs.com/package/d3",
+    "lizenz": "ISC",
+    "felder": [
+      "vermitteln",
+      "interaktion"
+    ],
+    "status": "belegt",
+    "notiz": "Version 7.9.0 (npm, 17.5.2025). Bausteine für maßgeschneiderte Visualisierung (Skalen, Layouts, Geo, Übergänge); Werkzeug von Bremer und vielen Referenzprojekten.",
+    "zugang": "offen",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "vega-lite",
+    "titel": "Vega-Lite",
+    "autor": "UW Interactive Data Lab / Vega",
+    "jahr": 2026,
+    "art": "Werkzeug",
+    "url": "https://www.npmjs.com/package/vega-lite",
+    "lizenz": "BSD-3-Clause",
+    "felder": [
+      "vermitteln"
+    ],
+    "status": "belegt",
+    "notiz": "Version 6.5.0 (npm, 8.10.2026). Diagramm als JSON-Spezifikation: gut prüfbar, reproduzierbar, für Agenten gut schreibbar.",
+    "zugang": "offen",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "mermaid",
+    "titel": "Mermaid",
+    "autor": "Mermaid-Community",
+    "jahr": 2026,
+    "art": "Werkzeug",
+    "url": "https://www.npmjs.com/package/mermaid",
+    "lizenz": "MIT",
+    "felder": [
+      "vermitteln"
+    ],
+    "status": "belegt",
+    "notiz": "Version 12.2.0 (npm, 13.10.2026). Diagramme (Fluss, Sequenz, Zustand, Zeitleiste) aus Text.",
+    "zugang": "offen",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "vikus-viewer",
+    "titel": "VIKUS Viewer",
+    "autor": "Christopher Pietsch, UCLAB",
+    "jahr": null,
+    "art": "Werkzeug",
+    "url": "https://github.com/cpietsch/vikus-viewer",
+    "lizenz": "unbekannt",
+    "felder": [
+      "vermitteln",
+      "erkennen",
+      "raum-zeit"
+    ],
+    "status": "belegt",
+    "notiz": "Offenes Werkzeug, das tausende Kulturobjekte auf einer Zeitleiste zeigt; 6 eigene, über 15 fremde Instanzen. Lizenz in dieser Sitzung nicht prüfbar.",
+    "zugang": "offen",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "generative-gestaltung",
+    "titel": "Generative Gestaltung — Code-Paket p5.js",
+    "autor": "Benedikt Groß, Hartmut Bohnacker, Julia Laub, Claudius Lazzeroni",
+    "jahr": null,
+    "art": "Repo",
+    "url": "https://github.com/generative-design/Code-Package-p5.js",
+    "lizenz": "Apache-2.0",
+    "felder": [
+      "ordnung",
+      "form"
+    ],
+    "status": "belegt",
+    "notiz": "Code zum Buch „Generative Gestaltung“; Referenzbibliothek für Fachpaket „Ordnung“ (Issue #9).",
+    "zugang": "offen",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "ml5js",
+    "titel": "ml5.js",
+    "autor": "NYU ITP / ml5-Community",
+    "jahr": 2026,
+    "art": "Werkzeug",
+    "url": "https://ml5js.org/about",
+    "lizenz": "MIT",
+    "felder": [
+      "interaktion",
+      "labor"
+    ],
+    "status": "belegt",
+    "notiz": "Version 1.4.0 (npm). Maschinelles Lernen im Browser für Kunst und Gestaltung, mit Ethik- und Bias-Fokus.",
+    "zugang": "offen",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "p5js",
+    "titel": "p5.js",
+    "autor": "Processing Foundation",
+    "jahr": 2026,
+    "art": "Werkzeug",
+    "url": "https://p5js.org/",
+    "lizenz": "LGPL-2.1",
+    "felder": [
+      "ordnung",
+      "form",
+      "interaktion"
+    ],
+    "status": "belegt",
+    "notiz": "Version 2.3.4 (npm). Basis von Generative Gestaltung und ml5.js.",
+    "zugang": "offen",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "kindlab",
+    "titel": "KINDLAB, Hochschule Trier",
+    "autor": "Hochschule Trier, Campus Gestaltung",
+    "jahr": null,
+    "art": "Labor",
+    "url": "https://kind-lab.de/",
+    "lizenz": "unbekannt",
+    "felder": [
+      "labor"
+    ],
+    "status": "belegt",
+    "notiz": "Gestaltungsgetriebenes KI-Labor, Teil von KITeGG. KI als „neues Material für Gestaltung“; Annahmen vorher „verlernen“. 40-GPU-Cluster aus dem Browser. Konferenz TRANSFORM 2025.",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "kitegg",
+    "titel": "KITeGG — KI greifbar machen und begreifen",
+    "autor": "Hochschule Mainz (Koordination), HfG Offenbach, HfG Schwäbisch Gmünd, KISD, Hochschule Trier",
+    "jahr": "2021–2025",
+    "art": "Projekt",
+    "url": "https://benedikt-gross.de/projects/kitegg-making-ai-tangible-and-comprehensible",
+    "lizenz": "unbekannt",
+    "felder": [
+      "labor"
+    ],
+    "status": "belegt",
+    "notiz": "Bundesförderung „KI in der Hochschulbildung“, 12/2021–11/2025. Formate: TRANSFORM, re:shape, Correlations, Hidden Layers.",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "unlearn-ai",
+    "titel": "un/learn ai (Publikationsreihe)",
+    "autor": "KITeGG",
+    "jahr": null,
+    "art": "Buch",
+    "url": "https://openscience.ub.uni-mainz.de/items/02c2fbdd-fdc9-4bd6-a809-1174bd50714f/full",
+    "lizenz": "unbekannt",
+    "felder": [
+      "labor"
+    ],
+    "status": "belegt",
+    "notiz": "Bände „approaching“, „navigating“, „integrating AI in aesthetic practices“; frei zugänglich (abgeleitet).",
+    "zugang": "offen",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "reshape-2025",
+    "titel": "re:shape forum 2025",
+    "autor": "HfG Schwäbisch Gmünd, AI+Design Lab",
+    "jahr": 2025,
+    "art": "Konferenz",
+    "url": "https://aid-lab.hfg-gmuend.de/appearances/2025-reshape-summer-school-hfg-schwaebisch-gmuend/",
+    "lizenz": "unbekannt",
+    "felder": [
+      "labor",
+      "interaktion"
+    ],
+    "status": "belegt",
+    "notiz": "Themen u. a. Rolle der Gestaltenden, Interfaces für Mensch-KI-Interaktion, „designing with uncertainty“, generative Workflows mit Intention und Kritik. Vorträge als Video.",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "aid-lab-gmuend",
+    "titel": "AI+Design Lab, HfG Schwäbisch Gmünd",
+    "autor": "HfG Schwäbisch Gmünd",
+    "jahr": null,
+    "art": "Labor",
+    "url": "https://aid-lab.hfg-gmuend.de/about",
+    "lizenz": "unbekannt",
+    "felder": [
+      "labor"
+    ],
+    "status": "belegt",
+    "notiz": "Forschung und Lehre zu KI im Gestaltungsprozess.",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "udk-designing-ai",
+    "titel": "Designing_AI Lab, UdK Berlin",
+    "autor": "UdK Berlin, Produktdesign (Prof. Aeneas Stankowski)",
+    "jahr": 2026,
+    "art": "Labor",
+    "url": "https://produktdesign.udk-berlin.de/2026/08/designing_ai-lab-wraps-up-its-first-semester/",
+    "lizenz": "unbekannt",
+    "felder": [
+      "labor",
+      "interaktion",
+      "raum-zeit"
+    ],
+    "status": "belegt",
+    "notiz": "Seit März 2026: Kollaboration Mensch–Roboterarm. „Was können du und der Roboter gemeinsam, was keiner allein kann?“",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "burglabs",
+    "titel": "BurgLabs (XLab, BioLab, SustainLab)",
+    "autor": "Burg Giebichenstein Kunsthochschule Halle",
+    "jahr": null,
+    "art": "Labor",
+    "url": "https://www.burg-halle.de/en/university/facilities/burglabs",
+    "lizenz": "unbekannt",
+    "felder": [
+      "labor",
+      "raum-zeit"
+    ],
+    "status": "belegt",
+    "notiz": "KI und Robotik, robotergestützte additive Fertigung.",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "khm-ground-zero",
+    "titel": "ground zero (Experimentelle Informatik), KHM Köln",
+    "autor": "KHM Köln",
+    "jahr": "bis 2025",
+    "art": "Labor",
+    "url": "https://ground-zero.khm.de/?p=8907",
+    "lizenz": "unbekannt",
+    "felder": [
+      "labor"
+    ],
+    "status": "belegt",
+    "notiz": "Am 20.8.2025 geschlossen; GitHub-Organisation und exmediawiki (GFDL) bleiben.",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "hfg-karlsruhe-kim",
+    "titel": "KIM — Künstliche Intelligenz und Medienphilosophie",
+    "autor": "HfG Karlsruhe (Matteo Pasquinelli)",
+    "jahr": 2018,
+    "art": "Labor",
+    "url": "https://hfg-karlsruhe.de/en/archiv/kuenstliche-intelligenz-und-medienphilosophie/",
+    "lizenz": "unbekannt",
+    "felder": [
+      "labor",
+      "erkennen"
+    ],
+    "status": "belegt",
+    "notiz": "Kritische Maschinenintelligenz; Seite von 2018 im Archiv, heutiger Stand nicht belegt.",
+    "geprueft": "2026-10-27"
+  },
+  {
+    "id": "hfg-archiv-ulm",
+    "titel": "HfG-Archiv Ulm",
+    "autor": "Museum Ulm",
+    "jahr": null,
+    "art": "Sammlung",
+    "url": "https://hfg-archiv.museumulm.de/en/archival-research-and-service",
+    "lizenz": "unbekannt",
+    "felder": [
+      "erkennen",
+      "form",
+      "system"
+    ],
+    "status": "belegt",
+    "notiz": "Archiv der HfG Ulm (1953–1968); Quelle für Gestaltungsgeschichte. Kein KI-Projekt gefunden.",
+    "geprueft": "2026-10-27"
+  }
+]
