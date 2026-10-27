@@ -3,13 +3,13 @@
 Jede strukturelle Entscheidung hat eine Datei mit Status:
 **Vorschlag → freigegeben → gültig → abgelöst** (abgelöste bleiben als Historie).
 
-Freigabe geschieht in Alltagssprache (siehe 0018): Der Agent stellt wenige Fragen,
-trägt die Antworten hier ein, der Mensch bestätigt mit dem Merge.
+Der Agent arbeitet im freigegebenen Rahmen selbstständig (0019) und legt nur offene
+Punkte als Fragen in Alltagssprache vor (0018). Antworten trägt er hier ein.
 
 | Nr. | Entscheidung | Status |
 |---|---|---|
 | 0001 | [Sichtbarkeit und Lizenz](0001-oeffentlich-und-lizenzen.md) | geändert und freigegeben |
-| 0002 | [Freigabe per Pull Request](0002-freigabe-per-pull-request.md) | freigegeben (auf Probe) |
+| 0002 | [Freigabe per Pull Request](0002-freigabe-per-pull-request.md) | abgelöst durch 0019 |
 | 0003 | [Autonomie nach Umkehrbarkeit](0003-autonomie-nach-umkehrbarkeit.md) | freigegeben (auf Probe) |
 | 0004 | [Eine Anweisung, ein Skill-Ordner für alle Agenten](0004-gemeinsame-anweisung-und-skills.md) | freigegeben (auf Probe) |
 | 0005 | [Text der Prinzipien](0005-prinzipien.md) | freigegeben als Startversion |
@@ -26,3 +26,4 @@ trägt die Antworten hier ein, der Mensch bestätigt mit dem Merge.
 | 0016 | [Erklärbarkeit in Stufen für alle Studien](0016-erklaerbarkeit-in-stufen.md) | freigegeben (auf Probe) |
 | 0017 | [Ittens Farbkontraste als Methode — übersetzt in OKLCH](0017-itten-in-oklch.md) | freigegeben als Startversion |
 | 0018 | [Freigabe in Alltagssprache statt Code-Review](0018-freigabe-in-alltagssprache.md) | freigegeben (auf Probe) |
+| 0019 | [Selbstständig im Rahmen — der Mensch gestaltet, klärt offene Punkte](0019-selbststaendig-im-rahmen.md) | freigegeben |

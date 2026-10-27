@@ -1,5 +1,5 @@
 ---
-status: freigegeben (auf Probe)
+status: abgelöst durch 0019
 datum: 2026-10-27
 entschieden_von: Vorschlag Agent (Claude) · Entscheidung Mensch am 2026-10-27
 ---

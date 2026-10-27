@@ -29,20 +29,33 @@ Sie legen Optionen mit Begründung vor.
 ## Schreibregeln (verbindlich)
 
 1. **Nie direkt auf `main`.** Jede Änderung auf einem eigenen Branch
-   (`lab/<thema>`) und als Pull Request. Merge macht ausschließlich der Mensch.
-2. **Autonomie nach Umkehrbarkeit:**
-   - frei auf dem Branch: `studies/`, `experiments/`, `radar.md`, `corpus/`
-   - nur als begründeter Vorschlag im PR: `principles.md`, `AGENTS.md`,
-     `.agents/skills/`, `system/`, `.github/`
-3. Nichts löschen, was nicht im eigenen Branch entstanden ist. Veraltetes
+   (`lab/<thema>`) und als Pull Request — eine Änderung, ein Thema, damit sie
+   einzeln rückgängig gemacht werden kann.
+2. **Selbst übernehmen (mergen) darf der Agent**, wenn alles zutrifft:
+   - die Änderung liegt im Rahmen freigegebener Anforderungen, Prinzipien und
+     Entscheidungen;
+   - alle automatischen Prüfungen sind grün;
+   - die Änderung ist in `stand.md` eingetragen (was · warum · wie rückgängig).
+   **Zum Menschen** gehen stattdessen — als Frage, nicht als Review-Auftrag:
+   offene Punkte und Unsicherheiten; Gestaltungs- und Bedeutungsentscheidungen;
+   neue Regeln oder Prinzipien; alles schwer Umkehrbare (Löschen, Sichtbarkeit,
+   Kosten, Konten, externe Dienste, Sicherheit). Der Mensch ist kein
+   Durchreicher für Klicks.
+3. **Autonomie nach Umkehrbarkeit:**
+   - frei: `studies/`, `experiments/`, `radar.md`, `corpus/`, `stand.md`
+   - nur mit Rückfrage, wenn es Haltung oder Regeln ändert: `principles.md`,
+     `AGENTS.md`, `.agents/skills/`, `system/`, `.github/`
+4. Nichts löschen, was nicht im eigenen Branch entstanden ist. Veraltetes
    wird markiert oder nach `archive/` verschoben.
-4. Keine Geheimnisse, keine personenbezogenen Daten, keine Kundendaten,
+5. Keine Geheimnisse, keine personenbezogenen Daten, keine Kundendaten,
    keine urheberrechtlich geschützten Werke oder PDFs ins Repo. Das Repo ist
    öffentlich einsehbar.
-5. Jede strukturelle Entscheidung (Regel, Werkzeug, Gestaltung des Labors,
-   Automatisierung) bekommt eine Datei in `decisions/` mit Status
-   `Vorschlag`. Gültig wird sie erst durch den Menschen.
-6. Nach Änderungen an `system/` oder `studies/`: `node tools/build.mjs`
+6. Jede strukturelle Entscheidung (Regel, Werkzeug, Gestaltung des Labors,
+   Automatisierung) bekommt eine Datei in `decisions/`. Gültig wird sie durch
+   die Antwort des Menschen; der Agent trägt sie ein.
+7. **Rückgängig:** Sagt der Mensch „X rückgängig“, erstellt der Agent einen
+   Revert als eigenen Pull Request und vermerkt ihn in `stand.md`.
+8. Nach Änderungen an `system/` oder `studies/`: `node tools/build.mjs`
    ausführen und das Ergebnis mit committen.
 
 ## Evidenz und Verlässlichkeit
@@ -71,12 +84,20 @@ Spezifikation (Mensch) → Erzeugen (Agent A) → Rendern/Screenshot
 Ein Agent bewertet seine eigene Arbeit nicht als „bestanden“. Er beschreibt,
 was er geprüft hat und was nicht.
 
-## Freigabe in Alltagssprache
+## Zusammenarbeit mit dem Menschen
 
-Der Mensch ist Gestalter, nicht Entwickler. Entscheidungen werden ihm als
-höchstens vier Fragen in Alltagssprache mit Empfehlung vorgelegt — nicht als
-Dateien oder Code zum Durchlesen. Antworten trägt der Agent in `decisions/` ein.
-Technische Details stehen im Pull Request für alle, die sie sehen wollen.
+Der Mensch will gestalten und mit dem Agenten den Entwicklungsstand
+durchgehen — nicht Technik bedienen. Deshalb:
+
+- **`stand.md` ist die gemeinsame Übersicht:** aktueller Stand, letzte
+  Änderungen mit Rückgängig-Hinweis, offene Punkte, nächste Schritte. Nach
+  jeder Arbeitseinheit aktualisieren.
+- **Offene Punkte und Unsicherheiten** werden dort und im Gespräch sichtbar
+  gemacht — als höchstens vier Fragen in Alltagssprache mit Empfehlung.
+- Keine Bitten um Klicks, Reviews oder Git-Handgriffe, die der Agent selbst
+  erledigen kann. Braucht es den Menschen technisch (Anmeldung, Bestätigung
+  auf dem Handy), sagt der Agent genau, warum.
+- Technische Details stehen im Pull Request für alle, die sie sehen wollen.
 
 ## Anforderungen annehmen
 
@@ -91,6 +112,7 @@ sichtbar machen.
 | Ort | Inhalt |
 |---|---|
 | `principles.md` | Haltung, Prinzipien, Herkunft |
+| `stand.md` | Entwicklungsstand: Änderungen, offene Punkte, nächste Schritte |
 | `decisions/` | strukturelle Entscheidungen mit Status (Vorschlag → freigegeben → gültig → abgelöst) |
 | `.agents/skills/` | Methoden und Abläufe als Skills (SKILL.md) |
 | `studies/<jjjj-mm-slug>/` | Studien: `index.html` + `study.md` |

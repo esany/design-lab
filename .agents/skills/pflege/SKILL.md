@@ -1,13 +1,16 @@
 ---
 name: pflege
-description: Maintenance routine for the lab — weekly radar scan and monthly health check. Use in scheduled runs or when asked to tidy, refresh or review the state of the lab. Always ends in a pull request, never merges.
+description: Maintenance routine for the lab — weekly radar scan and monthly health check. Use in scheduled runs or when asked to tidy, refresh or review the state of the lab. Ends in a pull request; merges itself only within the free zone when checks are green, otherwise raises open points.
 ---
 
 # Pflege des Labors
 
 Das Labor bleibt lebendig, wenn Neues kontrolliert hineinkommt und Altes
 sichtbar altert. Jede Pflege endet als **ein** Pull Request oder als kurze
-Meldung „nichts zu tun“.
+Meldung „nichts zu tun“. Der Agent übernimmt den Pull Request selbst, wenn er
+nur `radar.md`, `stand.md`, `experiments/` oder `studies/` betrifft und alle
+Prüfungen grün sind (Regel 2 in `AGENTS.md`). Alles, was eine Entscheidung
+braucht, landet als offener Punkt in `stand.md`.
 
 ## Wöchentlich: Radar-Scan
 
@@ -39,6 +42,6 @@ durchführen. Ergebnis als Eintrag in `experiments/`.
 
 ## Nie
 
-- direkt auf `main` schreiben oder mergen
+- direkt auf `main` schreiben; Entscheidungen still treffen
 - Dinge löschen — nur nach `archive/` verschieben oder markieren
 - Radar-Einträge ohne Quelle

@@ -8,18 +8,20 @@ Werkzeuge. Toolunabhängig, auf offenen Formaten, lebendig.
 ## Wie das Labor arbeitet
 
 ```
-Anforderung  →  Agent baut auf einem Branch  →  Pull Request  →  du klickst „Merge“
-(Issue/Chat)     (Claude, Codex oder Gemini)     (Vorschlag)       (Freigabe)
+Anforderung  →  Agent baut  →  automatische Prüfung  →  Agent übernimmt  →  stand.md
+(Chat/Issue)                                                      offene Punkte → zu dir
 ```
 
-Du musst kein Git können. Vier Begriffe genügen:
+Du gestaltest und entscheidest offene Punkte. Alles andere erledigen die Agenten
+im Rahmen deiner Prinzipien — nachvollziehbar in [`stand.md`](stand.md) und
+jederzeit rückgängig („… rückgängig“ genügt). Zum Verstehen helfen vier Begriffe:
 
 | Begriff | Bedeutung |
 |---|---|
 | **main** | der gültige Stand des Labors |
 | **Branch** | Arbeitskopie eines Agenten |
 | **Pull Request (PR)** | Vorschlag mit sichtbarem Vorher/Nachher |
-| **Merge** | deine Freigabe — erst dann gilt es |
+| **Merge** | Übernahme in den gültigen Stand |
 
 ### Eine Anforderung stellen
 
@@ -27,19 +29,14 @@ Du musst kein Git können. Vier Begriffe genügen:
 - **Als Issue** auf GitHub: *Issues → New issue → Anforderung*. Jeder Agent
   kann es später aufgreifen.
 
-### Freigeben
-
-Auf GitHub (Web oder App) den PR öffnen, unter *Files changed* ansehen,
-dann **Merge pull request**. Nicht einverstanden? Kommentar schreiben —
-der Agent arbeitet nach.
-
 ## Was wo liegt
 
 | Ort | Inhalt |
 |---|---|
+| [`stand.md`](stand.md) | **Entwicklungsstand: was passiert ist, was offen ist** |
 | [`principles.md`](principles.md) | Haltung und Prinzipien |
 | [`AGENTS.md`](AGENTS.md) | Arbeitsvertrag für alle Agenten |
-| [`decisions/`](decisions/) | Entscheidungen mit Status — hier gibst du frei |
+| [`decisions/`](decisions/) | Entscheidungen mit Status und Begründung |
 | [`.agents/skills/`](.agents/skills/) | Methoden und Abläufe als Skills |
 | [`studies/`](studies/) | Studien (generativ, visuell, prüfbar) |
 | [`experiments/`](experiments/) | Experimente: Hypothese → Ergebnis → behalten/verwerfen |
