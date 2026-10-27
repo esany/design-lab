@@ -39,7 +39,10 @@ Sie legen Optionen mit Begründung vor.
 4. Keine Geheimnisse, keine personenbezogenen Daten, keine Kundendaten,
    keine urheberrechtlich geschützten Werke oder PDFs ins Repo. Das Repo ist
    öffentlich.
-5. Nach Änderungen an `system/` oder `studies/`: `node tools/build.mjs`
+5. Jede strukturelle Entscheidung (Regel, Werkzeug, Gestaltung des Labors,
+   Automatisierung) bekommt eine Datei in `decisions/` mit Status
+   `Vorschlag`. Gültig wird sie erst durch den Menschen.
+6. Nach Änderungen an `system/` oder `studies/`: `node tools/build.mjs`
    ausführen und das Ergebnis mit committen.
 
 ## Evidenz und Verlässlichkeit
@@ -81,6 +84,7 @@ sichtbar machen.
 | Ort | Inhalt |
 |---|---|
 | `principles.md` | Haltung, Prinzipien, Herkunft |
+| `decisions/` | strukturelle Entscheidungen mit Status (Vorschlag → freigegeben → gültig → abgelöst) |
 | `.agents/skills/` | Methoden und Abläufe als Skills (SKILL.md) |
 | `studies/<jjjj-mm-slug>/` | Studien: `index.html` + `study.md` |
 | `experiments/` | ein Eintrag pro Experiment: Hypothese, Ergebnis, behalten/verwerfen |

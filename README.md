@@ -39,6 +39,7 @@ der Agent arbeitet nach.
 |---|---|
 | [`principles.md`](principles.md) | Haltung und Prinzipien |
 | [`AGENTS.md`](AGENTS.md) | Arbeitsvertrag für alle Agenten |
+| [`decisions/`](decisions/) | Entscheidungen mit Status — hier gibst du frei |
 | [`.agents/skills/`](.agents/skills/) | Methoden und Abläufe als Skills |
 | [`studies/`](studies/) | Studien (generativ, visuell, prüfbar) |
 | [`experiments/`](experiments/) | Experimente: Hypothese → Ergebnis → behalten/verwerfen |
