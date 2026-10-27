@@ -58,6 +58,25 @@ Sie legen Optionen mit Begründung vor.
 8. Nach Änderungen an `system/` oder `studies/`: `node tools/build.mjs`
    ausführen und das Ergebnis mit committen.
 
+## Prüfen vor dem Handeln
+
+Vor jeder größeren Arbeit, kurz und sichtbar (im PR oder Gespräch):
+
+- **Werk oder System?** (Prinzip 9) — getrennt ausweisen, getrennt bewerten.
+- **Ziel, Gegenstand, Umfang, Grenzen, Abnahme** — woran ist „fertig“ erkennbar?
+  Bezug zu `intent.md` nennen.
+- **Einordnung** (aus D3sign D-029): `jetzt umsetzen` · `Pilot` · `bewusst
+  bewahren` · `derzeit nicht relevant` · `verwerfen` — mit Nutzen, Aufwand,
+  Folge des Nichtstuns.
+- **Widerspruch ist Pflicht** (D-017): Ist eine Idee redundant,
+  überdimensioniert oder zielwidrig, sagt der Agent das — auch wenn der Mensch
+  sie vorschlägt. Zustimmung allein ist keine Leistung.
+- **Quelle vor Werkzeug:** kleinstes passendes Arbeitsobjekt, minimal
+  ausreichender Kontext.
+- **Perspektive** (D-009): Kritik und Prüfung können bewusst aus einer Rolle
+  geschehen (Gestaltung, Technik, Vermittlung, Prüfung) — die Rolle steuert den
+  Blick, nicht die Befugnis.
+
 ## Evidenz und Verlässlichkeit
 
 Jede Aussage über die Welt trägt einen Status:
@@ -70,8 +89,16 @@ Fakten zu Personen, Werken, Daten und Zitaten nur mit Quelle (Normdaten:
 Wikidata, Getty ULAN/AAT; Primärquellen; Zotero). „Weiß ich nicht“ ist eine
 gültige Antwort. Details: Skill `belegpflicht`.
 
+Werkzeug-Ergebnisse tragen den feineren Status: `sichtbar` · `abgeleitet` ·
+`getestet` · `fehlgeschlagen` · `nicht getestet` · `nicht nachgewiesen` ·
+`blockiert`. Ein einzelner Fehlschlag ist keine allgemeine Werkzeuggrenze.
+
 Ergebnisse, die sich erzeugen lassen, werden erzeugt statt behauptet:
-rendern, ansehen (Screenshot), messen.
+rendern, ansehen (Screenshot), messen. Passt ein Werkzeug nicht: stoppen und
+die Lücke benennen, nicht simulieren (Prinzip 11).
+
+Neue Werkzeuge, Projekte und fremde Skills werden über den Skill `fundstueck`
+bewertet, bevor etwas davon übernommen wird.
 
 ## Qualitätsschleife
 
@@ -119,7 +146,8 @@ sichtbar machen.
 | `studies/<jjjj-mm-slug>/` | Studien: `index.html` + `study.md` |
 | `experiments/` | ein Eintrag pro Experiment: Hypothese, Ergebnis, behalten/verwerfen |
 | `radar.md` | beobachtete Werkzeuge und Entwicklungen |
-| `system/tokens/` | Design-Tokens (DTCG) des Labors selbst |
+| `system/` | Modul „System“: Prinzipien für Design-Systeme (`prinzipien.md`) und Lab-Tokens (DTCG) |
+| `research/` | Rechercheaufträge, Befunde, Einordnungen |
 | `corpus/` | Literaturverweise, Normdaten — keine Volltexte |
 | `evals/` | Prüffälle, um Modell- und Werkzeugwechsel zu bewerten |
 | `tools/` | Build-Skripte ohne Abhängigkeiten |

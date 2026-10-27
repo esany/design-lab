@@ -27,3 +27,4 @@ Punkte als Fragen in Alltagssprache vor (0018). Antworten trägt er hier ein.
 | 0017 | [Ittens Farbkontraste als Methode — übersetzt in OKLCH](0017-itten-in-oklch.md) | freigegeben als Startversion |
 | 0018 | [Freigabe in Alltagssprache statt Code-Review](0018-freigabe-in-alltagssprache.md) | freigegeben (auf Probe) |
 | 0019 | [Selbstständig im Rahmen — der Mensch gestaltet, klärt offene Punkte](0019-selbststaendig-im-rahmen.md) | freigegeben |
+| 0020 | [Fehlende D3sign-Prinzipien übernehmen](0020-d3sign-prinzipien.md) | freigegeben |
