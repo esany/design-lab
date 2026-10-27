@@ -202,7 +202,7 @@ outputs.set("corpus/uebersicht.md", `# Korpus — Übersicht
 > Schema: [\`schema.md\`](schema.md).
 
 **${corpus.size} Quellen** — ${nMensch} ausgewählt vom Eigentümer, ${corpus.size - nMensch} recherchiert vom Agenten.
-Je Feld zuerst die Auswahl des Eigentümers. Eine Quelle kann in mehreren Feldern stehen.
+Je Feld zuerst die Verweise des Eigentümers (Ausgangspunkte, kein Kanon). Eine Quelle kann in mehreren Feldern stehen.
 
 ${byField}`);
 

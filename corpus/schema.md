@@ -7,13 +7,14 @@ arbeiten, und der Build prüft sie. Es sind nur **Verweise**, keine Volltexte.
 
 | Datei | Inhalt | Ausgewählt von |
 |---|---|---|
-| `referenzen.json` | Referenzen des Eigentümers: sein Kanon, seine Vorbilder, seine Sammlungen | Mensch |
+| `referenzen.json` | Verweise des Eigentümers: Ausgangspunkte zu Leuten, Projekten, Papern, Haltungen, Domänen, Methoden | Mensch |
 | `recherche.json` | Quellen, die Agenten recherchiert haben (Feldforschung, Kanon, Werkzeuge) | Agent |
 | `uebersicht.md` | **erzeugt**: lesbare Tabelle aller Quellen | — |
 
-Die Trennung ist gewollt. Die Auswahl des Menschen wiegt mehr als die
-Recherche des Agenten (Prinzip 1: Gestaltung ist Entscheidung). Fachpakete
-stellen deshalb Referenzen aus `referenzen.json` voran.
+Die Trennung zeigt, wer worauf verwiesen hat. Die Verweise des Menschen sind
+**Ausgangspunkte zum Erschließen**: Sie sagen, wohin er schaut. Sie sind kein
+Kanon und kein Urteil. Was daraus für ein Fachpaket folgt, wird erst erschlossen
+und dann vorgelegt.
 
 JSON statt YAML, weil der Build ohne Abhängigkeiten auskommt (`decisions/0009`).
 
