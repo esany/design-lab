@@ -34,8 +34,8 @@ volatil ist und die Bindung an ein Tooling riskant.
 | A01 | Unterstützung im **gesamten Entwurfsprozess**: Analyse und Synthese, Typografie, Grafikdesign, Print, Animation, freies Arbeiten, elementare Geometrie, konkrete Kunst, Suprematismus, Inspiration, Kunst- und Bildwissenschaft, Diagrammatik, Informationsdesign, Wissensvermittlung, Ausstellungsdesign, Informationsvisualisierung, organische Visualisierungssysteme, HMI | Gibt es für das Feld ein Fachpaket und mindestens ein Werk? | **offen** — 1 Studie (konkrete Kunst/Farbe); Methoden für 5 Felder |
 | A02 | **Übergeordnete, strategische Fragestellungen** bearbeiten, unabhängig vom Tooling; Figma ist nur ein Kanal; Design-System egal ob Penpot, Figma oder Code | Funktioniert die Arbeit ohne ein bestimmtes Werkzeug? | **teilweise** — Prinzip ja, kein strategisches Werk |
 | A03 | **Profi-Werkzeuge, keine Bastellösung** (Niveau: Mermaid, Observable Plot, D3, Vega-Lite und darüber) | Nutzt das Werk das jeweils professionelle offene Werkzeug? | **offen** — Studie in einfachem JavaScript |
-| A04 | **Fachexpertise, Best Practice und Stand der Technik als Tooling** verfügbar — belegt aus Community, Repos, Papern, Projekten | Hat jedes Feld Kanon, Best Practice, Stand der Technik, Qualitätskriterien — mit Quellen? | **offen** — 5 Methoden-Skills, ohne Stand der Technik und Community-Belege |
-| A05 | **Rolle der KI je Kontext** benennen — was sie leistet und was nicht, bezogen auf Best Practice | Ist pro Feld beschrieben, was die KI tut, was der Mensch, wo die Grenze ist? | **teilweise** — allgemein in AGENTS.md, nicht pro Feld |
+| A04 | **Fachexpertise, Best Practice und Stand der Technik als Tooling** verfügbar — belegt aus Community, Repos, Papern, Projekten | Hat jedes Feld Kanon, Best Practice, Stand der Technik, Qualitätskriterien — mit Quellen? | **teilweise** — Fachpaket „Vermitteln“ (1 von 6) mit Kanon, Stand der Technik und 49 Korpus-Quellen; noch ohne Werk erprobt |
+| A05 | **Rolle der KI je Kontext** benennen — was sie leistet und was nicht, bezogen auf Best Practice | Ist pro Feld beschrieben, was die KI tut, was der Mensch, wo die Grenze ist? | **teilweise** — pro Feld beschrieben für „Vermitteln“ (1 von 6) |
 | A06 | **Mehrwert gegen das Mittelmaß**: Gestaltung, Kunst, Kreativität, Haltung stärken, nicht ersetzen | Zeigt das Werk bewusste Abweichung vom Erwartbaren? | **teilweise** — Prinzip 1, Negativfolie in einer Studie |
 | A07 | **Verlässliche Ergebnisse** (Erfahrung: NotebookLM mit willkürlichen Inhalten) | Sind Aussagen belegt, geprüft, Lücken sichtbar? Gibt es einen Prüffall? | **teilweise** — Regel und Skill, kein Prüffall, nicht erprobt |
 | A08 | **Alle Einstellungen und Funktionen nachvollziehbar**: Kontext und Erklärung, gestuft nach Bedarf (progressive Offenlegung, zeitgemäße Interaktionsmuster) | Erklärt sich jede Funktion in Stufen? | **teilweise** — in der Studie; Labor-Website und Übersicht nicht |
@@ -71,7 +71,7 @@ volatil ist und die Bindung an ein Tooling riskant.
 
 ## Gesamtbild
 
-- **erfüllt:** 11 · **teilweise:** 12 · **offen:** 4 (von 27)
+- **erfüllt:** 11 · **teilweise:** 13 · **offen:** 3 (von 27) — Stand nach Fachpaket „Vermitteln“
 - Stark: Steuerung, Transparenz, Kosten, Sicherheit.
 - Schwach: **das Werk und die Fachlichkeit** (A01, A03, A04, A12, A25) — der
   eigentliche Zweck des Labors.

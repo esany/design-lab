@@ -11,8 +11,8 @@ machen — es genügt zu sagen: **„… rückgängig“**.
   jeder Übernahme selbst.
 - **Arbeitsweise:** Agenten arbeiten im freigegebenen Rahmen selbstständig;
   offene Punkte und Gestaltungsfragen klären wir gemeinsam (`decisions/0019`).
-- **Inhalt:** 12 Prinzipien · 10 Skills · Modul „System“ · 1 Studie
-  (abgeschlossen) · Feldforschung · Radar · 20 Entscheidungen.
+- **Inhalt:** 12 Prinzipien · 11 Skills (davon 1 Fachpaket) · Korpus mit 49 Quellen · Modul „System“ · 1 Studie
+  (abgeschlossen) · Feldforschung · Radar · 21 Entscheidungen.
 - **Status:** Experiment, Laufzeit bis Ende November 2026
   (`experiments/2026-10-labor-aufbau.md`).
 
@@ -33,6 +33,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 | 2026-10-27 | Studie „Reihe und Verschiebung“ abgeschlossen, bleibt als Referenz | Ihre Entscheidung: nicht weiterarbeiten | „Studie wieder öffnen“ |
 | 2026-10-27 | D3sign-Prinzipien übernommen: Werk vor System, Vertrauen statt Scheinreife, Stoppen statt simulieren, Widerspruchspflicht, Priorisierung, Skill `fundstueck`, Modul „System“ | Ihr „ja“ (0020) | „D3sign-Übernahme rückgängig“ |
 | 2026-10-27 | Feldforschung KI × Gestaltung (KINDLAB, KITeGG, UdK, FHP, Burg, KHM …): Befunde, Einordnung, 4 Entwürfe als Issues #6–#9, Radar ergänzt | Ihr Rechercheauftrag | „Feldforschung rückgängig“ |
+| 2026-10-27 | **Fachpaket „Vermitteln“** (Issue #7): Ihr Kanon zuerst, Spannungen im Kanon offen benannt, Ablauf in 8 Schritten, Stand der Technik vom 27.10., Prüffragen, Mittelmaß-Muster, „Verlernen“, Rolle der KI, Werkzeugkette. Vorlage für alle Fachpakete (0021) | Ihr „ja“, A04/A05 | „Fachpakete rückgängig“ |
 | 2026-10-27 | **Korpus als Daten** (Issue #6): 49 Quellen — 22 aus Ihren Referenzen (UCLAB, Dörk, Müller, Bremer, Lupi, Stefaner, Munzner, Manovich, Gerstner, Pinterest), 27 recherchiert. Der Build prüft jede Quelle und jeden Verweis `[k:…]`; Übersicht in `corpus/uebersicht.md` | Fachpakete brauchen belegte Quellen (A04, A07) | „Korpus rückgängig“ |
 | 2026-10-27 | Maßstab festgehalten: `intent.md` (27 Anforderungen, ehrlich bewertet) und `herkunft-d3sign.md` (33 Prinzipien abgeglichen) | Ihr Audit-Auftrag | „Maßstab rückgängig“ |
 
@@ -49,7 +50,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 
 ## In Arbeit
 
-- Fachpaket „Vermitteln“: #6 erledigt → #7 → #8 (Ihr „ja“)
+- Fachpaket „Vermitteln“: #6 und #7 erledigt → **#8: erstes Werk** mit Observable Plot und offenen Daten, geprüft gegen das Paket
 
 ## Nächste Schritte (laufen ohne Sie)
 
