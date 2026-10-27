@@ -45,6 +45,28 @@ höchstens „Vorschlag:“), **Nächster Schritt**.
 - Bibliotheken (D3, Observable Plot, p5.js) nur als feste Version und lokal
   oder per gepinntem CDN-Link mit Versionsnummer.
 
+## Erklärbarkeit (gestufte Offenlegung)
+
+Jede Einstellung, jede Funktion und jedes Ergebnis muss nachvollziehbar sein —
+nach Bedarf in Stufen:
+
+| Stufe | sichtbar | Inhalt |
+|---|---|---|
+| 1 | immer | Bezeichnung, aktueller Wert, ein Satz „was es tut“ |
+| 2 | auf Klick (`?`) | was, warum, Wirkung, „Ausprobieren: …“ |
+| 3 | aufklappbar (`<details>`) | wie umgesetzt (Formel/Algorithmus), Quelle, Belegstatus, Grenzen |
+| live | bei Auswahl | Herleitung eines konkreten Ergebnisses (z. B. eines Feldes) Schritt für Schritt |
+
+Regeln:
+- Texte stehen getrennt vom Code in `texte.js` der Studie — bearbeitbar ohne
+  Programmierkenntnis.
+- Fehlt zu einer Einstellung ein Text, meldet die Studie einen Fehler; die
+  automatische Prüfung schlägt dann an.
+- Nur relevante Einstellungen zeigen (abhängig von Modus/System).
+- Ein Schalter „Alle Erklärungen öffnen“ für vollständige Lektüre.
+- Zugänglich: Erklär-Knöpfe mit `aria-expanded`, Tastaturbedienung,
+  Live-Bereiche mit `aria-live`.
+
 ## Prüfen
 
 1. `node tools/build.mjs` — aktualisiert Index und prüft Frontmatter.

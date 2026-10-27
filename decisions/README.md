@@ -25,3 +25,5 @@ wird zurückgebaut, bevor gemergt wird.
 | 0013 | [Vorlagen für Anforderungen und Pull Requests](0013-vorlagen.md) | Vorschlag |
 | 0014 | [Kreuzprüfung Claude ↔ Codex über GitHub](0014-kreuzpruefung-claude-codex.md) | Vorschlag (nicht umgesetzt) |
 | 0015 | [Geplante Pflege-Aufgaben](0015-geplante-pflege.md) | Vorschlag (nicht umgesetzt) |
+| 0016 | [Erklärbarkeit in Stufen für alle Studien](0016-erklaerbarkeit-in-stufen.md) | Vorschlag (auf Anforderung) |
+| 0017 | [Ittens Farbkontraste als Methode — übersetzt in OKLCH](0017-itten-in-oklch.md) | Vorschlag (auf Anforderung) |

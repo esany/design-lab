@@ -3,62 +3,62 @@ title: Reihe und Verschiebung
 date: 2026-10-27
 method: konkrete-kunst
 status: offen
-tags: [geometrie, farbe, serie, permutation, oklch]
+tags: [geometrie, farbe, serie, permutation, itten, oklch]
 ---
 
 # Reihe und Verschiebung
 
 ## Frage
 
-Wie viel Ordnung braucht ein quadratisches Feld aus gleichwertigen Farben,
-damit eine Regel sichtbar wird — und ab wann kippt Ordnung in Ornament?
+Was leistet die **Ordnung**, was leistet die **Farbe**? Die Studie trennt beide:
+eine Anordnungsregel aus der konkreten Kunst (Permutation) und ein wählbares
+Farbsystem — eine neutrale Tonreihe oder einer der sieben Farbkontraste nach
+Johannes Itten (Skill `farbkontraste-itten`).
 
 ## Regel
 
-- Raster `n × n`, `k` Farben.
-- Zelle `(i, j)` erhält Farbe `(i · s + j) mod k`.
-  Jede Zeile ist die um `s` verschobene vorige (zyklische Permutation).
-- Farben: `k` gleiche Schritte im Farbton (OKLCH), Helligkeit und Buntheit
-  konstant — damit nur der Ton variiert, nicht das Gewicht.
-- **Gleiche Mengen** genau dann, wenn `k` ein Teiler von `n` ist.
-  Die Studie misst das bei jedem Zustand.
+**Anordnung:** Eine Farbfolge der Länge `m` wird über ein Raster `n × n`
+verteilt. Feld `(i, j)` erhält das Glied `p = (i · s + j) mod m` — jede Zeile
+ist die um `s` verschobene vorige. **Negativfolie:** dieselbe Folge, zufällig
+verteilt (fester Seed).
 
-**Negativfolie:** dieselben Mittel (Raster, Farben), zufällig verteilt. Sie
-zeigt, was ohne Regel entsteht — das „Durchschnittsbild“ einer Fläche.
+**Farbsysteme:**
 
-## Parameter
+| System | Farbfolge |
+|---|---|
+| Tonreihe (OKLCH) | `k` Töne in gleichen Schritten, L und C konstant |
+| Farbe-an-sich | Itten-Farben in größter Buntheit (3, 6 oder 12) |
+| Hell-Dunkel | Helligkeitsstufen, unbunt oder in einem Ton |
+| Kalt-Warm | Pole Rotorange/Blaugrün ± Nachbarn, gleiche L und C |
+| Komplementär | Gegenfarben nach Itten-Kreis **oder** Wahrnehmung (OKLCH +180°), mit Mischstufen |
+| Simultan | eine bunte Farbe + neutrales Grau gleicher Helligkeit |
+| Qualität | ein Ton, Sättigung in Stufen bis Grau |
+| Quantität | zwei Farben im Flächenverhältnis nach Lichtwerten (Goethe/Itten) — als gewichtete Folge |
 
-| Parameter | Bereich | Wirkung |
-|---|---|---|
-| `n` | 2–24 | Feinheit des Rasters |
-| `k` | 2–12 | Anzahl der Farben |
-| `s` | 0 … k−1 | Verschiebung: 0 = Streifen, 1 = Diagonale, andere = Sprünge |
-| `gap` | 0–0,3 | Fuge zwischen Feldern (relativ) |
-| `L`, `C`, `h` | OKLCH | Helligkeit, Buntheit, Startton |
-| `seed` | 1–999 | nur für die Negativfolie |
+## Erklärbarkeit
 
-Jeder Zustand ist per URL teilbar; Export als SVG mit sRGB-Farben.
+Jede Einstellung erklärt sich in Stufen (Skill `studie`, Abschnitt
+Erklärbarkeit): Kurzzeile → `?` → „Wie umgesetzt“ und „Quelle und Grenzen“.
+Ein Klick auf ein Feld (oder Pfeiltasten) zeigt dessen vollständige
+Herleitung bis zum Farbwert. Der **Erklärmodus** schreibt die Position `p` in
+jedes Feld. Alle Texte stehen in `texte.js`.
 
 ## Was geprüft wurde (Agent)
 
-- Regel umgesetzt wie formuliert; Mengenmessung zeigt bei `n=12, k=4`
-  je 36 Felder pro Farbe.
-- Farbumrechnung OKLCH → sRGB mit Rücknahme der Buntheit bei
-  Gamut-Überschreitung (Ton und Helligkeit bleiben erhalten).
-- Nicht geprüft: Druckwiedergabe (CMYK), Wirkung gleicher Mengen bei
-  unterschiedlicher wahrgenommener Farbschwere.
+- Alle acht Farbsysteme rendern ohne Fehler; Mengenmessung entspricht dem Soll
+  der Folge, z. B. Quantität Gelb/Violett harmonisch bei n = 12: 36 : 108 = 1 : 3.
+- Herleitung eines Feldes stimmt mit der Formel überein (Stichproben).
+- Komplementär: Itten-Paar Rot/Grün mischt sich in OKLab **nicht** zu Grau,
+  das wahrnehmungsbasierte Paar schon — als Lerninhalt offen ausgewiesen.
+- Mobil ohne horizontalen Überlauf; Tastatursteuerung der Feldauswahl.
+- **Nicht geprüft:** Druckwiedergabe; fachliche Gegenlesung der Itten-Texte
+  durch eine Fachperson; Zuordnung der zwölf Itten-Farben zu OKLCH-Tönen
+  (Annäherung des Agenten).
 
 ## Beobachtung
 
 *Vom Menschen auszufüllen.*
 
-Vorschlag zum Hinsehen: Bei `s = 0` dominiert die Richtung (Streifen), bei
-`s = 1` die Diagonale. Bei `k = 5, s = 2` entsteht ein Feld ohne
-Hauptrichtung — die Regel ist streng, aber nicht mehr sofort lesbar. Liegt dort
-die Grenze zwischen Ordnung und Ereignis?
-
 ## Nächster Schritt
 
-Offen — mögliche Fortsetzungen: Progression der Feldgrößen statt gleicher
-Module; zweite Regel für Helligkeit (überlagerte Reihen); Übertragung als
-Druck (Typst/PDF) oder Raum (Blender).
+Offen.
