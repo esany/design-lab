@@ -11,8 +11,8 @@ machen — es genügt zu sagen: **„… rückgängig“**.
   jeder Übernahme selbst.
 - **Arbeitsweise:** Agenten arbeiten im freigegebenen Rahmen selbstständig;
   offene Punkte und Gestaltungsfragen klären wir gemeinsam (`decisions/0019`).
-- **Inhalt:** 9 Prinzipien · 9 Methoden (Skills) · 1 Studie (abgeschlossen) ·
-  Radar · 19 Entscheidungen.
+- **Inhalt:** 12 Prinzipien · 10 Skills · Modul „System“ · 1 Studie
+  (abgeschlossen) · Feldforschung · Radar · 20 Entscheidungen.
 - **Status:** Experiment, Laufzeit bis Ende November 2026
   (`experiments/2026-10-labor-aufbau.md`).
 
@@ -31,6 +31,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 | 2026-10-27 | Geplante Aufgaben: Radar-Scan montags 7:38, Pflege am 1. um 7:42 (Berlin) | Wunsch Pflege/Radar | „Radar-Scan/Pflege stoppen“ |
 | 2026-10-27 | Erledigte Arbeitszweige werden automatisch gelöscht | Ordnung im Repo | in GitHub-Einstellungen umstellbar |
 | 2026-10-27 | Studie „Reihe und Verschiebung“ abgeschlossen, bleibt als Referenz | Ihre Entscheidung: nicht weiterarbeiten | „Studie wieder öffnen“ |
+| 2026-10-27 | D3sign-Prinzipien übernommen: Werk vor System, Vertrauen statt Scheinreife, Stoppen statt simulieren, Widerspruchspflicht, Priorisierung, Skill `fundstueck`, Modul „System“ | Ihr „ja“ (0020) | „D3sign-Übernahme rückgängig“ |
 | 2026-10-27 | Feldforschung KI × Gestaltung (KINDLAB, KITeGG, UdK, FHP, Burg, KHM …): Befunde, Einordnung, 4 Entwürfe als Issues #6–#9, Radar ergänzt | Ihr Rechercheauftrag | „Feldforschung rückgängig“ |
 | 2026-10-27 | Maßstab festgehalten: `intent.md` (27 Anforderungen, ehrlich bewertet) und `herkunft-d3sign.md` (33 Prinzipien abgeglichen) | Ihr Audit-Auftrag | „Maßstab rückgängig“ |
 
@@ -43,7 +44,6 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 
 ## In Arbeit
 
-- D3sign-Prinzipien übernehmen (Ihr „ja“)
 - Fachpaket „Vermitteln“: Issues #6 → #7 → #8 (Ihr „ja“)
 
 ## Nächste Schritte (laufen ohne Sie)

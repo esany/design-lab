@@ -1,5 +1,7 @@
 # System
 
+Modul „System“: Prinzipien für Design-Systeme in [`prinzipien.md`](prinzipien.md) (aus D3sign übernommen).
+
 Design-Tokens des Labors selbst im offenen DTCG-Format (Version 2025.10).
 Quelle der Wahrheit: `tokens/*.tokens.json`. Daraus erzeugt
 `node tools/build.mjs` die Datei `assets/tokens.css`.

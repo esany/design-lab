@@ -57,7 +57,7 @@ volatil ist und die Bindung an ein Tooling riskant.
 
 | Nr. | Anforderung | Prüffrage (Maßstab) | Stand |
 |---|---|---|---|
-| A17 | **Arbeitsteilung Gestalter–Maschine** aus D3sign übernehmen | Ist klar, wer was führt? | **erfüllt** — AGENTS.md (siehe auch `herkunft-d3sign.md`) |
+| A17 | **Arbeitsteilung Gestalter–Maschine** aus D3sign übernehmen | Ist klar, wer was führt? | **erfüllt** — AGENTS.md; D3sign-Prinzipien zu 29/33 übernommen (`herkunft-d3sign.md`) |
 | A18 | **Kein Klick-Durchreicher**: Agent arbeitet selbstständig im Rahmen | Musste der Mensch Technik bedienen? | **erfüllt** seit 0019 |
 | A19 | **Transparent, nachvollziehbar, rückgängig** — flexibel, ohne Fehlerquellen und Qualitätsverlust | Ist jede Änderung in `stand.md` mit Rückgängig-Weg? | **erfüllt** |
 | A20 | **Offene Punkte und Unsicherheiten gemeinsam klären**, transparent gemacht | Stehen Unsicherheiten sichtbar als Frage? | **erfüllt** |
@@ -65,13 +65,13 @@ volatil ist und die Bindung an ein Tooling riskant.
 | A22 | **Kein Entwickler-Review**: Fragen in Alltagssprache | Wurde der Mensch mit Code/Dateien zum Durchlesen belastet? | **erfüllt** seit 0018 |
 | A23 | **Lebendig und frisch** — Repo und Werkzeug bleiben aktuell | Läuft die Pflege, wird Veraltetes sichtbar? | **teilweise** — eingerichtet, noch nicht gelaufen |
 | A24 | **Alles ist Experiment** | Ist der Experimentstatus sichtbar? | **erfüllt** |
-| A25 | **Modular**: der alte Intent (Design-System-Grundbaustein) ist ein Modul im neuen | Gibt es das Modul „System“ mit seinen Prinzipien? | **offen** — nur Lab-Tokens |
+| A25 | **Modular**: der alte Intent (Design-System-Grundbaustein) ist ein Modul im neuen | Gibt es das Modul „System“ mit seinen Prinzipien? | **teilweise** — Prinzipien in `system/prinzipien.md`, nicht erprobt |
 | A26 | **Gemeinsames Projektgedächtnis**, Gegenprüfung durch zweites Modell, deterministische Prüfung (Impulse des Kollegen) | Liegt Wissen im Repo? Prüft ein zweites Modell? | **teilweise** — Gedächtnis und Prüfungen ja; zweites Modell offen |
-| A27 | **Fundstücke jederzeit einbringen** — bewertet, nicht blind übernommen | Gibt es einen Bewertungsweg? | **teilweise** — praktiziert (OpenClaw), nicht festgehalten |
+| A27 | **Fundstücke jederzeit einbringen** — bewertet, nicht blind übernommen | Gibt es einen Bewertungsweg? | **erfüllt** — Skill `fundstueck` |
 
 ## Gesamtbild
 
-- **erfüllt:** 10 · **teilweise:** 12 · **offen:** 5 (von 27)
+- **erfüllt:** 11 · **teilweise:** 12 · **offen:** 4 (von 27)
 - Stark: Steuerung, Transparenz, Kosten, Sicherheit.
 - Schwach: **das Werk und die Fachlichkeit** (A01, A03, A04, A12, A25) — der
   eigentliche Zweck des Labors.

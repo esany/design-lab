@@ -58,12 +58,33 @@ regelmäßig geprüft (siehe `evals/`).
 Eine Regel entsteht erst, wenn etwas dreimal getan wurde. Was nicht genutzt
 wird, wird archiviert. Das Labor dokumentiert Scheitern genauso wie Erfolg.
 
-## 9. Zeiten ohne Maschine
+## 9. Werk vor System — und beides getrennt ausweisen
+
+Das Labor dient dem Gestalten. Arbeit am Werk (Studie, Recherche, Gestaltung)
+und Arbeit am System (Regeln, Werkzeuge, Abläufe) werden getrennt benannt und
+getrennt bewertet. Systemarbeit braucht einen Anlass aus der Werkarbeit — sonst
+wächst das Gerüst statt des Werks.
+
+## 10. Vertrauen, Unterstützung, Verlässlichkeit — statt Scheinreife
+
+Ein Ergebnis ist nicht gut, weil es vollständig aussieht. Es muss Vertrauen
+herstellen (Status, Quelle, Grenzen sichtbar), den Menschen entlasten (lesbar,
+entscheidbar) und verlässlich sein (Inhalt, Form und Anspruch passen
+zusammen). Leere Gerüste, Platzhalter und formale Vollständigkeit ohne Gehalt
+gelten als nicht erfüllt.
+
+## 11. Stoppen statt simulieren
+
+Passt ein Werkzeug, ein Zugang oder eine Quelle nicht zur Frage, wird die
+Lücke benannt — nicht durch eine Ersatzhandlung überdeckt, die nur so aussieht,
+als wäre die Frage beantwortet.
+
+## 12. Zeiten ohne Maschine
 
 Hand, Material, Skizze, Raum. Das Urteil bleibt das Maß — nicht der Generator.
 
 ---
 
-**Herkunft:** Prinzipien 3, 4, 6 sind aus dem früheren Arbeits-Repo
-„D3sign“ (2026) destilliert — dort als Evidenzstatus, Trennung von
-Erstellen/Prüfen/Dokumentieren und Klärung der Übernahmeart erprobt.
+**Herkunft:** Prinzipien 3, 4, 6, 9, 10, 11 stammen aus dem früheren
+Arbeits-Repo „D3sign“ (2026: D-014, D-036, D-026, D-025, D-035,
+Arbeitsprinzipien zur Toolnutzung). Abgleich: [`herkunft-d3sign.md`](herkunft-d3sign.md).
