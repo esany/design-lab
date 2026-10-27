@@ -59,10 +59,11 @@ Begründung (Skill `pflege`). Stand des Radars: **2026-10-27**.
 | GSAP, Remotion | verbreitet, aber nicht Open Source — nur bewusst | 2026-10 |
 | OpenClaw | persönlicher Agent mit breiten Systemrechten; 341 schadhafte ClawHub-Skills (02/2026), RCE-Lücke CVE-2026-25253, Zugangsdaten im Klartext. Entscheidung: unsicheres System, nicht im Netzwerk. Für Gestaltung ohne Mehrwert gegenüber dem bestehenden Stack | 2026-10 |
 
+**Quellen zu OpenClaw:** [openclaw.ai](https://openclaw.ai/) ·
+[The Hacker News, 02/2026](https://thehackernews.com/2026/02/researchers-find-341-malicious-clawhub.html) ·
+[DigitalOcean: 7 Security Challenges](https://www.digitalocean.com/resources/articles/openclaw-security-challenges)
+
 ## Neu — zu bewerten
 
 *Hier trägt der wöchentliche Radar-Scan Funde ein.*
 
-**Quellen zu OpenClaw:** [openclaw.ai](https://openclaw.ai/) ·
-[The Hacker News, 02/2026](https://thehackernews.com/2026/02/researchers-find-341-malicious-clawhub.html) ·
-[DigitalOcean: 7 Security Challenges](https://www.digitalocean.com/resources/articles/openclaw-security-challenges)
