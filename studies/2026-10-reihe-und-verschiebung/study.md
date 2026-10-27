@@ -2,7 +2,7 @@
 title: Reihe und Verschiebung
 date: 2026-10-27
 method: konkrete-kunst
-status: offen
+status: behalten
 tags: [geometrie, farbe, serie, permutation, itten, oklch]
 ---
 
@@ -57,8 +57,9 @@ jedes Feld. Alle Texte stehen in `texte.js`.
 
 ## Beobachtung
 
-*Vom Menschen auszufüllen.*
+Abgeschlossen am 27.10.2026: wird nicht weitergeführt. Bleibt als Referenz für
+Anordnung × Farbsystem und für gestufte Erklärungen erhalten.
 
 ## Nächster Schritt
 
-Offen.
+Keiner.
