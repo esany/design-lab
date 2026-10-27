@@ -1,0 +1,49 @@
+/* Erzeugt aus system/tokens/*.tokens.json — nicht von Hand bearbeiten. */
+:root {
+  --lab-color-paper: #f4f2ed;
+  --lab-color-ink: #121211;
+  --lab-color-grey: #71706b;
+  --lab-color-rule: #cfccc5;
+  --lab-color-signal: #d92d17;
+  --lab-color-night: #151514;
+  --lab-color-chalk: #e8e6e0;
+  --lab-color-ash: #a09e99;
+  --lab-color-slate: #363533;
+  --lab-font-sans: "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+  --lab-font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --lab-space-1: 8px;
+  --lab-space-2: 16px;
+  --lab-space-3: 24px;
+  --lab-space-4: 32px;
+  --lab-space-6: 48px;
+  --lab-space-8: 64px;
+  --lab-space-12: 96px;
+  --lab-space-unit: 8px;
+  --lab-size-text-s: 0.8125rem;
+  --lab-size-text-m: 1rem;
+  --lab-size-text-l: 1.5rem;
+  --lab-size-text-xl: 3rem;
+  --lab-size-measure: 38rem;
+  --lab-bg: #f4f2ed;
+  --lab-fg: #121211;
+  --lab-muted: #71706b;
+  --lab-line: #cfccc5;
+  --lab-accent: #d92d17;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --lab-bg: #151514;
+    --lab-fg: #e8e6e0;
+    --lab-muted: #a09e99;
+    --lab-line: #363533;
+    --lab-accent: #d92d17;
+  }
+}
+:root[data-theme="dark"] {
+  --lab-bg: #151514;
+  --lab-fg: #e8e6e0;
+  --lab-muted: #a09e99;
+  --lab-line: #363533;
+  --lab-accent: #d92d17;
+}

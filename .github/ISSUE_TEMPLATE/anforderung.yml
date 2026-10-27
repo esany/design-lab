@@ -1,0 +1,53 @@
+name: Anforderung
+description: Etwas, das das Labor tun, untersuchen oder bauen soll.
+title: "[Anforderung] "
+labels: ["anforderung"]
+body:
+  - type: textarea
+    id: was
+    attributes:
+      label: Was möchtest du?
+      description: In deinen Worten. Ein Satz reicht, mehr hilft.
+    validations:
+      required: true
+  - type: textarea
+    id: warum
+    attributes:
+      label: Warum / wofür?
+      description: Frage, Projekt, Neugier — was soll am Ende klarer sein?
+  - type: dropdown
+    id: bereich
+    attributes:
+      label: Bereich
+      multiple: true
+      options:
+        - Analyse und Synthese
+        - Typografie
+        - Grafikdesign
+        - Print
+        - Animation
+        - Freies Arbeiten
+        - Elementare Geometrie / konkrete Kunst
+        - Kunst- und Bildwissenschaft
+        - Diagrammatik
+        - Informationsdesign / -visualisierung
+        - Wissensvermittlung
+        - Ausstellungsdesign
+        - HMI
+        - Labor selbst (Werkzeuge, Regeln, Pflege)
+  - type: dropdown
+    id: form
+    attributes:
+      label: Was soll herauskommen?
+      options:
+        - Studie (visuell, interaktiv)
+        - Recherche mit Belegen
+        - Methode / Skill
+        - Werkzeug oder Automatisierung
+        - Kritik einer Arbeit
+        - weiß ich noch nicht — schlag etwas vor
+  - type: textarea
+    id: material
+    attributes:
+      label: Material, Links, Beispiele
+      description: Bilder hineinziehen, Links einfügen. Keine vertraulichen Inhalte — das Repo ist öffentlich.

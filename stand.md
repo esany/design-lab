@@ -1,0 +1,46 @@
+# Stand
+
+Gemeinsame Übersicht zum Durchgehen. Jede Änderung ist einzeln rückgängig zu
+machen — es genügt zu sagen: **„… rückgängig“**.
+
+**Zuletzt aktualisiert:** 2026-10-27
+
+## Wo das Labor steht
+
+- **Website:** https://esany.github.io/design-lab/ — aktualisiert sich nach
+  jeder Übernahme selbst.
+- **Arbeitsweise:** Agenten arbeiten im freigegebenen Rahmen selbstständig;
+  offene Punkte und Gestaltungsfragen klären wir gemeinsam (`decisions/0019`).
+- **Inhalt:** 9 Prinzipien · 9 Methoden (Skills) · 1 Studie · Radar ·
+  19 Entscheidungen.
+- **Status:** Experiment, Laufzeit bis Ende November 2026
+  (`experiments/2026-10-labor-aufbau.md`).
+
+## Letzte Änderungen
+
+| Datum | Was | Warum | Rückgängig |
+|---|---|---|---|
+| 2026-10-27 | Labor aufgebaut: Regeln, Prinzipien, Methoden, Website, Prüfungen | Startversion | „Labor-Aufbau rückgängig“ |
+| 2026-10-27 | Studie „Reihe und Verschiebung“ mit Ittens Farbkontrasten und gestuften Erklärungen | Anforderung | „Itten-Erweiterung rückgängig“ |
+| 2026-10-27 | Entscheidungen eingetragen; Repo öffentlich, alle Rechte vorbehalten | Antworten im Chat | — (Entscheidung) |
+| 2026-10-27 | Arbeitsregel 0019: selbstständig im Rahmen, `stand.md` als Übersicht | Anforderung „kein Meat-Proxy“ | „Regel 0019 rückgängig“ |
+| 2026-10-27 | D3sign auf privat gestellt | Kundendaten nicht öffentlich | in GitHub wieder umstellbar |
+| 2026-10-27 | OpenClaw geprüft und verworfen, kein Radar-Eintrag | unsicher, nicht im Netzwerk | — |
+
+## Offene Punkte — für uns gemeinsam
+
+1. **Gegenprüfung durch Codex:** braucht einmalig Ihre Freischaltung in
+   ChatGPT (Codex mit GitHub verbinden, Code-Review für `design-lab`
+   einschalten). Ohne sie prüft vorerst ein frischer Claude-Durchgang —
+   gleiche Qualität der Regeln, aber nicht „anderes Modell“.
+2. **Itten-Texte fachlich:** Stimmen die Erklärungen für Ihr Verständnis?
+3. **Itten-Farben am Bildschirm:** Passt die Annäherung der zwölf Farben an
+   Ihr Auge? (`decisions/0017`, als „nicht belegt“ markiert)
+4. **Studie „Reihe und Verschiebung“:** Ihre Beobachtung fehlt noch —
+   behalten, weiterführen oder verwerfen?
+
+## Nächste Schritte (laufen ohne Sie)
+
+- Wöchentlicher Radar-Scan (montags) und monatliche Pflege (am 1.) als
+  geplante Aufgaben.
+- Nach jeder Arbeitseinheit: diese Seite aktualisieren.

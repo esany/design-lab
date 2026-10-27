@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reihe und Verschiebung — design-lab</title>
+  <link rel="stylesheet" href="../../assets/tokens.css">
+  <link rel="stylesheet" href="../../assets/lab.css">
+  <style>
+    .back { font: var(--lab-size-text-s) var(--lab-font-mono); color: var(--lab-muted); }
+    header h1 { font-size: clamp(2rem, 6vw, 4rem); line-height: .95; letter-spacing: -.035em; margin: var(--lab-space-2) 0 var(--lab-space-2); }
+    .intro { max-width: var(--lab-size-measure); margin: 0 0 var(--lab-space-2); font-size: var(--lab-size-text-l); line-height: 1.3; }
+    .toolbar { display: flex; flex-wrap: wrap; gap: var(--lab-space-1) var(--lab-space-2); align-items: center; margin-bottom: var(--lab-space-4); }
+
+    /* Erklärungen: drei Stufen */
+    .hint { margin: 2px 0 0; font-size: var(--lab-size-text-s); color: var(--lab-muted); line-height: 1.35; }
+    .more { margin: var(--lab-space-1) 0 0; padding: var(--lab-space-1) var(--lab-space-2); border-left: 2px solid var(--lab-accent); font-size: var(--lab-size-text-s); line-height: 1.45; }
+    .more[hidden] { display: none; }
+    .info { flex: none; width: 1.5rem; height: 1.5rem; padding: 0; border-radius: 50%; border: 1px solid var(--lab-muted); color: var(--lab-muted); background: none; font: 700 .75rem/1 var(--lab-font-sans); cursor: pointer; }
+    .info:hover, .info[aria-expanded=true] { border-color: var(--lab-accent); color: var(--lab-bg); background: var(--lab-accent); }
+    details { font-size: var(--lab-size-text-s); border-top: 1px solid var(--lab-line); padding-top: var(--lab-space-1); margin-top: var(--lab-space-1); }
+    summary { cursor: pointer; font-weight: 700; }
+    details p { margin: var(--lab-space-1) 0 0; line-height: 1.45; }
+
+    /* Bühne */
+    .stage { display: grid; gap: var(--lab-space-4); grid-template-columns: minmax(0, 1fr); border-top: 1px solid var(--lab-fg); padding-top: var(--lab-space-4); }
+    @media (min-width: 60rem) { .stage { grid-template-columns: 17rem minmax(0, 1fr); } .info-col { grid-column: 1 / -1; } }
+    @media (min-width: 80rem) { .stage { grid-template-columns: 17rem minmax(0, 1fr) 19rem; } .info-col { grid-column: auto; } }
+
+    .controls { display: grid; gap: var(--lab-space-3); align-content: start; }
+    main .controls section.group, main .info-col section, main .art-col section { padding-block: 0 var(--lab-space-3); }
+    .group h2 { font-size: var(--lab-size-text-m); display: flex; align-items: center; justify-content: space-between; gap: var(--lab-space-1); }
+    .group > .hint { margin-bottom: var(--lab-space-2); }
+    .ctl { margin-top: var(--lab-space-2); }
+    .ctl-head { display: flex; align-items: center; gap: var(--lab-space-1); font-size: var(--lab-size-text-s); }
+    .ctl-head label { flex: 1; font-weight: 700; }
+    .ctl-head output { font-family: var(--lab-font-mono); }
+    .ctl input[type=range] { width: 100%; accent-color: var(--lab-accent); margin: 4px 0 0; }
+    .ctl select, .sys select { width: 100%; font: inherit; font-size: var(--lab-size-text-s); padding: 6px; margin-top: 4px; background: var(--lab-bg); color: var(--lab-fg); border: 1px solid var(--lab-fg); }
+    .modes { display: flex; border: 1px solid var(--lab-fg); margin-top: 4px; }
+    .modes label { flex: 1; display: flex; }
+    .modes input { position: absolute; opacity: 0; }
+    .modes span { flex: 1; text-align: center; padding: var(--lab-space-1); cursor: pointer; font-size: var(--lab-size-text-s); }
+    .modes input:checked + span { background: var(--lab-fg); color: var(--lab-bg); }
+    .modes input:focus-visible + span { outline: 2px solid var(--lab-accent); outline-offset: 2px; }
+    button.text { font: inherit; font-size: var(--lab-size-text-s); background: none; color: var(--lab-fg); border: 1px solid var(--lab-fg); padding: var(--lab-space-1) var(--lab-space-2); cursor: pointer; }
+    button.text:hover { background: var(--lab-fg); color: var(--lab-bg); }
+
+    .art-col { display: grid; gap: var(--lab-space-2); align-content: start; }
+    .art-tools { display: flex; flex-wrap: wrap; gap: var(--lab-space-2); align-items: center; font-size: var(--lab-size-text-s); }
+    .art-tools label { display: flex; gap: 6px; align-items: center; }
+    .art-tools input { accent-color: var(--lab-accent); }
+    #art-wrap { outline-offset: 4px; max-width: 44rem; }
+    #art { width: 100%; aspect-ratio: 1; display: block; cursor: crosshair; }
+    .caption { font: var(--lab-size-text-s) var(--lab-font-mono); color: var(--lab-muted); }
+
+    .derive { font-size: var(--lab-size-text-s); border: 1px solid var(--lab-line); padding: var(--lab-space-2); display: grid; gap: 6px; max-width: 44rem; }
+    .derive h3 { margin: 0; font-size: var(--lab-size-text-s); }
+    .derive ol { margin: 0; padding-left: 1.25rem; display: grid; gap: 4px; }
+    .derive code { font-family: var(--lab-font-mono); }
+    .chip { display: inline-block; width: .9em; height: .9em; vertical-align: -.1em; border: 1px solid var(--lab-line); margin-right: 4px; }
+
+    .info-col { display: grid; gap: var(--lab-space-3); align-content: start; }
+    .sys h2 { font-size: var(--lab-size-text-l); line-height: 1.1; margin-bottom: var(--lab-space-1); }
+    .sys .lead { margin: 0; font-weight: 700; }
+    .sys p { font-size: var(--lab-size-text-s); line-height: 1.45; }
+    .swatches { list-style: none; margin: var(--lab-space-1) 0 0; padding: 0; display: grid; gap: 4px; }
+    .swatches li { display: grid; grid-template-columns: 1.5rem 1fr; gap: var(--lab-space-1); align-items: center; font-size: var(--lab-size-text-s); }
+    .swatches i { display: block; aspect-ratio: 1; border: 1px solid var(--lab-line); }
+    .swatches small { display: block; font-family: var(--lab-font-mono); color: var(--lab-muted); font-size: .7rem; }
+
+    .below { display: grid; gap: var(--lab-space-6); grid-template-columns: minmax(0, 1fr); margin-top: var(--lab-space-6); }
+    @media (min-width: 60rem) { .below { grid-template-columns: 2fr 1fr; } }
+    .below h2 { display: flex; align-items: center; justify-content: space-between; gap: var(--lab-space-1); }
+    .field { display: grid; grid-template-columns: repeat(auto-fill, minmax(5rem, 1fr)); gap: var(--lab-space-2); margin-top: var(--lab-space-2); }
+    .field button { padding: 0; border: 0; display: grid; gap: 4px; text-align: left; background: none; color: var(--lab-muted); cursor: pointer; }
+    .field button:hover { color: var(--lab-fg); }
+    .field button[aria-pressed=true] { color: var(--lab-accent); }
+    .field button[aria-pressed=true] svg { outline: 2px solid var(--lab-accent); outline-offset: 2px; }
+    .field svg { width: 100%; aspect-ratio: 1; display: block; }
+    .field span { font: var(--lab-size-text-s) var(--lab-font-mono); }
+    .bars { display: grid; gap: 6px; margin-top: var(--lab-space-2); }
+    .bar { display: grid; grid-template-columns: 6.5rem 1fr 4.5rem; align-items: center; gap: var(--lab-space-1); font: var(--lab-size-text-s) var(--lab-font-mono); }
+    .bar span:first-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .bar i { display: block; height: 12px; border: 1px solid var(--lab-line); }
+    .verdict { margin-top: var(--lab-space-2); font-weight: 700; }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="back" href="../../">← design-lab</a>
+    <h1>Reihe und Verschiebung</h1>
+    <p class="intro"><span id="intro"></span> <button type="button" class="info" aria-expanded="false" aria-controls="intro-more" aria-label="Erklärung zur Studie">?</button></p>
+    <div class="more" id="intro-more" hidden style="max-width: var(--lab-size-measure)"></div>
+    <div class="toolbar">
+      <button type="button" class="text" id="alle">Alle Erklärungen öffnen</button>
+      <button type="button" class="text" id="export">SVG exportieren</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="stage">
+      <form class="controls" id="controls" aria-label="Einstellungen der Studie" onsubmit="return false">
+        <section class="group" id="g-anordnung" aria-labelledby="h-anordnung"></section>
+        <section class="group" id="g-farbe" aria-labelledby="h-farbe"></section>
+      </form>
+
+      <div class="art-col">
+        <div class="art-tools">
+          <label><input type="checkbox" id="erklaer"> Erklärmodus</label>
+          <button type="button" class="info" aria-expanded="false" aria-controls="erklaer-more" aria-label="Erklärung zum Erklärmodus">?</button>
+        </div>
+        <p class="hint" id="erklaer-kurz"></p>
+        <div class="more" id="erklaer-more" hidden></div>
+        <div id="art-wrap" tabindex="0" aria-describedby="derive" aria-label="Bild der Studie. Pfeiltasten wählen ein Feld.">
+          <svg id="art" viewBox="0 0 1000 1000" role="img" aria-labelledby="art-desc"><desc id="art-desc"></desc></svg>
+        </div>
+        <p class="caption" id="caption"></p>
+        <section class="derive" id="derive" aria-live="polite" aria-labelledby="h-derive">
+          <h3 id="h-derive">Herleitung eines Feldes</h3>
+          <p class="hint" id="zelle-kurz"></p>
+          <ol id="derive-steps"></ol>
+        </section>
+      </div>
+
+      <aside class="info-col" aria-label="Erklärung des Farbsystems">
+        <section class="sys" id="sys"></section>
+      </aside>
+    </div>
+
+    <div class="below">
+      <section aria-labelledby="h-feld">
+        <h2 id="h-feld">Variantenfeld <button type="button" class="info" aria-expanded="false" aria-controls="feld-more" aria-label="Erklärung zum Variantenfeld">?</button></h2>
+        <p class="hint" id="feld-kurz"></p>
+        <div class="more" id="feld-more" hidden></div>
+        <div class="field" id="field"></div>
+      </section>
+      <section aria-labelledby="h-mess">
+        <h2 id="h-mess">Messung <button type="button" class="info" aria-expanded="false" aria-controls="mess-more" aria-label="Erklärung zur Messung">?</button></h2>
+        <p class="hint" id="mess-kurz"></p>
+        <div class="more" id="mess-more" hidden></div>
+        <div class="bars" id="bars"></div>
+        <p class="verdict" id="verdict" aria-live="polite"></p>
+      </section>
+    </div>
+  </main>
+
+  <script src="texte.js"></script>
+  <script src="studie.js"></script>
+</body>
+</html>
