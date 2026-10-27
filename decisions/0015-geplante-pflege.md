@@ -1,5 +1,5 @@
 ---
-status: freigegeben — wird nach dem Merge eingerichtet
+status: gültig
 datum: 2026-10-27
 entschieden_von: Vorschlag Agent (Claude) · Entscheidung Mensch am 2026-10-27
 ---
@@ -14,4 +14,4 @@ entschieden_von: Vorschlag Agent (Claude) · Entscheidung Mensch am 2026-10-27
 
 **Betrifft:** .agents/skills/pflege
 
-**Deine Entscheidung:** Wöchentlicher Radar-Scan und monatliche Pflege gewünscht.
+**Deine Entscheidung:** Eingerichtet 2026-10-27: Radar-Scan montags 7:38, Pflege am 1. um 7:42 (Europe/Berlin).

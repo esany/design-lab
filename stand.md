@@ -26,6 +26,10 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 | 2026-10-27 | Arbeitsregel 0019: selbstständig im Rahmen, `stand.md` als Übersicht | Anforderung „kein Meat-Proxy“ | „Regel 0019 rückgängig“ |
 | 2026-10-27 | D3sign auf privat gestellt | Kundendaten nicht öffentlich | in GitHub wieder umstellbar |
 | 2026-10-27 | OpenClaw geprüft und verworfen, kein Radar-Eintrag | unsicher, nicht im Netzwerk | — |
+| 2026-10-27 | Startversion übernommen (Pull Request #1) | Ihre Antworten im Chat | „Labor-Aufbau rückgängig“ |
+| 2026-10-27 | Website veröffentlicht automatisch nach jeder Übernahme | Wunsch „Website automatisch“ | in GitHub-Einstellungen umstellbar |
+| 2026-10-27 | Geplante Aufgaben: Radar-Scan montags 7:38, Pflege am 1. um 7:42 (Berlin) | Wunsch Pflege/Radar | „Radar-Scan/Pflege stoppen“ |
+| 2026-10-27 | Erledigte Arbeitszweige werden automatisch gelöscht | Ordnung im Repo | in GitHub-Einstellungen umstellbar |
 
 ## Offene Punkte — für uns gemeinsam
 
@@ -41,6 +45,9 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 
 ## Nächste Schritte (laufen ohne Sie)
 
-- Wöchentlicher Radar-Scan (montags) und monatliche Pflege (am 1.) als
-  geplante Aufgaben.
+- **Radar-Scan:** jeden Montag 7:38 Uhr (erster Lauf 2. November 2026).
+- **Pflege:** am 1. jeden Monats 7:42 Uhr (erster Lauf 1. November 2026).
+  Ende November wertet die Pflege das Experiment „Labor-Aufbau“ aus.
+- Beide melden sich per Push-Nachricht; Entscheidungen landen hier unter
+  „Offene Punkte“.
 - Nach jeder Arbeitseinheit: diese Seite aktualisieren.
