@@ -111,6 +111,7 @@ sichtbar machen.
 
 | Ort | Inhalt |
 |---|---|
+| `intent.md` | **Maßstab**: Intent, Ziel, Anforderungen A01–A27 — jede Arbeit prüft dagegen |
 | `principles.md` | Haltung, Prinzipien, Herkunft |
 | `stand.md` | Entwicklungsstand: Änderungen, offene Punkte, nächste Schritte |
 | `decisions/` | strukturelle Entscheidungen mit Status (Vorschlag → freigegeben → gültig → abgelöst) |
