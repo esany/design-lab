@@ -28,9 +28,15 @@ Verweise `[k:…]` führen ins Korpus (`corpus/uebersicht.md`). Die Methoden-Ski
 
 ## 1 · Kanon
 
-### Ihre Referenzen (Auswahl des Eigentümers)
+### Verweise des Eigentümers — Ausgangspunkte
 
-| Position | Kern | Was das Labor daraus nimmt |
+Diese Verweise zeigen, wohin der Eigentümer schaut: auf Leute, Projekte,
+Paper, Haltungen, Domänen und Methoden. Sie sind **kein gesetzter Kanon**.
+Die rechte Spalte ist ein *abgeleiteter* erster Ansatz, den der Mensch
+bestätigt oder verwirft. Ein Verweis wird erst durch Erschließen zu Wissen:
+Projekte ansehen, Paper lesen, Methoden herauslösen.
+
+| Verweis | Kern (belegt) | möglicher Ansatz fürs Labor (*abgeleitet*, offen) |
 |---|---|---|
 | **Tamara Munzner** [k:munzner-2014] [k:munzner-2009] | Visualisierung nach *was* (Daten), *warum* (Aufgabe), *wie* (Kodierung, Interaktion); Gestaltung in verschachtelten Ebenen mit je eigenen Fehlern | das Prüfgerüst dieses Pakets (Abschnitt 4) |
 | **Sedlmair, Meyer, Munzner** [k:sedlmair-2012] | Methode für Gestaltungsstudien mit Fachleuten | Ablauf bei Arbeiten mit echten Fachfragen |
@@ -55,7 +61,7 @@ Verweise `[k:…]` führen ins Korpus (`corpus/uebersicht.md`). Die Methoden-Ski
 | Borland, Taylor [k:borland-taylor-2007] | Regenbogenskalen verzerren Ordnung |
 | D'Ignazio, Klein [k:dignazio-klein-2020] | Macht in Daten: wer zählt, wer gezählt wird |
 
-### Spannungen im Kanon — der Mensch entscheidet
+### Spannungen zwischen den Positionen — der Mensch entscheidet
 
 *abgeleitet* aus den Positionen oben. Ein Agent legt die Spannung offen und
 schlägt Varianten auf beiden Seiten vor:

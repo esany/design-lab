@@ -17,7 +17,7 @@ Tooling verfügbar sein“ (intent A04, A05).
 - Sechs Pakete sind geplant: **Vermitteln** (zuerst), Form, Ordnung, Erkennen,
   Raum und Zeit, Interaktion.
 - Jedes Paket hat diese acht Pflichtabschnitte:
-  1. **Kanon** — die Referenzen des Eigentümers zuerst, danach recherchierte Grundlagen
+  1. **Kanon** — die Verweise des Eigentümers als Ausgangspunkte (kein gesetzter Kanon), danach recherchierte Grundlagen
   2. **Best Practice** — Ablauf, Leitlinien, Referenzprojekte
   3. **Stand der Technik** — Werkzeuge und Forschung, mit Datum
   4. **Qualitätskriterien** — Prüffragen
@@ -28,7 +28,7 @@ Tooling verfügbar sein“ (intent A04, A05).
   8. **Werkzeugkette** — welches Profi-Werkzeug wofür, mit Stand der Anbindung
 - Jede Tatsachenaussage verweist mit `[k:…]` auf das Korpus. Der Build prüft
   diese Verweise. Eigene Einordnungen sind als *abgeleitet* markiert.
-- Wo Positionen des Kanons einander widersprechen, benennt das Paket den
+- Wo Positionen einander widersprechen, benennt das Paket den
   Widerspruch. Es entscheidet ihn nicht. Die Wahl trifft der Mensch (AGENTS.md,
   Arbeitsteilung).
 - Ein Paket gilt erst dann als erprobt, wenn mit ihm ein Werk entstanden und

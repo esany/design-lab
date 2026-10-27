@@ -4,7 +4,7 @@
 > Schema: [`schema.md`](schema.md).
 
 **49 Quellen** — 22 ausgewählt vom Eigentümer, 27 recherchiert vom Agenten.
-Je Feld zuerst die Auswahl des Eigentümers. Eine Quelle kann in mehreren Feldern stehen.
+Je Feld zuerst die Verweise des Eigentümers (Ausgangspunkte, kein Kanon). Eine Quelle kann in mehreren Feldern stehen.
 
 ## vermitteln
 

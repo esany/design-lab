@@ -5,7 +5,7 @@ geschützte Abbildungen gehören nicht in dieses Repository.
 
 - **[Übersicht](uebersicht.md)** — alle Quellen nach Feld, mit Status und
   Angabe, wo sie genutzt werden (erzeugt)
-- [`referenzen.json`](referenzen.json) — **Ihre Auswahl**: Kanon, Vorbilder, Sammlungen
+- [`referenzen.json`](referenzen.json) — **Ihre Verweise**: Ausgangspunkte zu Leuten, Projekten, Papern, Haltungen, Domänen, Methoden
 - [`recherche.json`](recherche.json) — von Agenten recherchiert
 - [`schema.md`](schema.md) — Felder, Werte, Verweisform `[k:…]`
 
