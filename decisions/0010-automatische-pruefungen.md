@@ -1,5 +1,5 @@
 ---
-status: freigegeben
+status: gültig
 datum: 2026-10-27
 entschieden_von: Vorschlag Agent (Claude) · Entscheidung Mensch am 2026-10-27
 ---
@@ -14,4 +14,4 @@ entschieden_von: Vorschlag Agent (Claude) · Entscheidung Mensch am 2026-10-27
 
 **Betrifft:** .github/workflows/, tools/smoke.mjs
 
-**Deine Entscheidung:** Prüfungen ja; Website wird nach jeder Freigabe automatisch veröffentlicht (GitHub Pages).
+**Deine Entscheidung:** Prüfungen ja; Website wird nach jeder Übernahme automatisch veröffentlicht (eingerichtet 2026-10-27).
