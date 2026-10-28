@@ -29,21 +29,28 @@ Schritte laufen nacheinander.
   Welches, wird noch festgelegt.
 - Welche Aufträge an Astra oder Codex gehen, ist noch nicht entschieden.
 
-**Als Nächstes (Sonnet), in dieser Reihenfolge:**
-1. Audit-Antwort übernehmen, dann die Sicherung der Werke, dann die Verknüpfung, jede einzeln.
-   Wenn eine Prüfung anschlägt: beheben, nicht überspringen.
-2. Den Kreis auflösen: Die Issue-Arbeit wird geschlossen, die Abnahme geht an die Prüffälle.
-3. Drei Fehlerberichte schließen und ins Fallmaterial hängen. Den Plan auf „an Claude“ stellen.
-4. „Freigabehinweise angleichen“ neu verknüpfen: Es wartet auf die Audit-Antwort, nicht auf die
-   Klicks.
-5. Die Aufträge für Astra und Codex im neuen Format schreiben und als Entwurf liegen lassen. Wer
-   was bekommt, entscheidet der Eigentümer.
-6. Danach kurz melden und warten. Nichts darüber hinaus (Lehre aus dem Bug „nachziehen“).
+**Aufgeräumt am 28.10. (Sonnet):**
+- Die drei Vorlagen sind übernommen, jede einzeln: Audit-Antwort (0028, 0027), Sicherung der
+  Werke (0026), Verknüpfung von Anforderungen mit Regeln. Dabei Konflikte aufgelöst und die
+  Verknüpfung neu erzeugt.
+- Der Kreis bei den Prüffällen war schon aufgelöst: Die Issue-Arbeit ist geschlossen.
+- Drei Fehlerberichte sind geschlossen, ihr Inhalt als Fallmaterial in die Aufträge übertragen.
+  Der Plan liegt jetzt bei Claude, weil seine Fragen beantwortet sind.
+- „Freigabehinweise angleichen“ wartet nicht mehr auf deine Klicks, nur noch auf dein „mach“.
+- Für die vier Aufträge an Astra und Codex gibt es einen Zuschnitt (Kommentare in den Aufträgen).
+  Zwei sind für kleinere Modelle zu groß und sollen geteilt werden. Verteilt ist nichts.
+
+**Noch zu entscheiden (Eigentümer):** Siehe „Offene Fragen“. Danach kann ich die Aufträge teilen
+und das Label setzen.
 
 **Danach, in dieser Reihenfolge:** Modelle kennen und Aufträge besser schreiben (beides
 parallel) → Regeln prüfen → Sparmaßnahmen mit Messung → Hilfe beim Entwerfen.
 
 **Offene Fragen an den Eigentümer:**
+- Welche Aufträge gehen an Astra, welche an Codex? Vorschlag aus dem Zuschnitt: zuerst die
+  Prüffälle an Astra (zeigt, ob Astra sauber ins Labor schreibt), dann Messen an Codex. Zwei
+  Aufträge sollen vorher geteilt werden (Farbkontrast, Prüfung der Studie).
+- Dafür brauche ich von dir einen Handgriff: zwei frische Chats für die Prüffälle öffnen.
 - Den Hauptzweig schützen: Das Ja steht, es fehlen nur zwei Minuten Klicks in den
   GitHub-Einstellungen, die nur das Konto des Eigentümers machen darf.
 - Für welches Experiment gilt „eine Korrektur der Experimente vernachlässigen wir“: den
@@ -51,7 +58,7 @@ parallel) → Regeln prüfen → Sparmaßnahmen mit Messung → Hilfe beim Entwe
 
 <details><summary>Für die Modelle: Nummern und Lehren</summary>
 
-- Aufräumliste für Sonnet = Triage `research/gespraeche/2026-10-28-triage-modelle.md`,
+- Aufräumliste (erledigt) = Triage `research/gespraeche/2026-10-28-triage-modelle.md`,
   Abschnitt „Was bei Claude liegt“: PRs #48 → #47 → #54; #31 schließen, Abhängigkeit #43←#31
   entfernen; #55, #65, #52 schließen (Fallmaterial #56/#43); #62 → an:claude; #41: blocked_by
   #40 ersetzen durch Bezug auf PR #48; #56 bleibt `entwurf` (zurückgestellt); Bug #77 offen.

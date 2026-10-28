@@ -125,7 +125,7 @@ welches gemeint ist.
 
 | Thema | Stand in einem Satz | Merkzettel |
 |---|---|---|
-| **Das System in Ordnung bringen** | läuft; als Nächstes räumt Sonnet auf (Liste im Merkzettel); Untersuchung zurückgestellt | [`anschluss/system.md`](anschluss/system.md) |
+| **Das System in Ordnung bringen** | Aufräumen erledigt; wartet auf Ihre Wahl, welche Aufträge an Astra und Codex gehen; Untersuchung zurückgestellt | [`anschluss/system.md`](anschluss/system.md) |
 | **Entwicklung und Gebrauch · Möglichkeitsraum** | Recherche geschrieben, ruht; offen, wer sie macht | [`anschluss/moeglichkeitsraum.md`](anschluss/moeglichkeitsraum.md) |
 | **Werke und Gestaltung** | ruht, bis das System in Ordnung ist; Flyer fertig | [`anschluss/werke.md`](anschluss/werke.md) |
 
