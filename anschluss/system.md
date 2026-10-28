@@ -75,8 +75,8 @@ parallel) → Regeln prüfen → Sparmaßnahmen mit Messung → Hilfe beim Entwe
   zweiter Fall: Schreiben direkt auf `main`).
 - Erledigt am 28.10.: Skill `issue` (#38), 0029 (#67), Anschluss in Worten (#71), #50, #51, #53,
   #52, #55, #65, #31.
-- Lücken bei Abnahmen: ruhende Aufträge #8, #9, #23, #24, #26, #27 haben keine Ausgabe oder kein
-  „Fertig, wenn“. Beim Wiederaufnehmen schärfen.
+- Die Werke-Issues #8, #9, #23, #24, #26, #27 sind geschlossen (nicht geplant, 28.10.); beim
+  Wiederaufnehmen neu schreiben.
 - Triage und Auftragsformat für kleinere Modelle:
   `research/gespraeche/2026-10-28-triage-modelle.md`.
 - Lehren: Lesart spiegeln (#55); Vorarbeit in `research/2026-10-issue-arbeit/` ist kein Eingang;
