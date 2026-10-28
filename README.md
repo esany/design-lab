@@ -5,6 +5,17 @@ Werkzeuge. Toolunabhängig, auf offenen Formaten, lebendig.
 
 **Website:** https://esany.github.io/design-lab/ · Repo öffentlich einsehbar, alle Rechte vorbehalten.
 
+## Start mit jeder KI
+
+In jedem neuen Chat, egal mit welchem Modell, diesen Satz senden:
+
+```
+Arbeite im GitHub-Repo esany/design-lab (https://github.com/esany/design-lab). Lies zuerst AGENTS.md und stand.md, Abschnitt „Anschluss“. Nenne den nächsten Schritt in einem Satz und mach dann weiter.
+```
+
+Gleicher Text als Projekt-Anweisung in Claude oder ChatGPT. Die Regeln stehen nur in
+[`AGENTS.md`](AGENTS.md) (Abschnitt „Start jeder Sitzung“) und werden nirgends kopiert.
+
 ## Wie das Labor arbeitet
 
 ```
