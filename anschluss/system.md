@@ -44,7 +44,7 @@ Schritte laufen nacheinander.
 
 **Entschieden am 28.10. (spätabends):**
 - Die **Zuordnung der Aufträge** entscheidet der Orchestrator (Claude), nicht der Eigentümer.
-- **Zurückgestellt** sind Farbkontrast, Prüffälle mit zweitem Modell und die Prüfung der Studie.
+- **Zurückgestellt und danach geschlossen** (nicht geplant, nichts gelöscht) sind Farbkontrast, Prüffälle mit zweitem Modell und die Prüfung der Studie.
   Damit gehen vorerst keine Aufträge an Codex.
 - **Astra** bekommt die Recherche zum Möglichkeitsraum (Thema „Möglichkeitsraum“) und, wenn der
   Eigentümer es sagt, die Freigabehinweise. Begonnen wird erst auf sein „mach“.
@@ -68,15 +68,15 @@ parallel) → Regeln prüfen → Sparmaßnahmen mit Messung → Hilfe beim Entwe
 - #56 (`entwurf`, zurückgestellt): Gegenstand nur `esany/Wissensarbeit` und die Fehlerberichte
   dieses Labors. D3sign, Portfolio, pflege-arnshaugk-historie vorerst draußen.
 - #49 → `an:chatgpt` (Dient A04, A07, A29), beginnt auf „mach #49“. #41 `an:chatgpt`, ohne
-  Blocker, beginnt auf „mach #41“. #42, #43, #44 zurückgestellt (`entwurf`).
+  Blocker, beginnt auf „mach #41“. #42, #43, #44 geschlossen (nicht geplant, 28.10., Anweisung des Eigentümers; Text lesbar, wieder öffnen möglich).
 - Alle Pull Requests übernommen (0025, 0026, 0027, 0028, 0029; Verknüpfung A31–A34).
 - #40 (`an:mensch`): Klicks für den Branch-Schutz, jetzt mit „Fertig, wenn“. #39 offen
   (Sicherungs-Repo, vermutlich durch `esany/werke` erledigt). #77 offen (Bug „nachziehen“, dazu
   zweiter Fall: Schreiben direkt auf `main`).
 - Erledigt am 28.10.: Skill `issue` (#38), 0029 (#67), Anschluss in Worten (#71), #50, #51, #53,
   #52, #55, #65, #31.
-- Die Werke-Issues #8, #9, #23, #24, #26, #27 sind geschlossen (nicht geplant, 28.10.); beim
-  Wiederaufnehmen neu schreiben.
+- Lücken bei Abnahmen: ruhende Aufträge #8, #9, #23, #24, #26, #27 haben keine Ausgabe oder kein
+  „Fertig, wenn“. Beim Wiederaufnehmen schärfen.
 - Triage und Auftragsformat für kleinere Modelle:
   `research/gespraeche/2026-10-28-triage-modelle.md`.
 - Lehren: Lesart spiegeln (#55); Vorarbeit in `research/2026-10-issue-arbeit/` ist kein Eingang;

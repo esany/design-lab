@@ -21,7 +21,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 
 | Datum | Was | Warum | Rückgängig |
 |---|---|---|---|
-| 2026-10-28 | **Werke-Issues geschlossen** (#8, #9, #23, #24, #26, #27, nicht geplant; nichts gelöscht), Merkzettel angepasst | Ihre Anweisung im Chat | Issues wieder öffnen: „Werke-Issues wieder öffnen“ |
+| 2026-10-28 | **Issues #42, #43, #44 geschlossen** (Kontrast, Prüffälle mit zweitem Modell, Prüfung der Studie; nicht geplant, nichts gelöscht). Zuvor irrtümlich geschlossene Werke-Issues wieder geöffnet, deren Merkzettel-Änderung zurückgenommen | Ihre Anweisung im Chat | Issues wieder öffnen: „Prüf-Issues wieder öffnen“ |
 | 2026-10-28 | **Codex/Work nur in begründeten Fällen** (0025 Antwort 4, Skill `issue` B1 Punkt 7, Merkzettel System) | Ihre Vorgabe im Chat | „Regel Codex-Einsatz rückgängig“ (PR zurücknehmen) |
 | 2026-10-28 | **Perspektive, Folgen, Alternativen in Entscheidungen (0030)** und **Auftragsformat im Skill `issue` (B1, #82)**; Frage `docs/` als #84 gesichert (wartet auf #49) | Ihre Antwort „Option A“, „skill umsetzen“ | „Regel 0030 rückgängig“ bzw. „Auftragsformat rückgängig“ (PR zurücknehmen) |
 | 2026-10-28 | **Befund Modi, Entscheidungen, Dokumentation** (`research/2026-10-modi-und-dokumentation/befund.md`): drei Perspektiven, Lücke „Folgen“ in Entscheidungen, Optionen A–C; Auftrag #82 aus #59 ausgelagert | Ihre Frage im Chat; 0024 | Datei löschen, #82 schließen: „Befund Modi rückgängig“ |
@@ -131,7 +131,7 @@ welches gemeint ist.
 |---|---|---|
 | **Das System in Ordnung bringen** | Aufräumen erledigt, Aufträge zugeordnet (Experimente zurückgestellt); Untersuchung zurückgestellt | [`anschluss/system.md`](anschluss/system.md) |
 | **Entwicklung und Gebrauch · Möglichkeitsraum** | Recherche Astra zugeordnet; beginnt auf Ihr „mach“ | [`anschluss/moeglichkeitsraum.md`](anschluss/moeglichkeitsraum.md) |
-| **Werke und Gestaltung** | ruht, bis das System in Ordnung ist; Flyer fertig; Aufträge geschlossen | [`anschluss/werke.md`](anschluss/werke.md) |
+| **Werke und Gestaltung** | ruht, bis das System in Ordnung ist; Flyer fertig | [`anschluss/werke.md`](anschluss/werke.md) |
 
 **Wo was liegt:** Befunde in `experiments/` und `research/`, Fachwissen in
 `.agents/skills/fachpaket-*`, Quellen in `corpus/`, Entscheidungen in `decisions/`,
