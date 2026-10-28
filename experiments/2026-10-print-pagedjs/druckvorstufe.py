@@ -16,7 +16,8 @@ ein, quelle, profil, aus = sys.argv[1:5]
 
 # Softproof-RGB (wie Chrome es schreibt, 0..1 auf 4 Stellen) → CMYK 0..1
 FARBEN = {
-    "#313231": (0.654, 0.529, 0.397, 0.605),  # Fließtext
+    "#313231": (0.654, 0.529, 0.397, 0.605),  # Fließtext (Original, vierfarbig)
+    "#21201C": (0.0, 0.0, 0.0, 1.0),          # Fließtext reines Schwarz (Variante „lesbar“)
     "#BE283B": (0.029, 0.946, 0.580, 0.090),  # Zitat, Auszeichnung
     "#BE1033": (0.021, 1.000, 0.598, 0.101),  # Flächen
     "#A3D7DE": (0.331, 0.026, 0.096, 0.000),  # Hellblau
