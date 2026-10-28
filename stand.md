@@ -21,6 +21,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 
 | Datum | Was | Warum | Rückgängig |
 |---|---|---|---|
+| 2026-10-28 | **Triage:** Blocker, Zuständigkeit, welches Modell, Zuschnitt, Entwurf „Aufträge für kleinere Modelle“ (`research/gespraeche/2026-10-28-triage-modelle.md`) | Ihre Frage im Chat | „Triage rückgängig“ |
 | 2026-10-28 | **Ein Merkzettel je Thema (0029):** `anschluss/` mit drei Themen (System, Möglichkeitsraum, Werke); hier steht nur noch die Themenliste; Start und Ende in `AGENTS.md` und Skill `issue` angepasst | Ihre Antwort auf #67 | „Regel 0029 rückgängig“ |
 | 2026-10-28 | **Arbeitsteilung (0025) gültig:** Sparregeln gelten für Routinen, nicht zu Lasten der Qualität, Ihre Aufträge haben Vorrang; die Modell-Tabelle ist nur eine Vermutung, Aufträge berücksichtigen Funktionen und Limits des Modells; kein Etikett „Übergabe“. D3sign: Regeln und Prüfberichte dürfen in die Untersuchung, ohne Kundeninhalte | Ihre Antworten im Chat | „Regel 0025 rückgängig“ |
 | 2026-10-28 | **Ihre Entscheidungen eingetragen:** Spielregeln für Aufträge übernommen (PR #38); Untersuchung startet, nur über die Modelle, ohne Termin bis November (#62, #56 zugeschnitten); Merkzettel je Thema (#67); Anschluss in Worten umgeschrieben (#71) | Ihre Antworten im Chat | „Entscheidungen 28.10. rückgängig“ |
