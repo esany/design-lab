@@ -30,6 +30,10 @@
   // Zeichen U+202F nicht — deshalb als Element mit fester Breite (wie InDesign).
   const EINHEIT = /(\d)[  ](mm|cm|km|m|kg|g|t|ha|l|%|€|°C)(?![\p{L}])/gu;
 
+  // Abkürzungen aus mehreren Teilen nach Duden mit schmalem, geschütztem
+  // Leerraum: „e. V.“, „z. B.“, „d. h.“, „u. a.“ … (Entscheidung 0023)
+  const ABKUERZUNG = /\b(e|z|d|u|o|v|s)\.[ \u00A0]?(V|B|h|a|Ä|ä|o|u)\.(?=[\s,;:)“”"']|$)/g;
+
   function textknoten(wurzel) {
     const liste = [];
     const gang = document.createTreeWalker(wurzel, NodeFilter.SHOW_TEXT, {
@@ -48,6 +52,27 @@
         if (neu !== t) { zaehle(name, (t.match(muster) || []).length); t = neu; }
       }
       k.data = t;
+      // Abkürzungen: schmaler Leerraum als Element, nie umbrechen
+      ABKUERZUNG.lastIndex = 0;
+      if (ABKUERZUNG.test(t)) {
+        ABKUERZUNG.lastIndex = 0;
+        const frag = document.createDocumentFragment();
+        let pos = 0, m;
+        while ((m = ABKUERZUNG.exec(t))) {
+          frag.append(t.slice(pos, m.index));
+          const paar = document.createElement("span");
+          paar.className = "nowrap";
+          const raum = document.createElement("span");
+          raum.className = "spatium";
+          paar.append(m[1] + ".", raum, m[2] + ".");
+          frag.append(paar);
+          pos = m.index + m[0].length;
+          zaehle("Abkürzung nach Duden");
+        }
+        frag.append(t.slice(pos));
+        k.replaceWith(frag);
+        continue;   // Einheiten im selben Knoten: selten, beim nächsten Lauf
+      }
       // Zahl + Einheit
       EINHEIT.lastIndex = 0;
       if (EINHEIT.test(t)) {

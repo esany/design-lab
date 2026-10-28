@@ -185,5 +185,6 @@ Bearbeitung durch den Menschen.
 **Urteil (Mensch), 2026-10-28:** Die Anpassungen der Variante „lesbar im
 Objekt“ sind freigegeben und jetzt die Hauptfassung: Fließtext in 100 % Schwarz,
 Bildunterschriften in 8 pt mit breiterem Etikett, das Feld hinter dem Aufruf zu
-92 % deckend. Offen bleiben die Schreibweise „e.V.“, die um eine Zeile
-kürzere Spalte, eine Kürzung des Fließtexts für 9,5 pt und die Antwortkarte.
+92 % deckend. Danach entschieden: Duden als Basis, also „e. V.“ (0023). Die kürzere
+Spalte bleibt, keine Kürzung für 9,5 pt (zu wenig Gewinn). Offen ist nur die
+Antwortkarte.

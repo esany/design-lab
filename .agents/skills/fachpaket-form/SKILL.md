@@ -127,14 +127,18 @@ Diese Regeln setzt `experiments/2026-10-print-pagedjs/feinsatz.js` automatisch.
 | Zahl und Einheit nicht trennen, schmal („23 m“) | schmaler Abstand als Element; viele Schriften haben das Zeichen U+202F nicht | ebd.; *getestet*: fehlt in Officina, Euclid Flex, Univers, Jane Austen |
 | Bis-Strich ohne Leerzeichen („1200–1608“) | Halbgeviertstrich | ebd. |
 | Kein doppeltes Leerzeichen | ein Leerzeichen | [k:butterick-practical-typography] |
+| Abkürzungen nach Duden: „e. V.“, „z. B.“, „d. h.“ | schmaler, geschützter Leerraum | Duden (Entscheidung 0023) |
 | IBAN in Vierergruppen, Telefonnummer in Blöcken | Leerzeichen, nie umbrechen | [k:din-5008] |
 | Kein Hurenkind, kein Schusterjunge | Umbruchregel im Rahmenfluss (`fluss.js`) | Satzregel |
 | Höchstens drei Trennungen in Folge | Wort sperren und neu umbrechen (`fluss.js`) | Satzregel |
 | Letztes Wort eines Absatzes nicht trennen | keine einzelne Silbe in der Ausgangszeile | Satzregel |
 | Kerning an, echte Anführungszeichen „…“ und Auslassungszeichen … | CSS und Text | [k:butterick-practical-typography] |
 
-**Was nur der Mensch entscheidet:** Schreibweisen von Namen (etwa „e.V.“ oder
-„e. V.“), Umformulierungen, das Sperren von Versalien, wenn es das Bild ändert.
+**Grundlage:** Rechtschreibung und Satzregeln nach Duden (`decisions/0023`).
+Logos und ausdrücklich festgelegte Namensschreibweisen sind Ausnahmen.
+
+**Was nur der Mensch entscheidet:** Umformulierungen, Ausnahmen von der
+Duden-Regel, das Sperren von Versalien, wenn es das Bild ändert.
 
 ## 3 · Stand der Technik (2026-10-28)
 
