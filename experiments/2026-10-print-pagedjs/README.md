@@ -96,6 +96,33 @@ Das Druck-PDF ist **gleichwertig im Aufbau** und **abweichend in der Typografie*
    - Die Grammatik in „zu thematische Führungen“ und „durch ihre“ ist
      unverändert gelassen; das ist eine inhaltliche Frage.
 
+## Runde 2: mit den Originalschriften (2026-10-28)
+
+Der Eigentümer stellte die Lizenzschriften für den Test bereit. Sie wurden nur
+in der Arbeitsumgebung genutzt und liegen **nicht im Repo**.
+
+- **Kein Einpassen mehr nötig.** Ohne Laufweite −10 und ohne Wortabstands-Trick
+  passt der Text in die fünf Rahmen (*getestet*: kein Übersatz, Zeilen je Rahmen
+  wie im Original). Der Mehrbedarf in Runde 1 lag also an den Ersatzschriften,
+  nicht am Browser.
+- **Was jetzt deckungsgleich ist** (*getestet* durch Überlagerung): Titel,
+  Aufruf, Bildunterschriften, Antwortkarte, Adresse, Banner und die
+  Grundlinien im Infokasten (Abweichung unter 0,2 mm).
+- **Zeilenumbruch im Fließtext:** Nur 28 von 90 Zeilen sind inhaltsgleich mit
+  dem Original (31 %; *getestet*). Der Rest bricht anders um, weil Browser und
+  InDesign mit verschiedenen Setzalgorithmen und Trennregeln arbeiten. Das ist
+  der verbleibende echte Unterschied. Zwei Maßnahmen haben ihn verringert:
+  - Trennung erst nach dem dritten und vor dem drittletzten Buchstaben: von 18 % auf 26 %
+  - `text-wrap: pretty`: weiter auf 31 %
+- **Neuer Befund — Schrifteinbettung:** Chromium bettet die OpenType-CFF-Schriften
+  (Euclid Flex, Univers) und die TrueType-Schrift mit Einbettungsbeschränkung
+  (Officina, fsType 6) als **Type-3-Schriften** ein, also als Vektor-Umrisse
+  ohne Hinting (*getestet* mit `pdffonts` und Prüfung der Glyphen). Für den Druck
+  ist das in der Regel unkritisch. Manche Druckerei-Preflights warnen aber
+  bei Type 3, deshalb vorher abklären.
+- Pixelabweichung (Toleranz 12 %): 11,2 % auf der Innenseite und 8,6 % auf der
+  Außenseite. Fast alles davon ist der anders umbrochene Fließtext.
+
 ## Aufwand
 
 Etwa eine Arbeitssitzung des Agenten, davon die Hälfte für Werkzeuge, die
