@@ -20,6 +20,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 
 | Datum | Was | Warum | Rückgängig |
 |---|---|---|---|
+| 2026-10-28 | **Plan #62** mit Aufträgen #56–#61 (Audit der Zusammenarbeit, Modellprofile, Regeln prüfen, Kommunikation und Delegation, Tokenökonomie, Assistenz im Entwurf), alle `entwurf`; **Bug #55** (#31 falsch gelesen) | Ihr Auftrag, Chat 28.10. | Issues schließen: „Plan #62 rückgängig“ |
 | 2026-10-27 | Labor aufgebaut: Regeln, Prinzipien, Methoden, Website, Prüfungen | Startversion | „Labor-Aufbau rückgängig“ |
 | 2026-10-27 | Studie „Reihe und Verschiebung“ mit Ittens Farbkontrasten und gestuften Erklärungen | Anforderung | „Itten-Erweiterung rückgängig“ |
 | 2026-10-27 | Entscheidungen eingetragen; Repo öffentlich, alle Rechte vorbehalten | Antworten im Chat | — (Entscheidung) |
@@ -34,10 +35,12 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 | 2026-10-27 | D3sign-Prinzipien übernommen: Werk vor System, Vertrauen statt Scheinreife, Stoppen statt simulieren, Widerspruchspflicht, Priorisierung, Skill `fundstueck`, Modul „System“ | Ihr „ja“ (0020) | „D3sign-Übernahme rückgängig“ |
 | 2026-10-27 | Feldforschung KI × Gestaltung (KINDLAB, KITeGG, UdK, FHP, Burg, KHM …): Befunde, Einordnung, 4 Entwürfe als Issues #6–#9, Radar ergänzt | Ihr Rechercheauftrag | „Feldforschung rückgängig“ |
 | 2026-10-28 | **Start nur auf Auftrag:** Anschluss ist Vorschlag, kein Auftrag; ohne Auftrag nennt das Modell Stand und Vorschlag und wartet | Modelle begannen sonst eigenmächtig | „Start nur auf Auftrag rückgängig“ |
+| 2026-10-28 | **Flyer als erstes Werk abgelegt** im privaten Repo `esany/werke`, Ordner `werke/2026-flyer-rgut-a6/` (46 Dateien, ohne Schriften) | Sicherung der Werkdateien (#25) | im Repo werke per Revert-PR |
 | 2026-10-28 | **Arbeiten nur mit Auftrag:** Modelle melden beim Start nur und warten; Claude ist Orchestrator und verteilt über Labels `an:…` | Modelle legten ohne Auftrag los | „Auftragsregel rückgängig“ |
 | 2026-10-28 | **Start jeder Sitzung** in AGENTS.md: ein Startsatz für alle Modelle, Repo als einziger Ort, ohne Zugang aufhören statt suchen; Prüffall `evals/start` | ein neuer Chat fand stand.md nicht | „Start-Regel rückgängig“ |
 | 2026-10-28 | **Vorschlag 0025 Arbeitsteilung zwischen Modellen** (wartet auf Antwort) | Tokenökonomie, mehrere Modelle | „Regel 0025 rückgängig“ |
 | 2026-10-28 | **Regel 0024 „Kein Wissen nur im Chat“** (auf Probe); Gesprächsprotokoll mit allen Erkenntnissen, die nur im Chat standen (`research/gespraeche/2026-10-28-print-typografie-raster.md`); Radar um Print-Werkzeuge ergänzt | Ihr Hinweis auf Wissensmonopole im Chat | „Regel 0024 rückgängig“ |
+| 2026-10-28 | **Anschluss** um die Sitzung „Audit von Astra“ ergänzt: Recherche Möglichkeitsraum, Entscheidungshilfe, Lehren, Bug zur Ursache | Kein Wissen nur im Chat (0024) | „Anschluss-Ergänzung rückgängig“ |
 | 2026-10-28 | **Verknüpfung (A33):** Ihre Anforderungen aus dem Chat als A31–A34 in `intent.md` (Abhängigkeiten, Umsetzungsreife, nichts verrottet, Tokenökonomie); jede Entscheidung und jeder Skill nennt, welcher Anforderung sie dient; der Build erzeugt `verknuepfung.md` und meldet Lücken; Pflege prüft monatlich; Reihenfolge in dieser Datei | Ihre Sorge, dass Regeln in einer Ecke verrotten | „Verknüpfung rückgängig“ |
 | 2026-10-28 | **Audit von GPT-6 Astra** nachgeprüft und eingeordnet (`research/2026-10-audit-astra/`): sechs Befunde bestätigt, einer ergänzt (Kontrast `muted`); verteilt als #40, #45 (an Sie) und #41–#44 (an Astra) | Ihr Auftrag, die Arbeit zu organisieren | „Audit-Einordnung rückgängig“ (Issues bleiben, werden geschlossen) |
 | 2026-10-28 | **Experiment Entwurfsprozess** angelegt; offene Themen als Issues #23–#27; Abschnitt „Anschluss“ für neue Sitzungen; Flyer-Arbeitsstand als ZIP an Sie | Ihr Auftrag „alles sichern“ | „Entwurfsprozess rückgängig“ |
@@ -103,23 +106,42 @@ Gedächtnis ist dieses Repo, nicht der Chat. Ein langes Gespräch wird automatis
 zusammengefasst, dabei geht Detail verloren. Was zählt, steht deshalb hier und
 in den verlinkten Dateien.
 
-- **Zuletzt (28.10., Nachmittag):** Audit von GPT-6 Astra gesichert und eingeordnet
-  (`research/2026-10-audit-astra/`). Daraus: Hinweise statt Vorgaben (0028, nur Wortlaut des
-  Eigentümers), Branch-Schutz (0027), Skill `issue` erweitert (#38), Verknüpfung von
-  Anforderungen und Mechanismen (A31–A34, `verknuepfung.md`). Recherche „Entwicklung und
-  Gebrauch des Systems · Entwurfsbewegung · Möglichkeitsraum“ als #49 angelegt.
-- **Lehren der Sitzung** (Bugs #50, #51, #52): Ein Zitat ist keine Freigabe. Jede Frage nennt,
-  was sich ändert, warum, und was passiert, wenn man es lässt. Vor jeder Liste das Repo
-  abgleichen. Gebrauch (wie der Eigentümer *aktuell* arbeitet) ist keine Regel des Systems.
-- **Leitfragen des Eigentümers:** Gestaltung dient (Wahrnehmung zuerst); Strukturen sichtbar
-  und selbst änderbar (A29); Raster werkzeugunabhängig (A30); alles ist Experiment;
-  Entwicklung und Gebrauch des Systems nicht verwechseln (#49).
-- **Wo was liegt:** Werkzeuge und Befunde in `experiments/`, Konzepte in `research/`,
-  Fachwissen in `.agents/skills/fachpaket-*`, Quellen in `corpus/`, Entscheidungen in
-  `decisions/`, Verknüpfung in `verknuepfung.md`. **Nicht im Repo:** Werkdateien (künftig
-  `esany/werke`, #47) und Lizenzschriften.
-- **Nächster Schritt:** siehe „Reihenfolge“ oben. Für Claude: Freigaben abwarten, dann nach
-  Skill `issue` verteilen.
+- **Zuletzt (28.10.):** Flyer-Experiment mit 4 Runden abgeschlossen und
+  freigegeben; daraus Manifest (0022), Duden-Regel (0023), Fachpaket „Form“,
+  Feinsatz-Werkzeuge; Gespräch über Raster als System und über den
+  Entwurfsprozess selbst.
+- **Leitfragen des Eigentümers:** Gestaltung dient (Wahrnehmung zuerst);
+  Strukturen sichtbar und selbst änderbar (A29); Raster werkzeugunabhängig
+  (A30); alles ist Experiment.
+- **Wo was liegt:** Werkzeuge und Befunde in `experiments/`, Konzepte in
+  `research/`, Fachwissen in `.agents/skills/fachpaket-*`, Quellen in
+  `corpus/`, Entscheidungen in `decisions/`. **Nicht im Repo:**
+  Werkdateien des Flyers (privat in `esany/werke`, `werke/2026-flyer-rgut-a6/`) und
+  Lizenzschriften (nur beim Eigentümer).
+- **Gesprächsprotokolle:** `research/gespraeche/` (Erkenntnisse, die nur im
+  Chat standen).
+- **Nächster Schritt (neuer Chat):** Plan **#62** „Zusammenarbeit von Mensch und Modellen
+  analysieren, Maßnahmen ableiten“. Er wartet auf die Freigabe des Eigentümers und drei Fragen
+  (in #62). Danach beginnt #56 (Audit der Beispiel-Repos: Fehlermuster der Modelle, Muster der
+  Zusammenarbeit), dann #57 und #59 parallel, dann #58, #60, #61. Jeder Auftrag hat Ziel,
+  Ergebnis, DoR, DoD und Abbruchpunkt; Abhängigkeiten sind auf GitHub gesetzt.
+- **Lehre aus #55:** #31 wurde falsch gelesen (Beispiel-Repos als Ideenquelle statt als
+  Prüfgegenstand). Vor jedem Auftrag die Lesart spiegeln. Die Recherche in
+  `research/2026-10-issue-arbeit/` (PR #38) ist Vorarbeit, kein Ergebnis.
+- **Aus der Sitzung „Audit von Astra“ (28.10., Nachmittag):**
+  - Das Audit ist gesichert und eingeordnet (`research/2026-10-audit-astra/`).
+  - Die Recherche „Entwicklung und Gebrauch des Systems · Entwurfsbewegung ·
+    Möglichkeitsraum“ steht in #49. Kernsatz des Eigentümers: Es gibt zwei Modi, die man nicht
+    verwechseln oder gleichsetzen darf.
+  - Die Entscheidungshilfe aus der Gestaltung (Option mit benanntem Risiko, höchstens vier
+    Fragen, keine Nummern) soll auch für die Arbeit am System gelten. Sie ist in #59 gesichert,
+    aber noch nicht entschieden.
+  - Lehren: Ein Zitat ist keine Freigabe. Was der Eigentümer *aktuell* tut, ist Gebrauch und
+    keine Regel. Vor jeder Antwort mit Stand oder Entscheidung erst abgleichen und im Repo
+    sichern (#65: Claude arbeitet aus dem Chat statt aus dem Labor).
+  - Den Branch-Schutz richtet der Eigentümer ein; die Schritte stehen in #40.
+- **Offen daneben:** PRs #38, #47, #48, #54 warten auf Freigabe (Reihenfolge dort in
+  `stand.md`, PR #54); Werk-Repo `esany/werke` ist angelegt (#25, PR #47).
 
 ## Nächste Schritte (laufen ohne Sie)
 
