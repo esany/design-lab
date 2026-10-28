@@ -39,9 +39,10 @@ Status der Aussagen: **belegt** (steht in den Dateien) oder **abgeleitet** (mein
 
 ## Zur Sicherung der Werke (#25)
 
-Der Eigentümer nannte `pflege-arnshaugk-historie` als Option. Das Repo ist **öffentlich**
-(anonymer Lesezugriff möglich). Für die Flyer-Werkdateien gilt `AGENTS.md` Regel 5 und die
-Schriftlizenzen: Lizenzschriften und Kundenarbeit dürfen nicht in ein öffentliches Repo.
-Als **Vorbild** (Struktur, Übergabe-Datei `PROJECT_STATE.md`) taugt das Repo; als **Ablageort** nur,
-wenn es auf privat gestellt wird oder die Werke in ein eigenes privates Repo gehen. Das
-ist eine Entscheidung des Eigentümers (Sichtbarkeit), siehe Frage in der PR-Beschreibung.
+**Ungeklärt: das Sicherungs-Repo ist nicht bekannt.** Die Adresse, die der Eigentümer dafür
+nannte, kam beim Modell als Wiederholung der Beispiel-Repo-Adresse an (Bug #39). Welches Repo
+gemeint war, ist *nicht belegt* und wird nicht geraten.
+
+Unabhängig davon, als Beobachtung zu genau einem Repo: `pflege-arnshaugk-historie` ließ sich am
+28.10.2026 anonym klonen, war also öffentlich. Für Flyer-Werkdateien und Lizenzschriften gilt
+`AGENTS.md` Regel 5; das sagt nichts darüber, wo der Eigentümer sichern will.
