@@ -13,7 +13,8 @@ war Weg B.
 
 ## Entscheidung
 
-- Werkdateien liegen in einem **eigenen privaten Repo** (Vorschlag Name: `esany/werke`).
+- Werkdateien liegen in einem **eigenen privaten Repo: `esany/werke`** (angelegt 28.10.2026 vom
+  Agenten im Browser des Eigentümers; Grundgerüst drin, Prüfung grün).
 - **Das Labor bleibt `esany/design-lab`.** Im Werk-Repo stehen keine Regeln, kein Stand, keine
   Entscheidungen; nur Dateien und je Werk eine `werk.md` (Rolle, fremde Inhalte, Rechte,
   Schriften nur als Namen).
@@ -23,6 +24,9 @@ war Weg B.
   dort.
 
 ## Was nicht entschieden ist
+
+- Zugriff für Cloud-Agenten auf `esany/werke`: fehlt (die Claude-App auf GitHub ist nur für
+  ausgewählte Repos freigeschaltet). Bis dahin arbeitet ein Agent dort nur über den Browser.
 
 - Zweite Kopie außerhalb GitHub (sonst ist es keine Sicherung): offen, kann nur der Rechner des
   Eigentümers leisten.
