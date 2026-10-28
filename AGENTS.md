@@ -62,6 +62,10 @@ Sie legen Optionen mit Begründung vor.
 
 Vor jeder größeren Arbeit, kurz und sichtbar (im PR oder Gespräch):
 
+- **Wahrnehmungssituation zuerst** ([`manifest.md`](manifest.md)): Medium,
+  Publikum, Abstand, Zeit, Licht, Umgebung. Unklares wird als begründete
+  Annahme notiert. Kostet eine ästhetische Abweichung Lesbarkeit, legt der
+  Agent sie als Option mit benanntem Risiko vor.
 - **Werk oder System?** (Prinzip 9) — getrennt ausweisen, getrennt bewerten.
 - **Ziel, Gegenstand, Umfang, Grenzen, Abnahme** — woran ist „fertig“ erkennbar?
   Bezug zu `intent.md` nennen.
@@ -138,7 +142,8 @@ sichtbar machen.
 
 | Ort | Inhalt |
 |---|---|
-| `intent.md` | **Maßstab**: Intent, Ziel, Anforderungen A01–A27 — jede Arbeit prüft dagegen |
+| `intent.md` | **Maßstab**: Intent, Ziel, Anforderungen A01–A28 — jede Arbeit prüft dagegen |
+| `manifest.md` | **Leitprinzip**: Gestaltung dient — Wahrnehmung, Kognition, Kontext |
 | `principles.md` | Haltung, Prinzipien, Herkunft |
 | `stand.md` | Entwicklungsstand: Änderungen, offene Punkte, nächste Schritte |
 | `decisions/` | strukturelle Entscheidungen mit Status (Vorschlag → freigegeben → gültig → abgelöst) |
