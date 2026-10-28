@@ -1,7 +1,7 @@
 ---
 title: Print ohne InDesign — Flyer-Nachbau mit HTML/CSS und Paged.js
 date: 2026-10-27
-status: offen
+status: behalten
 timebox: 1 Arbeitssitzung
 ---
 
@@ -182,4 +182,8 @@ jetzt wiederverwendbar sind (`fluss.js`, `druckvorstufe.py`).
 Druck auf Papier; Preflight einer Druckerei; Verhalten in Safari und Firefox;
 Bearbeitung durch den Menschen.
 
-**Urteil (Mensch):** —
+**Urteil (Mensch), 2026-10-28:** Die Anpassungen der Variante „lesbar im
+Objekt“ sind freigegeben und jetzt die Hauptfassung: Fließtext in 100 % Schwarz,
+Bildunterschriften in 8 pt mit breiterem Etikett, das Feld hinter dem Aufruf zu
+92 % deckend. Offen bleiben die Schreibweise „e.V.“, die um eine Zeile
+kürzere Spalte, eine Kürzung des Fließtexts für 9,5 pt und die Antwortkarte.
