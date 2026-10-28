@@ -15,17 +15,23 @@ Gilt für jedes Modell und jedes Werkzeug, mit oder ohne Repo-Zugang.
    klonen, GitHub-Connector) oder die öffentliche Seite lesen:
    https://github.com/esany/design-lab/blob/main/stand.md. Geht beides nicht: genau das sagen
    und aufhören. Nicht anderswo suchen und nicht raten.
-3. **Lesen:** diese Datei, dann `stand.md`, Abschnitt „Anschluss“. Der nächste Schritt dort
-   ist ein **Vorschlag, kein Auftrag**.
-4. **Nur auf Auftrag arbeiten:** Ein Auftrag ist, was der Mensch in dieser Sitzung verlangt
-   (im Chat oder durch Nennen eines Issues), oder ein geplanter Lauf (Pflege, Radar) mit
-   seinem festen Auftrag. Ohne Auftrag nennt der Agent in zwei Sätzen den Stand und den
-   vorgeschlagenen nächsten Schritt und wartet. Ein offenes Issue allein ist kein Auftrag.
-5. **Ende der Sitzung:** „Anschluss“ in `stand.md` fortschreiben (Regel 0024).
+3. **Lesen:** diese Datei, dann `stand.md`, Abschnitt „Anschluss“.
+4. **Melden, nicht loslegen:** in höchstens zwei Sätzen den Stand und den nächsten Schritt
+   nennen, mit Zuständigkeit (Label des Issues). Dann auf den Auftrag warten.
+5. **Arbeiten nur mit Auftrag.** Ein Auftrag ist entweder
+   - eine Aufgabe, die der Mensch im Chat nennt, oder
+   - ein offenes Issue mit dem Label des eigenen Werkzeugs (`an:claude`, `an:codex`,
+     `an:chatgpt`, `an:gemini`), das der Mensch freigibt („weiter“, „mach #n“).
+   Issues mit fremdem Label oder `an:mensch` fasst ein Modell nicht an.
+6. **Orchestrierung:** Claude verteilt die Arbeit, indem es Issues schreibt und ihnen ein
+   Label gibt (Entscheidung des Eigentümers, 28.10.). Andere Modelle schlagen Aufgaben vor,
+   verteilen sie aber nicht.
+7. **Ende der Sitzung:** „Anschluss“ in `stand.md` fortschreiben (Regel 0024).
 
-Startsatz (richtet der Mensch einmal je Werkzeug als Anweisung ein, siehe README):
+Anweisung, die der Mensch einmal je Werkzeug einträgt (sie ändert sich nicht mehr; alles
+Weitere regelt dieser Abschnitt):
 
-> Wenn es um Gestaltung, das Labor oder design-lab geht: Das Labor ist das GitHub-Repo esany/design-lab (https://github.com/esany/design-lab). Lies zu Beginn AGENTS.md und stand.md (Abschnitt „Anschluss“). Arbeite nur an dem, was ich in diesem Chat beauftrage. Ohne Auftrag nenne kurz den Stand und den vorgeschlagenen nächsten Schritt und warte.
+> Wenn es um Gestaltung, das Labor oder design-lab geht: Das Labor ist das GitHub-Repo esany/design-lab (https://github.com/esany/design-lab). Lies zu Beginn AGENTS.md und befolge den Abschnitt „Start jeder Sitzung“.
 
 ## Zweck
 

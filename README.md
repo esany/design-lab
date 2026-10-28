@@ -18,10 +18,10 @@ Nur **einmal** je Werkzeug eintragen, danach beginnt jeder Chat von selbst richt
 Text:
 
 ```
-Wenn es um Gestaltung, das Labor oder design-lab geht: Das Labor ist das GitHub-Repo esany/design-lab (https://github.com/esany/design-lab). Lies zu Beginn AGENTS.md und stand.md (Abschnitt „Anschluss“). Arbeite nur an dem, was ich in diesem Chat beauftrage. Ohne Auftrag nenne kurz den Stand und den vorgeschlagenen nächsten Schritt und warte.
+Wenn es um Gestaltung, das Labor oder design-lab geht: Das Labor ist das GitHub-Repo esany/design-lab (https://github.com/esany/design-lab). Lies zu Beginn AGENTS.md und befolge den Abschnitt „Start jeder Sitzung“.
 ```
 
-Die Regeln selbst stehen nur in [`AGENTS.md`](AGENTS.md) („Start jeder Sitzung“).
+Das Modell meldet dann Stand und nächsten Schritt und wartet auf Ihren Auftrag. Die Regeln selbst stehen nur in [`AGENTS.md`](AGENTS.md) („Start jeder Sitzung“).
 
 ## Wie das Labor arbeitet
 
