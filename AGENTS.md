@@ -15,9 +15,11 @@ Gilt für jedes Modell und jedes Werkzeug, mit oder ohne Repo-Zugang.
    klonen, GitHub-Connector) oder die öffentliche Seite lesen:
    https://github.com/esany/design-lab/blob/main/stand.md. Geht beides nicht: genau das sagen
    und aufhören. Nicht anderswo suchen und nicht raten.
-3. **Lesen:** diese Datei, dann `stand.md`, Abschnitt „Anschluss“.
+3. **Lesen:** diese Datei, dann `stand.md`, Abschnitt „Themen“. Nennt der Mensch ein Thema:
+   nur dessen Merkzettel in `anschluss/` lesen. Nennt er keins: die aktiven Themen mit je einem
+   Satz nennen und fragen, welches gemeint ist (Regel 0029).
 4. **Melden, nicht loslegen:** in höchstens zwei Sätzen den Stand und den nächsten Schritt
-   nennen, mit Zuständigkeit (Label des Issues). Dann auf den Auftrag warten.
+   nennen, mit Zuständigkeit. Dann auf den Auftrag warten.
 5. **Arbeiten nur mit Auftrag.** Ein Auftrag ist entweder
    - eine Aufgabe, die der Mensch im Chat nennt, oder
    - ein offenes Issue mit dem Label des eigenen Werkzeugs (`an:claude`, `an:codex`,
@@ -26,7 +28,9 @@ Gilt für jedes Modell und jedes Werkzeug, mit oder ohne Repo-Zugang.
 6. **Orchestrierung:** Claude verteilt die Arbeit, indem es Issues schreibt und ihnen ein
    Label gibt (Entscheidung des Eigentümers, 28.10.). Andere Modelle schlagen Aufgaben vor,
    verteilen sie aber nicht.
-7. **Ende der Sitzung:** „Anschluss“ in `stand.md` fortschreiben (Regel 0024).
+7. **Ende der Sitzung:** abgleichen, den Merkzettel des eigenen Themas in `anschluss/`
+   fortschreiben und dessen Zeile in `stand.md` anpassen. Fremde Merkzettel nicht anfassen
+   (Regeln 0024, 0029).
 
 Anweisung, die der Mensch einmal je Werkzeug einträgt (sie ändert sich nicht mehr; alles
 Weitere regelt dieser Abschnitt):
@@ -163,7 +167,7 @@ durchgehen — nicht Technik bedienen. Deshalb:
   (Experiment, `research/`, Radar, Fachpaket; sonst
   `research/gespraeche/`). Antworten nennen die Fundstelle. An natürlichen
   Einschnitten empfiehlt der Agent einen neuen Chat und schreibt vorher
-  „Anschluss“ in `stand.md` fort.
+  den Merkzettel seines Themas in `anschluss/` fort.
 
 ## Anforderungen annehmen
 
@@ -181,6 +185,7 @@ sichtbar machen.
 | `manifest.md` | **Leitprinzip**: Gestaltung dient — Wahrnehmung, Kognition, Kontext |
 | `principles.md` | Haltung, Prinzipien, Herkunft |
 | `stand.md` | Entwicklungsstand: Änderungen, offene Punkte, nächste Schritte |
+| `anschluss/` | ein Merkzettel je aktivem Thema: Stand, nächster Schritt, offene Fragen (0029) |
 | `decisions/` | strukturelle Entscheidungen mit Status (Vorschlag → freigegeben → gültig → abgelöst) |
 | `.agents/skills/` | Methoden und Abläufe als Skills (SKILL.md) |
 | `studies/<jjjj-mm-slug>/` | Studien: `index.html` + `study.md` |

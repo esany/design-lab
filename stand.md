@@ -21,6 +21,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 
 | Datum | Was | Warum | Rückgängig |
 |---|---|---|---|
+| 2026-10-28 | **Ein Merkzettel je Thema (0029):** `anschluss/` mit drei Themen (System, Möglichkeitsraum, Werke); hier steht nur noch die Themenliste; Start und Ende in `AGENTS.md` und Skill `issue` angepasst | Ihre Antwort auf #67 | „Regel 0029 rückgängig“ |
 | 2026-10-28 | **Arbeitsteilung (0025) gültig:** Sparregeln gelten für Routinen, nicht zu Lasten der Qualität, Ihre Aufträge haben Vorrang; die Modell-Tabelle ist nur eine Vermutung, Aufträge berücksichtigen Funktionen und Limits des Modells; kein Etikett „Übergabe“. D3sign: Regeln und Prüfberichte dürfen in die Untersuchung, ohne Kundeninhalte | Ihre Antworten im Chat | „Regel 0025 rückgängig“ |
 | 2026-10-28 | **Ihre Entscheidungen eingetragen:** Spielregeln für Aufträge übernommen (PR #38); Untersuchung startet, nur über die Modelle, ohne Termin bis November (#62, #56 zugeschnitten); Merkzettel je Thema (#67); Anschluss in Worten umgeschrieben (#71) | Ihre Antworten im Chat | „Entscheidungen 28.10. rückgängig“ |
 | 2026-10-28 | **Lagebild:** offene Aufgaben, Reihenfolge, Blocker, Delegation, offene Fragen (`research/gespraeche/2026-10-28-lagebild.md`) | Ihre Frage im Chat; kein Wissen nur im Chat (0024) | Datei löschen: „Lagebild rückgängig“ |
@@ -89,55 +90,22 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 | **Fachpaket „Vermitteln“: erstes Werk** | offen | #8 |
 | **Generative Gestaltung als Referenz** | offen | #9 |
 
-## Anschluss — hier beginnt jede neue Sitzung
+## Themen — hier beginnt jede neue Sitzung
 
-Gedächtnis ist dieses Repo, nicht der Chat. Oben steht alles in Worten, für den Eigentümer.
-Nummern stehen nur im eingeklappten Teil darunter, für die Modelle (#71).
+Jedes aktive Thema hat einen Merkzettel in `anschluss/` (Regel `decisions/0029`). Ein neuer Chat
+liest nur den Merkzettel seines Themas. Ist kein Thema genannt, nennt er diese Liste und fragt,
+welches gemeint ist.
 
-**Wo wir stehen (28.10., abends):** Bevor wieder gestaltet wird, bringen wir die offenen
-Aufgaben des Systems in Ordnung. So hat der Eigentümer es entschieden. Es gibt keinen
-Zeitrahmen bis Ende November, die Schritte laufen jetzt nacheinander.
-
-**Heute entschieden:**
-- Die Spielregeln für Aufträge gelten: Ist ein Modell dran? Ist alles da? Woran sieht man, dass
-  es fertig ist? Fragen kommen in Alltagssprache.
-- Die Untersuchung der Fehler startet, aber **nur über die Modelle**, nicht über die
-  Zusammenarbeit oder die Arbeitsweise des Eigentümers.
-- Arbeitsteilung: Sparen bei Routinen ja, nie zu Lasten der Qualität; Aufträge an andere
-  Modelle berücksichtigen deren Funktionen und Limits.
-- Bei mehreren gleichzeitigen Chats bekommt **jedes Thema einen eigenen Merkzettel** im
-  Labor. Claude richtet das als Nächstes ein.
-
-**Als Nächstes macht Claude:**
-1. die Merkzettel je Thema einrichten;
-2. die Fehler der Modelle untersuchen (D3sign: nur Regeln und Prüfberichte, ohne Kundeninhalte).
-
-**Offene Fragen an den Eigentümer:**
-- Den Hauptzweig schützen: Das Ja steht, es fehlen nur zwei Minuten Klicks in den
-  GitHub-Einstellungen, die nur das Konto des Eigentümers machen darf.
-- Für welches Experiment gilt „eine Korrektur der Experimente vernachlässigen wir“?
-- Wer übernimmt die Recherche „Entwicklung und Gebrauch des Systems, Möglichkeitsraum“?
+| Thema | Stand in einem Satz | Merkzettel |
+|---|---|---|
+| **Das System in Ordnung bringen** | läuft; als Nächstes die Bestandsaufnahme für die Untersuchung der Modellfehler | [`anschluss/system.md`](anschluss/system.md) |
+| **Entwicklung und Gebrauch · Möglichkeitsraum** | Recherche geschrieben, ruht; offen, wer sie macht | [`anschluss/moeglichkeitsraum.md`](anschluss/moeglichkeitsraum.md) |
+| **Werke und Gestaltung** | ruht, bis das System in Ordnung ist; Flyer fertig | [`anschluss/werke.md`](anschluss/werke.md) |
 
 **Wo was liegt:** Befunde in `experiments/` und `research/`, Fachwissen in
 `.agents/skills/fachpaket-*`, Quellen in `corpus/`, Entscheidungen in `decisions/`,
 Gesprächsprotokolle in `research/gespraeche/`. Werkdateien und Lizenzschriften sind nicht im
 Labor (privat in `esany/werke` bzw. beim Eigentümer).
-
-<details><summary>Für die Modelle: Nummern und Lehren</summary>
-
-- Plan #62 freigegeben (1 ja, 2 B, 3 A; Kommentare dort). #56 auf „nur Modelle“
-  zugeschnitten; DoR offen nur: Lesezugriff auf die Repos geprüft. Danach #57 und #59, dann
-  #58, #60, #61. #53 beantwortet (0025 gültig).
-- #67 entschieden: A als Datei je Thema (`anschluss/<thema>.md`), jetzt `an:claude`.
-- PR #38 übernommen; #50, #51 geschlossen; #31 offen bis Prüffall `evals/uebergabe` (#43).
-- Offene PRs: #48 (0027, 0028), #47 (0026, jetzt auf `main`), #54 (A31–A34; nach #48 und #47).
-- #40 an:mensch (Klicks) → blockiert #41 (an:chatgpt). #49 ohne Zuständigkeit. #65 Ursache,
-  Maßnahme aus #56.
-- Lehren: Lesart spiegeln (#55); Vorarbeit in `research/2026-10-issue-arbeit/` ist kein Eingang
-  für #56/#57; ein Zitat ist keine Freigabe; vor jeder Liste abgleichen und zuerst im Repo
-  sichern (#65); Meldungen an den Eigentümer in Worten, Fragen als Auswahl (#71).
-- Lagebild: `research/gespraeche/2026-10-28-lagebild.md`.
-</details>
 
 ## Nächste Schritte (laufen ohne Sie)
 
