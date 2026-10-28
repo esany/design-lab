@@ -45,3 +45,9 @@ durchführen. Ergebnis als Eintrag in `experiments/`.
 - direkt auf `main` schreiben; Entscheidungen still treffen
 - Dinge löschen — nur nach `archive/` verschieben oder markieren
 - Radar-Einträge ohne Quelle
+
+## Anschluss prüfen (Entscheidung 0024)
+
+Monatlich: Hat jedes offene Issue und jedes laufende Experiment eine Fundstelle im
+Repo (Experiment-Datei, `research/`, Fachpaket)? Ist der Abschnitt „Anschluss“
+in `stand.md` aktuell? Fehlt etwas, kommt es als offener Punkt in `stand.md`.

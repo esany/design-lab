@@ -8,7 +8,7 @@ Werkzeuge und Entwicklungen, die das Labor beobachtet. Vier Ringe:
 - **Halten** — bewusst nicht (mehr) nutzen
 
 Jeder Eintrag: was es ist · warum relevant · Quelle · Stand. Änderungen nur mit
-Begründung (Skill `pflege`). Stand des Radars: **2026-10-27**.
+Begründung (Skill `pflege`). Stand des Radars: **2026-10-28**.
 
 ## Einsetzen
 
@@ -26,7 +26,9 @@ Begründung (Skill `pflege`). Stand des Radars: **2026-10-27**.
 | Was | Warum | Quelle | Stand |
 |---|---|---|---|
 | Observable Plot, D3, Vega-Lite | Profistandard für Datenvisualisierung | — | 2026-10 |
-| Typst, Paged.js | Satz und Print aus Code | — | 2026-10 |
+| Paged.js | Satz und Print aus Code; am Flyer erprobt: Seitenformat und Beschnitt ja, Textverkettung, Grundlinienraster und CMYK nur mit eigenen Ergänzungen | [Experiment](experiments/2026-10-print-pagedjs/README.md) | 2026-10-28 |
+| Typst | Satz als Code, Daten; CMYK und PDF/X nicht belegt | [typst.app](https://typst.app/blog/2025/automated-generation) | 2026-10 |
+| Scribus | freies Layoutprogramm mit CMYK, PDF/X-4, Python; nächster Vergleich am Flyer | [Wikipedia](https://en.wikipedia.org/wiki/Scribus) | 2026-10-28 |
 | Penpot + offizielles MCP | offener Design-Kanal, selbst hostbar | [penpot.app](https://penpot.app/penpot-mcp-server) | 2026-10 |
 | Blender 5 + Blender-Lab-MCP | 3D, Raum, Ausstellung; offizieller MCP seit 04/2026 | [StraySpark](https://www.strayspark.studio/blog/official-blender-mcp-server-comparison-2026) | 2026-10 |
 | Motion Canvas, Theatre.js | Animation als Code | — | 2026-10 |
@@ -47,6 +49,9 @@ Begründung (Skill `pflege`). Stand des Radars: **2026-10-27**.
 | GitHub Spec Kit | Spezifikation zuerst, dann Umsetzung | — | 2026-10 |
 | Offene Modelle (Qwen, DeepSeek, GLM, Gemma) über Colab | Ausweg und private Daten | [MindStudio](https://www.mindstudio.ai/blog/best-open-source-llms-agentic-coding-2026) | 2026-10 |
 | Jules, Antigravity (Google AI Pro) | dritter Agent auf GitHub | — | 2026-10 |
+| Graphite | prozedural, knotenbasiert, offen; Alpha, PDF erst geplant | [Digital Production](https://digitalproduction.com/2025/07/14/graphite-open-source-vector-design-tool-with-a-twist/) | 2026-10-28 |
+| Affinity (Canva) | kostenlos, Profiniveau, IDML-Import; aber Konto, geschlossenes Format — widerspricht Unabhängigkeit | [Printweek](https://printweek.mydigitalpublication.co.uk/articles/canva-s-free-affinity-app-shakes-up-design-market) | 2026-10-28 |
+| Inkscape (CMYK) | CMYK-PDF angekündigt, Stabilität nicht belegt | [inkscape.org](https://inkscape.org/learn/cms) | 2026-10-28 |
 
 ## Halten
 
