@@ -4,6 +4,26 @@ Diese Datei gilt für jeden Agenten (Claude, Codex, Gemini, Goose …). Sie ist
 kurz, weil sie immer geladen wird. Wissen steht in den Skills unter
 `.agents/skills/`, Haltung in `principles.md`.
 
+## Start jeder Sitzung
+
+Gilt für jedes Modell und jedes Werkzeug, mit oder ohne Repo-Zugang.
+
+1. **Das Labor ist das GitHub-Repo `esany/design-lab`**
+   (https://github.com/esany/design-lab), Zweig `main`. Lokale Ordner, Cloud-Speicher und
+   Projektdateien sind nicht das Labor.
+2. **Kein Zugang zum Repo?** Den Zugang im eigenen Werkzeug herstellen (Repo hinzufügen oder
+   klonen, GitHub-Connector) oder die öffentliche Seite lesen:
+   https://github.com/esany/design-lab/blob/main/stand.md. Geht beides nicht: genau das sagen
+   und aufhören. Nicht anderswo suchen und nicht raten.
+3. **Lesen:** diese Datei, dann `stand.md`, Abschnitt „Anschluss“. Der nächste Schritt dort
+   gilt, außer der Mensch sagt etwas anderes.
+4. **Bestätigen:** den nächsten Schritt in einem Satz nennen, dann arbeiten.
+5. **Ende der Sitzung:** „Anschluss“ in `stand.md` fortschreiben (Regel 0024).
+
+Startsatz für den Menschen, in jedem Chat gleich:
+
+> Arbeite im GitHub-Repo esany/design-lab (https://github.com/esany/design-lab). Lies zuerst AGENTS.md und stand.md, Abschnitt „Anschluss“. Nenne den nächsten Schritt in einem Satz und mach dann weiter.
+
 ## Zweck
 
 Ein persönliches Labor für Gestaltung mit KI-Assistenz: Analyse und Synthese,
