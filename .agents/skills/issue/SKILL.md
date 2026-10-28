@@ -56,7 +56,8 @@ bleibt beim Menschen oder Orchestrator, das Modell führt aus, misst und erfasst
 6. **Tun / Nicht-tun:** z. B. „nichts löschen“, „keine Regeln, Skills, `AGENTS.md`,
    Entscheidungen ändern“. Keine Geschmacks- oder Bedeutungsentscheidung; wo Optionen nötig
    sind, eine Tabelle (Option · Messwert · Folge · Risiko).
-7. **Zielmodell berücksichtigen:** Werkzeuge nennen (ins Repo schreiben, Browser, Node); fehlt
+7. **Zielmodell berücksichtigen:** Codex und Work nur in begründeten Fällen, wenn der normale
+   Chat (Astra) nicht mehr reicht; der Auftrag nennt den Grund (0025). Werkzeuge nennen (ins Repo schreiben, Browser, Node); fehlt
    eines, sagt das Modell es zuerst. Teure Modelle nicht für Routinen, nie zu Lasten der Qualität.
 8. **Rückmeldung fest:** Ergebnis · geprüft / nicht geprüft · offen (höchstens drei Fragen). Eine
    Prüfung durch ein anderes Modell, nicht durch das eigene.
