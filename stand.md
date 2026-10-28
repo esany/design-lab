@@ -106,8 +106,10 @@ in den verlinkten Dateien.
   Zusammenarbeit), dann #57 und #59 parallel, dann #58, #60, #61. Jeder Auftrag hat Ziel,
   Ergebnis, DoR, DoD und Abbruchpunkt; Abhängigkeiten sind auf GitHub gesetzt.
 - **Lehre aus #55:** #31 wurde falsch gelesen (Beispiel-Repos als Ideenquelle statt als
-  Prüfgegenstand). Vor jedem Auftrag die Lesart spiegeln. Die Recherche in
-  `research/2026-10-issue-arbeit/` (PR #38) ist Vorarbeit, kein Ergebnis.
+  Prüfgegenstand). Vor jedem Auftrag die Lesart spiegeln. Die Analysen laufen **neu** (#56, #57);
+  die Dateien in `research/2026-10-issue-arbeit/` (PR #38) sind kein Ergebnis und kein Eingang,
+  ebenso Vorbefunde in Kommentaren. Die Aufträge in #62 enthalten nur Ziel, Gegenstand,
+  Ergebnis, DoR, DoD und Grenzen, keine vorweggenommenen Befunde.
 - **Aus der Sitzung „Audit von Astra“ (28.10., Nachmittag):**
   - Das Audit ist gesichert und eingeordnet (`research/2026-10-audit-astra/`).
   - Die Recherche „Entwicklung und Gebrauch des Systems · Entwurfsbewegung ·
