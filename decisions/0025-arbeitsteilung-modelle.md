@@ -11,6 +11,8 @@ Wochennutzung verbraucht. ChatGPT „Astra 6 max“ ist laut Eigentümer im norm
 nutzbar; „Work Luna 6 / 5.5 max“ unterliegt Limits. Die Modellnamen und ihre Stärken sind hier
 **nicht belegt** und werden über `evals/` geprüft, nicht angenommen.
 
+**Freigegeben (28.10.):** Claude ist Orchestrator. Es schreibt die Issues und gibt ihnen Labels; andere Modelle arbeiten nur an Issues mit ihrem Label. Der Rest bleibt Vorschlag (#31).
+
 ## Grundsatz
 
 - Das teure Modell bekommt nur die Arbeit, die Werkzeuge **und** Genauigkeit braucht.
