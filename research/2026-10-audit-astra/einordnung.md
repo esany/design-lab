@@ -1,5 +1,21 @@
 # Audit von GPT-6 Astra · Einordnung durch Claude
 
+> **Antwort des Eigentümers (28.10.), gilt vor allem Folgenden** (`decisions/0027`):
+> „Ich lasse mir nicht vorschreiben, wie wir entwickeln und entwerfen. Hinweise und Risiken
+> sind ok.“ Das Labor verfolgt einen Top-down-Ansatz: Es baut Gestaltungswissen und Regeln
+> auf, aus Erfahrungswissen, dem Stand der Technik und Best Practice. Experimente schaffen
+> gemeinsames Verständnis und machen es mitteilbar und erfahrbar. Reverse Engineering ist
+> ein wichtiges Werkzeug.
+>
+> Folgen:
+> - „Werk vor Labor“ und Ausbau-Stopp sind nicht übernommen (#45 geschlossen). Astras Satz
+>   „mehr Wissen als erprobte Anwendung“ bleibt als **Hinweis** stehen, nicht als Vorgabe.
+> - `main` schützen: ja (`decisions/0026`). Der Eigentümer richtet die Regel ein, weil die
+>   Sitzung keine GitHub-Einstellungen ändern darf.
+> - #41–#44 stehen auf `entwurf`: Sie waren angelegt, bevor entschieden war.
+> - Claudes Zustimmung weiter unten („Nicht noch mehr Labor bauen“) und die dortige
+>   Reihenfolge sind damit **abgelöst**.
+
 **Datum:** 2026-10-28 · **Gegenstand:** `main`, Commit `6e621ae` · **Auditor:** GPT-6 Astra
 (ChatGPT), rein lesend · **Einordnung:** Claude Opus 5.5 als Orchestrator.
 Wortlaut des Audits: [`audit-wortlaut.txt`](audit-wortlaut.txt). Er wurde aus dem Chat
