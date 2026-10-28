@@ -33,6 +33,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 | 2026-10-27 | Studie „Reihe und Verschiebung“ abgeschlossen, bleibt als Referenz | Ihre Entscheidung: nicht weiterarbeiten | „Studie wieder öffnen“ |
 | 2026-10-27 | D3sign-Prinzipien übernommen: Werk vor System, Vertrauen statt Scheinreife, Stoppen statt simulieren, Widerspruchspflicht, Priorisierung, Skill `fundstueck`, Modul „System“ | Ihr „ja“ (0020) | „D3sign-Übernahme rückgängig“ |
 | 2026-10-27 | Feldforschung KI × Gestaltung (KINDLAB, KITeGG, UdK, FHP, Burg, KHM …): Befunde, Einordnung, 4 Entwürfe als Issues #6–#9, Radar ergänzt | Ihr Rechercheauftrag | „Feldforschung rückgängig“ |
+| 2026-10-28 | Variante „lesbar im Objekt“ von Ihnen freigegeben und jetzt Hauptfassung des Flyers; Experiment auf „behalten“ | Ihre Freigabe | „Freigabe Flyer rückgängig“ |
 | 2026-10-28 | Variante „lesbar im Objekt“ am Flyer: Fließtext 100 % Schwarz, Bildunterschriften 8 pt, ruhigeres Feld hinter dem Aufruf; erste Anwendung des Manifests | Ihre Frage „was anpassen, welche Folgen“ | „Variante lesbar rückgängig“ |
 | 2026-10-28 | **Manifest „Gestaltung dient“:** Wahrnehmung und Kognition als oberster Maßstab; Prinzip 0, Prüfschritt in AGENTS.md und Kritik, Sehwinkel-Rechnung im Fachpaket „Form“, Anforderung A28 | Ihr Auftrag | „Manifest rückgängig“ |
 | 2026-10-28 | **Fachpaket „Form“ (Typografie):** Kanon, Satzregeln, messbare Kriterien, Werkzeugvergleich InDesign · CSS · Scribus. Dazu Feinsatz am Flyer: so gut wie das Original gesetzt (weniger Löcher, gleich viele Trennungen) | Ihr Auftrag Typografie | „Fachpaket Form rückgängig“ |
@@ -56,7 +57,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 
 ## In Arbeit
 
-- Print-Experiment: offen sind „e.V.“ oder „e. V.“, die um eine Zeile kürzere Spalte und Ihr Urteil (taugt Eingreifen über Text und Zahlen, oder braucht es eine Maus-Oberfläche?)
+- Flyer: freigegeben. Offen sind „e.V.“ oder „e. V.“, die kürzere Spalte, eine Textkürzung für 9,5 pt und die Antwortkarte (taugt Eingreifen über Text und Zahlen, oder braucht es eine Maus-Oberfläche?)
 
 - Fachpaket „Vermitteln“: #6 und #7 erledigt → **#8: erstes Werk** mit Observable Plot und offenen Daten, geprüft gegen das Paket
 
