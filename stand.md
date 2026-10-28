@@ -125,9 +125,9 @@ Labor (privat in `esany/werke` bzw. beim Eigentümer).
 
 <details><summary>Für die Modelle: Nummern und Lehren</summary>
 
-- Plan #62 freigegeben (1 ja, 2 B, 3 offen; Kommentar dort). #56 auf „nur Modelle“
-  zugeschnitten, noch `entwurf`: DoR fehlt D3sign-Antwort und geprüfter Lesezugriff. Danach
-  #57 und #59, dann #58, #60, #61. #60 hängt zusätzlich an #53.
+- Plan #62 freigegeben (1 ja, 2 B, 3 A; Kommentare dort). #56 auf „nur Modelle“
+  zugeschnitten; DoR offen nur: Lesezugriff auf die Repos geprüft. Danach #57 und #59, dann
+  #58, #60, #61. #53 beantwortet (0025 gültig).
 - #67 entschieden: A als Datei je Thema (`anschluss/<thema>.md`), jetzt `an:claude`.
 - PR #38 übernommen; #50, #51 geschlossen; #31 offen bis Prüffall `evals/uebergabe` (#43).
 - Offene PRs: #48 (0027, 0028), #47 (0026, jetzt auf `main`), #54 (A31–A34; nach #48 und #47).
