@@ -93,8 +93,11 @@ in den verlinkten Dateien.
   Lizenzschriften (nur beim Eigentümer).
 - **Gesprächsprotokolle:** `research/gespraeche/` (Erkenntnisse, die nur im
   Chat standen).
-- **Nächster sinnvoller Schritt:** in einem **neuen Chat** das private Repo
-  anbinden (#25), dann #23 und #24 am Flyer.
+- **Nächster Schritt (neuer Chat):** #31 — Repo und Strukturen wasserdicht
+  machen, Modelle kennen, Skill für Issue-Arbeit. Erst die Beispiel-Repos des
+  Eigentümers ansehen. Arbeitsteilung zwischen Modellen: Vorschlag
+  `decisions/0025`, noch offen und eher zu verschlanken.
+- **Danach:** privates Repo und Flyer sichern (#25), dann #23 und #24.
 
 ## Nächste Schritte (laufen ohne Sie)
 
