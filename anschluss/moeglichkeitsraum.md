@@ -1,6 +1,6 @@
 # Thema: Entwicklung und Gebrauch des Systems · Möglichkeitsraum
 
-**Zuletzt fortgeschrieben:** 28.10.2026, Sitzungsende (Claude)
+**Zuletzt fortgeschrieben:** 29.10.2026, Zwischenstand #49 (Astra), noch nicht übernommen
 
 ## In Worten
 
@@ -8,16 +8,13 @@
 Möglichkeitsraum ist. Der Kernsatz des Eigentümers: Es gibt zwei Modi, die Entwicklung des
 Systems und seinen Gebrauch. Die dürfen nicht verwechselt oder gleichgesetzt werden.
 
-**Wo wir stehen:** Der Rechercheauftrag ist jetzt **Astra zugeordnet**, entschieden vom
-Orchestrator (28.10.). Er beginnt erst, wenn der Eigentümer in einem Chat mit Astra „mach #49“
-sagt. Ein anderes Modell liest danach gegen (Stichprobe gegen die Quellen). Die Hilfe beim
-Entwerfen baut später darauf auf.
+**Wo wir stehen:** Der Eigentümer hat #49 ausdrücklich beauftragt. Astra hat auf `lab/entwurfsbewegung` den ersten Zwischenstand zu Leitfragen 1–3 unter `research/2026-10-entwurfsbewegung/zwischenstand.md` dokumentiert. Jetzt gilt der **Stopp bis zur Rückmeldung des Eigentümers**; Leitfragen 4 und 5 sind nicht bearbeitet. Unabhängige Quellenstichprobe und Build stehen aus.
 
 **Neu:** Die Recherche prüft auch, ob **drei Perspektiven** (System bauen, Fachwissen, Gebrauch)
 die richtige Einteilung sind (Leitfrage 5). Danach folgt die Frage, ob das Labor ein
 Dokumentationsverzeichnis braucht.
 
-**Offene Frage an den Eigentümer:** Soll es losgehen? Wenn ja: „mach #49“ an Astra.
+**Offene Frage an den Eigentümer:** Welche Einwände oder Ergänzungen gibt es zum Zwischenstand, bevor Leitfragen 4 und 5 untersucht werden?
 
 <details><summary>Für die Modelle: Nummern</summary>
 
