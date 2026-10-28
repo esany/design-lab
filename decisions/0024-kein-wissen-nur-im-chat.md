@@ -26,6 +26,8 @@ verloren. Der Mensch soll sich darum nicht kümmern müssen.
    abgeschlossen, neues Experiment) sagt der Agent, dass ein neuer Chat sinnvoll
    ist, und schreibt vorher „Anschluss“ in `stand.md` fort. Ein Chat je Thema.
    Ein neuer Chat beginnt mit: „Lies stand.md und mach weiter.“
+   *Abgelöst durch 0029 (28.10.): Der Anschluss steht im Merkzettel des Themas in
+   `anschluss/`; ein neuer Chat beginnt mit dem Thema.*
 5. **Prüfung:** Die monatliche Pflege prüft, ob jedes offene Issue und
    Experiment eine Fundstelle im Repo hat.
 

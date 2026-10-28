@@ -1,5 +1,22 @@
 # Audit von GPT-6 Astra · Einordnung durch Claude
 
+> **Antwort des Eigentümers (28.10.), gilt vor allem Folgenden:**
+> „Ich lasse mir nicht vorschreiben, wie wir entwickeln und entwerfen. Hinweise und Risiken
+> sind ok.“ (`decisions/0028`)
+>
+> Folgen:
+> - „Werk vor Labor“ und Ausbau-Stopp sind nicht übernommen (#45 geschlossen). Astras Satz
+>   „mehr Wissen als erprobte Anwendung“ bleibt als **Hinweis** stehen. Er verwechselt aber
+>   Entwicklung und Gebrauch des Systems; das untersucht #49.
+> - `main` schützen: ja (`decisions/0027`). Der Eigentümer richtet die Regel ein.
+> - #41 ist freigegeben (`an:chatgpt`). #42–#44 waren angelegt, bevor entschieden war.
+> - Claudes Zustimmung weiter unten („Nicht noch mehr Labor bauen“) und die dortige
+>   Reihenfolge sind **abgelöst**.
+>
+> **Korrektur (28.10.):** Eine frühere Fassung dieses Kopfes beschrieb einen „Top-down-Ansatz“
+> als Regel des Labors. Das hat der Eigentümer nicht gesagt; er beschrieb, wie er *aktuell*
+> arbeitet. Die Fassung ist zurückgenommen.
+
 **Datum:** 2026-10-28 · **Gegenstand:** `main`, Commit `6e621ae` · **Auditor:** GPT-6 Astra
 (ChatGPT), rein lesend · **Einordnung:** Claude Opus 5.5 als Orchestrator.
 Wortlaut des Audits: [`audit-wortlaut.txt`](audit-wortlaut.txt). Er wurde aus dem Chat
