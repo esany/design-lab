@@ -1,5 +1,10 @@
 # Modelle im Einsatz — was belegt ist (Stand 28.10.2026)
 
+> **Vorarbeit unter falscher Lesart — kein Ergebnis, kein Eingang (Bug #55, 28.10.2026).**
+> Diese Datei entstand, weil der Auftrag in #31 falsch gelesen wurde: die Beispiel-Repos als
+> Ideenquelle statt als Prüfgegenstand. Die Analyse läuft neu in Plan #62 (#56 Audit, #57
+> Modellprofile) und beginnt **ohne** diese Datei. Sie bleibt nur als Beleg für den Bug stehen.
+
 Anlass: Issue #31, Punkt 2. Regel: `belegpflicht`. Alles hier stammt aus Herstellerseiten oder
 einer Presseseite, die Herstellerangaben wiedergibt. **Keine Angabe ist unabhängig geprüft.**
 Benchmark-Zahlen sind deshalb *belegt als Herstellerangabe*, nicht als Tatsache über die Welt.
