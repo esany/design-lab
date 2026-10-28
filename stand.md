@@ -70,7 +70,9 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 
 ## Reihenfolge — Vorschlag des Orchestrators, Sie ordnen um
 
-Grundlagen vor Details: Oben steht, wovon anderes abhängt (A31). Freigabe allein heißt nicht
+Grundlagen vor Details: Oben steht, wovon anderes abhängt (A31). **Eine Übersicht, nicht zwei:**
+Diese Tabelle ordnet, was vor dem Plan „Zusammenarbeit von Mensch und Modellen analysieren“ (#62)
+fertig sein muss. Die Aufträge des Plans und ihre Reihenfolge stehen dort. Freigabe allein heißt nicht
 „umsetzungsreif“ (A32, Skill `issue`, E2).
 
 | # | Was | Wartet auf | Davon hängt ab |
@@ -79,7 +81,8 @@ Grundlagen vor Details: Oben steht, wovon anderes abhängt (A31). Freigabe allei
 | 2 | **Verknüpfung Anforderungen ↔ Regeln** (A31–A34, `verknuepfung.md`), PR #54 | Ihre Freigabe | dass Eingeführtes nicht verrottet |
 | 3 | **Antwort zum Audit** (0027 Branch-Schutz, 0028), PR #48 · Branch-Schutz einrichten (#40) | Ihre Freigabe · Ihr Handgriff in GitHub | #41 |
 | 4 | **Sicherung der Werke**, PR #47 (Repo `esany/werke` ist angelegt) | #38 | #25, #39 |
-| 5 | **Vorschlag 0025**: drei Fragen (#53) | Ihre Antworten | Verteilen nach Modellen |
+| 5 | **Vorschlag 0025**: drei Fragen (#53) | Ihre Antworten | Verteilen nach Modellen; Tokenökonomie im Plan (#60) |
+| 6a | **Plan Zusammenarbeit** (#62): Freigabe und drei Fragen | Ihre Antworten | Audit, Modellprofile, Kommunikation, Regeln prüfen, Tokenökonomie, Assistenz |
 | 6 | **Recherche Entwicklung und Gebrauch, Möglichkeitsraum** (#49) | wer recherchiert | Hinweis: berührt #23 (Oberfläche Entwurfsprozess) |
 | 7 | **Raster als Programm** (#24) → Fachpaket Raster und Layout (#27) | Ihre Wahl des Arbeitsorts | #27 baut auf #24 |
 | 8 | Erstes Werk „Vermitteln“ (#8), Generative Gestaltung (#9), Website (#26) | Reihenfolge durch Sie | — |
