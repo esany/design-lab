@@ -85,7 +85,8 @@ Sie legen Optionen mit Begründung vor.
    öffentlich einsehbar.
 6. Jede strukturelle Entscheidung (Regel, Werkzeug, Gestaltung des Labors,
    Automatisierung) bekommt eine Datei in `decisions/`. Gültig wird sie durch
-   die Antwort des Menschen; der Agent trägt sie ein.
+   die Antwort des Menschen; der Agent trägt sie ein. Kopf: `perspektive:` (system, fach,
+   gebrauch); Aufbau nach `decisions/VORLAGE.md` mit Alternativen und Folgen (0030).
 7. **Rückgängig:** Sagt der Mensch „X rückgängig“, erstellt der Agent einen
    Revert als eigenen Pull Request und vermerkt ihn in `stand.md`.
 8. Nach Änderungen an `system/` oder `studies/`: `node tools/build.mjs`

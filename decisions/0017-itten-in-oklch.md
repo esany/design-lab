@@ -3,6 +3,7 @@ status: freigegeben als Startversion
 datum: 2026-10-27
 entschieden_von: Vorschlag Agent (Claude) · Entscheidung Mensch am 2026-10-27
 dient: A04
+perspektive: fach
 ---
 
 # 0017 · Ittens Farbkontraste als Methode — übersetzt in OKLCH

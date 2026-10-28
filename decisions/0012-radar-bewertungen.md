@@ -3,6 +3,7 @@ status: freigegeben als Startversion
 datum: 2026-10-27
 entschieden_von: Vorschlag Agent (Claude) · Entscheidung Mensch am 2026-10-27
 dient: A23, A27
+perspektive: system
 ---
 
 # 0012 · Radar und seine Bewertungen

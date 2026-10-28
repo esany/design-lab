@@ -32,7 +32,7 @@ body:
     id: ziel
     attributes:
       label: Ziel
-      description: Ein Satz. Was soll am Ende da sein — ohne Lösungsweg.
+      description: Ein Satz. Was soll am Ende gelten — ohne Lösungsweg. Das Ergebnis (Datei, Pull Request) steht unter „Ausgabe“.
     validations:
       required: true
   - type: textarea
@@ -53,13 +53,23 @@ body:
   - type: textarea
     id: fertig
     attributes:
-      label: Fertig, wenn
+      label: Fertig, wenn (je Teilergebnis)
       description: Zwei bis fünf Sätze, die man mit Ja oder Nein beantworten kann (Ansehen, Rendern, Messen, `node tools/build.mjs`). „Gut“ ist keine Abnahme.
       placeholder: |
         - Die Datei … existiert und besteht `node tools/build.mjs`.
         - Jeder Satz im Abschnitt … nennt eine Quelle.
     validations:
       required: true
+  - type: textarea
+    id: umfang
+    attributes:
+      label: Umfang und Abbruchpunkt
+      description: Obergrenze (Dateien, Quellen, Zeilen). Wenn etwas unklar ist oder fehlt - eine Frage als Kommentar, nicht raten, nicht weitermachen.
+  - type: input
+    id: werkzeuge
+    attributes:
+      label: Nötige Werkzeuge
+      description: Zum Beispiel ins Repo schreiben, Browser, Node. Fehlt eines, sagt das Modell es zuerst.
   - type: textarea
     id: grenzen
     attributes:

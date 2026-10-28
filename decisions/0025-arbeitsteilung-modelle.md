@@ -3,6 +3,7 @@ status: gültig
 datum: 2026-10-28
 entschieden_von: Eigentümer, Chat 28.10. (Antworten auf #53)
 dient: A12, A13, A26, A34
+perspektive: system
 ---
 
 # 0025 · Arbeitsteilung zwischen Modellen, Übergaben als Issues

@@ -3,6 +3,7 @@ status: freigegeben, Einrichtung durch den Eigentümer offen
 datum: 2026-10-28
 entschieden_von: Mensch („Können wir das öffentliche Repo schützen?“, Antwort auf #40)
 dient: A15, A19
+perspektive: system
 ---
 
 # 0027 · `main` technisch schützen

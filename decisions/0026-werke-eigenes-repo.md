@@ -3,6 +3,7 @@ status: freigegeben
 datum: 2026-10-28
 entschieden_von: Mensch („Ok, dann gern ein eigenes werk repo“, Chat 28.10.), Umsetzung durch den Agenten
 dient: A16, A19
+perspektive: system
 ---
 
 # 0026 · Werkdateien in einem eigenen privaten Repo
