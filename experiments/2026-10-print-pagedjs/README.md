@@ -31,6 +31,8 @@ PDF/X-4, PSO Uncoated v3 (FOGRA52).
 |---|---|
 | `fluss.js` | Paged.js-Erweiterung: **verkettete Textrahmen** (Text fließt durch Rahmen, wie in InDesign), **Grundlinienraster** (erste Grundlinie in mm), Übersatz-Meldung, Trennung an Rahmengrenzen, **deutsche Silbentrennung** über das Paket `hyphen` |
 | `druckvorstufe.py` | RGB-PDF aus dem Browser → Druck-PDF: Farbfelder exakt in CMYK, Bilder aus den CMYK-Quelldaten, Rest über das ICC-Profil (Ghostscript), Endformat- und Beschnittrahmen, PDF/X-4-Kennzeichnung |
+| `feinsatz.js` | Satzregeln für deutschen Text: Gedankenstrich, Ordnungszahl, Zahl + Einheit (schmal, schriftunabhängig), Bis-Strich, doppelte Leerzeichen |
+| `typo-pruefung.py` | misst Satzqualität im PDF je Spalte: Zeichen je Zeile, Wortabstände, Löcher, Trennungen und Trennfolgen |
 | `render.cjs` | Rendert die Seite mit Chromium und Paged.js zu PDF und meldet Übersatz und Zeilen je Rahmen |
 
 ## Ergebnis
@@ -122,6 +124,27 @@ in der Arbeitsumgebung genutzt und liegen **nicht im Repo**.
   bei Type 3, deshalb vorher abklären.
 - Pixelabweichung (Toleranz 12 %): 11,2 % auf der Innenseite und 8,6 % auf der
   Außenseite. Fast alles davon ist der anders umbrochene Fließtext.
+
+## Runde 3: Feinsatz nach Fachpaket „Form“ (2026-10-28)
+
+Regeln aus dem Fachpaket `fachpaket-form` (Abschnitt 2b), automatisch gesetzt.
+Gemessen mit `typo-pruefung.py` (*getestet*):
+
+| | Original | ohne Feinsatz | mit Feinsatz |
+|---|---|---|---|
+| Wortabstand Mittel ± Streuung | 1,41 ± 0,51 mm | 1,46 ± 0,53 mm | 1,24 ± 0,56 mm |
+| Löcher über 2,5 mm | 5 | 4 | 3 |
+| Trennungen / höchstens in Folge | 18 / 2 | 28 / 5 | 17 / 2 |
+
+- Neu in `fluss.js`: kein Hurenkind und kein Schusterjunge, höchstens drei
+  Trennungen in Folge (kurze Wörter zuerst sperren, weil lange ungetrennte
+  Wörter Löcher reißen), letztes Wort eines Absatzes nie trennen.
+- Grundwortabstand −0,08 em als Ersatz für das Stauchen, das Browser nicht können.
+- Nebenwirkung: Der Text ist etwas kürzer, deshalb endet Feld 2 der Außenseite
+  eine Zeile vor dem Rahmenende. Ob das so bleiben soll, ist eine
+  Gestaltungsfrage an den Menschen.
+- Inhaltliche Korrekturen mit Zustimmung des Eigentümers: IBAN in
+  Vierergruppen, Bis-Strich „1200–1608“, „Saale-Orla“. „e.V.“ bleibt offen.
 
 ## Aufwand
 

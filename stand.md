@@ -33,6 +33,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 | 2026-10-27 | Studie „Reihe und Verschiebung“ abgeschlossen, bleibt als Referenz | Ihre Entscheidung: nicht weiterarbeiten | „Studie wieder öffnen“ |
 | 2026-10-27 | D3sign-Prinzipien übernommen: Werk vor System, Vertrauen statt Scheinreife, Stoppen statt simulieren, Widerspruchspflicht, Priorisierung, Skill `fundstueck`, Modul „System“ | Ihr „ja“ (0020) | „D3sign-Übernahme rückgängig“ |
 | 2026-10-27 | Feldforschung KI × Gestaltung (KINDLAB, KITeGG, UdK, FHP, Burg, KHM …): Befunde, Einordnung, 4 Entwürfe als Issues #6–#9, Radar ergänzt | Ihr Rechercheauftrag | „Feldforschung rückgängig“ |
+| 2026-10-28 | **Fachpaket „Form“ (Typografie):** Kanon, Satzregeln, messbare Kriterien, Werkzeugvergleich InDesign · CSS · Scribus. Dazu Feinsatz am Flyer: so gut wie das Original gesetzt (weniger Löcher, gleich viele Trennungen) | Ihr Auftrag Typografie | „Fachpaket Form rückgängig“ |
 | 2026-10-28 | Print-Experiment Runde 2 mit Ihren Originalschriften: passt ohne Einpassen; 31 % der Fließtextzeilen brechen wie im Original um; Schriften landen als Type 3 im PDF. Schriften nicht im Repo | Ihre Schriften | „Runde 2 rückgängig“ |
 | 2026-10-27 | **Experiment Print ohne InDesign:** Ihr Flyer mit HTML/CSS und Paged.js nachgebaut, Druck-PDF in CMYK. Wiederverwendbare Werkzeuge (Textfluss, Grundlinienraster, Silbentrennung, Druckvorstufe) in `experiments/2026-10-print-pagedjs/`. Der Flyer selbst bleibt außerhalb des Repos | Ihre Frage nach freien Print-Werkzeugen | „Print-Experiment rückgängig“ |
 | 2026-10-27 | Ihre Verweise als **Ausgangspunkte** gekennzeichnet, nicht als Kanon; Ansätze daraus als offen markiert | Ihre Klärung im Chat | „Verweise-Klarstellung rückgängig“ |
@@ -53,7 +54,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 
 ## In Arbeit
 
-- Print-Experiment: wartet auf Ihr Urteil (taugt Eingreifen über Text und Zahlen, oder braucht es eine Maus-Oberfläche?)
+- Print-Experiment: offen sind „e.V.“ oder „e. V.“, die um eine Zeile kürzere Spalte und Ihr Urteil (taugt Eingreifen über Text und Zahlen, oder braucht es eine Maus-Oberfläche?)
 
 - Fachpaket „Vermitteln“: #6 und #7 erledigt → **#8: erstes Werk** mit Observable Plot und offenen Daten, geprüft gegen das Paket
 
