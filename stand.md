@@ -33,6 +33,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 | 2026-10-27 | Studie „Reihe und Verschiebung“ abgeschlossen, bleibt als Referenz | Ihre Entscheidung: nicht weiterarbeiten | „Studie wieder öffnen“ |
 | 2026-10-27 | D3sign-Prinzipien übernommen: Werk vor System, Vertrauen statt Scheinreife, Stoppen statt simulieren, Widerspruchspflicht, Priorisierung, Skill `fundstueck`, Modul „System“ | Ihr „ja“ (0020) | „D3sign-Übernahme rückgängig“ |
 | 2026-10-27 | Feldforschung KI × Gestaltung (KINDLAB, KITeGG, UdK, FHP, Burg, KHM …): Befunde, Einordnung, 4 Entwürfe als Issues #6–#9, Radar ergänzt | Ihr Rechercheauftrag | „Feldforschung rückgängig“ |
+| 2026-10-28 | **Regel 0024 „Kein Wissen nur im Chat“** (auf Probe); Gesprächsprotokoll mit allen Erkenntnissen, die nur im Chat standen (`research/gespraeche/2026-10-28-print-typografie-raster.md`); Radar um Print-Werkzeuge ergänzt | Ihr Hinweis auf Wissensmonopole im Chat | „Regel 0024 rückgängig“ |
 | 2026-10-28 | **Experiment Entwurfsprozess** angelegt; offene Themen als Issues #23–#27; Abschnitt „Anschluss“ für neue Sitzungen; Flyer-Arbeitsstand als ZIP an Sie | Ihr Auftrag „alles sichern“ | „Entwurfsprozess rückgängig“ |
 | 2026-10-28 | Konzept „Raster als Programm“: Ihr Flyer-Raster ausgelesen (Offset, Spalten, Grundlinien, Brüche), Ihre Anforderungen A29/A30, Pilot vorgeschlagen | Gespräch über Raster und Wirksysteme | „Raster-Konzept rückgängig“ |
 | 2026-10-28 | **Duden als Basis** (0023): Abkürzungen wie „e. V.“ automatisch mit schmalem Leerraum; Flyer angepasst. Kürzere Spalte bleibt, keine Kürzung für 9,5 pt (Empfehlung, kein Widerspruch) | Ihre Entscheidung | „Duden-Regel rückgängig“ |
@@ -89,8 +90,10 @@ in den verlinkten Dateien.
   `corpus/`, Entscheidungen in `decisions/`. **Nicht im Repo:**
   Werkdateien des Flyers (ZIP beim Eigentümer, später privates Repo, #25) und
   Lizenzschriften (nur beim Eigentümer).
-- **Nächster sinnvoller Schritt:** privates Repo anbinden (#25), dann #23 und
-  #24 am Flyer.
+- **Gesprächsprotokolle:** `research/gespraeche/` (Erkenntnisse, die nur im
+  Chat standen).
+- **Nächster sinnvoller Schritt:** in einem **neuen Chat** das private Repo
+  anbinden (#25), dann #23 und #24 am Flyer.
 
 ## Nächste Schritte (laufen ohne Sie)
 

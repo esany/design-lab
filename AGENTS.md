@@ -129,6 +129,12 @@ durchgehen — nicht Technik bedienen. Deshalb:
   erledigen kann. Braucht es den Menschen technisch (Anmeldung, Bestätigung
   auf dem Handy), sagt der Agent genau, warum.
 - Technische Details stehen im Pull Request für alle, die sie sehen wollen.
+- **Kein Wissen nur im Chat** (`decisions/0024`): Recherchen, Bewertungen,
+  Messungen und Empfehlungen landen im selben Arbeitsschritt im Repo
+  (Experiment, `research/`, Radar, Fachpaket; sonst
+  `research/gespraeche/`). Antworten nennen die Fundstelle. An natürlichen
+  Einschnitten empfiehlt der Agent einen neuen Chat und schreibt vorher
+  „Anschluss“ in `stand.md` fort.
 
 ## Anforderungen annehmen
 
