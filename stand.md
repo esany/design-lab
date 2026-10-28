@@ -125,8 +125,8 @@ welches gemeint ist.
 
 | Thema | Stand in einem Satz | Merkzettel |
 |---|---|---|
-| **Das System in Ordnung bringen** | Aufräumen erledigt; wartet auf Ihre Wahl, welche Aufträge an Astra und Codex gehen; Untersuchung zurückgestellt | [`anschluss/system.md`](anschluss/system.md) |
-| **Entwicklung und Gebrauch · Möglichkeitsraum** | Recherche geschrieben, ruht; offen, wer sie macht | [`anschluss/moeglichkeitsraum.md`](anschluss/moeglichkeitsraum.md) |
+| **Das System in Ordnung bringen** | Aufräumen erledigt, Aufträge zugeordnet (Experimente zurückgestellt); Untersuchung zurückgestellt | [`anschluss/system.md`](anschluss/system.md) |
+| **Entwicklung und Gebrauch · Möglichkeitsraum** | Recherche Astra zugeordnet; beginnt auf Ihr „mach“ | [`anschluss/moeglichkeitsraum.md`](anschluss/moeglichkeitsraum.md) |
 | **Werke und Gestaltung** | ruht, bis das System in Ordnung ist; Flyer fertig | [`anschluss/werke.md`](anschluss/werke.md) |
 
 **Wo was liegt:** Befunde in `experiments/` und `research/`, Fachwissen in
