@@ -7,6 +7,12 @@
             data-grundlinie="18.3" erste Grundlinie in mm ab Oberkante Endformat
             data-letzte="135.3"   tiefste erlaubte Grundlinie in mm
    Absatz:  data-umbruch          beginnt im nächsten Rahmen (wie „Nächste Spalte“)
+
+   Satzregeln beim Umbruch (wie die Umbruchoptionen in InDesign):
+   - kein Hurenkind: letzte Absatzzeile allein oben im nächsten Rahmen
+   - kein Schusterjunge: erste Absatzzeile allein unten im Rahmen
+   - höchstens 3 Trennungen hintereinander je Spalte
+   Ergebnis in document.body.dataset.satzbericht
    ============================================================ */
 (function () {
   const MM = 96 / 25.4; // px pro mm
@@ -35,20 +41,25 @@
     rahmen.style.height = (letzte - gl + px2mm(zeile) + 0.3) + "mm"; // 0,3 mm Toleranz gegen Rundung
   }
 
-  // erstes Zeichen, das unter dem Rahmen liegt → Position zum Teilen
-  function teilstelle(absatz, unten, zeile) {
-    const gang = document.createTreeWalker(absatz, NodeFilter.SHOW_TEXT);
+  // Anfang jeder Zeile eines Elements: [{knoten, i, top}]
+  function zeilenAnfaenge(el) {
+    const gang = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
     const r = document.createRange();
-    let knoten;
+    const liste = []; let knoten, letzte = null;
     while ((knoten = gang.nextNode())) {
       for (let i = 0; i < knoten.length; i++) {
         r.setStart(knoten, i); r.setEnd(knoten, i + 1);
         const rect = r.getClientRects()[0];
-        if (rect && rect.top > unten - zeile / 2) return { knoten, i };
+        if (!rect || rect.width === 0) continue;
+        if (letzte === null || rect.top > letzte + 2) liste.push({ knoten, i, top: rect.top });
+        letzte = rect.top;
       }
     }
-    return null;
+    return liste;
   }
+
+  const bericht = { hurenkinder: 0, schusterjungen: 0, trennsperren: [] };
+  const sperre = new Set();  // Wörter, die nicht mehr getrennt werden dürfen
 
   function passt(rahmen) { return rahmen.scrollHeight <= rahmen.clientHeight + 0.5; }
 
@@ -57,7 +68,13 @@
   function fliessen(name) {
     const vorlage = texte[name];
     if (!vorlage) { console.error(`Text „${name}“ fehlt`); return; }
-    const quelle = [...vorlage.cloneNode(true).children];
+    const kopie = vorlage.cloneNode(true);
+    if (sperre.size) {
+      const g = document.createTreeWalker(kopie, NodeFilter.SHOW_TEXT); let n;
+      while ((n = g.nextNode())) n.data = n.data.replace(/[\p{L}\u00AD]+/gu,
+        w => sperre.has(w.replace(/\u00AD/g, "")) ? w.replace(/\u00AD/g, "") : w);
+    }
+    const quelle = [...kopie.children];
     const rahmen = [...document.querySelectorAll(`[data-fluss="${name}"]`)]
       .sort((a, b) => a.dataset.reihe - b.dataset.reihe);
 
@@ -79,7 +96,18 @@
         absatz.classList.add("geteilt");
         const unten = r.getBoundingClientRect().bottom;
         const zeile = parseFloat(getComputedStyle(absatz).lineHeight);
-        const t = teilstelle(absatz, unten, zeile);
+        const anfaenge = zeilenAnfaenge(absatz);
+        let idx = anfaenge.findIndex(z => z.top > unten - zeile / 2);
+        if (idx > 0) {
+          const unterhalb = anfaenge.length - idx;
+          if (idx === 1 && !absatz.classList.contains("fortsetzung") && r.childElementCount > 1
+              && !absatz.classList.contains("leer")) {
+            idx = 0; bericht.schusterjungen++;                  // ganze Zeile nach vorn
+          } else if (unterhalb === 1 && idx >= 2) {
+            idx -= 1; bericht.hurenkinder++;                    // eine Zeile mitnehmen
+          }
+        }
+        const t = idx > 0 ? { knoten: anfaenge[idx].knoten, i: anfaenge[idx].i } : null;
         if (!t || (t.knoten === absatz.firstChild && t.i === 0)) {  // passt gar nicht
           absatz.classList.remove("geteilt");
           absatz.remove(); rest.unshift(absatz); break;
@@ -123,10 +151,49 @@
     }
   }
 
+  // Trennungen je Spalte zählen; bei mehr als 3 in Folge ein Wort sperren
+  function trennfolgen(name, hoechstens = 3) {
+    const neu = [];
+    for (const r of document.querySelectorAll(`[data-fluss="${name}"]`)) {
+      const z = zeilenAnfaenge(r);
+      let folge = [];
+      for (let n = 1; n <= z.length; n++) {
+        let getrennt = false, wort = null;
+        if (n < z.length) {
+          const { knoten, i } = z[n];
+          const t = knoten.data;
+          const vor = t.slice(0, i).replace(/\u00AD/g, "").slice(-1);
+          const nach = t[i] || "";
+          if (/\p{L}/u.test(vor) && /\p{L}/u.test(nach)) {
+            getrennt = true;
+            const links = (t.slice(0, i).match(/[\p{L}\u00AD]*$/u) || [""])[0];
+            const rechts = (t.slice(i).match(/^[\p{L}\u00AD]*/u) || [""])[0];
+            wort = (links + rechts).replace(/\u00AD/g, "");
+          }
+        } else {
+          getrennt = /-$/.test(r.textContent.trimEnd());   // Trennung am Rahmenende
+        }
+        if (getrennt) folge.push(wort);
+        else folge = [];
+        if (folge.length > hoechstens) {
+          // kurze Wörter zuerst sperren: lange ungetrennte Wörter reißen Löcher
+          const kandidat = folge.filter(w => w && !sperre.has(w) && w.length < 14)
+            .sort((a, b) => a.length - b.length)[0];
+          if (kandidat) { neu.push(kandidat); folge = []; }
+        }
+      }
+    }
+    return neu;
+  }
+
   class Textfluss extends Paged.Handler {
     beforeParsed(inhalt) {
       // Silbentrennung nach deutschen Trennmustern (Paket „hyphen“), statt der
       // Browser-Trennung, die je nach System falsch oder gar nicht trennt
+      if (window.feinsatz) {
+        window.feinsatz.anwenden(inhalt);
+        inhalt.querySelectorAll("template").forEach(t => window.feinsatz.anwenden(t.content));
+      }
       if (window.silbentrennung) {
         const knoten = []; let k;
         inhalt.querySelectorAll(".rahmen").forEach(r => {
@@ -140,6 +207,14 @@
         // Mailadressen und Webadressen nie trennen
         knoten.forEach(n => { n.data = n.data.replace(/\S+/g, w => /[@\/]|www\./.test(w) ? w : window.silbentrennung(w).replace(/^([^\u00AD]{1,2})\u00AD/, '$1').replace(/\u00AD([^\u00AD]{1,2})$/, '$1')); });
       }
+      // Letztes Wort eines Absatzes nie trennen: keine Silbe allein in der Ausgangszeile
+      const absaetze = [...inhalt.querySelectorAll(".rahmen p")];
+      inhalt.querySelectorAll("template").forEach(t => absaetze.push(...t.content.querySelectorAll("p")));
+      for (const p of absaetze) {
+        const g = document.createTreeWalker(p, NodeFilter.SHOW_TEXT); let n, letzter = null;
+        while ((n = g.nextNode())) if (/\p{L}/u.test(n.data)) letzter = n;
+        if (letzter) letzter.data = letzter.data.replace(/[\p{L}\u00AD]+(?=[^\p{L}\u00AD]*$)/u, w => w.replace(/\u00AD/g, ""));
+      }
       inhalt.querySelectorAll("template").forEach(t => {
         texte[t.id] = (t.content && t.content.children.length) ? t.content : t;
         t.remove();
@@ -148,7 +223,18 @@
     afterRendered() {
       document.querySelectorAll(".rahmen:not([data-fluss])").forEach(ausrichten);
       const namen = new Set([...document.querySelectorAll("[data-fluss]")].map(r => r.dataset.fluss));
-      namen.forEach(fliessen);
+      for (const name of namen) {
+        for (let runde = 0; runde < 15; runde++) {
+          bericht.hurenkinder = 0; bericht.schusterjungen = 0;
+          delete document.body.dataset.uebersatz;
+          fliessen(name);
+          const neu = trennfolgen(name);
+          if (!neu.length) break;
+          neu.forEach(w => { sperre.add(w); bericht.trennsperren.push(w); });
+        }
+      }
+      bericht.feinsatz = window.feinsatz ? window.feinsatz.protokoll : null;
+      document.body.dataset.satzbericht = JSON.stringify(bericht);
     }
   }
   Paged.registerHandlers(Textfluss);

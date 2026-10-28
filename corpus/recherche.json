@@ -433,5 +433,241 @@
     "status": "belegt",
     "notiz": "Archiv der HfG Ulm (1953–1968); Quelle für Gestaltungsgeschichte. Kein KI-Projekt gefunden.",
     "geprueft": "2026-10-27"
+  },
+  {
+    "id": "bringhurst-1992",
+    "titel": "The Elements of Typographic Style",
+    "autor": "Robert Bringhurst",
+    "jahr": 1992,
+    "art": "Buch",
+    "url": "https://en.wikipedia.org/wiki/The_Elements_of_Typographic_Style",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "form"
+    ],
+    "status": "belegt",
+    "notiz": "Hartley & Marks; Version 4.0 von 2012. Zeilenlänge: „Anything from 45 to 75 characters is widely regarded as a satisfactory length of line“, 66 Zeichen als Ideal, mehrspaltig 40–50 (zitiert nach webtypography.net).",
+    "geprueft": "2026-10-28"
+  },
+  {
+    "id": "rutter-webtypography",
+    "titel": "The Elements of Typographic Style Applied to the Web",
+    "autor": "Richard Rutter",
+    "jahr": null,
+    "art": "Projekt",
+    "url": "https://webtypography.net/2.1.2",
+    "lizenz": "unbekannt",
+    "felder": [
+      "form",
+      "interaktion"
+    ],
+    "status": "belegt",
+    "notiz": "Überträgt Bringhurst auf CSS; empfiehlt Zeilenbreiten in em.",
+    "zugang": "offen",
+    "geprueft": "2026-10-28"
+  },
+  {
+    "id": "butterick-practical-typography",
+    "titel": "Butterick’s Practical Typography — Summary of key rules",
+    "autor": "Matthew Butterick",
+    "jahr": null,
+    "art": "Projekt",
+    "url": "https://practicaltypography.com/summary-of-key-rules.html",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "form"
+    ],
+    "status": "belegt",
+    "notiz": "26 Regeln, u. a.: Print 10–12 pt; Zeilenabstand 120–145 %; 45–90 Zeichen je Zeile; Kerning immer an; Versalien und Kapitälchen 5–12 % sperren; Einzug 1–4 × Schriftgröße oder Absatzabstand, nicht beides; Blocksatz immer mit Silbentrennung; keine doppelten Leerzeichen.",
+    "zugang": "offen",
+    "geprueft": "2026-10-28"
+  },
+  {
+    "id": "willberg-forssman-1997",
+    "titel": "Lesetypografie",
+    "autor": "Hans Peter Willberg, Friedrich Forssman",
+    "jahr": 1997,
+    "art": "Buch",
+    "url": "https://hyphenpress.co.uk/two_books_on_book_typography/",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "form"
+    ],
+    "status": "belegt",
+    "notiz": "Verlag Hermann Schmidt, Mainz; 2. Aufl. 2005, 340 S. Makrotypografie von Seite und Doppelseite; Maßstab ist das Lesen.",
+    "geprueft": "2026-10-28"
+  },
+  {
+    "id": "forssman-dejong-2004",
+    "titel": "Detailtypografie. Nachschlagewerk für alle Fragen zu Schrift und Satz",
+    "autor": "Friedrich Forssman, Ralf de Jong",
+    "jahr": 2004,
+    "art": "Buch",
+    "url": "https://www.perlentaucher.de/buch/friedrich-forssman-ralf-de-jong/detail-typografie.html",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "form"
+    ],
+    "status": "belegt",
+    "notiz": "Verlag Hermann Schmidt, 2. Aufl. 2004, 376 S. Mikrotypografie: Schriftwahl, Wortabstand, Zeilen- und Seitenumbruch, Satzzeichen, Trennung, Auszeichnung. Von der taz „Duden für Typografen“ genannt.",
+    "geprueft": "2026-10-28"
+  },
+  {
+    "id": "hochuli-1987",
+    "titel": "Das Detail in der Typografie",
+    "autor": "Jost Hochuli",
+    "jahr": 1987,
+    "art": "Buch",
+    "url": "https://en.wikipedia.org/wiki/Jost_Hochuli",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "form"
+    ],
+    "status": "belegt",
+    "notiz": "Buchstabe, Wort, Zeile, Zeilenabstand — die Grundlage der Mikrotypografie. Hochuli (1933–2026) laut Wikipedia am 18.10.2026 verstorben.",
+    "geprueft": "2026-10-28"
+  },
+  {
+    "id": "ruder-1967",
+    "titel": "Typographie. Ein Gestaltungslehrbuch",
+    "autor": "Emil Ruder",
+    "jahr": 1967,
+    "art": "Buch",
+    "url": "https://www.niggli.ch/en/produkt/typographie",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "form",
+      "ordnung"
+    ],
+    "status": "belegt",
+    "notiz": "Niggli; dreisprachig. Struktur, Raster, Rhythmus, Proportion, Lesbarkeit; Grundwerk der Schweizer Typografie. Lehrer von Karl Gerstner.",
+    "geprueft": "2026-10-28"
+  },
+  {
+    "id": "tschichold-1928",
+    "titel": "Die neue Typographie",
+    "autor": "Jan Tschichold",
+    "jahr": 1928,
+    "art": "Buch",
+    "url": "https://monoskop.org/Tschichold",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "form"
+    ],
+    "status": "belegt",
+    "notiz": "Berlin, Bildungsverband der Deutschen Buchdrucker. Programmschrift der asymmetrischen, funktionalen Typografie; Tschichold (1902–1974) rückte später davon ab.",
+    "geprueft": "2026-10-28"
+  },
+  {
+    "id": "tschichold-1960",
+    "titel": "Erfreuliche Drucksachen durch gute Typographie",
+    "autor": "Jan Tschichold",
+    "jahr": 1960,
+    "art": "Buch",
+    "url": "https://monoskop.org/Tschichold",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "form"
+    ],
+    "status": "belegt",
+    "notiz": "Ravensburg, Otto Maier. Praxisregeln für Akzidenzen — also genau Flyer, Karten, Formulare.",
+    "geprueft": "2026-10-28"
+  },
+  {
+    "id": "legge-bigelow-2011",
+    "titel": "Does print size matter for reading? A review of findings from vision science and typography",
+    "autor": "Gordon E. Legge, Charles A. Bigelow",
+    "jahr": 2011,
+    "art": "Paper",
+    "url": "https://legge.dl8.umn.edu/sites/legge.psych.umn.edu/files/2020-08/Legge%20Bigelow%202011%20Does%20size%20matter%20for%20reading%3F%20A%20review%20of%20findings%20from%20vision%20science%20and%20typography.pdf",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "form",
+      "vermitteln"
+    ],
+    "status": "belegt",
+    "notiz": "Journal of Vision 11(5):8, doi 10.1167/11.5.8. Kritische Schriftgröße ≈ 0,2° x-Höhe; flüssiges Lesen von 0,2° bis 2°, bei 40 cm Leseabstand x-Höhe 1,4–14 mm (≈ 4–40 pt). Buchtext liegt im Mittel bei 0,24°.",
+    "zugang": "offen",
+    "geprueft": "2026-10-28"
+  },
+  {
+    "id": "din-5008",
+    "titel": "DIN 5008 — Schreib- und Gestaltungsregeln für die Text- und Informationsverarbeitung",
+    "autor": "DIN",
+    "jahr": null,
+    "art": "Werk",
+    "url": "https://www.haufe-akademie.de/blog/themen/assistenz-und-office-management/din-5008/",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "form"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Norm selbst nicht eingesehen; nach Haufe: IBAN in Vierergruppen mit Leerzeichen, beginnend mit Ländercode; Telefonnummern in sinnvollen Blöcken mit Leerzeichen, Vorwahl abgesetzt.",
+    "geprueft": "2026-10-28"
+  },
+  {
+    "id": "w3c-css-text-4",
+    "titel": "CSS Text Module Level 4 (Working Draft)",
+    "autor": "W3C CSS Working Group",
+    "jahr": 2026,
+    "art": "Werk",
+    "url": "https://www.w3.org/TR/2026/WD-css-text-4-20260814/",
+    "lizenz": "W3C Document License",
+    "felder": [
+      "form",
+      "interaktion"
+    ],
+    "status": "belegt",
+    "notiz": "Entwurf vom 14.8.2026. Definiert u. a. hyphenate-limit-zone, hyphenate-limit-lines, hanging-punctuation, text-wrap-style pretty, Stauchen und Dehnen beim Blocksatz (§7.5.1). Was Chromium 153 davon kann: siehe Fachpaket „Form“ (getestet).",
+    "zugang": "offen",
+    "geprueft": "2026-10-28"
+  },
+  {
+    "id": "hyphen-npm",
+    "titel": "hyphen — Silbentrennung nach TeX-Mustern",
+    "autor": "Yevhen Tiurin",
+    "jahr": 2026,
+    "art": "Werkzeug",
+    "url": "https://www.npmjs.com/package/hyphen",
+    "lizenz": "ISC",
+    "felder": [
+      "form"
+    ],
+    "status": "belegt",
+    "notiz": "Version 1.14.1; deutsche Muster (de-1996). Trennt im Labor anstelle der Browser-Trennung.",
+    "zugang": "offen",
+    "geprueft": "2026-10-28"
+  },
+  {
+    "id": "pagedjs",
+    "titel": "Paged.js",
+    "autor": "Paged.js-Community (gegründet von Adam Hyde)",
+    "jahr": 2024,
+    "art": "Werkzeug",
+    "url": "https://pagedjs.org/en/about/",
+    "lizenz": "unbekannt",
+    "felder": [
+      "form"
+    ],
+    "status": "belegt",
+    "notiz": "Version 0.4.3 (npm, zuletzt geändert 10/2024). Polyfill für CSS Paged Media: Seitenformat, Beschnitt, Marken, Umbruch.",
+    "zugang": "offen",
+    "geprueft": "2026-10-28"
+  },
+  {
+    "id": "scribus",
+    "titel": "Scribus",
+    "autor": "Scribus-Team",
+    "jahr": 2026,
+    "art": "Werkzeug",
+    "url": "https://en.wikipedia.org/wiki/Scribus",
+    "lizenz": "GPL",
+    "felder": [
+      "form"
+    ],
+    "status": "belegt",
+    "notiz": "Stabil 1.6.6 (13.4.2026), Entwicklung 1.7.3. CMYK, ICC, PDF/X-4, Python-Skripte; IDML-Import nur in der Entwicklungsversion.",
+    "zugang": "offen",
+    "geprueft": "2026-10-28"
   }
 ]
