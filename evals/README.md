@@ -18,6 +18,7 @@ evals/<fall>/
 | Fall | prüft | Skill |
 |---|---|---|
 | `start` | findet eine frische Sitzung das Labor und den nächsten Schritt? (angelegt) | — |
+| `parallel` | Start und Abschluss, wenn mehrere Chats parallel an verschiedenen Themen arbeiten (angelegt; erste Beobachtung: nicht bestanden) | Orchestrator, Skill `issue` |
 | `beleg-kunstgeschichte` | 5 Fragen mit bekannten, belegbaren Antworten; erfindet das Modell Quellen? | `belegpflicht` |
 | `regel-umsetzen` | eine schriftlich formulierte Kompositionsregel exakt als Studie umsetzen | `konkrete-kunst`, `studie` |
 | `diagramm-zuordnung` | Datensatz → richtige visuelle Variablen nach Bertin | `bertin-semiologie` |
