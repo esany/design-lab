@@ -7,7 +7,8 @@ const path = require('path');
   const logs = [];
   p.on('console', m => logs.push(m.type() + ': ' + m.text()));
   p.on('pageerror', e => logs.push('pageerror: ' + e.message));
-  await p.goto('file://' + path.resolve('index.html'));
+  const quelle = process.argv[2] || 'index.html', ziel = process.argv[3] || 'nachbau-rgb.pdf';
+  await p.goto('file://' + path.resolve(quelle));
   await p.waitForFunction(() => window.flyerFertig === true, null, { timeout: 60000 });
   await p.evaluate(() => document.fonts.ready);
   const info = await p.evaluate(() => ({
@@ -19,7 +20,7 @@ const path = require('path');
     fonts: [...document.fonts].filter(f => f.status === 'loaded').map(f => f.family + ' ' + f.weight + ' ' + f.style),
   }));
   console.log(JSON.stringify(info, null, 1));
-  await p.pdf({ path: 'nachbau-rgb.pdf', preferCSSPageSize: true, printBackground: true });
+  await p.pdf({ path: ziel, preferCSSPageSize: true, printBackground: true });
   console.log(logs.filter(l => !l.includes('Download the React')).join('\n'));
   await b.close();
 })();

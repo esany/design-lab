@@ -146,6 +146,32 @@ Gemessen mit `typo-pruefung.py` (*getestet*):
 - Inhaltliche Korrekturen mit Zustimmung des Eigentümers: IBAN in
   Vierergruppen, Bis-Strich „1200–1608“, „Saale-Orla“. „e.V.“ bleibt offen.
 
+## Runde 4: Wahrnehmungssituation und Variante „lesbar“ (2026-10-28)
+
+Erste Anwendung des Manifests (`manifest.md`).
+
+**Wahrnehmungssituation**, Angaben des Eigentümers und eigene Annahmen:
+- Der Flyer liegt nur im Objekt aus, ist also keine Massenware. Die Wirkung
+  aus der Ferne in der Auslage spielt deshalb kaum eine Rolle.
+- Gelesen wird in der Hand bei 30–40 cm, oft im Stehen.
+- *Annahme:* Innenräume des historischen Gebäudes mit gedämpftem Licht und
+  ein eher älteres Publikum.
+- Die Antwortkarte bleibt vorerst außen vor.
+
+**Bewertung** mit den Schriftdateien und Softproof-Farben gerechnet. Die
+Kontrastwerte sind Näherungen für den Bildschirm, nicht für den Druck:
+
+| Element | vorher | Variante | Folge |
+|---|---|---|---|
+| Fließtext | 4c-Grau, 12,9 : 1, Passerrisiko | 100 % Schwarz, 16,3 : 1 | im Bild kaum sichtbar, im Druck schärfer; kein Eingriff in den Satz |
+| Bildunterschriften | 7 pt, 0,17° | 8 pt, 0,20° | ein Etikett musste breiter werden |
+| Feld hinter „Sie wollen …“ | 80 % Deckung, 2,8–3,7 : 1 | 92 %, 3,3–3,7 : 1 | ruhigerer Grund; mehr wäre nur mit anderer Farbe möglich |
+| Titel | 0,63° in der Hand | unverändert | nicht nötig, weil keine Auslage aus der Ferne |
+| Fließtext 9 pt (0,22°) | — | unverändert | größer nur mit gekürztem Text, also eine Inhaltsfrage |
+
+Die Satzqualität bleibt unverändert (`typo-pruefung.py`). Die Dateien der
+Variante liegen nicht im Repo (Inhalte des Vereins).
+
 ## Aufwand
 
 Etwa eine Arbeitssitzung des Agenten, davon die Hälfte für Werkzeuge, die
