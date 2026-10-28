@@ -32,4 +32,4 @@ Punkte als Fragen in Alltagssprache vor (0018). Antworten trägt er hier ein.
 | 0022 | [Gestaltung dient: Manifest und Leitprinzip](0022-gestaltung-dient.md) | freigegeben |
 | 0023 | [Duden als Basis für Rechtschreibung und Satzregeln](0023-duden-als-basis.md) | freigegeben |
 | 0024 | [Kein Wissen nur im Chat](0024-kein-wissen-nur-im-chat.md) | freigegeben (auf Probe) |
-| 0025 | [Übergaben zwischen Modellen laufen über Issues](0025-arbeitsteilung-modelle.md) | Vorschlag (verschlankt) |
+| 0025 | [Arbeitsteilung zwischen Modellen, Übergaben als Issues](0025-arbeitsteilung-modelle.md) | Vorschlag |

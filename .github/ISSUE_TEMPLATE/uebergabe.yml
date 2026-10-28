@@ -21,6 +21,13 @@ body:
         - Mensch (Frage an den Eigentümer)
     validations:
       required: true
+  - type: input
+    id: dient
+    attributes:
+      label: Dient
+      description: Anforderung(en) aus intent.md, z. B. „A31, A22“. Ohne Bezug kein Issue.
+    validations:
+      required: true
   - type: textarea
     id: ziel
     attributes:
@@ -67,4 +74,4 @@ body:
     id: blockiert
     attributes:
       label: Blockiert durch
-      description: Issue-Nummer(n) oder leer lassen.
+      description: Issue-Nummer(n) oder leer lassen. Zusätzlich als GitHub-Abhängigkeit setzen (nur Issues, keine Pull Requests).
