@@ -3,7 +3,7 @@
 Gemeinsame Übersicht zum Durchgehen. Jede Änderung ist einzeln rückgängig zu
 machen — es genügt zu sagen: **„… rückgängig“**.
 
-**Zuletzt aktualisiert:** 2026-10-28
+**Zuletzt aktualisiert:** 2026-10-29
 
 ## Wo das Labor steht
 
@@ -14,8 +14,8 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 - **Inhalt:** Manifest · Prinzipien · Skills (`.agents/skills/`, darunter Fachpakete) · Korpus ·
   Modul „System“ · Studien · Feldforschung · Radar · Entscheidungen (`decisions/`). Zahlen stehen
   hier nicht mehr: sie veralten; die Ordner sind die Wahrheit.
-- **Status:** Experiment, Laufzeit bis Ende November 2026
-  (`experiments/2026-10-labor-aufbau.md`).
+- **Status:** Experiment (`experiments/2026-10-labor-aufbau.md`); ein fester Termin Ende November
+  gilt nicht als Zwang, erst werden die offenen Aufgaben des Systems abgearbeitet.
 
 ## Letzte Änderungen
 
@@ -77,50 +77,43 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 
 ## Offene Punkte — für uns gemeinsam
 
-1. **Gegenprüfung durch Codex:** braucht einmalig Ihre Freischaltung in
-   ChatGPT (Codex mit GitHub verbinden, Code-Review für `design-lab`
-   einschalten). Ohne sie prüft vorerst ein frischer Claude-Durchgang —
-   gleiche Qualität der Regeln, aber nicht „anderes Modell“.
-2. **Ihre Pinterest-Sammlung** lässt sich nicht automatisch lesen (Pinterest
-   sperrt das). Sie steht als Referenz im Korpus. Wenn Sie wollen, dass ein Agent
-   sie nutzt, nennen Sie mir einzelne Boards, die für ein Feld stehen, oder
-   beschreiben Sie in ein paar Worten, was sie zusammenhält.
+1. **Astra starten:** „mach #49“ (Recherche Möglichkeitsraum, jetzt mit drei Perspektiven) und
+   „mach #41“ (Freigabehinweise). Wie die Übergabe an Astra am kürzesten geht, ist offen
+   (Kurzstartformel, Rückfrage an Sie).
+2. **Hauptzweig-Schutz (#40):** zwei Minuten Klicks, später.
+3. **Fehlerberichte lesen:** #77 („nachziehen“ und „Sammelbegriff“ als Fehllesung). #39 ist erledigt.
+4. **Untersuchung der Modellfehler (#56):** zurückgestellt; #59 und weitere warten darauf.
+5. **Ihre Pinterest-Sammlung** lässt sich nicht automatisch lesen (Pinterest sperrt das). Nennen Sie
+   einzelne Boards je Feld oder beschreiben Sie in ein paar Worten, was sie zusammenhält.
+
+(Die Gegenprüfung durch ein zweites Modell ist zurückgestellt; #43 geschlossen.)
 
 ## Reihenfolge — Vorschlag des Orchestrators, Sie ordnen um
 
-Grundlagen vor Details: Oben steht, wovon anderes abhängt (A31). **Eine Übersicht, nicht zwei:**
-Diese Tabelle ordnet, was vor dem Plan „Zusammenarbeit von Mensch und Modellen analysieren“ (#62)
-fertig sein muss. Die Aufträge des Plans und ihre Reihenfolge stehen dort. Freigabe allein heißt nicht
-„umsetzungsreif“ (A32, Skill `issue`, E2).
+Grundlagen vor Details (A31). Die Aufträge der Untersuchung und ihre Abhängigkeiten stehen im Plan #62.
+Freigabe allein heißt nicht „umsetzungsreif“ (A32, Skill `issue`, E2).
 
 | # | Was | Wartet auf | Davon hängt ab |
 |---|---|---|---|
-| 1 | **Issue-Arbeit** (Skill `issue`, Vorlage „Übergabe“), PR #38 | Ihre Freigabe | Verteilen an andere Modelle; #43, #47, Bugs #50–#52 |
-| 2 | **Verknüpfung Anforderungen ↔ Regeln** (A31–A34, `verknuepfung.md`), PR #54 | Ihre Freigabe | dass Eingeführtes nicht verrottet |
-| 3 | **Antwort zum Audit** (0027 Branch-Schutz, 0028), PR #48 · Branch-Schutz einrichten (#40) | Ihre Freigabe · Ihr Handgriff in GitHub | #41 |
-| 4 | **Sicherung der Werke**, PR #47 (Repo `esany/werke` ist angelegt) | #38 | #25, #39 |
-| 5 | **Vorschlag 0025**: drei Fragen (#53) | Ihre Antworten | Verteilen nach Modellen; Tokenökonomie im Plan (#60) |
-| 6a | **Plan Zusammenarbeit** (#62): Freigabe und drei Fragen | Ihre Antworten | Audit, Modellprofile, Kommunikation, Regeln prüfen, Tokenökonomie, Assistenz |
-| 6 | **Recherche Entwicklung und Gebrauch, Möglichkeitsraum** (#49) | wer recherchiert | Hinweis: berührt #23 (Oberfläche Entwurfsprozess) |
-| 7 | **Raster als Programm** (#24) → Fachpaket Raster und Layout (#27) | Ihre Wahl des Arbeitsorts | #27 baut auf #24 |
-| 8 | Erstes Werk „Vermitteln“ (#8), Generative Gestaltung (#9), Website (#26) | Reihenfolge durch Sie | — |
+| 1 | **Recherche Entwicklung und Gebrauch, Möglichkeitsraum** (#49, Astra) | Ihr „mach“ | #61, #84 |
+| 2 | **Freigabehinweise angleichen** (#41, Astra) | Ihr „mach“ | — |
+| 3 | **Hauptzweig-Schutz** (#40) | Ihre Klicks, später | — |
+| 4 | **Untersuchung der Modellfehler** (#56, nur Wissensarbeit und Fehlerberichte) | Ihr „mach“, zurückgestellt | #57, #59, #58, #60, #61 |
+| 5 | **Docs-Verzeichnis ja/nein** (#84) | #49 | — |
+| 6 | **Werke** (#8, #9, #23, #24, #26, #27) | ruhen, bis das System in Ordnung ist | — |
 
-**Ungeklärt:** #42 (Kontrast), #43 (Prüffälle), #44 (Studie prüfen) stehen auf `entwurf`. Ihre
-Bemerkung „Korrektur der Experimente vernachlässigen wir“ ist noch keiner Nummer zugeordnet.
+**Erledigt am 28.10.:** Skill `issue` (#38), Verknüpfung (#54), Audit-Antwort (0027, 0028), Sicherung der
+Werke (0026), Arbeitsteilung (0025), Merkzettel (0029), Perspektive in Entscheidungen (0030),
+Auftragsformat (#82). **Geschlossen, nicht geplant:** #42 (Kontrast), #43 (Prüffälle mit zweitem Modell),
+#44 (Studie prüfen).
 
 ## In Arbeit
 
 | Thema | Stand | Issue |
 |---|---|---|
-| **Issue-Arbeit** (Skill, Vorlage, Prüffall) | übernommen 28.10.; offen nur der Prüffall mit zweitem Modell | #31 |
-| **Experiment Entwurfsprozess** (neu) | Ideensammlung und Analyse in `experiments/2026-10-entwurfsprozess.md`; erster Schritt: Vergleich, Laborbuch, Entscheidungen als private Seite | #23 |
-| **Raster als Programm** | Konzept, wartet auf Ihre Wahl des Arbeitsorts (Browser empfohlen) | #24 |
-| **Private Ablage der Werke** | `esany/werke` angelegt, Gerüst drin; offen: Flyer als erstes Werk, Agenten-Zugriff, zweite Kopie | #25 |
-| **Labor-Website** zeigt Stand, Manifest, Fachpakete, Experimente | vorgeschlagen | #26 |
-| **Fachpaket „Form“: Raster und Layout** | vorgeschlagen | #27 |
-| **Flyer** | freigegeben, abgeschlossen; offen nur Antwortkarte | — |
-| **Fachpaket „Vermitteln“: erstes Werk** | offen | #8 |
-| **Generative Gestaltung als Referenz** | offen | #9 |
+| **Das System in Ordnung bringen** | Aufräumen erledigt; Untersuchung zurückgestellt | #62 |
+| **Möglichkeitsraum / drei Perspektiven** | Astra zugeordnet, wartet auf „mach“ | #49 |
+| **Werke** | ruhen; Flyer fertig, offen nur die Antwortkarte | — |
 
 ## Themen — hier beginnt jede neue Sitzung
 
