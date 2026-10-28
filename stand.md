@@ -35,6 +35,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 | 2026-10-27 | D3sign-Prinzipien übernommen: Werk vor System, Vertrauen statt Scheinreife, Stoppen statt simulieren, Widerspruchspflicht, Priorisierung, Skill `fundstueck`, Modul „System“ | Ihr „ja“ (0020) | „D3sign-Übernahme rückgängig“ |
 | 2026-10-27 | Feldforschung KI × Gestaltung (KINDLAB, KITeGG, UdK, FHP, Burg, KHM …): Befunde, Einordnung, 4 Entwürfe als Issues #6–#9, Radar ergänzt | Ihr Rechercheauftrag | „Feldforschung rückgängig“ |
 | 2026-10-28 | **Start nur auf Auftrag:** Anschluss ist Vorschlag, kein Auftrag; ohne Auftrag nennt das Modell Stand und Vorschlag und wartet | Modelle begannen sonst eigenmächtig | „Start nur auf Auftrag rückgängig“ |
+| 2026-10-28 | **Flyer als erstes Werk abgelegt** im privaten Repo `esany/werke`, Ordner `werke/2026-flyer-rgut-a6/` (46 Dateien, ohne Schriften) | Sicherung der Werkdateien (#25) | im Repo werke per Revert-PR |
 | 2026-10-28 | **Arbeiten nur mit Auftrag:** Modelle melden beim Start nur und warten; Claude ist Orchestrator und verteilt über Labels `an:…` | Modelle legten ohne Auftrag los | „Auftragsregel rückgängig“ |
 | 2026-10-28 | **Start jeder Sitzung** in AGENTS.md: ein Startsatz für alle Modelle, Repo als einziger Ort, ohne Zugang aufhören statt suchen; Prüffall `evals/start` | ein neuer Chat fand stand.md nicht | „Start-Regel rückgängig“ |
 | 2026-10-28 | **Vorschlag 0025 Arbeitsteilung zwischen Modellen** (wartet auf Antwort) | Tokenökonomie, mehrere Modelle | „Regel 0025 rückgängig“ |
@@ -94,7 +95,7 @@ in den verlinkten Dateien.
 - **Wo was liegt:** Werkzeuge und Befunde in `experiments/`, Konzepte in
   `research/`, Fachwissen in `.agents/skills/fachpaket-*`, Quellen in
   `corpus/`, Entscheidungen in `decisions/`. **Nicht im Repo:**
-  Werkdateien des Flyers (ZIP beim Eigentümer, später privates Repo, #25) und
+  Werkdateien des Flyers (privat in `esany/werke`, `werke/2026-flyer-rgut-a6/`) und
   Lizenzschriften (nur beim Eigentümer).
 - **Gesprächsprotokolle:** `research/gespraeche/` (Erkenntnisse, die nur im
   Chat standen).
