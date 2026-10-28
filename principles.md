@@ -2,6 +2,15 @@
 
 Haltung vor Werkzeug. Diese Seite ändert sich selten und nur bewusst.
 
+## 0. Gestaltung dient — Leitprinzip
+
+Alle Gestaltung ist dienend, menschenzentriert und unterliegt der Wahrnehmung
+und Kognition. Lesbarkeit und Verständlichkeit zuerst. Ästhetische Abweichung
+ist erlaubt, ihre Risiken werden benannt. Kein Entwurf ohne
+Wahrnehmungssituation (Medium, Abstand, Licht, Umgebung, Zeit, Publikum).
+Ausführlich im [Manifest](manifest.md); alle weiteren Prinzipien stehen
+darunter.
+
 ## 1. Gestaltung ist Entscheidung
 
 Maschinen erzeugen das Wahrscheinliche. Ihr Schwerpunkt ist der Durchschnitt.

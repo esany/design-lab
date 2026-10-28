@@ -669,5 +669,56 @@
     "notiz": "Stabil 1.6.6 (13.4.2026), Entwicklung 1.7.3. CMYK, ICC, PDF/X-4, Python-Skripte; IDML-Import nur in der Entwicklungsversion.",
     "zugang": "offen",
     "geprueft": "2026-10-28"
+  },
+  {
+    "id": "akutsu-1991",
+    "titel": "Psychophysics of reading — X. Effects of age-related changes in vision",
+    "autor": "Hiroshi Akutsu, Gordon E. Legge, J. A. Ross, K. J. Schuebel",
+    "jahr": 1991,
+    "art": "Paper",
+    "url": "https://legge.dl8.umn.edu/sites/legge.psych.umn.edu/files/2020-08/psychophysics_of_reading._x._effects_of_age_related_changes_in_vision_akutsu_legge_ross_schuebel_1991.pdf",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "form",
+      "vermitteln"
+    ],
+    "status": "belegt",
+    "notiz": "Journal of Gerontology 46(6), P325–P331. Ältere Leser mit normalem Sehen: gleich schnell bei 0,3°–1,0°, deutlich langsamer bei 0,15° und bei sehr großer Schrift; Grund: nachlassende Kontrastempfindlichkeit. Licht nicht variiert.",
+    "zugang": "offen",
+    "geprueft": "2026-10-28"
+  },
+  {
+    "id": "wcag-2-2",
+    "titel": "WCAG 2.2 — Success Criterion 1.4.3 Contrast (Minimum)",
+    "autor": "W3C",
+    "jahr": 2023,
+    "art": "Werk",
+    "url": "https://w3c.github.io/wcag/understanding/contrast-minimum.html",
+    "lizenz": "W3C Document License",
+    "felder": [
+      "form",
+      "interaktion",
+      "vermitteln"
+    ],
+    "status": "belegt",
+    "notiz": "Kontrast mindestens 4,5 : 1, große Schrift (ab 18 pt oder 14 pt fett) 3 : 1. Begründung: Sehschärfe 20/40 geht mit etwa 1,5-fachem Verlust an Kontrastempfindlichkeit einher. Jahr der Fassung 2.2 nicht an dieser Fundstelle geprüft.",
+    "zugang": "offen",
+    "geprueft": "2026-10-28"
+  },
+  {
+    "id": "din-1450",
+    "titel": "DIN 1450 — Schriften: Leserlichkeit",
+    "autor": "DIN",
+    "jahr": 2024,
+    "art": "Werk",
+    "url": "https://www.dinmedia.de/de/norm/din-1450/170093157",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "form",
+      "raum-zeit"
+    ],
+    "status": "belegt",
+    "notiz": "Beschreibt, wie Schriften leserlich dargestellt werden, auch im Verhältnis von Leuchtdichtekontrast und Schriftgröße. Ausgabe 2013-04 zurückgezogen, ersetzt durch DIN 1450:2024-11. Normtext nicht eingesehen.",
+    "geprueft": "2026-10-28"
   }
 ]

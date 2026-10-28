@@ -9,6 +9,10 @@ Kritik ist nur so gut wie ihre Kriterien. „Gefällt“ und „modern“ sind k
 
 ## Ablauf
 
+0. **Wahrnehmung zuerst** (`manifest.md`): In welcher Situation wird die Arbeit
+   gesehen, also Medium, Abstand, Licht, Umgebung, Zeit und Publikum? Prüfe
+   Sehwinkel und Kontrast der kleinsten wichtigen Information, bevor es um Stil
+   geht. Wo die Ästhetik Lesbarkeit kostet: das Risiko benennen.
 1. **Intention klären.** Was soll die Arbeit leisten? Wenn unbekannt: als
    Frage an den Menschen, nicht raten.
 2. **Kriterien wählen** — aus einem Methoden-Skill (`konkrete-kunst`,

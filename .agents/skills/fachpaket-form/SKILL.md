@@ -16,6 +16,8 @@ und Ordnung).
 
 ## So benutzt ein Agent dieses Paket
 
+0. **Wahrnehmungssituation klären** (`manifest.md`, Abschnitt 0 unten):
+   Medium, Publikum, Abstand, Zeit, Licht, Umgebung.
 1. **Lesart klären:** Wird linear gelesen (Buch), informierend (Flyer, Zeitung),
    konsultierend (Liste) oder flüchtig (Plakat)? Die Lesart bestimmt Zeilenlänge,
    Größe und Gliederung [k:willberg-forssman-1997].
@@ -29,7 +31,46 @@ und Ordnung).
 
 ---
 
-## 1 · Kanon
+## 0 · Wahrnehmungssituation und Sehwinkel
+
+Gestaltung dient (`manifest.md`). Vor Schrift und Raster wird geklärt, **wer
+aus welchem Abstand, wie lange und bei welchem Licht** liest.
+
+**Rechnung:** x-Höhe = Schriftgröße (pt) × 0,353 mm × x-Höhen-Anteil der Schrift;
+Sehwinkel in Grad ≈ 57,3 × x-Höhe / Abstand.
+
+| Richtwert | Wert | Quelle |
+|---|---|---|
+| kritische Größe, normales Sehen | ≈ 0,2° | [k:legge-bigelow-2011] |
+| flüssiges Lesen | ≈ 0,2°–2° | [k:legge-bigelow-2011] |
+| ältere Leser ohne Einbußen | ≈ 0,3°–1,0°; bei 0,15° deutlich langsamer | [k:akutsu-1991] |
+| Kontrast am Bildschirm | ≥ 4,5 : 1, große Schrift ≥ 3 : 1 | [k:wcag-2-2] |
+| Schrift im öffentlichen Raum | eigene Norm | [k:din-1450] |
+
+**Mindest-x-Höhe je Abstand** (*abgeleitet* aus den Richtwerten):
+
+| Situation | Abstand | x-Höhe bei 0,2° | bei 0,3° (ältere Leser) |
+|---|---|---|---|
+| Flyer, Karte in der Hand | 40 cm | 1,4 mm | 2,1 mm |
+| Auslage, Tisch | 1,5 m | 5,2 mm | 7,9 mm |
+| Plakat an der Wand | 3 m | 10,5 mm | 15,7 mm |
+| Plakat von der Straße | 10 m | 35 mm | 52 mm |
+
+Licht ist dabei nicht eingerechnet: Bei Dämmerung, Gegenlicht oder glänzendem
+Papier sinkt der wirksame Kontrast. Dafür gibt es hier keinen belegten
+Zuschlag; die Annahme wird im Einzelfall notiert.
+
+**Am Testflyer gemessen** (Wickelfalz A6; Zielgruppe Förderverein, eher
+älter; *getestet* mit den Schriftdateien, Abstand 40 cm):
+
+| Element | Größe | x-Höhe | Sehwinkel | Bewertung (*abgeleitet*) |
+|---|---|---|---|---|
+| Fließtext Officina | 9 pt | 1,55 mm | 0,22° | knapp über der kritischen Grenze, unter dem Optimum für Ältere |
+| Bildunterschrift, Adresse | 7 pt | 1,2 mm | 0,17–0,18° | darunter: Risiko für ältere Leser, ausgerechnet bei IBAN und Telefon |
+| Kartenbeschriftung | 5 pt | 0,86 mm | 0,12° | deutlich darunter |
+| Titel Euclid Flex | 25 pt | 4,4 mm | 0,63° in der Hand, **0,17° aus 1,5 m in der Auslage** | in der Auslage, wo der Flyer gewählt wird, kaum lesbar |
+
+
 
 ### Verweise des Eigentümers
 

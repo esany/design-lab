@@ -38,6 +38,7 @@ volatil ist und die Bindung an ein Tooling riskant.
 | A05 | **Rolle der KI je Kontext** benennen — was sie leistet und was nicht, bezogen auf Best Practice | Ist pro Feld beschrieben, was die KI tut, was der Mensch, wo die Grenze ist? | **teilweise** — pro Feld beschrieben für „Vermitteln“ und „Form“ (2 von 6) |
 | A06 | **Mehrwert gegen das Mittelmaß**: Gestaltung, Kunst, Kreativität, Haltung stärken, nicht ersetzen | Zeigt das Werk bewusste Abweichung vom Erwartbaren? | **teilweise** — Prinzip 1, Negativfolie in einer Studie |
 | A07 | **Verlässliche Ergebnisse** (Erfahrung: NotebookLM mit willkürlichen Inhalten) | Sind Aussagen belegt, geprüft, Lücken sichtbar? Gibt es einen Prüffall? | **teilweise** — Regel und Skill, kein Prüffall, nicht erprobt |
+| A28 | **Gestaltung dient**: menschenzentriert, Wahrnehmung und Kognition als Maßstab; Medium, Abstand, Licht, Umgebung, Kontext, Publikum werden berücksichtigt; Lesbarkeit vor Ästhetik, Abweichungen mit benanntem Risiko | Ist die Wahrnehmungssituation geklärt und die kleinste wichtige Information auf Sehwinkel und Kontrast geprüft? | **teilweise** — Manifest, Prinzip 0, Kritik-Schritt 0; Prüfung bisher nur am Flyer |
 | A08 | **Alle Einstellungen und Funktionen nachvollziehbar**: Kontext und Erklärung, gestuft nach Bedarf (progressive Offenlegung, zeitgemäße Interaktionsmuster) | Erklärt sich jede Funktion in Stufen? | **teilweise** — in der Studie; Labor-Website und Übersicht nicht |
 
 ### Werkzeuge, Anbindung, Unabhängigkeit
@@ -71,7 +72,7 @@ volatil ist und die Bindung an ein Tooling riskant.
 
 ## Gesamtbild
 
-- **erfüllt:** 11 · **teilweise:** 13 · **offen:** 3 (von 27) — Stand nach Fachpaket „Vermitteln“
+- **erfüllt:** 11 · **teilweise:** 14 · **offen:** 3 (von 28) — Stand 2026-10-28
 - Stark: Steuerung, Transparenz, Kosten, Sicherheit.
 - Schwach: **das Werk und die Fachlichkeit** (A01, A03, A04, A12, A25) — der
   eigentliche Zweck des Labors.
