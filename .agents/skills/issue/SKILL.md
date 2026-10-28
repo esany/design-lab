@@ -108,6 +108,16 @@ oder `an:mensch`.
 
 Neue Labels nur bei Bedarf, mit Eintrag in dieser Tabelle. Ungenutzte werden gelöscht.
 
+**Übersicht über mehrere Issues (jedes Modell, #52):** Grundlage sind die aktuellen Labels und
+die neuesten Kommentare, frisch geholt. Was im Text oder im Chat steht, ist älter. Jedes Issue
+fällt in genau eine Gruppe:
+1. `entwurf`: nicht freigegeben.
+2. `an:mensch`: Der Eigentümer entscheidet oder handelt.
+3. `an:<modell>`: freigegeben und zugewiesen; begonnen wird erst auf Auftrag.
+4. ohne `an:`-Label und ohne `entwurf`: Zuständigkeit ungeklärt.
+
+Blockaden stehen getrennt dabei. Pull Requests werden getrennt von Issues geführt.
+
 ## G · Prüffälle (`evals/`) sind kein Blocker
 Sie zeigen, ob ein Modell oder Werkzeug mit dem Labor zurechtkommt. Sie blockieren keine Arbeit
 und kein Schließen. Eine technische Voraussetzung (die Datei des Prüffalls existiert) ist
