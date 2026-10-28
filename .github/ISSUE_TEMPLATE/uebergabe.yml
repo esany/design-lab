@@ -42,7 +42,7 @@ body:
       description: Pfade im Repo, höchstens fünf, eine Zeile je Pfad. Kein „siehe Chat“.
       placeholder: |
         AGENTS.md
-        stand.md (Abschnitt „Anschluss“)
+        anschluss/<thema>.md (Merkzettel des Themas)
   - type: textarea
     id: ausgabe
     attributes:

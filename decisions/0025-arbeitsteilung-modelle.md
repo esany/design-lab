@@ -1,7 +1,8 @@
 ---
-status: Vorschlag
+status: gültig
 datum: 2026-10-28
-entschieden_von: offen (Antwort des Menschen)
+entschieden_von: Eigentümer, Chat 28.10. (Antworten auf #53)
+dient: A12, A13, A26, A34
 ---
 
 # 0025 · Arbeitsteilung zwischen Modellen, Übergaben als Issues
@@ -10,6 +11,24 @@ entschieden_von: offen (Antwort des Menschen)
 Wochennutzung verbraucht. ChatGPT „Astra 6 max“ ist laut Eigentümer im normalen Chat ohne Limit
 nutzbar; „Work Luna 6 / 5.5 max“ unterliegt Limits. Die Modellnamen und ihre Stärken sind hier
 **nicht belegt** und werden über `evals/` geprüft, nicht angenommen.
+
+## Entscheidung des Eigentümers (28.10., Antworten auf #53)
+
+Der Vorschlag unten bleibt im Wortlaut stehen. Gültig ist er mit diesen Antworten:
+
+1. **Sparregeln gelten als Regel**, mit zwei Bedingungen des Eigentümers: „ich kann es
+   jederzeit anpassen und aus der Reihe beauftragen“ und „[Sparen] darf nicht zu Lasten der
+   Qualität gehen. Für Routinen ist es aber ok.“ Gespart wird also bei Routinen (Pflege, Radar,
+   mechanische Teilaufgaben). Bei Gestaltung, Prüfung und Urteil geht Qualität vor. Ein Auftrag
+   des Eigentümers außerhalb der Reihe hat Vorrang. Radar alle zwei Wochen.
+2. **Die Tabelle „wer macht was“ ist keine Regel.** Sie bleibt als *nicht belegte*
+   Ausgangsvermutung stehen. Worum es geht, sagt der Eigentümer: „es geht darum zu
+   differenzieren“. Code kann auch im normalen Chat (Astra) entstehen, dort fehlen aber
+   bestimmte Funktionen. Codex und Work verbrauchen Limits und laufen deshalb auf einem
+   kleineren Modell (Luna 5.6). **Ein Auftrag muss das berücksichtigen:** Er nennt, welche
+   Funktionen nötig sind (z. B. ins Repo schreiben), und ist so klar und eng geschnitten, dass
+   ihn das kleinere Modell sauber erledigen kann. Die Profile dazu entstehen in #57.
+3. **Kein Label `übergabe`.** Titel `[Übergabe]` und Vorlage genügen.
 
 **Freigegeben (28.10.):** Claude ist Orchestrator. Es schreibt die Issues und gibt ihnen Labels; andere Modelle arbeiten nur an Issues mit ihrem Label. Der Rest bleibt Vorschlag (#31).
 
@@ -21,7 +40,7 @@ nutzbar; „Work Luna 6 / 5.5 max“ unterliegt Limits. Die Modellnamen und ihre
 - Eine Regelquelle: `AGENTS.md`. Die Projekt-Anweisungen in Claude und ChatGPT verweisen nur
   darauf und enthalten keine eigene Kopie, damit die beiden Fassungen nicht auseinanderlaufen.
 
-## Zuschnitt (Vorschlag, *abgeleitet*)
+## Zuschnitt (Ausgangsvermutung, *nicht belegt*, keine Regel; Antwort 2)
 
 | Aufgabe | wer | warum |
 |---|---|---|
@@ -42,7 +61,7 @@ nutzbar; „Work Luna 6 / 5.5 max“ unterliegt Limits. Die Modellnamen und ihre
 
 ## Übergaben als Issues
 
-- Labels: `an:claude`, `an:codex`, `an:chatgpt`, `an:mensch`; dazu `übergabe`.
+- Labels: `an:claude`, `an:codex`, `an:chatgpt`, `an:mensch`; dazu `übergabe` (entfällt, Antwort 3).
 - Neue Vorlage „Übergabe“ mit den Feldern Ziel, Fundstellen (Kontext im Repo), Eingang,
   erwartete Ausgabe mit Zielpfad, Abnahme, Rückgabe an.
 - Beziehungen über Unter-Issues und „blockiert durch #n“; ein Issue ist eine Aufgabe für ein

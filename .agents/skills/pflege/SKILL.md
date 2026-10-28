@@ -49,5 +49,5 @@ durchführen. Ergebnis als Eintrag in `experiments/`.
 ## Anschluss prüfen (Entscheidung 0024)
 
 Monatlich: Hat jedes offene Issue und jedes laufende Experiment eine Fundstelle im
-Repo (Experiment-Datei, `research/`, Fachpaket)? Ist der Abschnitt „Anschluss“
-in `stand.md` aktuell? Fehlt etwas, kommt es als offener Punkt in `stand.md`.
+Repo (Experiment-Datei, `research/`, Fachpaket)? Sind die Merkzettel in
+`anschluss/` aktuell und passt die Themenliste in `stand.md` dazu (0029)? Fehlt etwas, kommt es als offener Punkt in `stand.md`.

@@ -73,6 +73,12 @@ Grundlagen vor Details: Erst kommt, wovon anderes abhängt. `stand.md`, Abschnit
 Vorschlag; der Mensch ordnet um. Eine laute neue Frage verdrängt nichts stillschweigend:
 Entweder sie bekommt einen Platz in der Reihenfolge, oder sie wird ausdrücklich vorgezogen.
 
+### E3a · Themen und Merkzettel (0029)
+Jedes aktive Thema hat einen Merkzettel `anschluss/<thema>.md` und, wenn möglich, ein führendes
+Issue. Beginnt ein neues Thema: Merkzettel anlegen, Zeile in `stand.md`, Abschnitt „Themen“.
+Am Ende der Sitzung nur den eigenen Merkzettel fortschreiben, oben in Worten, Nummern
+eingeklappt darunter. Ist ein Thema abgeschlossen, kommt der Merkzettel nach `anschluss/archiv/`.
+
 ### E4 · Lebenszyklus (Tokenökonomie)
 - **Überholt** (Ziel erledigt, verworfen oder von einem neuen Stand eingeholt): schließen mit
   einem Satz „ersetzt durch #n“ oder „nicht verfolgt, weil …“.
