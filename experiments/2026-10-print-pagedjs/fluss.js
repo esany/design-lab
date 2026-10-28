@@ -138,7 +138,7 @@
           while ((k = g.nextNode())) knoten.push(k);
         });
         // Mailadressen und Webadressen nie trennen
-        knoten.forEach(n => { n.data = n.data.replace(/\S+/g, w => /[@\/]|www\./.test(w) ? w : window.silbentrennung(w)); });
+        knoten.forEach(n => { n.data = n.data.replace(/\S+/g, w => /[@\/]|www\./.test(w) ? w : window.silbentrennung(w).replace(/^([^\u00AD]{1,2})\u00AD/, '$1').replace(/\u00AD([^\u00AD]{1,2})$/, '$1')); });
       }
       inhalt.querySelectorAll("template").forEach(t => {
         texte[t.id] = (t.content && t.content.children.length) ? t.content : t;
