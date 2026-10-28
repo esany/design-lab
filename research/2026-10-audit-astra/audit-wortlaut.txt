@@ -1,0 +1,91 @@
+Audit: design-lab
+
+28. Oktober 2026 · Repository esany/design-lab · Branch main · Commit 6e621ae
+
+Gesamturteil: Das Labor hat eine ungewöhnlich klare gestalterische Haltung und eine brauchbare technische Grundlage. Sein größtes Problem ist nicht fehlende Struktur, sondern das Missverhältnis zwischen ausgearbeiteter Methodik und praktisch erprobter Gestaltung.
+
+Die Grundarchitektur würde ich behalten und vereinfachen, nicht neu aufbauen.
+
+Technische Grundlage
+
+Tragfähig
+
+Regeln und Projektgedächtnis
+
+Inkonsistent
+
+Qualitätssicherung
+
+Teilweise erprobt
+
+Gestalterische Leistungsfähigkeit
+
+Noch wenig belegt
+
+1. Was tatsächlich vorhanden ist
+
+12
+
+Skills
+
+25
+
+Entscheidungen
+
+67
+
+Quellen
+
+1
+
+Studie
+
+Dazu kommen zwei Fachpakete, Print-Werkzeuge, ein Design-Token-System, drei CI-Prüfungen und mehrere laufende Experimente.
+
+Positiv geprüft: Der jüngste Pull Request #37⁠￼ hat alle drei CI-Jobs erfolgreich durchlaufen: Build-Konsistenz, interne Links und Browser-Rendering.
+
+2. Konkrete Auditbefunde
+
+Priorität	Befund	Bewertung
+Hoch	main ist laut GitHub-API nicht branch-geschützt, obwohl Entscheidung 0019 eine technische Sperre behauptet.	Tatsächliche Sicherungslücke
+Hoch	Die Akzentfarbe erreicht als normaler Text 4,33:1 im hellen und 3,77:1 im dunklen Theme statt 4,5:1.	Widerspricht dem Manifest
+Mittel	stand.md nennt 11 Skills, 21 Entscheidungen und 49 Quellen statt 12, 25 und 67.	Projektgedächtnis nicht synchron
+Mittel	Die PR-Vorlage verlangt noch den manuellen Merge durch den Menschen; AGENTS.md erlaubt Agenten, selbst zu mergen.	Veraltete Anweisung
+Mittel	Der Browser-Test prüft JavaScript-Fehler und Überlauf, nicht die fachliche Korrektheit oder alle Interaktionen.	Qualitätslücke
+Mittel	Der Start-Eval meldet „bestanden“, dokumentiert aber selbst, dass der Test nicht vollständig frisch war und ein Teilfall ungeprüft blieb.	Nachweis zu stark formuliert
+
+Fundstellen: AGENTS.md⁠￼, stand.md⁠￼, CI⁠￼, Tokens⁠￼, Evals⁠￼.
+
+3. Der wichtigere strukturelle Befund
+
+Das Labor besitzt derzeit deutlich mehr Wissen über das Gestalten als vorzeigbare Anwendungen dieses Wissens.
+
+Das ist anfangs nachvollziehbar, wird aber zum Problem, wenn jeder Bedarf zuerst eine weitere Regel, einen Skill oder eine Entscheidung auslöst.
+
+Besonders gelungen finde ich die Trennung von Werk und System, die explizite Belegpflicht und den Anspruch, Strukturen für den Menschen veränderbar zu machen. Genau diese Prinzipien sollten jetzt gegen das Labor selbst angewendet werden.
+
+Die 67 Korpusquellen sind kein Mangel. Aber ihre Menge beweist noch keine fachliche Breite. Die eigentliche Frage ist, wie viele davon in einem konkreten Entwurf nachweisbar etwas verbessert haben.
+
+Auch die Modellarbeitsteilung in decisions/0025 ist noch kein bewiesenes System. Die Zuordnung nach vermuteten Modellstärken sollte erst nach vergleichbaren Prüffällen verbindlich werden.
+
+4. Was ich empfehlen würde
+
+Einordnung	Maßnahme
+Jetzt umsetzen	main technisch schützen, widersprüchliche Freigabehinweise bereinigen, stand.md mit dem tatsächlichen Bestand synchronisieren
+Pilot	Eine bestehende Studie auf echte Interaktion, Kontrast, Regelkorrektheit und unabhängige Reproduzierbarkeit prüfen
+Bewusst bewahren	Manifest, Intent, AGENTS.md als Regelquelle, Git-basierte Entscheidungen und das offene Token-System
+Derzeit nicht erweitern	Neue Governance, weitere allgemeine Rollenmodelle und zusätzliche Skills ohne unmittelbaren Anwendungsfall
+
+5. Grenzen des Audits
+
+Getestet: GitHub-Repository-Zustand, Branch-Schutzstatus, jüngste CI-Ergebnisse und rechnerischer Farbkontrast.
+
+Statisch geprüft: Dokumentation, Verzeichnisstruktur, Build-Skripte, Workflows, Skills, Korpus, Entscheidungen und Evals.
+
+Nicht getestet: Ein eigener lokaler Build, eine vollständige visuelle Begutachtung der Studie, Druckqualität des Flyers und die tatsächliche Zusammenarbeit mehrerer Modelle.
+
+Das ist ein Repository- und Struktur-Audit, noch kein vollständiges gestalterisches Werkaudit.
+
+Mein wichtigstes Fazit: Nicht noch mehr Labor bauen, sondern beweisen, dass das vorhandene Labor Gestaltung besser macht.
+
+Ich habe nichts geändert, keinen Branch angelegt und keine Entscheidung getroffen. Der Audit bleibt vorerst hier im Gespräch, entsprechend meiner angekündigten rein lesenden Prüfung. Als nächstes wäre die Sicherung der Befunde im Repo sinnvoll – danach können wir gemeinsam entscheiden, was davon tatsächlich eine Änderung rechtfertigt.
