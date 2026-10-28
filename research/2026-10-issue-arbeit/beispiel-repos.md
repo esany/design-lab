@@ -43,6 +43,8 @@ Status der Aussagen: **belegt** (steht in den Dateien) oder **abgeleitet** (mein
 nannte, kam beim Modell als Wiederholung der Beispiel-Repo-Adresse an (Bug #39). Welches Repo
 gemeint war, ist *nicht belegt* und wird nicht geraten.
 
-Unabhängig davon, als Beobachtung zu genau einem Repo: `pflege-arnshaugk-historie` ließ sich am
-28.10.2026 anonym klonen, war also öffentlich. Für Flyer-Werkdateien und Lizenzschriften gilt
+Unabhängig davon, als Beobachtung zu genau einem Repo: `pflege-arnshaugk-historie` gilt laut
+Antwort des Werkzeugs `add_repo` (28.10.2026) als öffentlich. Eine eigene Gegenprobe war nicht
+möglich (Webzugriff aus der Sitzung: 403). Für Flyer-Werkdateien und Lizenzschriften gilt
 `AGENTS.md` Regel 5; das sagt nichts darüber, wo der Eigentümer sichern will.
+Prüfung eines weiteren Kandidaten: `research/2026-10-sicherung/portfolio-pruefung.md`.
