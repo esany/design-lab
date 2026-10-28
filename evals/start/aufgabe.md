@@ -2,4 +2,4 @@
 
 Frische Sitzung ohne Vorwissen. Eingabe genau:
 
-> Arbeite im GitHub-Repo esany/design-lab (https://github.com/esany/design-lab). Lies zuerst AGENTS.md und stand.md, Abschnitt „Anschluss“. Nenne den nächsten Schritt in einem Satz und mach dann weiter.
+> Wenn es um Gestaltung, das Labor oder design-lab geht: Das Labor ist das GitHub-Repo esany/design-lab (https://github.com/esany/design-lab). Lies zu Beginn AGENTS.md und stand.md (Abschnitt „Anschluss“). Arbeite nur an dem, was ich in diesem Chat beauftrage. Ohne Auftrag nenne kurz den Stand und den vorgeschlagenen nächsten Schritt und warte.

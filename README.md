@@ -18,7 +18,7 @@ Nur **einmal** je Werkzeug eintragen, danach beginnt jeder Chat von selbst richt
 Text:
 
 ```
-Wenn es um Gestaltung, das Labor oder design-lab geht: Das Labor ist das GitHub-Repo esany/design-lab (https://github.com/esany/design-lab). Lies zu Beginn AGENTS.md und stand.md (Abschnitt „Anschluss“), nenne den nächsten Schritt in einem Satz und mach dann weiter.
+Wenn es um Gestaltung, das Labor oder design-lab geht: Das Labor ist das GitHub-Repo esany/design-lab (https://github.com/esany/design-lab). Lies zu Beginn AGENTS.md und stand.md (Abschnitt „Anschluss“). Arbeite nur an dem, was ich in diesem Chat beauftrage. Ohne Auftrag nenne kurz den Stand und den vorgeschlagenen nächsten Schritt und warte.
 ```
 
 Die Regeln selbst stehen nur in [`AGENTS.md`](AGENTS.md) („Start jeder Sitzung“).
