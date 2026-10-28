@@ -33,6 +33,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 | 2026-10-27 | Studie „Reihe und Verschiebung“ abgeschlossen, bleibt als Referenz | Ihre Entscheidung: nicht weiterarbeiten | „Studie wieder öffnen“ |
 | 2026-10-27 | D3sign-Prinzipien übernommen: Werk vor System, Vertrauen statt Scheinreife, Stoppen statt simulieren, Widerspruchspflicht, Priorisierung, Skill `fundstueck`, Modul „System“ | Ihr „ja“ (0020) | „D3sign-Übernahme rückgängig“ |
 | 2026-10-27 | Feldforschung KI × Gestaltung (KINDLAB, KITeGG, UdK, FHP, Burg, KHM …): Befunde, Einordnung, 4 Entwürfe als Issues #6–#9, Radar ergänzt | Ihr Rechercheauftrag | „Feldforschung rückgängig“ |
+| 2026-10-28 | Konzept „Raster als Programm“: Ihr Flyer-Raster ausgelesen (Offset, Spalten, Grundlinien, Brüche), Ihre Anforderungen A29/A30, Pilot vorgeschlagen | Gespräch über Raster und Wirksysteme | „Raster-Konzept rückgängig“ |
 | 2026-10-28 | **Duden als Basis** (0023): Abkürzungen wie „e. V.“ automatisch mit schmalem Leerraum; Flyer angepasst. Kürzere Spalte bleibt, keine Kürzung für 9,5 pt (Empfehlung, kein Widerspruch) | Ihre Entscheidung | „Duden-Regel rückgängig“ |
 | 2026-10-28 | Variante „lesbar im Objekt“ von Ihnen freigegeben und jetzt Hauptfassung des Flyers; Experiment auf „behalten“ | Ihre Freigabe | „Freigabe Flyer rückgängig“ |
 | 2026-10-28 | Variante „lesbar im Objekt“ am Flyer: Fließtext 100 % Schwarz, Bildunterschriften 8 pt, ruhigeres Feld hinter dem Aufruf; erste Anwendung des Manifests | Ihre Frage „was anpassen, welche Folgen“ | „Variante lesbar rückgängig“ |
@@ -57,6 +58,8 @@ machen — es genügt zu sagen: **„… rückgängig“**.
    beschreiben Sie in ein paar Worten, was sie zusammenhält.
 
 ## In Arbeit
+
+- **Raster als Programm** (Vorschlag): wartet auf Ihre Wahl des Arbeitsorts (Browser empfohlen, Scribus als zweiter Weg)
 
 - Flyer: freigegeben, gestalterisch abgeschlossen. Offen ist nur die Antwortkarte; eine Überarbeitung mit 11–12 pt und gekürztem Text als möglicher Pilot, falls der Verein den Text anfassen will (taugt Eingreifen über Text und Zahlen, oder braucht es eine Maus-Oberfläche?)
 

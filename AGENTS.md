@@ -142,7 +142,7 @@ sichtbar machen.
 
 | Ort | Inhalt |
 |---|---|
-| `intent.md` | **Maßstab**: Intent, Ziel, Anforderungen A01–A28 — jede Arbeit prüft dagegen |
+| `intent.md` | **Maßstab**: Intent, Ziel, Anforderungen A01–A30 — jede Arbeit prüft dagegen |
 | `manifest.md` | **Leitprinzip**: Gestaltung dient — Wahrnehmung, Kognition, Kontext |
 | `principles.md` | Haltung, Prinzipien, Herkunft |
 | `stand.md` | Entwicklungsstand: Änderungen, offene Punkte, nächste Schritte |
