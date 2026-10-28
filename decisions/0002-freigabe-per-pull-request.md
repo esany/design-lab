@@ -17,3 +17,5 @@ perspektive: system
 **Betrifft:** AGENTS.md (Schreibregeln), .claude/settings.json
 
 **Deine Entscheidung:** Passt — erst einmal auf Probe.
+
+**Historischer Hinweis (2026-10-29):** Die obige Entscheidung bleibt als ursprünglicher Wortlaut erhalten, ist aber durch [`0019`](0019-selbststaendig-im-rahmen.md) in der ausschließlichen Merge-Zuständigkeit abgelöst: Agenten dürfen innerhalb der dort genannten Bedingungen selbst übernehmen. Die Aussage über eine technische Sperre für Claude bezog sich auf dessen Arbeitsumgebung; ein allgemeiner GitHub-Branch-Schutz für `main` war damit nicht nachgewiesen. [`0027`](0027-main-schuetzen.md) regelt den vorgesehenen Schutz; dessen Einrichtung durch den Eigentümer ist noch offen (#40).
