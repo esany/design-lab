@@ -21,6 +21,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 
 | Datum | Was | Warum | Rückgängig |
 |---|---|---|---|
+| 2026-10-28 | **Arbeitsteilung (0025) gültig:** Sparregeln gelten für Routinen, nicht zu Lasten der Qualität, Ihre Aufträge haben Vorrang; die Modell-Tabelle ist nur eine Vermutung, Aufträge berücksichtigen Funktionen und Limits des Modells; kein Etikett „Übergabe“. D3sign: Regeln und Prüfberichte dürfen in die Untersuchung, ohne Kundeninhalte | Ihre Antworten im Chat | „Regel 0025 rückgängig“ |
 | 2026-10-28 | **Ihre Entscheidungen eingetragen:** Spielregeln für Aufträge übernommen (PR #38); Untersuchung startet, nur über die Modelle, ohne Termin bis November (#62, #56 zugeschnitten); Merkzettel je Thema (#67); Anschluss in Worten umgeschrieben (#71) | Ihre Antworten im Chat | „Entscheidungen 28.10. rückgängig“ |
 | 2026-10-28 | **Lagebild:** offene Aufgaben, Reihenfolge, Blocker, Delegation, offene Fragen (`research/gespraeche/2026-10-28-lagebild.md`) | Ihre Frage im Chat; kein Wissen nur im Chat (0024) | Datei löschen: „Lagebild rückgängig“ |
 | 2026-10-28 | **Plan #62** mit Aufträgen #56–#61 (Audit der Zusammenarbeit, Modellprofile, Regeln prüfen, Kommunikation und Delegation, Tokenökonomie, Assistenz im Entwurf), alle `entwurf`; **Bug #55** (#31 falsch gelesen) | Ihr Auftrag, Chat 28.10. | Issues schließen: „Plan #62 rückgängig“ |
@@ -102,18 +103,16 @@ Zeitrahmen bis Ende November, die Schritte laufen jetzt nacheinander.
   es fertig ist? Fragen kommen in Alltagssprache.
 - Die Untersuchung der Fehler startet, aber **nur über die Modelle**, nicht über die
   Zusammenarbeit oder die Arbeitsweise des Eigentümers.
+- Arbeitsteilung: Sparen bei Routinen ja, nie zu Lasten der Qualität; Aufträge an andere
+  Modelle berücksichtigen deren Funktionen und Limits.
 - Bei mehreren gleichzeitigen Chats bekommt **jedes Thema einen eigenen Merkzettel** im
   Labor. Claude richtet das als Nächstes ein.
 
 **Als Nächstes macht Claude:**
 1. die Merkzettel je Thema einrichten;
-2. die Fehler der Modelle untersuchen, sobald die Frage zu D3sign beantwortet ist.
+2. die Fehler der Modelle untersuchen (D3sign: nur Regeln und Prüfberichte, ohne Kundeninhalte).
 
 **Offene Fragen an den Eigentümer:**
-- Darf die Untersuchung die Regeln und Prüfberichte aus D3sign lesen, ohne Kundeninhalte?
-  Oder bleibt D3sign ganz draußen? Bis zur Antwort bleibt es draußen.
-- Drei kleine Fragen zur Arbeitsteilung zwischen den Modellen: Sollen die Sparregeln gelten?
-  Ist die Tabelle „welches Modell macht was“ nur eine Vermutung? Kein neues Label?
 - Den Hauptzweig schützen: Das Ja steht, es fehlen nur zwei Minuten Klicks in den
   GitHub-Einstellungen, die nur das Konto des Eigentümers machen darf.
 - Für welches Experiment gilt „eine Korrektur der Experimente vernachlässigen wir“?
@@ -126,9 +125,9 @@ Labor (privat in `esany/werke` bzw. beim Eigentümer).
 
 <details><summary>Für die Modelle: Nummern und Lehren</summary>
 
-- Plan #62 freigegeben (1 ja, 2 B, 3 offen; Kommentar dort). #56 auf „nur Modelle“
-  zugeschnitten, noch `entwurf`: DoR fehlt D3sign-Antwort und geprüfter Lesezugriff. Danach
-  #57 und #59, dann #58, #60, #61. #60 hängt zusätzlich an #53.
+- Plan #62 freigegeben (1 ja, 2 B, 3 A; Kommentare dort). #56 auf „nur Modelle“
+  zugeschnitten; DoR offen nur: Lesezugriff auf die Repos geprüft. Danach #57 und #59, dann
+  #58, #60, #61. #53 beantwortet (0025 gültig).
 - #67 entschieden: A als Datei je Thema (`anschluss/<thema>.md`), jetzt `an:claude`.
 - PR #38 übernommen; #50, #51 geschlossen; #31 offen bis Prüffall `evals/uebergabe` (#43).
 - Offene PRs: #48 (0027, 0028), #47 (0026, jetzt auf `main`), #54 (A31–A34; nach #48 und #47).
