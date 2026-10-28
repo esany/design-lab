@@ -20,6 +20,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 
 | Datum | Was | Warum | Rückgängig |
 |---|---|---|---|
+| 2026-10-28 | **Plan #62** mit Aufträgen #56–#61 (Audit der Zusammenarbeit, Modellprofile, Regeln prüfen, Kommunikation und Delegation, Tokenökonomie, Assistenz im Entwurf), alle `entwurf`; **Bug #55** (#31 falsch gelesen) | Ihr Auftrag, Chat 28.10. | Issues schließen: „Plan #62 rückgängig“ |
 | 2026-10-27 | Labor aufgebaut: Regeln, Prinzipien, Methoden, Website, Prüfungen | Startversion | „Labor-Aufbau rückgängig“ |
 | 2026-10-27 | Studie „Reihe und Verschiebung“ mit Ittens Farbkontrasten und gestuften Erklärungen | Anforderung | „Itten-Erweiterung rückgängig“ |
 | 2026-10-27 | Entscheidungen eingetragen; Repo öffentlich, alle Rechte vorbehalten | Antworten im Chat | — (Entscheidung) |
@@ -97,11 +98,16 @@ in den verlinkten Dateien.
   Lizenzschriften (nur beim Eigentümer).
 - **Gesprächsprotokolle:** `research/gespraeche/` (Erkenntnisse, die nur im
   Chat standen).
-- **Nächster Schritt (neuer Chat, `an:claude`):** #31 — Repo und Strukturen wasserdicht
-  machen, Modelle kennen, Skill für Issue-Arbeit. Erst die Beispiel-Repos des
-  Eigentümers ansehen. Arbeitsteilung zwischen Modellen: Vorschlag
-  `decisions/0025`, noch offen und eher zu verschlanken.
-- **Danach:** privates Repo und Flyer sichern (#25), dann #23 und #24.
+- **Nächster Schritt (neuer Chat):** Plan **#62** „Zusammenarbeit von Mensch und Modellen
+  analysieren, Maßnahmen ableiten“. Er wartet auf die Freigabe des Eigentümers und drei Fragen
+  (in #62). Danach beginnt #56 (Audit der Beispiel-Repos: Fehlermuster der Modelle, Muster der
+  Zusammenarbeit), dann #57 und #59 parallel, dann #58, #60, #61. Jeder Auftrag hat Ziel,
+  Ergebnis, DoR, DoD und Abbruchpunkt; Abhängigkeiten sind auf GitHub gesetzt.
+- **Lehre aus #55:** #31 wurde falsch gelesen (Beispiel-Repos als Ideenquelle statt als
+  Prüfgegenstand). Vor jedem Auftrag die Lesart spiegeln. Die Recherche in
+  `research/2026-10-issue-arbeit/` (PR #38) ist Vorarbeit, kein Ergebnis.
+- **Offen daneben:** PRs #38, #47, #48, #54 warten auf Freigabe (Reihenfolge dort in
+  `stand.md`, PR #54); Werk-Repo `esany/werke` ist angelegt (#25, PR #47).
 
 ## Nächste Schritte (laufen ohne Sie)
 
