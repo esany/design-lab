@@ -30,6 +30,11 @@ Der Vorschlag unten bleibt im Wortlaut stehen. Gültig ist er mit diesen Antwort
    Funktionen nötig sind (z. B. ins Repo schreiben), und ist so klar und eng geschnitten, dass
    ihn das kleinere Modell sauber erledigen kann. Die Profile dazu entstehen in #57.
 3. **Kein Label `übergabe`.** Titel `[Übergabe]` und Vorlage genügen.
+4. **Codex und Work nur in begründeten Fällen (Eigentümer, 28.10., nach der Triage):** Der
+   normale Chat (Astra) ist die Regel für Aufgaben, die er kann. Ein Auftrag geht an Codex oder
+   Work nur, wenn der normale Chat nicht mehr reicht, und der Auftrag nennt den Grund (welche
+   Funktion fehlt, z. B. lokale Ordner, Branches löschen, lange Läufe). Ohne Grund geht er an
+   Astra oder Claude. Die Tabelle „Zuschnitt“ unten ist entsprechend nur Vermutung.
 
 **Freigegeben (28.10.):** Claude ist Orchestrator. Es schreibt die Issues und gibt ihnen Labels; andere Modelle arbeiten nur an Issues mit ihrem Label. Der Rest bleibt Vorschlag (#31).
 

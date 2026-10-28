@@ -18,6 +18,8 @@ Schritte laufen nacheinander.
   Modelle berücksichtigen deren Funktionen und Limits. Ein Auftrag des Eigentümers außerhalb der
   Reihe hat Vorrang.
 - Jedes Thema bekommt einen eigenen Merkzettel (diese Datei ist einer).
+- **Codex und Work nur in begründeten Fällen**, wenn der normale Chat (Astra) nicht mehr reicht;
+  der Auftrag nennt den Grund.
 
 **Antworten des Eigentümers (28.10., spätabends):**
 - Aufräumen: ja, **mit Sonnet** (der Eigentümer stellt um).
