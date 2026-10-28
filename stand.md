@@ -20,6 +20,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 
 | Datum | Was | Warum | Rückgängig |
 |---|---|---|---|
+| 2026-10-28 | **Lagebild:** offene Aufgaben, Reihenfolge, Blocker, Delegation, offene Fragen (`research/gespraeche/2026-10-28-lagebild.md`) | Ihre Frage im Chat; kein Wissen nur im Chat (0024) | Datei löschen: „Lagebild rückgängig“ |
 | 2026-10-28 | **Plan #62** mit Aufträgen #56–#61 (Audit der Zusammenarbeit, Modellprofile, Regeln prüfen, Kommunikation und Delegation, Tokenökonomie, Assistenz im Entwurf), alle `entwurf`; **Bug #55** (#31 falsch gelesen) | Ihr Auftrag, Chat 28.10. | Issues schließen: „Plan #62 rückgängig“ |
 | 2026-10-27 | Labor aufgebaut: Regeln, Prinzipien, Methoden, Website, Prüfungen | Startversion | „Labor-Aufbau rückgängig“ |
 | 2026-10-27 | Studie „Reihe und Verschiebung“ mit Ittens Farbkontrasten und gestuften Erklärungen | Anforderung | „Itten-Erweiterung rückgängig“ |
