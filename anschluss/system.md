@@ -40,21 +40,23 @@ Schritte laufen nacheinander.
 - Für die vier Aufträge an Astra und Codex gibt es einen Zuschnitt (Kommentare in den Aufträgen).
   Zwei sind für kleinere Modelle zu groß und sollen geteilt werden. Verteilt ist nichts.
 
-**Noch zu entscheiden (Eigentümer):** Siehe „Offene Fragen“. Danach kann ich die Aufträge teilen
-und das Label setzen.
+**Entschieden am 28.10. (spätabends):**
+- Die **Zuordnung der Aufträge** entscheidet der Orchestrator (Claude), nicht der Eigentümer.
+- **Zurückgestellt** sind Farbkontrast, Prüffälle mit zweitem Modell und die Prüfung der Studie.
+  Damit gehen vorerst keine Aufträge an Codex.
+- **Astra** bekommt die Recherche zum Möglichkeitsraum (Thema „Möglichkeitsraum“) und, wenn der
+  Eigentümer es sagt, die Freigabehinweise. Begonnen wird erst auf sein „mach“.
+- Die **Untersuchung der Modellfehler** liest nur Wissensarbeit (und die Fehlerberichte dieses
+  Labors). Sie bleibt zurückgestellt.
+- Der **Hauptzweig-Schutz** kommt später. Bis dahin prüft Claude vor jedem Commit den Zweig.
 
 **Danach, in dieser Reihenfolge:** Modelle kennen und Aufträge besser schreiben (beides
 parallel) → Regeln prüfen → Sparmaßnahmen mit Messung → Hilfe beim Entwerfen.
 
 **Offene Fragen an den Eigentümer:**
-- Welche Aufträge gehen an Astra, welche an Codex? Vorschlag aus dem Zuschnitt: zuerst die
-  Prüffälle an Astra (zeigt, ob Astra sauber ins Labor schreibt), dann Messen an Codex. Zwei
-  Aufträge sollen vorher geteilt werden (Farbkontrast, Prüfung der Studie).
-- Dafür brauche ich von dir einen Handgriff: zwei frische Chats für die Prüffälle öffnen.
-- Den Hauptzweig schützen: Das Ja steht, es fehlen nur zwei Minuten Klicks in den
-  GitHub-Einstellungen, die nur das Konto des Eigentümers machen darf.
-- Für welches Experiment gilt „eine Korrektur der Experimente vernachlässigen wir“: den
-  Farbkontrast, den Prüffall mit zweitem Modell oder die unabhängige Prüfung der Studie?
+- Soll Astra die Recherche zum Möglichkeitsraum übernehmen? Sag dafür „mach #49“ in einem Chat
+  mit Astra. Genauso bei den Freigabehinweisen („mach #41“).
+- Sobald du es willst: Hauptzweig schützen (zwei Minuten Klicks) und die Untersuchung starten.
 
 <details><summary>Für die Modelle: Nummern und Lehren</summary>
 
