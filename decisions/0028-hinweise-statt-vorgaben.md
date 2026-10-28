@@ -2,6 +2,7 @@
 status: gültig
 datum: 2026-10-28
 entschieden_von: Mensch, im Chat zum Audit von GPT-6 Astra
+dient: A17
 ---
 
 # 0028 · Hinweise statt Vorgaben
