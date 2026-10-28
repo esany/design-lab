@@ -2,6 +2,7 @@
 status: freigegeben
 datum: 2026-10-27
 entschieden_von: Mensch (im Chat: „ja ja“ zu den Fachpaketen, Start mit „Vermitteln“; Entwurf Issue #7)
+dient: A04, A05
 ---
 
 # 0021 · Fachpakete: Fachexpertise als Werkzeug

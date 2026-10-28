@@ -1,6 +1,7 @@
 ---
 name: isotype
 description: Method for knowledge transfer with pictorial statistics after Otto Neurath, Marie Neurath and Gerd Arntz (Isotype) — use for information design, exhibitions, explanatory graphics and audiences without specialist knowledge.
+dient: A04
 ---
 
 # Methode: Isotype (Bildstatistik)

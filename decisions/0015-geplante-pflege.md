@@ -2,6 +2,7 @@
 status: gültig
 datum: 2026-10-27
 entschieden_von: Vorschlag Agent (Claude) · Entscheidung Mensch am 2026-10-27
+dient: A23
 ---
 
 # 0015 · Geplante Pflege-Aufgaben

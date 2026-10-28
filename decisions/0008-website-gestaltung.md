@@ -2,6 +2,7 @@
 status: freigegeben als Startversion
 datum: 2026-10-27
 entschieden_von: Vorschlag Agent (Claude) · Entscheidung Mensch am 2026-10-27
+dient: A08, A14
 ---
 
 # 0008 · Website des Labors und ihre Gestaltung

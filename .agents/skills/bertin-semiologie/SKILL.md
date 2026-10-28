@@ -1,6 +1,7 @@
 ---
 name: bertin-semiologie
 description: Method for checking and designing data and information graphics with Jacques Bertin's visual variables and their perceptual properties — use before building or when critiquing any chart, map, diagram or information visualisation.
+dient: A01, A04
 ---
 
 # Methode: Graphische Semiologie (Bertin)

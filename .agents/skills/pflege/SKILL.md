@@ -1,6 +1,7 @@
 ---
 name: pflege
 description: Maintenance routine for the lab — weekly radar scan and monthly health check. Use in scheduled runs or when asked to tidy, refresh or review the state of the lab. Ends in a pull request; merges itself only within the free zone when checks are green, otherwise raises open points.
+dient: A23, A33
 ---
 
 # Pflege des Labors
@@ -34,6 +35,15 @@ braucht, landet als offener Punkt in `stand.md`.
 5. Skills, die in 3 Monaten nicht genutzt wurden → Archivierung vorschlagen.
 6. Offene Issues ohne Bewegung → kurz zusammenfassen.
 7. Branch `lab/pflege-JJJJ-MM`, PR mit Checkliste.
+
+## Monatlich: Verknüpfung und Issues (A31–A34)
+
+1. `verknuepfung.md` lesen. Was dort unter „Auffällig“ steht, wird je ein offener Punkt in
+   `stand.md`, als Frage in Alltagssprache mit Empfehlung.
+2. Offene Issues: ohne Anforderung? ohne gesetzte Abhängigkeit? überholt oder gewachsen
+   (Skill `issue`, E4)? Vorschlag: schließen, teilen oder ergänzen.
+3. Die Spalte „Stand“ in `intent.md` mit Beleg prüfen; Änderungen schlägt die Pflege vor,
+   sie entscheidet sie nicht.
 
 ## Quartalsweise: Ausweg-Test
 

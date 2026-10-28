@@ -2,6 +2,7 @@
 status: freigegeben als Startversion
 datum: 2026-10-27
 entschieden_von: Vorschlag Agent (Claude) · Entscheidung Mensch am 2026-10-27
+dient: A11, A25
 ---
 
 # 0009 · DTCG-Tokens und eigener Build ohne Abhängigkeiten

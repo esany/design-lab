@@ -2,6 +2,7 @@
 status: freigegeben als Startversion
 datum: 2026-10-27
 entschieden_von: Vorschlag Agent (Claude) · Entscheidung Mensch am 2026-10-27
+dient: A01, A24
 ---
 
 # 0011 · Erste Studie: Reihe und Verschiebung

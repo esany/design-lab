@@ -1,6 +1,7 @@
 ---
 name: konkrete-kunst
 description: Method for systematic, rule-based composition in the tradition of concrete art and elementary geometry (series, progression, permutation, equal colour quantities, modular order) — use to formalise rules, generate variants and critique them.
+dient: A01, A04
 ---
 
 # Methode: Konkrete Kunst und systematische Gestaltung

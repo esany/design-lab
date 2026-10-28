@@ -72,9 +72,18 @@ volatil ist und die Bindung an ein Tooling riskant.
 | A26 | **Gemeinsames Projektgedächtnis**, Gegenprüfung durch zweites Modell, deterministische Prüfung (Impulse des Kollegen) | Liegt Wissen im Repo? Prüft ein zweites Modell? | **teilweise** — Gedächtnis und Prüfungen ja; zweites Modell offen |
 | A27 | **Fundstücke jederzeit einbringen** — bewertet, nicht blind übernommen | Gibt es einen Bewertungsweg? | **erfüllt** — Skill `fundstueck` |
 
+### Steuerung der Arbeit (Eigentümer, 28.10.; gültig mit seiner Freigabe)
+
+| Nr. | Anforderung | Prüffrage (Maßstab) | Stand |
+|---|---|---|---|
+| A31 | **Abhängigkeiten und Reihenfolge**: Issues kennen und verwalten ihre Abhängigkeiten. Was zuerst bearbeitet sein muss, damit anderes starten kann, kommt zuerst; Grundlagen vor Details | Hat jedes offene Issue seine Abhängigkeiten gesetzt? Beginnt nichts, dessen Voraussetzung fehlt? | **offen** — Skill `issue` vorgeschlagen (#38), erste Abhängigkeiten gesetzt |
+| A32 | **Freigabe ist nicht Umsetzungsreife**: Der Orchestrator prüft vor dem Verteilen, ob eine Aufgabe bereit ist | Wurde vor jedem `an:<Modell>` die Bereitschaft geprüft? | **offen** — Skill `issue`, Abschnitt E2 (#38) |
+| A33 | **Nichts verrottet**: Eingeführte Regeln, Funktionen und Mechanismen bleiben mit Intent, Zielen und Anforderungen verknüpft und werden regelmäßig abgeglichen; laute aktuelle Fragen überschreiben sie nicht | Hat jede Anforderung einen Mechanismus und jeder Mechanismus eine Anforderung? Ist jede Probe-Regel ausgewertet? | **offen** — `verknuepfung.md` (erzeugt) |
+| A34 | **Tokenökonomie**: Überholte Issues werden geschlossen oder mit Verweis aufgeteilt; abgeglichen wird gezielt statt alles neu zu lesen; die Protokolle sind schlank, aktuell und vollständig | Gibt es überholte offene Issues? Ist `stand.md` aktuell? | **offen** — Skill `issue`, Abschnitte E1 und E4 (#38) |
+
 ## Gesamtbild
 
-- **erfüllt:** 11 · **teilweise:** 14 · **offen:** 5 (von 30) — Stand 2026-10-28
+- Zählung und Verknüpfung mit Regeln und Skills: [`verknuepfung.md`](verknuepfung.md) (erzeugt, nicht von Hand)
 - Stark: Steuerung, Transparenz, Kosten, Sicherheit.
 - Schwach: **das Werk und die Fachlichkeit** (A01, A03, A04, A12, A25) — der
   eigentliche Zweck des Labors.

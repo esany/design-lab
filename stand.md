@@ -53,6 +53,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 | 2026-10-28 | **Sitzung „Audit von Astra“ abgeschlossen:** eigener Block im Anschluss fortgeschrieben, ohne andere Blöcke zu ändern | Abschlussregel | „Abschluss rückgängig“ |
 | 2026-10-28 | **Prüffall `parallel`:** Start und Abschluss bei parallelen Chats; erste Beobachtung von heute als „nicht bestanden“ eingetragen; Aufgabe des Orchestrators | Ihr Auftrag „nimm das als Prüffall auf“ (#67) | „Prüffall parallel rückgängig“ |
 | 2026-10-28 | **Anschluss** um die Sitzung „Audit von Astra“ ergänzt: Recherche Möglichkeitsraum, Entscheidungshilfe, Lehren, Bug zur Ursache | Kein Wissen nur im Chat (0024) | „Anschluss-Ergänzung rückgängig“ |
+| 2026-10-28 | **Verknüpfung (A33):** Ihre Anforderungen aus dem Chat als A31–A34 in `intent.md` (Abhängigkeiten, Umsetzungsreife, nichts verrottet, Tokenökonomie); jede Entscheidung und jeder Skill nennt, welcher Anforderung sie dient; der Build erzeugt `verknuepfung.md` und meldet Lücken; Pflege prüft monatlich; Reihenfolge in dieser Datei | Ihre Sorge, dass Regeln in einer Ecke verrotten | „Verknüpfung rückgängig“ |
 | 2026-10-28 | **Audit von GPT-6 Astra** nachgeprüft und eingeordnet (`research/2026-10-audit-astra/`): sechs Befunde bestätigt, einer ergänzt (Kontrast `muted`); verteilt als #40, #45 (an Sie) und #41–#44 (an Astra) | Ihr Auftrag, die Arbeit zu organisieren | „Audit-Einordnung rückgängig“ (Issues bleiben, werden geschlossen) |
 | 2026-10-28 | **Ihre Antwort zum Audit:** Regel 0028 „Hinweise statt Vorgaben“ (nur Ihr Wortlaut); #45 nicht übernommen; #41 freigegeben; 0027 `main` schützen (freigegeben, **Einrichtung durch Sie offen**); ungenutzte Labels gelöscht | Ihre Rückmeldung zum Audit | „Regel 0028 rückgängig“ · Regel in GitHub deaktivieren |
 | 2026-10-28 | **Experiment Entwurfsprozess** angelegt; offene Themen als Issues #23–#27; Abschnitt „Anschluss“ für neue Sitzungen; Flyer-Arbeitsstand als ZIP an Sie | Ihr Auftrag „alles sichern“ | „Entwurfsprozess rückgängig“ |
@@ -79,6 +80,28 @@ machen — es genügt zu sagen: **„… rückgängig“**.
    sperrt das). Sie steht als Referenz im Korpus. Wenn Sie wollen, dass ein Agent
    sie nutzt, nennen Sie mir einzelne Boards, die für ein Feld stehen, oder
    beschreiben Sie in ein paar Worten, was sie zusammenhält.
+
+## Reihenfolge — Vorschlag des Orchestrators, Sie ordnen um
+
+Grundlagen vor Details: Oben steht, wovon anderes abhängt (A31). **Eine Übersicht, nicht zwei:**
+Diese Tabelle ordnet, was vor dem Plan „Zusammenarbeit von Mensch und Modellen analysieren“ (#62)
+fertig sein muss. Die Aufträge des Plans und ihre Reihenfolge stehen dort. Freigabe allein heißt nicht
+„umsetzungsreif“ (A32, Skill `issue`, E2).
+
+| # | Was | Wartet auf | Davon hängt ab |
+|---|---|---|---|
+| 1 | **Issue-Arbeit** (Skill `issue`, Vorlage „Übergabe“), PR #38 | Ihre Freigabe | Verteilen an andere Modelle; #43, #47, Bugs #50–#52 |
+| 2 | **Verknüpfung Anforderungen ↔ Regeln** (A31–A34, `verknuepfung.md`), PR #54 | Ihre Freigabe | dass Eingeführtes nicht verrottet |
+| 3 | **Antwort zum Audit** (0027 Branch-Schutz, 0028), PR #48 · Branch-Schutz einrichten (#40) | Ihre Freigabe · Ihr Handgriff in GitHub | #41 |
+| 4 | **Sicherung der Werke**, PR #47 (Repo `esany/werke` ist angelegt) | #38 | #25, #39 |
+| 5 | **Vorschlag 0025**: drei Fragen (#53) | Ihre Antworten | Verteilen nach Modellen; Tokenökonomie im Plan (#60) |
+| 6a | **Plan Zusammenarbeit** (#62): Freigabe und drei Fragen | Ihre Antworten | Audit, Modellprofile, Kommunikation, Regeln prüfen, Tokenökonomie, Assistenz |
+| 6 | **Recherche Entwicklung und Gebrauch, Möglichkeitsraum** (#49) | wer recherchiert | Hinweis: berührt #23 (Oberfläche Entwurfsprozess) |
+| 7 | **Raster als Programm** (#24) → Fachpaket Raster und Layout (#27) | Ihre Wahl des Arbeitsorts | #27 baut auf #24 |
+| 8 | Erstes Werk „Vermitteln“ (#8), Generative Gestaltung (#9), Website (#26) | Reihenfolge durch Sie | — |
+
+**Ungeklärt:** #42 (Kontrast), #43 (Prüffälle), #44 (Studie prüfen) stehen auf `entwurf`. Ihre
+Bemerkung „Korrektur der Experimente vernachlässigen wir“ ist noch keiner Nummer zugeordnet.
 
 ## In Arbeit
 
