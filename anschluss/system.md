@@ -12,8 +12,8 @@ Schritte laufen nacheinander.
 - Die Spielregeln für Aufträge gelten: Ist ein Modell dran? Ist alles da? Woran sieht man, dass
   es fertig ist? Fragen kommen in Alltagssprache.
 - Die Untersuchung der Fehler startet, aber **nur über die Modelle**, nicht über die
-  Zusammenarbeit oder die Arbeitsweise des Eigentümers. D3sign gehört dazu, aber nur seine
-  Regeln und Prüfberichte, keine Kundeninhalte.
+  Zusammenarbeit oder die Arbeitsweise des Eigentümers. D3sign war ursprünglich dabei (nur
+  Regeln und Prüfberichte); später am Abend auf **ein** Repo eingegrenzt, siehe unten.
 - Arbeitsteilung: Gespart wird bei Routinen, nie zu Lasten der Qualität. Aufträge an andere
   Modelle berücksichtigen deren Funktionen und Limits. Ein Auftrag des Eigentümers außerhalb der
   Reihe hat Vorrang.
@@ -25,9 +25,9 @@ Schritte laufen nacheinander.
   Verknüpfung. Jede einzeln.
 - **Astra (ChatGPT-Chat) kann ins Labor schreiben.** Branches löschen kann es nicht, und auf
   die lokalen Ordner des Eigentümers kommt es nicht.
-- Untersuchung der Modellfehler: **zurückgestellt**. Danach wird nur **ein** Repo gelesen.
-  Welches, wird noch festgelegt.
-- Welche Aufträge an Astra oder Codex gehen, ist noch nicht entschieden.
+- Untersuchung der Modellfehler: **zurückgestellt**. Danach wird nur **ein** Repo gelesen:
+  Wissensarbeit.
+- Welche Aufträge an Astra oder Codex gehen, entscheidet der Orchestrator (siehe unten).
 
 **Aufgeräumt am 28.10. (Sonnet):**
 - Die drei Vorlagen sind übernommen, jede einzeln: Audit-Antwort (0028, 0027), Sicherung der
@@ -60,22 +60,25 @@ parallel) → Regeln prüfen → Sparmaßnahmen mit Messung → Hilfe beim Entwe
 
 <details><summary>Für die Modelle: Nummern und Lehren</summary>
 
-- Aufräumliste (erledigt) = Triage `research/gespraeche/2026-10-28-triage-modelle.md`,
-  Abschnitt „Was bei Claude liegt“: PRs #48 → #47 → #54; #31 schließen, Abhängigkeit #43←#31
-  entfernen; #55, #65, #52 schließen (Fallmaterial #56/#43); #62 → an:claude; #41: blocked_by
-  #40 ersetzen durch Bezug auf PR #48; #56 bleibt `entwurf` (zurückgestellt); Bug #77 offen.
-- **Führendes Issue:** #62 (freigegeben: 1 ja, 2 B, 3 A; Kommentare dort).
-- #56 auf „nur Modelle“ zugeschnitten. Gegenstand: Wissensarbeit, pflege-arnshaugk-historie,
-  Portfolio (ohne `self-observation/`), D3sign (nur Regeln und Prüfberichte), design-lab.
-  Danach #57 und #59, dann #58, #60, #61.
-- Erledigt am 28.10.: PR #38 (Skill `issue`), #53 → 0025 gültig, #67 → 0029, #71
-  (Anschluss in Worten), #50, #51.
-- Offene PRs: #48 (0027, 0028), #47 (0026), #54 (A31–A34; nach #48 und #47 übernehmen).
-- #40 an:mensch (Klicks) → blockiert #41 (an:chatgpt). #65 Ursache, Maßnahme aus #56. #31 offen
-  bis Prüffall `evals/uebergabe` (#43). #52 ist Fall für #43.
-- Lehren: Lesart spiegeln (#55); die Vorarbeit in `research/2026-10-issue-arbeit/` ist kein
-  Eingang für #56/#57; ein Zitat ist keine Freigabe; vor jeder Liste abgleichen und zuerst im
-  Repo sichern (#65); Meldungen an den Eigentümer in Worten, Fragen als Auswahl (#71).
-- Lagebild: `research/gespraeche/2026-10-28-lagebild.md`. Audit von Astra:
-  `research/2026-10-audit-astra/`.
+- **Führendes Issue:** #62 (`an:claude`, Plan; Fragen beantwortet: 1 ja, 2 B, 3 A, danach
+  auf ein Repo eingegrenzt). Kette wartet auf #56: #57 und #59 (beide von #56), #58 (#56, #57),
+  #60 (#57, #59), #61 (#56, #49).
+- #56 (`entwurf`, zurückgestellt): Gegenstand nur `esany/Wissensarbeit` und die Fehlerberichte
+  dieses Labors. D3sign, Portfolio, pflege-arnshaugk-historie vorerst draußen.
+- #49 → `an:chatgpt` (Dient A04, A07, A29), beginnt auf „mach #49“. #41 `an:chatgpt`, ohne
+  Blocker, beginnt auf „mach #41“. #42, #43, #44 zurückgestellt (`entwurf`).
+- Alle Pull Requests übernommen (0025, 0026, 0027, 0028, 0029; Verknüpfung A31–A34).
+- #40 (`an:mensch`): Klicks für den Branch-Schutz, jetzt mit „Fertig, wenn“. #39 offen
+  (Sicherungs-Repo, vermutlich durch `esany/werke` erledigt). #77 offen (Bug „nachziehen“, dazu
+  zweiter Fall: Schreiben direkt auf `main`).
+- Erledigt am 28.10.: Skill `issue` (#38), 0029 (#67), Anschluss in Worten (#71), #50, #51, #53,
+  #52, #55, #65, #31.
+- Lücken bei Abnahmen: ruhende Aufträge #8, #9, #23, #24, #26, #27 haben keine Ausgabe oder kein
+  „Fertig, wenn“. Beim Wiederaufnehmen schärfen.
+- Triage und Auftragsformat für kleinere Modelle:
+  `research/gespraeche/2026-10-28-triage-modelle.md`.
+- Lehren: Lesart spiegeln (#55); Vorarbeit in `research/2026-10-issue-arbeit/` ist kein Eingang;
+  ein Zitat ist keine Freigabe; vor jeder Liste abgleichen und zuerst im Repo sichern (#65);
+  Meldungen in Worten, Fragen als Auswahl (#71); „nachziehen“ ist kein Startsignal (#77); vor
+  jedem Commit den Zweig prüfen.
 </details>
