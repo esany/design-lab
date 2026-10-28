@@ -33,5 +33,5 @@ Punkte als Fragen in Alltagssprache vor (0018). Antworten trägt er hier ein.
 | 0023 | [Duden als Basis für Rechtschreibung und Satzregeln](0023-duden-als-basis.md) | freigegeben |
 | 0024 | [Kein Wissen nur im Chat](0024-kein-wissen-nur-im-chat.md) | freigegeben (auf Probe) |
 | 0025 | [Arbeitsteilung zwischen Modellen, Übergaben als Issues](0025-arbeitsteilung-modelle.md) | Vorschlag |
-| 0026 | [`main` technisch schützen](0026-main-schuetzen.md) | freigegeben, Einrichtung offen |
-| 0027 | [Hinweise statt Vorgaben zur Arbeitsweise](0027-hinweise-statt-vorgaben.md) | gültig |
+| 0027 | [`main` technisch schützen](0027-main-schuetzen.md) | freigegeben, Einrichtung offen |
+| 0028 | [Hinweise statt Vorgaben](0028-hinweise-statt-vorgaben.md) | gültig |

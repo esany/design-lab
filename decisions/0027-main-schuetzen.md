@@ -4,7 +4,7 @@ datum: 2026-10-28
 entschieden_von: Mensch („Können wir das öffentliche Repo schützen?“, Antwort auf #40)
 ---
 
-# 0026 · `main` technisch schützen
+# 0027 · `main` technisch schützen
 
 **Anlass:** Audit von GPT-6 Astra (`research/2026-10-audit-astra/`). Die
 GitHub-Schnittstelle meldet für `main` „Branch not protected“. Die Sperre, von
