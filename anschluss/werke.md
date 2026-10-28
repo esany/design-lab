@@ -1,6 +1,6 @@
 # Thema: Werke und Gestaltung
 
-**Zuletzt fortgeschrieben:** 28.10.2026 (Claude, beim Anlegen der Merkzettel)
+**Zuletzt fortgeschrieben:** 28.10.2026, abends (Claude)
 
 ## In Worten
 
@@ -25,13 +25,15 @@ das Fachpaket „Form“ und die Werkzeuge für den Feinsatz.
 dem Pull Request dazu: die Claude-App auf GitHub für `werke` freischalten, damit Cloud-Agenten
 ohne Browser schreiben können, und eine zweite Kopie außerhalb von GitHub.
 
-**Beim Wiederaufnehmen:** Der Eigentümer wählt, womit es losgeht. Dann wird das führende Issue
-festgelegt.
+**Beim Wiederaufnehmen:** Der Eigentümer wählt, womit es losgeht. Dann wird ein neues Issue
+geschrieben (die alten sind geschlossen, ihr Text bleibt lesbar).
 
 <details><summary>Für die Modelle: Nummern</summary>
 
-- Alle `entwurf`: #24 (Raster als Programm), #23 (Entwurfsprozess), #26 (Website), #27
-  (Fachpaket Form, Raster), #8 (Vermitteln), #9 (Generative Gestaltung).
+- **Geschlossen am 28.10. (nicht geplant, auf Anweisung des Eigentümers; Text bleibt lesbar, nichts
+  gelöscht):** #24 (Raster als Programm), #23 (Entwurfsprozess), #26 (Website), #27 (Fachpaket
+  Form, Raster), #8 (Vermitteln), #9 (Generative Gestaltung). Beim Wiederaufnehmen neu schreiben,
+  mit Ausgabe und „Fertig, wenn“, oder das alte Issue wieder öffnen.
 - Grundlagen: `experiments/` (Flyer), `research/2026-10-raster-als-programm/konzept.md`,
   `experiments/2026-10-entwurfsprozess.md`.
 - #23 und #61 berühren dasselbe Feld; die Reihenfolge entscheidet der Eigentümer.
