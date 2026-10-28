@@ -20,7 +20,7 @@ Gilt für jedes Modell und jedes Werkzeug, mit oder ohne Repo-Zugang.
 4. **Bestätigen:** den nächsten Schritt in einem Satz nennen, dann arbeiten.
 5. **Ende der Sitzung:** „Anschluss“ in `stand.md` fortschreiben (Regel 0024).
 
-Startsatz für den Menschen, in jedem Chat gleich:
+Startsatz (richtet der Mensch einmal je Werkzeug als Anweisung ein, siehe README):
 
 > Arbeite im GitHub-Repo esany/design-lab (https://github.com/esany/design-lab). Lies zuerst AGENTS.md und stand.md, Abschnitt „Anschluss“. Nenne den nächsten Schritt in einem Satz und mach dann weiter.
 
