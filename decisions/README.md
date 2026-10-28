@@ -33,3 +33,4 @@ Punkte als Fragen in Alltagssprache vor (0018). Antworten trägt er hier ein.
 | 0023 | [Duden als Basis für Rechtschreibung und Satzregeln](0023-duden-als-basis.md) | freigegeben |
 | 0024 | [Kein Wissen nur im Chat](0024-kein-wissen-nur-im-chat.md) | freigegeben (auf Probe) |
 | 0025 | [Übergaben zwischen Modellen laufen über Issues](0025-arbeitsteilung-modelle.md) | Vorschlag (verschlankt) |
+| 0026 | [Werkdateien in einem eigenen privaten Repo](0026-werke-eigenes-repo.md) | freigegeben |

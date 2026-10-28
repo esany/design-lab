@@ -36,6 +36,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 | 2026-10-27 | Feldforschung KI × Gestaltung (KINDLAB, KITeGG, UdK, FHP, Burg, KHM …): Befunde, Einordnung, 4 Entwürfe als Issues #6–#9, Radar ergänzt | Ihr Rechercheauftrag | „Feldforschung rückgängig“ |
 | 2026-10-28 | **Start nur auf Auftrag:** Anschluss ist Vorschlag, kein Auftrag; ohne Auftrag nennt das Modell Stand und Vorschlag und wartet | Modelle begannen sonst eigenmächtig | „Start nur auf Auftrag rückgängig“ |
 | 2026-10-28 | **Issue-Arbeit (#31):** Skill `issue` (bin ich dran? · schreiben · bearbeiten · übergeben), Vorlage „Übergabe“, Prüffall `evals/uebergabe` (nicht getestet), Vorschlag 0025 auf drei Dinge verschlankt; Recherche zu Modellen und Beispiel-Repos in `research/2026-10-issue-arbeit/`; veraltete Zahlen in dieser Datei entfernt (stimmten nicht: 21 statt 25 Entscheidungen, 11 statt 12 Skills) | Ihr Auftrag #31 | „Issue-Arbeit rückgängig“ |
+| 2026-10-28 | **Entscheidung 0026: eigenes privates Werk-Repo** (Weg B). Grundgerüst fertig und getestet (Ablage, Schriften-Sperre, Prüfung); wartet darauf, dass Sie das Repo einmal anlegen | Ihr „ja“ im Chat | „Werk-Repo rückgängig“ |
 | 2026-10-28 | **Prüfung `esany/Portfolio` als Sicherung** (#25): privat (belegt), aber ein Wissensraum für Ihr berufliches Werk, keine Dateiablage; als Ablage für Werkdateien heute nicht geeignet, als Ort für Werk-Beschreibung geeignet; drei Wege, Empfehlung: eigenes Archiv plus Verweis; Erweiterungen und Grenzen benannt (`research/2026-10-sicherung/portfolio-pruefung.md`) | Ihr Auftrag im Chat | „Portfolio-Prüfung rückgängig“ |
 | 2026-10-28 | **Bug #39:** Sicherungs-Repo falsch übernommen (Adresse kam doppelt an, Modell fragte nicht nach); betroffene Aussagen zurückgesetzt, Repo-Name offen | Ihr Hinweis im Chat | „Bug-Korrektur rückgängig“ |
 | 2026-10-28 | **Arbeiten nur mit Auftrag:** Modelle melden beim Start nur und warten; Claude ist Orchestrator und verteilt über Labels `an:…` | Modelle legten ohne Auftrag los | „Auftragsregel rückgängig“ |
@@ -74,7 +75,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 | **Issue-Arbeit** (Skill, Vorlage, Prüffall) | Pull Request offen, wartet auf Ihre Freigabe (berührt `.agents/skills/` und `.github/`) | #31 |
 | **Experiment Entwurfsprozess** (neu) | Ideensammlung und Analyse in `experiments/2026-10-entwurfsprozess.md`; erster Schritt: Vergleich, Laborbuch, Entscheidungen als private Seite | #23 |
 | **Raster als Programm** | Konzept, wartet auf Ihre Wahl des Arbeitsorts (Browser empfohlen) | #24 |
-| **Private Ablage der Werke** | Ihr privates Repo, nächster Schritt; Zwischensicherung als ZIP bei Ihnen | #25 |
+| **Private Ablage der Werke** | entschieden (0026): eigenes privates Repo `esany/werke`; Gerüst fertig, wartet auf Anlage durch Sie; Zwischensicherung als ZIP bei Ihnen | #25 |
 | **Labor-Website** zeigt Stand, Manifest, Fachpakete, Experimente | vorgeschlagen | #26 |
 | **Fachpaket „Form“: Raster und Layout** | vorgeschlagen | #27 |
 | **Flyer** | freigegeben, abgeschlossen; offen nur Antwortkarte | — |
@@ -106,10 +107,9 @@ in den verlinkten Dateien.
 - **Nächster Schritt (`an:claude`):** #31 abschließen — Pull Request `lab/issue-arbeit` (Skill
   `issue`, Vorlage „Übergabe“, 0025 verschlankt) vom Eigentümer freigeben lassen; dann Prüffall
   `evals/uebergabe` mit einem zweiten Modell laufen lassen (das ist die Abnahme von #31).
-- **Danach:** private Ablage der Werke (#25). **Wartet auf Ihre Wahl:** Welches Repo ist gemeint
-  (Bug #39: die erste Adresse kam doppelt an)? Kandidat `esany/Portfolio` ist geprüft: Weg B
-  (eigenes Archiv, Portfolio verweist) empfohlen, Weg A nur mit Erweiterungen E1–E6
-  (`research/2026-10-sicherung/portfolio-pruefung.md`). Dann #23 und #24.
+- **Danach:** Werk-Repo (#25, Entscheidung 0026). **Wartet auf Sie:** einmal ein privates Repo
+  `esany/werke` anlegen, leer (ohne README). Dann hängt der Agent es an, lädt das fertige Gerüst
+  hoch und legt den Flyer als erstes Werk ab. Danach #23 und #24.
 
 ## Nächste Schritte (laufen ohne Sie)
 
