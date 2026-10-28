@@ -1,0 +1,70 @@
+name: Übergabe
+description: Eine Aufgabe für ein Modell — mit Abnahme, damit es selbst erkennt, ob es dran ist und wann es fertig ist.
+title: "[Übergabe] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ein Issue, eine Aufgabe, ein Modell. Wie das Modell damit arbeitet: Skill `issue`
+        (`.agents/skills/issue/SKILL.md`). Setze genau ein Label `an:claude`, `an:codex`,
+        `an:chatgpt`, `an:gemini` oder `an:mensch`. Keine vertraulichen Inhalte — das Repo ist öffentlich.
+  - type: dropdown
+    id: an
+    attributes:
+      label: An wen?
+      description: Danach das passende Label `an:…` setzen.
+      options:
+        - Claude
+        - Codex
+        - ChatGPT
+        - Gemini
+        - Mensch (Frage an den Eigentümer)
+    validations:
+      required: true
+  - type: textarea
+    id: ziel
+    attributes:
+      label: Ziel
+      description: Ein Satz. Was soll am Ende da sein — ohne Lösungsweg.
+    validations:
+      required: true
+  - type: textarea
+    id: lesen
+    attributes:
+      label: Zuerst lesen
+      description: Pfade im Repo, höchstens fünf, eine Zeile je Pfad. Kein „siehe Chat“.
+      placeholder: |
+        AGENTS.md
+        stand.md (Abschnitt „Anschluss“)
+  - type: textarea
+    id: ausgabe
+    attributes:
+      label: Ausgabe
+      description: Zielpfad(e) oder „Kommentar im Issue“. Arbeit auf Branch `lab/<thema>`, ein Pull Request mit `Closes #…`.
+    validations:
+      required: true
+  - type: textarea
+    id: fertig
+    attributes:
+      label: Fertig, wenn
+      description: Zwei bis fünf Sätze, die man mit Ja oder Nein beantworten kann (Ansehen, Rendern, Messen, `node tools/build.mjs`). „Gut“ ist keine Abnahme.
+      placeholder: |
+        - Die Datei … existiert und besteht `node tools/build.mjs`.
+        - Jeder Satz im Abschnitt … nennt eine Quelle.
+    validations:
+      required: true
+  - type: textarea
+    id: grenzen
+    attributes:
+      label: Nicht tun
+      description: Grenzen, z. B. Dateien, die nicht angefasst werden.
+  - type: input
+    id: danach
+    attributes:
+      label: Danach an
+      description: Wer als Nächstes dran ist (Modell oder Mensch) und was dann geprüft wird. Verteilen tut Claude als Orchestrator.
+  - type: input
+    id: blockiert
+    attributes:
+      label: Blockiert durch
+      description: Issue-Nummer(n) oder leer lassen.

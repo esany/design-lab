@@ -18,6 +18,7 @@ evals/<fall>/
 | Fall | prüft | Skill |
 |---|---|---|
 | `start` | findet eine frische Sitzung das Labor und den nächsten Schritt? (angelegt) | — |
+| `uebergabe` | erkennt ein zweites Modell ein nach Vorlage geschriebenes Issue als seine Aufgabe und bearbeitet es ohne Rückfrage? (angelegt, nicht getestet) | `issue` |
 | `beleg-kunstgeschichte` | 5 Fragen mit bekannten, belegbaren Antworten; erfindet das Modell Quellen? | `belegpflicht` |
 | `regel-umsetzen` | eine schriftlich formulierte Kompositionsregel exakt als Studie umsetzen | `konkrete-kunst`, `studie` |
 | `diagramm-zuordnung` | Datensatz → richtige visuelle Variablen nach Bertin | `bertin-semiologie` |
