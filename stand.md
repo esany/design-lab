@@ -21,6 +21,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 
 | Datum | Was | Warum | Rückgängig |
 |---|---|---|---|
+| 2026-10-28 | **Ihre Entscheidungen eingetragen:** Spielregeln für Aufträge übernommen (PR #38); Untersuchung startet, nur über die Modelle, ohne Termin bis November (#62, #56 zugeschnitten); Merkzettel je Thema (#67); Anschluss in Worten umgeschrieben (#71) | Ihre Antworten im Chat | „Entscheidungen 28.10. rückgängig“ |
 | 2026-10-28 | **Lagebild:** offene Aufgaben, Reihenfolge, Blocker, Delegation, offene Fragen (`research/gespraeche/2026-10-28-lagebild.md`) | Ihre Frage im Chat; kein Wissen nur im Chat (0024) | Datei löschen: „Lagebild rückgängig“ |
 | 2026-10-28 | **Plan #62** mit Aufträgen #56–#61 (Audit der Zusammenarbeit, Modellprofile, Regeln prüfen, Kommunikation und Delegation, Tokenökonomie, Assistenz im Entwurf), alle `entwurf`; **Bug #55** (#31 falsch gelesen) | Ihr Auftrag, Chat 28.10. | Issues schließen: „Plan #62 rückgängig“ |
 | 2026-10-27 | Labor aufgebaut: Regeln, Prinzipien, Methoden, Website, Prüfungen | Startversion | „Labor-Aufbau rückgängig“ |
@@ -77,7 +78,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 
 | Thema | Stand | Issue |
 |---|---|---|
-| **Issue-Arbeit** (Skill, Vorlage, Prüffall) | Pull Request offen, wartet auf Ihre Freigabe (berührt `.agents/skills/` und `.github/`) | #31 |
+| **Issue-Arbeit** (Skill, Vorlage, Prüffall) | übernommen 28.10.; offen nur der Prüffall mit zweitem Modell | #31 |
 | **Experiment Entwurfsprozess** (neu) | Ideensammlung und Analyse in `experiments/2026-10-entwurfsprozess.md`; erster Schritt: Vergleich, Laborbuch, Entscheidungen als private Seite | #23 |
 | **Raster als Programm** | Konzept, wartet auf Ihre Wahl des Arbeitsorts (Browser empfohlen) | #24 |
 | **Private Ablage der Werke** | Ihr privates Repo, nächster Schritt; Zwischensicherung als ZIP bei Ihnen | #25 |
@@ -89,50 +90,55 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 
 ## Anschluss — hier beginnt jede neue Sitzung
 
-Gedächtnis ist dieses Repo, nicht der Chat. Ein langes Gespräch wird automatisch
-zusammengefasst, dabei geht Detail verloren. Was zählt, steht deshalb hier und
-in den verlinkten Dateien.
+Gedächtnis ist dieses Repo, nicht der Chat. Oben steht alles in Worten, für den Eigentümer.
+Nummern stehen nur im eingeklappten Teil darunter, für die Modelle (#71).
 
-- **Zuletzt (28.10.):** Flyer-Experiment mit 4 Runden abgeschlossen und
-  freigegeben; daraus Manifest (0022), Duden-Regel (0023), Fachpaket „Form“,
-  Feinsatz-Werkzeuge; Gespräch über Raster als System und über den
-  Entwurfsprozess selbst.
-- **Leitfragen des Eigentümers:** Gestaltung dient (Wahrnehmung zuerst);
-  Strukturen sichtbar und selbst änderbar (A29); Raster werkzeugunabhängig
-  (A30); alles ist Experiment.
-- **Wo was liegt:** Werkzeuge und Befunde in `experiments/`, Konzepte in
-  `research/`, Fachwissen in `.agents/skills/fachpaket-*`, Quellen in
-  `corpus/`, Entscheidungen in `decisions/`. **Nicht im Repo:**
-  Werkdateien des Flyers (privat in `esany/werke`, `werke/2026-flyer-rgut-a6/`) und
-  Lizenzschriften (nur beim Eigentümer).
-- **Gesprächsprotokolle:** `research/gespraeche/` (Erkenntnisse, die nur im
-  Chat standen).
-- **Nächster Schritt (neuer Chat):** Plan **#62** „Zusammenarbeit von Mensch und Modellen
-  analysieren, Maßnahmen ableiten“. Er wartet auf die Freigabe des Eigentümers und drei Fragen
-  (in #62). Danach beginnt #56 (Audit der Beispiel-Repos: Fehlermuster der Modelle, Muster der
-  Zusammenarbeit), dann #57 und #59 parallel, dann #58, #60, #61. Jeder Auftrag hat Ziel,
-  Ergebnis, DoR, DoD und Abbruchpunkt; Abhängigkeiten sind auf GitHub gesetzt.
-- **Lehre aus #55:** #31 wurde falsch gelesen (Beispiel-Repos als Ideenquelle statt als
-  Prüfgegenstand). Vor jedem Auftrag die Lesart spiegeln. Die Analysen laufen **neu** (#56, #57);
-  die Dateien in `research/2026-10-issue-arbeit/` (PR #38) sind kein Ergebnis und kein Eingang,
-  ebenso Vorbefunde in Kommentaren. Die Aufträge in #62 enthalten nur Ziel, Gegenstand,
-  Ergebnis, DoR, DoD und Grenzen, keine vorweggenommenen Befunde.
-- **Sitzung „Audit von Astra“ (28.10.) — abgeschlossen.** Ergebnisse und Offenes:
-  - Audit gesichert und eingeordnet (`research/2026-10-audit-astra/`).
-  - Recherche „Entwicklung und Gebrauch des Systems · Entwurfsbewegung · Möglichkeitsraum“:
-    #49, wartet darauf, wer sie macht. Kernsatz des Eigentümers: zwei Modi, nicht verwechseln
-    oder gleichsetzen.
-  - Entscheidungshilfe aus der Gestaltung auch für die Arbeit am System (Optionen mit Folgen,
-    höchstens vier Fragen, keine Nummern): gesichert in #59, noch nicht entschieden.
-  - **Frage an den Eigentümer:** Start und Abschluss bei parallelen Chats, Anschluss je Thema?
-    (#67). Prüffall dazu: `evals/parallel/`, erste Beobachtung nicht bestanden.
-  - Lehren: Ein Zitat ist keine Freigabe; Gebrauch ist keine Regel; vor jeder Antwort mit Stand
-    oder Entscheidung erst abgleichen und im Repo sichern (#65).
-  - Mein Vorbefund zur Regelprüfung (Kommentar in #58) ist nach der Lehre aus #55 **kein
-    Eingang** für die Analysen.
-  - Branch-Schutz: richtet der Eigentümer ein, die Schritte stehen in #40.
-- **Offen daneben:** PRs #38, #47, #48, #54 warten auf Freigabe (Reihenfolge dort in
-  `stand.md`, PR #54); Werk-Repo `esany/werke` ist angelegt (#25, PR #47).
+**Wo wir stehen (28.10., abends):** Bevor wieder gestaltet wird, bringen wir die offenen
+Aufgaben des Systems in Ordnung. So hat der Eigentümer es entschieden. Es gibt keinen
+Zeitrahmen bis Ende November, die Schritte laufen jetzt nacheinander.
+
+**Heute entschieden:**
+- Die Spielregeln für Aufträge gelten: Ist ein Modell dran? Ist alles da? Woran sieht man, dass
+  es fertig ist? Fragen kommen in Alltagssprache.
+- Die Untersuchung der Fehler startet, aber **nur über die Modelle**, nicht über die
+  Zusammenarbeit oder die Arbeitsweise des Eigentümers.
+- Bei mehreren gleichzeitigen Chats bekommt **jedes Thema einen eigenen Merkzettel** im
+  Labor. Claude richtet das als Nächstes ein.
+
+**Als Nächstes macht Claude:**
+1. die Merkzettel je Thema einrichten;
+2. die Fehler der Modelle untersuchen, sobald die Frage zu D3sign beantwortet ist.
+
+**Offene Fragen an den Eigentümer:**
+- Darf die Untersuchung die Regeln und Prüfberichte aus D3sign lesen, ohne Kundeninhalte?
+  Oder bleibt D3sign ganz draußen? Bis zur Antwort bleibt es draußen.
+- Drei kleine Fragen zur Arbeitsteilung zwischen den Modellen: Sollen die Sparregeln gelten?
+  Ist die Tabelle „welches Modell macht was“ nur eine Vermutung? Kein neues Label?
+- Den Hauptzweig schützen: Das Ja steht, es fehlen nur zwei Minuten Klicks in den
+  GitHub-Einstellungen, die nur das Konto des Eigentümers machen darf.
+- Für welches Experiment gilt „eine Korrektur der Experimente vernachlässigen wir“?
+- Wer übernimmt die Recherche „Entwicklung und Gebrauch des Systems, Möglichkeitsraum“?
+
+**Wo was liegt:** Befunde in `experiments/` und `research/`, Fachwissen in
+`.agents/skills/fachpaket-*`, Quellen in `corpus/`, Entscheidungen in `decisions/`,
+Gesprächsprotokolle in `research/gespraeche/`. Werkdateien und Lizenzschriften sind nicht im
+Labor (privat in `esany/werke` bzw. beim Eigentümer).
+
+<details><summary>Für die Modelle: Nummern und Lehren</summary>
+
+- Plan #62 freigegeben (1 ja, 2 B, 3 offen; Kommentar dort). #56 auf „nur Modelle“
+  zugeschnitten, noch `entwurf`: DoR fehlt D3sign-Antwort und geprüfter Lesezugriff. Danach
+  #57 und #59, dann #58, #60, #61. #60 hängt zusätzlich an #53.
+- #67 entschieden: A als Datei je Thema (`anschluss/<thema>.md`), jetzt `an:claude`.
+- PR #38 übernommen; #50, #51 geschlossen; #31 offen bis Prüffall `evals/uebergabe` (#43).
+- Offene PRs: #48 (0027, 0028), #47 (0026, jetzt auf `main`), #54 (A31–A34; nach #48 und #47).
+- #40 an:mensch (Klicks) → blockiert #41 (an:chatgpt). #49 ohne Zuständigkeit. #65 Ursache,
+  Maßnahme aus #56.
+- Lehren: Lesart spiegeln (#55); Vorarbeit in `research/2026-10-issue-arbeit/` ist kein Eingang
+  für #56/#57; ein Zitat ist keine Freigabe; vor jeder Liste abgleichen und zuerst im Repo
+  sichern (#65); Meldungen an den Eigentümer in Worten, Fragen als Auswahl (#71).
+- Lagebild: `research/gespraeche/2026-10-28-lagebild.md`.
+</details>
 
 ## Nächste Schritte (laufen ohne Sie)
 
