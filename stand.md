@@ -21,6 +21,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 
 | Datum | Was | Warum | Rückgängig |
 |---|---|---|---|
+| 2026-10-28 | **Sitzungsende:** Merkzettel fortgeschrieben, Prüfung auf Wissensmonopole (`research/gespraeche/2026-10-28-wissensmonopole.md`) | Ihr Auftrag im Chat; 0024 | Datei löschen: „Wissensmonopol-Prüfung rückgängig“ |
 | 2026-10-28 | **Issues #42, #43, #44 geschlossen** (Kontrast, Prüffälle mit zweitem Modell, Prüfung der Studie; nicht geplant, nichts gelöscht). Zuvor irrtümlich geschlossene Werke-Issues wieder geöffnet, deren Merkzettel-Änderung zurückgenommen | Ihre Anweisung im Chat | Issues wieder öffnen: „Prüf-Issues wieder öffnen“ |
 | 2026-10-28 | **Codex/Work nur in begründeten Fällen** (0025 Antwort 4, Skill `issue` B1 Punkt 7, Merkzettel System) | Ihre Vorgabe im Chat | „Regel Codex-Einsatz rückgängig“ (PR zurücknehmen) |
 | 2026-10-28 | **Perspektive, Folgen, Alternativen in Entscheidungen (0030)** und **Auftragsformat im Skill `issue` (B1, #82)**; Frage `docs/` als #84 gesichert (wartet auf #49) | Ihre Antwort „Option A“, „skill umsetzen“ | „Regel 0030 rückgängig“ bzw. „Auftragsformat rückgängig“ (PR zurücknehmen) |
@@ -129,8 +130,8 @@ welches gemeint ist.
 
 | Thema | Stand in einem Satz | Merkzettel |
 |---|---|---|
-| **Das System in Ordnung bringen** | Aufräumen erledigt, Aufträge zugeordnet (Experimente zurückgestellt); Untersuchung zurückgestellt | [`anschluss/system.md`](anschluss/system.md) |
-| **Entwicklung und Gebrauch · Möglichkeitsraum** | Recherche Astra zugeordnet; beginnt auf Ihr „mach“ | [`anschluss/moeglichkeitsraum.md`](anschluss/moeglichkeitsraum.md) |
+| **Das System in Ordnung bringen** | Aufräumen erledigt, Entscheidungen mit Perspektive, Auftragsformat im Skill; Untersuchung zurückgestellt | [`anschluss/system.md`](anschluss/system.md) |
+| **Entwicklung und Gebrauch · Möglichkeitsraum** | Recherche Astra zugeordnet, jetzt mit drei Perspektiven; beginnt auf Ihr „mach“ | [`anschluss/moeglichkeitsraum.md`](anschluss/moeglichkeitsraum.md) |
 | **Werke und Gestaltung** | ruht, bis das System in Ordnung ist; Flyer fertig | [`anschluss/werke.md`](anschluss/werke.md) |
 
 **Wo was liegt:** Befunde in `experiments/` und `research/`, Fachwissen in

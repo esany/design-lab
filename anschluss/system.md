@@ -1,6 +1,6 @@
 # Thema: Das System in Ordnung bringen
 
-**Zuletzt fortgeschrieben:** 28.10.2026, abends (Claude)
+**Zuletzt fortgeschrieben:** 28.10.2026, Sitzungsende (Claude)
 
 ## In Worten
 
@@ -52,6 +52,16 @@ Schritte laufen nacheinander.
   Labors). Sie bleibt zurückgestellt.
 - Der **Hauptzweig-Schutz** kommt später. Bis dahin prüft Claude vor jedem Commit den Zweig.
 
+**Am Ende des Tages erledigt:**
+- Entscheidungen haben jetzt eine Perspektive (System, Fach, Gebrauch), Folgen und Alternativen
+  (0030). Die Frage nach einem `docs/`-Verzeichnis ist als eigener Auftrag gesichert und wartet auf
+  die Recherche zum Möglichkeitsraum.
+- Das Auftragsformat für kleinere Modelle steht im Skill. Codex und Work bekommen nur in
+  begründeten Fällen einen Auftrag, wenn der normale Chat nicht reicht.
+- Kontrast, Prüffälle und die Prüfung der Studie sind geschlossen (nicht geplant, nichts gelöscht).
+- Der Auftrag „Aufträge besser schreiben“ wartet auf die Untersuchung, die zurückgestellt bleibt.
+- Prüfung auf Wissensmonopole: `research/gespraeche/2026-10-28-wissensmonopole.md`.
+
 **Danach, in dieser Reihenfolge:** Modelle kennen und Aufträge besser schreiben (beides
 parallel) → Regeln prüfen → Sparmaßnahmen mit Messung → Hilfe beim Entwerfen.
 
@@ -59,6 +69,7 @@ parallel) → Regeln prüfen → Sparmaßnahmen mit Messung → Hilfe beim Entwe
 - Soll Astra die Recherche zum Möglichkeitsraum übernehmen? Sag dafür „mach #49“ in einem Chat
   mit Astra. Genauso bei den Freigabehinweisen („mach #41“).
 - Sobald du es willst: Hauptzweig schützen (zwei Minuten Klicks) und die Untersuchung starten.
+- Stimmt es, dass `esany/werke` das Sicherungs-Repo ist? Dann kann der Fehlerbericht dazu zu.
 
 <details><summary>Für die Modelle: Nummern und Lehren</summary>
 
@@ -79,7 +90,7 @@ parallel) → Regeln prüfen → Sparmaßnahmen mit Messung → Hilfe beim Entwe
   „Fertig, wenn“. Beim Wiederaufnehmen schärfen.
 - Triage und Auftragsformat für kleinere Modelle:
   `research/gespraeche/2026-10-28-triage-modelle.md`.
-- Lehren: Lesart spiegeln (#55); Vorarbeit in `research/2026-10-issue-arbeit/` ist kein Eingang;
+- Lehren: Bei Sammelbegriffen („die Issues zum Werk“) vorher die Liste nennen und bestätigen lassen, besonders bei Schließen (#77, 28.10.); Lesart spiegeln (#55); Vorarbeit in `research/2026-10-issue-arbeit/` ist kein Eingang;
   ein Zitat ist keine Freigabe; vor jeder Liste abgleichen und zuerst im Repo sichern (#65);
   Meldungen in Worten, Fragen als Auswahl (#71); „nachziehen“ ist kein Startsignal (#77); vor
   jedem Commit den Zweig prüfen.
