@@ -30,3 +30,4 @@ Punkte als Fragen in Alltagssprache vor (0018). Antworten trägt er hier ein.
 | 0020 | [Fehlende D3sign-Prinzipien übernehmen](0020-d3sign-prinzipien.md) | freigegeben |
 | 0021 | [Fachpakete: Fachexpertise als Werkzeug](0021-fachpakete.md) | freigegeben |
 | 0022 | [Gestaltung dient: Manifest und Leitprinzip](0022-gestaltung-dient.md) | freigegeben |
+| 0023 | [Duden als Basis für Rechtschreibung und Satzregeln](0023-duden-als-basis.md) | freigegeben |
