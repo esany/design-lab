@@ -5,16 +5,23 @@ Werkzeuge. Toolunabhängig, auf offenen Formaten, lebendig.
 
 **Website:** https://esany.github.io/design-lab/ · Repo öffentlich einsehbar, alle Rechte vorbehalten.
 
-## Start mit jeder KI
+## Start mit jeder KI — einmal einrichten
 
-In jedem neuen Chat, egal mit welchem Modell, diesen Satz senden:
+Nur **einmal** je Werkzeug eintragen, danach beginnt jeder Chat von selbst richtig:
+
+| Werkzeug | wo eintragen |
+|---|---|
+| Claude (Chat, Projekt „Design“) | Projekt → Anweisungen; für alle Chats: Einstellungen → Profil → persönliche Präferenzen |
+| ChatGPT | Projekt → Anweisungen; für alle Chats: Einstellungen → Personalisierung → benutzerdefinierte Anweisungen |
+| Claude Code, Codex, Gemini im Repo | nichts — sie laden `AGENTS.md` selbst |
+
+Text:
 
 ```
-Arbeite im GitHub-Repo esany/design-lab (https://github.com/esany/design-lab). Lies zuerst AGENTS.md und stand.md, Abschnitt „Anschluss“. Nenne den nächsten Schritt in einem Satz und mach dann weiter.
+Wenn es um Gestaltung, das Labor oder design-lab geht: Das Labor ist das GitHub-Repo esany/design-lab (https://github.com/esany/design-lab). Lies zu Beginn AGENTS.md und stand.md (Abschnitt „Anschluss“), nenne den nächsten Schritt in einem Satz und mach dann weiter.
 ```
 
-Gleicher Text als Projekt-Anweisung in Claude oder ChatGPT. Die Regeln stehen nur in
-[`AGENTS.md`](AGENTS.md) (Abschnitt „Start jeder Sitzung“) und werden nirgends kopiert.
+Die Regeln selbst stehen nur in [`AGENTS.md`](AGENTS.md) („Start jeder Sitzung“).
 
 ## Wie das Labor arbeitet
 
