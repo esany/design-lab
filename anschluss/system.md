@@ -1,6 +1,6 @@
 # Thema: Das System in Ordnung bringen
 
-**Zuletzt fortgeschrieben:** 28.10.2026, abends (Claude)
+**Zuletzt fortgeschrieben:** 28.10.2026, spätabends (Claude)
 
 ## In Worten
 
@@ -19,9 +19,11 @@ Schritte laufen nacheinander.
   Reihe hat Vorrang.
 - Jedes Thema bekommt einen eigenen Merkzettel (diese Datei ist einer).
 
-**Als Nächstes:** Claude macht die Bestandsaufnahme für die Untersuchung der Modellfehler: Was
-wird gelesen, wie umfangreich ist es, was kostet das Lesen? Erst nach dem „weiter“ des
-Eigentümers wird gründlich gelesen.
+**Als Nächstes:** Die Bestandsaufnahme für die Untersuchung der Modellfehler liegt vor
+(Kommentar im Auftrag). Das Material ist groß, etwa 470.000 Tokens. Der Eigentümer wählt den
+Umfang: Kern mit Hilfe kleinerer Modelle (Empfehlung), alles, oder nur die vorhandenen
+Prüfberichte. D3sign ist für Claude nicht erreichbar: Entweder gibt der Eigentümer es auf GitHub
+für die Claude-App frei, oder es bleibt draußen.
 
 **Danach, in dieser Reihenfolge:** Modelle kennen und Aufträge besser schreiben (beides
 parallel) → Regeln prüfen → Sparmaßnahmen mit Messung → Hilfe beim Entwerfen.
@@ -31,6 +33,7 @@ parallel) → Regeln prüfen → Sparmaßnahmen mit Messung → Hilfe beim Entwe
   GitHub-Einstellungen, die nur das Konto des Eigentümers machen darf.
 - Für welches Experiment gilt „eine Korrektur der Experimente vernachlässigen wir“: den
   Farbkontrast, den Prüffall mit zweitem Modell oder die unabhängige Prüfung der Studie?
+- Wie viel soll die Untersuchung lesen, und kommt D3sign dazu (siehe oben)?
 - Drei fertige Vorlagen warten noch auf ein Ja: die Antwort zum Audit („Hinweise statt
   Vorgaben“), die Sicherung der Werke und die Verknüpfung von Anforderungen mit Regeln.
 
