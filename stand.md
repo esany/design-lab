@@ -75,7 +75,7 @@ Grundlagen vor Details: Oben steht, wovon anderes abhängt (A31). Freigabe allei
 | 1 | **Issue-Arbeit** (Skill `issue`, Vorlage „Übergabe“), PR #38 | Ihre Freigabe | Verteilen an andere Modelle; #43, #47, Bugs #50–#52 |
 | 2 | **Verknüpfung Anforderungen ↔ Regeln** (A31–A34, `verknuepfung.md`), PR #54 | Ihre Freigabe | dass Eingeführtes nicht verrottet |
 | 3 | **Antwort zum Audit** (0027 Branch-Schutz, 0028), PR #48 · Branch-Schutz einrichten (#40) | Ihre Freigabe · Ihr Handgriff in GitHub | #41 |
-| 4 | **Sicherung der Werke**, PR #47 · Repo `esany/werke` anlegen | #38 · Ihr Handgriff | #25, #39 |
+| 4 | **Sicherung der Werke**, PR #47 (Repo `esany/werke` ist angelegt) | #38 | #25, #39 |
 | 5 | **Vorschlag 0025**: drei Fragen (#53) | Ihre Antworten | Verteilen nach Modellen |
 | 6 | **Recherche Entwicklung und Gebrauch, Möglichkeitsraum** (#49) | wer recherchiert | Hinweis: berührt #23 (Oberfläche Entwurfsprozess) |
 | 7 | **Raster als Programm** (#24) → Fachpaket Raster und Layout (#27) | Ihre Wahl des Arbeitsorts | #27 baut auf #24 |
