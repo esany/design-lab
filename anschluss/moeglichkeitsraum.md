@@ -20,4 +20,5 @@ Entwerfen baut später darauf auf.
 - **Führendes Issue:** #49 (`an:chatgpt`, Dient: A04, A07, A29).
 - Fallmaterial: `research/2026-10-audit-astra/`, zurückgenommener Entwurf von 0027 in #48.
 - Hängt an: #61 wartet auf #49.
+- Material: `research/2026-10-modi-und-dokumentation/befund.md` (drei Perspektiven als Arbeitsannahme, nicht geprüft).
 </details>

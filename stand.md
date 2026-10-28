@@ -21,6 +21,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 
 | Datum | Was | Warum | Rückgängig |
 |---|---|---|---|
+| 2026-10-28 | **Befund Modi, Entscheidungen, Dokumentation** (`research/2026-10-modi-und-dokumentation/befund.md`): drei Perspektiven, Lücke „Folgen“ in Entscheidungen, Optionen A–C; Auftrag #82 aus #59 ausgelagert | Ihre Frage im Chat; 0024 | Datei löschen, #82 schließen: „Befund Modi rückgängig“ |
 | 2026-10-28 | **Triage:** Blocker, Zuständigkeit, welches Modell, Zuschnitt, Entwurf „Aufträge für kleinere Modelle“ (`research/gespraeche/2026-10-28-triage-modelle.md`) | Ihre Frage im Chat | „Triage rückgängig“ |
 | 2026-10-28 | **Ein Merkzettel je Thema (0029):** `anschluss/` mit drei Themen (System, Möglichkeitsraum, Werke); hier steht nur noch die Themenliste; Start und Ende in `AGENTS.md` und Skill `issue` angepasst | Ihre Antwort auf #67 | „Regel 0029 rückgängig“ |
 | 2026-10-28 | **Arbeitsteilung (0025) gültig:** Sparregeln gelten für Routinen, nicht zu Lasten der Qualität, Ihre Aufträge haben Vorrang; die Modell-Tabelle ist nur eine Vermutung, Aufträge berücksichtigen Funktionen und Limits des Modells; kein Etikett „Übergabe“. D3sign: Regeln und Prüfberichte dürfen in die Untersuchung, ohne Kundeninhalte | Ihre Antworten im Chat | „Regel 0025 rückgängig“ |
