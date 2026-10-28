@@ -11,8 +11,9 @@ machen — es genügt zu sagen: **„… rückgängig“**.
   jeder Übernahme selbst.
 - **Arbeitsweise:** Agenten arbeiten im freigegebenen Rahmen selbstständig;
   offene Punkte und Gestaltungsfragen klären wir gemeinsam (`decisions/0019`).
-- **Inhalt:** Manifest · 13 Prinzipien (0–12) · 11 Skills (davon 1 Fachpaket) · Korpus mit 49 Quellen · Modul „System“ · 1 Studie
-  (abgeschlossen) · Feldforschung · Radar · 21 Entscheidungen.
+- **Inhalt:** Manifest · Prinzipien · Skills (`.agents/skills/`, darunter Fachpakete) · Korpus ·
+  Modul „System“ · Studien · Feldforschung · Radar · Entscheidungen (`decisions/`). Zahlen stehen
+  hier nicht mehr: sie veralten; die Ordner sind die Wahrheit.
 - **Status:** Experiment, Laufzeit bis Ende November 2026
   (`experiments/2026-10-labor-aufbau.md`).
 
@@ -37,6 +38,8 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 | 2026-10-27 | Feldforschung KI × Gestaltung (KINDLAB, KITeGG, UdK, FHP, Burg, KHM …): Befunde, Einordnung, 4 Entwürfe als Issues #6–#9, Radar ergänzt | Ihr Rechercheauftrag | „Feldforschung rückgängig“ |
 | 2026-10-28 | **Start nur auf Auftrag:** Anschluss ist Vorschlag, kein Auftrag; ohne Auftrag nennt das Modell Stand und Vorschlag und wartet | Modelle begannen sonst eigenmächtig | „Start nur auf Auftrag rückgängig“ |
 | 2026-10-28 | **Flyer als erstes Werk abgelegt** im privaten Repo `esany/werke`, Ordner `werke/2026-flyer-rgut-a6/` (46 Dateien, ohne Schriften) | Sicherung der Werkdateien (#25) | im Repo werke per Revert-PR |
+| 2026-10-28 | **Issue-Arbeit (#31):** Skill `issue` (bin ich dran? · schreiben · bearbeiten · übergeben), Vorlage „Übergabe“, Prüffall `evals/uebergabe` (nicht getestet, kein Blocker); Skill ergänzt um Abhängigkeiten, Umsetzungsreife, Lebenszyklus, Labels, Fragen und Bugs in Alltagssprache (#50, #51); **Vorschlag 0025 unverändert** (die Kürzung war nicht abgesprochen, #51); Recherche zu Modellen und Beispiel-Repos in `research/2026-10-issue-arbeit/`; veraltete Zahlen in dieser Datei entfernt (stimmten nicht: 21 statt 25 Entscheidungen, 11 statt 12 Skills) | Ihr Auftrag #31 | „Issue-Arbeit rückgängig“ |
+| 2026-10-28 | **Bug #39:** Sicherungs-Repo falsch übernommen (Adresse kam doppelt an, Modell fragte nicht nach); betroffene Aussagen zurückgesetzt, Repo-Name offen | Ihr Hinweis im Chat | „Bug-Korrektur rückgängig“ |
 | 2026-10-28 | **Arbeiten nur mit Auftrag:** Modelle melden beim Start nur und warten; Claude ist Orchestrator und verteilt über Labels `an:…` | Modelle legten ohne Auftrag los | „Auftragsregel rückgängig“ |
 | 2026-10-28 | **Start jeder Sitzung** in AGENTS.md: ein Startsatz für alle Modelle, Repo als einziger Ort, ohne Zugang aufhören statt suchen; Prüffall `evals/start` | ein neuer Chat fand stand.md nicht | „Start-Regel rückgängig“ |
 | 2026-10-28 | **Vorschlag 0025 Arbeitsteilung zwischen Modellen** (wartet auf Antwort) | Tokenökonomie, mehrere Modelle | „Regel 0025 rückgängig“ |
@@ -74,6 +77,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 
 | Thema | Stand | Issue |
 |---|---|---|
+| **Issue-Arbeit** (Skill, Vorlage, Prüffall) | Pull Request offen, wartet auf Ihre Freigabe (berührt `.agents/skills/` und `.github/`) | #31 |
 | **Experiment Entwurfsprozess** (neu) | Ideensammlung und Analyse in `experiments/2026-10-entwurfsprozess.md`; erster Schritt: Vergleich, Laborbuch, Entscheidungen als private Seite | #23 |
 | **Raster als Programm** | Konzept, wartet auf Ihre Wahl des Arbeitsorts (Browser empfohlen) | #24 |
 | **Private Ablage der Werke** | Ihr privates Repo, nächster Schritt; Zwischensicherung als ZIP bei Ihnen | #25 |
