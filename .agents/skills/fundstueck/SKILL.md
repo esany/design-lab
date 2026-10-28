@@ -1,6 +1,7 @@
 ---
 name: fundstueck
 description: Use when a new tool, project, repo, MCP server, external skill, method or conference is brought in — evaluates it against the lab's existing approach, security and independence before anything is adopted. Derived from D3sign D-032/D-033.
+dient: A10, A15, A27
 ---
 
 # Fundstück bewerten

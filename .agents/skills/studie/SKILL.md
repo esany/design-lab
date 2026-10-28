@@ -1,6 +1,7 @@
 ---
 name: studie
 description: Use when creating or extending a visual study in studies/ — generative, rule-based or data-driven works rendered as self-contained HTML/SVG/JS, documented, screenshotted and added to the lab index.
+dient: A01, A08, A24
 ---
 
 # Studie anlegen

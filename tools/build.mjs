@@ -206,6 +206,58 @@ Je Feld zuerst die Verweise des Eigentümers (Ausgangspunkte, kein Kanon). Eine 
 
 ${byField}`);
 
+// ---------- Verknüpfung: Anforderungen (intent.md) ↔ Entscheidungen und Skills ----------
+// Jede Entscheidung und jeder Skill nennt im Kopf `dient: A..`. Daraus entsteht verknuepfung.md.
+const reqs = new Map();
+for (const line of readFileSync(join(root, "intent.md"), "utf8").split("\n")) {
+  const m = line.match(/^\| (A\d\d) \| (.+?) \| .+? \| (.+) \|$/);
+  if (m) reqs.set(m[1], { titel: (m[2].match(/\*\*(.+?)\*\*/) ?? [, m[2]])[1], stand: (m[3].match(/\*\*([^*]+)\*\*/) ?? [, "?"])[1] });
+}
+function head(p) {
+  const s = readFileSync(p, "utf8"); const m = s.match(/^---\n([\s\S]*?)\n---/);
+  const o = {}; if (m) for (const l of m[1].split("\n")) { const k = l.match(/^([a-z_]+):\s*(.*)$/); if (k) o[k[1]] = k[2]; }
+  return o;
+}
+const mech = [];
+for (const f of readdirSync(join(root, "decisions")).filter((f) => /^\d{4}-.*\.md$/.test(f)).sort())
+  mech.push({ art: "Entscheidung", id: f.slice(0, 4), pfad: `decisions/${f}`, ...head(join(root, "decisions", f)) });
+for (const d of readdirSync(join(root, ".agents/skills")).sort()) {
+  const p = join(root, ".agents/skills", d, "SKILL.md");
+  if (existsSync(p)) mech.push({ art: "Skill", id: d, pfad: `.agents/skills/${d}/SKILL.md`, ...head(p) });
+}
+const byReq = new Map([...reqs.keys()].map((a) => [a, []]));
+for (const x of mech) {
+  if (!x.dient) { errors.push(`${x.pfad}: Kopfzeile „dient: A..“ fehlt (welcher Anforderung dient es?)`); continue; }
+  for (const a of x.dient.split(/[,\s]+/).filter(Boolean)) {
+    if (!byReq.has(a)) errors.push(`${x.pfad}: dient ${a} — keine solche Anforderung in intent.md`);
+    else byReq.get(a).push(x);
+  }
+}
+const ohne = [...byReq].filter(([, l]) => !l.length).map(([a]) => a);
+const probe = mech.filter((x) => /auf Probe/.test(x.status ?? "") && !x.auswerten);
+const vorschlag = mech.filter((x) => /^Vorschlag/.test(x.status ?? ""));
+const zahl = (w) => [...reqs.values()].filter((r) => r.stand === w).length;
+const link = (x) => `[${x.id}](${x.pfad})`;
+outputs.set("verknuepfung.md", `# Verknüpfung — Anforderungen und Mechanismen
+
+> Erzeugt von \`node tools/build.mjs\` aus \`intent.md\` und der Kopfzeile \`dient:\` jeder
+> Entscheidung und jedes Skills. Nicht von Hand ändern. Zweck: A33 „Nichts verrottet“.
+
+**Stand der ${reqs.size} Anforderungen:** ${zahl("erfüllt")} erfüllt · ${zahl("teilweise")} teilweise · ${zahl("offen")} offen (laut \`intent.md\`).
+
+## Auffällig — die Pflege prüft das monatlich
+
+- **Anforderungen ohne Entscheidung oder Skill:** ${ohne.join(", ") || "keine"}
+- **Auf Probe ohne Auswertungsdatum** (\`auswerten:\` fehlt): ${probe.map(link).join(", ") || "keine"}
+- **Vorschläge, die auf Antwort warten:** ${vorschlag.map(link).join(", ") || "keine"}
+
+## Je Anforderung
+
+| Nr. | Anforderung | Stand | Entscheidungen | Skills |
+|---|---|---|---|---|
+${[...reqs].map(([a, r]) => { const l = byReq.get(a); return `| ${a} | ${cell(r.titel)} | ${r.stand} | ${l.filter((x) => x.art === "Entscheidung").map(link).join(", ") || "—"} | ${l.filter((x) => x.art === "Skill").map(link).join(", ") || "—"} |`; }).join("\n")}
+`);
+
 // ---------- Schreiben oder prüfen ----------
 let stale = 0;
 for (const [rel, content] of outputs) {

@@ -1,6 +1,7 @@
 ---
 name: farbkontraste-itten
 description: Method for colour composition and critique with Johannes Itten's seven colour contrasts — use when choosing, generating or reviewing colour in studies, graphics or exhibitions, and when translating Itten's painter's colour wheel into modern colour spaces (OKLCH).
+dient: A04
 ---
 
 # Methode: Die sieben Farbkontraste nach Itten

@@ -1,6 +1,7 @@
 ---
 name: fachpaket-vermitteln
 description: Domain expertise for diagrammatics, information design, information visualisation and knowledge transfer — canon (owner's references first), best practice, dated state of the art, quality criteria, mediocrity patterns and the AI's role. Load before planning, building or critiquing any chart, diagram, map, explanatory graphic, data art or exhibition graphic.
+dient: A04, A05
 ---
 
 # Fachpaket „Vermitteln“

@@ -2,6 +2,7 @@
 status: freigegeben
 datum: 2026-10-28
 entschieden_von: Mensch (im Chat: „Ich würde den Duden als Basis nehmen“)
+dient: A04, A07
 ---
 
 # 0023 · Duden als Basis für Rechtschreibung und Satzregeln

@@ -2,6 +2,7 @@
 status: freigegeben
 datum: 2026-10-27
 entschieden_von: Mensch (im Chat)
+dient: A18, A20
 ---
 
 # 0019 · Selbstständig im Rahmen — der Mensch gestaltet, klärt offene Punkte

@@ -2,6 +2,7 @@
 status: Vorschlag
 datum: 2026-10-28
 entschieden_von: offen (Antwort des Menschen)
+dient: A12, A13, A26, A34
 ---
 
 # 0025 · Arbeitsteilung zwischen Modellen, Übergaben als Issues

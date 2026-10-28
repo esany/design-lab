@@ -1,6 +1,7 @@
 ---
 name: kritik
 description: Structured design critique against explicitly chosen criteria, using the average solution as a negative foil — use to review studies, layouts, typography, visualisations, exhibitions or interfaces; ideally run by a different model than the one that created the work.
+dient: A06, A26
 ---
 
 # Gestaltungskritik

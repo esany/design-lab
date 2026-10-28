@@ -2,6 +2,7 @@
 status: freigegeben
 datum: 2026-10-28
 entschieden_von: Mensch (im Chat, ausdrücklicher Auftrag)
+dient: A28
 ---
 
 # 0022 · Gestaltung dient: Manifest und Leitprinzip

@@ -1,6 +1,7 @@
 ---
 name: belegpflicht
 description: Use for any research, art or image history, theory, facts about people, works, dates or quotes — enforces quote-plus-source, evidence status and a verification pass so results are reliable rather than plausible.
+dient: A07
 ---
 
 # Belegpflicht

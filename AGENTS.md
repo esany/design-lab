@@ -86,6 +86,9 @@ Sie legen Optionen mit Begründung vor.
    Revert als eigenen Pull Request und vermerkt ihn in `stand.md`.
 8. Nach Änderungen an `system/` oder `studies/`: `node tools/build.mjs`
    ausführen und das Ergebnis mit committen.
+9. **Jede Entscheidung und jeder Skill nennt im Kopf `dient: A..`**, also die
+   Anforderung(en) aus `intent.md`. Der Build prüft das und erzeugt daraus
+   `verknuepfung.md` (A33).
 
 ## Prüfen vor dem Handeln
 
@@ -168,6 +171,7 @@ durchgehen — nicht Technik bedienen. Deshalb:
 ## Anforderungen annehmen
 
 Anforderungen kommen als GitHub-Issue (Vorlage „Anforderung“) oder im Chat.
+Issues schreiben, ordnen, übergeben, teilen und schließen: Skill `issue`.
 Vorgehen: kurz spiegeln, was verstanden wurde und welche Annahme gilt →
 umsetzen → PR mit Bezug zum Issue (`Closes #n`). Bei echter Mehrdeutigkeit
 mit großem Aufwand: eine gezielte Rückfrage, sonst vernünftige Annahme
@@ -177,7 +181,8 @@ sichtbar machen.
 
 | Ort | Inhalt |
 |---|---|
-| `intent.md` | **Maßstab**: Intent, Ziel, Anforderungen A01–A30 — jede Arbeit prüft dagegen |
+| `intent.md` | **Maßstab**: Intent, Ziel, Anforderungen A01–A34 — jede Arbeit prüft dagegen |
+| `verknuepfung.md` | erzeugt: welche Entscheidung und welcher Skill welcher Anforderung dient, was fehlt |
 | `manifest.md` | **Leitprinzip**: Gestaltung dient — Wahrnehmung, Kognition, Kontext |
 | `principles.md` | Haltung, Prinzipien, Herkunft |
 | `stand.md` | Entwicklungsstand: Änderungen, offene Punkte, nächste Schritte |
@@ -194,7 +199,7 @@ sichtbar machen.
 
 ## Definition of Done für einen PR
 
-- Zweck in einem Satz, Bezug zu Issue oder Anforderung
+- Zweck in einem Satz, Bezug zu Issue **und** Anforderung (A..)
 - was erzeugt, was geprüft (wie), was nicht geprüft
 - Screenshot bei visuellen Ergebnissen
 - `node tools/build.mjs` ohne Fehler; keine Änderungen danach offen

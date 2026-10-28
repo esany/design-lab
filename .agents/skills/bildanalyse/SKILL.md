@@ -1,6 +1,7 @@
 ---
 name: bildanalyse
 description: Method for structured image analysis (art, design, visual culture) — formal description, Panofsky's three levels and image-act questions, with strict separation of what is seen, what is known (sourced) and what is interpreted.
+dient: A01, A04
 ---
 
 # Methode: Bildanalyse

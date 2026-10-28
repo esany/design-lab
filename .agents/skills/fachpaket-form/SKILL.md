@@ -1,6 +1,7 @@
 ---
 name: fachpaket-form
 description: Domain expertise for typography (macro and micro), readability and print — canon, measurable quality criteria, German typesetting rules, mediocrity patterns, the AI's role and a tested comparison of InDesign, Scribus and HTML/CSS with Paged.js. Load before setting, checking or critiquing any text layout, flyer, poster, book page, web text or print file.
+dient: A04, A05, A28
 ---
 
 # Fachpaket „Form“ — Typografie und Print

@@ -3,7 +3,7 @@
 Gemeinsame Übersicht zum Durchgehen. Jede Änderung ist einzeln rückgängig zu
 machen — es genügt zu sagen: **„… rückgängig“**.
 
-**Zuletzt aktualisiert:** 2026-10-27
+**Zuletzt aktualisiert:** 2026-10-28
 
 ## Wo das Labor steht
 
@@ -38,6 +38,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 | 2026-10-28 | **Start jeder Sitzung** in AGENTS.md: ein Startsatz für alle Modelle, Repo als einziger Ort, ohne Zugang aufhören statt suchen; Prüffall `evals/start` | ein neuer Chat fand stand.md nicht | „Start-Regel rückgängig“ |
 | 2026-10-28 | **Vorschlag 0025 Arbeitsteilung zwischen Modellen** (wartet auf Antwort) | Tokenökonomie, mehrere Modelle | „Regel 0025 rückgängig“ |
 | 2026-10-28 | **Regel 0024 „Kein Wissen nur im Chat“** (auf Probe); Gesprächsprotokoll mit allen Erkenntnissen, die nur im Chat standen (`research/gespraeche/2026-10-28-print-typografie-raster.md`); Radar um Print-Werkzeuge ergänzt | Ihr Hinweis auf Wissensmonopole im Chat | „Regel 0024 rückgängig“ |
+| 2026-10-28 | **Verknüpfung (A33):** Ihre Anforderungen aus dem Chat als A31–A34 in `intent.md` (Abhängigkeiten, Umsetzungsreife, nichts verrottet, Tokenökonomie); jede Entscheidung und jeder Skill nennt, welcher Anforderung sie dient; der Build erzeugt `verknuepfung.md` und meldet Lücken; Pflege prüft monatlich; Reihenfolge in dieser Datei | Ihre Sorge, dass Regeln in einer Ecke verrotten | „Verknüpfung rückgängig“ |
 | 2026-10-28 | **Audit von GPT-6 Astra** nachgeprüft und eingeordnet (`research/2026-10-audit-astra/`): sechs Befunde bestätigt, einer ergänzt (Kontrast `muted`); verteilt als #40, #45 (an Sie) und #41–#44 (an Astra) | Ihr Auftrag, die Arbeit zu organisieren | „Audit-Einordnung rückgängig“ (Issues bleiben, werden geschlossen) |
 | 2026-10-28 | **Experiment Entwurfsprozess** angelegt; offene Themen als Issues #23–#27; Abschnitt „Anschluss“ für neue Sitzungen; Flyer-Arbeitsstand als ZIP an Sie | Ihr Auftrag „alles sichern“ | „Entwurfsprozess rückgängig“ |
 | 2026-10-28 | Konzept „Raster als Programm“: Ihr Flyer-Raster ausgelesen (Offset, Spalten, Grundlinien, Brüche), Ihre Anforderungen A29/A30, Pilot vorgeschlagen | Gespräch über Raster und Wirksysteme | „Raster-Konzept rückgängig“ |
@@ -64,6 +65,25 @@ machen — es genügt zu sagen: **„… rückgängig“**.
    sie nutzt, nennen Sie mir einzelne Boards, die für ein Feld stehen, oder
    beschreiben Sie in ein paar Worten, was sie zusammenhält.
 
+## Reihenfolge — Vorschlag des Orchestrators, Sie ordnen um
+
+Grundlagen vor Details: Oben steht, wovon anderes abhängt (A31). Freigabe allein heißt nicht
+„umsetzungsreif“ (A32, Skill `issue`, E2).
+
+| # | Was | Wartet auf | Davon hängt ab |
+|---|---|---|---|
+| 1 | **Issue-Arbeit** (Skill `issue`, Vorlage „Übergabe“), PR #38 | Ihre Freigabe | Verteilen an andere Modelle; #43, #47, Bugs #50–#52 |
+| 2 | **Verknüpfung Anforderungen ↔ Regeln** (A31–A34, `verknuepfung.md`), dieser Pull Request | Ihre Freigabe | dass Eingeführtes nicht verrottet |
+| 3 | **Antwort zum Audit** (0027 Branch-Schutz, 0028), PR #48 · Branch-Schutz einrichten (#40) | Ihre Freigabe · Ihr Handgriff in GitHub | #41 |
+| 4 | **Sicherung der Werke**, PR #47 · Repo `esany/werke` anlegen | #38 · Ihr Handgriff | #25, #39 |
+| 5 | **Vorschlag 0025**: drei Fragen (#53) | Ihre Antworten | Verteilen nach Modellen |
+| 6 | **Recherche Entwicklung und Gebrauch, Möglichkeitsraum** (#49) | wer recherchiert | Hinweis: berührt #23 (Oberfläche Entwurfsprozess) |
+| 7 | **Raster als Programm** (#24) → Fachpaket Raster und Layout (#27) | Ihre Wahl des Arbeitsorts | #27 baut auf #24 |
+| 8 | Erstes Werk „Vermitteln“ (#8), Generative Gestaltung (#9), Website (#26) | Reihenfolge durch Sie | — |
+
+**Ungeklärt:** #42 (Kontrast), #43 (Prüffälle), #44 (Studie prüfen) stehen auf `entwurf`. Ihre
+Bemerkung „Korrektur der Experimente vernachlässigen wir“ ist noch keiner Nummer zugeordnet.
+
 ## In Arbeit
 
 | Thema | Stand | Issue |
@@ -83,25 +103,23 @@ Gedächtnis ist dieses Repo, nicht der Chat. Ein langes Gespräch wird automatis
 zusammengefasst, dabei geht Detail verloren. Was zählt, steht deshalb hier und
 in den verlinkten Dateien.
 
-- **Zuletzt (28.10.):** Flyer-Experiment mit 4 Runden abgeschlossen und
-  freigegeben; daraus Manifest (0022), Duden-Regel (0023), Fachpaket „Form“,
-  Feinsatz-Werkzeuge; Gespräch über Raster als System und über den
-  Entwurfsprozess selbst.
-- **Leitfragen des Eigentümers:** Gestaltung dient (Wahrnehmung zuerst);
-  Strukturen sichtbar und selbst änderbar (A29); Raster werkzeugunabhängig
-  (A30); alles ist Experiment.
-- **Wo was liegt:** Werkzeuge und Befunde in `experiments/`, Konzepte in
-  `research/`, Fachwissen in `.agents/skills/fachpaket-*`, Quellen in
-  `corpus/`, Entscheidungen in `decisions/`. **Nicht im Repo:**
-  Werkdateien des Flyers (ZIP beim Eigentümer, später privates Repo, #25) und
-  Lizenzschriften (nur beim Eigentümer).
-- **Gesprächsprotokolle:** `research/gespraeche/` (Erkenntnisse, die nur im
-  Chat standen).
-- **Nächster Schritt (neuer Chat, `an:claude`):** #31 — Repo und Strukturen wasserdicht
-  machen, Modelle kennen, Skill für Issue-Arbeit. Erst die Beispiel-Repos des
-  Eigentümers ansehen. Arbeitsteilung zwischen Modellen: Vorschlag
-  `decisions/0025`, noch offen und eher zu verschlanken.
-- **Danach:** privates Repo und Flyer sichern (#25), dann #23 und #24.
+- **Zuletzt (28.10., Nachmittag):** Audit von GPT-6 Astra gesichert und eingeordnet
+  (`research/2026-10-audit-astra/`). Daraus: Hinweise statt Vorgaben (0028, nur Wortlaut des
+  Eigentümers), Branch-Schutz (0027), Skill `issue` erweitert (#38), Verknüpfung von
+  Anforderungen und Mechanismen (A31–A34, `verknuepfung.md`). Recherche „Entwicklung und
+  Gebrauch des Systems · Entwurfsbewegung · Möglichkeitsraum“ als #49 angelegt.
+- **Lehren der Sitzung** (Bugs #50, #51, #52): Ein Zitat ist keine Freigabe. Jede Frage nennt,
+  was sich ändert, warum, und was passiert, wenn man es lässt. Vor jeder Liste das Repo
+  abgleichen. Gebrauch (wie der Eigentümer *aktuell* arbeitet) ist keine Regel des Systems.
+- **Leitfragen des Eigentümers:** Gestaltung dient (Wahrnehmung zuerst); Strukturen sichtbar
+  und selbst änderbar (A29); Raster werkzeugunabhängig (A30); alles ist Experiment;
+  Entwicklung und Gebrauch des Systems nicht verwechseln (#49).
+- **Wo was liegt:** Werkzeuge und Befunde in `experiments/`, Konzepte in `research/`,
+  Fachwissen in `.agents/skills/fachpaket-*`, Quellen in `corpus/`, Entscheidungen in
+  `decisions/`, Verknüpfung in `verknuepfung.md`. **Nicht im Repo:** Werkdateien (künftig
+  `esany/werke`, #47) und Lizenzschriften.
+- **Nächster Schritt:** siehe „Reihenfolge“ oben. Für Claude: Freigaben abwarten, dann nach
+  Skill `issue` verteilen.
 
 ## Nächste Schritte (laufen ohne Sie)
 

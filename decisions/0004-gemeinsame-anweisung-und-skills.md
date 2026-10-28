@@ -2,6 +2,7 @@
 status: freigegeben (auf Probe)
 datum: 2026-10-27
 entschieden_von: Vorschlag Agent (Claude) · Entscheidung Mensch am 2026-10-27
+dient: A11, A26
 ---
 
 # 0004 · Eine Anweisung, ein Skill-Ordner für alle Agenten
