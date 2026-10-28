@@ -40,6 +40,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 | 2026-10-28 | **Start jeder Sitzung** in AGENTS.md: ein Startsatz für alle Modelle, Repo als einziger Ort, ohne Zugang aufhören statt suchen; Prüffall `evals/start` | ein neuer Chat fand stand.md nicht | „Start-Regel rückgängig“ |
 | 2026-10-28 | **Vorschlag 0025 Arbeitsteilung zwischen Modellen** (wartet auf Antwort) | Tokenökonomie, mehrere Modelle | „Regel 0025 rückgängig“ |
 | 2026-10-28 | **Regel 0024 „Kein Wissen nur im Chat“** (auf Probe); Gesprächsprotokoll mit allen Erkenntnissen, die nur im Chat standen (`research/gespraeche/2026-10-28-print-typografie-raster.md`); Radar um Print-Werkzeuge ergänzt | Ihr Hinweis auf Wissensmonopole im Chat | „Regel 0024 rückgängig“ |
+| 2026-10-28 | **Sitzung „Audit von Astra“ abgeschlossen:** eigener Block im Anschluss fortgeschrieben, ohne andere Blöcke zu ändern | Abschlussregel | „Abschluss rückgängig“ |
 | 2026-10-28 | **Prüffall `parallel`:** Start und Abschluss bei parallelen Chats; erste Beobachtung von heute als „nicht bestanden“ eingetragen; Aufgabe des Orchestrators | Ihr Auftrag „nimm das als Prüffall auf“ (#67) | „Prüffall parallel rückgängig“ |
 | 2026-10-28 | **Anschluss** um die Sitzung „Audit von Astra“ ergänzt: Recherche Möglichkeitsraum, Entscheidungshilfe, Lehren, Bug zur Ursache | Kein Wissen nur im Chat (0024) | „Anschluss-Ergänzung rückgängig“ |
 | 2026-10-28 | **Audit von GPT-6 Astra** nachgeprüft und eingeordnet (`research/2026-10-audit-astra/`): sechs Befunde bestätigt, einer ergänzt (Kontrast `muted`); verteilt als #40, #45 (an Sie) und #41–#44 (an Astra) | Ihr Auftrag, die Arbeit zu organisieren | „Audit-Einordnung rückgängig“ (Issues bleiben, werden geschlossen) |
@@ -111,18 +112,20 @@ in den verlinkten Dateien.
   die Dateien in `research/2026-10-issue-arbeit/` (PR #38) sind kein Ergebnis und kein Eingang,
   ebenso Vorbefunde in Kommentaren. Die Aufträge in #62 enthalten nur Ziel, Gegenstand,
   Ergebnis, DoR, DoD und Grenzen, keine vorweggenommenen Befunde.
-- **Aus der Sitzung „Audit von Astra“ (28.10., Nachmittag):**
-  - Das Audit ist gesichert und eingeordnet (`research/2026-10-audit-astra/`).
-  - Die Recherche „Entwicklung und Gebrauch des Systems · Entwurfsbewegung ·
-    Möglichkeitsraum“ steht in #49. Kernsatz des Eigentümers: Es gibt zwei Modi, die man nicht
-    verwechseln oder gleichsetzen darf.
-  - Die Entscheidungshilfe aus der Gestaltung (Option mit benanntem Risiko, höchstens vier
-    Fragen, keine Nummern) soll auch für die Arbeit am System gelten. Sie ist in #59 gesichert,
-    aber noch nicht entschieden.
-  - Lehren: Ein Zitat ist keine Freigabe. Was der Eigentümer *aktuell* tut, ist Gebrauch und
-    keine Regel. Vor jeder Antwort mit Stand oder Entscheidung erst abgleichen und im Repo
-    sichern (#65: Claude arbeitet aus dem Chat statt aus dem Labor).
-  - Den Branch-Schutz richtet der Eigentümer ein; die Schritte stehen in #40.
+- **Sitzung „Audit von Astra“ (28.10.) — abgeschlossen.** Ergebnisse und Offenes:
+  - Audit gesichert und eingeordnet (`research/2026-10-audit-astra/`).
+  - Recherche „Entwicklung und Gebrauch des Systems · Entwurfsbewegung · Möglichkeitsraum“:
+    #49, wartet darauf, wer sie macht. Kernsatz des Eigentümers: zwei Modi, nicht verwechseln
+    oder gleichsetzen.
+  - Entscheidungshilfe aus der Gestaltung auch für die Arbeit am System (Optionen mit Folgen,
+    höchstens vier Fragen, keine Nummern): gesichert in #59, noch nicht entschieden.
+  - **Frage an den Eigentümer:** Start und Abschluss bei parallelen Chats, Anschluss je Thema?
+    (#67). Prüffall dazu: `evals/parallel/`, erste Beobachtung nicht bestanden.
+  - Lehren: Ein Zitat ist keine Freigabe; Gebrauch ist keine Regel; vor jeder Antwort mit Stand
+    oder Entscheidung erst abgleichen und im Repo sichern (#65).
+  - Mein Vorbefund zur Regelprüfung (Kommentar in #58) ist nach der Lehre aus #55 **kein
+    Eingang** für die Analysen.
+  - Branch-Schutz: richtet der Eigentümer ein, die Schritte stehen in #40.
 - **Offen daneben:** PRs #38, #47, #48, #54 warten auf Freigabe (Reihenfolge dort in
   `stand.md`, PR #54); Werk-Repo `esany/werke` ist angelegt (#25, PR #47).
 
