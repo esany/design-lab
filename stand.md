@@ -21,6 +21,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 
 | Datum | Was | Warum | Rückgängig |
 |---|---|---|---|
+| 2026-10-29 | **Zwischenstand #49 (Leitfragen 1–3, auf `lab/entwurfsbewegung`, nicht übernommen)** | Evidenzbasierte Begriffsarbeit, vor Rückmeldung des Eigentümers angehalten | „Zwischenstand Entwurfsbewegung rückgängig“ (Branch/PR zurücknehmen) |
 | 2026-10-28 | **Sitzungsende:** Merkzettel fortgeschrieben, Prüfung auf Wissensmonopole (`research/gespraeche/2026-10-28-wissensmonopole.md`) | Ihr Auftrag im Chat; 0024 | Datei löschen: „Wissensmonopol-Prüfung rückgängig“ |
 | 2026-10-28 | **Issues #42, #43, #44 geschlossen** (Kontrast, Prüffälle mit zweitem Modell, Prüfung der Studie; nicht geplant, nichts gelöscht). Zuvor irrtümlich geschlossene Werke-Issues wieder geöffnet, deren Merkzettel-Änderung zurückgenommen | Ihre Anweisung im Chat | Issues wieder öffnen: „Prüf-Issues wieder öffnen“ |
 | 2026-10-28 | **Codex/Work nur in begründeten Fällen** (0025 Antwort 4, Skill `issue` B1 Punkt 7, Merkzettel System) | Ihre Vorgabe im Chat | „Regel Codex-Einsatz rückgängig“ (PR zurücknehmen) |
