@@ -21,6 +21,10 @@ das Fachpaket „Form“ und die Werkzeuge für den Feinsatz.
 - Ein erstes Werk zum Vermitteln mit Profi-Werkzeug.
 - Generative Gestaltung als Referenzbibliothek.
 
+**Sicherung der Werke (Entscheidung 0026, privates Repo `esany/werke`):** angelegt. Offen laut
+dem Pull Request dazu: die Claude-App auf GitHub für `werke` freischalten, damit Cloud-Agenten
+ohne Browser schreiben können, und eine zweite Kopie außerhalb von GitHub.
+
 **Beim Wiederaufnehmen:** Der Eigentümer wählt, womit es losgeht. Dann wird das führende Issue
 festgelegt.
 

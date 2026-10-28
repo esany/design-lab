@@ -43,6 +43,8 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 | 2026-10-28 | **Start nur auf Auftrag:** Anschluss ist Vorschlag, kein Auftrag; ohne Auftrag nennt das Modell Stand und Vorschlag und wartet | Modelle begannen sonst eigenmächtig | „Start nur auf Auftrag rückgängig“ |
 | 2026-10-28 | **Flyer als erstes Werk abgelegt** im privaten Repo `esany/werke`, Ordner `werke/2026-flyer-rgut-a6/` (46 Dateien, ohne Schriften) | Sicherung der Werkdateien (#25) | im Repo werke per Revert-PR |
 | 2026-10-28 | **Issue-Arbeit (#31):** Skill `issue` (bin ich dran? · schreiben · bearbeiten · übergeben), Vorlage „Übergabe“, Prüffall `evals/uebergabe` (nicht getestet, kein Blocker); Skill ergänzt um Abhängigkeiten, Umsetzungsreife, Lebenszyklus, Labels, Fragen und Bugs in Alltagssprache (#50, #51); **Vorschlag 0025 unverändert** (die Kürzung war nicht abgesprochen, #51); Recherche zu Modellen und Beispiel-Repos in `research/2026-10-issue-arbeit/`; veraltete Zahlen in dieser Datei entfernt (stimmten nicht: 21 statt 25 Entscheidungen, 11 statt 12 Skills) | Ihr Auftrag #31 | „Issue-Arbeit rückgängig“ |
+| 2026-10-28 | **Werk-Repo `esany/werke` angelegt** (privat, Entscheidung 0026, Weg B): Grundgerüst hochgeladen (README, Agenten-Hinweise, Vorlage `werk.md`, Schriften-Sperre, Prüfung); Inhalte bitgenau geprüft, Prüfung auf GitHub grün | Ihr „ja“ im Chat | „Werk-Repo rückgängig“ (Repo löschen kann nur der Eigentümer) |
+| 2026-10-28 | **Prüfung `esany/Portfolio` als Sicherung** (#25): privat (belegt), aber ein Wissensraum für Ihr berufliches Werk, keine Dateiablage; als Ablage für Werkdateien heute nicht geeignet, als Ort für Werk-Beschreibung geeignet; drei Wege, Empfehlung: eigenes Archiv plus Verweis; Erweiterungen und Grenzen benannt (`research/2026-10-sicherung/portfolio-pruefung.md`) | Ihr Auftrag im Chat | „Portfolio-Prüfung rückgängig“ |
 | 2026-10-28 | **Bug #39:** Sicherungs-Repo falsch übernommen (Adresse kam doppelt an, Modell fragte nicht nach); betroffene Aussagen zurückgesetzt, Repo-Name offen | Ihr Hinweis im Chat | „Bug-Korrektur rückgängig“ |
 | 2026-10-28 | **Arbeiten nur mit Auftrag:** Modelle melden beim Start nur und warten; Claude ist Orchestrator und verteilt über Labels `an:…` | Modelle legten ohne Auftrag los | „Auftragsregel rückgängig“ |
 | 2026-10-28 | **Start jeder Sitzung** in AGENTS.md: ein Startsatz für alle Modelle, Repo als einziger Ort, ohne Zugang aufhören statt suchen; Prüffall `evals/start` | ein neuer Chat fand stand.md nicht | „Start-Regel rückgängig“ |
@@ -85,7 +87,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 | **Issue-Arbeit** (Skill, Vorlage, Prüffall) | übernommen 28.10.; offen nur der Prüffall mit zweitem Modell | #31 |
 | **Experiment Entwurfsprozess** (neu) | Ideensammlung und Analyse in `experiments/2026-10-entwurfsprozess.md`; erster Schritt: Vergleich, Laborbuch, Entscheidungen als private Seite | #23 |
 | **Raster als Programm** | Konzept, wartet auf Ihre Wahl des Arbeitsorts (Browser empfohlen) | #24 |
-| **Private Ablage der Werke** | Ihr privates Repo, nächster Schritt; Zwischensicherung als ZIP bei Ihnen | #25 |
+| **Private Ablage der Werke** | `esany/werke` angelegt, Gerüst drin; offen: Flyer als erstes Werk, Agenten-Zugriff, zweite Kopie | #25 |
 | **Labor-Website** zeigt Stand, Manifest, Fachpakete, Experimente | vorgeschlagen | #26 |
 | **Fachpaket „Form“: Raster und Layout** | vorgeschlagen | #27 |
 | **Flyer** | freigegeben, abgeschlossen; offen nur Antwortkarte | — |
