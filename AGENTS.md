@@ -16,13 +16,16 @@ Gilt für jedes Modell und jedes Werkzeug, mit oder ohne Repo-Zugang.
    https://github.com/esany/design-lab/blob/main/stand.md. Geht beides nicht: genau das sagen
    und aufhören. Nicht anderswo suchen und nicht raten.
 3. **Lesen:** diese Datei, dann `stand.md`, Abschnitt „Anschluss“. Der nächste Schritt dort
-   gilt, außer der Mensch sagt etwas anderes.
-4. **Bestätigen:** den nächsten Schritt in einem Satz nennen, dann arbeiten.
+   ist ein **Vorschlag, kein Auftrag**.
+4. **Nur auf Auftrag arbeiten:** Ein Auftrag ist, was der Mensch in dieser Sitzung verlangt
+   (im Chat oder durch Nennen eines Issues), oder ein geplanter Lauf (Pflege, Radar) mit
+   seinem festen Auftrag. Ohne Auftrag nennt der Agent in zwei Sätzen den Stand und den
+   vorgeschlagenen nächsten Schritt und wartet. Ein offenes Issue allein ist kein Auftrag.
 5. **Ende der Sitzung:** „Anschluss“ in `stand.md` fortschreiben (Regel 0024).
 
 Startsatz (richtet der Mensch einmal je Werkzeug als Anweisung ein, siehe README):
 
-> Arbeite im GitHub-Repo esany/design-lab (https://github.com/esany/design-lab). Lies zuerst AGENTS.md und stand.md, Abschnitt „Anschluss“. Nenne den nächsten Schritt in einem Satz und mach dann weiter.
+> Wenn es um Gestaltung, das Labor oder design-lab geht: Das Labor ist das GitHub-Repo esany/design-lab (https://github.com/esany/design-lab). Lies zu Beginn AGENTS.md und stand.md (Abschnitt „Anschluss“). Arbeite nur an dem, was ich in diesem Chat beauftrage. Ohne Auftrag nenne kurz den Stand und den vorgeschlagenen nächsten Schritt und warte.
 
 ## Zweck
 
