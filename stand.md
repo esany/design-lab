@@ -33,6 +33,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 | 2026-10-27 | Studie „Reihe und Verschiebung“ abgeschlossen, bleibt als Referenz | Ihre Entscheidung: nicht weiterarbeiten | „Studie wieder öffnen“ |
 | 2026-10-27 | D3sign-Prinzipien übernommen: Werk vor System, Vertrauen statt Scheinreife, Stoppen statt simulieren, Widerspruchspflicht, Priorisierung, Skill `fundstueck`, Modul „System“ | Ihr „ja“ (0020) | „D3sign-Übernahme rückgängig“ |
 | 2026-10-27 | Feldforschung KI × Gestaltung (KINDLAB, KITeGG, UdK, FHP, Burg, KHM …): Befunde, Einordnung, 4 Entwürfe als Issues #6–#9, Radar ergänzt | Ihr Rechercheauftrag | „Feldforschung rückgängig“ |
+| 2026-10-28 | **Experiment Entwurfsprozess** angelegt; offene Themen als Issues #23–#27; Abschnitt „Anschluss“ für neue Sitzungen; Flyer-Arbeitsstand als ZIP an Sie | Ihr Auftrag „alles sichern“ | „Entwurfsprozess rückgängig“ |
 | 2026-10-28 | Konzept „Raster als Programm“: Ihr Flyer-Raster ausgelesen (Offset, Spalten, Grundlinien, Brüche), Ihre Anforderungen A29/A30, Pilot vorgeschlagen | Gespräch über Raster und Wirksysteme | „Raster-Konzept rückgängig“ |
 | 2026-10-28 | **Duden als Basis** (0023): Abkürzungen wie „e. V.“ automatisch mit schmalem Leerraum; Flyer angepasst. Kürzere Spalte bleibt, keine Kürzung für 9,5 pt (Empfehlung, kein Widerspruch) | Ihre Entscheidung | „Duden-Regel rückgängig“ |
 | 2026-10-28 | Variante „lesbar im Objekt“ von Ihnen freigegeben und jetzt Hauptfassung des Flyers; Experiment auf „behalten“ | Ihre Freigabe | „Freigabe Flyer rückgängig“ |
@@ -59,11 +60,37 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 
 ## In Arbeit
 
-- **Raster als Programm** (Vorschlag): wartet auf Ihre Wahl des Arbeitsorts (Browser empfohlen, Scribus als zweiter Weg)
+| Thema | Stand | Issue |
+|---|---|---|
+| **Experiment Entwurfsprozess** (neu) | Ideensammlung und Analyse in `experiments/2026-10-entwurfsprozess.md`; erster Schritt: Vergleich, Laborbuch, Entscheidungen als private Seite | #23 |
+| **Raster als Programm** | Konzept, wartet auf Ihre Wahl des Arbeitsorts (Browser empfohlen) | #24 |
+| **Private Ablage der Werke** | Ihr privates Repo, nächster Schritt; Zwischensicherung als ZIP bei Ihnen | #25 |
+| **Labor-Website** zeigt Stand, Manifest, Fachpakete, Experimente | vorgeschlagen | #26 |
+| **Fachpaket „Form“: Raster und Layout** | vorgeschlagen | #27 |
+| **Flyer** | freigegeben, abgeschlossen; offen nur Antwortkarte | — |
+| **Fachpaket „Vermitteln“: erstes Werk** | offen | #8 |
+| **Generative Gestaltung als Referenz** | offen | #9 |
 
-- Flyer: freigegeben, gestalterisch abgeschlossen. Offen ist nur die Antwortkarte; eine Überarbeitung mit 11–12 pt und gekürztem Text als möglicher Pilot, falls der Verein den Text anfassen will (taugt Eingreifen über Text und Zahlen, oder braucht es eine Maus-Oberfläche?)
+## Anschluss — hier beginnt jede neue Sitzung
 
-- Fachpaket „Vermitteln“: #6 und #7 erledigt → **#8: erstes Werk** mit Observable Plot und offenen Daten, geprüft gegen das Paket
+Gedächtnis ist dieses Repo, nicht der Chat. Ein langes Gespräch wird automatisch
+zusammengefasst, dabei geht Detail verloren. Was zählt, steht deshalb hier und
+in den verlinkten Dateien.
+
+- **Zuletzt (28.10.):** Flyer-Experiment mit 4 Runden abgeschlossen und
+  freigegeben; daraus Manifest (0022), Duden-Regel (0023), Fachpaket „Form“,
+  Feinsatz-Werkzeuge; Gespräch über Raster als System und über den
+  Entwurfsprozess selbst.
+- **Leitfragen des Eigentümers:** Gestaltung dient (Wahrnehmung zuerst);
+  Strukturen sichtbar und selbst änderbar (A29); Raster werkzeugunabhängig
+  (A30); alles ist Experiment.
+- **Wo was liegt:** Werkzeuge und Befunde in `experiments/`, Konzepte in
+  `research/`, Fachwissen in `.agents/skills/fachpaket-*`, Quellen in
+  `corpus/`, Entscheidungen in `decisions/`. **Nicht im Repo:**
+  Werkdateien des Flyers (ZIP beim Eigentümer, später privates Repo, #25) und
+  Lizenzschriften (nur beim Eigentümer).
+- **Nächster sinnvoller Schritt:** privates Repo anbinden (#25), dann #23 und
+  #24 am Flyer.
 
 ## Nächste Schritte (laufen ohne Sie)
 
