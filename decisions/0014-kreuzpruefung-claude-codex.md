@@ -3,6 +3,7 @@ status: freigegeben — wird nach dem Merge eingerichtet
 datum: 2026-10-27
 entschieden_von: Vorschlag Agent (Claude) · Entscheidung Mensch am 2026-10-27
 dient: A12, A26
+perspektive: system
 ---
 
 # 0014 · Kreuzprüfung Claude ↔ Codex über GitHub

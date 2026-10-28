@@ -3,6 +3,7 @@ status: freigegeben
 datum: 2026-10-27
 entschieden_von: Mensch (im Chat: „ja“)
 dient: A17
+perspektive: fach
 ---
 
 # 0020 · Fehlende D3sign-Prinzipien übernehmen

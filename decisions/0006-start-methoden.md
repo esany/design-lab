@@ -3,6 +3,7 @@ status: freigegeben als Startversion
 datum: 2026-10-27
 entschieden_von: Vorschlag Agent (Claude) · Entscheidung Mensch am 2026-10-27
 dient: A01, A04
+perspektive: fach
 ---
 
 # 0006 · Auswahl und Inhalt der Start-Methoden

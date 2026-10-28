@@ -3,6 +3,7 @@ status: freigegeben (auf Probe)
 datum: 2026-10-27
 entschieden_von: Vorschlag Agent (Claude) · Entscheidung Mensch am 2026-10-27
 dient: A20, A22
+perspektive: system
 ---
 
 # 0013 · Vorlagen für Anforderungen und Pull Requests

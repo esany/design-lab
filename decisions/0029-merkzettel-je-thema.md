@@ -3,6 +3,7 @@ status: gültig
 datum: 2026-10-28
 entschieden_von: Eigentümer, Chat 28.10. (Antwort auf #67: Option A, „ein Zettel je Thema“)
 dient: A26, A33, A34
+perspektive: system
 ---
 
 # 0029 · Ein Merkzettel je Thema

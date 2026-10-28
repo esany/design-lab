@@ -21,6 +21,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 
 | Datum | Was | Warum | Rückgängig |
 |---|---|---|---|
+| 2026-10-28 | **Perspektive, Folgen, Alternativen in Entscheidungen (0030)** und **Auftragsformat im Skill `issue` (B1, #82)**; Frage `docs/` als #84 gesichert (wartet auf #49) | Ihre Antwort „Option A“, „skill umsetzen“ | „Regel 0030 rückgängig“ bzw. „Auftragsformat rückgängig“ (PR zurücknehmen) |
 | 2026-10-28 | **Befund Modi, Entscheidungen, Dokumentation** (`research/2026-10-modi-und-dokumentation/befund.md`): drei Perspektiven, Lücke „Folgen“ in Entscheidungen, Optionen A–C; Auftrag #82 aus #59 ausgelagert | Ihre Frage im Chat; 0024 | Datei löschen, #82 schließen: „Befund Modi rückgängig“ |
 | 2026-10-28 | **Triage:** Blocker, Zuständigkeit, welches Modell, Zuschnitt, Entwurf „Aufträge für kleinere Modelle“ (`research/gespraeche/2026-10-28-triage-modelle.md`) | Ihre Frage im Chat | „Triage rückgängig“ |
 | 2026-10-28 | **Ein Merkzettel je Thema (0029):** `anschluss/` mit drei Themen (System, Möglichkeitsraum, Werke); hier steht nur noch die Themenliste; Start und Ende in `AGENTS.md` und Skill `issue` angepasst | Ihre Antwort auf #67 | „Regel 0029 rückgängig“ |

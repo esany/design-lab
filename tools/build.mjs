@@ -225,6 +225,12 @@ for (const d of readdirSync(join(root, ".agents/skills")).sort()) {
   const p = join(root, ".agents/skills", d, "SKILL.md");
   if (existsSync(p)) mech.push({ art: "Skill", id: d, pfad: `.agents/skills/${d}/SKILL.md`, ...head(p) });
 }
+const PERSP = ["system", "fach", "gebrauch"];
+for (const x of mech.filter((m) => m.art === "Entscheidung")) {
+  if (!x.perspektive) { errors.push(`${x.pfad}: Kopfzeile „perspektive:“ fehlt (system, fach, gebrauch)`); continue; }
+  for (const p of x.perspektive.split(/[,\s]+/).filter(Boolean))
+    if (!PERSP.includes(p)) errors.push(`${x.pfad}: perspektive „${p}“ unbekannt (erlaubt: ${PERSP.join(", ")})`);
+}
 const byReq = new Map([...reqs.keys()].map((a) => [a, []]));
 for (const x of mech) {
   if (!x.dient) { errors.push(`${x.pfad}: Kopfzeile „dient: A..“ fehlt (welcher Anforderung dient es?)`); continue; }

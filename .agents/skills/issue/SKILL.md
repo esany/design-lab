@@ -37,6 +37,36 @@ Alle Punkte müssen stimmen, sonst nicht anfangen:
   nur Issues, keine Pull Requests; hängt etwas an einem Pull Request, nimm dessen Issue.
 - Eine Aufgabe, ein Modell, ein Pull Request. Wird es mehr: Unter-Issues.
 
+## B1 · Auftragsformat für kleinere Modelle (Hinweise, 0028; #82)
+
+Ein kleineres Modell (Luna 5.6 in Work/Codex, auch Astra) soll nichts erraten müssen. Urteilen
+bleibt beim Menschen oder Orchestrator, das Modell führt aus, misst und erfasst. Herkunft:
+`research/gespraeche/2026-10-28-triage-modelle.md`. Wer schreibt, prüft jeden Punkt:
+
+1. **Ziel und Ergebnis trennen:** Ziel = was am Ende gelten soll; Ergebnis = welche Datei, welcher
+   Pull Request. Ein Ergebnis, eine Datei, ein Branch.
+2. **Lesart spiegeln:** Das Modell sagt zuerst in zwei Sätzen, was es verstanden hat und welche
+   Annahme gilt (C 1). Weicht das vom Gemeinten ab, stoppt es und fragt.
+3. **Bereit, wenn / Fertig, wenn:** Voraussetzungen als Ja-Nein-Sätze („Bereit“), Abnahme je
+   Teilergebnis als Ja-Nein-Sätze („Fertig“), möglichst mit einem Befehl prüfbar.
+4. **Umfang und Abbruchpunkt:** Obergrenze nennen (Dateien, Zeilen, Quellen). Wenn X unklar ist
+   oder Y fehlt: eine Frage als Kommentar, nicht raten, nicht weitermachen.
+5. **Eingang vollständig:** höchstens fünf Pfade, Begriffe des Labors in einem Satz erklärt;
+   Ausgabe als Gerüst mit Überschriften und Tabellenköpfen mitgeben.
+6. **Tun / Nicht-tun:** z. B. „nichts löschen“, „keine Regeln, Skills, `AGENTS.md`,
+   Entscheidungen ändern“. Keine Geschmacks- oder Bedeutungsentscheidung; wo Optionen nötig
+   sind, eine Tabelle (Option · Messwert · Folge · Risiko).
+7. **Zielmodell berücksichtigen:** Werkzeuge nennen (ins Repo schreiben, Browser, Node); fehlt
+   eines, sagt das Modell es zuerst. Teure Modelle nicht für Routinen, nie zu Lasten der Qualität.
+8. **Rückmeldung fest:** Ergebnis · geprüft / nicht geprüft · offen (höchstens drei Fragen). Eine
+   Prüfung durch ein anderes Modell, nicht durch das eigene.
+9. **Sprache:** kurze Sätze, Deutsch nach Duden (0023), Meldungen und Fragen an den Menschen in
+   Worten ohne Nummern (E6, #71). Vor jedem Commit den Zweig prüfen; bei einem Fehler in einer
+   Kette abbrechen und melden statt weitermachen.
+
+Offen und nicht Teil davon: was der Eigentümer meist schreibt und meint, und der Detailgrad je
+Auftragsart. Das kommt aus der Untersuchung (#59, wartet auf #56).
+
 ## C · Bearbeiten
 
 1. Kurz spiegeln, was verstanden wurde und welche Annahme gilt.

@@ -3,6 +3,7 @@ status: freigegeben (auf Probe)
 datum: 2026-10-28
 entschieden_von: Mensch (Frage: „Du hast Wissensmonopole im Chat erzeugt. Wie willst du das künftig verhindern?“), Umsetzung durch den Agenten
 dient: A19, A26, A33
+perspektive: system
 ---
 
 # 0024 · Kein Wissen nur im Chat

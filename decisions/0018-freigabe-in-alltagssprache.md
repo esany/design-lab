@@ -3,6 +3,7 @@ status: freigegeben (auf Probe)
 datum: 2026-10-27
 entschieden_von: Mensch (Rückmeldung „zu viel Kontext zum Reviewen — ich bin kein Entwickler“)
 dient: A22
+perspektive: system
 ---
 
 # 0018 · Freigabe in Alltagssprache statt Code-Review
