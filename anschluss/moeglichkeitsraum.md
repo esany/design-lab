@@ -1,6 +1,6 @@
 # Thema: Entwicklung und Gebrauch des Systems · Möglichkeitsraum
 
-**Zuletzt fortgeschrieben:** 29.10.2026, Zwischenstand #49 (Astra), noch nicht übernommen
+**Zuletzt fortgeschrieben:** 29.10.2026, Quellenrevision #49 (Astra), nicht übernommen
 
 ## In Worten
 
@@ -8,7 +8,7 @@
 Möglichkeitsraum ist. Der Kernsatz des Eigentümers: Es gibt zwei Modi, die Entwicklung des
 Systems und seinen Gebrauch. Die dürfen nicht verwechselt oder gleichgesetzt werden.
 
-**Wo wir stehen:** Der Eigentümer hat #49 ausdrücklich beauftragt. Astra hat auf `lab/entwurfsbewegung` den ersten Zwischenstand zu Leitfragen 1–3 unter `research/2026-10-entwurfsbewegung/zwischenstand.md` dokumentiert. Jetzt gilt der **Stopp bis zur Rückmeldung des Eigentümers**; Leitfragen 4 und 5 sind nicht bearbeitet. Unabhängige Quellenstichprobe und Build stehen aus.
+**Wo wir stehen:** Der Eigentümer hat #49 ausdrücklich beauftragt. Die Quellenrevision `research/2026-10-entwurfsbewegung/fehleranalyse-und-neupruefung.md` prüft die methodischen Fehler, zieht unhaltbare Belege zurück und erprobt Quellenprüfung vor Interpretation; dies ist weder eine neue Regel noch ein fertiger Abschluss von #49. Danach bleibt der ursprüngliche Abschnitt gültig: Astra hat auf `lab/entwurfsbewegung` den ersten Zwischenstand zu Leitfragen 1–3 unter `research/2026-10-entwurfsbewegung/zwischenstand.md` dokumentiert. Jetzt gilt der **Stopp bis zur Rückmeldung des Eigentümers**; Leitfragen 4 und 5 sind nicht bearbeitet. Unabhängige Quellenstichprobe und Build stehen aus.
 
 **Neu:** Die Recherche prüft auch, ob **drei Perspektiven** (System bauen, Fachwissen, Gebrauch)
 die richtige Einteilung sind (Leitfrage 5). Danach folgt die Frage, ob das Labor ein
