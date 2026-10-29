@@ -10,7 +10,7 @@ Die Website wird nach jeder Übernahme aktualisiert: https://esany.github.io/des
 | Thema | Stand | Nächster Schritt | Merkzettel |
 |---|---|---|---|
 | Entwicklung und Gebrauch · Möglichkeitsraum | Recherche Astra zugeordnet, jetzt mit drei Perspektiven; beginnt auf Ihr „mach“ | Astra beginnt auf Auftrag mit der Recherche zu #49. | [Merkzettel](anschluss/moeglichkeitsraum.md) |
-| Das System in Ordnung bringen | U3 als Entwurf umgesetzt; unabhängiger Neustart-Test und Prüfung durch Claude stehen aus. | Claude prüft den U3-Entwurf und lässt den Neustart-Test unabhängig ausführen. | [Merkzettel](anschluss/system.md) |
+| Das System in Ordnung bringen | Umbau läuft – Stand als Datenquelle (#103) und schlanker Kern (U3, #108) übernommen, Start ≈ 1.200 Tokens; Audit paleo-type (#112) und Umbaupläne für Wissensarbeit (#89) und paleo-type (#353) vergeben | Astra bearbeitet #109, #100, #112; Claude prüft die Ergebnisse an den Quellen und spezifiziert danach U4 (Register der gültigen Regeln). | [Merkzettel](anschluss/system.md) |
 | Werke und Gestaltung | neue Experimente erwünscht; nur Detailarbeit an bestehenden ruht; Flyer fertig | Der Eigentümer wählt das nächste Experiment. | [Merkzettel](anschluss/werke.md) |
 <!-- themen:end -->
 
