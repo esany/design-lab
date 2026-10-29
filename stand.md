@@ -22,6 +22,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 | Datum | Was | Warum | Rückgängig |
 |---|---|---|---|
 | 2026-10-29 | **Audit der Lesekosten** (`research/2026-10-lesekosten/befund.md`): Start ≈ 10.500 statt ≈ 3.500 Tokens; Stand an bis zu sechs Stellen, schon abweichend (#39); Möglichkeiten A–E. **Plan #62 begonnen:** #56 auf `an:claude`, Bestandsaufnahme im Issue | Ihr Auftrag im Chat; 0024 | „Lesekosten-Audit rückgängig“ |
+| 2026-10-29 | **Probe Fundstück #98 (open-design):** gesichtet, Urteil „unklar, deutlicher Marketing-Anteil“; 0031 um „wer gibt wem wann welchen Auftrag“ ergänzt | Ihr Beispiel im Chat | Issue schließen, PR zurücknehmen |
 | 2026-10-29 | **Vorschlag 0031 Fundstücke als Modus:** Eingang per Chat → Issue `[Fundstück]` → Sichtung (Astra) mit Prüfung „Schatz oder Marketing“ → Prüfung → Aufnahme an den passenden Ort (Claude); Skill `fundstueck` wird erweitert, nicht ersetzt; wartet auf Ihre Antwort | Ihr Wunsch im Chat | „Vorschlag 0031 rückgängig“ |
 | 2026-10-29 | **Lesart „Werke ruhen“ berichtigt:** es ruht nur die Detailarbeit an bestehenden Experimenten, neue Experimente sind erwünscht; Befund vom selben Tag als Fehllesung markiert | Ihre Klarstellung im Chat | „Lesart Werke rückgängig“ |
 | 2026-10-29 | **Befund „Bremst das System das Fach?“**: ja, derzeit durch die Reihenfolge „Werke ruhen“ (Widerspruch zu Prinzip 9); Optionen A–C (`research/gespraeche/2026-10-29-system-bremst-fach.md`) | Ihre Frage im Chat; 0024 | Datei löschen: „Befund System/Fach rückgängig“ |
