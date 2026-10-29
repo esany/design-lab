@@ -26,14 +26,16 @@ Drei Hindernisse, nur eines davon ist Kommunikation:
 | Strömung | Kern | Fürs Labor |
 |---|---|---|
 | **Harness Engineering** (OpenAI, Anthropic, LangChain, Fowler) | Umgebung schlägt Modell und Prompt; Doku wird zu harten Prüfungen; Repo ist einzige Wahrheit | Werkzeugschicht bauen; Prüfungen mit Reparaturhinweis |
-| **Kontextdateien zurückhaltend** (ETH Zürich 2026, MSR 2026) | lange, generierte `AGENTS.md` senken Erfolg und erhöhen Kosten um ≈ 20 %; kurze, nicht ableitbare Vorgaben helfen | `AGENTS.md` als Index ≈ 100 Zeilen; heute 212 |
-| **Kontextverfall** | erfolgreiche Agentenläufe bleiben meist unter 20–30 k Tokens | kleine Aufträge, frischer Chat je Einheit |
+| **Kontextdateien zurückhaltend** (Gloaguen u. a., ETH Zürich, arXiv 2602.11988, Abstract *belegt*) | Kontextdateien senken die Erfolgsquote eher, als dass sie sie heben, und erhöhen die Kosten um über 20 %; unnötige Vorgaben erschweren Aufgaben; menschlich geschriebene Dateien sollen nur minimale Vorgaben enthalten | Richtung *belegt*: Kern minimal. Die Zahl „≈ 100 Zeilen“ ist eine Praktiker-Faustregel (*nicht belegt*), hier nur als Projektgrenze |
+| **Kontextverfall** (Sekundärquelle, Original nicht geprüft: *nicht belegt*) | erfolgreiche Agentenläufe bleiben meist unter 20–30 k Tokens | kleine Aufträge, frischer Chat je Einheit |
 | **Spec-driven Development** (GitHub Spec Kit, Kiro, OpenSpec) | Absicht lebt in der Spezifikation; Abnahme als prüfbare Bedingung | Issues als Spezifikation mit prüfbarem „Fertig, wenn“ |
 | **LLM-Wiki** (Karpathy, April 2026) | unveränderliche Quellen → vom Modell gepflegtes Wiki → Schema-Datei; Operationen: aufnehmen, abfragen, „lint“ | Vorbild für Domänenaufbau: Korpus = Quellen, Fachpaket = Wiki, Build = Lint |
 
 Quellen am Ende.
 
 ## 3 · Ziele für ein sparsames Repo (messbar)
+
+Die Grenzwerte sind **Projektziele des Labors**, keine allgemeinen Qualitätsschwellen (Einwand aus der paleo-type-Analyse, 30.10., berechtigt).
 
 | Messwert | heute | Ziel |
 |---|---:|---:|
@@ -42,6 +44,7 @@ Quellen am Ende.
 | Stellen für den Stand je Thema | bis 6 | 1 (Rest erzeugt) |
 | Regeln mit technischer Prüfung | wenige (z. B. `dient:`) | jede, die technisch prüfbar ist |
 | Arbeitseinheit | offen | 1 Issue = 1 PR, Chat ≤ ≈ 30 k Tokens Kontext |
+| **Eingriffe des Eigentümers** (Rettungen: falsche Fertigmeldung entdeckt, Gegenprobe selbst verlangt, Erfindung gestoppt, maßgebliche Datei erklärt) | nicht gezählt | sinkend, bei gleicher Qualität — **wichtigster Wert** |
 
 ## 4 · Umbau: was, wer, warum
 
