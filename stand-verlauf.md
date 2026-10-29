@@ -6,6 +6,8 @@
 
 | Datum | Was | Warum | Rückgängig |
 |---|---|---|---|
+| 2026-10-30 | **Gegenprüfung paleo-type-Audit (Claude):** zehn Originalbelege geprüft, P05 und P06 auf „teilweise“ berichtigt, Archivsignatur im Inventar durch Platzhalter ersetzt, `pruefung.md` ergänzt | Abnahme durch ein anderes Modell als das schreibende (#112) | „Gegenprüfung paleo rückgängig“ |
+| 2026-10-30 | **Audit paleo-type (#112):** Schichteninventar, 21 Fehler-/Wirkungskarten und 10 Primärbelege für Claudes Gegenprüfung in `research/2026-10-audit-paleo-type/` | Lernen aus belegten Fehlern und ihren nur teilweise wirksamen Antworten; A07/A17/A33/A34. Keine Regel beschlossen. | „paleo-type-Audit rückgängig“ (PR zu #112 revertieren) |
 | 2026-10-30 | **Sitzungsende:** Merkzettel System fortgeschrieben (U2, U3 erledigt; offen #109, #100, #112; Umbaupläne in Wissensarbeit #89 und paleo-type #353) | Regel Sitzungsende | Kopf zurücksetzen |
 | 2026-10-30 | **Einordnung der paleo-type-Analyse** (`research/gespraeche/2026-10-30-einordnung-paleo-type.md`); Umbauplan berichtigt: Schwellen als Projektziele, Studie am Original geprüft, Messwert „Eingriffe des Eigentümers“ | Ihre geteilte Analyse; 0024 | „Einordnung paleo rückgängig“ |
 | 2026-10-30 | **Durchsicht U3 (Claude):** Abschnitt „Immer, ohne Ausnahme“ in `AGENTS.md` (öffentliches Repo, nichts löschen, Bedeutung beim Menschen, Belegstatus), weil diese Grenzen keine Prüfung abfängt; Start ≈ 1.200 Tokens | Neustart-Test unsauber (altes `AGENTS.md` im Kontext), Grenzen gehören in den Kern | Abschnitt entfernen |
