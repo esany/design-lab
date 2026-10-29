@@ -11,6 +11,13 @@ Anweisung für jedes Werkzeug, ohne Vorbedingung: Lies zu Beginn `AGENTS.md` und
 4. Bei einem Issue: Mensch muss es freigeben, Label muss zum Werkzeug passen; fremdes Label und `an:mensch` nicht bearbeiten. Claude verteilt Issues. Details: [Issue-Arbeit](.agents/skills/issue/SKILL.md).
 5. Zum Ende den eigenen Themen-Merkzettel fortschreiben; der Kopf erzeugt die Übersicht. Fremde Merkzettel nicht ändern.
 
+## Immer, ohne Ausnahme
+
+- Das Repo ist öffentlich: keine Zugangsdaten, Geheimnisse, personenbezogenen Daten, Kundendaten, geschützten Werke oder PDFs.
+- Nichts löschen, was nicht im eigenen Branch entstanden ist; Veraltetes markieren oder archivieren.
+- Gestaltungs- und Bedeutungsentscheidungen, neue Regeln und alles schwer Umkehrbare (Konten, Kosten, Sichtbarkeit, Sicherheit) gehen als Frage an den Menschen.
+- Aussagen über die Welt tragen einen Status: belegt (mit Fundstelle) · abgeleitet · nicht belegt.
+
 ## Bei der Arbeit
 
 - [Laborarbeit](.agents/skills/laborarbeit/SKILL.md) führt zu den geltenden Schreib-, Prüf- und Zusammenarbeitsregeln. Vor Änderungen insbesondere die Schreibregeln lesen.
