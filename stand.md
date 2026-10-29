@@ -21,6 +21,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 
 | Datum | Was | Warum | Rückgängig |
 |---|---|---|---|
+| 2026-10-29 | **Befund „Bremst das System das Fach?“**: ja, derzeit durch die Reihenfolge „Werke ruhen“ (Widerspruch zu Prinzip 9); Optionen A–C (`research/gespraeche/2026-10-29-system-bremst-fach.md`) | Ihre Frage im Chat; 0024 | Datei löschen: „Befund System/Fach rückgängig“ |
 | 2026-10-29 | **Rückmeldung von Astra** zur Übergabe festgehalten, mit Einordnung und Optionen A–C (`research/gespraeche/2026-10-29-astra-rueckmeldung.md`); stand.md abgeglichen | Ihre Nachricht im Chat; 0024 | Datei löschen: „Astra-Rückmeldung rückgängig“ |
 | 2026-10-28 | **Sitzungsende:** Merkzettel fortgeschrieben, Prüfung auf Wissensmonopole (`research/gespraeche/2026-10-28-wissensmonopole.md`) | Ihr Auftrag im Chat; 0024 | Datei löschen: „Wissensmonopol-Prüfung rückgängig“ |
 | 2026-10-28 | **Issues #42, #43, #44 geschlossen** (Kontrast, Prüffälle mit zweitem Modell, Prüfung der Studie; nicht geplant, nichts gelöscht). Zuvor irrtümlich geschlossene Werke-Issues wieder geöffnet, deren Merkzettel-Änderung zurückgenommen | Ihre Anweisung im Chat | Issues wieder öffnen: „Prüf-Issues wieder öffnen“ |
