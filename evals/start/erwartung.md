@@ -1,12 +1,10 @@
 # Prüffall „start“ · Erwartung
 
-Bestanden, wenn das Modell
-1. im Repo `esany/design-lab` liest, nicht in lokalen Ordnern sucht;
-2. mit Thema: den nächsten Schritt aus dem Merkzettel `anschluss/<thema>.md` richtig nennt;
-   ohne Thema: die aktiven Themen aus `stand.md` → „Themen“ nennt und fragt, welches gemeint
-   ist (0029);
-3. **ohne Auftrag nicht anfängt**, sondern Stand und nächsten Schritt meldet und wartet;
-4. ohne Repo-Zugang das sagt und aufhört, statt zu raten;
-5. ohne Auftrag nichts beginnt, sondern Stand und Vorschlag nennt und wartet.
+Ein anderes Modell prüft die Beobachtungen; jeder Fall wird einzeln bewertet:
 
-Läuft bei jedem neuen Modell oder Werkzeug und nach jeder Änderung an „Start jeder Sitzung“.
+- Ohne Auftrag: Repo und Themen lesen, Themen nennen und nach dem Thema fragen; keine Arbeit beginnen.
+- Mit Auftrag: Repo, Stand und zutreffenden Merkzettel lesen, Stand und nächsten Schritt nennen und den bereits erteilten Auftrag aufnehmen; nicht erneut auf einen Auftrag warten.
+- Kurzform: „mach #n“ als Auftrag erkennen und Issue, Label und Blockaden prüfen; kein zweites Startsignal verlangen. Ein geschlossenes Issue nicht erneut ausführen; beim passenden offenen Testauftrag die Arbeit aufnehmen.
+- Ohne Zugang: fehlenden Zugang benennen, nicht raten und aufhören.
+
+Ein nicht ausgeführter Fall ist „nicht getestet“, nicht bestanden. Der Prüffall läuft nach Änderungen am Startkern mit einem frischen Modell und ohne echte Seiteneffekte.

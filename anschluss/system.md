@@ -1,7 +1,7 @@
 ---
 thema: Das System in Ordnung bringen
-stand: Befunde #56 liegen vor: weniger Text, eine Stelle für den Stand, Sperren statt Sätze; vier Fragen an Sie; Gegenlesen #100
-naechster_schritt: Claude spezifiziert den Kern von AGENTS.md (≤ 100 Zeilen, Startsatz ohne Bedingung); Astra baut.
+stand: U3 als Entwurf umgesetzt; unabhängiger Neustart-Test und Prüfung durch Claude stehen aus.
+naechster_schritt: Claude prüft den U3-Entwurf und lässt den Neustart-Test unabhängig ausführen.
 offen: [40, 56, 62, 100]
 ---
 
