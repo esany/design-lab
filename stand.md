@@ -21,6 +21,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 
 | Datum | Was | Warum | Rückgängig |
 |---|---|---|---|
+| 2026-10-29 | **Befunde Fehlermuster der Modelle (#56)** (`research/2026-10-audit-zusammenarbeit/`): fünf Muster, kaum modellabhängig; Strukturbefund „mehr Regeln, Reviews und Stellen für den Stand statt Sperren“; Vorschläge mit Zuständigkeit in `auftraege.md`; Gegenlesen an Astra (#100) | Ihre Freigabe im Chat | „Befunde #56 rückgängig“ |
 | 2026-10-29 | **Audit der Lesekosten** (`research/2026-10-lesekosten/befund.md`): Start ≈ 10.500 statt ≈ 3.500 Tokens; Stand an bis zu sechs Stellen, schon abweichend (#39); Möglichkeiten A–E. **Plan #62 begonnen:** #56 auf `an:claude`, Bestandsaufnahme im Issue | Ihr Auftrag im Chat; 0024 | „Lesekosten-Audit rückgängig“ |
 | 2026-10-29 | **Probe Fundstück #98 (open-design):** gesichtet, Urteil „unklar, deutlicher Marketing-Anteil“; 0031 um „wer gibt wem wann welchen Auftrag“ ergänzt | Ihr Beispiel im Chat | Issue schließen, PR zurücknehmen |
 | 2026-10-29 | **Vorschlag 0031 Fundstücke als Modus:** Eingang per Chat → Issue `[Fundstück]` → Sichtung (Astra) mit Prüfung „Schatz oder Marketing“ → Prüfung → Aufnahme an den passenden Ort (Claude); Skill `fundstueck` wird erweitert, nicht ersetzt; wartet auf Ihre Antwort | Ihr Wunsch im Chat | „Vorschlag 0031 rückgängig“ |
@@ -88,7 +89,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
    (Kurzstartformel, Rückfrage an Sie).
 2. **Hauptzweig-Schutz (#40):** zwei Minuten Klicks, später.
 3. **Fehlerberichte lesen:** #77 („nachziehen“ und „Sammelbegriff“ als Fehllesung). #39 ist erledigt.
-4. **Untersuchung der Modellfehler (#56):** begonnen (29.10.); Bestandsaufnahme liegt im Issue, tief gelesen wird nach Ihrem „weiter“.
+4. **Untersuchung der Modellfehler (#56):** Befunde liegen vor. Vier Fragen in `research/2026-10-audit-zusammenarbeit/auftraege.md` (Hauptzweig schützen, Regelpause, Reihenfolge, „eine Uhr“). Astra liest gegen: „mach #100“.
 5. **Ihre Pinterest-Sammlung** lässt sich nicht automatisch lesen (Pinterest sperrt das). Nennen Sie
    einzelne Boards je Feld oder beschreiben Sie in ein paar Worten, was sie zusammenhält.
 6. **Lesekosten (A–E):** Soll `stand.md` und der Merkzettel umgebaut werden (A, B)? Siehe `research/2026-10-lesekosten/befund.md`.
@@ -118,7 +119,7 @@ Auftragsformat (#82). **Geschlossen, nicht geplant:** #42 (Kontrast), #43 (Prüf
 
 | Thema | Stand | Issue |
 |---|---|---|
-| **Das System in Ordnung bringen** | Aufräumen erledigt; Untersuchung begonnen (#56, wartet auf „weiter“) | #62 |
+| **Das System in Ordnung bringen** | Aufräumen erledigt; Befunde #56 liegen vor; Gegenlesen #100 (Astra), vier Fragen an Sie | #62 |
 | **Möglichkeitsraum / drei Perspektiven** | Astra zugeordnet, wartet auf „mach“ | #49 |
 | **Werke** | neue Experimente erwünscht; Detailarbeit an bestehenden (z. B. Antwortkarte, Kontrast) ruht | — |
 
@@ -130,7 +131,7 @@ welches gemeint ist.
 
 | Thema | Stand in einem Satz | Merkzettel |
 |---|---|---|
-| **Das System in Ordnung bringen** | Untersuchung begonnen (#56, Bestandsaufnahme, wartet auf „weiter“); Audit der Lesekosten mit Möglichkeiten A–E | [`anschluss/system.md`](anschluss/system.md) |
+| **Das System in Ordnung bringen** | Befunde #56 liegen vor: weniger Text, eine Stelle für den Stand, Sperren statt Sätze; vier Fragen an Sie; Gegenlesen #100 | [`anschluss/system.md`](anschluss/system.md) |
 | **Entwicklung und Gebrauch · Möglichkeitsraum** | Recherche Astra zugeordnet, jetzt mit drei Perspektiven; beginnt auf Ihr „mach“ | [`anschluss/moeglichkeitsraum.md`](anschluss/moeglichkeitsraum.md) |
 | **Werke und Gestaltung** | neue Experimente erwünscht; nur Detailarbeit an bestehenden ruht; Flyer fertig | [`anschluss/werke.md`](anschluss/werke.md) |
 
