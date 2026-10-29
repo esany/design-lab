@@ -21,6 +21,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 
 | Datum | Was | Warum | Rückgängig |
 |---|---|---|---|
+| 2026-10-29 | **Lesart „Werke ruhen“ berichtigt:** es ruht nur die Detailarbeit an bestehenden Experimenten, neue Experimente sind erwünscht; Befund vom selben Tag als Fehllesung markiert | Ihre Klarstellung im Chat | „Lesart Werke rückgängig“ |
 | 2026-10-29 | **Befund „Bremst das System das Fach?“**: ja, derzeit durch die Reihenfolge „Werke ruhen“ (Widerspruch zu Prinzip 9); Optionen A–C (`research/gespraeche/2026-10-29-system-bremst-fach.md`) | Ihre Frage im Chat; 0024 | Datei löschen: „Befund System/Fach rückgängig“ |
 | 2026-10-29 | **Rückmeldung von Astra** zur Übergabe festgehalten, mit Einordnung und Optionen A–C (`research/gespraeche/2026-10-29-astra-rueckmeldung.md`); stand.md abgeglichen | Ihre Nachricht im Chat; 0024 | Datei löschen: „Astra-Rückmeldung rückgängig“ |
 | 2026-10-28 | **Sitzungsende:** Merkzettel fortgeschrieben, Prüfung auf Wissensmonopole (`research/gespraeche/2026-10-28-wissensmonopole.md`) | Ihr Auftrag im Chat; 0024 | Datei löschen: „Wissensmonopol-Prüfung rückgängig“ |
@@ -102,7 +103,7 @@ Freigabe allein heißt nicht „umsetzungsreif“ (A32, Skill `issue`, E2).
 | 3 | **Hauptzweig-Schutz** (#40) | Ihre Klicks, später | — |
 | 4 | **Untersuchung der Modellfehler** (#56, nur Wissensarbeit und Fehlerberichte) | Ihr „mach“, zurückgestellt | #57, #59, #58, #60, #61 |
 | 5 | **Docs-Verzeichnis ja/nein** (#84) | #49 | — |
-| 6 | **Werke** (#8, #9, #23, #24, #26, #27) | ruhen, bis das System in Ordnung ist | — |
+| 6 | **Neue Experimente** (Kandidaten #24, #23, #8, #9, #27, #26) | Ihre Wahl, womit es losgeht | — |
 
 **Erledigt am 28.10.:** Skill `issue` (#38), Verknüpfung (#54), Audit-Antwort (0027, 0028), Sicherung der
 Werke (0026), Arbeitsteilung (0025), Merkzettel (0029), Perspektive in Entscheidungen (0030),
@@ -115,7 +116,7 @@ Auftragsformat (#82). **Geschlossen, nicht geplant:** #42 (Kontrast), #43 (Prüf
 |---|---|---|
 | **Das System in Ordnung bringen** | Aufräumen erledigt; Untersuchung zurückgestellt | #62 |
 | **Möglichkeitsraum / drei Perspektiven** | Astra zugeordnet, wartet auf „mach“ | #49 |
-| **Werke** | ruhen; Flyer fertig, offen nur die Antwortkarte | — |
+| **Werke** | neue Experimente erwünscht; Detailarbeit an bestehenden (z. B. Antwortkarte, Kontrast) ruht | — |
 
 ## Themen — hier beginnt jede neue Sitzung
 
@@ -127,7 +128,7 @@ welches gemeint ist.
 |---|---|---|
 | **Das System in Ordnung bringen** | Aufräumen erledigt, Entscheidungen mit Perspektive, Auftragsformat im Skill; Untersuchung zurückgestellt | [`anschluss/system.md`](anschluss/system.md) |
 | **Entwicklung und Gebrauch · Möglichkeitsraum** | Recherche Astra zugeordnet, jetzt mit drei Perspektiven; beginnt auf Ihr „mach“ | [`anschluss/moeglichkeitsraum.md`](anschluss/moeglichkeitsraum.md) |
-| **Werke und Gestaltung** | ruht, bis das System in Ordnung ist; Flyer fertig | [`anschluss/werke.md`](anschluss/werke.md) |
+| **Werke und Gestaltung** | neue Experimente erwünscht; nur Detailarbeit an bestehenden ruht; Flyer fertig | [`anschluss/werke.md`](anschluss/werke.md) |
 
 **Wo was liegt:** Befunde in `experiments/` und `research/`, Fachwissen in
 `.agents/skills/fachpaket-*`, Quellen in `corpus/`, Entscheidungen in `decisions/`,

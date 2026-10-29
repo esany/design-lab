@@ -4,8 +4,10 @@
 
 ## In Worten
 
-**Wo wir stehen:** Das Thema ruht. Der Eigentümer will erst das System in Ordnung bringen und
-dann wieder gestalten (Entscheidung 28.10.).
+**Wo wir stehen:** **Neue Experimente sind ausdrücklich erwünscht.** Was ruht, ist nur die
+Detailarbeit an bestehenden Experimenten (z. B. Kontrast nachoptimieren), weil sie teure Tokens
+kostet und gerade nichts Neues bringt (Klarstellung des Eigentümers, 29.10.). Die Lesart „Werke
+ruhen ganz, bis das System in Ordnung ist“ war falsch.
 
 **Zuletzt fertig:** der Flyer, in vier Runden entworfen und freigegeben. Offen ist dort nur die
 Antwortkarte. Die Werkdateien liegen privat in `esany/werke`, Lizenzschriften nur beim

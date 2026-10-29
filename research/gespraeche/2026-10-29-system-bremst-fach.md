@@ -3,6 +3,14 @@
 Frage des Eigentümers im Chat: „Behindert uns die Systementwicklung in der weiteren fachlichen
 Entwicklung?“ Repo frisch gelesen (Stand `main`, ad24f8e). Status je Aussage nach `AGENTS.md`.
 
+> **Berichtigung (29.10., Klarstellung des Eigentümers):** Dieser Befund beruht auf einer
+> Fehllesung. „Werke ruhen“ meint nur die **Detailarbeit an bestehenden Experimenten** (etwa
+> Kontrast nachoptimieren, teure Tokens ohne neuen Erkenntnisgewinn). **Neue Experimente sind
+> erwünscht.** Befund 1 und 4 und die Optionen A–C sind damit gegenstandslos. Die Zahlen zu 2, 3
+> und 6 (Arbeit hat sich ins System verlagert) bleiben als Beobachtung stehen. Lehre: eine
+> Sammelaussage wie „Werke ruhen“ vor dem Bewerten in einem Satz spiegeln und bestätigen lassen
+> (wie #55, #77).
+
 ## Kurzantwort
 
 **Ja, derzeit.** Nicht das System an sich, sondern die Reihenfolge „Werke ruhen, bis das System in
