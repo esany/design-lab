@@ -17,4 +17,4 @@ stehen im [Verlauf](../stand-verlauf.md).
 
 ## Audit paleo-type · #112 (30.10.2026)
 
-21 Musterkarten, zehn gezielt ausgewählte Originalprüfungen und ein Schichteninventar stehen unter [`research/2026-10-audit-paleo-type/`](../research/2026-10-audit-paleo-type/). Die private Quelle wurde nur gelesen; öffentlich sind ausschließlich abstrahierte Muster und Pfadverweise. **Noch offen (Claude):** die zehn Belege unabhängig an den Originalen nachprüfen, die Wirksamkeitsgrenzen einordnen und den Befund abnehmen; keine neue Regel oder Maßnahme beschlossen.
+21 Musterkarten, zehn gezielt ausgewählte Originalprüfungen und ein Schichteninventar stehen unter [den paleo-type-Befunden](../research/2026-10-audit-paleo-type/befunde.md). Die private Quelle wurde nur gelesen; öffentlich sind ausschließlich abstrahierte Muster und Pfadverweise. **Noch offen (Claude):** die zehn Belege unabhängig an den Originalen nachprüfen, die Wirksamkeitsgrenzen einordnen und den Befund abnehmen; keine neue Regel oder Maßnahme beschlossen.
