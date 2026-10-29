@@ -16,6 +16,11 @@ const check = process.argv.includes("--check");
 const errors = [];
 const outputs = new Map();
 
+// Die Startdatei wird in jeder Sitzung geladen; eine Überschreitung ist ein Fehler.
+const agentsText = readFileSync(join(root, "AGENTS.md"), "utf8");
+const agentsLines = agentsText.split(/\r?\n/).length - (agentsText.endsWith("\n") ? 1 : 0);
+if (agentsLines > 100) errors.push(`AGENTS.md: ${agentsLines} Zeilen, höchstens 100 erlaubt; Inhalte auslagern`);
+
 // ---------- Tokens (DTCG) → CSS ----------
 const tokenDir = join(root, "system/tokens");
 const tokens = {};

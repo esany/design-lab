@@ -6,6 +6,8 @@
 
 | Datum | Was | Warum | Rückgängig |
 |---|---|---|---|
+| 2026-10-30 | **Durchsicht U3 (Claude):** Abschnitt „Immer, ohne Ausnahme“ in `AGENTS.md` (öffentliches Repo, nichts löschen, Bedeutung beim Menschen, Belegstatus), weil diese Grenzen keine Prüfung abfängt; Start ≈ 1.200 Tokens | Neustart-Test unsauber (altes `AGENTS.md` im Kontext), Grenzen gehören in den Kern | Abschnitt entfernen |
+| 2026-10-29 | **U3 als Entwurf:** kurzer Startkern, ausgelagerte Arbeitsregeln, Archiv und Zuordnung, Längenprüfung und Neustart-Prüffälle | Ihr Auftrag zu U3, A12/A13/A17/A31/A33/A34 | „U3 rückgängig“ (zugehörigen PR zurücknehmen) |
 | 2026-10-29 | **Stand als Datenquelle (#103, Astra):** `stand.md` wird aus den Merkzettel-Köpfen erzeugt; Längengrenzen und Abgleich mit GitHub als Prüfungen; Verlauf in dieser Datei. Durchsicht Claude: Nebenprüfung im Build vereinfacht, Kopf System berichtigt, `AGENTS.md` und Skill `issue` auf den Verlauf umgestellt | Ihr Auftrag #103; Umbauplan U2 | „Stand als Datenquelle rückgängig“ (PR zurücknehmen) |
 | 2026-10-29 | **Umbauplan zum Organismus** (`research/2026-10-umbau/plan.md`): Stand der Technik, Zielwerte, U1–U9 mit Zuständigkeit, Kurs halten | Ihre Fragen im Chat; 0024 | Datei löschen: „Umbauplan rückgängig“ |
 | 2026-10-29 | **Leitbild „System als Organismus“ als Intent** in `intent.md` | Ihr Auftrag „zentral als mein Intent“ | „Intent Organismus rückgängig“ |
