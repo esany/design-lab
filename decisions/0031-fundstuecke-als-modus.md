@@ -36,6 +36,19 @@ keine Regel, *welcher Bestandteil wohin* ins Labor geht.
 6. **Nichts geht verloren:** Auch Verworfenes bekommt eine Zeile (mit Grund), damit es nicht
    zweimal geprüft wird.
 
+**Wer gibt wem wann welchen Auftrag (Klarstellung 29.10., erprobt an #98):**
+
+| Schritt | Wer | Auslöser (= Auftrag) | Ergebnis |
+|---|---|---|---|
+| 1 Einwerfen | Eigentümer | — | Nachricht `Fundstück: <Link> – <ein Satz>` in **irgendeinen** Chat |
+| 2 Sichten | der Chat, der die Nachricht bekommt | die Nachricht selbst (AGENTS.md Regel 5: Aufgabe im Chat) | Urteil in wenigen Zeilen im Chat **und** Issue `[Fundstück] …` mit Sichtung, Label `an:claude` |
+| 3 Urteilen | Eigentümer, nur wenn er will | — | „verwerfen“ / „vertiefen“ im Chat oder im Issue; schweigt er, gilt der Vorschlag |
+| 4 Aufnehmen | Claude | „weiter“ oder „Fundstücke“ in einer Claude-Sitzung | Stichprobe durch anderes Modell, Einträge an den Zielorten, PR, Issue geschlossen |
+
+Woher jeder Chat das weiß: Jeder Chat liest beim Start `AGENTS.md` (Anweisung, die der Eigentümer
+einmal je Werkzeug eingetragen hat). Dort kommt **eine Zeile** hinzu: „Beginnt eine Nachricht mit
+`Fundstück:`, gilt Skill `fundstueck`, Abschnitt Sichtung.“ Mehr braucht es nicht.
+
 **Schatz oder Marketing — Prüffragen (jede mit Status belegt / abgeleitet / nicht belegt):**
 
 | Prüfung | Schatz-Hinweis | Marketing-Hinweis |
