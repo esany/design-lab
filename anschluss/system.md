@@ -62,7 +62,9 @@ Schritte laufen nacheinander.
 - Der Auftrag „Aufträge besser schreiben“ wartet auf die Untersuchung, die zurückgestellt bleibt.
 - Prüfung auf Wissensmonopole: `research/gespraeche/2026-10-28-wissensmonopole.md`.
 
-**29.10.:** Audit der Lesekosten (`research/2026-10-lesekosten/befund.md`): Start kostet ≈ 10.500 statt ≈ 3.500 Tokens, der Stand steht an bis zu sechs Stellen und weicht schon ab. Fünf Möglichkeiten A–E, Empfehlung A und B. Plan #62 begonnen: Untersuchung der Modellfehler (#56) mit Bestandsaufnahme von Wissensarbeit, tiefes Lesen erst nach deinem „weiter“.
+**29.10.:** Die Untersuchung der Modellfehler ist fertig (`research/2026-10-audit-zusammenarbeit/befunde.md`). Die Fehler hängen kaum am Modell. Fünf Muster: Lesart still aufgelöst, Stand aus dem Chat, eigene Regeln nicht befolgt, zu starke Aussagen, zu viel Befugnis. Wissensarbeit hat auf Fehler mit immer mehr Regeln und Reviews geantwortet, und das Labor ist auf demselben Weg. Vorschlag: weniger Text, eine Stelle für den Stand, Sperren statt Sätze (`auftraege.md`, mit Zuständigkeit). Astra liest gegen (#100). Dazu das Audit der Lesekosten (`research/2026-10-lesekosten/befund.md`).
+
+**Was du entscheidest (vier Fragen in `auftraege.md`):** Hauptzweig jetzt schützen? Regelpause bis zur Regelprüfung? Regeln prüfen vor Modellprofilen? „Eine Uhr“ für den Stand an Astra, sobald #41 zeigt, dass Astra Branch und PR kann?
 
 **Danach, in dieser Reihenfolge:** Modelle kennen und Aufträge besser schreiben (beides
 parallel) → Regeln prüfen → Sparmaßnahmen mit Messung → Hilfe beim Entwerfen.
