@@ -1,6 +1,6 @@
 # Thema: Das System in Ordnung bringen
 
-**Zuletzt fortgeschrieben:** 28.10.2026, Sitzungsende (Claude)
+**Zuletzt fortgeschrieben:** 29.10.2026 (Claude)
 
 ## In Worten
 
@@ -62,6 +62,8 @@ Schritte laufen nacheinander.
 - Der Auftrag „Aufträge besser schreiben“ wartet auf die Untersuchung, die zurückgestellt bleibt.
 - Prüfung auf Wissensmonopole: `research/gespraeche/2026-10-28-wissensmonopole.md`.
 
+**29.10.:** Audit der Lesekosten (`research/2026-10-lesekosten/befund.md`): Start kostet ≈ 10.500 statt ≈ 3.500 Tokens, der Stand steht an bis zu sechs Stellen und weicht schon ab. Fünf Möglichkeiten A–E, Empfehlung A und B. Plan #62 begonnen: Untersuchung der Modellfehler (#56) mit Bestandsaufnahme von Wissensarbeit, tiefes Lesen erst nach deinem „weiter“.
+
 **Danach, in dieser Reihenfolge:** Modelle kennen und Aufträge besser schreiben (beides
 parallel) → Regeln prüfen → Sparmaßnahmen mit Messung → Hilfe beim Entwerfen.
 
@@ -69,7 +71,6 @@ parallel) → Regeln prüfen → Sparmaßnahmen mit Messung → Hilfe beim Entwe
 - Soll Astra die Recherche zum Möglichkeitsraum übernehmen? Sag dafür „mach #49“ in einem Chat
   mit Astra. Genauso bei den Freigabehinweisen („mach #41“).
 - Sobald du es willst: Hauptzweig schützen (zwei Minuten Klicks) und die Untersuchung starten.
-- Stimmt es, dass `esany/werke` das Sicherungs-Repo ist? Dann kann der Fehlerbericht dazu zu.
 
 <details><summary>Für die Modelle: Nummern und Lehren</summary>
 
@@ -81,8 +82,8 @@ parallel) → Regeln prüfen → Sparmaßnahmen mit Messung → Hilfe beim Entwe
 - #49 → `an:chatgpt` (Dient A04, A07, A29), beginnt auf „mach #49“. #41 `an:chatgpt`, ohne
   Blocker, beginnt auf „mach #41“. #42, #43, #44 geschlossen (nicht geplant, 28.10., Anweisung des Eigentümers; Text lesbar, wieder öffnen möglich).
 - Alle Pull Requests übernommen (0025, 0026, 0027, 0028, 0029; Verknüpfung A31–A34).
-- #40 (`an:mensch`): Klicks für den Branch-Schutz, jetzt mit „Fertig, wenn“. #39 offen
-  (Sicherungs-Repo, vermutlich durch `esany/werke` erledigt). #77 offen (Bug „nachziehen“, dazu
+- #40 (`an:mensch`): Klicks für den Branch-Schutz, jetzt mit „Fertig, wenn“. #39 geschlossen
+  (Sicherungs-Repo ist `esany/werke`). #77 offen (Bug „nachziehen“, dazu
   zweiter Fall: Schreiben direkt auf `main`).
 - Erledigt am 28.10.: Skill `issue` (#38), 0029 (#67), Anschluss in Worten (#71), #50, #51, #53,
   #52, #55, #65, #31.
