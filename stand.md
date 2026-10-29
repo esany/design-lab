@@ -21,6 +21,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 
 | Datum | Was | Warum | Rückgängig |
 |---|---|---|---|
+| 2026-10-29 | **Umbauplan zum Organismus** (`research/2026-10-umbau/plan.md`): Stand der Technik, Zielwerte, U1–U9 mit Zuständigkeit, Kurs halten | Ihre Fragen im Chat; 0024 | Datei löschen: „Umbauplan rückgängig“ |
 | 2026-10-29 | **Leitbild „System als Organismus“ als Intent** in `intent.md` | Ihr Auftrag „zentral als mein Intent“ | „Intent Organismus rückgängig“ |
 | 2026-10-29 | **Leitbild „System als Organismus“** festgehalten, mit Folgen für die Architektur (`research/gespraeche/2026-10-29-system-als-organismus.md`) | Ihre Beschreibung im Chat; 0024 | Datei löschen: „Leitbild rückgängig“ |
 | 2026-10-29 | **Berichtigt:** Astra kann implementieren; Aufträge 3 und 4 in `research/2026-10-audit-zusammenarbeit/auftraege.md` an Astra statt erst nach einer Probe bzw. an Codex | Ihr Hinweis im Chat | „Berichtigung Astra rückgängig“ |
