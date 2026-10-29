@@ -1,3 +1,10 @@
+---
+thema: Entwicklung und Gebrauch · Möglichkeitsraum
+stand: Recherche Astra zugeordnet, jetzt mit drei Perspektiven; beginnt auf Ihr „mach“
+naechster_schritt: Astra beginnt auf Auftrag mit der Recherche zu #49.
+offen: [49]
+---
+
 # Thema: Entwicklung und Gebrauch des Systems · Möglichkeitsraum
 
 **Zuletzt fortgeschrieben:** 28.10.2026, Sitzungsende (Claude)
