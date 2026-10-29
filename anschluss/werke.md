@@ -1,3 +1,10 @@
+---
+thema: Werke und Gestaltung
+stand: neue Experimente erwünscht; nur Detailarbeit an bestehenden ruht; Flyer fertig
+naechster_schritt: Der Eigentümer wählt das nächste Experiment.
+offen: [8, 9, 23, 24, 26, 27]
+---
+
 # Thema: Werke und Gestaltung
 
 **Zuletzt fortgeschrieben:** 28.10.2026 (Claude, beim Anlegen der Merkzettel)

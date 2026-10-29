@@ -71,7 +71,7 @@ Auftragsart. Das kommt aus der Untersuchung (#59, wartet auf #56).
 ## C · Bearbeiten
 
 1. Kurz spiegeln, was verstanden wurde und welche Annahme gilt.
-2. Branch, Pull Request mit `Closes #n` und Anforderung, Zeile in `stand.md`.
+2. Branch, Pull Request mit `Closes #n` und Anforderung, Zeile in `stand-verlauf.md`.
 3. Im Pull Request jede Zeile von „Fertig, wenn“ mit Ja, Nein oder „nicht geprüft“ und Beleg.
    Die eigene Arbeit erklärt kein Modell für bestanden.
 
@@ -106,7 +106,7 @@ Entweder sie bekommt einen Platz in der Reihenfolge, oder sie wird ausdrücklich
 
 ### E3a · Themen und Merkzettel (0029)
 Jedes aktive Thema hat einen Merkzettel `anschluss/<thema>.md` und, wenn möglich, ein führendes
-Issue. Beginnt ein neues Thema: Merkzettel anlegen, Zeile in `stand.md`, Abschnitt „Themen“.
+Issue. Beginnt ein neues Thema: Merkzettel mit Kopf anlegen; die Zeile in `stand.md` wird erzeugt.
 Am Ende der Sitzung nur den eigenen Merkzettel fortschreiben, oben in Worten, Nummern
 eingeklappt darunter. Ist ein Thema abgeschlossen, kommt der Merkzettel nach `anschluss/archiv/`.
 

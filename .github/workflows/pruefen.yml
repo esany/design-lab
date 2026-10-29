@@ -19,6 +19,8 @@ jobs:
           node-version: 22
       - name: Erzeugte Dateien aktuell?
         run: node tools/build.mjs --check
+      - name: Gegenbeweise für Stand-Gitter
+        run: node tools/gitter-test.mjs
 
   links:
     name: Interne Links
@@ -51,3 +53,20 @@ jobs:
           name: screenshots
           path: .smoke/
           retention-days: 14
+
+  stand-github:
+    name: Stand gegen GitHub
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: read
+      pull-requests: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Offene Issues und Verlauf prüfen
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node tools/stand-github.mjs

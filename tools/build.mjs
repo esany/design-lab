@@ -9,6 +9,7 @@
 import { readFileSync, writeFileSync, readdirSync, existsSync, statSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { leseKopf, aktualisiereStand, pruefeLaenge } from "./gitter.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const check = process.argv.includes("--check");
@@ -263,6 +264,19 @@ outputs.set("verknuepfung.md", `# Verknüpfung — Anforderungen und Mechanismen
 |---|---|---|---|---|
 ${[...reqs].map(([a, r]) => { const l = byReq.get(a); return `| ${a} | ${cell(r.titel)} | ${r.stand} | ${l.filter((x) => x.art === "Entscheidung").map(link).join(", ") || "—"} | ${l.filter((x) => x.art === "Skill").map(link).join(", ") || "—"} |`; }).join("\n")}
 `);
+
+// ---------- Stand aus den Merkzetteln ----------
+const themen = [];
+for (const datei of readdirSync(join(root, "anschluss")).filter(f => f.endsWith(".md") && f !== "README.md").sort()) {
+  try { themen.push({ datei, ...leseKopf(readFileSync(join(root, "anschluss", datei), "utf8"), `anschluss/${datei}`) }); }
+  catch (e) { errors.push(e.message); }
+}
+const standOriginal = readFileSync(join(root, "stand.md"), "utf8");
+try {
+  const standNeu = aktualisiereStand(standOriginal, themen);
+  outputs.set("stand.md", standNeu);
+  errors.push(...pruefeLaenge(standNeu, themen));
+} catch (e) { errors.push(e.message); }
 
 // ---------- Schreiben oder prüfen ----------
 let stale = 0;
