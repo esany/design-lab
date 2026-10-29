@@ -64,7 +64,7 @@ Schritte laufen nacheinander.
 
 **29.10.:** Die Untersuchung der Modellfehler ist fertig (`research/2026-10-audit-zusammenarbeit/befunde.md`). Die Fehler hängen kaum am Modell. Fünf Muster: Lesart still aufgelöst, Stand aus dem Chat, eigene Regeln nicht befolgt, zu starke Aussagen, zu viel Befugnis. Wissensarbeit hat auf Fehler mit immer mehr Regeln und Reviews geantwortet, und das Labor ist auf demselben Weg. Vorschlag: weniger Text, eine Stelle für den Stand, Sperren statt Sätze (`auftraege.md`, mit Zuständigkeit). Astra liest gegen (#100). Dazu das Audit der Lesekosten (`research/2026-10-lesekosten/befund.md`).
 
-**Was du entscheidest (vier Fragen in `auftraege.md`):** Hauptzweig jetzt schützen? Regelpause bis zur Regelprüfung? Regeln prüfen vor Modellprofilen? „Eine Uhr“ für den Stand an Astra, sobald #41 zeigt, dass Astra Branch und PR kann?
+**Was du entscheidest (vier Fragen in `auftraege.md`):** Hauptzweig jetzt schützen? Regelpause bis zur Regelprüfung? Regeln prüfen vor Modellprofilen? „Eine Uhr“ für den Stand und die Prüfungen im Build an Astra (Astra kann implementieren, Eigentümer 29.10.)?
 
 **Danach, in dieser Reihenfolge:** Modelle kennen und Aufträge besser schreiben (beides
 parallel) → Regeln prüfen → Sparmaßnahmen mit Messung → Hilfe beim Entwerfen.
@@ -93,7 +93,7 @@ parallel) → Regeln prüfen → Sparmaßnahmen mit Messung → Hilfe beim Entwe
   „Fertig, wenn“. Beim Wiederaufnehmen schärfen.
 - Triage und Auftragsformat für kleinere Modelle:
   `research/gespraeche/2026-10-28-triage-modelle.md`.
-- Lehren: Bei Sammelbegriffen („die Issues zum Werk“) vorher die Liste nennen und bestätigen lassen, besonders bei Schließen (#77, 28.10.); Lesart spiegeln (#55); Vorarbeit in `research/2026-10-issue-arbeit/` ist kein Eingang;
+- Lehren: Fähigkeiten eines Modells nach der Erfahrung des Eigentümers eintragen, nicht nach seiner Selbstauskunft (29.10.: Astra kann implementieren); Bei Sammelbegriffen („die Issues zum Werk“) vorher die Liste nennen und bestätigen lassen, besonders bei Schließen (#77, 28.10.); Lesart spiegeln (#55); Vorarbeit in `research/2026-10-issue-arbeit/` ist kein Eingang;
   ein Zitat ist keine Freigabe; vor jeder Liste abgleichen und zuerst im Repo sichern (#65);
   Meldungen in Worten, Fragen als Auswahl (#71); „nachziehen“ ist kein Startsignal (#77); vor
   jedem Commit den Zweig prüfen.

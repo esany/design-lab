@@ -15,16 +15,19 @@ Sätze.** Jeder Auftrag unten muss das Labor kleiner oder prüfbarer machen, nic
 
 | Wer | nachgewiesen | nicht nachgewiesen | belastet |
 |---|---|---|---|
-| **Astra** (ChatGPT-Chat, GPT-6) | Issues lesen, anlegen, kommentieren; ins Repo schreiben (Eigentümer 28.10.) | eigener Branch, Pull Request, `node tools/build.mjs` (Astra selbst, 29.10.) | ChatGPT-Abo |
-| **Codex** | Node, Prüfungen, Pull Requests (frühere Repos) | Arbeit in diesem Labor | ChatGPT-Abo; nur mit Begründung (0025) |
+| **Astra** (ChatGPT-Chat, GPT-6) | Issues lesen, anlegen, kommentieren; ins Repo schreiben; **implementieren** (Eigentümer 28.10. und 29.10.) | Branches löschen; lokale Ordner (Eigentümer 28.10.) | ChatGPT-Abo |
+| **Codex** | Node, Prüfungen, Pull Requests (frühere Repos) | Arbeit in diesem Labor | ChatGPT-Abo; nur mit Begründung (0025), hier derzeit keine |
 | **Claude Sonnet** (Claude Code, Helfer) | alles im Repo, Lesen in eigenem Kontext | — | Claude-Abo (Lesen ≈ ×4 der Quelle, siehe Befunde) |
 | **Claude Opus** (Orchestrator) | alles | — | Claude-Abo, teuer: nur Planen, Urteilen, Prüfen |
 | **Eigentümer** | GitHub-Einstellungen, Urteil | — | Zeit |
 
-**Folge für die Verteilung (*abgeleitet*):** Was Astra ohne Build kann (lesen, gegenlesen,
-Bestand erfassen, Text in einer Datei), geht an Astra. So wird das Claude-Abo geschont und ein
-anderes Modell prüft. Was Node braucht, geht an Codex, mit Begründung. Was Haltung oder
-Regeln berührt, bewertet Claude Opus, und der Eigentümer entscheidet.
+**Folge für die Verteilung (*abgeleitet*):** Die Ausführung geht an Astra, also Lesen, Gegenlesen,
+Bestandsaufnahme, Textumbau und Implementierung. So wird das Claude-Abo geschont, und Claude prüft
+als anderes Modell. Codex hat derzeit keinen begründeten Fall (0025). Was Haltung oder Regeln
+berührt, bewertet Claude Opus, und der Eigentümer entscheidet.
+
+*Berichtigt am 29.10.:* Zuerst stand hier, Branch, PR und Build seien für Astra nicht nachgewiesen.
+Das stützte sich auf Astras eigene Rückmeldung, nicht auf die Erfahrung des Eigentümers (Muster C).
 
 ## Aufträge, nach Dringlichkeit
 
@@ -43,7 +46,7 @@ Regeln berührt, bewertet Claude Opus, und der Eigentümer entscheidet.
   haben das nicht verhindert, eine Sperre würde es. Dauer: etwa zwei Minuten Klicks; die
   Anleitung steht in #40.
 
-### 3 · Eine Uhr für den Stand · an Astra, sobald #41 gezeigt hat, dass Astra Branch und PR kann
+### 3 · Eine Uhr für den Stand · an Astra
 - **Warum:** Muster C und Strukturbefund 3; spart ≈ 5.500 Tokens je Start (Lesekosten A, B, D).
   Es ist Textarbeit in wenigen Dateien und braucht keinen Code.
 - **Ziel:** Der Stand eines Themas steht an genau einer Stelle, dem Merkzettel. `stand.md` zeigt nur
@@ -66,9 +69,9 @@ Regeln berührt, bewertet Claude Opus, und der Eigentümer entscheidet.
 - **Prüft:** Claude Opus (Stichprobe: drei Rückgängig-Sätze auffindbar, ein Neustart nach
   `evals/start` mit den neuen Dateien).
 
-### 4 · Prüfungen statt Sätze · an Codex · nach 3
-- **Warum Codex:** Es braucht Node und eine GitHub-Prüfung; im Chat ist das bei Astra nicht
-  nachgewiesen (0025: begründeter Fall).
+### 4 · Prüfungen statt Sätze · an Astra · nach 3
+- **Warum Astra:** Kleine Änderung in Node und einer GitHub-Prüfung; Astra kann implementieren,
+  also gibt es keinen Grund für Codex (0025).
 - **Ziel:** Der Build meldet (als Warnung, nicht als Fehler): Merkzettel über 3.000 Zeichen;
   `stand.md` über 4.000; in der GitHub-Prüfung zusätzlich Issue-Nummern, die ein Merkzettel
   „offen“ nennt, die aber geschlossen sind.
@@ -90,7 +93,7 @@ Regeln berührt, bewertet Claude Opus, und der Eigentümer entscheidet.
 
 ### 6 · Modellprofile (#57) verkleinern · an Claude Opus (Issue umschreiben)
 - **Vorschlag:** #57 wird „Werkzeugnachweis je Modell“: Was kann jedes Modell im Labor wirklich
-  (Branch, PR, Build, Browser, Rendern)? Nachgewiesen an echten kleinen Aufträgen (#41 für Astra),
+  (Branch, PR, Build, Browser, Rendern)? Die Angaben des Eigentümers zählen als Beleg, Selbstauskünfte der Modelle nicht. Ergänzt an echten Aufträgen,
   nicht aus Herstellerangaben. Die Tabelle oben ist der Anfang.
 
 ### Nicht vorgeschlagen
@@ -108,5 +111,4 @@ Regeln berührt, bewertet Claude Opus, und der Eigentümer entscheidet.
 3. **Reihenfolge:** Regeln prüfen vor Modellprofilen; Modellprofile werden zum Werkzeugnachweis.
    *Empfehlung: ja.*
 4. **„Eine Uhr“ und Prüfungen (Aufträge 3 und 4)**, einschließlich der kleinen Änderung in
-   `AGENTS.md`, im Skill `issue` und in `.github/`? *Empfehlung: ja; Astra beginnt, sobald #41 gezeigt
-   hat, dass Branch und PR gehen.*
+   `AGENTS.md`, im Skill `issue` und in `.github/`? *Empfehlung: ja; beides an Astra, Claude prüft.*
