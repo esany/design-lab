@@ -1,8 +1,8 @@
 ---
 thema: Das System in Ordnung bringen
-stand: U3 als Entwurf umgesetzt; unabhängiger Neustart-Test und Prüfung durch Claude stehen aus.
-naechster_schritt: Claude prüft den U3-Entwurf und lässt den Neustart-Test unabhängig ausführen.
-offen: [40, 56, 62, 100]
+stand: Umbau läuft – Stand als Datenquelle (#103) und schlanker Kern (U3, #108) übernommen, Start ≈ 1.200 Tokens; Audit paleo-type (#112) und Umbaupläne für Wissensarbeit (#89) und paleo-type (#353) vergeben
+naechster_schritt: Astra bearbeitet #109, #100, #112; Claude prüft die Ergebnisse an den Quellen und spezifiziert danach U4 (Register der gültigen Regeln).
+offen: [40, 56, 62, 100, 109, 112]
 ---
 
 # Thema: Das System in Ordnung bringen
