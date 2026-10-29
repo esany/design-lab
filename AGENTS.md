@@ -29,7 +29,7 @@ Gilt für jedes Modell und jedes Werkzeug, mit oder ohne Repo-Zugang.
    Label gibt (Entscheidung des Eigentümers, 28.10.). Andere Modelle schlagen Aufgaben vor,
    verteilen sie aber nicht.
 7. **Ende der Sitzung:** abgleichen, den Merkzettel des eigenen Themas in `anschluss/`
-   fortschreiben und dessen Zeile in `stand.md` anpassen. Fremde Merkzettel nicht anfassen
+   fortschreiben (der Kopf erzeugt die Zeile in `stand.md`). Fremde Merkzettel nicht anfassen
    (Regeln 0024, 0029).
 
 Anweisung, die der Mensch einmal je Werkzeug einträgt (sie ändert sich nicht mehr; alles
@@ -68,14 +68,15 @@ Sie legen Optionen mit Begründung vor.
    - die Änderung liegt im Rahmen freigegebener Anforderungen, Prinzipien und
      Entscheidungen;
    - alle automatischen Prüfungen sind grün;
-   - die Änderung ist in `stand.md` eingetragen (was · warum · wie rückgängig).
+   - die Änderung ist in `stand-verlauf.md` eingetragen (was · warum · wie rückgängig;
+     geprüft durch „Stand gegen GitHub“).
    **Zum Menschen** gehen stattdessen — als Frage, nicht als Review-Auftrag:
    offene Punkte und Unsicherheiten; Gestaltungs- und Bedeutungsentscheidungen;
    neue Regeln oder Prinzipien; alles schwer Umkehrbare (Löschen, Sichtbarkeit,
    Kosten, Konten, externe Dienste, Sicherheit). Der Mensch ist kein
    Durchreicher für Klicks.
 3. **Autonomie nach Umkehrbarkeit:**
-   - frei: `studies/`, `experiments/`, `radar.md`, `corpus/`, `stand.md`
+   - frei: `studies/`, `experiments/`, `radar.md`, `corpus/`, `stand.md`, `stand-verlauf.md`
    - nur mit Rückfrage, wenn es Haltung oder Regeln ändert: `principles.md`,
      `AGENTS.md`, `.agents/skills/`, `system/`, `.github/`
 4. Nichts löschen, was nicht im eigenen Branch entstanden ist. Veraltetes
@@ -88,7 +89,7 @@ Sie legen Optionen mit Begründung vor.
    die Antwort des Menschen; der Agent trägt sie ein. Kopf: `perspektive:` (system, fach,
    gebrauch); Aufbau nach `decisions/VORLAGE.md` mit Alternativen und Folgen (0030).
 7. **Rückgängig:** Sagt der Mensch „X rückgängig“, erstellt der Agent einen
-   Revert als eigenen Pull Request und vermerkt ihn in `stand.md`.
+   Revert als eigenen Pull Request und vermerkt ihn in `stand-verlauf.md`.
 8. Nach Änderungen an `system/` oder `studies/`: `node tools/build.mjs`
    ausführen und das Ergebnis mit committen.
 9. **Jede Entscheidung und jeder Skill nennt im Kopf `dient: A..`**, also die

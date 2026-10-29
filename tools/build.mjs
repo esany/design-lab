@@ -10,8 +10,6 @@ import { readFileSync, writeFileSync, readdirSync, existsSync, statSync } from "
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { leseKopf, aktualisiereStand, pruefeLaenge } from "./gitter.mjs";
-// Grenzen: Merkzettel ohne Kopf und Stand (Unicode-Zeichen).
-const GRENZE_MERKZETTEL = 3000, GRENZE_STAND = 4000;
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const check = process.argv.includes("--check");
@@ -277,8 +275,7 @@ const standOriginal = readFileSync(join(root, "stand.md"), "utf8");
 try {
   const standNeu = aktualisiereStand(standOriginal, themen);
   outputs.set("stand.md", standNeu);
-  errors.push(...pruefeLaenge(standNeu, themen, GRENZE_STAND, GRENZE_MERKZETTEL));
-  if ([...standOriginal].length > GRENZE_STAND && [...standNeu].length <= GRENZE_STAND && check) errors.push(`stand.md: mehr als ${GRENZE_STAND} Zeichen`);
+  errors.push(...pruefeLaenge(standNeu, themen));
 } catch (e) { errors.push(e.message); }
 
 // ---------- Schreiben oder prüfen ----------

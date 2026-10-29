@@ -6,6 +6,7 @@
 
 | Datum | Was | Warum | Rückgängig |
 |---|---|---|---|
+| 2026-10-29 | **Stand als Datenquelle (#103, Astra):** `stand.md` wird aus den Merkzettel-Köpfen erzeugt; Längengrenzen und Abgleich mit GitHub als Prüfungen; Verlauf in dieser Datei. Durchsicht Claude: Nebenprüfung im Build vereinfacht, Kopf System berichtigt, `AGENTS.md` und Skill `issue` auf den Verlauf umgestellt | Ihr Auftrag #103; Umbauplan U2 | „Stand als Datenquelle rückgängig“ (PR zurücknehmen) |
 | 2026-10-29 | **Umbauplan zum Organismus** (`research/2026-10-umbau/plan.md`): Stand der Technik, Zielwerte, U1–U9 mit Zuständigkeit, Kurs halten | Ihre Fragen im Chat; 0024 | Datei löschen: „Umbauplan rückgängig“ |
 | 2026-10-29 | **Leitbild „System als Organismus“ als Intent** in `intent.md` | Ihr Auftrag „zentral als mein Intent“ | „Intent Organismus rückgängig“ |
 | 2026-10-29 | **Leitbild „System als Organismus“** festgehalten, mit Folgen für die Architektur (`research/gespraeche/2026-10-29-system-als-organismus.md`) | Ihre Beschreibung im Chat; 0024 | Datei löschen: „Leitbild rückgängig“ |
