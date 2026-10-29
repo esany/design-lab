@@ -19,6 +19,28 @@ Der Gestalter will **gestalten und den Entwicklungsstand gemeinsam
 durchgehen** — nicht Technik bedienen. Er versteht sich als **systemischer,
 ganzheitlicher Gestalter**.
 
+### Leitbild: das System als Organismus (Eigentümer, 29.10.2026)
+
+> Ein Organismus, in dem die Technik sauber und unsichtbar im Hintergrund läuft. Ich entwickle
+> und modelliere ihn nach Belieben: Jede Idee, jeder Fehler, jeder Wunsch geht als Eingang an
+> die Entwicklung und wird umgesetzt. Vor allem will ich fachliche Assistenz in meinen Projekten.
+> Wo ich nicht Experte bin, baue ich mir damit Domänenwissen auf (Erfahrung, Grundlagen,
+> Methodik, Stand der Technik) und nutze es, ohne dort technisch oder fachlich urteilen zu müssen.
+
+Daraus folgt für jede Arbeit:
+
+- **Verlässlichkeit steckt in der Technik, nicht in Anweisungen.** Jede Tatsache steht genau
+  einmal; Übersichten werden erzeugt; was gelten soll, wird automatisch geprüft. Eine
+  Textregel ist nur dort das Ergebnis, wo nichts davon technisch geht.
+- **Jede Eingabe durchläuft denselben Weg:** Bedarf und Situation → Anforderung → Ort im System
+  → Umsetzung → Nachweis, dass es wirkt.
+- **Qualität wird sichtbar gemacht, nicht behauptet:** Status und Quelle je Aussage, Prüfung
+  durch ein anderes Modell, vorführen statt beschreiben, „Was wir noch nicht wissen“ je Domäne.
+- **Der Eigentümer arbeitet nur an Ziel, Bedeutung und Urteil**, in Alltagssprache.
+- Das Labor ist der erste lebende Organismus. Was sich hier bewährt, wird zur Vorlage für
+  Wissensprojekte in anderen Domänen (Herleitung:
+  `research/gespraeche/2026-10-29-system-als-organismus.md`).
+
 ## Zielstellung
 
 **Maximale Qualität und Ergebnisse mit minimalen Ressourcen und Invest — ohne
