@@ -50,7 +50,7 @@ status: Befundkarten; keine fachliche oder technische Abnahme
 - **Schmerz:** Ein fehlgeschlagener Zugriffsweg machte aus Provenienzklärung eine Bildbeschaffungsaufgabe und vorzeitig aus einem Objekt einen geeigneten Prüffall.
 - **Beleg:** offenes Issue #296; `methodology/workflow.md`.
 - **Antwort des Systems:** Bestehende Trennung von technischer Ressource, Forschungscursor und Auftragsautorität; Fall F1 nach technischer Korrektur.
-- **Hat es gehalten?** **Nein, im frischen Gesamttest**: #296 protokolliert nach PR #303 Teilfortschritte, aber Gesamt-FAIL wegen zu früher Autoritätszuschreibung.
+- **Hat es gehalten?** **Teilweise** (berichtigt nach [Gegenprüfung](pruefung.md)): Im frischen Nachtest nach PR #303 blieb die Forschungsfrage erhalten; insgesamt FAIL wegen zu früher Zuschreibung des Prüffalls (#296).
 - **Kosten der Antwort:** Reparatur-PR, F1-Prüfung, zusätzliche manuelle Quellenevidenz-Rekonstruktion; genaue Gesamtzeichen/-runden unbekannt.
 - **Übertragbar aufs Labor?** Ja: Ein Werkzeugfehler darf nicht die gestalterische Frage austauschen.
 - **Status:** **belegt** für F1-Gegenfall; **abgeleitet** für Laborbezug.
@@ -58,8 +58,8 @@ status: Befundkarten; keine fachliche oder technische Abnahme
 ### P06 · Fachliches Ergebnis wird zur Werkzeugroute
 - **Schmerz:** Bei einer Edition verdrängten Beschaffungs-/Registrierungsschritte und generische Phasen die vorhandene fachliche Erkundung.
 - **Beleg:** geschlossenes Issue #336; `methodology/historical-source-workflow.md`, `methodology/research-gates.md`.
-- **Antwort des Systems:** Fehler dokumentiert; erneuter Verweis auf bestehenden S1–S9-Ansatz und G1–G6-Prüfgates statt neue Methode.
-- **Hat es gehalten?** **Nein**: #341 beschreibt bald darauf erneut ein parallel erfundenes Phasen-/Skill-Gerüst.
+- **Antwort des Systems:** Fehler dokumentiert; Änderung am Einstieg (PR #338) statt neuer Methode; frischer Nachtest bestanden, #336 danach geschlossen.
+- **Hat es gehalten?** **Teilweise** (berichtigt nach [Gegenprüfung](pruefung.md)): Der geprüfte Fall hielt; einen Tag später beschreibt #341 ein verwandtes, parallel erfundenes Phasen-/Skill-Gerüst.
 - **Kosten der Antwort:** Mindestens zwei Fehler-Issues und wiederholte Eigentümerklarstellungen; fachlicher Verzögerungsaufwand nicht beziffert.
 - **Übertragbar aufs Labor?** Ja: Nicht eine neue Mini-Methode entwerfen, bevor der geltende fachliche Weg tatsächlich angewandt wurde.
 - **Status:** **belegt** für beide Vorfälle; **abgeleitet** für Ursache.

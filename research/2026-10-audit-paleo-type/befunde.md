@@ -3,7 +3,7 @@ dient: A07, A17, A33, A34
 issue: "#112 (Teil von #62)"
 datum: 2026-10-30
 quellen: "esany/paleo-type (privat) main@6adf6c6, research/2026-10-audit-paleo-type/inventar.md und karten.md"
-status: Befund, nicht abgenommen; keine Regel oder Maßnahme beschlossen
+status: Befund, von Claude an zehn Originalstellen geprüft und abgenommen; keine Regel oder Maßnahme beschlossen
 ---
 
 # paleo-type: Was aus Fehlern tatsächlich gelernt wurde
@@ -14,7 +14,7 @@ status: Befund, nicht abgenommen; keine Regel oder Maßnahme beschlossen
 
 **Belegt, mit engem Geltungsbereich:** Deterministische Prüfungen können präzise Zustandsfehler verhindern. Der read-only-Status und der erst nach vollständiger Finalisierung gesetzte Abschlusszustand haben konkrete Regressionstests (P11, P17; `tests/test_archival_source_acquisition.py`). Die Engineering-Baseline ist in `engineering/configuration.json` und `engineering/changes/SD-KA-01/STATE.json` maschinenlesbar, mit sechs dokumentierten Workpackage-Prüfungen (P18). **Nicht getestet in diesem Audit:** erneutes Ausführen dieser Tests. **Nicht belegt:** dass damit frische Modelle selbstständig ein ganzes Forschungsziel erreichen.
 
-**Belegt:** Die Probleme reichen über technische Prüfungen hinaus. #297 blieb trotz lokaler CI-Erfolge offen. #296 meldet einen misslungenen frischen F1-Test nach technischer Korrektur. #341 zeigt erneut die Erfindung einer methodischen Parallelschicht trotz bestehender Fachmethode. Der erste Kontrollschicht-Audit wurde am selben Tag selbst korrigiert, weil sein Vorschlag zu schnell eine neue allgemeine Lösung ausrief (P21). **Abgeleitet:** Mehr Absicherung durch Text und Review-Volumen ist nicht automatisch mehr praktische Wirkung.
+**Belegt:** Die Probleme reichen über technische Prüfungen hinaus. #297 blieb trotz lokaler CI-Erfolge offen. #296 meldet nach technischer Korrektur einen frischen F1-Test mit Teilerfolg, aber insgesamt FAIL. #341 zeigt erneut die Erfindung einer methodischen Parallelschicht trotz bestehender Fachmethode. Der erste Kontrollschicht-Audit wurde am selben Tag selbst korrigiert, weil sein Vorschlag zu schnell eine neue allgemeine Lösung ausrief (P21). **Abgeleitet:** Mehr Absicherung durch Text und Review-Volumen ist nicht automatisch mehr praktische Wirkung.
 
 ## Der Unterschied zwischen haltenden und nicht haltenden Antworten
 
@@ -41,4 +41,4 @@ status: Befund, nicht abgenommen; keine Regel oder Maßnahme beschlossen
 2. **Sollen wir bei nächsten technischen Änderungen den Abnahmebericht ausdrücklich in „Build“, „neuer Kontext“ und „tatsächliches Ergebnis“ trennen?** Das macht Unterschiede sichtbar, ohne allen Arbeiten drei Pflichtreviews aufzuerlegen. Ohne Trennung droht derselbe lokale-PASS-Fehlschluss wie in #297. **Empfehlung:** ja, zunächst an einem Beispiel prüfen. **Status: abgeleitet**.
 3. **Sollen die Rettungseingriffe des Eigentümers für einen Monat schlicht mit Fall und Anlass gezählt werden?** Das misst, ob das Labor Entlastung erzeugt, statt nur mehr Prüftexte. Ohne Messung bleibt der wichtigste Zielwert aus dem Umbauplan unbelegt. **Empfehlung:** kleiner, freiwilliger Pilot; keine neue umfassende Erfassung. **Status: abgeleitet**.
 
-**Offene Prüfung:** Claudes unabhängiger Originalabgleich zu den **zehn benannten Karten** in [`karten.md`](karten.md) sowie ein tatsächlicher grüner Labor-Build. Die Karten behaupten keine abgeschlossene Prüfung durch ein anderes Modell. **Status: nicht getestet**.
+**Gegenprüfung erledigt (Claude, 30.10.):** Die zehn Originalbelege wurden an `paleo-type` nachgeprüft: acht bestätigt, zwei von „nein“ auf „teilweise“ berichtigt (P05, P06); die Tests zu P11 und P17 wurden ausgeführt und bestanden. Einzelheiten in der [Gegenprüfung](pruefung.md). Die übrigen elf Karten sind nicht nachgeprüft. **Status: belegt** für die zehn Stellen.
