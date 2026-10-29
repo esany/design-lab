@@ -21,6 +21,7 @@ machen — es genügt zu sagen: **„… rückgängig“**.
 
 | Datum | Was | Warum | Rückgängig |
 |---|---|---|---|
+| 2026-10-29 | **Berichtigt:** Astra kann implementieren; Aufträge 3 und 4 in `research/2026-10-audit-zusammenarbeit/auftraege.md` an Astra statt erst nach einer Probe bzw. an Codex | Ihr Hinweis im Chat | „Berichtigung Astra rückgängig“ |
 | 2026-10-29 | **Befunde Fehlermuster der Modelle (#56)** (`research/2026-10-audit-zusammenarbeit/`): fünf Muster, kaum modellabhängig; Strukturbefund „mehr Regeln, Reviews und Stellen für den Stand statt Sperren“; Vorschläge mit Zuständigkeit in `auftraege.md`; Gegenlesen an Astra (#100) | Ihre Freigabe im Chat | „Befunde #56 rückgängig“ |
 | 2026-10-29 | **Audit der Lesekosten** (`research/2026-10-lesekosten/befund.md`): Start ≈ 10.500 statt ≈ 3.500 Tokens; Stand an bis zu sechs Stellen, schon abweichend (#39); Möglichkeiten A–E. **Plan #62 begonnen:** #56 auf `an:claude`, Bestandsaufnahme im Issue | Ihr Auftrag im Chat; 0024 | „Lesekosten-Audit rückgängig“ |
 | 2026-10-29 | **Probe Fundstück #98 (open-design):** gesichtet, Urteil „unklar, deutlicher Marketing-Anteil“; 0031 um „wer gibt wem wann welchen Auftrag“ ergänzt | Ihr Beispiel im Chat | Issue schließen, PR zurücknehmen |
