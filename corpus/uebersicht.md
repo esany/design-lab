@@ -3,7 +3,7 @@
 > Erzeugt von `node tools/build.mjs` aus `referenzen.json` und `recherche.json`. Nicht von Hand ändern.
 > Schema: [`schema.md`](schema.md).
 
-**67 Quellen** — 22 ausgewählt vom Eigentümer, 45 recherchiert vom Agenten.
+**106 Quellen** — 27 ausgewählt vom Eigentümer, 79 recherchiert vom Agenten.
 Je Feld zuerst die Verweise des Eigentümers (Ausgangspunkte, kein Kanon). Eine Quelle kann in mehreren Feldern stehen.
 
 ## vermitteln
@@ -48,8 +48,13 @@ Je Feld zuerst die Verweise des Eigentümers (Ausgangspunkte, kein Kanon). Eine 
 
 | ID | Titel | Autor | Jahr | Art | Status | Auswahl | genutzt in |
 |---|---|---|---|---|---|---|---|
+| `dubberly-how-design` | [How Do You Design? A Compendium of Models](https://www.dubberly.com/articles/how-do-you-design.html) | Hugh Dubberly | — | Buch | belegt | Mensch | — |
 | `gerstner` | [Karl Gerstner](https://zkm.de/de/personen/karl-gerstner) | Karl Gerstner | 1930–2017 | Person | belegt | Mensch | `.agents/skills/fachpaket-form/SKILL.md` |
 | `gerstner-1964` | [Programme entwerfen (engl. Designing Programmes)](https://www.lars-mueller-publishers.com/designing-programmes) | Karl Gerstner | 1964 | Buch | belegt | Mensch | `.agents/skills/fachpaket-form/SKILL.md`, `.agents/skills/fachpaket-vermitteln/SKILL.md` |
+| `grabbe-held-episteme-2024` | [Designforschung und Designwissenschaft: Methoden und Theorien gestalterischer Episteme](https://doi.org/10.1007/978-3-658-45253-7) | Lars C. Grabbe, Tobias Held (Hrsg.) | 2024 | Buch | belegt | Mensch | — |
+| `grabbe-ki-2025` | [Designforschung und KI: Ästhetische Transformation im Zeitalter artifizieller Systeme](https://doi.org/10.1007/978-3-658-49798-9) | Lars C. Grabbe (Hrsg.) | 2025 | Buch | belegt | Mensch | — |
+| `held-offenes-design-2026` | [Offenes Design DDR: Prinzipien offener Gestaltung](https://doi.org/10.1007/978-3-658-50880-7) | Tobias Held | 2026 | Buch | belegt | Mensch | — |
+| `manifestationen-entwurf-2016` | [Manifestationen im Entwurf: Design – Architektur – Ingenieurwesen](https://www.transcript-verlag.de/978-3-8376-3160-9/manifestationen-im-entwurf/) | Thomas H. Schmitz, Roger Häußling, Claudia Mareis, Hannah Groninger (Hrsg.) | 2016 | Buch | belegt | Mensch | — |
 | `pinterest-el0631` | [Pinterest-Sammlung el0631](https://de.pinterest.com/el0631/) | Eigentümer des Labors | — | Sammlung | belegt · blockiert | Mensch | `.agents/skills/fachpaket-form/SKILL.md`, `.agents/skills/fachpaket-vermitteln/SKILL.md` |
 | `akutsu-1991` | [Psychophysics of reading — X. Effects of age-related changes in vision](https://legge.dl8.umn.edu/sites/legge.psych.umn.edu/files/2020-08/psychophysics_of_reading._x._effects_of_age_related_changes_in_vision_akutsu_legge_ross_schuebel_1991.pdf) | Hiroshi Akutsu, Gordon E. Legge, J. A. Ross, K. J. Schuebel | 1991 | Paper | belegt | Agent | `.agents/skills/fachpaket-form/SKILL.md`, `manifest.md` |
 | `borland-taylor-2007` | [Rainbow Color Map (Still) Considered Harmful](https://www.sci.utah.edu/~kpotter/Library/Papers/borland:2007:RCCH/index.html) | David Borland, Russell M. Taylor II | 2007 | Paper | belegt | Agent | `.agents/skills/fachpaket-vermitteln/SKILL.md` |
@@ -92,6 +97,11 @@ Je Feld zuerst die Verweise des Eigentümers (Ausgangspunkte, kein Kanon). Eine 
 
 | ID | Titel | Autor | Jahr | Art | Status | Auswahl | genutzt in |
 |---|---|---|---|---|---|---|---|
+| `dubberly-how-design` | [How Do You Design? A Compendium of Models](https://www.dubberly.com/articles/how-do-you-design.html) | Hugh Dubberly | — | Buch | belegt | Mensch | — |
+| `grabbe-held-episteme-2024` | [Designforschung und Designwissenschaft: Methoden und Theorien gestalterischer Episteme](https://doi.org/10.1007/978-3-658-45253-7) | Lars C. Grabbe, Tobias Held (Hrsg.) | 2024 | Buch | belegt | Mensch | — |
+| `grabbe-ki-2025` | [Designforschung und KI: Ästhetische Transformation im Zeitalter artifizieller Systeme](https://doi.org/10.1007/978-3-658-49798-9) | Lars C. Grabbe (Hrsg.) | 2025 | Buch | belegt | Mensch | — |
+| `held-offenes-design-2026` | [Offenes Design DDR: Prinzipien offener Gestaltung](https://doi.org/10.1007/978-3-658-50880-7) | Tobias Held | 2026 | Buch | belegt | Mensch | — |
+| `manifestationen-entwurf-2016` | [Manifestationen im Entwurf: Design – Architektur – Ingenieurwesen](https://www.transcript-verlag.de/978-3-8376-3160-9/manifestationen-im-entwurf/) | Thomas H. Schmitz, Roger Häußling, Claudia Mareis, Hannah Groninger (Hrsg.) | 2016 | Buch | belegt | Mensch | — |
 | `manovich` | [Lev Manovich](https://manovich.net/) | Lev Manovich | — | Person | belegt | Mensch | `.agents/skills/fachpaket-vermitteln/SKILL.md` |
 | `manovich-2001` | [The Language of New Media](https://en.wikipedia.org/wiki/Lev_Manovich) | Lev Manovich | 2001 | Buch | belegt | Mensch | — |
 | `manovich-2013` | [Software Takes Command](https://library.oapen.org/bitstream/20.500.12657/58738/1/9781623566722.pdf) | Lev Manovich | 2013 | Buch | belegt | Mensch | — |
@@ -99,9 +109,43 @@ Je Feld zuerst die Verweise des Eigentümers (Ausgangspunkte, kein Kanon). Eine 
 | `manovich-2024` | [Artificial Aesthetics: Generative AI, Art and Visual Media](https://manovich.net/) | Lev Manovich (mit Emanuele Arielli — nicht geprüft) | 2024 | Buch | belegt | Mensch | — |
 | `sedlmair-2012` | [Design Study Methodology: Reflections from the Trenches and the Stacks](https://www.cs.ubc.ca/labs/imager/tr/2012/dsm/) | Michael Sedlmair, Miriah Meyer, Tamara Munzner | 2012 | Paper | belegt | Mensch | `.agents/skills/fachpaket-vermitteln/SKILL.md` |
 | `uclab` | [Urban Complexity Lab (UCLAB), FH Potsdam](https://uclab.fh-potsdam.de/) | Marian Dörk, Boris Müller (Leitung) | — | Labor | belegt | Mensch | `.agents/skills/fachpaket-vermitteln/SKILL.md` |
+| `alexander-1964` | [Notes on the Synthesis of Form](https://archive.org/details/notesonsynthesis00alex) | Christopher Alexander | 1964 | Buch | nicht belegt | Agent | — |
+| `augsten-peukert-2024` | [Designforschung, eine neue Designpraxis?](https://doi.org/10.1007/978-3-658-45253-7) | Andrea Augsten, Daniela Peukert | 2024 | Artikel | abgeleitet | Agent | — |
+| `bauer-ethik-2024` | [Design und Ethik](https://doi.org/10.1007/978-3-658-45253-7) | Christian Bauer | 2024 | Artikel | abgeleitet | Agent | — |
+| `boden-1998` | [Creativity and Artificial Intelligence](https://doi.org/10.1016/S0004-3702(98)00055-1) | Margaret A. Boden | 1998 | Paper | abgeleitet | Agent | — |
+| `bredella-instabilen-2016` | [Manifestationen des Instabilen. Interaktive Environments und die Agency des Materials](https://www.transcript-verlag.de/978-3-8376-3160-9/manifestationen-im-entwurf/) | Nathalie Bredella | 2016 | Artikel | abgeleitet | Agent | — |
+| `bredies-gegenstand-2016` | [Gegenstand und Gebrauch](https://www.transcript-verlag.de/978-3-8376-3160-9/manifestationen-im-entwurf/) | Katharina Bredies | 2016 | Artikel | abgeleitet | Agent | — |
+| `dorst-cross-2001` | [Creativity in the design process: co-evolution of problem–solution](https://doi.org/10.1016/S0142-694X(01)00009-6) | Kees Dorst, Nigel Cross | 2001 | Paper | abgeleitet | Agent | — |
+| `foken-visuell-2024` | [Im Visuellen verstehen. Zur recherchebasierten Gestaltung](https://doi.org/10.1007/978-3-658-45253-7) | Gesa Foken | 2024 | Artikel | abgeleitet | Agent | — |
+| `gero-1990` | [Design Prototypes: A Knowledge Representation Schema for Design](https://doi.org/10.1609/aimag.v11i4.854) | John S. Gero | 1990 | Paper | abgeleitet | Agent | — |
+| `gero-kannengiesser-2004` | [The situated function–behaviour–structure framework](https://doi.org/10.1016/j.destud.2003.10.010) | John S. Gero, Udo Kannengiesser | 2004 | Paper | abgeleitet | Agent | — |
+| `gibson-1979` | [The Ecological Approach to Visual Perception, Kap. The Theory of Affordances](https://www.cs.tufts.edu/comp/150DR/readings/week4/gibson_theory_of_affordances.pdf) | James J. Gibson | 1979 | Buch | abgeleitet | Agent | — |
+| `goldschmidt-1991` | [The Dialectics of Sketching](https://doi.org/10.1080/10400419109534381) | Gabriela Goldschmidt | 1991 | Paper | abgeleitet | Agent | — |
+| `groninger-gestenraeume-2016` | [Gestenräume. Virtuelles Skizzieren, Modellieren und Verhandeln](https://www.transcript-verlag.de/978-3-8376-3160-9/manifestationen-im-entwurf/) | Hannah Groninger | 2016 | Artikel | abgeleitet | Agent | — |
+| `gruenkranz-ki-2025` | [KI als Designmedium? Eine kritische Betrachtung der KI-bedingten Bildgenerierung im Produktdesign](https://doi.org/10.1007/978-3-658-49798-9) | Daniel Grünkranz | 2025 | Artikel | abgeleitet | Agent | — |
+| `haarmann-diagnose-2024` | [Designforschung – Diagnose, Geschichte, Praxis](https://doi.org/10.1007/978-3-658-45253-7) | Anke Haarmann | 2024 | Artikel | abgeleitet | Agent | — |
+| `hasenhuetl-ki-2025` | [Anmerkungen zu KI beim Entwerfen](https://doi.org/10.1007/978-3-658-49798-9) | Gert Hasenhütl, Hans Stefan Moritsch | 2025 | Artikel | abgeleitet | Agent | — |
+| `hatchuel-weil-2009` | [C-K Design Theory: an advanced formulation](https://doi.org/10.1007/s00163-008-0043-4) | Armand Hatchuel, Benoît Weil | 2009 | Paper | abgeleitet | Agent | — |
+| `heijink-windsor-desain-2000` | [Data processing in music performance research: Using structural information to improve score-performance matching](https://www.mcg.uva.nl/mmm-2003/abstracts/mmm-24.html) | H. Heijink, W. L. Windsor, P. Desain | 2000 | Paper | nicht belegt | Agent | — |
+| `held-offenes-prinzip-2026` | [Offenes Design DDR, Kap. 3.8: Offenheit, Individualisierung, Emanzipation und Aneignung](https://doi.org/10.1007/978-3-658-50880-7) | Tobias Held | 2026 | Artikel | abgeleitet | Agent | — |
+| `herlo-teilhabe-2024` | [Design im Kontext sozialer und digitaler Teilhabe](https://doi.org/10.1007/978-3-658-45253-7) | Bianca Herlo | 2024 | Artikel | abgeleitet | Agent | — |
 | `hfg-archiv-ulm` | [HfG-Archiv Ulm](https://hfg-archiv.museumulm.de/en/archival-research-and-service) | Museum Ulm | — | Sammlung | belegt | Agent | — |
 | `hfg-karlsruhe-kim` | [KIM — Künstliche Intelligenz und Medienphilosophie](https://hfg-karlsruhe.de/en/archiv/kuenstliche-intelligenz-und-medienphilosophie/) | HfG Karlsruhe (Matteo Pasquinelli) | 2018 | Labor | belegt | Agent | — |
+| `hohl-methodik-2024` | [Methodik als Ersatz für Kreativität?](https://doi.org/10.1007/978-3-658-45253-7) | Michael Hohl | 2024 | Artikel | abgeleitet | Agent | — |
+| `iso-15288-2023` | [ISO/IEC/IEEE 15288:2023 Systems and software engineering — System life cycle processes](https://www.iso.org/standard/81702.html) | ISO, IEC, IEEE | 2023 | Buch | abgeleitet | Agent | — |
+| `kauffman-investigations` | [Investigations](https://global.oup.com/academic/product/investigations-9780195121056) | Stuart A. Kauffman | 2000 | Buch | nicht belegt | Agent | — |
+| `larkin-simon-1987` | [Why a Diagram is (Sometimes) Worth Ten Thousand Words](https://doi.org/10.1016/S0364-0213(87)80026-5) | Jill H. Larkin, Herbert A. Simon | 1987 | Paper | abgeleitet | Agent | — |
+| `mareis-future-2016` | [Design the Future – Mind the Past](https://www.transcript-verlag.de/978-3-8376-3160-9/manifestationen-im-entwurf/) | Claudia Mareis | 2016 | Artikel | abgeleitet | Agent | — |
+| `popp-rationalitaet-2024` | [Methoden in Form bringen. Über die Verbindungen gestalterischer und wissenschaftlicher Rationalität](https://doi.org/10.1007/978-3-658-45253-7) | Judith-Frederike Popp | 2024 | Artikel | abgeleitet | Agent | — |
+| `schoen-1992-kbs` | [Designing as Reflective Conversation with the Materials of a Design Situation (Knowledge-Based Systems)](https://doi.org/10.1016/0950-7051(92)90020-G) | Donald A. Schön | 1992 | Paper | abgeleitet | Agent | — |
+| `schoen-1992-ried` | [Designing as Reflective Conversation with the Materials of a Design Situation (Research in Engineering Design)](https://www.uio.no/studier/emner/matnat/ifi/IN1060/v25/pensum/schon_design-conversation.pdf) | Donald A. Schön | 1992 | Paper | abgeleitet | Agent | — |
+| `schuster-peukert-2024` | [Prototyping – eine Praxis der transdisziplinären Designforschung](https://doi.org/10.1007/978-3-658-45253-7) | Paula L. Schuster, Daniela Peukert | 2024 | Artikel | abgeleitet | Agent | — |
+| `schweppenhaeuser-kultur-2024` | [Designforschung als Kulturwissenschaft](https://doi.org/10.1007/978-3-658-45253-7) | Gerhard Schweppenhäuser | 2024 | Artikel | abgeleitet | Agent | — |
+| `stadlbauer-ki-2025` | [Partizipative Designpraktiken für verkörperte Künstliche Intelligenz](https://doi.org/10.1007/978-3-658-49798-9) | Jana Stadlbauer, Debora Frommeld, Rosan Chow, Karsten Weber | 2025 | Artikel | abgeleitet | Agent | — |
+| `stapenhorst-grids-2016` | [Grids. Projektdokumentationen als Denkinstrument](https://www.transcript-verlag.de/978-3-8376-3160-9/manifestationen-im-entwurf/) | Carolin Stapenhorst | 2016 | Artikel | abgeleitet | Agent | — |
 | `vikus-viewer` | [VIKUS Viewer](https://github.com/cpietsch/vikus-viewer) | Christopher Pietsch, UCLAB | — | Werkzeug | belegt | Agent | `.agents/skills/fachpaket-vermitteln/SKILL.md` |
+| `wendler-modellbegriffe-2016` | [Modellbegriffe als Elemente der Modellierung](https://www.transcript-verlag.de/978-3-8376-3160-9/manifestationen-im-entwurf/) | Reinhard Wendler | 2016 | Artikel | abgeleitet | Agent | — |
+| `witzke-kuratieren-2025` | [Vom Gestalten zum Kuratieren: Autonomie im hybriden Designprozess](https://doi.org/10.1007/978-3-658-49798-9) | Dominik Witzke | 2025 | Artikel | abgeleitet | Agent | — |
 
 ## raum-zeit
 
@@ -136,9 +180,48 @@ Je Feld zuerst die Verweise des Eigentümers (Ausgangspunkte, kein Kanon). Eine 
 
 | ID | Titel | Autor | Jahr | Art | Status | Auswahl | genutzt in |
 |---|---|---|---|---|---|---|---|
+| `dubberly-how-design` | [How Do You Design? A Compendium of Models](https://www.dubberly.com/articles/how-do-you-design.html) | Hugh Dubberly | — | Buch | belegt | Mensch | — |
 | `gerstner` | [Karl Gerstner](https://zkm.de/de/personen/karl-gerstner) | Karl Gerstner | 1930–2017 | Person | belegt | Mensch | `.agents/skills/fachpaket-form/SKILL.md` |
 | `gerstner-1964` | [Programme entwerfen (engl. Designing Programmes)](https://www.lars-mueller-publishers.com/designing-programmes) | Karl Gerstner | 1964 | Buch | belegt | Mensch | `.agents/skills/fachpaket-form/SKILL.md`, `.agents/skills/fachpaket-vermitteln/SKILL.md` |
+| `grabbe-held-episteme-2024` | [Designforschung und Designwissenschaft: Methoden und Theorien gestalterischer Episteme](https://doi.org/10.1007/978-3-658-45253-7) | Lars C. Grabbe, Tobias Held (Hrsg.) | 2024 | Buch | belegt | Mensch | — |
+| `grabbe-ki-2025` | [Designforschung und KI: Ästhetische Transformation im Zeitalter artifizieller Systeme](https://doi.org/10.1007/978-3-658-49798-9) | Lars C. Grabbe (Hrsg.) | 2025 | Buch | belegt | Mensch | — |
+| `held-offenes-design-2026` | [Offenes Design DDR: Prinzipien offener Gestaltung](https://doi.org/10.1007/978-3-658-50880-7) | Tobias Held | 2026 | Buch | belegt | Mensch | — |
+| `manifestationen-entwurf-2016` | [Manifestationen im Entwurf: Design – Architektur – Ingenieurwesen](https://www.transcript-verlag.de/978-3-8376-3160-9/manifestationen-im-entwurf/) | Thomas H. Schmitz, Roger Häußling, Claudia Mareis, Hannah Groninger (Hrsg.) | 2016 | Buch | belegt | Mensch | — |
+| `alexander-1964` | [Notes on the Synthesis of Form](https://archive.org/details/notesonsynthesis00alex) | Christopher Alexander | 1964 | Buch | nicht belegt | Agent | — |
+| `augsten-peukert-2024` | [Designforschung, eine neue Designpraxis?](https://doi.org/10.1007/978-3-658-45253-7) | Andrea Augsten, Daniela Peukert | 2024 | Artikel | abgeleitet | Agent | — |
+| `bauer-ethik-2024` | [Design und Ethik](https://doi.org/10.1007/978-3-658-45253-7) | Christian Bauer | 2024 | Artikel | abgeleitet | Agent | — |
+| `boden-1998` | [Creativity and Artificial Intelligence](https://doi.org/10.1016/S0004-3702(98)00055-1) | Margaret A. Boden | 1998 | Paper | abgeleitet | Agent | — |
+| `bredella-instabilen-2016` | [Manifestationen des Instabilen. Interaktive Environments und die Agency des Materials](https://www.transcript-verlag.de/978-3-8376-3160-9/manifestationen-im-entwurf/) | Nathalie Bredella | 2016 | Artikel | abgeleitet | Agent | — |
+| `bredies-gegenstand-2016` | [Gegenstand und Gebrauch](https://www.transcript-verlag.de/978-3-8376-3160-9/manifestationen-im-entwurf/) | Katharina Bredies | 2016 | Artikel | abgeleitet | Agent | — |
+| `dorst-cross-2001` | [Creativity in the design process: co-evolution of problem–solution](https://doi.org/10.1016/S0142-694X(01)00009-6) | Kees Dorst, Nigel Cross | 2001 | Paper | abgeleitet | Agent | — |
+| `foken-visuell-2024` | [Im Visuellen verstehen. Zur recherchebasierten Gestaltung](https://doi.org/10.1007/978-3-658-45253-7) | Gesa Foken | 2024 | Artikel | abgeleitet | Agent | — |
+| `gero-1990` | [Design Prototypes: A Knowledge Representation Schema for Design](https://doi.org/10.1609/aimag.v11i4.854) | John S. Gero | 1990 | Paper | abgeleitet | Agent | — |
+| `gero-kannengiesser-2004` | [The situated function–behaviour–structure framework](https://doi.org/10.1016/j.destud.2003.10.010) | John S. Gero, Udo Kannengiesser | 2004 | Paper | abgeleitet | Agent | — |
+| `gibson-1979` | [The Ecological Approach to Visual Perception, Kap. The Theory of Affordances](https://www.cs.tufts.edu/comp/150DR/readings/week4/gibson_theory_of_affordances.pdf) | James J. Gibson | 1979 | Buch | abgeleitet | Agent | — |
+| `goldschmidt-1991` | [The Dialectics of Sketching](https://doi.org/10.1080/10400419109534381) | Gabriela Goldschmidt | 1991 | Paper | abgeleitet | Agent | — |
+| `groninger-gestenraeume-2016` | [Gestenräume. Virtuelles Skizzieren, Modellieren und Verhandeln](https://www.transcript-verlag.de/978-3-8376-3160-9/manifestationen-im-entwurf/) | Hannah Groninger | 2016 | Artikel | abgeleitet | Agent | — |
+| `gruenkranz-ki-2025` | [KI als Designmedium? Eine kritische Betrachtung der KI-bedingten Bildgenerierung im Produktdesign](https://doi.org/10.1007/978-3-658-49798-9) | Daniel Grünkranz | 2025 | Artikel | abgeleitet | Agent | — |
+| `haarmann-diagnose-2024` | [Designforschung – Diagnose, Geschichte, Praxis](https://doi.org/10.1007/978-3-658-45253-7) | Anke Haarmann | 2024 | Artikel | abgeleitet | Agent | — |
+| `hasenhuetl-ki-2025` | [Anmerkungen zu KI beim Entwerfen](https://doi.org/10.1007/978-3-658-49798-9) | Gert Hasenhütl, Hans Stefan Moritsch | 2025 | Artikel | abgeleitet | Agent | — |
+| `hatchuel-weil-2009` | [C-K Design Theory: an advanced formulation](https://doi.org/10.1007/s00163-008-0043-4) | Armand Hatchuel, Benoît Weil | 2009 | Paper | abgeleitet | Agent | — |
+| `heijink-windsor-desain-2000` | [Data processing in music performance research: Using structural information to improve score-performance matching](https://www.mcg.uva.nl/mmm-2003/abstracts/mmm-24.html) | H. Heijink, W. L. Windsor, P. Desain | 2000 | Paper | nicht belegt | Agent | — |
+| `held-offenes-prinzip-2026` | [Offenes Design DDR, Kap. 3.8: Offenheit, Individualisierung, Emanzipation und Aneignung](https://doi.org/10.1007/978-3-658-50880-7) | Tobias Held | 2026 | Artikel | abgeleitet | Agent | — |
+| `herlo-teilhabe-2024` | [Design im Kontext sozialer und digitaler Teilhabe](https://doi.org/10.1007/978-3-658-45253-7) | Bianca Herlo | 2024 | Artikel | abgeleitet | Agent | — |
 | `hfg-archiv-ulm` | [HfG-Archiv Ulm](https://hfg-archiv.museumulm.de/en/archival-research-and-service) | Museum Ulm | — | Sammlung | belegt | Agent | — |
+| `hohl-methodik-2024` | [Methodik als Ersatz für Kreativität?](https://doi.org/10.1007/978-3-658-45253-7) | Michael Hohl | 2024 | Artikel | abgeleitet | Agent | — |
+| `iso-15288-2023` | [ISO/IEC/IEEE 15288:2023 Systems and software engineering — System life cycle processes](https://www.iso.org/standard/81702.html) | ISO, IEC, IEEE | 2023 | Buch | abgeleitet | Agent | — |
+| `kauffman-investigations` | [Investigations](https://global.oup.com/academic/product/investigations-9780195121056) | Stuart A. Kauffman | 2000 | Buch | nicht belegt | Agent | — |
+| `larkin-simon-1987` | [Why a Diagram is (Sometimes) Worth Ten Thousand Words](https://doi.org/10.1016/S0364-0213(87)80026-5) | Jill H. Larkin, Herbert A. Simon | 1987 | Paper | abgeleitet | Agent | — |
+| `mareis-future-2016` | [Design the Future – Mind the Past](https://www.transcript-verlag.de/978-3-8376-3160-9/manifestationen-im-entwurf/) | Claudia Mareis | 2016 | Artikel | abgeleitet | Agent | — |
+| `popp-rationalitaet-2024` | [Methoden in Form bringen. Über die Verbindungen gestalterischer und wissenschaftlicher Rationalität](https://doi.org/10.1007/978-3-658-45253-7) | Judith-Frederike Popp | 2024 | Artikel | abgeleitet | Agent | — |
+| `schoen-1992-kbs` | [Designing as Reflective Conversation with the Materials of a Design Situation (Knowledge-Based Systems)](https://doi.org/10.1016/0950-7051(92)90020-G) | Donald A. Schön | 1992 | Paper | abgeleitet | Agent | — |
+| `schoen-1992-ried` | [Designing as Reflective Conversation with the Materials of a Design Situation (Research in Engineering Design)](https://www.uio.no/studier/emner/matnat/ifi/IN1060/v25/pensum/schon_design-conversation.pdf) | Donald A. Schön | 1992 | Paper | abgeleitet | Agent | — |
+| `schuster-peukert-2024` | [Prototyping – eine Praxis der transdisziplinären Designforschung](https://doi.org/10.1007/978-3-658-45253-7) | Paula L. Schuster, Daniela Peukert | 2024 | Artikel | abgeleitet | Agent | — |
+| `schweppenhaeuser-kultur-2024` | [Designforschung als Kulturwissenschaft](https://doi.org/10.1007/978-3-658-45253-7) | Gerhard Schweppenhäuser | 2024 | Artikel | abgeleitet | Agent | — |
+| `stadlbauer-ki-2025` | [Partizipative Designpraktiken für verkörperte Künstliche Intelligenz](https://doi.org/10.1007/978-3-658-49798-9) | Jana Stadlbauer, Debora Frommeld, Rosan Chow, Karsten Weber | 2025 | Artikel | abgeleitet | Agent | — |
+| `stapenhorst-grids-2016` | [Grids. Projektdokumentationen als Denkinstrument](https://www.transcript-verlag.de/978-3-8376-3160-9/manifestationen-im-entwurf/) | Carolin Stapenhorst | 2016 | Artikel | abgeleitet | Agent | — |
+| `wendler-modellbegriffe-2016` | [Modellbegriffe als Elemente der Modellierung](https://www.transcript-verlag.de/978-3-8376-3160-9/manifestationen-im-entwurf/) | Reinhard Wendler | 2016 | Artikel | abgeleitet | Agent | — |
+| `witzke-kuratieren-2025` | [Vom Gestalten zum Kuratieren: Autonomie im hybriden Designprozess](https://doi.org/10.1007/978-3-658-49798-9) | Dominik Witzke | 2025 | Artikel | abgeleitet | Agent | — |
 
 ## labor
 

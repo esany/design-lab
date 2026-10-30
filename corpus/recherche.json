@@ -720,5 +720,583 @@
     "status": "belegt",
     "notiz": "Beschreibt, wie Schriften leserlich dargestellt werden, auch im Verhältnis von Leuchtdichtekontrast und Schriftgröße. Ausgabe 2013-04 zurückgezogen, ersetzt durch DIN 1450:2024-11. Normtext nicht eingesehen.",
     "geprueft": "2026-10-28"
+  },
+  {
+    "id": "hohl-methodik-2024",
+    "titel": "Methodik als Ersatz für Kreativität?",
+    "autor": "Michael Hohl",
+    "jahr": 2024,
+    "art": "Artikel",
+    "url": "https://doi.org/10.1007/978-3-658-45253-7",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "system"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Fachtext an der Stelle gelesen: PDF S. 18–20 / Druck S. 12–14 (Kapitelanfang PDF S. 17 / Druck S. 11); kritisiert „technische Rationalität“ und Top-down-Methodik, fordert situatives Erproben; kein allgemeiner Wirksamkeitsbeweis; nicht das ganze Kapitel gelesen. Lesenotiz: research/2026-10-entwurfsbewegung/chat-ruecksicherung-2026-10-30.md",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-10-30"
+  },
+  {
+    "id": "bredies-gegenstand-2016",
+    "titel": "Gegenstand und Gebrauch",
+    "autor": "Katharina Bredies",
+    "jahr": 2016,
+    "art": "Artikel",
+    "url": "https://www.transcript-verlag.de/978-3-8376-3160-9/manifestationen-im-entwurf/",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "system"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Nur Herausgeberreferat PDF S. 19 / Druck S. 18–19 und Inhaltsverzeichnis (Kapitel Druck S. 217 ff.) gesehen; ORIGINALKAPITEL NICHT gelesen; Lesenotiz: research/2026-10-entwurfsbewegung/fuenf-buecher-wissenslandkarte-handoff-claude.md; exakter Kapitelnachweis erst bei Originallektüre.",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-10-30"
+  },
+  {
+    "id": "mareis-future-2016",
+    "titel": "Design the Future – Mind the Past",
+    "autor": "Claudia Mareis",
+    "jahr": 2016,
+    "art": "Artikel",
+    "url": "https://www.transcript-verlag.de/978-3-8376-3160-9/manifestationen-im-entwurf/",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "system"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Nur Herausgeberreferat PDF S. 13–14 und Inhaltsverzeichnis (Kapitel Druck S. 95 ff.), Argument des Originalkapitels ungeprüft; Lesenotiz: research/2026-10-entwurfsbewegung/fuenf-buecher-wissenslandkarte-handoff-claude.md; exakter Kapitelnachweis erst bei Originallektüre.",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-10-30"
+  },
+  {
+    "id": "stapenhorst-grids-2016",
+    "titel": "Grids. Projektdokumentationen als Denkinstrument",
+    "autor": "Carolin Stapenhorst",
+    "jahr": 2016,
+    "art": "Artikel",
+    "url": "https://www.transcript-verlag.de/978-3-8376-3160-9/manifestationen-im-entwurf/",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "system"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Nur Herausgeberreferat PDF S. 17–18 und Inhaltsverzeichnis (Kapitel Druck S. 185 ff.), Originalkapitel noch nicht gelesen; Lesenotiz: research/2026-10-entwurfsbewegung/fuenf-buecher-wissenslandkarte-handoff-claude.md; exakter Kapitelnachweis erst bei Originallektüre.",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-10-30"
+  },
+  {
+    "id": "wendler-modellbegriffe-2016",
+    "titel": "Modellbegriffe als Elemente der Modellierung",
+    "autor": "Reinhard Wendler",
+    "jahr": 2016,
+    "art": "Artikel",
+    "url": "https://www.transcript-verlag.de/978-3-8376-3160-9/manifestationen-im-entwurf/",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "system"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Nur Inhaltsverzeichnis PDF S. 7 / Kap. Druck S. 271 ff. und Einleitung, Originalkapitel nicht geprüft; Lesenotiz: research/2026-10-entwurfsbewegung/fuenf-buecher-wissenslandkarte-handoff-claude.md; exakter Kapitelnachweis erst bei Originallektüre.",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-10-30"
+  },
+  {
+    "id": "groninger-gestenraeume-2016",
+    "titel": "Gestenräume. Virtuelles Skizzieren, Modellieren und Verhandeln",
+    "autor": "Hannah Groninger",
+    "jahr": 2016,
+    "art": "Artikel",
+    "url": "https://www.transcript-verlag.de/978-3-8376-3160-9/manifestationen-im-entwurf/",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "system"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Nur Herausgeberreferat PDF S. 19–20 und Inhaltsverzeichnis (Kapitel Druck S. 239 ff.), Originalkapitel nicht voll gelesen; Lesenotiz: research/2026-10-entwurfsbewegung/fuenf-buecher-wissenslandkarte-handoff-claude.md; exakter Kapitelnachweis erst bei Originallektüre.",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-10-30"
+  },
+  {
+    "id": "bredella-instabilen-2016",
+    "titel": "Manifestationen des Instabilen. Interaktive Environments und die Agency des Materials",
+    "autor": "Nathalie Bredella",
+    "jahr": 2016,
+    "art": "Artikel",
+    "url": "https://www.transcript-verlag.de/978-3-8376-3160-9/manifestationen-im-entwurf/",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "system"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Nur Herausgeberreferat PDF S. 16–17, Kapitel Druck S. 163 ff.; Originalkapitel ungeprüft; Lesenotiz: research/2026-10-entwurfsbewegung/fuenf-buecher-wissenslandkarte-handoff-claude.md; exakter Kapitelnachweis erst bei Originallektüre.",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-10-30"
+  },
+  {
+    "id": "held-offenes-prinzip-2026",
+    "titel": "Offenes Design DDR, Kap. 3.8: Offenheit, Individualisierung, Emanzipation und Aneignung",
+    "autor": "Tobias Held",
+    "jahr": 2026,
+    "art": "Artikel",
+    "url": "https://doi.org/10.1007/978-3-658-50880-7",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "system"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Monografie F2: Kap. 3.8 Druck S. 150 ff. im Inhaltsverzeichnis lokalisiert; Einleitung Druck S. 4–7 zu Aneignung gelesen; Kapitel selbst nicht als vollständig gelesen bezeichnen; Lesenotiz: research/2026-10-entwurfsbewegung/fuenf-buecher-wissenslandkarte-handoff-claude.md; exakter Kapitelnachweis erst bei Originallektüre.",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-10-30"
+  },
+  {
+    "id": "witzke-kuratieren-2025",
+    "titel": "Vom Gestalten zum Kuratieren: Autonomie im hybriden Designprozess",
+    "autor": "Dominik Witzke",
+    "jahr": 2025,
+    "art": "Artikel",
+    "url": "https://doi.org/10.1007/978-3-658-49798-9",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "system"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Nur Herausgeberreferat F1 PDF S. 11–12 / Druck S. 4–5; Kapitel Druck S. 87 ff. nicht vollständig gelesen; Lesenotiz: research/2026-10-entwurfsbewegung/fuenf-buecher-wissenslandkarte-handoff-claude.md; exakter Kapitelnachweis erst bei Originallektüre.",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-10-30"
+  },
+  {
+    "id": "hasenhuetl-ki-2025",
+    "titel": "Anmerkungen zu KI beim Entwerfen",
+    "autor": "Gert Hasenhütl, Hans Stefan Moritsch",
+    "jahr": 2025,
+    "art": "Artikel",
+    "url": "https://doi.org/10.1007/978-3-658-49798-9",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "system"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Nur Herausgeberreferat F1 PDF S. 13–14 / Druck S. 6–7, qualitative Studie/ComfyUI dort beschrieben; Originalkapitel Druck S. 139 ff. nicht ausgewertet; Lesenotiz: research/2026-10-entwurfsbewegung/fuenf-buecher-wissenslandkarte-handoff-claude.md; exakter Kapitelnachweis erst bei Originallektüre.",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-10-30"
+  },
+  {
+    "id": "gruenkranz-ki-2025",
+    "titel": "KI als Designmedium? Eine kritische Betrachtung der KI-bedingten Bildgenerierung im Produktdesign",
+    "autor": "Daniel Grünkranz",
+    "jahr": 2025,
+    "art": "Artikel",
+    "url": "https://doi.org/10.1007/978-3-658-49798-9",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "system"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Nur Herausgeberreferat F1 PDF S. 13–14 / Druck S. 7: Steuerbarkeit, Reproduzierbarkeit, Semantik; Originalkapitel Druck S. 159 ff. nicht geprüft; Lesenotiz: research/2026-10-entwurfsbewegung/fuenf-buecher-wissenslandkarte-handoff-claude.md; exakter Kapitelnachweis erst bei Originallektüre.",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-10-30"
+  },
+  {
+    "id": "augsten-peukert-2024",
+    "titel": "Designforschung, eine neue Designpraxis?",
+    "autor": "Andrea Augsten, Daniela Peukert",
+    "jahr": 2024,
+    "art": "Artikel",
+    "url": "https://doi.org/10.1007/978-3-658-45253-7",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "system"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Nur Herausgeberreferat F3 PDF S. 10–11 / Druck S. 3–4 und Inhaltsverzeichnis, Kapitel Druck S. 33 ff. nicht gelesen; Lesenotiz: research/2026-10-entwurfsbewegung/fuenf-buecher-wissenslandkarte-handoff-claude.md; exakter Kapitelnachweis erst bei Originallektüre.",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-10-30"
+  },
+  {
+    "id": "schuster-peukert-2024",
+    "titel": "Prototyping – eine Praxis der transdisziplinären Designforschung",
+    "autor": "Paula L. Schuster, Daniela Peukert",
+    "jahr": 2024,
+    "art": "Artikel",
+    "url": "https://doi.org/10.1007/978-3-658-45253-7",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "system"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Nur Herausgeberreferat F3 PDF S. 12 / Druck S. 5; Kapitel Druck S. 127 ff. ungeprüft; Lesenotiz: research/2026-10-entwurfsbewegung/fuenf-buecher-wissenslandkarte-handoff-claude.md; exakter Kapitelnachweis erst bei Originallektüre.",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-10-30"
+  },
+  {
+    "id": "herlo-teilhabe-2024",
+    "titel": "Design im Kontext sozialer und digitaler Teilhabe",
+    "autor": "Bianca Herlo",
+    "jahr": 2024,
+    "art": "Artikel",
+    "url": "https://doi.org/10.1007/978-3-658-45253-7",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "system"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Nur Herausgeberreferat F3 PDF S. 14 / Druck S. 7; Kapitel Druck S. 273 ff. nicht gelesen; Lesenotiz: research/2026-10-entwurfsbewegung/fuenf-buecher-wissenslandkarte-handoff-claude.md; exakter Kapitelnachweis erst bei Originallektüre.",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-10-30"
+  },
+  {
+    "id": "stadlbauer-ki-2025",
+    "titel": "Partizipative Designpraktiken für verkörperte Künstliche Intelligenz",
+    "autor": "Jana Stadlbauer, Debora Frommeld, Rosan Chow, Karsten Weber",
+    "jahr": 2025,
+    "art": "Artikel",
+    "url": "https://doi.org/10.1007/978-3-658-49798-9",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "system"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Nur Herausgeberreferat F1 PDF S. 12–13 / Druck S. 5–6; Kapitel Druck S. 123 ff. ungeprüft; Lesenotiz: research/2026-10-entwurfsbewegung/fuenf-buecher-wissenslandkarte-handoff-claude.md; exakter Kapitelnachweis erst bei Originallektüre.",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-10-30"
+  },
+  {
+    "id": "haarmann-diagnose-2024",
+    "titel": "Designforschung – Diagnose, Geschichte, Praxis",
+    "autor": "Anke Haarmann",
+    "jahr": 2024,
+    "art": "Artikel",
+    "url": "https://doi.org/10.1007/978-3-658-45253-7",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "system"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Nur Herausgeberreferat F3 PDF S. 11 / Druck S. 4 und Inhaltsverzeichnis; Kapitel Druck S. 67 ff. ungeprüft; Lesenotiz: research/2026-10-entwurfsbewegung/fuenf-buecher-wissenslandkarte-handoff-claude.md; exakter Kapitelnachweis erst bei Originallektüre.",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-10-30"
+  },
+  {
+    "id": "foken-visuell-2024",
+    "titel": "Im Visuellen verstehen. Zur recherchebasierten Gestaltung",
+    "autor": "Gesa Foken",
+    "jahr": 2024,
+    "art": "Artikel",
+    "url": "https://doi.org/10.1007/978-3-658-45253-7",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "system"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Nur Herausgeberreferat F3 PDF S. 12 / Druck S. 5; Kapitel Druck S. 105 ff. ungeprüft; Lesenotiz: research/2026-10-entwurfsbewegung/fuenf-buecher-wissenslandkarte-handoff-claude.md; exakter Kapitelnachweis erst bei Originallektüre.",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-10-30"
+  },
+  {
+    "id": "popp-rationalitaet-2024",
+    "titel": "Methoden in Form bringen. Über die Verbindungen gestalterischer und wissenschaftlicher Rationalität",
+    "autor": "Judith-Frederike Popp",
+    "jahr": 2024,
+    "art": "Artikel",
+    "url": "https://doi.org/10.1007/978-3-658-45253-7",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "system"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Nur Herausgeberreferat F3 PDF S. 13 / Druck S. 6; Kapitel Druck S. 195 ff. ungeprüft; Lesenotiz: research/2026-10-entwurfsbewegung/fuenf-buecher-wissenslandkarte-handoff-claude.md; exakter Kapitelnachweis erst bei Originallektüre.",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-10-30"
+  },
+  {
+    "id": "schweppenhaeuser-kultur-2024",
+    "titel": "Designforschung als Kulturwissenschaft",
+    "autor": "Gerhard Schweppenhäuser",
+    "jahr": 2024,
+    "art": "Artikel",
+    "url": "https://doi.org/10.1007/978-3-658-45253-7",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "system"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Nur Herausgeberreferat F3 PDF S. 14 / Druck S. 7; Kapitel Druck S. 235 ff. ungeprüft; Lesenotiz: research/2026-10-entwurfsbewegung/fuenf-buecher-wissenslandkarte-handoff-claude.md; exakter Kapitelnachweis erst bei Originallektüre.",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-10-30"
+  },
+  {
+    "id": "bauer-ethik-2024",
+    "titel": "Design und Ethik",
+    "autor": "Christian Bauer",
+    "jahr": 2024,
+    "art": "Artikel",
+    "url": "https://doi.org/10.1007/978-3-658-45253-7",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "system"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Nur Herausgeberreferat F3 PDF S. 14 / Druck S. 7; Kapitel Druck S. 257 ff. ungeprüft; Lesenotiz: research/2026-10-entwurfsbewegung/fuenf-buecher-wissenslandkarte-handoff-claude.md; exakter Kapitelnachweis erst bei Originallektüre.",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-10-30"
+  },
+  {
+    "id": "dorst-cross-2001",
+    "titel": "Creativity in the design process: co-evolution of problem–solution",
+    "autor": "Kees Dorst, Nigel Cross",
+    "jahr": 2001,
+    "art": "Paper",
+    "url": "https://doi.org/10.1016/S0142-694X(01)00009-6",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "system"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Verlagsabstract/Artikelabschnitt gesichtet; Kurzbeleg zur Koevolution; keine Volltextvalidierung; research/2026-10-entwurfsbewegung/fehleranalyse-und-neupruefung.md",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-10-30"
+  },
+  {
+    "id": "schoen-1992-ried",
+    "titel": "Designing as Reflective Conversation with the Materials of a Design Situation (Research in Engineering Design)",
+    "autor": "Donald A. Schön",
+    "jahr": 1992,
+    "art": "Paper",
+    "url": "https://www.uio.no/studier/emner/matnat/ifi/IN1060/v25/pensum/schon_design-conversation.pdf",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "system"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Zwei echte Publikationen von 1992: hier Research in Engineering Design 3, S. 131–147; Originaltitelblatt und Auszüge geprüft, nicht ganzer Text; textliche Gleichheit mit KBS ungeprüft; research/2026-10-entwurfsbewegung/primaerquellen-dynamik-und-moeglichkeitsraeume.md",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-10-30"
+  },
+  {
+    "id": "schoen-1992-kbs",
+    "titel": "Designing as Reflective Conversation with the Materials of a Design Situation (Knowledge-Based Systems)",
+    "autor": "Donald A. Schön",
+    "jahr": 1992,
+    "art": "Paper",
+    "url": "https://doi.org/10.1016/0950-7051(92)90020-G",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "system"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Bibliografie im Heftinhalt: Knowledge-Based Systems 5(1), S. 3–14; Abstract / Metadaten gesehen, kein Volltext der KBS-Fassung verglichen; Gleichheit mit Research in Engineering Design offen; research/2026-10-entwurfsbewegung/fehleranalyse-und-neupruefung.md",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-10-30"
+  },
+  {
+    "id": "goldschmidt-1991",
+    "titel": "The Dialectics of Sketching",
+    "autor": "Gabriela Goldschmidt",
+    "jahr": 1991,
+    "art": "Paper",
+    "url": "https://doi.org/10.1080/10400419109534381",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "system"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Originalartikel auszugsweise geprüft; seeing as / seeing that, nicht jede digitale Formstudie; research/2026-10-entwurfsbewegung/primaerquellen-dynamik-und-moeglichkeitsraeume.md",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-10-30"
+  },
+  {
+    "id": "hatchuel-weil-2009",
+    "titel": "C-K Design Theory: an advanced formulation",
+    "autor": "Armand Hatchuel, Benoît Weil",
+    "jahr": 2009,
+    "art": "Paper",
+    "url": "https://doi.org/10.1007/s00163-008-0043-4",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "system"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Verlagsabstract gesichtet (Konzept-/Wissensraum), Volltext nicht ausgewertet; research/2026-10-entwurfsbewegung/primaerquellen-dynamik-und-moeglichkeitsraeume.md",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-10-30"
+  },
+  {
+    "id": "boden-1998",
+    "titel": "Creativity and Artificial Intelligence",
+    "autor": "Margaret A. Boden",
+    "jahr": 1998,
+    "art": "Paper",
+    "url": "https://doi.org/10.1016/S0004-3702(98)00055-1",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "system"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Verlagsabstract geprüft; Variation/Exploration/Transformation als Autorenunterscheidung nur im Abstract belegt; research/2026-10-entwurfsbewegung/primaerquellen-dynamik-und-moeglichkeitsraeume.md",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-10-30"
+  },
+  {
+    "id": "gero-kannengiesser-2004",
+    "titel": "The situated function–behaviour–structure framework",
+    "autor": "John S. Gero, Udo Kannengiesser",
+    "jahr": 2004,
+    "art": "Paper",
+    "url": "https://doi.org/10.1016/j.destud.2003.10.010",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "system"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Verlagsabstract, kein Volltext; situierter Kontext im Entwurf; research/2026-10-entwurfsbewegung/primaerquellen-dynamik-und-moeglichkeitsraeume.md",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-10-30"
+  },
+  {
+    "id": "gero-1990",
+    "titel": "Design Prototypes: A Knowledge Representation Schema for Design",
+    "autor": "John S. Gero",
+    "jahr": 1990,
+    "art": "Paper",
+    "url": "https://doi.org/10.1609/aimag.v11i4.854",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "system"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Verlagsabstract zu routine/innovative/creative design, kein Volltext; research/2026-10-entwurfsbewegung/primaerquellen-dynamik-und-moeglichkeitsraeume.md",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-10-30"
+  },
+  {
+    "id": "larkin-simon-1987",
+    "titel": "Why a Diagram is (Sometimes) Worth Ten Thousand Words",
+    "autor": "Jill H. Larkin, Herbert A. Simon",
+    "jahr": 1987,
+    "art": "Paper",
+    "url": "https://doi.org/10.1016/S0364-0213(87)80026-5",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "system"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Cognitive Science 11, S. 65–99 (Kopfzeile des Originals); Verlagsabstract; Repräsentation/Suche, Volltext nicht gesichert; research/2026-10-entwurfsbewegung/primaerquellen-dynamik-und-moeglichkeitsraeume.md",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-10-30"
+  },
+  {
+    "id": "gibson-1979",
+    "titel": "The Ecological Approach to Visual Perception, Kap. The Theory of Affordances",
+    "autor": "James J. Gibson",
+    "jahr": 1979,
+    "art": "Buch",
+    "url": "https://www.cs.tufts.edu/comp/150DR/readings/week4/gibson_theory_of_affordances.pdf",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "system"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Kapiteltranskript auszugsweise gelesen, Komplementarität von Lebewesen und Umwelt; Buchvolltext nicht; research/2026-10-entwurfsbewegung/fehleranalyse-und-neupruefung.md",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-10-30"
+  },
+  {
+    "id": "alexander-1964",
+    "titel": "Notes on the Synthesis of Form",
+    "autor": "Christopher Alexander",
+    "jahr": 1964,
+    "art": "Buch",
+    "url": "https://archive.org/details/notesonsynthesis00alex",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "system"
+    ],
+    "status": "nicht belegt",
+    "notiz": "Über Dubberly sekundär rezipiert; altes R4-Zitat trägt Kontext/Anpassung nicht; Primärstelle der Aussage ungeprüft; research/2026-10-entwurfsbewegung/fehleranalyse-und-neupruefung.md",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-10-30"
+  },
+  {
+    "id": "iso-15288-2023",
+    "titel": "ISO/IEC/IEEE 15288:2023 Systems and software engineering — System life cycle processes",
+    "autor": "ISO, IEC, IEEE",
+    "jahr": 2023,
+    "art": "Buch",
+    "url": "https://www.iso.org/standard/81702.html",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "system"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Normangabe/Katalog; Volltext der Norm nicht gelesen; Begriffspaar Entwicklung/Nutzung nicht als empirischer Entwurfsnachweis ausgeben; research/2026-10-entwurfsbewegung/zwischenstand.md",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-10-30"
+  },
+  {
+    "id": "heijink-windsor-desain-2000",
+    "titel": "Data processing in music performance research: Using structural information to improve score-performance matching",
+    "autor": "H. Heijink, W. L. Windsor, P. Desain",
+    "jahr": 2000,
+    "art": "Paper",
+    "url": "https://www.mcg.uva.nl/mmm-2003/abstracts/mmm-24.html",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "system"
+    ],
+    "status": "nicht belegt",
+    "notiz": "Behavior Research Methods, Instruments & Computers (2000), S. 546–554; Identität am Abstract geprüft (Claude, 30.10.): „scores are frequently underspecified“. Frühere R7-Belegverwendung ZURÜCKGEZOGEN: Das Thema (Zuordnung von Aufführungsdaten zur Partitur) trägt den theoretischen Vergleich Partitur/Interpretation nicht; research/2026-10-entwurfsbewegung/fehleranalyse-und-neupruefung.md",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-10-30"
+  },
+  {
+    "id": "kauffman-investigations",
+    "titel": "Investigations",
+    "autor": "Stuart A. Kauffman",
+    "jahr": 2000,
+    "art": "Buch",
+    "url": "https://global.oup.com/academic/product/investigations-9780195121056",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "erkennen",
+      "system"
+    ],
+    "status": "nicht belegt",
+    "notiz": "Früheres R6-Direktzitat NICHT nachgewiesen; kein verifizierter Wortlaut, kein Volltext gelesen; research/2026-10-entwurfsbewegung/fehleranalyse-und-neupruefung.md",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-10-30"
   }
 ]
