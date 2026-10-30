@@ -23,3 +23,5 @@ Dokumentationsverzeichnis braucht.
 - Hängt an: #61 und #84 (docs-Frage) warten auf #49.
 - Material: `research/2026-10-modi-und-dokumentation/befund.md` (drei Perspektiven als Arbeitsannahme, nicht geprüft).
 </details>
+
+**Wissensübergabe für Claude (30.10.2026):** `research/2026-10-entwurfsbewegung/fuenf-buecher-wissenslandkarte-handoff-claude.md` erschließt die fünf PDF-Werke über die unmittelbaren Fragen #49 hinaus in acht Themenfeldern, sechs Erweiterungsrichtungen, Kontrastfragen und einem Quellen-Prüfauftrag. Auftrag #49 bleibt unverändert; PDF-Volltexte nicht im öffentlichen Repo. Claude soll die Originalkapitel selbst gegenlesen und darf die Erstaufnahme nicht als wissenschaftliche Abnahme behandeln.
