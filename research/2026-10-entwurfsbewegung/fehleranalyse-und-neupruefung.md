@@ -15,7 +15,7 @@
 | „fünf Disziplinen“ einschließlich Architektur | Klassifikation behauptet, nicht begründet | **nicht belegt**, Architektur als Gestaltung benachbart, nicht als eindeutig externe Disziplin gezählt |
 | „transdisziplinär“ aus bloßem Einbezug der Eigentümer-Stimme | Erfahrungswissen als Forschungsbeteiligung überinterpretiert | **nicht belegt** als methodisch durchgeführte transdisziplinäre Forschung |
 
-**Fehlender Mechanismus:** Der Prüfprozess testete häufig „Zitat gefunden?“ statt „trägt exakt diese Behauptung?“. Er ließ einen Quellenstatus ohne Nachweis der tatsächlichen Lektüre und der Textreichweite zu. Quellenwahl erfolgte teilweise nach Passung zu einer schon formulierten Synthese. Der formal richtige Status **belegt** wurde damit zu früh vergeben.
+**Fehlender Mechanismus:** Der Prüfprozess testete häufig „Zitat gefunden?“ statt „trägt exakt diese Behauptung?“. Er ließ einen Quellenstatus ohne Nachweis der tatsächlichen Lektüre und der Textreichweite zu. Quellenwahl erfolgte teilweise nach Passung zu einer schon formulierten historischen privaten Fall. Der formal richtige Status **belegt** wurde damit zu früh vergeben.
 
 ## B. Wissenschaftlicher Prüfablauf: hier testweise angewandt, **kein beschlossener Skill**
 
