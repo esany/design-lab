@@ -14,6 +14,7 @@ import { leseKopf, aktualisiereStand, pruefeLaenge } from "./gitter.mjs";
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const check = process.argv.includes("--check");
 const errors = [];
+const warnings = [];
 const outputs = new Map();
 
 // Die Startdatei wird in jeder Sitzung geladen; eine Überschreitung ist ein Fehler.
@@ -280,7 +281,7 @@ const standOriginal = readFileSync(join(root, "stand.md"), "utf8");
 try {
   const standNeu = aktualisiereStand(standOriginal, themen);
   outputs.set("stand.md", standNeu);
-  errors.push(...pruefeLaenge(standNeu, themen));
+  warnings.push(...pruefeLaenge(standNeu, themen));
 } catch (e) { errors.push(e.message); }
 
 // ---------- Schreiben oder prüfen ----------
@@ -293,6 +294,7 @@ for (const [rel, content] of outputs) {
   else writeFileSync(p, content);
 }
 
+if (warnings.length) console.warn(warnings.join("\n"));
 if (errors.length) {
   console.error("✗ " + errors.length + " Problem(e):\n  - " + errors.join("\n  - "));
   process.exit(1);

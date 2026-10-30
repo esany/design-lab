@@ -27,10 +27,10 @@ export function aktualisiereStand(stand, themen) {
   return stand.replace(marker, themenBlock(themen));
 }
 export function pruefeLaenge(stand, themen, maxStand = MAX_STAND, maxMerkzettel = MAX_MERKZETTEL) {
-  const errors = [];
-  if ([...stand].length > maxStand) errors.push(`stand.md: mehr als ${maxStand} Zeichen`);
-  for (const t of themen) if ([...t.body].length > maxMerkzettel) errors.push(`anschluss/${t.datei}: mehr als ${maxMerkzettel} Zeichen ohne Kopf`);
-  return errors;
+  const warnungen = [];
+  if ([...stand].length > maxStand) warnungen.push(`WARNUNG: stand.md: mehr als ${maxStand} Zeichen`);
+  for (const t of themen) if ([...t.body].length > maxMerkzettel) warnungen.push(`WARNUNG: anschluss/${t.datei}: mehr als ${maxMerkzettel} Zeichen ohne Kopf`);
+  return warnungen;
 }
 export function pruefeGitHub(themen, issues, isPR, dateien, labels) {
   const errors = [];

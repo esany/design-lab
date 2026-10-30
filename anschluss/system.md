@@ -18,3 +18,7 @@ stehen im [Verlauf](../stand-verlauf.md).
 ## Audit paleo-type · #112 (30.10.2026)
 
 21 Musterkarten, zehn gezielt ausgewählte Originalprüfungen und ein Schichteninventar stehen unter [den paleo-type-Befunden](../research/2026-10-audit-paleo-type/befunde.md). Die private Quelle wurde nur gelesen; öffentlich sind ausschließlich abstrahierte Muster und Pfadverweise. **Geprüft (Claude, 30.10.):** Acht der zehn Belege stimmen; zwei Karten waren zu hart und sind berichtigt ([Gegenprüfung](../research/2026-10-audit-paleo-type/pruefung.md)). Kern: Enge Prüfungen halten, was sie prüfen; ein bestandener Nachtest schützt nicht vor dem verwandten nächsten Fehler. **Offen beim Eigentümer:** die drei Fragen in den Befunden. Keine Regel oder Maßnahme beschlossen.
+
+## #116 · Messen und warnen (30.10.2026)
+
+Im Branch `lab/messen-und-warnen` umgesetzt, zur unabhängigen Prüfung an Claude: Längengrenzen warnen, das CI misst GitHub-Label-Ereignisse `eingriff` und Start-Lesekosten, der Neustart-Prüffall fragt nach dem verbleibenden zweiten Teil, und PRs trennen Build, frischen Kontext und tatsächliches Ergebnis. Ein grüner Build ist keine fachliche Abnahme. Offen: eigenständige frische Erprobung des Neustart-Falls und Anlegen des GitHub-Labels `eingriff` durch einen Zugang mit Label-Verwaltung.
