@@ -33,6 +33,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Lokale Ausführung ohne Token gegenprüfen
+        env:
+          GITHUB_TOKEN: ''
+        run: node tools/messwerte.mjs
       - name: Messwerte je PR ausgeben
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
