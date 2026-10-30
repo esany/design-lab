@@ -4,7 +4,11 @@
 
 ## Was wurde erzeugt?
 
-## Was wurde geprüft — und wie?
+## Abnahme in drei Ebenen
+
+- **Build (Prüfungen):** <!-- Welche Prüfungen sind grün/rot/nicht ausgeführt? Mit Beleg. -->
+- **Frischer Kontext:** <!-- Getestet / nicht getestet; welches Modell, welcher Prüffall? -->
+- **Ergebnis:** <!-- Was ist tatsächlich erreicht, was bleibt offen? Keine Gleichsetzung mit grünem Build. -->
 
 <!-- Screenshot bei visuellen Ergebnissen. Ehrlich: auch, was NICHT geprüft wurde. -->
 
