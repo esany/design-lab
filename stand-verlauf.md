@@ -6,6 +6,7 @@
 
 | Datum | Was | Warum | Rückgängig |
 |---|---|---|---|
+| 2026-10-30 | **Neues Thema „Wissen erschließen · Bibliothekar“ (Claude):** Befund mit Optionen in `research/2026-10-wissensbestand/befund.md`, Merkzettel `anschluss/wissen.md`; Prüfung Schön 1992 (zwei Fassungen, beide echt) | Ihr Bedarf im Chat (30.10.); 0024 | „Thema Wissen rückgängig“ (PR zurücknehmen) |
 | 2026-10-30 | **Prüfung #110 und #118 (Claude):** Neustart-Protokoll nachgeprüft (vier Fälle nicht getestet, Konflikt mit `main`); #118 geprüft, `\n` im Prüffall berichtigt, Label `eingriff` angelegt, übernommen; Merkzettel System fortgeschrieben | Abnahme durch anderes Modell (#109, #116) | Kopf und Abschnitte zurücksetzen; Label löschen |
 | 2026-10-30 | **#116 Messen und warnen:** Längengrenzen als Warnungen mit Gegenfällen, Eingriffe/Lesekosten im PR-CI, Neustart-Folgeauftrag und Abnahme in drei Ebenen | A17/A33/A34: Abweichungen sichtbar halten, Teil-PASS nicht mit Gesamtergebnis verwechseln | „Messen und warnen rückgängig“ (PR zu #116 revertieren) |
 | 2026-10-30 | **Umbauplan: Gefahren und Korrektur** (`research/2026-10-umbau/plan.md` § 6): Regeln in drei Klassen (fachlich bleibt), Zeichengrenzen als Warnung vorgeschlagen, neuer Strang G1–G4 für die Gestaltungsarbeit | Selbsteinschätzung paleo-type; Ihr Hinweis | Abschnitt entfernen |
