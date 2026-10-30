@@ -59,7 +59,7 @@ Die Kapitel und Seiten werden nach **PDF-Position** und bei abweichender Paginie
 
 **K5 Geschichte ↔ Zukunft (abgeleitet):** F4 Mareis (Herausgeberreferat) stellt die Historizität gestalterischer Denkmöglichkeiten heraus. **Gegenfrage:** Wie prägen tradierte Modelle und Begriffe den künftigen Entwurf – auch wenn sie unbemerkt in KI-Assistenten gelangen?
 
-**K6 Prozessmodell ↔ wirklicher Entwurfsverlauf (belegt auf F5-Ebene, Übertragung abgeleitet):** F5 unterscheidet explizit die Modellbeschreibung von der Handlung. Bei `Synthese` ist ein Prozessmodell daher **nicht automatisch** Beleg seiner tatsächlichen dynamischen Praxis; dazu braucht es historische Varianten und Fallprotokolle. Das private Repo darf nicht öffentlich ausgeschrieben werden.
+**K6 Prozessmodell ↔ wirklicher Entwurfsverlauf (belegt auf F5-Ebene, Übertragung abgeleitet):** F5 unterscheidet explizit die Modellbeschreibung von der Handlung. Bei einem getrennten privaten Forschungsfall ist ein Prozessmodell daher **nicht automatisch** Beleg seiner tatsächlichen dynamischen Praxis; dazu braucht es historische Varianten und Fallprotokolle. Das private Repo darf nicht öffentlich ausgeschrieben werden.
 
 ## 5. Dreifache wissensbezogene Unterscheidung – Arbeitshypothese
 
@@ -85,7 +85,7 @@ Die Kapitel und Seiten werden nach **PDF-Position** und bei abweichender Paginie
 2. Zuerst mindestens diese Originalkapitel: **Bredies** (F4 Druck S. 217 ff.), **Mareis** (F4 S. 95 ff.), **Stapenhorst** (F4 S. 185 ff.), **Hohl** (F3 S. 11 ff.), **Held** (F2 Kap. 3.8 S. 150 ff.), **Hasenhütl/Moritsch und Grünkranz** (F1 S. 139/159 ff.).
 3. **Zwei Reviews unabhängig:** (a) bibliografisch/wörtlich und (b) Aussage-zu-Kontext-Deckung einschließlich Gegenbelegen. **Beispiel für bereits entdeckten Fehler:** Schön 1992 war zuvor falsch bibliografiert und wurde auf dem Branch berichtigt.
 4. **Breite erhalten:** Aus den acht Feldern keine monolithische „Lehre des Labors“ bauen. Widersprüche der Autor*innen explizit, keine falsche Quellenübereinstimmung.
-5. **System- und Werkmaßstäbe unterscheiden:** Keine Status-/Reifevorgabe des fertig genutzten Produkts auf die Forschung im Aufbau übertragen. Historisches `Synthese`-Material aus dem privaten Repo kann als Fall dienen, aber ohne Übertragung von geschützten oder privaten Originaltexten ins öffentliche Labor.
+5. **System- und Werkmaßstäbe unterscheiden:** Keine Status-/Reifevorgabe des fertig genutzten Produkts auf die Forschung im Aufbau übertragen. Historisches einem getrennten privaten Forschungsfall-Material aus dem privaten Repo kann als Fall dienen, aber ohne Übertragung von geschützten oder privaten Originaltexten ins öffentliche Labor.
 6. **Nicht verifiziert:** vollständige Buchlektüre, wissenschaftliche Vollständigkeit der Literatursuche, Wirksamkeit von KI-Assistenz, fünf externe Disziplinen, unabhängige Quellenabnahme und Build. Ein erneuter Reviewer darf keine Abnahme aus dieser Übersicht ableiten.
 
 **Ablage und Fortsetzung:** Dieselbe Branchspur `lab/entwurfsbewegung`, PR #93, Issue #49. Eigentümer hat breite wissensorientierte Einordnung ausdrücklich gewünscht; *Entscheidungen* über Themen, Skills oder Laboraufbau verbleiben bei ihm. Kein Merge ohne Gegenprüfung.
