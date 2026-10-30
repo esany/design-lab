@@ -78,6 +78,26 @@ Lesen großer Mengen im eigenen Kontext, nur wenn Astra nicht passt.
 5. **Widerspruchspflicht des Orchestrators:** Kommt eine Regel als Antwort auf einen Vorfall, schlägt
    Claude zuerst die Prüfung vor, die ihn abgefangen hätte.
 
+## 6 · Gefahren und Korrektur (30.10., nach der Selbsteinschätzung von paleo-type)
+
+Leitsatz, übertragen: **Das gestalterische und fachliche Urteil bleibt beweglich; Verwaltungs- und Herkunftsarbeit wird verlässlich automatisiert.** Nicht das Fach abrüsten, sondern es von Verwaltung entlasten.
+
+| Gefahr | Wo im Labor | Korrektur |
+|---|---|---|
+| **Abrüsten statt entlasten:** fachliche Unterscheidungen als Ballast behandelt | U3 (`AGENTS.md` 213 → 27 Zeilen); U4 | #110 (Neustart-Test) hat Vorrang vor weiterem Kürzen. U4 ordnet jede Regel in **drei** Klassen: *fachlich* (bleibt, z. B. Belegpflicht, Wahrnehmungssituation, Werk/System, Manifest) · *technisch prüfbar* (→ Prüfung) · *Ritual* (→ Archiv). Gestrichen wird nur die dritte. |
+| **Starre Grenzen erzwingen Kürzung** | Build: Merkzettel > 3.000, `stand.md` > 4.000 Zeichen = Fehler | Zeichengrenzen werden **Warnungen**, keine Fehler. Fehler bleiben nur, wo Abweichung sicher falsch ist (Hand-Edit erzeugter Blöcke, geschlossenes Issue als offen geführt). |
+| **Zweck aus dem Blick:** nur das System aufgeräumt, keine Entlastung der Gestaltungsarbeit | U1–U9 | Neuer Strang **G1–G4** (unten), je an einem echten Werk erprobt. |
+| **Eile:** übernommen vor grünen Prüfungen, Pläne schnell umgeschrieben | Orchestrator, 29.10. | Hauptzweig-Schutz (#40) bleibt die wirksame Antwort; bis dahin keine Übernahme ohne Rücklesen der Prüfungen. |
+
+### Werkzeuge für die Gestaltungsarbeit (Kandidaten; je eigener Auftrag, je an einem Werk erprobt)
+
+| | Werkzeug | Was es tut | Was es nicht darf |
+|---|---|---|---|
+| G1 | **Werk-Kontextpaket** | Wahrnehmungssituation, passende Fachpakete und Abschnitte, frühere Entscheidungen und Varianten zum Werk; ersetzt Vollkontext | gestalterische Richtung vorgeben |
+| G2 | **Messen** | Kontrast (OKLCH/WCAG), Satzqualität (Löcher, Trennungen, Grauwert), Sehwinkel aus Abstand und Größe; Bausteine im Print-Experiment vorhanden | ein Ergebnis „gut“ nennen |
+| G3 | **Varianten rendern und vergleichen** | Varianten nebeneinander, mit Messwerten, als Screenshot | die Auswahl treffen |
+| G4 | **Bereitschaft für Druck/Abgabe** | Schriften, Farbraum, Beschnitt, Auflösung, offene Punkte | „fertig“ erklären; das bleibt Urteil des Eigentümers |
+
 ## Quellen
 
 - Harness Engineering, Übersicht: https://www.agentpatterns.ai/agent-design/harness-engineering/
