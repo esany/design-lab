@@ -1,13 +1,13 @@
 ---
 thema: Wissen erschließen · Bibliothekar
 stand: Bedarf benannt (30.10.); Befund und Optionen liegen vor, nichts beschlossen
-naechster_schritt: Der Eigentümer beantwortet vier Fragen (Lesestand, Belegpflicht, Fachpaket, PDFs); danach setzt Claude um.
-offen: [49]
+naechster_schritt: Astra sichert die Quellen aus #49 auf main (#120, beginnt auf Ihr „mach“); der Eigentümer beantwortet vier Fragen; danach setzt Claude um.
+offen: [49, 120]
 ---
 
 # Thema: Wissen erschließen · der Bibliothekar
 
-**Zuletzt fortgeschrieben:** 30.10.2026 (Claude, beim Anlegen)
+**Zuletzt fortgeschrieben:** 30.10.2026 (Claude, Sicherungsauftrag #120)
 
 ## In Worten
 
@@ -15,6 +15,13 @@ offen: [49]
 Eigentümers erschließen, die Herkunft jeder Aussage absichern und das Wissen in die konkrete
 Gestaltungssituation einordnen. Alles muss nachprüfbar sein. Keine Verdichtung aus wenigen
 Stellen zu einer glatten Aussage.
+
+**Was der Eigentümer will (Wortlaut, 30.10.):** „Ich will nur nachfragen können und die KI hat
+dann die Provenienz und kann mit mir diskutieren.“ Daran misst sich das Thema: Jede Quelle steht
+mit Herkunft und Lesestand im Repo, sodass jedes Modell auf Nachfrage Auskunft geben kann.
+
+**Gesichert?** Nein, noch nicht. Von den rund 40 Quellen aus #49 stehen nur zwei im Korpus auf
+`main`. Der Rest liegt auf einem Branch oder im Chat mit Astra. Sicherungsauftrag: #120.
 
 **Wo wir stehen:** Der Befund liegt in `research/2026-10-wissensbestand/befund.md`. Vorbild
 sind paleo-type (Lesestand je Quelle, Hochstufung erst nach Lektüre) und Wissensarbeit
