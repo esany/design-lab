@@ -1,7 +1,7 @@
 ---
 thema: Das System in Ordnung bringen
-stand: Umbau läuft – Stand als Datenquelle (#103), schlanker Kern (U3, #108) und Audit paleo-type (#112, geprüft) übernommen; Umbaupläne für Wissensarbeit (#89) und paleo-type (#353) vergeben
-naechster_schritt: Der Eigentümer beantwortet drei Fragen aus dem paleo-type-Audit; Claude prüft #110 (#109) und nach Astras Gegenlesen #100, danach spezifiziert er U4 (Register der gültigen Regeln).
+stand: Umbau läuft – Stand als Datenquelle (#103), schlanker Kern (U3, #108), Audit paleo-type (#112) und Messen und warnen (#116) übernommen; Neustart-Test #110 geprüft, vier Fälle nicht getestet
+naechster_schritt: Astra bringt #110 auf den Stand von main; der Eigentümer entscheidet, wie die Startfälle frisch laufen (#109); Claude prüft nach Astras Gegenlesen #100 und spezifiziert U4.
 offen: [40, 56, 62, 100, 109]
 ---
 
@@ -19,6 +19,10 @@ stehen im [Verlauf](../stand-verlauf.md).
 
 21 Musterkarten, zehn gezielt ausgewählte Originalprüfungen und ein Schichteninventar stehen unter [den paleo-type-Befunden](../research/2026-10-audit-paleo-type/befunde.md). Die private Quelle wurde nur gelesen; öffentlich sind ausschließlich abstrahierte Muster und Pfadverweise. **Geprüft (Claude, 30.10.):** Acht der zehn Belege stimmen; zwei Karten waren zu hart und sind berichtigt ([Gegenprüfung](../research/2026-10-audit-paleo-type/pruefung.md)). Kern: Enge Prüfungen halten, was sie prüfen; ein bestandener Nachtest schützt nicht vor dem verwandten nächsten Fehler. **Offen beim Eigentümer:** die drei Fragen in den Befunden. Keine Regel oder Maßnahme beschlossen.
 
-## #116 · Messen und warnen (30.10.2026)
+## #116 · Messen und warnen · übernommen (30.10.2026)
 
-Im Branch `lab/messen-und-warnen` umgesetzt, zur unabhängigen Prüfung an Claude: Längengrenzen warnen, das CI misst GitHub-Label-Ereignisse `eingriff` und Start-Lesekosten, der Neustart-Prüffall fragt nach dem verbleibenden zweiten Teil, und PRs trennen Build, frischen Kontext und tatsächliches Ergebnis. Ein grüner Build ist keine fachliche Abnahme. Offen: eigenständige frische Erprobung des Neustart-Falls und Anlegen des GitHub-Labels `eingriff` durch einen Zugang mit Label-Verwaltung.
+Längengrenzen warnen nur noch; `tools/messwerte.mjs` misst im CI Start-Lesekosten (6.223 Zeichen) und gesetzte Labels `eingriff`; PRs trennen Build, frischen Kontext und Ergebnis. Geprüft und übernommen von Claude ([Prüfung](https://github.com/esany/design-lab/pull/118#issuecomment-6512259942)); Label angelegt, `\n`-Fehler im Prüffall berichtigt. Der neue Fall „Folgeauftrag nach Teilerfolg“ ist nicht getestet.
+
+## Neustart-Test U3 · #110 geprüft (30.10.2026)
+
+Astras Protokoll stimmt (Zeichenzahlen, Labels, Zitat nachgeprüft). Alle vier Startfälle sind **nicht getestet**, weil der Chat Projektkontext hatte; drei Zusatznachrichten nur beschrieben, die „radar.md“-Antwort ohne Quelle/`fundstueck` unvollständig. PR #110 hat Konflikte mit `main`. [Prüfung](https://github.com/esany/design-lab/pull/110#issuecomment-6512047766). **Offen beim Eigentümer:** echte frische Sitzungen für die Startfälle.

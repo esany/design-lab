@@ -6,6 +6,7 @@
 
 | Datum | Was | Warum | Rückgängig |
 |---|---|---|---|
+| 2026-10-30 | **Prüfung #110 und #118 (Claude):** Neustart-Protokoll nachgeprüft (vier Fälle nicht getestet, Konflikt mit `main`); #118 geprüft, `\n` im Prüffall berichtigt, Label `eingriff` angelegt, übernommen; Merkzettel System fortgeschrieben | Abnahme durch anderes Modell (#109, #116) | Kopf und Abschnitte zurücksetzen; Label löschen |
 | 2026-10-30 | **#116 Messen und warnen:** Längengrenzen als Warnungen mit Gegenfällen, Eingriffe/Lesekosten im PR-CI, Neustart-Folgeauftrag und Abnahme in drei Ebenen | A17/A33/A34: Abweichungen sichtbar halten, Teil-PASS nicht mit Gesamtergebnis verwechseln | „Messen und warnen rückgängig“ (PR zu #116 revertieren) |
 | 2026-10-30 | **Umbauplan: Gefahren und Korrektur** (`research/2026-10-umbau/plan.md` § 6): Regeln in drei Klassen (fachlich bleibt), Zeichengrenzen als Warnung vorgeschlagen, neuer Strang G1–G4 für die Gestaltungsarbeit | Selbsteinschätzung paleo-type; Ihr Hinweis | Abschnitt entfernen |
 | 2026-10-30 | **Gegenprüfung paleo-type-Audit (Claude):** zehn Originalbelege geprüft, P05 und P06 auf „teilweise“ berichtigt, Archivsignatur im Inventar durch Platzhalter ersetzt, `pruefung.md` ergänzt | Abnahme durch ein anderes Modell als das schreibende (#112) | „Gegenprüfung paleo rückgängig“ |
