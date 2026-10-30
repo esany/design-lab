@@ -142,6 +142,7 @@ oder `an:mensch`.
 | `an:mensch` | Frage oder Handgriff des Eigentümers | Claude oder das Modell bei der Übergabe |
 | `entwurf` | Idee oder Aufgabe, noch nicht umsetzungsreif | alle |
 | `bug` | etwas lief falsch (E7) | alle |
+| `eingriff` | Eigentümer musste korrigieren: falsche Fertigmeldung, selbst verlangte Gegenprobe, gestoppte Erfindung oder erklärte maßgebliche Datei; das betroffene Modell setzt das Label und nennt den Anlass in einem Satz im Issue. | das korrigierte Modell |
 
 Neue Labels nur bei Bedarf, mit Eintrag in dieser Tabelle. Ungenutzte werden gelöscht.
 
