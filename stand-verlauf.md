@@ -6,6 +6,7 @@
 
 | Datum | Was | Warum | Rückgängig |
 |---|---|---|---|
+| 2026-10-30 | **Prüfung und Übernahme #122 (Claude):** Basis `main` bestätigt, Build repariert (erzeugte Dateien), zehn Quellen gegen Fundstellen geprüft; berichtigt: neun durch Anonymisierung entstellte Stellen („Analyse/Synthese“ u. a.), Larkin/Simon S. 65–99, Heijink-Eintrag (Titel, Fundstelle), Hohl-Notiz; Verweise der Bücher auf Wissenslandkarte und Lesefunde | Abnahme durch anderes Modell (#120) | Commit der Prüfung revertieren |
 | 2026-10-30 | **#120 Quellen-/Chat-Rücksicherung (Astra):** 39 Korpuseinträge, fünf Forschungsdateien und PDF-Fundstellen neu auf `lab/sicherung-49` gesichert; Schön 1992 in zwei Fassungen, für Claudes Gegenprüfung | A04/A07/A26; Provenienz statt nur Chat-Gedächtnis | PR zur Sicherung revertieren; `main` bis zum Merge unverändert |
 | 2026-10-30 | **Sicherungsauftrag #120 an Astra (Claude):** Quellen und Lesefunde aus #49 auf `main` zurückschreiben; Anforderung „nachfragen können, die KI hat die Provenienz“ im Merkzettel Wissen | Ihr Auftrag im Chat; nur 2 von rund 40 Quellen im Korpus | Issue schließen; Merkzettel zurücksetzen |
 | 2026-10-30 | **Neues Thema „Wissen erschließen · Bibliothekar“ (Claude):** Befund mit Optionen in `research/2026-10-wissensbestand/befund.md`, Merkzettel `anschluss/wissen.md`; Prüfung Schön 1992 (zwei Fassungen, beide echt) | Ihr Bedarf im Chat (30.10.); 0024 | „Thema Wissen rückgängig“ (PR zurücknehmen) |

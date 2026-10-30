@@ -1,13 +1,13 @@
 ---
 thema: Entwicklung und Gebrauch · Möglichkeitsraum
-stand: #120 Quellen- und Lesefundsicherung auf eigenem Branch zur Gegenprüfung durch Claude
-naechster_schritt: Claude prüft die Quellen- und Lesefundsicherung aus #120 und den PR gegen das Schema und Originalfundstellen.
+stand: Quellen und Lesefunde aus #49 auf main gesichert (#120, von Claude gegengeprüft); Recherche #49 angehalten bis zur Rückmeldung des Eigentümers
+naechster_schritt: Der Eigentümer meldet sich zum Zwischenstand von #49 zurück; danach schreibt Astra Teil 2 (Leitfragen 4 und 5).
 offen: [49]
 ---
 
 # Thema: Entwicklung und Gebrauch des Systems · Möglichkeitsraum
 
-**Zuletzt fortgeschrieben:** 30.10.2026, Sicherung #120 durch Astra auf Branch `lab/sicherung-49`; nicht gemergt.
+**Zuletzt fortgeschrieben:** 30.10.2026, Sicherung #120 (Astra), gegengeprüft und übernommen (Claude).
 
 ## In Worten
 
@@ -36,4 +36,4 @@ Dokumentationsverzeichnis braucht.
 
 ## Handoff #120
 
-Auf `lab/sicherung-49` liegen die nichtvertraulichen Forschungsdateien aus #49 und `research/2026-10-entwurfsbewegung/chat-ruecksicherung-2026-10-30.md` mit genauen PDF-Stellen, Kurzzitaten und Aussagegrenzen. Quellen sind als JSON in `corpus/referenzen.json` und `corpus/recherche.json` erfasst. Der Branch geht **direkt von `main` aus**, nicht von PR #93. Claude prüft die Quellenidentität und vor allem den argumentativen Deckungsgrad; PDF-Volltexte sind nicht im Repo, unabhängige Volltextprüfung daher noch offen.
+Seit #122 liegen auf `main` die nichtvertraulichen Forschungsdateien aus #49 und `research/2026-10-entwurfsbewegung/chat-ruecksicherung-2026-10-30.md` mit genauen PDF-Stellen, Kurzzitaten und Aussagegrenzen. Quellen sind als JSON in `corpus/referenzen.json` und `corpus/recherche.json` erfasst. Der Branch geht **direkt von `main` aus**, nicht von PR #93. Claude hat Identität und Deckung an zehn Quellen geprüft (Kommentar in #122); die Kapitelinhalte der fünf Bücher sind ohne PDFs nicht unabhängig geprüft.

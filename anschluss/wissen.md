@@ -1,13 +1,13 @@
 ---
 thema: Wissen erschließen · Bibliothekar
-stand: Bedarf benannt (30.10.); Befund und Optionen liegen vor, nichts beschlossen
-naechster_schritt: Astra sichert die Quellen aus #49 auf main (#120, beginnt auf Ihr „mach“); der Eigentümer beantwortet vier Fragen; danach setzt Claude um.
-offen: [49, 120]
+stand: Quellen aus #49 gesichert (39 Einträge, #122); Befund und Optionen liegen vor, nichts beschlossen
+naechster_schritt: Der Eigentümer beantwortet vier Fragen (Lesestand, Belegpflicht, Fachpaket, PDFs); danach setzt Claude um.
+offen: [49]
 ---
 
 # Thema: Wissen erschließen · der Bibliothekar
 
-**Zuletzt fortgeschrieben:** 30.10.2026 (Claude, Sicherungsauftrag #120)
+**Zuletzt fortgeschrieben:** 30.10.2026 (Claude, Prüfung und Übernahme #122)
 
 ## In Worten
 
@@ -20,8 +20,13 @@ Stellen zu einer glatten Aussage.
 dann die Provenienz und kann mit mir diskutieren.“ Daran misst sich das Thema: Jede Quelle steht
 mit Herkunft und Lesestand im Repo, sodass jedes Modell auf Nachfrage Auskunft geben kann.
 
-**Gesichert?** Nein, noch nicht. Von den rund 40 Quellen aus #49 stehen nur zwei im Korpus auf
-`main`. Der Rest liegt auf einem Branch oder im Chat mit Astra. Sicherungsauftrag: #120.
+**Gesichert?** Ja, soweit es ohne die PDFs geht (#120, #122). 39 Quellen stehen im Korpus,
+jede mit Lesestand in Worten und Verweis auf ihre Lesenotiz. Die Lesefunde aus Astras Chat stehen
+in `research/2026-10-entwurfsbewegung/chat-ruecksicherung-2026-10-30.md`, die acht Felder und
+sechs Forschungsrichtungen der fünf Bücher in `fuenf-buecher-wissenslandkarte-handoff-claude.md`.
+**Nicht unabhängig geprüft:** was in den Kapiteln selbst steht. Dafür braucht ein zweites Modell
+die PDFs. Bekannte Unschärfe: Das Feld `status` mischt bei den neuen Einträgen Existenz und
+Lesetiefe. Das klärt Frage 1.
 
 **Wo wir stehen:** Der Befund liegt in `research/2026-10-wissensbestand/befund.md`. Vorbild
 sind paleo-type (Lesestand je Quelle, Hochstufung erst nach Lektüre) und Wissensarbeit

@@ -734,7 +734,7 @@
       "system"
     ],
     "status": "abgeleitet",
-    "notiz": "Fachtext PDF S. 17–20 / Druck S. 11–14 gelesen; kritisiert technische Rationalität/Top-down, kein allgemeiner Wirksamkeitsbeweis; Lesenotiz: research/2026-10-entwurfsbewegung/fuenf-buecher-wissenslandkarte-handoff-claude.md; exakter Kapitelnachweis erst bei Originallektüre.",
+    "notiz": "Fachtext an der Stelle gelesen: PDF S. 18–20 / Druck S. 12–14 (Kapitelanfang PDF S. 17 / Druck S. 11); kritisiert „technische Rationalität“ und Top-down-Methodik, fordert situatives Erproben; kein allgemeiner Wirksamkeitsbeweis; nicht das ganze Kapitel gelesen. Lesenotiz: research/2026-10-entwurfsbewegung/chat-ruecksicherung-2026-10-30.md",
     "zugang": "eingeschränkt",
     "geprueft": "2026-10-30"
   },
@@ -1210,7 +1210,7 @@
       "system"
     ],
     "status": "abgeleitet",
-    "notiz": "Verlagsabstract; Repräsentation/Suche, Volltext nicht gesichert; research/2026-10-entwurfsbewegung/primaerquellen-dynamik-und-moeglichkeitsraeume.md",
+    "notiz": "Cognitive Science 11, S. 65–99 (Kopfzeile des Originals); Verlagsabstract; Repräsentation/Suche, Volltext nicht gesichert; research/2026-10-entwurfsbewegung/primaerquellen-dynamik-und-moeglichkeitsraeume.md",
     "zugang": "eingeschränkt",
     "geprueft": "2026-10-30"
   },
@@ -1219,7 +1219,7 @@
     "titel": "The Ecological Approach to Visual Perception, Kap. The Theory of Affordances",
     "autor": "James J. Gibson",
     "jahr": 1979,
-    "art": "Paper",
+    "art": "Buch",
     "url": "https://www.cs.tufts.edu/comp/150DR/readings/week4/gibson_theory_of_affordances.pdf",
     "lizenz": "alle Rechte vorbehalten",
     "felder": [
@@ -1267,18 +1267,18 @@
   },
   {
     "id": "heijink-windsor-desain-2000",
-    "titel": "Score performance matching paper (Partitur/Interpretation)",
-    "autor": "Heijink, Windsor, Desain",
+    "titel": "Data processing in music performance research: Using structural information to improve score-performance matching",
+    "autor": "H. Heijink, W. L. Windsor, P. Desain",
     "jahr": 2000,
     "art": "Paper",
-    "url": "https://www.google.com/search?q=Heijink+Windsor+Desain+2000+score+performance",
+    "url": "https://www.mcg.uva.nl/mmm-2003/abstracts/mmm-24.html",
     "lizenz": "alle Rechte vorbehalten",
     "felder": [
       "erkennen",
       "system"
     ],
     "status": "nicht belegt",
-    "notiz": "Frühere R7-Belegverwendung ZURÜCKGEZOGEN: Artikelthema trägt theoretischen Vergleich Partitur/Interpretation nicht; bibliografische Identität hier nicht unabhängig nachgeprüft; research/2026-10-entwurfsbewegung/fehleranalyse-und-neupruefung.md",
+    "notiz": "Behavior Research Methods, Instruments & Computers (2000), S. 546–554; Identität am Abstract geprüft (Claude, 30.10.): „scores are frequently underspecified“. Frühere R7-Belegverwendung ZURÜCKGEZOGEN: Das Thema (Zuordnung von Aufführungsdaten zur Partitur) trägt den theoretischen Vergleich Partitur/Interpretation nicht; research/2026-10-entwurfsbewegung/fehleranalyse-und-neupruefung.md",
     "zugang": "eingeschränkt",
     "geprueft": "2026-10-30"
   },
