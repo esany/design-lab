@@ -19,6 +19,10 @@ Die Website wird nach jeder Übernahme aktualisiert: https://esany.github.io/des
 
 - Hauptzweig schützen, Regelpause und Reihenfolge der Regelprüfung: siehe [Aufträge](research/2026-10-audit-zusammenarbeit/auftraege.md).
 - Welche Pinterest-Boards je Feld oder welche Beschreibung verbindet die Sammlung?
+- Pflege 11/2026: Sieben Regeln auf Probe haben kein Auswertungsdatum (0003, 0004, 0007, 0013, 0016, 0018, 0024). Empfehlung: gemeinsam mit dem Experiment Labor-Aufbau am 24.11. auswerten.
+- Pflege 11/2026: Vorschlag 0031 (Fundstücke als Modus) wartet seit 29.10. auf Ihre Antwort; #98 hängt daran. Empfehlung: annehmen oder ablehnen, damit #98 weiterkann.
+- Pflege 11/2026: Zwölf Issues mit Label `entwurf` (#8, #9, #23, #24, #26, #27, #57–#61, #84) und PR #90 zu #41 ruhen seit 28./29.10. Empfehlung: in einer Sitzung mit Claude je freigeben, zurückstellen oder schließen.
+- Pflege 11/2026: Anforderungen A02, A03, A09, A29, A30 haben weder Entscheidung noch Skill. Empfehlung: erst nach dem Umbau (U4) zuordnen.
 
 ## Läuft ohne Sie
 
