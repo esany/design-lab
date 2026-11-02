@@ -8,7 +8,7 @@ Werkzeuge und Entwicklungen, die das Labor beobachtet. Vier Ringe:
 - **Halten** — bewusst nicht (mehr) nutzen
 
 Jeder Eintrag: was es ist · warum relevant · Quelle · Stand. Änderungen nur mit
-Begründung (Skill `pflege`). Stand des Radars: **2026-10-28**.
+Begründung (Skill `pflege`). Stand des Radars: **2026-11-02**.
 
 ## Einsetzen
 
@@ -73,6 +73,9 @@ Begründung (Skill `pflege`). Stand des Radars: **2026-10-28**.
 | VIKUS Viewer (FH Potsdam, offen) | Sammlungen als Zeitleisten-Bildfeld — Bildwissenschaft, Skizze S1 | [UCLAB](https://uclab.fh-potsdam.de/projects/vikus-viewer/) | 2026-10 |
 | ml5.js (NYU ITP) | „freundliches“ ML im Browser, KI als Material — Skizze S2 | [ml5js.org](https://ml5js.org/about) | 2026-10 |
 | „un/learn ai“-Bände (KITeGG, Open Science Mainz) | Haltung und Lehre zu KI in ästhetischer Praxis — Korpus | [Open Science Mainz](https://openscience.ub.uni-mainz.de/items/02c2fbdd-fdc9-4bd6-a809-1174bd50714f/full) | 2026-10 |
+| Penpot 2.19 „Is this it“ | Design-Tokens aus einer Bibliothek in alle verbundenen Dateien teilen, synchron bei Updates; Pfad-Editor, WebGL-Darstellung (Einstellung) — prüfen, ob DTCG-Tokens des Labors so zentral in Penpot liegen können | [Penpot Release Notes](https://penpot.app/release-notes/2-19-is-this-it) | 2026-10-28 |
+| Style Dictionary 5.7 | Token-Übersetzer unterstützt DTCG-2025.10-`duration`-Tokens und `$root`-Gruppen — passt zu „DTCG-Tokens (2025.10)“ unter Einsetzen | [GitHub Release v5.7.0](https://github.com/style-dictionary/style-dictionary/releases/tag/v5.7.0) | 2026-10-16 |
+| Observable Notebook Kit 2.9 (ISC) | offene Grundlage der Observable-Notebooks 2.0; neu: SQLite- und DuckDB-Dateien direkt als Datenquelle in Notebooks — für Datenvisualisierung ohne Server | [GitHub Release v2.9.0](https://github.com/observablehq/notebook-kit/releases/tag/v2.9.0) | 2026-10-27 |
 
 ### Feld: Hochschulen und Konferenzen (beobachten)
 
