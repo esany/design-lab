@@ -8,7 +8,7 @@
 ## Auffällig — die Pflege prüft das monatlich
 
 - **Anforderungen ohne Entscheidung oder Skill:** A02, A03, A29, A30, A09
-- **Auf Probe ohne Auswertungsdatum** (`auswerten:` fehlt): [0003](decisions/0003-autonomie-nach-umkehrbarkeit.md), [0004](decisions/0004-gemeinsame-anweisung-und-skills.md), [0007](decisions/0007-belegpflicht.md), [0013](decisions/0013-vorlagen.md), [0016](decisions/0016-erklaerbarkeit-in-stufen.md), [0018](decisions/0018-freigabe-in-alltagssprache.md), [0024](decisions/0024-kein-wissen-nur-im-chat.md)
+- **Auf Probe ohne Auswertungsdatum** (`auswerten:` fehlt): [0003](decisions/0003-autonomie-nach-umkehrbarkeit.md), [0004](decisions/0004-gemeinsame-anweisung-und-skills.md), [0007](decisions/0007-belegpflicht.md), [0013](decisions/0013-vorlagen.md), [0016](decisions/0016-erklaerbarkeit-in-stufen.md), [0018](decisions/0018-freigabe-in-alltagssprache.md)
 - **Vorschläge, die auf Antwort warten:** [0031](decisions/0031-fundstuecke-als-modus.md)
 
 ## Je Anforderung

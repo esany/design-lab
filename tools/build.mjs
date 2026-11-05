@@ -379,6 +379,57 @@ outputs.set("verknuepfung.md", `# Verknüpfung — Anforderungen und Mechanismen
 ${[...reqs].map(([a, r]) => { const l = byReq.get(a); return `| ${a} | ${cell(r.titel)} | ${r.stand} | ${l.filter((x) => x.art === "Entscheidung").map(link).join(", ") || "—"} | ${l.filter((x) => x.art === "Skill").map(link).join(", ") || "—"} |`; }).join("\n")}
 `);
 
+// ---------- Verzeichnis: eine Zeile je Datei (Entscheidung 0024, Fassung 05.11.) ----------
+// Damit Modelle gezielt nachladen statt suchen. Quelle: Kopfzeilen bzw. erste Überschrift.
+// Schicht: immer geladen · bei Bedarf · Archiv (Ort oder Kopfzeile `schicht: archiv`).
+const VZ_SKIP = new Set([".git", "node_modules", ".smoke", "_site", "verzeichnis.md", "CLAUDE.md"]);
+const IMMER = ["AGENTS.md", "stand.md"];
+const ARCHIV = [/^archive\//, /\/archiv\//, /^research\/gespraeche\//];
+function vzDateien(dir, rel = "") {
+  const out = [];
+  for (const n of readdirSync(dir).sort()) {
+    if (VZ_SKIP.has(n) || (n.startsWith(".") && n !== ".agents")) continue;
+    const p = join(dir, n), r = rel ? `${rel}/${n}` : n;
+    if (statSync(p).isDirectory()) { if (n !== "fixtures") out.push(...vzDateien(p, r)); }
+    else if (/\.md$/.test(n)) out.push(r);
+  }
+  return out;
+}
+const vzZeilen = { immer: [], bedarf: [], archiv: [] };
+for (const r of vzDateien(root)) {
+  const t = readFileSync(join(root, r), "utf8");
+  const k = {}; const m = t.match(/^---\n([\s\S]*?)\n---/);
+  if (m) for (const l of m[1].split("\n")) { const kv = l.match(/^([\w-]+):\s*(.*)$/); if (kv) k[kv[1]] = kv[2].replace(/^["']|["']$/g, ""); }
+  const h1 = (t.replace(/^---\n[\s\S]*?\n---\n/, "").match(/^#\s+(.+)$/m) ?? [, ""])[1].replace(/[*`]/g, "");
+  const zweck = k.zweck || k.title || k.thema || h1 || k.description || "—";
+  const status = (k.status || "—").replace(/\s+#.*$/, "").replace(/\s*\(.*$/, "").split(/[.;]/)[0];
+  const datum = k.datum || k.date || (r.match(/\d{4}-\d{2}(-\d{2})?/) ?? ["—"])[0];
+  const z = [...t].length, umfang = z < 3000 ? "S" : z < 10000 ? "M" : "L";
+  const schicht = k.schicht === "archiv" || ARCHIV.some((x) => x.test(r)) ? "archiv"
+    : IMMER.includes(r) || r.startsWith("anschluss/") ? "immer" : "bedarf";
+  const kurz = (x, n) => (x.length > n ? x.slice(0, n - 1).trimEnd() + "…" : x);
+  vzZeilen[schicht].push(`| ${r} | ${cell(kurz(zweck, 70))} | ${cell(kurz(status, 30))} | ${datum} | ${umfang} |`);
+}
+const vzTab = (l) => `| Datei | Zweck | Status | Datum | Umfang |\n|---|---|---|---|---|\n${l.join("\n")}`;
+outputs.set("verzeichnis.md", `# Verzeichnis — was wo liegt
+
+> Erzeugt von \`node tools/build.mjs\` aus den Kopfzeilen (\`zweck\`/\`title\`, \`status\`, \`datum\`)
+> oder der ersten Überschrift jeder Markdown-Datei. Nicht von Hand ändern. Zweck: gezielt
+> nachladen statt suchen (Entscheidung 0024). Umfang: S unter 3 000, M unter 10 000, L ab 10 000 Zeichen.
+
+## Immer geladen (von den Merkzetteln nur der des eigenen Themas)
+
+${vzTab(vzZeilen.immer)}
+
+## Bei Bedarf
+
+${vzTab(vzZeilen.bedarf)}
+
+## Archiv — nie Stand, nie Pflichtlektüre
+
+${vzTab(vzZeilen.archiv)}
+`);
+
 // ---------- Stand aus den Merkzetteln ----------
 const themen = [];
 for (const datei of readdirSync(join(root, "anschluss")).filter(f => f.endsWith(".md") && f !== "README.md").sort()) {
@@ -398,6 +449,8 @@ for (const [rel, content] of outputs) {
   const p = join(root, rel);
   const current = existsSync(p) ? readFileSync(p, "utf8") : null;
   if (current === content) continue;
+  // Ein veraltetes Verzeichnis sperrt keinen PR (Chats ohne Build, z. B. Astra); es wird beim nächsten Build erneuert.
+  if (check && rel === "verzeichnis.md") { warnings.push("verzeichnis.md ist veraltet — beim nächsten „node tools/build.mjs“ erneuern"); continue; }
   if (check) { errors.push(`${rel} ist veraltet — bitte „node tools/build.mjs“ ausführen`); stale++; }
   else writeFileSync(p, content);
 }
