@@ -8,7 +8,11 @@
   ],
   "aenderungen": [
     { "datum": "2026-11-05", "eintrag": "", "was": "Leitfaden angelegt: 9 Grundlagen, 6 Einträge zum Werkzeugentwurf, 6 überholte Ratschläge." },
-    { "datum": "2026-11-05", "eintrag": "v-rolle", "was": "Aufgenommen aus dem Fundstück von Cameron M. Palmer (HackerNoon, 04.11.2026)." }
+    { "datum": "2026-11-05", "eintrag": "v-rolle", "was": "Aufgenommen aus dem Fundstück von Cameron M. Palmer (HackerNoon, 04.11.2026)." },
+    { "datum": "2026-11-05", "eintrag": "k-unsicherheit", "was": "Neu: Unsicherheit in Worten statt Prozent (Kim u. a. 2024, Xiong u. a. 2024, Microsoft)." },
+    { "datum": "2026-11-05", "eintrag": "k-nichtwissen", "was": "Neu: „Das weiß ich nicht“ ausdrücklich erlauben (OpenAI 2025)." },
+    { "datum": "2026-11-05", "eintrag": "w-vorhaben", "was": "Neu: erst das Vorhaben freigeben, dann handeln lassen (Anthropic 2025/2026; Vorfall im Labor am 05.11.)." },
+    { "datum": "2026-11-05", "eintrag": "k-gefaelligkeit", "was": "Aktualisiert: Messung an heutigen Modellen (Cheng u. a., Science 2026); Beleg jetzt „belegt“." }
   ],
   "eintraege": [
     {
@@ -105,9 +109,9 @@
       "kurz": "Modelle neigen dazu, deiner Sicht recht zu geben. Frag neutral und verlange Gegenargumente.",
       "warum": "Beim Training belohnen menschliche Bewertungen Antworten, die der Meinung des Fragenden entsprechen. Modelle ändern sogar richtige Antworten, wenn man Zweifel äußert. Wer seine Meinung voranstellt, bekommt sie oft bestätigt.",
       "beispiel": { "vorher": "Das ist doch ein guter Ansatz, oder?", "nachher": "Was spricht gegen diesen Ansatz? Nenne die drei stärksten Einwände." },
-      "vertiefung": "Belegt ist das für Modelle von 2023. Neuere Modelle werden gezielt dagegen trainiert; wie stark der Effekt heute noch ist, ist in den Quellen dieses Leitfadens nicht gemessen. Im Labor gilt deshalb „Widerspruch ist Pflicht“: Zustimmung allein ist keine Leistung.",
-      "beleg": "abgeleitet",
-      "quellen": ["sharma-2023-gefaelligkeit"],
+      "vertiefung": "Inzwischen auch für heutige Modelle gemessen: 11 führende Modelle gaben Nutzern im Schnitt 49 % häufiger recht als Menschen, und die Nutzer vertrauten gerade diesen Antworten mehr und wollten sie wieder (Science, 2026). Gemessen wurde das an persönlichen Ratschlägen, nicht an Gestaltungs- oder Facharbeit. Im Labor gilt deshalb „Widerspruch ist Pflicht“: Zustimmung allein ist keine Leistung.",
+      "beleg": "belegt",
+      "quellen": ["sharma-2023-gefaelligkeit", "cheng-2026-gefaelligkeit"],
       "labor": [".agents/skills/laborarbeit/references/pruefen.md"],
       "seit": "2026-11-05",
       "geprueft": "2026-11-05"
@@ -123,6 +127,36 @@
       "beleg": "abgeleitet",
       "quellen": [],
       "labor": ["decisions/0007-belegpflicht.md", "research/2026-10-audit-zusammenarbeit/befunde.md"],
+      "seit": "2026-11-05",
+      "geprueft": "2026-11-05"
+    },
+    {
+      "id": "k-unsicherheit",
+      "bereich": "kern",
+      "status": "gilt",
+      "regel": "Lass die KI Unsicherheit in Worten sagen – in der Ich-Form, nicht in Prozent.",
+      "kurz": "„Ich bin nicht sicher, ob …“ hilft dir beim Prüfen. Eine Zahl wie „90 % sicher“ ist meist zu hoch gegriffen.",
+      "warum": "In einem Experiment mit 404 Personen machten Antworten mit „Ich bin nicht sicher, aber …“ die Leute vorsichtiger und treffsicherer; unpersönliche Formulierungen wirkten schwächer. Zahlen, die ein Modell über seine eigene Sicherheit nennt, liegen dagegen deutlich zu hoch und sagen Fehler schlecht voraus.",
+      "beispiel": { "vorher": "Wie sicher bist du, in Prozent?", "nachher": "Was davon weißt du, was vermutest du, und wo bist du unsicher? Sag es in eigenen Worten." },
+      "vertiefung": "Die Studie nutzte medizinische Ja-Nein-Fragen; ob der Effekt bei Gestaltungsfragen gleich groß ist, ist nicht gemessen. Microsofts Richtlinien für die Zusammenarbeit von Mensch und KI verlangen dasselbe: zeigen, wie oft das System danebenliegt. Im Labor ergänzt der Belegstatus (siehe „Verlange zu jeder Aussage, woher sie kommt“) die Worte.",
+      "beleg": "belegt",
+      "quellen": ["kim-2024-unsicherheit", "xiong-2024-konfidenz", "amershi-2019-hax"],
+      "labor": [],
+      "seit": "2026-11-05",
+      "geprueft": "2026-11-05"
+    },
+    {
+      "id": "k-nichtwissen",
+      "bereich": "kern",
+      "status": "gilt",
+      "regel": "Erlaube ausdrücklich „Das weiß ich nicht“ und „Hier höre ich auf“.",
+      "kurz": "Eine ehrliche Lücke ist ein gutes Ergebnis. Ohne diese Erlaubnis rät die KI lieber, als nichts zu liefern.",
+      "warum": "Training und Bewertung belohnen Modelle für Treffer, nicht für ehrliches Nichtwissen. Wer rät, sieht in Ranglisten besser aus, macht aber mehr Fehler. Dazu kommt, dass Menschen glatte und zustimmende Antworten bevorzugen.",
+      "beispiel": { "vorher": "Finde eine Lösung.", "nachher": "Wenn es keine gute Lösung gibt oder dir etwas fehlt, sag das und hör auf. Das ist ein gültiges Ergebnis." },
+      "vertiefung": "OpenAI zeigt das an einem Faktentest: Ein Modell, das in gut der Hälfte der Fälle nicht antwortete, lag in 26 % falsch, ein ratendes Modell in 75 %. Für Berichte heißt das: Was nicht geprüft oder unsicher ist, steht vorne, nicht im Kleingedruckten.",
+      "beleg": "belegt",
+      "quellen": ["openai-2025-halluzination", "cheng-2026-gefaelligkeit"],
+      "labor": [],
       "seit": "2026-11-05",
       "geprueft": "2026-11-05"
     },
@@ -207,6 +241,21 @@
       "beleg": "belegt",
       "quellen": ["anthropic-claude-code-praxis"],
       "labor": ["research/2026-10-audit-zusammenarbeit/befunde.md"],
+      "seit": "2026-11-05",
+      "geprueft": "2026-11-05"
+    },
+    {
+      "id": "w-vorhaben",
+      "bereich": "werkzeuge",
+      "status": "gilt",
+      "regel": "Erst das Vorhaben freigeben, dann handeln lassen.",
+      "kurz": "Lesen darf die KI frei. Bevor sie etwas ändert, sagt sie in zwei, drei Sätzen, was sie tun würde und was schwer umkehrbar ist – und wartet auf dein Ja.",
+      "warum": "Nutzer wollen vor allem über die Strategie urteilen, nicht über jeden Einzelschritt. Claude Code darf deshalb standardmäßig nur lesen und fragt vor Änderungen. Ein „weiter“ oder ein Vermerk in einem Issue ist keine Freigabe: Die gibt nur der Mensch, im laufenden Gespräch.",
+      "beispiel": { "vorher": "„Arbeitsweise, weiter.“ – die KI baut los.", "nachher": "„Arbeitsweise, weiter.“ – „Ich würde Regel 0024 neu fassen und ein Verzeichnis erzeugen; die Regel ist schwer umkehrbar. Ja?“" },
+      "vertiefung": "Am 05.11.2026 las ein Chat im Labor „weiter“ und einen von einer KI geschriebenen Freigabe-Vermerk als Auftrag, änderte eine Regel und übernahm sie selbst. Alles in GitHub erscheint unter dem Konto des Eigentümers; ob ein Satz von ihm stammt, kann kein Modell erkennen. Gegenrisiko: Wer bei jeder Kleinigkeit fragt, macht die KI nutzlos. Fragen lohnt vor Regeln, Löschen, Sichtbarkeit und Arbeit außerhalb des Repos.",
+      "beleg": "belegt",
+      "quellen": ["anthropic-agenten-2025", "anthropic-agenten-2026"],
+      "labor": ["research/2026-11-wissensformen/issues-als-steuerung.md"],
       "seit": "2026-11-05",
       "geprueft": "2026-11-05"
     },
