@@ -102,25 +102,41 @@ letzten Scan“ oben. A höchstens als Desktop-Poster. Das Radar-Bild ist ein be
 aber für dieses Publikum, Gerät und diese Menge eine ästhetische Wahl mit benanntem Risiko
 (Manifest, Leitsatz 3).
 
-## 5 · Der Leitfaden wächst, aber nur entlang der Arbeitsteilung
+## 5 · Leitfäden je Thema statt eines wachsenden Leitfadens
 
-Vorschlag für die Bereiche, geordnet nach der Frage „Wie arbeite ich gut?“:
+**Anlass (Eigentümer, 05.11.):** „Vielleicht gibt es auch verschiedene Themen in den Leitfäden,
+das hatten wir ja schon bei der KI festgestellt.“ Schon der erste Leitfaden hatte zwei
+verschiedene Themen: „Grundlagen“ handelt von der Arbeit mit KI, „Werkzeuge entwerfen“ vom
+Entwickeln von Systemen. Würden alle weiteren Bereiche angehängt, entstünde eine lange Seite
+ohne klare Frage.
 
-| Bereich | Inhalt | Verweist auf |
-|---|---|---|
-| Grundlagen | besteht | — |
-| **Prüfen und Qualität** | Vorführung statt Bericht, Fehler mit Absicht, frischer Blick, grün ist nicht fertig | Labor-Audits |
-| **Anforderungen und Abnahme** | „fertig“ vorher festlegen, dünner Durchstich, Lesart klären | `decisions/`, Skill `issue` |
-| Systeme entwickeln | Einträge aus „Werkzeuge entwerfen“ (Sperren, ein Ort, Regelflut, Runden) | Labor-Audits |
-| Daten und Struktur | Datenmodell, offene Formate, Standards | Radar (Formate) |
-| Werkzeuge wählen | Kriterien: offen, austauschbar, prüfbar, Schatz oder Marketing | **Radar**, 0031 |
-| Zusammenarbeit der KIs | Arbeitsteilung, Übergaben, wer prüft wen | 0025 |
-| Sicherheit, Recht, Kosten | öffentliches Repo, fremde Skills, Lizenzen, Modellwahl | A13, A15, A16 |
-| Domänen | je Feld: was gerade wichtig ist | **Fachpakete** |
-| Überholt | besteht | — |
+**Vorschlag:** eine **Familie von Leitfäden** mit gemeinsamem Muster (Abschnitt 3). Jeder Leitfaden
+beantwortet eine eigene Frage und hat seine eigenen Bereiche und sein eigenes „Überholt“.
 
-„Werkzeuge entwerfen“ wird dabei auf „Prüfen und Qualität“ und „Systeme entwickeln“ verteilt.
-Sonst überschneiden sich die Bereiche.
+| Leitfaden | Frage | Bereiche (Vorschlag) | Verweist auf |
+|---|---|---|---|
+| **Mit KI arbeiten** (besteht) | Wie bekomme ich gute Arbeit von der KI? | Grundlagen · Zusammenarbeit mehrerer KIs · Kosten und Modellwahl · Überholt | Entscheidung 0025 |
+| **Systeme entwickeln** | Wie entsteht ein sauberes Werkzeug, auch wenn ich kein Techniker bin? | Anforderungen und Abnahme · Prüfen und Qualität · Daten und Struktur · Versionen und Rückweg · Sicherheit und Recht · Überholt | Labor-Audits, Skill `issue` |
+| **Werkzeuge wählen** | Woran erkenne ich ein gutes Werkzeug? | Kriterien (offen, austauschbar, prüfbar) · Schatz oder Marketing · Überholt | **Radar**, 0031 |
+| **Gestalten mit KI** | Was ändert KI in meiner Domäne? | je Feld ein Bereich: Form · Vermitteln · Digitale Edition … | **Fachpakete** |
+
+Die sechs Einträge aus „Werkzeuge entwerfen“ ziehen in „Systeme entwickeln“ um (Bereiche Prüfen
+und Qualität bzw. Systeme). Ihre Kennungen bleiben, damit Verweise und Änderungen nachvollziehbar
+sind; die Änderungsliste nennt den Umzug.
+
+**Technisch:** eine Datei je Leitfaden (`leitfaden/<thema>.json`), eine erzeugte Seite je
+Leitfaden und eine Einstiegsseite `leitfaden/`, die alle zeigt, jeweils mit Frage, Zahl der
+Einträge und letzter Änderung. Querverweise zwischen Leitfäden gehen über die Kennung. Der Build
+prüft, dass jede Kennung über alle Leitfäden hinweg eindeutig ist.
+
+**Gegenrede, wie es das Labor verlangt:** Mehr Seiten bedeuten mehr Stellen. Das bleibt
+beherrschbar, weil alles aus Daten erzeugt wird, jede Tatsache nur in einem Leitfaden steht und
+die Einstiegsseite die einzige Übersicht ist. Ein neuer Leitfaden entsteht erst, wenn er mindestens
+fünf belegte Einträge hat. Vorher bleiben die Einträge, wo sie sind.
+
+**Das Radar spiegelt dieselbe Ordnung:** Seine Felder (Abschnitt 4) entsprechen den Bereichen von
+„Gestalten mit KI“ und „Systeme entwickeln“. Ein Leitfaden-Bereich kann so auf „seine“ Zeile im
+Radar verweisen.
 
 ## 6 · Lücken, die das Konzept sichtbar macht
 
@@ -134,10 +150,11 @@ Sonst überschneiden sich die Bereiche.
 
 ## 7 · Reihenfolge (Vorschlag)
 
-1. Leitfaden: Bereiche „Prüfen und Qualität“ sowie „Anforderungen und Abnahme“. Das ist das
-   akute Problem in paleo-type. Klein, Muster vorhanden.
+1. Leitfäden aufteilen und den zweiten Leitfaden „Systeme entwickeln“ mit den Bereichen „Prüfen und
+   Qualität“ sowie „Anforderungen und Abnahme“ anlegen. Das ist das akute Problem in paleo-type.
+   Klein, Muster vorhanden.
 2. Radar als Daten und Ansicht (B), mit Feldern und Bewegung. Mittel, Muster vom Leitfaden.
-3. Leitfaden: übrige Bereiche, je einer pro Monat, jeweils an echter Arbeit erprobt.
+3. Weitere Leitfäden und Bereiche, je einer pro Monat, jeweils an echter Arbeit erprobt.
 4. Fachpaket „Digitale Edition“. Groß; erst wenn die Pause in paleo-type endet.
 
 Die Reihenfolge folgt dem Befund des Labors, dass Stützarbeit nicht schneller wachsen soll als
