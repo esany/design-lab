@@ -1,7 +1,7 @@
 ---
 thema: Arbeitsweise mit KI · Wissensformen
 stand: Leitfaden „Mit KI arbeiten“ online (0032); Konzept Wissensformen, Befunde zu Anforderungen, Issues und Entwurfsprozess auf main (#126); Repo first wird neu gefasst
-naechster_schritt: Claude setzt #127 in einem frischen Chat um (0024 neu, Verzeichnis, Projekt-Doc kürzen); der Eigentümer beantwortet vier offene Fragen im Merkzettel.
+naechster_schritt: Bei „weiter“ setzt Claude #127 um, danach den Leitfaden „Systeme entwickeln“; der Eigentümer beantwortet vier offene Fragen im Merkzettel.
 offen: [127]
 ---
 
@@ -27,6 +27,13 @@ Entwurfsprozess):** Im Entwurf antwortet das Material, in der KI-Arbeit nur Text
 Gestalter das Urteilsinstrument, und er ersetzt es durch Regeln. Gegenmittel: Schaufenster und
 Vorführung statt Bericht, Prüfungen, die laufen, statt Regeln; Issues nur als Auftrag, nicht als
 Stand; kleine Startlast, gezieltes Nachladen.
+
+**Weiter, in dieser Reihenfolge** (Startsatz im neuen Chat: „Arbeitsweise mit KI, weiter“):
+1. #127: Repo first neu fassen, Verzeichnis, Projekt-Doc kürzen, Basic Memory ins Radar.
+2. Leitfäden aufteilen; Leitfaden „Systeme entwickeln“ mit Prüfen und Qualität sowie Anforderungen
+   und Abnahme anlegen (Stoff: `anforderungen.md`, Urteilsinstrument und Schaufenster).
+3. Radar als Ansicht, sobald Frage 1 beantwortet ist.
+4. Reifegrade an der nächsten echten Entwurfsaufgabe erproben.
 
 **Offen beim Eigentümer:**
 1. Radar als Matrix (Empfehlung) oder Kreis?
