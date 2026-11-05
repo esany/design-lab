@@ -1479,5 +1479,110 @@
     "status": "belegt",
     "notiz": "Fünf Assistenten von 2023 geben der Sicht des Fragenden auch gegen die Wahrheit recht; Ursache liegt mit in menschlichen Bewertungen beim Training.",
     "geprueft": "2026-11-05"
+  },
+  {
+    "id": "kim-2024-unsicherheit",
+    "titel": "“I'm Not Sure, But...”: Examining the Impact of Large Language Models' Uncertainty Expression on User Reliance and Trust",
+    "autor": "Sunnie S. Y. Kim, Q. Vera Liao, Mihaela Vorvoreanu, Stephanie Ballard, Jennifer Wortman Vaughan",
+    "jahr": 2024,
+    "art": "Paper",
+    "url": "https://arxiv.org/abs/2405.00623",
+    "lizenz": "unbekannt",
+    "felder": [
+      "labor"
+    ],
+    "status": "belegt",
+    "notiz": "FAccT 2024, vorregistriert, N = 404, medizinische Ja-Nein-Fragen. Unsicherheit in der Ich-Form senkt Zustimmung zu falschen Antworten und erhöht die Treffsicherheit; unpersönliche Form schwächer, nicht signifikant. Abstract gelesen.",
+    "geprueft": "2026-11-05"
+  },
+  {
+    "id": "xiong-2024-konfidenz",
+    "titel": "Can LLMs Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in LLMs",
+    "autor": "Miao Xiong u. a.",
+    "jahr": 2024,
+    "art": "Paper",
+    "url": "https://arxiv.org/abs/2306.13063",
+    "lizenz": "unbekannt",
+    "felder": [
+      "labor"
+    ],
+    "status": "belegt",
+    "notiz": "Selbst genannte Sicherheit ist deutlich überhöht und sagt Fehler schlecht voraus; besser bei größeren Modellen. Abschnitt 5.1 gelesen.",
+    "geprueft": "2026-11-05"
+  },
+  {
+    "id": "openai-2025-halluzination",
+    "titel": "Why language models hallucinate",
+    "autor": "Adam Tauman Kalai u. a. (OpenAI)",
+    "jahr": 2025,
+    "art": "Artikel",
+    "url": "https://openai.com/index/why-language-models-hallucinate/",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "labor"
+    ],
+    "status": "belegt",
+    "notiz": "05.09.2025. Bewertung nach Trefferquote belohnt Raten statt Nichtwissen; Beispiel SimpleQA: 52 % ohne Antwort und 26 % Fehler gegen 1 % ohne Antwort und 75 % Fehler. Artikel gelesen, Paper nicht.",
+    "geprueft": "2026-11-05"
+  },
+  {
+    "id": "cheng-2026-gefaelligkeit",
+    "titel": "Sycophantic AI decreases prosocial intentions and promotes dependence",
+    "autor": "Myra Cheng, Cinoo Lee, Pranav Khadpe, Sunny Yu, Dyllan Han, Dan Jurafsky",
+    "jahr": 2026,
+    "art": "Paper",
+    "url": "https://doi.org/10.1126/science.aec8352",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "labor"
+    ],
+    "status": "belegt",
+    "notiz": "Science 391 (2026). 11 Modelle bestätigen Handlungen der Nutzer im Schnitt 49 % häufiger als Menschen; drei vorregistrierte Experimente (N = 2405): Nutzer vertrauen zustimmenden Modellen mehr und bevorzugen sie. Abstract gelesen; Vorfassung arXiv 2510.01395.",
+    "geprueft": "2026-11-05"
+  },
+  {
+    "id": "anthropic-agenten-2025",
+    "titel": "Our framework for developing safe and trustworthy agents",
+    "autor": "Anthropic",
+    "jahr": 2025,
+    "art": "Artikel",
+    "url": "https://www.anthropic.com/research/our-framework-for-developing-safe-and-trustworthy-agents",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "labor"
+    ],
+    "status": "belegt",
+    "notiz": "Menschen behalten die Kontrolle besonders vor folgenreichen Entscheidungen; Claude Code liest standardmäßig nur und fragt vor Änderungen; Transparenz über den Lösungsweg. Auszüge gelesen.",
+    "geprueft": "2026-11-05"
+  },
+  {
+    "id": "anthropic-agenten-2026",
+    "titel": "Trustworthy agents in practice",
+    "autor": "Anthropic",
+    "jahr": 2026,
+    "art": "Artikel",
+    "url": "https://www.anthropic.com/research/trustworthy-agents",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "labor"
+    ],
+    "status": "belegt",
+    "notiz": "09.04.2026. Plan vorab zeigen verlagert die Aufsicht vom Einzelschritt auf die Strategie; Training belohnt Innehalten statt Annehmen; zu viel Fragen schadet ebenso. Auszüge gelesen.",
+    "geprueft": "2026-11-05"
+  },
+  {
+    "id": "amershi-2019-hax",
+    "titel": "Guidelines for Human-AI Interaction",
+    "autor": "Saleema Amershi u. a. (Microsoft)",
+    "jahr": 2019,
+    "art": "Paper",
+    "url": "https://www.microsoft.com/research/blog/guidelines-for-human-ai-interaction-design/",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "labor"
+    ],
+    "status": "belegt",
+    "notiz": "CHI 2019, 18 Richtlinien. Nr. 2: zeigen, wie oft das System Fehler macht; Nr. 10: bei Zweifel erst klären, dann handeln. Blog und HAX-Bibliothek gelesen.",
+    "geprueft": "2026-11-05"
   }
 ]
