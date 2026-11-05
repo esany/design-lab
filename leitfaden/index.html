@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mit KI arbeiten · design-lab</title>
+  <meta name="description" content="Was hilft, Projekte mit KI umzusetzen, und welche Ratschläge überholt sind. Jeder Eintrag hat drei Stufen: die Regel, dann warum sie gilt, dann Hintergrund und Quellen. Die monatliche Pflege prüft die Einträge; Überholtes wird markiert, nicht gelöscht.">
+  <!-- Erzeugt aus leitfaden/eintraege.json durch tools/build.mjs — Daten bearbeiten, nicht diese Datei. -->
+  <link rel="stylesheet" href="../assets/tokens.css">
+  <link rel="stylesheet" href="../assets/lab.css">
+</head>
+<body class="leitfaden">
+  <header class="masthead masthead-klein">
+    <div class="mark" aria-hidden="true"></div>
+    <div>
+      <p class="zurueck"><a href="../">design-lab</a></p>
+      <h1>Mit KI arbeiten</h1>
+      <p class="lede">Was hilft, Projekte mit KI umzusetzen, und welche Ratschläge überholt sind. Jeder Eintrag hat drei Stufen: die Regel, dann warum sie gilt, dann Hintergrund und Quellen. Die monatliche Pflege prüft die Einträge; Überholtes wird markiert, nicht gelöscht.</p>
+      <p class="meta">Stand 05.11.2026 · <a href="#aenderungen">Änderungen</a> · Beleg: belegt (mit Fundstelle) · abgeleitet · nicht belegt</p>
+    </div>
+  </header>
+
+  <main>
+    <section aria-labelledby="h-kern">
+      <div class="section-head"><h2 id="h-kern">Grundlagen</h2><span class="count">9</span></div>
+      <p class="bereich-text">Für jede Arbeit mit KI, vom Chat bis zum Agenten.</p>
+      <article class="tipp tipp-gilt" id="k-zweck">
+        <h3>Sag, wofür – nicht nur was.</h3>
+        <p class="kurz">Nenne Zweck, Publikum und Rahmen. Ein Satz Begründung wirkt oft mehr als eine Liste von Verboten.</p>
+        <p class="meta">belegt · geprüft 05.11.2026</p>
+        <details>
+          <summary>Warum?</summary>
+          <p>Aktuelle Modelle befolgen Anweisungen sehr wörtlich und verallgemeinern aus der Begründung. Ein „weil“ lässt sie auch in Fällen richtig entscheiden, an die du nicht gedacht hast. Eine nackte Regel wird dagegen zu eng oder zu weit angewandt.</p>
+          <dl class="beispiel"><dt>statt</dt><dd>Keine Aufzählungszeichen.</dd><dt>besser</dt><dd>Der Text wird vorgelesen, darum bitte Fließtext ohne Aufzählungszeichen.</dd></dl>
+          <details>
+            <summary>Hintergrund und Quellen</summary>
+            <p>Was im Projekt steht, liest die KI selbst. Aufschreiben musst du nur, was sie nicht sehen kann: Absicht, Publikum, Entscheidungen, die nur in deinem Kopf liegen, und was du schon zweimal korrigieren musstest. Prüffrage: Würde eine kundige Kollegin ohne Vorwissen den Auftrag verstehen?</p>
+            <ul class="quellen">
+              <li><a href="https://code.claude.com/docs/en/best-practices">Best practices for Claude Code</a> · Anthropic, 2026 <span class="beleg">belegt</span></li>
+              <li><a href="https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices">Prompting best practices (Claude)</a> · Anthropic, 2026 <span class="beleg">abgeleitet</span></li>
+            </ul>
+            <p class="meta">im Leitfaden seit 05.11.2026</p>
+          </details>
+        </details>
+      </article>
+      <article class="tipp tipp-gilt" id="k-pruefung">
+        <h3>Gib der KI eine Prüfung, die sie selbst ausführen kann.</h3>
+        <p class="kurz">Etwas, das „bestanden“ oder „nicht bestanden“ zurückgibt: ein Test, ein Build, ein Screenshot neben der Vorlage.</p>
+        <p class="meta">belegt · geprüft 05.11.2026</p>
+        <details>
+          <summary>Warum?</summary>
+          <p>Ohne Prüfung ist „sieht fertig aus“ das einzige Signal, und du wirst selbst zur Prüfschleife: Jeder Fehler wartet, bis du ihn bemerkst. Mit einer Prüfung arbeitet die KI weiter, bis sie besteht. Verlange den Beleg, also den ausgeführten Befehl mit Ausgabe oder den Screenshot. „Alle Tests bestanden“ allein sagt wenig.</p>
+          <dl class="beispiel"><dt>statt</dt><dd>Mach die Seite schöner.</dd><dt>besser</dt><dd>Setze den Entwurf um, mach einen Screenshot, vergleiche ihn mit der Vorlage, liste die Unterschiede und behebe sie.</dd></dl>
+          <details>
+            <summary>Hintergrund und Quellen</summary>
+            <p>In der Gestaltung heißt Prüfung: rendern und ansehen, messen (Kontrast, Schriftgröße beim geplanten Abstand), mit der Vorlage vergleichen. Das Labor macht es so in seiner Qualitätsschleife: Ergebnisse, die sich erzeugen lassen, werden erzeugt statt behauptet.</p>
+            <ul class="quellen">
+              <li><a href="https://code.claude.com/docs/en/best-practices">Best practices for Claude Code</a> · Anthropic, 2026 <span class="beleg">belegt</span></li>
+              <li><a href="https://github.com/esany/design-lab/blob/main/.agents/skills/laborarbeit/references/pruefen.md">.agents/skills/laborarbeit/references/pruefen.md</a> <span class="beleg">Labor</span></li>
+            </ul>
+            <p class="meta">im Leitfaden seit 05.11.2026</p>
+          </details>
+        </details>
+      </article>
+      <article class="tipp tipp-gilt" id="k-zweitblick">
+        <h3>Lass die KI ihre eigene Arbeit nicht selbst abnehmen.</h3>
+        <p class="kurz">Prüfen soll jemand, der den Entstehungsweg nicht gesehen hat: ein zweiter Chat oder ein anderes Modell.</p>
+        <p class="meta">belegt · geprüft 05.11.2026</p>
+        <details>
+          <summary>Warum?</summary>
+          <p>Modelle bewerten eigene Texte höher als gleichwertige fremde, und wer die Begründung miterlebt hat, lässt sich von ihr überzeugen. Ein frischer Blick sieht nur das Ergebnis.</p>
+          <details>
+            <summary>Hintergrund und Quellen</summary>
+            <p>Dieselbe Aufgabe an einen Helfer abzugeben macht die Antwort nicht besser, nur die unabhängige Prüfung tut das. Auch Prüfer irren: In einer Testreihe von Wissensarbeit lagen 12 von 12 gemeldeten Fehlern beim Prüfer, nicht beim geprüften Modell. Ein Zweitblick ist also eine zweite Meinung, kein Urteil.</p>
+            <ul class="quellen">
+              <li><a href="https://arxiv.org/abs/2404.13076">LLM Evaluators Recognize and Favor Their Own Generations</a> · Arjun Panickssery, Samuel R. Bowman, Shi Feng, 2024 <span class="beleg">belegt</span></li>
+              <li><a href="https://code.claude.com/docs/en/best-practices">Best practices for Claude Code</a> · Anthropic, 2026 <span class="beleg">belegt</span></li>
+              <li><a href="https://github.com/esany/design-lab/blob/main/research/2026-10-audit-zusammenarbeit/befunde.md">research/2026-10-audit-zusammenarbeit/befunde.md</a> <span class="beleg">Labor</span></li>
+            </ul>
+            <p class="meta">im Leitfaden seit 05.11.2026</p>
+          </details>
+        </details>
+      </article>
+      <article class="tipp tipp-gilt" id="k-kontext">
+        <h3>Gib gezielten Kontext, nicht alles.</h3>
+        <p class="kurz">Nur was die Aufgabe braucht. Zwischen unabhängigen Aufgaben neu anfangen.</p>
+        <p class="meta">belegt · geprüft 05.11.2026</p>
+        <details>
+          <summary>Warum?</summary>
+          <p>Die Leistung sinkt mit wachsender Eingabe, auch wenn alles hineinpasst, besonders wenn ähnliche, aber falsche Stellen dabei sind. Der Platz ist heute selten das Problem, die Aufmerksamkeit schon. Gezielter Kontext gibt bessere Antworten und kostet weniger.</p>
+          <details>
+            <summary>Hintergrund und Quellen</summary>
+            <p>Chroma hat 18 Modelle getestet; alle wurden mit längerer Eingabe unzuverlässiger. Anthropic formuliert das Ziel als „kleinste Menge aussagekräftiger Information“. Im Labor gemessen: Der Startpfad kostete etwa dreimal so viel wie nötig, und derselbe Stand stand an mehreren Stellen.</p>
+            <ul class="quellen">
+              <li><a href="https://www.trychroma.com/research/context-rot">Context Rot: How Increasing Input Tokens Impacts LLM Performance</a> · Kelly Hong, Anton Troynikov, Jeff Huber (Chroma), 2025 <span class="beleg">belegt</span></li>
+              <li><a href="https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents">Effective context engineering for AI agents</a> · Anthropic, 2025 <span class="beleg">belegt</span></li>
+              <li><a href="https://code.claude.com/docs/en/best-practices">Best practices for Claude Code</a> · Anthropic, 2026 <span class="beleg">belegt</span></li>
+              <li><a href="https://github.com/esany/design-lab/blob/main/research/2026-10-lesekosten/befund.md">research/2026-10-lesekosten/befund.md</a> <span class="beleg">Labor</span></li>
+            </ul>
+            <p class="meta">im Leitfaden seit 05.11.2026</p>
+          </details>
+        </details>
+      </article>
+      <article class="tipp tipp-gilt" id="k-neustart">
+        <h3>Nach zwei Korrekturen: neu anfangen statt weiter korrigieren.</h3>
+        <p class="kurz">Frischer Chat mit einem besseren Auftrag, der das Gelernte enthält.</p>
+        <p class="meta">belegt · geprüft 05.11.2026</p>
+        <details>
+          <summary>Warum?</summary>
+          <p>Jede gescheiterte Korrektur bleibt im Verlauf stehen und wird immer wieder mitgelesen. Ein neuer Anfang mit einem Auftrag, der die Erkenntnis enthält, funktioniert fast immer besser als der dritte Versuch.</p>
+          <details>
+            <summary>Hintergrund und Quellen</summary>
+            <p>Das setzt voraus, dass der Stand nicht nur im Chat liegt, sondern in Dateien (im Labor: Merkzettel und Repo). Dann kostet ein Neustart nichts.</p>
+            <ul class="quellen">
+              <li><a href="https://code.claude.com/docs/en/best-practices">Best practices for Claude Code</a> · Anthropic, 2026 <span class="beleg">belegt</span></li>
+              <li><a href="https://github.com/esany/design-lab/blob/main/decisions/0024-kein-wissen-nur-im-chat.md">decisions/0024-kein-wissen-nur-im-chat.md</a> <span class="beleg">Labor</span></li>
+            </ul>
+            <p class="meta">im Leitfaden seit 05.11.2026</p>
+          </details>
+        </details>
+      </article>
+      <article class="tipp tipp-gilt" id="k-beispiele">
+        <h3>Zeig wenige gute Beispiele statt vieler Sonderfälle.</h3>
+        <p class="kurz">Zwei, drei typische und unterschiedliche Beispiele sagen mehr als eine Liste von Ausnahmen.</p>
+        <p class="meta">belegt · geprüft 05.11.2026</p>
+        <details>
+          <summary>Warum?</summary>
+          <p>Beispiele sind für das Modell Bilder des gewünschten Ergebnisses. Eine lange Liste von Randfällen macht den Auftrag spröde und lenkt ab.</p>
+          <details>
+            <summary>Hintergrund und Quellen</summary>
+            <p>In der Gestaltung: zwei Referenzen, die das Gewünschte von verschiedenen Seiten zeigen, und eine, die zeigt, was nicht gemeint ist. Die Negativfolie des Labors (die Durchschnittslösung) ist so ein Gegenbeispiel.</p>
+            <ul class="quellen">
+              <li><a href="https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents">Effective context engineering for AI agents</a> · Anthropic, 2025 <span class="beleg">belegt</span></li>
+              <li><a href="https://github.com/esany/design-lab/blob/main/.agents/skills/kritik/SKILL.md">.agents/skills/kritik/SKILL.md</a> <span class="beleg">Labor</span></li>
+            </ul>
+            <p class="meta">im Leitfaden seit 05.11.2026</p>
+          </details>
+        </details>
+      </article>
+      <article class="tipp tipp-gilt" id="k-gefaelligkeit">
+        <h3>Rechne mit Zustimmung – frag nach Widerspruch.</h3>
+        <p class="kurz">Modelle neigen dazu, deiner Sicht recht zu geben. Frag neutral und verlange Gegenargumente.</p>
+        <p class="meta">abgeleitet · geprüft 05.11.2026</p>
+        <details>
+          <summary>Warum?</summary>
+          <p>Beim Training belohnen menschliche Bewertungen Antworten, die der Meinung des Fragenden entsprechen. Modelle ändern sogar richtige Antworten, wenn man Zweifel äußert. Wer seine Meinung voranstellt, bekommt sie oft bestätigt.</p>
+          <dl class="beispiel"><dt>statt</dt><dd>Das ist doch ein guter Ansatz, oder?</dd><dt>besser</dt><dd>Was spricht gegen diesen Ansatz? Nenne die drei stärksten Einwände.</dd></dl>
+          <details>
+            <summary>Hintergrund und Quellen</summary>
+            <p>Belegt ist das für Modelle von 2023. Neuere Modelle werden gezielt dagegen trainiert; wie stark der Effekt heute noch ist, ist in den Quellen dieses Leitfadens nicht gemessen. Im Labor gilt deshalb „Widerspruch ist Pflicht“: Zustimmung allein ist keine Leistung.</p>
+            <ul class="quellen">
+              <li><a href="https://arxiv.org/abs/2310.13548">Towards Understanding Sycophancy in Language Models</a> · Mrinank Sharma, Meg Tong u. a. (Anthropic), 2023 <span class="beleg">belegt</span></li>
+              <li><a href="https://github.com/esany/design-lab/blob/main/.agents/skills/laborarbeit/references/pruefen.md">.agents/skills/laborarbeit/references/pruefen.md</a> <span class="beleg">Labor</span></li>
+            </ul>
+            <p class="meta">im Leitfaden seit 05.11.2026</p>
+          </details>
+        </details>
+      </article>
+      <article class="tipp tipp-gilt" id="k-status">
+        <h3>Verlange zu jeder Aussage, woher sie kommt.</h3>
+        <p class="kurz">belegt (mit Fundstelle) · abgeleitet · nicht belegt.</p>
+        <p class="meta">abgeleitet · geprüft 05.11.2026</p>
+        <details>
+          <summary>Warum?</summary>
+          <p>KI formuliert Vermutungen genauso flüssig wie Fakten. Der Status macht sichtbar, was geprüft ist und was nicht. Einer der häufigsten Fehler, die das Labor dokumentiert hat: Die Aussage ist stärker als ihr Beleg, etwa eine Folgerung, die als Befund auftritt, oder eine Prüfung, die als erledigt gilt, aber nie lief.</p>
+          <details>
+            <summary>Hintergrund und Quellen</summary>
+            <p>Diese Regel stammt aus der Arbeit des Labors, nicht aus einer externen Studie. Sie ist deshalb als abgeleitet markiert.</p>
+            <ul class="quellen">
+              <li><a href="https://github.com/esany/design-lab/blob/main/decisions/0007-belegpflicht.md">decisions/0007-belegpflicht.md</a> <span class="beleg">Labor</span></li>
+              <li><a href="https://github.com/esany/design-lab/blob/main/research/2026-10-audit-zusammenarbeit/befunde.md">research/2026-10-audit-zusammenarbeit/befunde.md</a> <span class="beleg">Labor</span></li>
+            </ul>
+            <p class="meta">im Leitfaden seit 05.11.2026</p>
+          </details>
+        </details>
+      </article>
+      <article class="tipp tipp-gilt" id="k-aufwand">
+        <h3>Steuere die Denktiefe über die Einstellung, nicht über Formeln.</h3>
+        <p class="kurz">Für knifflige Aufgaben die Denkstufe hochsetzen, für schnelles Hin und Her herunter.</p>
+        <p class="meta">belegt · geprüft 05.11.2026</p>
+        <details>
+          <summary>Warum?</summary>
+          <p>Bei Claude regelt die Einstellung „Effort“, wie lange das Modell nachdenkt. Sätze wie „denk gründlich nach“ sind nur gewöhnlicher Text. Die höchste Stufe lohnt sich nur für harte Probleme; bei gewöhnlichen Aufgaben denkt das Modell zu viel und wird teurer, ohne besser zu werden.</p>
+          <details>
+            <summary>Hintergrund und Quellen</summary>
+            <p>Die Angaben gelten für Claude (Stand November 2026). Andere Anbieter haben eigene Regler; dafür liegt hier noch kein Beleg vor.</p>
+            <ul class="quellen">
+              <li><a href="https://code.claude.com/docs/en/best-practices">Best practices for Claude Code</a> · Anthropic, 2026 <span class="beleg">belegt</span></li>
+            </ul>
+            <p class="meta">im Leitfaden seit 05.11.2026</p>
+          </details>
+        </details>
+      </article>
+    </section>
+    <section aria-labelledby="h-werkzeuge">
+      <div class="section-head"><h2 id="h-werkzeuge">Werkzeuge entwerfen</h2><span class="count">6</span></div>
+      <p class="bereich-text">Für komplexe Vorhaben, in denen KI über viele Sitzungen an einem System baut. Erfahrungen aus paleo-type, Wissensarbeit und diesem Labor.</p>
+      <article class="tipp tipp-gilt" id="w-sperren">
+        <h3>Was immer gelten muss, als Sperre bauen, nicht als Satz.</h3>
+        <p class="kurz">Eine Prüfung, eine Schutzregel, ein gesperrter Hauptzweig – statt einer weiteren Regel im Text.</p>
+        <p class="meta">belegt · geprüft 05.11.2026</p>
+        <details>
+          <summary>Warum?</summary>
+          <p>Textregeln befolgt ein Modell fast immer, aber eben nur fast. Im Labor und in Wissensarbeit wurden selbst geschriebene Regeln Stunden später gebrochen. Gehalten haben technische Sperren: ein gesperrter Zustand, ein Test, ein geschützter Zweig.</p>
+          <details>
+            <summary>Hintergrund und Quellen</summary>
+            <p>Anthropic empfiehlt dasselbe: Was jedes Mal passieren muss, gehört in eine Einstellung oder eine automatische Prüfung, die das Werkzeug selbst durchsetzt. Die Anweisungsdatei ist für Richtlinien, und eine Richtlinie darf das Modell im Einzelfall für unpassend halten.</p>
+            <ul class="quellen">
+              <li><a href="https://code.claude.com/docs/en/best-practices">Best practices for Claude Code</a> · Anthropic, 2026 <span class="beleg">belegt</span></li>
+              <li><a href="https://github.com/esany/design-lab/blob/main/research/2026-10-audit-zusammenarbeit/befunde.md">research/2026-10-audit-zusammenarbeit/befunde.md</a> <span class="beleg">Labor</span></li>
+              <li><a href="https://github.com/esany/design-lab/blob/main/research/2026-10-audit-paleo-type/befunde.md">research/2026-10-audit-paleo-type/befunde.md</a> <span class="beleg">Labor</span></li>
+            </ul>
+            <p class="meta">im Leitfaden seit 05.11.2026</p>
+          </details>
+        </details>
+      </article>
+      <article class="tipp tipp-gilt" id="w-regelflut">
+        <h3>Antworte auf einen Fehler nicht reflexhaft mit einer neuen Regel.</h3>
+        <p class="kurz">Erst fragen: Fehlte die Regel wirklich – oder wurde sie nicht befolgt?</p>
+        <p class="meta">belegt · geprüft 05.11.2026</p>
+        <details>
+          <summary>Warum?</summary>
+          <p>In paleo-type traten Fehler teils erst auf, nachdem die passende Regel schon aufgeschrieben war. In Wissensarbeit wuchs die Stützarbeit aus Berichten, Reviews und Regeln schneller als die eigentliche Arbeit. Jede Regel kostet bei jedem Start Lesezeit und verdünnt die übrigen.</p>
+          <details>
+            <summary>Hintergrund und Quellen</summary>
+            <p>Bessere Antworten auf einen Fehler: eine Sperre (siehe oben), ein einzelner Prüffall, der den Fehler nachstellt, oder eine kürzere Anweisung, in der die wichtige Zeile nicht mehr untergeht.</p>
+            <ul class="quellen">
+              <li><a href="https://github.com/esany/design-lab/blob/main/research/2026-10-audit-paleo-type/befunde.md">research/2026-10-audit-paleo-type/befunde.md</a> <span class="beleg">Labor</span></li>
+              <li><a href="https://github.com/esany/design-lab/blob/main/research/2026-10-audit-zusammenarbeit/befunde.md">research/2026-10-audit-zusammenarbeit/befunde.md</a> <span class="beleg">Labor</span></li>
+            </ul>
+            <p class="meta">im Leitfaden seit 05.11.2026</p>
+          </details>
+        </details>
+      </article>
+      <article class="tipp tipp-gilt" id="w-ein-ort">
+        <h3>Halte den Stand an genau einem Ort.</h3>
+        <p class="kurz">Eine Stelle je Thema trägt den Stand, alle anderen verweisen nur darauf.</p>
+        <p class="meta">belegt · geprüft 05.11.2026</p>
+        <details>
+          <summary>Warum?</summary>
+          <p>Steht derselbe Stand an mehreren Stellen, laufen diese „Uhren“ auseinander, und die KI liest die falsche. Im Labor ist das passiert: Ein geschlossenes Issue galt im Merkzettel noch als offen.</p>
+          <details>
+            <summary>Hintergrund und Quellen</summary>
+            <p>Erzeugte Übersichten statt Handpflege helfen: Im Labor entsteht die Übersicht automatisch aus den Merkzetteln. Wissensarbeit führte die „mehreren Uhren“ als wichtigsten Befund.</p>
+            <ul class="quellen">
+              <li><a href="https://github.com/esany/design-lab/blob/main/research/2026-10-lesekosten/befund.md">research/2026-10-lesekosten/befund.md</a> <span class="beleg">Labor</span></li>
+              <li><a href="https://github.com/esany/design-lab/blob/main/research/2026-10-audit-zusammenarbeit/befunde.md">research/2026-10-audit-zusammenarbeit/befunde.md</a> <span class="beleg">Labor</span></li>
+            </ul>
+            <p class="meta">im Leitfaden seit 05.11.2026</p>
+          </details>
+        </details>
+      </article>
+      <article class="tipp tipp-gilt" id="w-gruen">
+        <h3>Grün ist nicht fertig.</h3>
+        <p class="kurz">Eine bestandene Prüfung heißt: Dieser Teil stimmt. Sie heißt nicht: Das Ziel ist erreicht.</p>
+        <p class="meta">belegt · geprüft 05.11.2026</p>
+        <details>
+          <summary>Warum?</summary>
+          <p>In paleo-type blieben Aufgaben trotz grüner Prüfungen offen; ein frischer Test zeigte Teilerfolg, insgesamt aber Fehlschlag. Ein Agent, der nur auf seine Prüfung schaut, meldet zu früh „fertig“.</p>
+          <details>
+            <summary>Hintergrund und Quellen</summary>
+            <p>Hilfreich ist, im Abnahmebericht drei Dinge zu trennen: Build bestanden · in frischem Kontext getestet · tatsächliches Ergebnis gesehen. Für Gestaltung heißt das: Die Prüfungen sind grün, aber hat jemand das Werk in seiner Wahrnehmungssituation angesehen?</p>
+            <ul class="quellen">
+              <li><a href="https://github.com/esany/design-lab/blob/main/research/2026-10-audit-paleo-type/befunde.md">research/2026-10-audit-paleo-type/befunde.md</a> <span class="beleg">Labor</span></li>
+            </ul>
+            <p class="meta">im Leitfaden seit 05.11.2026</p>
+          </details>
+        </details>
+      </article>
+      <article class="tipp tipp-gilt" id="w-lesart">
+        <h3>Lass die KI die Lesart nennen, bevor sie loslegt.</h3>
+        <p class="kurz">Bei mehrdeutigen Aufträgen: „Wie verstehst du das?“ – in einem Satz.</p>
+        <p class="meta">belegt · geprüft 05.11.2026</p>
+        <details>
+          <summary>Warum?</summary>
+          <p>Das häufigste Fehlermuster in den Audits: Ein Auftrag mit zwei Lesarten wird still in die größere aufgelöst, etwa „nachziehen“ als neue Arbeit. Ein Satz Rückfrage ist billiger als ein falscher Umbau.</p>
+          <details>
+            <summary>Hintergrund und Quellen</summary>
+            <p>Anthropic empfiehlt, bei Unsicherheit erst zu erkunden und zu planen und dann zu bauen. Den Plan kann man weglassen, wenn sich die Änderung in einem Satz beschreiben lässt.</p>
+            <ul class="quellen">
+              <li><a href="https://code.claude.com/docs/en/best-practices">Best practices for Claude Code</a> · Anthropic, 2026 <span class="beleg">belegt</span></li>
+              <li><a href="https://github.com/esany/design-lab/blob/main/research/2026-10-audit-zusammenarbeit/befunde.md">research/2026-10-audit-zusammenarbeit/befunde.md</a> <span class="beleg">Labor</span></li>
+            </ul>
+            <p class="meta">im Leitfaden seit 05.11.2026</p>
+          </details>
+        </details>
+      </article>
+      <article class="tipp tipp-gilt" id="w-runden">
+        <h3>Begrenze Prüfrunden – danach entscheidest du.</h3>
+        <p class="kurz">Nach zwei Runden entscheidest du, statt eine dritte Review anzusetzen.</p>
+        <p class="meta">abgeleitet · geprüft 05.11.2026</p>
+        <details>
+          <summary>Warum?</summary>
+          <p>Ohne Grenze findet jede Review etwas, also folgt die nächste. In Wissensarbeit durchlief eine kleine Korrektur drei Reviews und zwei Prüfläufe und war danach immer noch nicht freigegeben.</p>
+          <details>
+            <summary>Hintergrund und Quellen</summary>
+            <p>Die Zahl zwei ist eine Faustregel, abgeleitet aus dem Befund und aus Anthropics Rat zum Neustart nach zwei Korrekturen. Gemessen ist sie nicht.</p>
+            <ul class="quellen">
+              <li><a href="https://code.claude.com/docs/en/best-practices">Best practices for Claude Code</a> · Anthropic, 2026 <span class="beleg">belegt</span></li>
+              <li><a href="https://github.com/esany/design-lab/blob/main/research/2026-10-audit-zusammenarbeit/befunde.md">research/2026-10-audit-zusammenarbeit/befunde.md</a> <span class="beleg">Labor</span></li>
+            </ul>
+            <p class="meta">im Leitfaden seit 05.11.2026</p>
+          </details>
+        </details>
+      </article>
+    </section>
+    <section aria-labelledby="h-veraltet">
+      <div class="section-head"><h2 id="h-veraltet">Überholt</h2><span class="count">6</span></div>
+      <p class="bereich-text">Früher gute Ratschläge, die heute nichts mehr bringen oder schaden. Sie bleiben stehen, damit man sie wiedererkennt.</p>
+      <article class="tipp tipp-veraltet" id="v-rolle">
+        <h3>„Du bist ein erfahrener Experte für …“</h3>
+        <p class="kurz">Eine Expertenrolle macht Antworten nicht richtiger.</p>
+        <p class="statt">Stattdessen: <a href="#k-zweck">Sag, wofür – nicht nur was.</a></p>
+        <p class="meta">überholt seit 05.11.2026 · belegt · geprüft 05.11.2026</p>
+        <details>
+          <summary>Warum?</summary>
+          <p>Mehrere Studien von 2024 bis 2026 finden keinen verlässlichen Gewinn an Genauigkeit; die Wirkung einzelner Rollen ist weitgehend zufällig. Bei manchen Modellen denkt die KI mit Rolle länger, das kostet Geld und Zeit. Eine Rolle kann Ton und Blickwinkel ändern, für Fakten bringt sie nichts.</p>
+          <details>
+            <summary>Hintergrund und Quellen</summary>
+            <p>Ganz einig ist die Forschung nicht: Araujo u. a. finden meist positive oder neutrale Effekte, Mullens u. a. widersprechen dem Nullbefund mit Rollen, die ein Vorgehen beschreiben. Gemeinsamer Nenner: Es hilft die Beschreibung von Aufgabe und Vorgehen, nicht der Titel. Palmer hat nur kleine Modelle und Fragen mit Antwortauswahl getestet.</p>
+            <ul class="quellen">
+              <li><a href="https://aclanthology.org/2024.findings-emnlp.888/">When „A Helpful Assistant“ Is Not Really Helpful: Personas in System Prompts Do Not Improve Performances of Large Language Models</a> · Mingqian Zheng, Jiaxin Pei, Lajanugen Logeswaran, Moontae Lee, David Jurgens, 2024 <span class="beleg">belegt</span></li>
+              <li><a href="https://arxiv.org/abs/2512.05858">Prompting Science Report 4: Playing Pretend: Expert Personas Don't Improve Factual Accuracy</a> · Savir Basil, Ina Shapiro, Dan Shapiro, Ethan Mollick, Lilach Mollick, Lennart Meincke, 2025 <span class="beleg">abgeleitet</span></li>
+              <li><a href="https://hackernoon.com/the-prompt-engineering-trick-that-could-be-making-your-ai-slower">The Prompt Engineering Trick That Could Be Making Your AI Slower</a> · Cameron M. Palmer, 2026 <span class="beleg">belegt</span></li>
+              <li><a href="https://arxiv.org/abs/2508.19764">Principled Personas: Defining and Measuring the Intended Effects of Persona Prompting on Task Performance</a> · Pedro Henrique Luz de Araujo, Benjamin Roth u. a., 2025 <span class="beleg">belegt</span></li>
+              <li><a href="https://arxiv.org/abs/2603.20225">The Arrival of AGI? When Expert Personas Exceed Expert Benchmarks</a> · Drake Mullens, Stella Shen u. a., 2026 <span class="beleg">abgeleitet</span></li>
+            </ul>
+            <p class="meta">im Leitfaden seit 05.11.2026</p>
+          </details>
+        </details>
+      </article>
+      <article class="tipp tipp-veraltet" id="v-schritt">
+        <h3>„Denk Schritt für Schritt.“ · „Denk gründlich nach.“</h3>
+        <p class="kurz">Bei Modellen mit eingebautem Denken bringt das kaum etwas, kostet aber Zeit.</p>
+        <p class="statt">Stattdessen: <a href="#k-aufwand">Steuere die Denktiefe über die Einstellung, nicht über Formeln.</a></p>
+        <p class="meta">überholt seit 05.11.2026 · belegt · geprüft 05.11.2026</p>
+        <details>
+          <summary>Warum?</summary>
+          <p>Ältere Modelle sprangen ohne diesen Satz zu schnell zur Antwort. Heutige Modelle denken von selbst. Die Wharton-Studie fand bei Denkmodellen höchstens kleine Gewinne, aber deutlich längere Antwortzeiten. Bei Claude sind solche Sätze gewöhnlicher Text und keine Schalter.</p>
+          <details>
+            <summary>Hintergrund und Quellen</summary>
+            
+            <ul class="quellen">
+              <li><a href="https://arxiv.org/abs/2506.07142">Prompting Science Report 2: The Decreasing Value of Chain of Thought in Prompting</a> · Lennart Meincke, Ethan Mollick, Lilach Mollick, Dan Shapiro, 2025 <span class="beleg">belegt</span></li>
+              <li><a href="https://code.claude.com/docs/en/best-practices">Best practices for Claude Code</a> · Anthropic, 2026 <span class="beleg">belegt</span></li>
+            </ul>
+            <p class="meta">im Leitfaden seit 05.11.2026</p>
+          </details>
+        </details>
+      </article>
+      <article class="tipp tipp-veraltet" id="v-schreien">
+        <h3>WICHTIG, KRITISCH, MUSS in Großbuchstaben</h3>
+        <p class="kurz">Aktuelle Modelle folgen einer ruhig formulierten Zeile. Betonung führt dazu, dass sie die Regel übertreiben.</p>
+        <p class="statt">Stattdessen: <a href="#w-sperren">Was immer gelten muss, als Sperre bauen, nicht als Satz.</a></p>
+        <p class="meta">überholt seit 05.11.2026 · belegt · geprüft 05.11.2026</p>
+        <details>
+          <summary>Warum?</summary>
+          <p>Ältere Modelle brauchten die Betonung manchmal. Heute wendet die KI eine geschriene Regel zu oft und zu weit an. Darf eine Regel nie brechen, gehört sie in eine Sperre. Geht sie in einer langen Datei unter, muss die Datei kürzer werden.</p>
+          <details>
+            <summary>Hintergrund und Quellen</summary>
+            
+            <ul class="quellen">
+              <li><a href="https://code.claude.com/docs/en/best-practices">Best practices for Claude Code</a> · Anthropic, 2026 <span class="beleg">belegt</span></li>
+              <li><a href="https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices">Prompting best practices (Claude)</a> · Anthropic, 2026 <span class="beleg">abgeleitet</span></li>
+            </ul>
+            <p class="meta">im Leitfaden seit 05.11.2026</p>
+          </details>
+        </details>
+      </article>
+      <article class="tipp tipp-veraltet" id="v-weiter">
+        <h3>„Mach weiter, bis alles fertig ist. Sei nicht faul.“</h3>
+        <p class="kurz">Heutige Modelle arbeiten einen vereinbarten Auftrag von selbst durch. Solche Sätze führen eher zu Überarbeitung.</p>
+        <p class="statt">Stattdessen: <a href="#k-pruefung">Gib der KI eine Prüfung, die sie selbst ausführen kann.</a></p>
+        <p class="meta">überholt seit 05.11.2026 · belegt · geprüft 05.11.2026</p>
+        <details>
+          <summary>Warum?</summary>
+          <p>Was wirklich hilft, ist eine Prüfung, die bestanden werden muss. Bleibt ein Lauf doch stehen, genügt „weiter“.</p>
+          <details>
+            <summary>Hintergrund und Quellen</summary>
+            
+            <ul class="quellen">
+              <li><a href="https://code.claude.com/docs/en/best-practices">Best practices for Claude Code</a> · Anthropic, 2026 <span class="beleg">belegt</span></li>
+            </ul>
+            <p class="meta">im Leitfaden seit 05.11.2026</p>
+          </details>
+        </details>
+      </article>
+      <article class="tipp tipp-veraltet" id="v-platz">
+        <h3>Platz im Kontextfenster um jeden Preis sparen</h3>
+        <p class="kurz">Der Platz reicht heute fast immer. Gezielt bleibt der Kontext trotzdem, aber wegen der Qualität.</p>
+        <p class="statt">Stattdessen: <a href="#k-kontext">Gib gezielten Kontext, nicht alles.</a></p>
+        <p class="meta">überholt seit 05.11.2026 · belegt · geprüft 05.11.2026</p>
+        <details>
+          <summary>Warum?</summary>
+          <p>Die meisten aktuellen Modelle fassen eine Million Tokens, und lange Verläufe werden automatisch verdichtet. Den Kontext klein zu halten lohnt sich weiter, weil ein gezielter Kontext bessere Antworten gibt und weniger kostet. Es geht nicht mehr darum, dass er sonst überläuft.</p>
+          <details>
+            <summary>Hintergrund und Quellen</summary>
+            
+            <ul class="quellen">
+              <li><a href="https://code.claude.com/docs/en/best-practices">Best practices for Claude Code</a> · Anthropic, 2026 <span class="beleg">belegt</span></li>
+            </ul>
+            <p class="meta">im Leitfaden seit 05.11.2026</p>
+          </details>
+        </details>
+      </article>
+      <article class="tipp tipp-veraltet" id="v-helfer">
+        <h3>Für eine bessere Antwort an einen Helfer abgeben</h3>
+        <p class="kurz">Ein Helfer (Subagent) ist meist dasselbe Modell und gibt keine bessere Antwort.</p>
+        <p class="statt">Stattdessen: <a href="#k-zweitblick">Lass die KI ihre eigene Arbeit nicht selbst abnehmen.</a></p>
+        <p class="meta">überholt seit 05.11.2026 · belegt · geprüft 05.11.2026</p>
+        <details>
+          <summary>Warum?</summary>
+          <p>Helfer lohnen sich für parallele Arbeit und für eine unabhängige Prüfung, kosten aber zusätzliche Tokens. Der Gewinn entsteht durch den frischen Blick, nicht durch das Abgeben.</p>
+          <details>
+            <summary>Hintergrund und Quellen</summary>
+            
+            <ul class="quellen">
+              <li><a href="https://code.claude.com/docs/en/best-practices">Best practices for Claude Code</a> · Anthropic, 2026 <span class="beleg">belegt</span></li>
+            </ul>
+            <p class="meta">im Leitfaden seit 05.11.2026</p>
+          </details>
+        </details>
+      </article>
+    </section>
+    <section aria-labelledby="h-aenderungen" id="aenderungen">
+      <div class="section-head"><h2 id="h-aenderungen">Änderungen</h2></div>
+      <ul class="aenderungen">
+        <li><span class="meta">05.11.2026</span> Leitfaden angelegt: 9 Grundlagen, 6 Einträge zum Werkzeugentwurf, 6 überholte Ratschläge.</li>
+        <li><span class="meta">05.11.2026</span> <a href="#v-rolle">„Du bist ein erfahrener Experte für …“</a>: Aufgenommen aus dem Fundstück von Cameron M. Palmer (HackerNoon, 04.11.2026).</li>
+      </ul>
+      <p class="meta">Jede Änderung ist auch im <a href="https://github.com/esany/design-lab/commits/main/leitfaden/eintraege.json">Verlauf der Datei</a> nachvollziehbar.</p>
+    </section>
+  </main>
+</body>
+</html>

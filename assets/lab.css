@@ -93,3 +93,33 @@ footer {
   padding-top: var(--lab-space-3);
   font: var(--lab-size-text-s) var(--lab-font-mono); color: var(--lab-muted);
 }
+
+/* Leitfaden ------------------------------------------------------------- */
+.masthead-klein { grid-template-columns: var(--lab-space-4) 1fr; padding-bottom: var(--lab-space-6); }
+.masthead-klein .mark { width: var(--lab-space-4); }
+.masthead-klein h1 { font-size: clamp(2rem, 6vw, var(--lab-size-text-xl)); line-height: 1; }
+.masthead-klein .lede { grid-column: auto; }
+.zurueck { margin: 0 0 var(--lab-space-1); font: var(--lab-size-text-s) var(--lab-font-mono); }
+.leitfaden .meta { font: var(--lab-size-text-s)/1.4 var(--lab-font-mono); color: var(--lab-muted); margin: var(--lab-space-1) 0 0; }
+.bereich-text { max-width: var(--lab-size-measure); margin: 0 0 var(--lab-space-3); color: var(--lab-muted); }
+.tipp { max-width: var(--lab-size-measure); padding-block: var(--lab-space-3); border-top: 1px solid var(--lab-line); scroll-margin-top: var(--lab-space-2); }
+.tipp h3 { margin: 0; font-size: var(--lab-size-text-l); line-height: 1.2; letter-spacing: -0.01em; }
+.tipp .kurz { margin: var(--lab-space-1) 0 0; }
+.tipp details { margin-top: var(--lab-space-2); }
+.tipp details details { margin-top: var(--lab-space-2); padding-left: var(--lab-space-2); border-left: 1px solid var(--lab-line); }
+.tipp summary { cursor: pointer; font-weight: 700; width: fit-content; }
+.tipp summary:hover { color: var(--lab-accent); }
+.tipp details p { margin: var(--lab-space-1) 0 0; }
+.tipp:target h3 { color: var(--lab-accent); }
+.tipp-veraltet h3 { text-decoration: line-through; text-decoration-thickness: 2px; text-decoration-color: var(--lab-accent); }
+.statt { margin: var(--lab-space-1) 0 0; }
+.statt a { font-weight: 700; }
+.beispiel { display: grid; grid-template-columns: auto 1fr; gap: var(--lab-space-1) var(--lab-space-2); margin: var(--lab-space-2) 0 0; }
+.beispiel dt { font: var(--lab-size-text-s)/1.5 var(--lab-font-mono); color: var(--lab-muted); }
+.beispiel dd { margin: 0; }
+.beispiel dd:last-of-type { font-weight: 700; }
+.quellen, .aenderungen { list-style: none; margin: var(--lab-space-2) 0 0; padding: 0; display: grid; gap: var(--lab-space-1); }
+.quellen li, .aenderungen li { line-height: 1.35; }
+.beleg { font: var(--lab-size-text-s) var(--lab-font-mono); color: var(--lab-muted); white-space: nowrap; }
+.masthead-klein .lede { font-size: var(--lab-size-text-m); line-height: 1.45; }
+@media (min-width: 48rem) { .masthead-klein .lede { font-size: var(--lab-size-text-l); line-height: 1.25; } }
