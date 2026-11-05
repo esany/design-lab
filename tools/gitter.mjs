@@ -19,7 +19,7 @@ export function leseKopf(text, datei) {
 }
 const cell = s => s.replace(/\|/g, '\\|');
 export function themenBlock(themen) {
-  return ['<!-- themen:start -->', '## Themen', '', '| Thema | Stand | Nächster Schritt | Merkzettel |', '|---|---|---|---|', ...themen.map(({datei, thema, stand, naechster_schritt}) => `| ${cell(thema)} | ${cell(stand)} | ${cell(naechster_schritt)} | [Merkzettel](anschluss/${encodeURIComponent(datei)}) |`), '<!-- themen:end -->'].join('\n');
+  return ['<!-- themen:start -->', '## Themen', '', '| Thema | Stand | Nächster Schritt | Merkzettel |', '|---|---|---|---|', ...themen.map(({datei, thema, stand, naechster_schritt, unsicher}) => `| ${cell(thema)} | ${cell(stand)}${unsicher ? ` · **Unsicher:** ${cell(unsicher)}` : ''} | ${cell(naechster_schritt)} | [Merkzettel](anschluss/${encodeURIComponent(datei)}) |`), '<!-- themen:end -->'].join('\n');
 }
 export function aktualisiereStand(stand, themen) {
   const marker = /<!-- themen:start -->[\s\S]*?<!-- themen:end -->/g;
@@ -39,5 +39,25 @@ export function pruefeGitHub(themen, issues, isPR, dateien, labels) {
     else if (issues[n] !== 'open') errors.push(`Issue #${n} ist ${issues[n]}`);
   }
   if (isPR && !dateien.includes('stand-verlauf.md') && !labels.includes('ohne-verlauf')) errors.push('Pull Request ändert stand-verlauf.md nicht und trägt kein Label ohne-verlauf');
+  return errors;
+}
+
+// Freigabe sichtbar machen (Leitfaden „Erst das Vorhaben freigeben“, 05.11.2026).
+// Alles in GitHub schreibt eine KI. Die Prüfung beweist keine Freigabe; sie verlangt, dass die
+// Behauptung offen dasteht: wörtlich, mit der Frage, und mit dem, was unsicher ist.
+export const GESCHUETZT = [/^decisions\//, /^AGENTS\.md$/, /^CLAUDE\.md$/, /^\.agents\/skills\//, /^\.github\//, /^\.claude\//, /^(intent|principles|manifest)\.md$/];
+const abschnitt = (body, titel) => {
+  const m = (body || '').replace(/<!--[\s\S]*?-->/g, '').match(new RegExp(`^##\\s*${titel}[^\\n]*\\n([\\s\\S]*?)(?=^##\\s|$(?![\\s\\S]))`, 'm'));
+  return m ? m[1].trim() : null;
+};
+export function pruefeFreigabe(dateien, body) {
+  const betroffen = dateien.filter(f => GESCHUETZT.some(r => r.test(f)));
+  if (!betroffen.length) return [];
+  const errors = [], wo = `ändert Regeln oder Abläufe (${betroffen.slice(0, 3).join(', ')}${betroffen.length > 3 ? ' …' : ''})`;
+  const frei = abschnitt(body, 'Freigabe');
+  if (frei === null) errors.push(`Pull Request ${wo}, aber der Abschnitt „## Freigabe“ fehlt`);
+  else if (!/[„"“].+[“"”]/.test(frei)) errors.push('Abschnitt „## Freigabe“ braucht die Antwort des Eigentümers wörtlich in Anführungszeichen, mit der Frage dazu');
+  const unsicher = abschnitt(body, 'Unsicher');
+  if (unsicher === null || unsicher.length < 3) errors.push(`Pull Request ${wo}, aber der Abschnitt „## Unsicher / nicht geprüft“ fehlt oder ist leer`);
   return errors;
 }

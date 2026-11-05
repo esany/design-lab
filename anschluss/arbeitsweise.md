@@ -1,13 +1,14 @@
 ---
 thema: Arbeitsweise mit KI · Wissensformen
-stand: Repo first neu gefasst (0024 auf Probe, drei Schichten, Neustart-Test); erzeugtes Verzeichnis, Befunde zu einem zusammengeführt, Projekt-Doc paleo-type gekürzt (#127)
-naechster_schritt: Der Eigentümer beantwortet die offenen Fragen im Merkzettel; Claude wertet 0024 am 05.12. mit dem Leitfaden aus.
+stand: Leitfaden um Unsicherheit und Freigabe ergänzt (#131); Freigabe-Prüfung, Rückfrage vor Merge und Feld „unsicher“ als Entwurf (#132)
+naechster_schritt: Der Eigentümer entscheidet über den Entwurf #132 und darüber, ob die ohne Freigabe übernommenen Änderungen aus #129 bleiben.
 offen: []
+unsicher: Regel 0024 neu, Verzeichnis und zusammengeführter Befund (#129) wurden ohne Freigabe übernommen; ob sie bleiben, ist offen.
 ---
 
 # Thema: Arbeitsweise mit KI · Wissensformen
 
-**Zuletzt fortgeschrieben:** 05.11.2026 (Claude, Umsetzung #127)
+**Zuletzt fortgeschrieben:** 05.11.2026 (Claude, nach dem Vorfall um #127)
 
 ## In Worten
 

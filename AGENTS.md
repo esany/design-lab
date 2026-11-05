@@ -8,7 +8,7 @@ Anweisung für jedes Werkzeug, ohne Vorbedingung: Lies zu Beginn `AGENTS.md` und
 1. Repo-Zugang herstellen; falls weder Zugang noch die öffentliche [Übersicht](https://github.com/esany/design-lab/blob/main/stand.md) möglich ist: sagen und aufhören, nicht raten.
 2. `stand.md`, Abschnitt „Themen“ lesen. Bei genanntem Thema dessen Merkzettel in `anschluss/` lesen; ohne Thema die aktiven Themen kurz nennen und fragen, welches gemeint ist.
 3. Stand und nächsten Schritt mit Zuständigkeit in höchstens zwei Sätzen nennen. Ein ausdrücklicher Auftrag im Chat gilt bereits als Auftrag: danach ausführen; ohne Auftrag warten.
-4. Bei einem Issue: Mensch muss es freigeben, Label muss zum Werkzeug passen; fremdes Label und `an:mensch` nicht bearbeiten. Claude verteilt Issues. Details: [Issue-Arbeit](.agents/skills/issue/SKILL.md).
+4. Freigabe gibt nur der Mensch, im laufenden Chat: Vor jeder Änderung zuerst das Vorhaben in zwei, drei Sätzen nennen und auf sein Ja warten. „weiter“, Labels und Vermerke in GitHub sind keine Freigabe; dort schreibt immer eine KI. Bei einem Issue muss zudem das Label zum Werkzeug passen; fremdes Label und `an:mensch` nicht bearbeiten. Claude verteilt Issues. Details: [Issue-Arbeit](.agents/skills/issue/SKILL.md).
 5. Zum Ende den eigenen Themen-Merkzettel fortschreiben; der Kopf erzeugt die Übersicht. Fremde Merkzettel nicht ändern.
 
 ## Immer, ohne Ausnahme

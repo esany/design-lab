@@ -2,7 +2,7 @@
 import { readFileSync, readdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { leseKopf, pruefeGitHub } from './gitter.mjs';
+import { leseKopf, pruefeGitHub, pruefeFreigabe } from './gitter.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const token = process.env.GITHUB_TOKEN, repo = process.env.GITHUB_REPOSITORY;
@@ -21,7 +21,7 @@ for (const n of new Set(themen.flatMap(t => t.offen))) {
   issues[n] = issue.state;
 }
 const isPR = process.env.GITHUB_EVENT_NAME === 'pull_request';
-let dateien = [], labels = [];
+let dateien = [], labels = [], body = '';
 if (isPR) {
   const event = JSON.parse(readFileSync(process.env.GITHUB_EVENT_PATH, 'utf8'));
   const number = event.number;
@@ -29,6 +29,7 @@ if (isPR) {
   // Labels aus der API lesen, damit auch nachträglich gesetzte Labels berücksichtigt werden.
   const pr = await get(`/issues/${number}`);
   labels = pr.labels.map(l => l.name);
+  body = pr.body || '';
   for (let page = 1; ; page++) {
     const files = await get(`/pulls/${number}/files?per_page=100&page=${page}`);
     dateien.push(...files.filter(f => f.status !== 'removed').map(f => f.filename));
@@ -36,6 +37,6 @@ if (isPR) {
     if (page >= 30) throw new Error('Mehr als 3000 PR-Dateien: Prüfung unvollständig');
   }
 }
-const errors = pruefeGitHub(themen, issues, isPR, dateien, labels);
+const errors = [...pruefeGitHub(themen, issues, isPR, dateien, labels), ...(isPR ? pruefeFreigabe(dateien, body) : [])];
 if (errors.length) { console.error('✗ ' + errors.join('\n✗ ')); process.exit(1); }
 console.log(`✓ ${Object.keys(issues).length} offene Issues und Verlauf geprüft`);
