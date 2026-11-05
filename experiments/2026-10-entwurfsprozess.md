@@ -90,3 +90,59 @@ Werkzeuge, Fachpakete). Das entspricht Prinzip 9.
 **Urteil (Mensch):** —
 
 **Folge:** —
+
+## Beobachtung 05.11.: Symptome, Warum-Kette, Rückfluss ins Repo
+
+Frage des Eigentümers: Welche Probleme erzeuge ich in der Arbeitsteilung mit der KI, welche
+Ursachen haben sie, bin ich allein damit, und wie fließt Erkenntnis zurück ins Repo, ohne dass
+„repo first“ zu starr wird?
+
+**Symptome** (Fundstellen in Klammern):
+1. Ob echte Strukturen entstehen, ist für den Gestalter nicht sichtbar (Chat 05.11.).
+2. Auf Fehler folgt eine Regel, die leer bleibt (Chat 05.11.; 30 Entscheidungen in drei Tagen,
+   Audit Zusammenarbeit).
+3. Jede Antwort öffnet eine neue Baustelle. Am 05.11. wurden aus einem Fundstück ein Leitfaden,
+   ein Radar-Konzept, eine Leitfaden-Familie, zwei Befunde und eine Prüfung in paleo-type.
+4. Text wächst schneller als Werk: paleo-type 53 % der Bytes Verwaltung (Audit 30.10.), 136 171
+   Zeichen in 23 offenen Issues; im Labor eine Studie.
+5. Neustarts brauchen Rettung (Label `rettung-eigentümer` in paleo-type, Lesart-Fehler im Audit).
+
+**Warum-Kette** (*abgeleitet* aus den Fundstellen):
+1. *Warum sieht der Gestalter nicht, ob es trägt?* Fortschritt kommt als Text zurück (Bericht,
+   Issue, Audit), nicht als etwas, das man ansehen oder ausprobieren kann.
+2. *Warum Text?* Text ist für die KI das billigste Abschlusssignal, und die Regeln des Labors
+   belohnen ihn: 0024 verlangt, jede Analyse, die mehr ist als eine kurze Rückfrage, im selben
+   Schritt im Repo abzulegen. Eine Vorführung verlangt keine Regel.
+3. *Warum antwortet der Gestalter mit Regeln und Audits?* Ihm fehlt das Urteilsinstrument. Er
+   urteilt über Ansehen, also Skizze, Probe, Modell. Code und Datenmodell sprechen nicht zu ihm,
+   also prüft er, was er lesen kann: Text.
+4. *Warum helfen Regeln nicht?* Text wird nur „fast immer“ befolgt, kostet bei jedem Start
+   Lesezeit und verdünnt die übrigen Regeln. Die KI stimmt neuen Regeln bereitwillig zu.
+5. *Warum dreht es sich weiter?* Große, offene Fragen („ganzheitlich, systemisch, Stand der
+   Technik“) löst die KI in die größere Lesart auf, und es gibt keinen Ort, an dem „genug“ an einem
+   sichtbaren Ergebnis entschieden wird.
+
+**Wurzel:** Im Entwurf antwortet das Material: Die Skizze zeigt, was nicht stimmt (Schön,
+„reflective conversation with the materials“ [k:schoen-1992-ried]). In der Arbeit mit der KI
+antwortet nur Text. Der Gestalter verliert sein wichtigstes Instrument und ersetzt es durch Regeln.
+
+**Nicht allein** (*belegt*, Quellen im Chat vom 05.11.): Osmanis „70-%-Problem“ (Nicht-Ingenieure
+kommen schnell weit, das letzte Drittel wird zäh); „Workslop“ (HBR/Stanford 2025: polierte
+Arbeit ohne Substanz, die Last landet beim Empfänger); METR 2025 (Entwickler glaubten sich 20 %
+schneller und waren 19 % langsamer: gefühlter Fortschritt ist kein Fortschritt).
+
+**Rückfluss ins Repo, Vorschlag** (*abgeleitet*, Änderung an 0024 entscheidet der Eigentümer):
+„Kein Wissensmonopol“ bleibt das Ziel; der Maßstab wechselt von „alles aufschreiben“ zu „ein
+frischer Chat kann richtig weitermachen“.
+- **Im Chat bleiben dürfen** Denkwege und Reifegrade 1–2 (gesammelt, geordnet).
+- **Ins Repo muss**, was eine der drei tragenden Rollen hat: *entschieden* (Entscheidung),
+  *ausgeführt* (Prüffall, Werk, Werkzeug), *erzeugt* (Ansicht aus Daten). Dazu Belege ab Reifegrad 3.
+- **Am Sitzungsende** zwei Sätze Stand im Merkzettel, nicht mehr.
+- **Geprüft** wird das am Neustart-Test, nicht an der Textmenge.
+
+**Hypothese Reifegrade (Chat 05.11., nicht beschlossen, an der nächsten Entwurfsaufgabe erproben):**
+Analyse: 1 gesammelt (Issue oder Chat) · 2 geordnet · 3 belegt (`research/`) · 4 verdichtet.
+Synthese: 5 Möglichkeitsraum mit Negativfolie · 6 Konzept, Anforderung mit Prüffrage · 7 entschieden
+(`decisions/`) · 8 Durchstich, Werk · 9 geprüft. Jeder Übergang ist ein Urteilspunkt des Menschen;
+was aufsteigt, wandert an seinen Ort, im Issue bleibt nur ein Verweis. Die KI ist stark in 1–3 und in
+5; ihre typische Schwäche ist die vorschnelle, glatte Verdichtung in 4.
