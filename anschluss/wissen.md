@@ -40,7 +40,7 @@ Quellenangabe wurde als falsch „berichtigt“.
    Kapitel gelesen sind?
 4. Wo liegen die fünf PDFs, damit ein zweites Modell die Kapitel selbst lesen kann?
 
-**Leitfaden „Mit KI arbeiten“** (`leitfaden/`, 0032, Probe bis 05.12.) seit 05.11. auf der Website. Konzept zur Arbeitsteilung mit Radar, Fachpaketen und Korpus: `research/2026-11-wissensformen/konzept.md` (wartet auf Ihre Antworten).
+**Leitfaden und Arbeitsweise mit KI:** eigenes Thema, siehe `anschluss/arbeitsweise.md`.
 
 <details><summary>Für die Modelle: Nummern</summary>
 

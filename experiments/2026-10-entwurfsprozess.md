@@ -139,3 +139,10 @@ frischer Chat kann richtig weitermachen“.
   *ausgeführt* (Prüffall, Werk, Werkzeug), *erzeugt* (Ansicht aus Daten). Dazu Belege ab Reifegrad 3.
 - **Am Sitzungsende** zwei Sätze Stand im Merkzettel, nicht mehr.
 - **Geprüft** wird das am Neustart-Test, nicht an der Textmenge.
+
+**Hypothese Reifegrade (Chat 05.11., nicht beschlossen, an der nächsten Entwurfsaufgabe erproben):**
+Analyse: 1 gesammelt (Issue oder Chat) · 2 geordnet · 3 belegt (`research/`) · 4 verdichtet.
+Synthese: 5 Möglichkeitsraum mit Negativfolie · 6 Konzept, Anforderung mit Prüffrage · 7 entschieden
+(`decisions/`) · 8 Durchstich, Werk · 9 geprüft. Jeder Übergang ist ein Urteilspunkt des Menschen;
+was aufsteigt, wandert an seinen Ort, im Issue bleibt nur ein Verweis. Die KI ist stark in 1–3 und in
+5; ihre typische Schwäche ist die vorschnelle, glatte Verdichtung in 4.
