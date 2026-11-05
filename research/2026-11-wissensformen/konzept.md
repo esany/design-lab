@@ -86,8 +86,7 @@ heute einsetzen sollte. Das sind zwei bis drei Minuten am Handy.
 **Daten:** `radar.md` wird zu `radar/eintraege.json`. Daraus erzeugt der Build die Seite
 `radar/` **und** weiterhin `radar.md`, damit Agenten und der Radar-Scan wie gewohnt arbeiten.
 Neu je Eintrag sind ein **Feld** (z. B. Entwurf und Gestaltung · Daten und Visualisierung ·
-KI-Anbindung und Agenten · Formate und Standards · Methoden und Prüfung · später Digitale
-Edition) und eine **Bewegung** (neu · hoch · runter · gleich, mit Datum).
+KI-Anbindung und Agenten · Formate und Standards · Methoden und Prüfung) und eine **Bewegung** (neu · hoch · runter · gleich, mit Datum).
 
 **Darstellung, zwei Wege** (Gestaltungsentscheidung, siehe Fragen):
 
@@ -118,7 +117,7 @@ beantwortet eine eigene Frage und hat seine eigenen Bereiche und sein eigenes �
 | **Mit KI arbeiten** (besteht) | Wie bekomme ich gute Arbeit von der KI? | Grundlagen · Zusammenarbeit mehrerer KIs · Kosten und Modellwahl · Überholt | Entscheidung 0025 |
 | **Systeme entwickeln** | Wie entsteht ein sauberes Werkzeug, auch wenn ich kein Techniker bin? | Anforderungen und Abnahme · Prüfen und Qualität · Daten und Struktur · Versionen und Rückweg · Sicherheit und Recht · Überholt | Labor-Audits, Skill `issue` |
 | **Werkzeuge wählen** | Woran erkenne ich ein gutes Werkzeug? | Kriterien (offen, austauschbar, prüfbar) · Schatz oder Marketing · Überholt | **Radar**, 0031 |
-| **Gestalten mit KI** | Was ändert KI in meiner Domäne? | je Feld ein Bereich: Form · Vermitteln · Digitale Edition … | **Fachpakete** |
+| **Gestalten mit KI** | Was ändert KI in meiner Domäne? | je Gestaltungsfeld ein Bereich: Form · Vermitteln · Ordnung … | **Fachpakete** |
 
 Die sechs Einträge aus „Werkzeuge entwerfen“ ziehen in „Systeme entwickeln“ um (Bereiche Prüfen
 und Qualität bzw. Systeme). Ihre Kennungen bleiben, damit Verweise und Änderungen nachvollziehbar
@@ -138,10 +137,15 @@ fünf belegte Einträge hat. Vorher bleiben die Einträge, wo sie sind.
 „Gestalten mit KI“ und „Systeme entwickeln“. Ein Leitfaden-Bereich kann so auf „seine“ Zeile im
 Radar verweisen.
 
+**Grenze des Labors (Eigentümer, 05.11.):** Im design-lab geht es um Gestaltungs- und
+Entwurfsaufgaben. Fachwissen fremder Domänen gehört nicht hierher, auch nicht das der Digitalen
+Edition und Paläografie. Es bleibt in dem Projekt, das es braucht (paleo-type). Aus solchen
+Projekten nimmt das Labor nur auf, was den **Entwurfsprozess** betrifft: wie man ein komplexes
+Werkzeug entwirft, prüft und abnimmt. Das gehört in den Leitfaden „Systeme entwickeln“. Fachpakete
+und der Leitfaden „Gestalten mit KI“ bleiben bei den Gestaltungsfeldern.
+
 ## 6 · Lücken, die das Konzept sichtbar macht
 
-- **Fachpaket „Digitale Edition und Paläografie“ fehlt.** paleo-type arbeitet ohne fachliche
-  Rückendeckung des Labors. Es ist das größte Stück und braucht eigene Recherche.
 - **Radar ohne Felder:** Heute ist nicht erkennbar, für welches Feld ein Werkzeug steht.
 - **Zwei Radar-Einträge widersprechen dem Leitfaden nicht, sind aber nicht verbunden:**
   „Gegenprüfung durch zweites Modell“ (Radar, Methoden) und `k-zweitblick` (Leitfaden). Das
@@ -155,7 +159,6 @@ Radar verweisen.
    Klein, Muster vorhanden.
 2. Radar als Daten und Ansicht (B), mit Feldern und Bewegung. Mittel, Muster vom Leitfaden.
 3. Weitere Leitfäden und Bereiche, je einer pro Monat, jeweils an echter Arbeit erprobt.
-4. Fachpaket „Digitale Edition“. Groß; erst wenn die Pause in paleo-type endet.
 
 Die Reihenfolge folgt dem Befund des Labors, dass Stützarbeit nicht schneller wachsen soll als
 Sacharbeit: immer nur ein Bereich, und jeder wird an echter Arbeit erprobt.
