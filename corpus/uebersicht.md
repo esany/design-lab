@@ -3,7 +3,7 @@
 > Erzeugt von `node tools/build.mjs` aus `referenzen.json` und `recherche.json`. Nicht von Hand ändern.
 > Schema: [`schema.md`](schema.md).
 
-**118 Quellen** — 27 ausgewählt vom Eigentümer, 91 recherchiert vom Agenten.
+**125 Quellen** — 27 ausgewählt vom Eigentümer, 98 recherchiert vom Agenten.
 Je Feld zuerst die Verweise des Eigentümers (Ausgangspunkte, kein Kanon). Eine Quelle kann in mehreren Feldern stehen.
 
 ## vermitteln
@@ -230,20 +230,26 @@ Je Feld zuerst die Verweise des Eigentümers (Ausgangspunkte, kein Kanon). Eine 
 | `manovich-2024` | [Artificial Aesthetics: Generative AI, Art and Visual Media](https://manovich.net/) | Lev Manovich (mit Emanuele Arielli — nicht geprüft) | 2024 | Buch | belegt | Mensch | — |
 | `pinterest-el0631` | [Pinterest-Sammlung el0631](https://de.pinterest.com/el0631/) | Eigentümer des Labors | — | Sammlung | belegt · blockiert | Mensch | `.agents/skills/fachpaket-form/SKILL.md`, `.agents/skills/fachpaket-vermitteln/SKILL.md` |
 | `aid-lab-gmuend` | [AI+Design Lab, HfG Schwäbisch Gmünd](https://aid-lab.hfg-gmuend.de/about) | HfG Schwäbisch Gmünd | — | Labor | belegt | Agent | — |
+| `amershi-2019-hax` | [Guidelines for Human-AI Interaction](https://www.microsoft.com/research/blog/guidelines-for-human-ai-interaction-design/) | Saleema Amershi u. a. (Microsoft) | 2019 | Paper | belegt | Agent | — |
+| `anthropic-agenten-2025` | [Our framework for developing safe and trustworthy agents](https://www.anthropic.com/research/our-framework-for-developing-safe-and-trustworthy-agents) | Anthropic | 2025 | Artikel | belegt | Agent | — |
+| `anthropic-agenten-2026` | [Trustworthy agents in practice](https://www.anthropic.com/research/trustworthy-agents) | Anthropic | 2026 | Artikel | belegt | Agent | — |
 | `anthropic-claude-code-praxis` | [Best practices for Claude Code](https://code.claude.com/docs/en/best-practices) | Anthropic | 2026 | Artikel | belegt | Agent | — |
 | `anthropic-kontext-2025` | [Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents) | Anthropic | 2025 | Artikel | belegt | Agent | — |
 | `anthropic-prompting-praxis` | [Prompting best practices (Claude)](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices) | Anthropic | 2026 | Artikel | abgeleitet · blockiert | Agent | — |
 | `araujo-2025-personas` | [Principled Personas: Defining and Measuring the Intended Effects of Persona Prompting on Task Performance](https://arxiv.org/abs/2508.19764) | Pedro Henrique Luz de Araujo, Benjamin Roth u. a. | 2025 | Paper | belegt | Agent | — |
 | `basil-2025-rollen` | [Prompting Science Report 4: Playing Pretend: Expert Personas Don't Improve Factual Accuracy](https://arxiv.org/abs/2512.05858) | Savir Basil, Ina Shapiro, Dan Shapiro, Ethan Mollick, Lilach Mollick, Lennart Meincke | 2025 | Paper | abgeleitet | Agent | — |
 | `burglabs` | [BurgLabs (XLab, BioLab, SustainLab)](https://www.burg-halle.de/en/university/facilities/burglabs) | Burg Giebichenstein Kunsthochschule Halle | — | Labor | belegt | Agent | — |
+| `cheng-2026-gefaelligkeit` | [Sycophantic AI decreases prosocial intentions and promotes dependence](https://doi.org/10.1126/science.aec8352) | Myra Cheng, Cinoo Lee, Pranav Khadpe, Sunny Yu, Dyllan Han, Dan Jurafsky | 2026 | Paper | belegt | Agent | — |
 | `chroma-context-rot-2025` | [Context Rot: How Increasing Input Tokens Impacts LLM Performance](https://www.trychroma.com/research/context-rot) | Kelly Hong, Anton Troynikov, Jeff Huber (Chroma) | 2025 | Paper | belegt | Agent | — |
 | `hfg-karlsruhe-kim` | [KIM — Künstliche Intelligenz und Medienphilosophie](https://hfg-karlsruhe.de/en/archiv/kuenstliche-intelligenz-und-medienphilosophie/) | HfG Karlsruhe (Matteo Pasquinelli) | 2018 | Labor | belegt | Agent | — |
 | `khm-ground-zero` | [ground zero (Experimentelle Informatik), KHM Köln](https://ground-zero.khm.de/?p=8907) | KHM Köln | bis 2025 | Labor | belegt | Agent | — |
+| `kim-2024-unsicherheit` | [“I'm Not Sure, But...”: Examining the Impact of Large Language Models' Uncertainty Expression on User Reliance and Trust](https://arxiv.org/abs/2405.00623) | Sunnie S. Y. Kim, Q. Vera Liao, Mihaela Vorvoreanu, Stephanie Ballard, Jennifer Wortman Vaughan | 2024 | Paper | belegt | Agent | — |
 | `kindlab` | [KINDLAB, Hochschule Trier](https://kind-lab.de/) | Hochschule Trier, Campus Gestaltung | — | Labor | belegt | Agent | — |
 | `kitegg` | [KITeGG — KI greifbar machen und begreifen](https://benedikt-gross.de/projects/kitegg-making-ai-tangible-and-comprehensible) | Hochschule Mainz (Koordination), HfG Offenbach, HfG Schwäbisch Gmünd, KISD, Hochschule Trier | 2021–2025 | Projekt | belegt | Agent | — |
 | `meincke-2025-cot` | [Prompting Science Report 2: The Decreasing Value of Chain of Thought in Prompting](https://arxiv.org/abs/2506.07142) | Lennart Meincke, Ethan Mollick, Lilach Mollick, Dan Shapiro | 2025 | Paper | belegt | Agent | — |
 | `ml5js` | [ml5.js](https://ml5js.org/about) | NYU ITP / ml5-Community | 2026 | Werkzeug | belegt | Agent | — |
 | `mullens-2026-personas` | [The Arrival of AGI? When Expert Personas Exceed Expert Benchmarks](https://arxiv.org/abs/2603.20225) | Drake Mullens, Stella Shen u. a. | 2026 | Paper | abgeleitet | Agent | — |
+| `openai-2025-halluzination` | [Why language models hallucinate](https://openai.com/index/why-language-models-hallucinate/) | Adam Tauman Kalai u. a. (OpenAI) | 2025 | Artikel | belegt | Agent | — |
 | `palmer-2026-rollen` | [The Prompt Engineering Trick That Could Be Making Your AI Slower](https://hackernoon.com/the-prompt-engineering-trick-that-could-be-making-your-ai-slower) | Cameron M. Palmer | 2026 | Artikel | belegt | Agent | — |
 | `panickssery-2024-selbst` | [LLM Evaluators Recognize and Favor Their Own Generations](https://arxiv.org/abs/2404.13076) | Arjun Panickssery, Samuel R. Bowman, Shi Feng | 2024 | Paper | belegt | Agent | — |
 | `plotcraft-2025` | [PlotCraft: Pushing the Limits of LLMs for Complex and Interactive Data Visualization](https://arxiv.org/abs/2511.00010) | Jiajun Zhang u. a. (USTC, Qwen-Team u. a.) | 2025 | Paper | belegt | Agent | `.agents/skills/fachpaket-vermitteln/SKILL.md` |
@@ -252,4 +258,5 @@ Je Feld zuerst die Verweise des Eigentümers (Ausgangspunkte, kein Kanon). Eine 
 | `udk-designing-ai` | [Designing_AI Lab, UdK Berlin](https://produktdesign.udk-berlin.de/2026/08/designing_ai-lab-wraps-up-its-first-semester/) | UdK Berlin, Produktdesign (Prof. Aeneas Stankowski) | 2026 | Labor | belegt | Agent | — |
 | `unlearn-ai` | [un/learn ai (Publikationsreihe)](https://openscience.ub.uni-mainz.de/items/02c2fbdd-fdc9-4bd6-a809-1174bd50714f/full) | KITeGG | — | Buch | belegt | Agent | — |
 | `viseval-2024` | [VisEval: A Benchmark for Data Visualization in the Era of Large Language Models](https://arxiv.org/abs/2407.00981) | Nan Chen, Yuge Zhang, Jiahang Xu, Kan Ren, Yuqing Yang | 2024 | Paper | belegt | Agent | `.agents/skills/fachpaket-vermitteln/SKILL.md` |
+| `xiong-2024-konfidenz` | [Can LLMs Express Their Uncertainty? An Empirical Evaluation of Confidence Elicitation in LLMs](https://arxiv.org/abs/2306.13063) | Miao Xiong u. a. | 2024 | Paper | belegt | Agent | — |
 | `zheng-2024-personas` | [When „A Helpful Assistant“ Is Not Really Helpful: Personas in System Prompts Do Not Improve Performances of Large Language Models](https://aclanthology.org/2024.findings-emnlp.888/) | Mingqian Zheng, Jiaxin Pei, Lajanugen Logeswaran, Moontae Lee, David Jurgens | 2024 | Paper | belegt | Agent | — |
