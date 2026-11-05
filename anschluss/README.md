@@ -11,5 +11,8 @@ Abschnitt „Themen“.
 2. **Eingeklappt, für die Modelle:** Nummern von Issues und Pull Requests, Lehren und
    Fundstellen.
 
+**Kopfzeile `unsicher:`** (freiwillig): was am Stand unsicher oder nicht geprüft ist, in einem
+Satz. Erscheint in `stand.md` neben dem Stand. Leer lassen, wenn nichts unsicher ist.
+
 **Am Ende einer Sitzung:** abgleichen, nur den eigenen Merkzettel fortschreiben, Überholtes dort
 entfernen, die Zeile in `stand.md` anpassen. Abgeschlossene Themen kommen nach `archiv/`.

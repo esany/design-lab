@@ -2,7 +2,7 @@
 import { readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { leseKopf, aktualisiereStand, pruefeLaenge, pruefeGitHub, MAX_MERKZETTEL, MAX_STAND } from './gitter.mjs';
+import { leseKopf, aktualisiereStand, pruefeLaenge, pruefeGitHub, pruefeFreigabe, themenBlock, MAX_MERKZETTEL, MAX_STAND } from './gitter.mjs';
 const fixture = f => readFileSync(join(dirname(fileURLToPath(import.meta.url)), 'fixtures/gitter', f), 'utf8');
 const t = { datei: 'beispiel.md', ...leseKopf(fixture('richtig.md'), 'richtig.md') };
 const tests = [
@@ -16,6 +16,8 @@ const tests = [
     console.warn(darueber.join('\n'));
   }, null],
   ['G4 GitHub', () => { const e=pruefeGitHub([t], {1:'open'}, true, ['stand-verlauf.md'], []); if(e.length) throw Error(e.join(', ')); if(pruefeGitHub([t], {1:'open'}, true, [], ['ohne-verlauf']).length) throw Error('Ausnahme nicht erkannt'); }, () => { const e=pruefeGitHub([t], {1:'closed'}, true, [], []); if(e.length !== 2) throw Error('Fehler nicht erkannt'); throw Error(e.join('; ')); }],
+  ['G5 Freigabe', () => { const ok='## Freigabe\nFrage: „Übernehmen?“ – Antwort: „ja“\n\n## Unsicher / nicht geprüft\n- Rückfrage nicht getestet'; if(pruefeFreigabe(['AGENTS.md'], ok).length) throw Error('richtiger Text abgelehnt'); if(pruefeFreigabe(['research/x.md'], '').length) throw Error('ungeschützte Datei geprüft'); }, () => { const e=pruefeFreigabe(['decisions/0001.md'], '## Freigabe\n<!-- „x“ -->\nja\n## Unsicher\n'); if(e.length !== 2) throw Error('Fehler nicht erkannt: '+e.length); throw Error(e.join('; ')); }],
+  ['G6 Unsicher im Stand', () => { if(!themenBlock([{...t, unsicher:'nicht getestet'}]).includes('**Unsicher:** nicht getestet')) throw Error('fehlt'); if(themenBlock([t]).includes('Unsicher')) throw Error('leeres Feld angezeigt'); }, () => { throw Error(themenBlock([{...t, unsicher:'x'}]).includes('Unsicher') ? 'Feld wird angezeigt' : ''); }],
 ];
 let fail = false;
 for (const [name, good, bad] of tests) {

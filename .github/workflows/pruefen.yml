@@ -2,6 +2,8 @@ name: Prüfen
 
 on:
   pull_request:
+    # edited: Änderungen am PR-Text (Freigabe, Unsicher) neu prüfen
+    types: [opened, synchronize, reopened, edited]
   push:
     branches: [main]
 
