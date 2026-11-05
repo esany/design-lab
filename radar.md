@@ -52,6 +52,7 @@ Begründung (Skill `pflege`). Stand des Radars: **2026-11-02**.
 | Graphite | prozedural, knotenbasiert, offen; Alpha, PDF erst geplant | [Digital Production](https://digitalproduction.com/2025/07/14/graphite-open-source-vector-design-tool-with-a-twist/) | 2026-10-28 |
 | Affinity (Canva) | kostenlos, Profiniveau, IDML-Import; aber Konto, geschlossenes Format — widerspricht Unabhängigkeit | [Printweek](https://printweek.mydigitalpublication.co.uk/articles/canva-s-free-affinity-app-shakes-up-design-market) | 2026-10-28 |
 | Inkscape (CMYK) | CMYK-PDF angekündigt, Stabilität nicht belegt | [inkscape.org](https://inkscape.org/learn/cms) | 2026-10-28 |
+| Basic Memory (MCP) | Gedächtnis über Chats als lokale Markdown-Dateien mit Wissensgraph; AGPL-3.0, Bezahlwolke optional. Liegt außerhalb des Repos, also sieht nicht jedes Werkzeug denselben Stand (0024) | [GitHub](https://github.com/basicmachines-co/basic-memory), [dev.co](https://dev.co/ai/mcp/basic-memory) | 2026-11-05 |
 
 ## Halten
 

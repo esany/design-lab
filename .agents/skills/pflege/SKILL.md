@@ -71,8 +71,10 @@ durchführen. Ergebnis als Eintrag in `experiments/`.
 - Dinge löschen — nur nach `archive/` verschieben oder markieren
 - Radar-Einträge ohne Quelle
 
-## Anschluss prüfen (Entscheidung 0024)
+## Anschluss prüfen und konsolidieren (Entscheidung 0024)
 
-Monatlich: Hat jedes offene Issue und jedes laufende Experiment eine Fundstelle im
+Monatlich: Befunde eines Themas zu einem zusammenführen, die Vorfassungen mit
+`schicht: archiv` markieren (nicht löschen); `verzeichnis.md` zeigt, was wo liegt.
+Hat jedes offene Issue und jedes laufende Experiment eine Fundstelle im
 Repo (Experiment-Datei, `research/`, Fachpaket)? Sind die Merkzettel in
 `anschluss/` aktuell und passt die Themenliste in `stand.md` dazu (0029)? Fehlt etwas, kommt es als offener Punkt in `stand.md`.

@@ -1,8 +1,9 @@
 ---
+schicht: archiv
 dient: A07, A21, A26, A33, A34
 datum: 2026-11-05
 modell: Claude Opus 5.5 (Claude-App, Cloud-Sitzung)
-status: Befund mit Vorschlag; Stoff für den Leitfaden „Systeme entwickeln“. Nichts beschlossen.
+status: Vorfassung, zusammengeführt in befund.md (05.11.). Damals: Befund mit Vorschlag; Stoff für den Leitfaden „Systeme entwickeln“. Nichts beschlossen.
 ---
 
 # Anforderungen sichern: wie aus Anforderungen ein echtes Werkzeug wird
