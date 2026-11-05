@@ -7,7 +7,7 @@ offen: [49]
 
 # Thema: Wissen erschließen · der Bibliothekar
 
-**Zuletzt fortgeschrieben:** 30.10.2026 (Claude, Prüfung und Übernahme #122)
+**Zuletzt fortgeschrieben:** 05.11.2026 (Claude, Leitfaden „Mit KI arbeiten“)
 
 ## In Worten
 
@@ -39,6 +39,8 @@ Quellenangabe wurde als falsch „berichtigt“.
 3. Sollen die fünf Bücher der Grundstock eines Fachpakets „Entwerfen“ werden, wenn die ersten
    Kapitel gelesen sind?
 4. Wo liegen die fünf PDFs, damit ein zweites Modell die Kapitel selbst lesen kann?
+
+**Leitfaden „Mit KI arbeiten“** (`leitfaden/`, 0032, Probe bis 05.12.) seit 05.11. auf der Website.
 
 <details><summary>Für die Modelle: Nummern</summary>
 

@@ -1298,5 +1298,186 @@
     "notiz": "Früheres R6-Direktzitat NICHT nachgewiesen; kein verifizierter Wortlaut, kein Volltext gelesen; research/2026-10-entwurfsbewegung/fehleranalyse-und-neupruefung.md",
     "zugang": "eingeschränkt",
     "geprueft": "2026-10-30"
+  },
+  {
+    "id": "anthropic-claude-code-praxis",
+    "titel": "Best practices for Claude Code",
+    "autor": "Anthropic",
+    "jahr": 2026,
+    "art": "Artikel",
+    "url": "https://code.claude.com/docs/en/best-practices",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "labor"
+    ],
+    "status": "belegt",
+    "notiz": "Offizielle Anleitung, laufend aktualisiert. Enthält die Tabelle „What you can stop doing“ mit überholten Ratschlägen; Grundlage mehrerer Einträge im Leitfaden. Fassung vom 05.11.2026 gelesen.",
+    "geprueft": "2026-11-05"
+  },
+  {
+    "id": "anthropic-kontext-2025",
+    "titel": "Effective context engineering for AI agents",
+    "autor": "Anthropic",
+    "jahr": 2025,
+    "art": "Artikel",
+    "url": "https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "labor"
+    ],
+    "status": "belegt",
+    "notiz": "Kontext als knappes Gut: kleinste Menge aussagekräftiger Information, wenige typische Beispiele statt Listen von Sonderfällen, Notizen außerhalb des Verlaufs.",
+    "geprueft": "2026-11-05"
+  },
+  {
+    "id": "anthropic-prompting-praxis",
+    "titel": "Prompting best practices (Claude)",
+    "autor": "Anthropic",
+    "jahr": 2026,
+    "art": "Artikel",
+    "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "labor"
+    ],
+    "status": "abgeleitet",
+    "zugang": "blockiert",
+    "notiz": "Begründung statt nackter Regel; aggressive Betonung führt bei neueren Modellen zum Übertreiben. Für den Agenten nicht abrufbar; Wortlaut nur über Zweitquellen gesehen.",
+    "geprueft": "2026-11-05"
+  },
+  {
+    "id": "chroma-context-rot-2025",
+    "titel": "Context Rot: How Increasing Input Tokens Impacts LLM Performance",
+    "autor": "Kelly Hong, Anton Troynikov, Jeff Huber (Chroma)",
+    "jahr": 2025,
+    "art": "Paper",
+    "url": "https://www.trychroma.com/research/context-rot",
+    "lizenz": "unbekannt",
+    "felder": [
+      "labor"
+    ],
+    "status": "belegt",
+    "notiz": "18 Modelle: Leistung sinkt mit wachsender Eingabe ungleichmäßig, besonders mit Ablenkern. Chroma verkauft Suchtechnik; das Interesse ist offen, Code liegt offen.",
+    "geprueft": "2026-11-05"
+  },
+  {
+    "id": "zheng-2024-personas",
+    "titel": "When „A Helpful Assistant“ Is Not Really Helpful: Personas in System Prompts Do Not Improve Performances of Large Language Models",
+    "autor": "Mingqian Zheng, Jiaxin Pei, Lajanugen Logeswaran, Moontae Lee, David Jurgens",
+    "jahr": 2024,
+    "art": "Paper",
+    "url": "https://aclanthology.org/2024.findings-emnlp.888/",
+    "lizenz": "unbekannt",
+    "felder": [
+      "labor"
+    ],
+    "status": "belegt",
+    "notiz": "EMNLP 2024 Findings. 162 Rollen, 2 410 Fragen: Rollen verbessern die Leistung nicht; die Wirkung einzelner Rollen ist weitgehend zufällig.",
+    "geprueft": "2026-11-05"
+  },
+  {
+    "id": "basil-2025-rollen",
+    "titel": "Prompting Science Report 4: Playing Pretend: Expert Personas Don't Improve Factual Accuracy",
+    "autor": "Savir Basil, Ina Shapiro, Dan Shapiro, Ethan Mollick, Lilach Mollick, Lennart Meincke",
+    "jahr": 2025,
+    "art": "Paper",
+    "url": "https://arxiv.org/abs/2512.05858",
+    "lizenz": "unbekannt",
+    "felder": [
+      "labor"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Wharton Generative AI Labs. Expertenrollen ohne durchgehenden Vorteil; Laienrollen schaden oft. Nur über Zusammenfassungen gesehen.",
+    "geprueft": "2026-11-05"
+  },
+  {
+    "id": "palmer-2026-rollen",
+    "titel": "The Prompt Engineering Trick That Could Be Making Your AI Slower",
+    "autor": "Cameron M. Palmer",
+    "jahr": 2026,
+    "art": "Artikel",
+    "url": "https://hackernoon.com/the-prompt-engineering-trick-that-could-be-making-your-ai-slower",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "labor"
+    ],
+    "status": "belegt",
+    "notiz": "Fundstück des Eigentümers (05.11.2026). Eigener Versuch mit 5 000 MMLU-Pro-Fragen und 4 kleinen Modellen: Rollen ohne Genauigkeitsgewinn; bei einigen Modellen mehr Denk-Tokens, bei einem rund 15–25 % längere Wartezeit. Nur Einzelaufrufe mit Antwortauswahl.",
+    "geprueft": "2026-11-05"
+  },
+  {
+    "id": "araujo-2025-personas",
+    "titel": "Principled Personas: Defining and Measuring the Intended Effects of Persona Prompting on Task Performance",
+    "autor": "Pedro Henrique Luz de Araujo, Benjamin Roth u. a.",
+    "jahr": 2025,
+    "art": "Paper",
+    "url": "https://arxiv.org/abs/2508.19764",
+    "lizenz": "unbekannt",
+    "felder": [
+      "labor"
+    ],
+    "status": "belegt",
+    "notiz": "EMNLP 2025. Gegenstimme: Expertenrollen führen meist zu positiven oder nicht signifikanten Änderungen; in 22 % der Aufgaben deutliche Verschlechterung.",
+    "geprueft": "2026-11-05"
+  },
+  {
+    "id": "mullens-2026-personas",
+    "titel": "The Arrival of AGI? When Expert Personas Exceed Expert Benchmarks",
+    "autor": "Drake Mullens, Stella Shen u. a.",
+    "jahr": 2026,
+    "art": "Paper",
+    "url": "https://arxiv.org/abs/2603.20225",
+    "lizenz": "unbekannt",
+    "felder": [
+      "labor"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Widerspricht dem Nullbefund von Basil u. a.: mit erreichbarer, vorgehensbeschreibender Rolle besser. Nur Titel und Zusammenfassungen gesehen.",
+    "geprueft": "2026-11-05"
+  },
+  {
+    "id": "meincke-2025-cot",
+    "titel": "Prompting Science Report 2: The Decreasing Value of Chain of Thought in Prompting",
+    "autor": "Lennart Meincke, Ethan Mollick, Lilach Mollick, Dan Shapiro",
+    "jahr": 2025,
+    "art": "Paper",
+    "url": "https://arxiv.org/abs/2506.07142",
+    "lizenz": "unbekannt",
+    "felder": [
+      "labor"
+    ],
+    "status": "belegt",
+    "notiz": "„Denk Schritt für Schritt“: bei Modellen mit eingebautem Denken kaum Gewinn, deutlich mehr Zeit und Tokens; bei älteren Modellen kleiner Gewinn mit mehr Streuung.",
+    "geprueft": "2026-11-05"
+  },
+  {
+    "id": "panickssery-2024-selbst",
+    "titel": "LLM Evaluators Recognize and Favor Their Own Generations",
+    "autor": "Arjun Panickssery, Samuel R. Bowman, Shi Feng",
+    "jahr": 2024,
+    "art": "Paper",
+    "url": "https://arxiv.org/abs/2404.13076",
+    "lizenz": "unbekannt",
+    "felder": [
+      "labor"
+    ],
+    "status": "belegt",
+    "notiz": "NeurIPS 2024. Modelle bewerten eigene Texte höher als gleichwertige fremde und erkennen sie wieder; beides hängt zusammen.",
+    "geprueft": "2026-11-05"
+  },
+  {
+    "id": "sharma-2023-gefaelligkeit",
+    "titel": "Towards Understanding Sycophancy in Language Models",
+    "autor": "Mrinank Sharma, Meg Tong u. a. (Anthropic)",
+    "jahr": 2023,
+    "art": "Paper",
+    "url": "https://arxiv.org/abs/2310.13548",
+    "lizenz": "unbekannt",
+    "felder": [
+      "labor"
+    ],
+    "status": "belegt",
+    "notiz": "Fünf Assistenten von 2023 geben der Sicht des Fragenden auch gegen die Wahrheit recht; Ursache liegt mit in menschlichen Bewertungen beim Training.",
+    "geprueft": "2026-11-05"
   }
 ]

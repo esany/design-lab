@@ -45,6 +45,21 @@ braucht, landet als offener Punkt in `stand.md`.
 3. Die Spalte „Stand“ in `intent.md` mit Beleg prüfen; Änderungen schlägt die Pflege vor,
    sie entscheidet sie nicht.
 
+## Monatlich: Leitfaden „Mit KI arbeiten“ (0032)
+
+1. Die Quellen der Einträge in `leitfaden/eintraege.json` erneut öffnen, zuerst die
+   laufend gepflegten Anleitungen der Anbieter (z. B. `anthropic-claude-code-praxis`).
+   Hat sich eine Empfehlung geändert oder ist etwas als überholt markiert worden?
+2. Nach Neuem suchen, das einen Eintrag stützt, widerlegt oder überholt: Anleitungen
+   der Anbieter, Studien, Fundstücke und Radar-Funde des Monats.
+3. Ändern nur mit Quelle: Text anpassen, `geprueft` setzen, Zeile in `aenderungen`.
+   Überholtes **nicht löschen**: `status: veraltet`, `veraltet_seit`, `stattdessen`
+   setzen und den Eintrag in den Bereich `veraltet` verschieben. Neue Quellen in den Korpus.
+4. Neue Einträge nur mit mindestens einer Quelle oder einem Laborbefund; Faustregeln
+   als `abgeleitet` markieren.
+5. `node tools/build.mjs`, PR „Leitfaden: …“. Neue oder überholte Einträge gehen als kurze
+   Liste an den Menschen; reine Prüfdaten und Quellen darf die Pflege selbst übernehmen.
+
 ## Quartalsweise: Ausweg-Test
 
 Prüffälle aus `evals/` mit einem zweiten Modell und einem zweiten Werkzeug

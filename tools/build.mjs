@@ -213,6 +213,114 @@ Je Feld zuerst die Verweise des Eigentümers (Ausgangspunkte, kein Kanon). Eine 
 
 ${byField}`);
 
+// ---------- Leitfaden „Mit KI arbeiten“ → prüfen, Seite ----------
+// Daten: leitfaden/eintraege.json. Quellen verweisen auf den Korpus, Laborbelege auf Dateien im Repo.
+const LF = join(root, "leitfaden/eintraege.json");
+if (existsSync(LF)) {
+  let lf = null;
+  try { lf = JSON.parse(readFileSync(LF, "utf8")); } catch (e) { errors.push(`leitfaden/eintraege.json: kein gültiges JSON (${e.message})`); }
+  if (lf) {
+    const L_REQ = ["id", "bereich", "status", "regel", "kurz", "warum", "beleg", "quellen", "labor", "seit", "geprueft"];
+    const L_STATUS = ["gilt", "umstritten", "veraltet"];
+    const datum = /^\d{4}-\d{2}-\d{2}$/;
+    const bereiche = new Map((lf.bereiche ?? []).map((b) => [b.id, b]));
+    const ids = new Set((lf.eintraege ?? []).map((e) => e.id));
+    for (const [i, e] of (lf.eintraege ?? []).entries()) {
+      const at = `leitfaden #${i + 1}${e.id ? ` (${e.id})` : ""}`;
+      for (const k of L_REQ) if (!(k in e) || e[k] === "") errors.push(`${at}: Feld „${k}“ fehlt`);
+      if (e.bereich && !bereiche.has(e.bereich)) errors.push(`${at}: bereich „${e.bereich}“ unbekannt`);
+      if (e.status && !L_STATUS.includes(e.status)) errors.push(`${at}: status muss ${L_STATUS.join(" | ")} sein`);
+      if (e.beleg && !C_STATUS.includes(e.beleg)) errors.push(`${at}: beleg muss ${C_STATUS.join(" | ")} sein`);
+      for (const k of ["seit", "geprueft", "veraltet_seit"]) if (e[k] && !datum.test(e[k])) errors.push(`${at}: ${k} als JJJJ-MM-TT`);
+      if (e.status === "veraltet" && (!e.stattdessen || !e.veraltet_seit)) errors.push(`${at}: veraltet braucht „stattdessen“ und „veraltet_seit“`);
+      if (e.stattdessen && !ids.has(e.stattdessen)) errors.push(`${at}: stattdessen „${e.stattdessen}“ gibt es nicht`);
+      for (const q of e.quellen ?? []) if (!corpus.has(q)) errors.push(`${at}: Quelle „${q}“ nicht im Korpus`);
+      for (const p of e.labor ?? []) if (!existsSync(join(root, p))) errors.push(`${at}: Laborbeleg „${p}“ fehlt`);
+      if (!(e.quellen?.length || e.labor?.length)) errors.push(`${at}: braucht mindestens eine Quelle oder einen Laborbeleg`);
+    }
+    for (const a of lf.aenderungen ?? []) {
+      if (!datum.test(a.datum ?? "")) errors.push(`leitfaden Änderung: datum als JJJJ-MM-TT`);
+      if (a.eintrag && !ids.has(a.eintrag)) errors.push(`leitfaden Änderung: Eintrag „${a.eintrag}“ gibt es nicht`);
+    }
+
+    const de = (d) => d ? d.split("-").reverse().join(".") : "";
+    const GH = "https://github.com/esany/design-lab/blob/main/";
+    const regel = new Map((lf.eintraege ?? []).map((e) => [e.id, e.regel]));
+    const karte = (e) => {
+      const quellen = (e.quellen ?? []).map((id) => corpus.get(id)).filter(Boolean).map((q) =>
+        `<li><a href="${esc(q.url)}">${esc(q.titel)}</a> · ${esc(q.autor)}, ${esc(q.jahr ?? "o. J.")} <span class="beleg">${esc(q.status)}</span></li>`);
+      const labor = (e.labor ?? []).map((p) => `<li><a href="${GH}${esc(p)}">${esc(p)}</a> <span class="beleg">Labor</span></li>`);
+      const bsp = e.beispiel ? `
+          <dl class="beispiel"><dt>statt</dt><dd>${esc(e.beispiel.vorher)}</dd><dt>besser</dt><dd>${esc(e.beispiel.nachher)}</dd></dl>` : "";
+      const statt = e.stattdessen ? `
+        <p class="statt">Stattdessen: <a href="#${esc(e.stattdessen)}">${esc(regel.get(e.stattdessen))}</a></p>` : "";
+      return `      <article class="tipp tipp-${esc(e.status)}" id="${esc(e.id)}">
+        <h3>${esc(e.regel)}</h3>
+        <p class="kurz">${esc(e.kurz)}</p>${statt}
+        <p class="meta">${e.status === "veraltet" ? `überholt seit ${de(e.veraltet_seit)} · ` : ""}${esc(e.beleg)} · geprüft ${de(e.geprueft)}</p>
+        <details>
+          <summary>Warum?</summary>
+          <p>${esc(e.warum)}</p>${bsp}
+          <details>
+            <summary>Hintergrund und Quellen</summary>
+            ${e.vertiefung ? `<p>${esc(e.vertiefung)}</p>` : ""}
+            <ul class="quellen">
+              ${[...quellen, ...labor].join("\n              ")}
+            </ul>
+            <p class="meta">im Leitfaden seit ${de(e.seit)}</p>
+          </details>
+        </details>
+      </article>`;
+    };
+    const abschnitte = (lf.bereiche ?? []).map((b) => {
+      const liste = (lf.eintraege ?? []).filter((e) => e.bereich === b.id);
+      return `    <section aria-labelledby="h-${esc(b.id)}">
+      <div class="section-head"><h2 id="h-${esc(b.id)}">${esc(b.titel)}</h2><span class="count">${liste.length}</span></div>
+      <p class="bereich-text">${esc(b.text)}</p>
+${liste.map(karte).join("\n")}
+    </section>`;
+    }).join("\n");
+    const aend = [...(lf.aenderungen ?? [])].sort((a, b) => b.datum.localeCompare(a.datum)).map((a) =>
+      `        <li><span class="meta">${de(a.datum)}</span> ${a.eintrag ? `<a href="#${esc(a.eintrag)}">${esc(regel.get(a.eintrag))}</a>: ` : ""}${esc(a.was)}</li>`).join("\n");
+    const zuletzt = [...(lf.aenderungen ?? [])].map((a) => a.datum).sort().pop() ?? "";
+    outputs.set("leitfaden/index.html", `<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>${esc(lf.titel)} · design-lab</title>
+  <meta name="description" content="${esc(lf.einleitung)}">
+  <!-- Erzeugt aus leitfaden/eintraege.json durch tools/build.mjs — Daten bearbeiten, nicht diese Datei. -->
+  <link rel="stylesheet" href="../assets/tokens.css">
+  <link rel="stylesheet" href="../assets/lab.css">
+</head>
+<body class="leitfaden">
+  <header class="masthead masthead-klein">
+    <div class="mark" aria-hidden="true"></div>
+    <div>
+      <p class="zurueck"><a href="../">design-lab</a></p>
+      <h1>${esc(lf.titel)}</h1>
+      <p class="lede">${esc(lf.einleitung)}</p>
+      <p class="meta">Stand ${de(zuletzt)} · <a href="#aenderungen">Änderungen</a> · Beleg: belegt (mit Fundstelle) · abgeleitet · nicht belegt</p>
+    </div>
+  </header>
+
+  <main>
+${abschnitte}
+    <section aria-labelledby="h-aenderungen" id="aenderungen">
+      <div class="section-head"><h2 id="h-aenderungen">Änderungen</h2></div>
+      <ul class="aenderungen">
+${aend}
+      </ul>
+      <p class="meta">Jede Änderung ist auch im <a href="https://github.com/esany/design-lab/commits/main/leitfaden/eintraege.json">Verlauf der Datei</a> nachvollziehbar.</p>
+    </section>
+  </main>
+</body>
+</html>
+`);
+  }
+}
+
 // ---------- Verknüpfung: Anforderungen (intent.md) ↔ Entscheidungen und Skills ----------
 // Jede Entscheidung und jeder Skill nennt im Kopf `dient: A..`. Daraus entsteht verknuepfung.md.
 const reqs = new Map();
