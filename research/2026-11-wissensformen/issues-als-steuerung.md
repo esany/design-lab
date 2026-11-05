@@ -89,3 +89,30 @@ Eine Mischform, die das Labor zum Teil schon lebt:
 - Invariant Labs: [GitHub MCP Exploited](https://invariantlabs.ai/blog/mcp-github-vulnerability), Mai 2025; devclass: [Researchers warn of prompt injection vulnerability in GitHub MCP](https://devclass.com/2025/05/27/researchers-warn-of-prompt-injection-vulnerability-in-github-mcp-with-no-obvious-fix/)
 - Beads: [steveyegge/beads](https://github.com/steveyegge/beads) (über Fork und Zweitquellen gesehen)
 - Labor: `research/2026-10-lesekosten/befund.md`, `stand.md` (Pflege 11/2026), Skill `issue`
+
+## Nachtrag: der tatsächliche Ablauf in paleo-type (05.11., nur gelesen)
+
+Der Eigentümer schreibt die Issues nicht selbst; die Modelle schreiben sie über sein Konto.
+Stichprobe: die 41 Issues unter den letzten 100 Vorgängen, Stand `main@22b255b` (*belegt*, GitHub-API):
+
+- **Herkunft unsichtbar:** Alle 41 Issues sind vom Konto `esany` angelegt. Ob Astra, Claude oder
+  der Eigentümer schrieb, ist nicht erkennbar. „Nur der Eigentümer gibt frei“ lässt sich so nicht prüfen.
+- **Regel und Wirklichkeit weichen ab:** Der Spickzettel verlangt genau ein `an:`-Label je Issue.
+  9 von 23 offenen Issues haben keins, bei 5 widerspricht das `an:` im Titel dem Label
+  (#384, #389, #392, #396, #397).
+- **Issues tragen Stand und Plan:** 23 offene Issues mit zusammen 136 171 Zeichen (≈ 39 000
+  Tokens, *abgeleitet*); sechs davon über 8 000 Zeichen, #410 mit Status-Kopf und Checklisten über
+  16 000. `AGENTS.md` dort sagt selbst, Forschungsstand gehöre nicht in Issues.
+- **Doppelte Regeln über Repos:** Der Spickzettel übernimmt die Labels „wie im Labor“ als Text.
+  Zwei Abschriften derselben Regel laufen auseinander.
+- **Öffentlich:** paleo-type ist öffentlich lesbar (anonymer Klon gelang). Das Audit vom 30.10.
+  nennt es „privat“; das ist zu berichtigen. Damit gilt das Einfallstor aus diesem Befund auch dort.
+
+**Folgerung (*abgeleitet*):** Ein repoübergreifender Skill allein wäre eine weitere Abschrift aus
+Text, und die Stichprobe zeigt, dass Text hier nicht hält. Tragen würde: **eine** Quelle für die
+Issue-Regeln (im Labor, andere Repos verweisen nur) **plus** eine gemeinsame, ausgeführte
+Prüfung, z. B. ein wiederverwendbarer GitHub-Workflow, den beide Repos aufrufen. Er prüft bei jedem
+neuen oder geänderten Issue: genau ein `an:`-Label, Titel passt zum Label, Auftrag, Abnahme und
+Grenzen vorhanden, Länge unter einer Grenze, kein Stand-Kopf. Abweichungen schreibt er als
+Kommentar ins Issue, sodass das nächste Modell sie sieht. Dazu eine sichtbare Herkunft je Issue
+(welches Modell). In paleo-type gilt Pause (#399) und D-016; dort entscheidet der Eigentümer.
