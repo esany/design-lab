@@ -7,7 +7,7 @@ offen: []
 
 # Thema: Arbeitsweise mit KI · Wissensformen
 
-**Zuletzt fortgeschrieben:** 06.11.2026 (Claude)
+**Zuletzt fortgeschrieben:** 06.11.2026 (Astra; Prüffall)
 
 ## In Worten
 
@@ -46,3 +46,7 @@ Claude und Astra gleich gut nutzbar ist?
   bis auf die Fehlerbehebungen aus #130 und `projekt-doc-paleo-type-abgleich.md` (geparkt).
 - Stand der Technik vom 06.11. und Angaben zu Astra: Aussagen a17–a23 in `daten/arbeitsweise.json`.
 </details>
+
+## Prüffall neustart-daten (Astra, 06.11.2026)
+
+Astra hat im getrennten Neustart-Test für `arbeitsweise-f01` die Antwort „Matrix“ ausschließlich auf einem Testbranch eingetragen; daraus wurde die Übersicht erzeugt. Der Pull Request ist **nicht zur Übernahme** bestimmt und soll nach der Auswertung durch Claude geschlossen werden. Der Stand auf `main` bleibt unverändert.
