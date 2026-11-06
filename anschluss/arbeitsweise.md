@@ -1,7 +1,7 @@
 ---
 thema: Arbeitsweise mit KI · Wissensformen
-stand: #129 zurückgenommen (0024 wieder in erster Fassung, kein Verzeichnis, drei Notizen). Entschieden 06.11.: Wahrheit nur in Git, ohne Datenbank; Pilot an diesem Thema.
-naechster_schritt: Claude legt dem Eigentümer einen Entwurf des Datenmodells für den Pilot vor (flexibel, nachhaltig, tokensparend, gut pflegbar); übernommen wird erst nach seinem Ja.
+stand: Pilot läuft. Schritt 1 (Schema, Prüfung) übernommen; Schritte 2 und 3: 23 Aussagen und 13 Fragen in daten/arbeitsweise.json, lesbar in daten/arbeitsweise.md.
+naechster_schritt: Schritt 4: Der Eigentümer startet je einen frischen Chat mit Claude und mit Astra für den Neustart-Test (Prüffall evals/neustart-daten); Claude wertet aus.
 offen: []
 ---
 
@@ -35,11 +35,8 @@ Claude und Astra gleich gut nutzbar ist?
 - Projektnotiz paleo-type: eigenes Claude-Projekt; Datei im Labor entfernen
 - Radar-Zeile Basic Memory: behalten oder streichen
 
-**Offen beim Eigentümer (älter):**
-1. Radar als Matrix (Empfehlung) oder Kreis?
-2. Gemeinsame Issue-Prüfung zuerst im Labor bauen?
-3. Befund zu paleo-type auf #408 notieren (dort gilt Pause)?
-4. Dürfen Fremde im öffentlichen Labor Issues anlegen?
+**Offene Fragen und Aussagen:** nur noch in `daten/arbeitsweise.json`; lesbar in
+`daten/arbeitsweise.md`. Hier nicht wiederholen.
 
 <details><summary>Für die Modelle: Fundstellen</summary>
 
@@ -47,9 +44,5 @@ Claude und Astra gleich gut nutzbar ist?
   `issues-als-steuerung.md`) und Abschnitt 05.11. in `experiments/2026-10-entwurfsprozess.md`.
 - Vorfall 05.11.: #127 ohne Freigabe umgesetzt und übernommen (#129, #130); am 06.11. zurückgenommen
   bis auf die Fehlerbehebungen aus #130 und `projekt-doc-paleo-type-abgleich.md` (geparkt).
-- Stand der Technik zur Struktur (Chat 06.11., nicht im Repo): Kontextdateien verbessern die
-  Korrektheit nicht messbar, eher die Effizienz; Skills nach offenem Standard lesen Claude und
-  ChatGPT/Codex; Gedächtnis in Dateien statt Datenbank bis einige tausend Einträge; Sperren, die
-  für alle gelten, sind nur die Prüfungen auf GitHub.
-- Astra (ChatGPT) kann Code ausführen und über den GitHub-Connector schreiben (Eigentümer, 06.11.).
+- Stand der Technik vom 06.11. und Angaben zu Astra: Aussagen a17–a23 in `daten/arbeitsweise.json`.
 </details>

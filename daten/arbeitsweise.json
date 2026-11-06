@@ -1,0 +1,363 @@
+{
+  "thema": "arbeitsweise",
+  "aussagen": [
+    {
+      "id": "arbeitsweise-a01",
+      "aussage": "Fortschritt kommt in der Arbeit mit der KI als Text zurück, nicht als etwas zum Ansehen oder Ausprobieren; der Gestalter sieht deshalb nicht, ob Strukturen tragen.",
+      "status": "abgeleitet",
+      "seit": "2026-11-05",
+      "herleitung": "experiments/2026-10-entwurfsprozess.md"
+    },
+    {
+      "id": "arbeitsweise-a02",
+      "aussage": "Im Labor folgte auf einen Vorfall meist eine neue Regel: 30 Entscheidungen in drei Tagen.",
+      "status": "belegt",
+      "seit": "2026-11-05",
+      "quellen": [
+        {
+          "datei": "research/2026-10-audit-zusammenarbeit/befunde.md",
+          "stelle": "In Worten, Punkt 4"
+        }
+      ],
+      "herleitung": "experiments/2026-10-entwurfsprozess.md"
+    },
+    {
+      "id": "arbeitsweise-a03",
+      "aussage": "Eine Regel, die ein Modell selbst geschrieben hat, befolgt es Stunden später nicht; gehalten haben technische Sperren, keine Sätze.",
+      "status": "belegt",
+      "seit": "2026-11-05",
+      "quellen": [
+        {
+          "datei": "research/2026-10-audit-zusammenarbeit/befunde.md",
+          "stelle": "In Worten, Punkte 2 und 5"
+        }
+      ]
+    },
+    {
+      "id": "arbeitsweise-a04",
+      "aussage": "Ein Auftrag mit mehr als einer Lesart wird von Modellen still in eine Richtung aufgelöst, meist in die größere.",
+      "status": "belegt",
+      "seit": "2026-11-05",
+      "quellen": [
+        {
+          "datei": "research/2026-10-audit-zusammenarbeit/befunde.md",
+          "stelle": "Muster A"
+        }
+      ],
+      "notiz": "Am 05.11. erneut beobachtet: „weiter“ wurde als Auftrag für #127 gelesen."
+    },
+    {
+      "id": "arbeitsweise-a05",
+      "aussage": "In paleo-type beansprucht die Verfahrens- und Verwaltungsschicht 53 % der Bytes.",
+      "status": "belegt",
+      "seit": "2026-11-05",
+      "quellen": [
+        {
+          "datei": "research/2026-10-audit-paleo-type/befunde.md",
+          "stelle": "Kosten"
+        }
+      ],
+      "notiz": "Größenverhältnis, keine Kennzahl für unnötige Arbeit."
+    },
+    {
+      "id": "arbeitsweise-a06",
+      "aussage": "Wurzel des Problems: Im Entwurf antwortet das Material, in der Arbeit mit der KI nur Text; der Gestalter ersetzt sein Urteil durch Regeln.",
+      "status": "abgeleitet",
+      "seit": "2026-11-05",
+      "quellen": [
+        {
+          "id": "schoen-1992-ried",
+          "stelle": "reflective conversation with the materials"
+        }
+      ],
+      "herleitung": "experiments/2026-10-entwurfsprozess.md"
+    },
+    {
+      "id": "arbeitsweise-a07",
+      "aussage": "Gefühlter Fortschritt ist kein Fortschritt: Erfahrene Entwickler schätzten sich mit KI 20 % schneller und waren gemessen 19 % langsamer.",
+      "status": "belegt",
+      "seit": "2026-11-06",
+      "quellen": [
+        {
+          "id": "metr-2025-entwickler",
+          "stelle": "Abstract"
+        }
+      ],
+      "herleitung": "experiments/2026-10-entwurfsprozess.md",
+      "notiz": "Studie mit Werkzeugen von Anfang 2025 in vertrauten, großen Codebasen."
+    },
+    {
+      "id": "arbeitsweise-a08",
+      "aussage": "Text trägt nur in einer von drei Rollen: ausgeführt (Prüffall), erzeugt (Ansicht aus Daten) oder entschieden (Begründung). Text, der nur befolgt werden soll, wird zur Hülle.",
+      "status": "abgeleitet",
+      "seit": "2026-11-05",
+      "herleitung": "research/2026-11-wissensformen/anforderungen.md"
+    },
+    {
+      "id": "arbeitsweise-a09",
+      "aussage": "Jede Wissensform des Labors soll genau eine Frage beantworten: Leitfaden (wie arbeite ich gut), Radar (was nehme ich), Fachpaket (was gilt fachlich), Korpus (woher stammt das), Entscheidung (warum ist das so).",
+      "status": "abgeleitet",
+      "seit": "2026-11-05",
+      "herleitung": "research/2026-11-wissensformen/konzept.md",
+      "notiz": "Vorschlag, nicht beschlossen."
+    },
+    {
+      "id": "arbeitsweise-a10",
+      "aussage": "Ein Radar als Matrix (Ringe als Spalten, Felder als Zeilen) ist auf dem Handy lesbarer als ein Kreis.",
+      "status": "abgeleitet",
+      "seit": "2026-11-05",
+      "herleitung": "research/2026-11-wissensformen/konzept.md",
+      "notiz": "Nicht getestet; offene Frage an den Eigentümer."
+    },
+    {
+      "id": "arbeitsweise-a11",
+      "aussage": "Spezifikationsgetriebene Werkzeuge wie Kiro und Spec Kit erzeugen viele gleichförmige Markdown-Dateien; Agenten übergehen Hinweise der Spezifikation, und es droht falsche Sicherheit.",
+      "status": "belegt",
+      "seit": "2026-11-05",
+      "quellen": [
+        {
+          "datei": "research/2026-11-wissensformen/anforderungen.md",
+          "stelle": "Stand der Technik, Kritik (Böckeler 2025)"
+        }
+      ],
+      "herleitung": "research/2026-11-wissensformen/anforderungen.md",
+      "notiz": "Primärquelle am 05.11. gelesen, am 06.11. nicht erneut geöffnet."
+    },
+    {
+      "id": "arbeitsweise-a12",
+      "aussage": "Issues sind Aufträge, keine Anforderungen; Anforderungen leben mit Kennung und Prüffrage im Repo, ihre Abnahme als ausgeführter Prüffall.",
+      "status": "abgeleitet",
+      "seit": "2026-11-05",
+      "herleitung": "research/2026-11-wissensformen/anforderungen.md"
+    },
+    {
+      "id": "arbeitsweise-a13",
+      "aussage": "GitHub empfiehlt, Agenten über Issues nur klar umrissene Aufgaben zu geben; mehrdeutige oder breite Aufgaben behält man selbst.",
+      "status": "belegt",
+      "seit": "2026-11-05",
+      "quellen": [
+        {
+          "datei": "research/2026-11-wissensformen/issues-als-steuerung.md",
+          "stelle": "Stand der Technik, Punkt 1"
+        }
+      ],
+      "herleitung": "research/2026-11-wissensformen/issues-als-steuerung.md",
+      "notiz": "Primärquelle am 05.11. gelesen, am 06.11. nicht erneut geöffnet."
+    },
+    {
+      "id": "arbeitsweise-a14",
+      "aussage": "Der Arbeitsstand langer Agentenarbeit gehört ins Repo (Merkmalsliste mit „bestanden“, Fortschrittsdatei), nicht ins Issue-System.",
+      "status": "belegt",
+      "seit": "2026-11-05",
+      "quellen": [
+        {
+          "datei": "research/2026-11-wissensformen/issues-als-steuerung.md",
+          "stelle": "Stand der Technik, Punkt 2 (Anthropic, Nov. 2025)"
+        }
+      ],
+      "herleitung": "research/2026-11-wissensformen/issues-als-steuerung.md",
+      "notiz": "Primärquelle am 05.11. gelesen, am 06.11. nicht erneut geöffnet."
+    },
+    {
+      "id": "arbeitsweise-a15",
+      "aussage": "Öffentliche Issues sind ein Einfallstor: Ein präpariertes Issue kann einen Agenten dazu bringen, private Daten nach außen zu schreiben.",
+      "status": "belegt",
+      "seit": "2026-11-05",
+      "quellen": [
+        {
+          "datei": "research/2026-11-wissensformen/issues-als-steuerung.md",
+          "stelle": "Stand der Technik, Punkt 3 (Invariant Labs, Mai 2025)"
+        }
+      ],
+      "herleitung": "research/2026-11-wissensformen/issues-als-steuerung.md",
+      "notiz": "Primärquelle am 05.11. gelesen, am 06.11. nicht erneut geöffnet."
+    },
+    {
+      "id": "arbeitsweise-a16",
+      "aussage": "In GitHub ist nicht erkennbar, ob ein Text vom Eigentümer oder von einer KI stammt: Alle Issues entstehen unter dem Konto esany, und der Eigentümer schreibt dort nichts selbst.",
+      "status": "belegt",
+      "seit": "2026-11-05",
+      "quellen": [
+        {
+          "datei": "research/2026-11-wissensformen/issues-als-steuerung.md",
+          "stelle": "Nachtrag paleo-type, Herkunft unsichtbar"
+        }
+      ],
+      "herleitung": "research/2026-11-wissensformen/issues-als-steuerung.md",
+      "notiz": "Am 05.11. galt deshalb ein von einer KI geschriebener Freigabe-Vermerk als Freigabe (#127)."
+    },
+    {
+      "id": "arbeitsweise-a17",
+      "aussage": "Kontextdateien wie AGENTS.md verbessern die Korrektheit von Agenten nicht messbar; ob sie Laufzeit und Kosten senken oder erhöhen, ist uneinheitlich.",
+      "status": "belegt",
+      "seit": "2026-11-06",
+      "quellen": [
+        {
+          "id": "gloaguen-2026-agentsmd",
+          "stelle": "Abstract"
+        },
+        {
+          "id": "kontextdateien-ablation-2026",
+          "stelle": "Abstract"
+        },
+        {
+          "id": "lulla-2026-agentsmd",
+          "stelle": "Abstract"
+        }
+      ],
+      "notiz": "Kleine Stichproben; Effekt auf Korrektheit unter etwa 10 bis 15 Prozentpunkten nicht ausschließbar."
+    },
+    {
+      "id": "arbeitsweise-a18",
+      "aussage": "Häufigste Mängel in Kontextdateien: Regeln, die ein Prüfwerkzeug ohnehin durchsetzt (62 %), aufgeblähte Dateien (42 %) und Spezialwissen, das in einen Skill gehört (35 %).",
+      "status": "belegt",
+      "seit": "2026-11-06",
+      "quellen": [
+        {
+          "id": "santos-2026-smells",
+          "stelle": "Abstract"
+        }
+      ]
+    },
+    {
+      "id": "arbeitsweise-a19",
+      "aussage": "Skills nach dem offenen Agent-Skills-Standard lesen Claude, ChatGPT und Codex gleichermaßen; der Ordner .agents/skills des Labors passt dazu.",
+      "status": "belegt",
+      "seit": "2026-11-06",
+      "quellen": [
+        {
+          "id": "openai-codex-skills-2026",
+          "stelle": "Einleitung"
+        }
+      ]
+    },
+    {
+      "id": "arbeitsweise-a20",
+      "aussage": "Für Wissen unter einigen tausend Einträgen reichen Dateien in Git mit Suche; eine Datenbank lohnt erst darüber, und dann nur als abgeleiteter Index.",
+      "status": "abgeleitet",
+      "seit": "2026-11-06",
+      "notiz": "Aus Praxisberichten 2026, nicht aus begutachteten Studien."
+    },
+    {
+      "id": "arbeitsweise-a21",
+      "aussage": "Sperren, die für Claude und Astra in ihren Chats gleich gelten, sind nur die Prüfungen auf GitHub; Hooks wirken nur in Claude Code und in der Codex-Kommandozeile.",
+      "status": "abgeleitet",
+      "seit": "2026-11-06"
+    },
+    {
+      "id": "arbeitsweise-a22",
+      "aussage": "Bei der Größe des Labors (wenige tausend Tokens Startlast) zählt für die Tokenökonomie weniger die Textmenge als Widerspruchsfreiheit: keine Doppelungen, keine alten Fassungen neben neuen.",
+      "status": "abgeleitet",
+      "seit": "2026-11-06",
+      "quellen": [
+        {
+          "id": "chroma-context-rot-2025",
+          "stelle": "Ablenkung durch ähnliche, irrelevante Inhalte"
+        }
+      ]
+    },
+    {
+      "id": "arbeitsweise-a23",
+      "aussage": "Astra (ChatGPT) kann Code ausführen und über den GitHub-Connector schreiben.",
+      "status": "nicht belegt",
+      "seit": "2026-11-06",
+      "notiz": "Angabe des Eigentümers im Chat vom 06.11.; im Pilot (Schritt 4) zu prüfen."
+    }
+  ],
+  "fragen": [
+    {
+      "id": "arbeitsweise-f01",
+      "frage": "Radar als Matrix (Empfehlung) oder Kreis?",
+      "gestellt": "2026-11-05",
+      "notiz": "Merkzettel, gestellt im Chat"
+    },
+    {
+      "id": "arbeitsweise-f02",
+      "frage": "Gemeinsame Issue-Prüfung zuerst im Labor bauen?",
+      "gestellt": "2026-11-05",
+      "notiz": "Merkzettel, gestellt im Chat"
+    },
+    {
+      "id": "arbeitsweise-f03",
+      "frage": "Befund zu paleo-type auf #408 notieren (dort gilt Pause)?",
+      "gestellt": "2026-11-05",
+      "notiz": "Merkzettel, gestellt im Chat"
+    },
+    {
+      "id": "arbeitsweise-f04",
+      "frage": "Dürfen Fremde im öffentlichen Labor Issues anlegen?",
+      "gestellt": "2026-11-05",
+      "notiz": "Merkzettel, gestellt im Chat"
+    },
+    {
+      "id": "arbeitsweise-f05",
+      "frage": "Soll ich diese vier Punkte als Regel ins Labor schreiben? Das wäre eine Regeländerung, deshalb frage ich.",
+      "gestellt": "2026-11-05",
+      "antwort": "Genau, ganz wichtig, transparenz und Unsicherheit sichtbar der ki sichtbar machen sind ganz wichtig für mich, was ist da sota. Also nicht lösung um jeden Preis",
+      "beantwortet": "2026-11-05",
+      "notiz": "Gemeint: Freigabe nur im laufenden Chat. Keine ausdrückliche Zustimmung zur Regel; Entwurf #132 ist geparkt."
+    },
+    {
+      "id": "arbeitsweise-f06",
+      "frage": "PR #131 (Leitfaden) übernehmen?",
+      "gestellt": "2026-11-05",
+      "antwort": "1 ja",
+      "beantwortet": "2026-11-05"
+    },
+    {
+      "id": "arbeitsweise-f07",
+      "frage": "Stufen 1 bis 3 bauen? Ich zeige sie dir vorher als Entwurf.",
+      "gestellt": "2026-11-05",
+      "antwort": "2 ja",
+      "beantwortet": "2026-11-05",
+      "notiz": "Entwurf #132, nicht übernommen."
+    },
+    {
+      "id": "arbeitsweise-f08",
+      "frage": "Meine Änderungen von heute (Regel 0024, Verzeichnis, Befunde, Projekt-Doc) zurücknehmen und die beiden Fehlerbehebungen behalten?",
+      "gestellt": "2026-11-05",
+      "antwort": "3 weiß nicht worum es geht",
+      "beantwortet": "2026-11-05",
+      "notiz": "Danach neu und verständlicher gestellt (arbeitsweise-f09)."
+    },
+    {
+      "id": "arbeitsweise-f09",
+      "frage": "Soll ich das zurücknehmen, damit wir auf sauberem Stand anfangen?",
+      "gestellt": "2026-11-06",
+      "antwort": "Ja, alles zurück (Empfohlen)",
+      "beantwortet": "2026-11-06",
+      "notiz": "Gewählt aus vorgegebenen Antworten; umgesetzt in #134."
+    },
+    {
+      "id": "arbeitsweise-f10",
+      "frage": "Soll die einzige Wahrheit des Labors in Git liegen (Dateien und Datensätze mit Schema), ohne eigene Datenbank?",
+      "gestellt": "2026-11-06",
+      "antwort": "Ja, nur Git (Empfohlen)",
+      "beantwortet": "2026-11-06",
+      "notiz": "Gewählt aus vorgegebenen Antworten."
+    },
+    {
+      "id": "arbeitsweise-f11",
+      "frage": "Pilot am Thema „Arbeitsweise mit KI“: Einverstanden, mit erstem Entwurf zum Ansehen vor jeder Übernahme?",
+      "gestellt": "2026-11-06",
+      "antwort": "Ja, achte aber auch flexibele nachaltige, tokensparende und gut pflegbare strukturen und Ansätze",
+      "beantwortet": "2026-11-06"
+    },
+    {
+      "id": "arbeitsweise-f12",
+      "frage": "Soll ich mit Schritt 1 (Schema und Prüfung) anfangen?",
+      "gestellt": "2026-11-06",
+      "antwort": "Ja",
+      "beantwortet": "2026-11-06",
+      "notiz": "Umgesetzt in #135."
+    },
+    {
+      "id": "arbeitsweise-f13",
+      "frage": "Soll ich PR #135 übernehmen und mit Schritt 2 weitermachen?",
+      "gestellt": "2026-11-06",
+      "antwort": "Ich gebe nächste schritte frei",
+      "beantwortet": "2026-11-06",
+      "notiz": "Gelesen als Freigabe für die Übernahme von #135 und die Schritte 2 bis 4 des Pilots."
+    }
+  ]
+}

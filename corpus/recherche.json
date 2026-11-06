@@ -1584,5 +1584,95 @@
     "status": "belegt",
     "notiz": "CHI 2019, 18 Richtlinien. Nr. 2: zeigen, wie oft das System Fehler macht; Nr. 10: bei Zweifel erst klären, dann handeln. Blog und HAX-Bibliothek gelesen.",
     "geprueft": "2026-11-05"
+  },
+  {
+    "id": "metr-2025-entwickler",
+    "titel": "Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity",
+    "autor": "Joel Becker, Nate Rush, Beth Barnes, David Rein (METR)",
+    "jahr": 2025,
+    "art": "Paper",
+    "url": "https://arxiv.org/abs/2507.09089",
+    "lizenz": "unbekannt",
+    "felder": [
+      "labor"
+    ],
+    "status": "belegt",
+    "notiz": "Randomisierte Studie, 16 erfahrene Entwickler, 246 Aufgaben: erwartet 24 % schneller, danach geschätzt 20 % schneller, gemessen 19 % langsamer. Abstract gelesen.",
+    "geprueft": "2026-11-06"
+  },
+  {
+    "id": "gloaguen-2026-agentsmd",
+    "titel": "Evaluating AGENTS.md: Are Repository-Level Context Files Helpful for Coding Agents?",
+    "autor": "Thibaud Gloaguen, Niels Mündler, Mark Niklas Müller, Veselin Raychev, Martin Vechev",
+    "jahr": 2026,
+    "art": "Paper",
+    "url": "https://arxiv.org/abs/2602.11988",
+    "lizenz": "CC BY 4.0",
+    "felder": [
+      "labor"
+    ],
+    "status": "belegt",
+    "notiz": "ICLR-2026-Workshop. Kontextdateien verbessern die Erfolgsquote nicht und erhöhen die Kosten um über 20 %; nur minimale Vorgaben empfohlen. Abstract gelesen.",
+    "geprueft": "2026-11-06"
+  },
+  {
+    "id": "lulla-2026-agentsmd",
+    "titel": "On the Impact of AGENTS.md Files on the Efficiency of AI Coding Agents",
+    "autor": "Jai Lal Lulla u. a.",
+    "jahr": 2026,
+    "art": "Paper",
+    "url": "https://arxiv.org/abs/2601.20404",
+    "lizenz": "unbekannt",
+    "felder": [
+      "labor"
+    ],
+    "status": "belegt",
+    "notiz": "ICSE JAWs 2026; 10 Repos, 124 PRs: mit AGENTS.md 28,6 % weniger Laufzeit und 16,6 % weniger Ausgabetokens bei vergleichbarem Ergebnis. Abstract gelesen.",
+    "geprueft": "2026-11-06"
+  },
+  {
+    "id": "kontextdateien-ablation-2026",
+    "titel": "Do Context Files Help Coding Agents? A Two-Agent Ablation Study on Real Repositories",
+    "autor": "unbekannt (arXiv 2607.27250)",
+    "jahr": 2026,
+    "art": "Paper",
+    "url": "https://arxiv.org/abs/2607.27250",
+    "lizenz": "unbekannt",
+    "felder": [
+      "labor"
+    ],
+    "status": "belegt",
+    "notiz": "Claude und Codex, drei Repos: ohne Kontext, immer geladen, bei Bedarf geholt; kein messbarer Effekt auf Korrektheit, wohl aber auf die Arbeitsweise. Kleine Stichprobe. Abstract und Zusammenfassung gelesen.",
+    "geprueft": "2026-11-06"
+  },
+  {
+    "id": "santos-2026-smells",
+    "titel": "Configuration Smells in AGENTS.md Files: Common Mistakes in Configuring Coding Agents",
+    "autor": "Helio Victor F. dos Santos, Vitor Costa, Joao Eduardo Montandon, Luciana Lourdes Silva, Marco Tulio Valente",
+    "jahr": 2026,
+    "art": "Paper",
+    "url": "https://arxiv.org/abs/2606.15828",
+    "lizenz": "unbekannt",
+    "felder": [
+      "labor"
+    ],
+    "status": "belegt",
+    "notiz": "SCAM 2026; 100 Repos: Lint Leakage 62 %, Context Bloat 42 %, Skill Leakage 35 %; nur 9 von 100 ohne Mangel. Abstract gelesen.",
+    "geprueft": "2026-11-06"
+  },
+  {
+    "id": "openai-codex-skills-2026",
+    "titel": "Build skills",
+    "autor": "OpenAI",
+    "jahr": 2026,
+    "art": "Artikel",
+    "url": "https://developers.openai.com/codex/skills",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "labor"
+    ],
+    "status": "belegt",
+    "notiz": "Skills für ChatGPT und Codex bauen auf dem offenen Agent-Skills-Standard auf. Seite angesehen (Auszug).",
+    "geprueft": "2026-11-06"
   }
 ]
