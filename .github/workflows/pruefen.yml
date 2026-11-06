@@ -21,6 +21,8 @@ jobs:
         run: node tools/build.mjs --check
       - name: Gegenbeweise für Stand-Gitter
         run: node tools/gitter-test.mjs
+      - name: Prüffälle Datensätze
+        run: node tools/daten-test.mjs
 
   messwerte:
     name: Eingriffe und Lesekosten
