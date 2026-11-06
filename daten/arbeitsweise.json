@@ -269,7 +269,9 @@
       "id": "arbeitsweise-f01",
       "frage": "Radar als Matrix (Empfehlung) oder Kreis?",
       "gestellt": "2026-11-05",
-      "notiz": "Merkzettel, gestellt im Chat"
+      "antwort": "Matrix",
+      "beantwortet": "2026-11-06",
+      "notiz": "Merkzettel, gestellt im Chat. Testeintrag aus Prüffall evals/neustart-daten (Claude); wird nicht übernommen."
     },
     {
       "id": "arbeitsweise-f02",

@@ -7,9 +7,8 @@
 
 **Nächster Schritt:** Schritt 4: Der Eigentümer startet je einen frischen Chat mit Claude und mit Astra für den Neustart-Test (Prüffall evals/neustart-daten); Claude wertet aus.
 
-## Offene Fragen an den Eigentümer (4)
+## Offene Fragen an den Eigentümer (3)
 
-- **arbeitsweise-f01** Radar als Matrix (Empfehlung) oder Kreis? *(gestellt 2026-11-05)*
 - **arbeitsweise-f02** Gemeinsame Issue-Prüfung zuerst im Labor bauen? *(gestellt 2026-11-05)*
 - **arbeitsweise-f03** Befund zu paleo-type auf #408 notieren (dort gilt Pause)? *(gestellt 2026-11-05)*
 - **arbeitsweise-f04** Dürfen Fremde im öffentlichen Labor Issues anlegen? *(gestellt 2026-11-05)*
@@ -76,7 +75,7 @@
 - **arbeitsweise-a23** Astra (ChatGPT) kann Code ausführen und über den GitHub-Connector schreiben.
   *Grenze:* Angabe des Eigentümers im Chat vom 06.11.; im Pilot (Schritt 4) zu prüfen.
 
-## Beantwortete Fragen (9, neueste zuerst)
+## Beantwortete Fragen (10, neueste zuerst)
 
 - **2026-11-06** Soll ich PR #135 übernehmen und mit Schritt 2 weitermachen?
   → „Ich gebe nächste schritte frei“ *(Gelesen als Freigabe für die Übernahme von #135 und die Schritte 2 bis 4 des Pilots.)*
@@ -88,6 +87,8 @@
   → „Ja, nur Git (Empfohlen)“ *(Gewählt aus vorgegebenen Antworten.)*
 - **2026-11-06** Soll ich das zurücknehmen, damit wir auf sauberem Stand anfangen?
   → „Ja, alles zurück (Empfohlen)“ *(Gewählt aus vorgegebenen Antworten; umgesetzt in #134.)*
+- **2026-11-06** Radar als Matrix (Empfehlung) oder Kreis?
+  → „Matrix“ *(Merkzettel, gestellt im Chat. Testeintrag aus Prüffall evals/neustart-daten (Claude); wird nicht übernommen.)*
 - **2026-11-05** Meine Änderungen von heute (Regel 0024, Verzeichnis, Befunde, Projekt-Doc) zurücknehmen und die beiden Fehlerbehebungen behalten?
   → „3 weiß nicht worum es geht“ *(Danach neu und verständlicher gestellt (arbeitsweise-f09).)*
 - **2026-11-05** Stufen 1 bis 3 bauen? Ich zeige sie dir vorher als Entwurf.
