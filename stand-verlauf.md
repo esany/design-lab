@@ -6,6 +6,7 @@
 
 | Datum | Was | Warum | Rückgängig |
 |---|---|---|---|
+| 2026-11-06 | **Prüffall neustart-daten: Label für Testeinträge (Claude):** Aufgabe und Erwartung verlangen das Label `ohne-verlauf`; Merkzettel nennt den Codex-Lauf als nächsten Schritt | #137 und #138 scheiterten an „Stand gegen GitHub“, weil die Erwartung weitere Dateien ausschließt; Ihre Frage nach einem Lauf in Codex (06.11.) | PR revertieren |
 | 2026-11-06 | **Arbeitsweise: Merkzettel vor Chatwechsel (Claude):** Stand und nächster Schritt nennen die offenen Testeinträge #137 (Claude) und #138 (Astra) und ihre Auswertung | Ihre Frage nach einem neuen Chat (06.11.) | PR revertieren |
 | 2026-11-06 | **Pilot Datenmodell, Schritte 2 bis 4 (Claude):** `daten/arbeitsweise.json` mit 23 Aussagen und 13 Fragen (Antworten im Wortlaut), erzeugte Übersicht `daten/arbeitsweise.md`, sechs neue Quellen im Korpus; Merkzettel verweist nur noch auf die Daten; Prüffall `evals/neustart-daten` für Claude und Astra | Ihr „Ich gebe nächste schritte frei“ im Chat (06.11.) | PR revertieren |
 | 2026-11-06 | **Pilot Datenmodell, Schritt 1 (Claude, Entwurf):** Schema für Aussagen und Fragen an den Eigentümer (`daten/schema.md`), Prüfung im Build (`tools/daten.mjs`), 19 Prüffälle (`tools/daten-test.mjs`, läuft in „Prüfen“); Verweise `[a:<id>]` in Markdown werden geprüft. Noch keine Daten | Ihr „Ja“ im Chat (06.11.) zu Schritt 1 des Pilots | PR revertieren |

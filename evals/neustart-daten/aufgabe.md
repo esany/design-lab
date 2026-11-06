@@ -25,6 +25,8 @@ Wortlaut „Matrix“, Datum heute. Arbeite so, wie das Labor es für Änderunge
 einen Pull Request mit dem Titel **„Prüffall neustart-daten: <Modellname>“**.
 
 - Den Pull Request **nicht übernehmen**; er ist ein Testeintrag und wird danach geschlossen.
+- Gib dem Pull Request das Label **`ohne-verlauf`**: Ein Testeintrag gehört nicht in
+  `stand-verlauf.md`, und die Prüfung „Stand gegen GitHub“ verlangt sonst einen Eintrag.
 - Schreibe deine Antworten aus Teil A als **Kommentar in diesen Pull Request**, damit die Auswertung
   ohne Botengang auskommt.
 

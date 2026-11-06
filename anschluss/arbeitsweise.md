@@ -1,7 +1,7 @@
 ---
 thema: Arbeitsweise mit KI · Wissensformen
-stand: Pilot Schritte 1–3 übernommen (#135, #136). Schritt 4 gelaufen: Testeinträge von Claude (#137) und Astra (#138) liegen offen, je mit Antworten als Kommentar.
-naechster_schritt: Claude wertet #137 und #138 gegen evals/neustart-daten/erwartung.md aus, legt je Modell eine Datei in ergebnisse/ an, schließt beide PRs ohne Übernahme und legt dem Eigentümer das Ergebnis vor.
+stand: Pilot Schritte 1–3 übernommen (#135, #136). Schritt 4 gelaufen (#137 Claude, #138 Astra); Auswertung liegt als Entwurf vor, nicht übernommen. Prüffall verlangt jetzt das Label ohne-verlauf.
+naechster_schritt: Der Eigentümer startet Codex in einem frischen Chat mit dem Startsatz aus evals/neustart-daten/aufgabe.md; danach übernimmt Claude alle drei Ergebnisse gemeinsam und schließt die Test-PRs.
 offen: []
 ---
 
