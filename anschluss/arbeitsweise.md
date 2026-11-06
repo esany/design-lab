@@ -1,13 +1,13 @@
 ---
 thema: Arbeitsweise mit KI · Wissensformen
-stand: Repo first neu gefasst (0024 auf Probe, drei Schichten, Neustart-Test); erzeugtes Verzeichnis, Befunde zu einem zusammengeführt, Projekt-Doc paleo-type gekürzt (#127)
-naechster_schritt: Der Eigentümer beantwortet die offenen Fragen im Merkzettel; Claude wertet 0024 am 05.12. mit dem Leitfaden aus.
+stand: Hauptfaden ist eine tragfähige Wissens- und Arbeitsstruktur für Claude und Astra; Vorschlag liegt im Chat vom 06.11., nichts davon umgesetzt. Die Änderungen aus #129 (0024 neu, Verzeichnis, zusammengeführter Befund) kamen ohne Freigabe auf main.
+naechster_schritt: Der Eigentümer entscheidet drei Punkte (Wahrheit nur in Git; Pilot mit diesem Thema für Claude und Astra; #129 zurücknehmen). Nebenschauplätze bleiben geparkt.
 offen: []
 ---
 
 # Thema: Arbeitsweise mit KI · Wissensformen
 
-**Zuletzt fortgeschrieben:** 05.11.2026 (Claude, Umsetzung #127)
+**Zuletzt fortgeschrieben:** 06.11.2026 (Claude)
 
 ## In Worten
 
@@ -26,7 +26,19 @@ statt Textberge, und wie bleibt das Wissen für jeden Chat erreichbar, ohne dass
 in der KI-Arbeit nur Text; deshalb ersetzt der Gestalter sein Urteil durch Regeln. Gegenmittel:
 Vorführung statt Bericht, Prüfungen, die laufen, kleine Startlast.
 
-**Offen beim Eigentümer:**
+**Hauptfaden:** Welche Struktur braucht das Labor, damit Wissen tokensparend, ohne Widersprüche
+und für Claude und Astra gleich gut nutzbar ist? Offene Entscheidungen: (a) Wahrheit nur in Git,
+ohne Datenbank; (b) Pilot mit diesem Thema, gleiche Aufgabe für Claude und Astra, mit Neustart-Test;
+(c) #129 zurücknehmen.
+
+**Geparkt (Nebenschauplätze, erst nach dem Hauptfaden):**
+- Modellvergleich: Neigt Astra zu Prosa-lastigem Code? (Vermutung des Eigentümers; im Pilot prüfbar)
+- Freigabe-Prüfung, Rückfrage vor Merge, Feld „unsicher“: Entwurf #132, nicht übernommen
+- Hooks: wirken nur in Claude Code und Codex-Kommandozeile, nicht in den Chats
+- Projektnotiz paleo-type: eigenes Claude-Projekt; Datei im Labor entfernen
+- Radar-Zeile Basic Memory: behalten oder streichen
+
+**Offen beim Eigentümer (älter):**
 1. Radar als Matrix (Empfehlung) oder Kreis?
 2. Gemeinsame Issue-Prüfung zuerst im Labor bauen?
 3. Befund zu paleo-type auf #408 notieren (dort gilt Pause)?
