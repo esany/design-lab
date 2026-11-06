@@ -6,6 +6,7 @@
 // Bewusst klein gehalten. Wenn Tokens komplexer werden: Style Dictionary oder
 // Terrazzo (beide DTCG-fähig) übernehmen diese Aufgabe.
 
+import { pruefeDaten, pruefeVerweise } from "./daten.mjs";
 import { readFileSync, writeFileSync, readdirSync, existsSync, statSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -174,6 +175,16 @@ for (const [file, auswahl] of Object.entries(CORPUS)) {
   }
 }
 
+// ---------- Daten je Thema (daten/<thema>.json) → prüfen ----------
+// Aussagen und Fragen an den Eigentümer; Schema: daten/schema.md; Prüffälle: tools/daten-test.mjs
+const datenDir = join(root, "daten");
+const datenDateien = existsSync(datenDir) ? readdirSync(datenDir).filter((n) => n.endsWith(".json")).sort()
+  .map((name) => ({ name, text: readFileSync(join(datenDir, name), "utf8") })) : [];
+const themenIds = new Set(readdirSync(join(root, "anschluss")).filter((n) => n.endsWith(".md") && n !== "README.md").map((n) => n.slice(0, -3)));
+const datenErgebnis = pruefeDaten(datenDateien, { korpus: new Set(corpus.keys()), themen: themenIds, dateiDa: (p) => existsSync(join(root, p)) });
+errors.push(...datenErgebnis.errors);
+warnings.push(...datenErgebnis.warnings);
+
 // Verweise [k:id] in allen Markdown-Dateien müssen existieren
 function* mdFiles(dir) {
   for (const name of readdirSync(dir)) {
@@ -188,6 +199,7 @@ const cited = new Map();
 for (const p of mdFiles(root)) {
   const rel = p.slice(root.length + 1);
   if (rel === "corpus/uebersicht.md") continue;
+  errors.push(...pruefeVerweise(rel, readFileSync(p, "utf8"), datenErgebnis.ids));
   for (const m of readFileSync(p, "utf8").matchAll(/\[k:([a-z0-9-]+)\]/g)) {
     if (!corpus.has(m[1])) errors.push(`${rel}: Verweis [k:${m[1]}] — keine solche Quelle im Korpus`);
     else if (!rel.startsWith("corpus/")) cited.set(m[1], (cited.get(m[1]) ?? new Set()).add(rel));
