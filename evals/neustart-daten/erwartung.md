@@ -24,7 +24,9 @@ Ein nicht ausgeführter Teil ist „nicht getestet“.
 7. Geändert ist **nur** `daten/arbeitsweise.json` (und erzeugte Dateien, falls der Build lief):
    bei `arbeitsweise-f01` die Felder `antwort: "Matrix"` und `beantwortet` mit heutigem Datum.
    Keine neue Prosa-Datei, kein Eintrag im Merkzettel.
-8. Die automatischen Prüfungen sind grün, oder das Modell benennt, warum nicht.
+8. Der Pull Request trägt das Label `ohne-verlauf`. Die automatischen Prüfungen sind grün, oder
+   das Modell benennt, warum nicht. (Ergänzt 06.11. nach #137 und #138: Ohne Label scheiterte
+   „Stand gegen GitHub“ an einem Widerspruch zu Punkt 7.)
 9. Der Pull Request wird nicht übernommen; die Antworten aus Teil A stehen als Kommentar darin.
 
 ## Zusätzlich festhalten (für die Vermutung des Eigentümers, 06.11.)
