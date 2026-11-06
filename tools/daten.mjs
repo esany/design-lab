@@ -83,3 +83,42 @@ export function pruefeVerweise(rel, text, ids) {
   for (const m of text.matchAll(/\[a:([a-z0-9-]+)\]/g)) if (ids.get(m[1]) !== "aussage") errors.push(`${rel}: Verweis [a:${m[1]}] — keine solche Aussage in daten/`);
   return errors;
 }
+
+// Erzeugte Ansicht je Thema (daten/<thema>.md): für Menschen, auf dem Handy lesbar.
+// kopf: { thema, stand, naechster_schritt } aus dem Merkzettel.
+export function ansicht(thema, { aussagen, fragen }, kopf) {
+  const z = (s) => String(s ?? "").replace(/\n/g, " ");
+  const offen = fragen.filter((f) => !f.antwort);
+  const beantwortet = fragen.filter((f) => f.antwort).sort((a, b) => (b.beantwortet ?? "").localeCompare(a.beantwortet ?? "") || b.id.localeCompare(a.id));
+  const gueltig = aussagen.filter((a) => !a.abgeloest_durch), abgeloest = aussagen.filter((a) => a.abgeloest_durch);
+  const quelle = (q) => q.id ? `[k:${q.id}], ${z(q.stelle)}` : `\`${q.datei}\`, ${z(q.stelle)}`;
+  const aussage = (a) => `- **${a.id}** ${z(a.aussage)}` +
+    (a.quellen?.length ? `\n  *Beleg:* ${a.quellen.map(quelle).join("; ")}` : "") +
+    (a.notiz ? `\n  *Grenze:* ${z(a.notiz)}` : "");
+  const gruppe = (status, titel) => {
+    const l = gueltig.filter((a) => a.status === status);
+    return l.length ? `### ${titel} (${l.length})\n\n${l.map(aussage).join("\n")}\n` : "";
+  };
+  return `# ${z(kopf?.thema ?? thema)} — Übersicht
+
+> Erzeugt von \`node tools/build.mjs\` aus \`daten/${thema}.json\` und dem Merkzettel
+> \`anschluss/${thema}.md\`. Nicht von Hand ändern. Modelle lesen die Daten, nicht diese Seite.
+
+**Stand:** ${z(kopf?.stand)}
+
+**Nächster Schritt:** ${z(kopf?.naechster_schritt)}
+
+## Offene Fragen an den Eigentümer (${offen.length})
+
+${offen.length ? offen.map((f) => `- **${f.id}** ${z(f.frage)} *(gestellt ${f.gestellt})*`).join("\n") : "Keine."}
+
+## Aussagen
+
+${gruppe("belegt", "Belegt")}
+${gruppe("abgeleitet", "Abgeleitet")}
+${gruppe("nicht belegt", "Nicht belegt")}
+## Beantwortete Fragen (${beantwortet.length}, neueste zuerst)
+
+${beantwortet.map((f) => `- **${f.beantwortet}** ${z(f.frage)}\n  → „${z(f.antwort)}“${f.notiz ? ` *(${z(f.notiz)})*` : ""}`).join("\n") || "Keine."}
+${abgeloest.length ? `\n<details><summary>Abgelöste Aussagen (${abgeloest.length})</summary>\n\n${abgeloest.map((a) => `- ~~${a.id}~~ ${z(a.aussage)} → ${a.abgeloest_durch}`).join("\n")}\n</details>\n` : ""}`;
+}

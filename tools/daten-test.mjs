@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 // Prüffälle für tools/daten.mjs: je Regel ein richtiger und ein falscher Fall.
-import { pruefeDaten, pruefeVerweise } from "./daten.mjs";
+import { pruefeDaten, pruefeVerweise, ansicht } from "./daten.mjs";
 
 const kontext = { korpus: new Set(["quelle-2026"]), themen: new Set(["beispiel"]), dateiDa: (p) => p === "research/notiz.md" };
 const gut = {
@@ -37,6 +37,8 @@ const tests = [
   ["unbekanntes Feld nur Warnung", () => { const d = structuredClone(gut); d.aussagen[0].farbe = "rot"; const r = lauf(d); return r.errors.length === 0 && r.warnings.some((w) => w.includes("„farbe“")); }],
   ["Verweis [a:] gültig", () => pruefeVerweise("x.md", "siehe [a:beispiel-a02]", lauf(gut).ids).length === 0],
   ["Verweis [a:] ins Leere", () => pruefeVerweise("x.md", "siehe [a:beispiel-a99]", lauf(gut).ids).length === 1],
+  ["Ansicht: offene Frage oben, Antwort im Wortlaut", () => { const t = ansicht("beispiel", lauf(gut).daten.get("beispiel"), { thema: "Beispiel", stand: "S", naechster_schritt: "N" }); return t.includes("Offene Fragen an den Eigentümer (1)") && t.includes("beispiel-f02") && t.includes("→ „Ja“"); }],
+  ["Ansicht: Abgelöstes nur eingeklappt", () => { const t = ansicht("beispiel", lauf(gut).daten.get("beispiel"), null); return t.includes("<details><summary>Abgelöste Aussagen (1)") && !t.includes("**beispiel-a01**"); }],
 ];
 let fail = 0;
 for (const [name, t] of tests) { const ok = t(); console.log(`${ok ? "✓" : "✗"} ${name}`); if (!ok) fail++; }

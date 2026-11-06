@@ -3,7 +3,7 @@
 > Erzeugt von `node tools/build.mjs` aus `referenzen.json` und `recherche.json`. Nicht von Hand ändern.
 > Schema: [`schema.md`](schema.md).
 
-**125 Quellen** — 27 ausgewählt vom Eigentümer, 98 recherchiert vom Agenten.
+**131 Quellen** — 27 ausgewählt vom Eigentümer, 104 recherchiert vom Agenten.
 Je Feld zuerst die Verweise des Eigentümers (Ausgangspunkte, kein Kanon). Eine Quelle kann in mehreren Feldern stehen.
 
 ## vermitteln
@@ -241,19 +241,25 @@ Je Feld zuerst die Verweise des Eigentümers (Ausgangspunkte, kein Kanon). Eine 
 | `burglabs` | [BurgLabs (XLab, BioLab, SustainLab)](https://www.burg-halle.de/en/university/facilities/burglabs) | Burg Giebichenstein Kunsthochschule Halle | — | Labor | belegt | Agent | — |
 | `cheng-2026-gefaelligkeit` | [Sycophantic AI decreases prosocial intentions and promotes dependence](https://doi.org/10.1126/science.aec8352) | Myra Cheng, Cinoo Lee, Pranav Khadpe, Sunny Yu, Dyllan Han, Dan Jurafsky | 2026 | Paper | belegt | Agent | — |
 | `chroma-context-rot-2025` | [Context Rot: How Increasing Input Tokens Impacts LLM Performance](https://www.trychroma.com/research/context-rot) | Kelly Hong, Anton Troynikov, Jeff Huber (Chroma) | 2025 | Paper | belegt | Agent | — |
+| `gloaguen-2026-agentsmd` | [Evaluating AGENTS.md: Are Repository-Level Context Files Helpful for Coding Agents?](https://arxiv.org/abs/2602.11988) | Thibaud Gloaguen, Niels Mündler, Mark Niklas Müller, Veselin Raychev, Martin Vechev | 2026 | Paper | belegt | Agent | — |
 | `hfg-karlsruhe-kim` | [KIM — Künstliche Intelligenz und Medienphilosophie](https://hfg-karlsruhe.de/en/archiv/kuenstliche-intelligenz-und-medienphilosophie/) | HfG Karlsruhe (Matteo Pasquinelli) | 2018 | Labor | belegt | Agent | — |
 | `khm-ground-zero` | [ground zero (Experimentelle Informatik), KHM Köln](https://ground-zero.khm.de/?p=8907) | KHM Köln | bis 2025 | Labor | belegt | Agent | — |
 | `kim-2024-unsicherheit` | [“I'm Not Sure, But...”: Examining the Impact of Large Language Models' Uncertainty Expression on User Reliance and Trust](https://arxiv.org/abs/2405.00623) | Sunnie S. Y. Kim, Q. Vera Liao, Mihaela Vorvoreanu, Stephanie Ballard, Jennifer Wortman Vaughan | 2024 | Paper | belegt | Agent | — |
 | `kindlab` | [KINDLAB, Hochschule Trier](https://kind-lab.de/) | Hochschule Trier, Campus Gestaltung | — | Labor | belegt | Agent | — |
 | `kitegg` | [KITeGG — KI greifbar machen und begreifen](https://benedikt-gross.de/projects/kitegg-making-ai-tangible-and-comprehensible) | Hochschule Mainz (Koordination), HfG Offenbach, HfG Schwäbisch Gmünd, KISD, Hochschule Trier | 2021–2025 | Projekt | belegt | Agent | — |
+| `kontextdateien-ablation-2026` | [Do Context Files Help Coding Agents? A Two-Agent Ablation Study on Real Repositories](https://arxiv.org/abs/2607.27250) | unbekannt (arXiv 2607.27250) | 2026 | Paper | belegt | Agent | — |
+| `lulla-2026-agentsmd` | [On the Impact of AGENTS.md Files on the Efficiency of AI Coding Agents](https://arxiv.org/abs/2601.20404) | Jai Lal Lulla u. a. | 2026 | Paper | belegt | Agent | — |
 | `meincke-2025-cot` | [Prompting Science Report 2: The Decreasing Value of Chain of Thought in Prompting](https://arxiv.org/abs/2506.07142) | Lennart Meincke, Ethan Mollick, Lilach Mollick, Dan Shapiro | 2025 | Paper | belegt | Agent | — |
+| `metr-2025-entwickler` | [Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity](https://arxiv.org/abs/2507.09089) | Joel Becker, Nate Rush, Beth Barnes, David Rein (METR) | 2025 | Paper | belegt | Agent | — |
 | `ml5js` | [ml5.js](https://ml5js.org/about) | NYU ITP / ml5-Community | 2026 | Werkzeug | belegt | Agent | — |
 | `mullens-2026-personas` | [The Arrival of AGI? When Expert Personas Exceed Expert Benchmarks](https://arxiv.org/abs/2603.20225) | Drake Mullens, Stella Shen u. a. | 2026 | Paper | abgeleitet | Agent | — |
 | `openai-2025-halluzination` | [Why language models hallucinate](https://openai.com/index/why-language-models-hallucinate/) | Adam Tauman Kalai u. a. (OpenAI) | 2025 | Artikel | belegt | Agent | — |
+| `openai-codex-skills-2026` | [Build skills](https://developers.openai.com/codex/skills) | OpenAI | 2026 | Artikel | belegt | Agent | — |
 | `palmer-2026-rollen` | [The Prompt Engineering Trick That Could Be Making Your AI Slower](https://hackernoon.com/the-prompt-engineering-trick-that-could-be-making-your-ai-slower) | Cameron M. Palmer | 2026 | Artikel | belegt | Agent | — |
 | `panickssery-2024-selbst` | [LLM Evaluators Recognize and Favor Their Own Generations](https://arxiv.org/abs/2404.13076) | Arjun Panickssery, Samuel R. Bowman, Shi Feng | 2024 | Paper | belegt | Agent | — |
 | `plotcraft-2025` | [PlotCraft: Pushing the Limits of LLMs for Complex and Interactive Data Visualization](https://arxiv.org/abs/2511.00010) | Jiajun Zhang u. a. (USTC, Qwen-Team u. a.) | 2025 | Paper | belegt | Agent | `.agents/skills/fachpaket-vermitteln/SKILL.md` |
 | `reshape-2025` | [re:shape forum 2025](https://aid-lab.hfg-gmuend.de/appearances/2025-reshape-summer-school-hfg-schwaebisch-gmuend/) | HfG Schwäbisch Gmünd, AI+Design Lab | 2025 | Konferenz | belegt | Agent | — |
+| `santos-2026-smells` | [Configuration Smells in AGENTS.md Files: Common Mistakes in Configuring Coding Agents](https://arxiv.org/abs/2606.15828) | Helio Victor F. dos Santos, Vitor Costa, Joao Eduardo Montandon, Luciana Lourdes Silva, Marco Tulio Valente | 2026 | Paper | belegt | Agent | — |
 | `sharma-2023-gefaelligkeit` | [Towards Understanding Sycophancy in Language Models](https://arxiv.org/abs/2310.13548) | Mrinank Sharma, Meg Tong u. a. (Anthropic) | 2023 | Paper | belegt | Agent | — |
 | `udk-designing-ai` | [Designing_AI Lab, UdK Berlin](https://produktdesign.udk-berlin.de/2026/08/designing_ai-lab-wraps-up-its-first-semester/) | UdK Berlin, Produktdesign (Prof. Aeneas Stankowski) | 2026 | Labor | belegt | Agent | — |
 | `unlearn-ai` | [un/learn ai (Publikationsreihe)](https://openscience.ub.uni-mainz.de/items/02c2fbdd-fdc9-4bd6-a809-1174bd50714f/full) | KITeGG | — | Buch | belegt | Agent | — |
