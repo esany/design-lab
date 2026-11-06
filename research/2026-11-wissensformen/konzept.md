@@ -1,9 +1,8 @@
 ---
-schicht: archiv
 dient: A04, A05, A07, A08, A10, A14, A23, A27, A33
 datum: 2026-11-05
 modell: Claude Opus 5.5 (Claude-App, Cloud-Sitzung)
-status: Vorfassung, zusammengeführt in befund.md (05.11.). Damals: Konzept. Beschlossen ist nur der Leitfaden (0032). Alles Weitere wartet auf die Antworten des Eigentümers.
+status: Konzept. Beschlossen ist nur der Leitfaden (0032). Alles Weitere wartet auf die Antworten des Eigentümers.
 ---
 
 # Arbeitsteilung der Wissensformen: Leitfaden, Radar, Fachpakete, Korpus
