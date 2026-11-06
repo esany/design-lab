@@ -6,6 +6,7 @@
 
 | Datum | Was | Warum | Rückgängig |
 |---|---|---|---|
+| 2026-11-06 | **Arbeitsweise: Merkzettel vor Chatwechsel (Claude):** Stand und nächster Schritt nennen die offenen Testeinträge #137 (Claude) und #138 (Astra) und ihre Auswertung | Ihre Frage nach einem neuen Chat (06.11.) | PR revertieren |
 | 2026-11-06 | **Pilot Datenmodell, Schritte 2 bis 4 (Claude):** `daten/arbeitsweise.json` mit 23 Aussagen und 13 Fragen (Antworten im Wortlaut), erzeugte Übersicht `daten/arbeitsweise.md`, sechs neue Quellen im Korpus; Merkzettel verweist nur noch auf die Daten; Prüffall `evals/neustart-daten` für Claude und Astra | Ihr „Ich gebe nächste schritte frei“ im Chat (06.11.) | PR revertieren |
 | 2026-11-06 | **Pilot Datenmodell, Schritt 1 (Claude, Entwurf):** Schema für Aussagen und Fragen an den Eigentümer (`daten/schema.md`), Prüfung im Build (`tools/daten.mjs`), 19 Prüffälle (`tools/daten-test.mjs`, läuft in „Prüfen“); Verweise `[a:<id>]` in Markdown werden geprüft. Noch keine Daten | Ihr „Ja“ im Chat (06.11.) zu Schritt 1 des Pilots | PR revertieren |
 | 2026-11-06 | **#129 zurückgenommen (Claude):** 0024 wieder in erster Fassung; `verzeichnis.md` und sein Build-Teil entfernt; zusammengeführter Befund entfernt, die drei Notizen gelten wieder; Verweise in AGENTS.md und Skills zurück. Bleiben: Fehlerbehebungen aus #130, Leitfaden #131, Abgleich paleo-type (geparkt). Merkzettel: Entscheidungen 06.11. (Wahrheit nur in Git; Pilot) | Ihr „Ja, alles zurück“, „Ja, nur Git“ und „Ja“ zum Pilot im Chat (06.11.) | PR revertieren |

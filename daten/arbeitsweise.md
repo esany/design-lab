@@ -3,9 +3,9 @@
 > Erzeugt von `node tools/build.mjs` aus `daten/arbeitsweise.json` und dem Merkzettel
 > `anschluss/arbeitsweise.md`. Nicht von Hand ändern. Modelle lesen die Daten, nicht diese Seite.
 
-**Stand:** Pilot läuft. Schritt 1 (Schema, Prüfung) übernommen; Schritte 2 und 3: 23 Aussagen und 13 Fragen in daten/arbeitsweise.json, lesbar in daten/arbeitsweise.md.
+**Stand:** Pilot Schritte 1–3 übernommen (#135, #136). Schritt 4 gelaufen: Testeinträge von Claude (#137) und Astra (#138) liegen offen, je mit Antworten als Kommentar.
 
-**Nächster Schritt:** Schritt 4: Der Eigentümer startet je einen frischen Chat mit Claude und mit Astra für den Neustart-Test (Prüffall evals/neustart-daten); Claude wertet aus.
+**Nächster Schritt:** Claude wertet #137 und #138 gegen evals/neustart-daten/erwartung.md aus, legt je Modell eine Datei in ergebnisse/ an, schließt beide PRs ohne Übernahme und legt dem Eigentümer das Ergebnis vor.
 
 ## Offene Fragen an den Eigentümer (4)
 
