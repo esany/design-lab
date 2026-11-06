@@ -36,12 +36,12 @@ durchgehen — nicht Technik bedienen. Deshalb:
   erledigen kann. Braucht es den Menschen technisch (Anmeldung, Bestätigung
   auf dem Handy), sagt der Agent genau, warum.
 - Technische Details stehen im Pull Request für alle, die sie sehen wollen.
-- **Kein Wissen nur im Chat** (`decisions/0024`, Fassung 05.11.): Maßstab ist der
-  Neustart-Test. Ins Repo kommt, was entschieden, ausgeführt oder erzeugt ist, dazu
-  Belege ab „belegt“. Denkwege dürfen im Chat bleiben; aufgeschrieben gehören sie ins
-  Archiv. Gezielt nachladen über `verzeichnis.md`. Antworten nennen die Fundstelle. An
-  natürlichen Einschnitten empfiehlt der Agent einen neuen Chat und schreibt vorher
-  zwei Sätze Stand in den Merkzettel seines Themas in `anschluss/`.
+- **Kein Wissen nur im Chat** (`decisions/0024`): Recherchen, Bewertungen,
+  Messungen und Empfehlungen landen im selben Arbeitsschritt im Repo
+  (Experiment, `research/`, Radar, Fachpaket; sonst
+  `research/gespraeche/`). Antworten nennen die Fundstelle. An natürlichen
+  Einschnitten empfiehlt der Agent einen neuen Chat und schreibt vorher
+  den Merkzettel seines Themas in `anschluss/` fort.
 
 
 ## Anforderungen annehmen

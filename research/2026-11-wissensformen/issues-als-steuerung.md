@@ -1,9 +1,8 @@
 ---
-schicht: archiv
 dient: A15, A21, A26, A31, A32, A34
 datum: 2026-11-05
 modell: Claude Opus 5.5 (Claude-App, Cloud-Sitzung)
-status: Vorfassung, zusammengeführt in befund.md (05.11.). Damals: Befund mit Empfehlung. Nichts beschlossen.
+status: Befund mit Empfehlung. Nichts beschlossen.
 ---
 
 # Issues zur Steuerung der KI: Prüfung nach dem Stand der Technik

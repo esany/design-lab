@@ -22,6 +22,6 @@ Anweisung für jedes Werkzeug, ohne Vorbedingung: Lies zu Beginn `AGENTS.md` und
 
 - [Laborarbeit](.agents/skills/laborarbeit/SKILL.md) führt zu den geltenden Schreib-, Prüf- und Zusammenarbeitsregeln. Vor Änderungen insbesondere die Schreibregeln lesen.
 - Maßstab: [Intent](intent.md); Haltung: [Prinzipien](principles.md); Wahrnehmung: [Manifest](manifest.md).
-- Entscheidungen: `decisions/`; Methoden und Fachwissen: `.agents/skills/`; Befunde: `research/` und `experiments/`; Quellen: `corpus/`; Prüffälle: `evals/`. Was wo liegt, mit Zweck, Status und Umfang: [`verzeichnis.md`](verzeichnis.md) (erzeugt); Gesprächsprotokolle sind Archiv, nie Stand.
+- Entscheidungen: `decisions/`; Methoden und Fachwissen: `.agents/skills/`; Befunde: `research/` und `experiments/`; Quellen: `corpus/`; Prüffälle: `evals/`.
 - Jede Änderung auf eigenem Branch und als PR; nie direkt auf `main`. Automatische Prüfungen und Verlauf beachten.
 - Die vollständige Fassung vor U3 und Zuordnung stehen unter [Umbau](research/2026-10-umbau/u3-zuordnung.md).
