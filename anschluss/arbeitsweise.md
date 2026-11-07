@@ -1,13 +1,13 @@
 ---
 thema: Arbeitsweise mit KI · Wissensformen
-stand: Pilot Schritte 1–3 übernommen (#135, #136). Schritt 4 gelaufen (#137 Claude, #138 Astra); Auswertung liegt als Entwurf vor, nicht übernommen. Prüffall verlangt jetzt das Label ohne-verlauf.
-naechster_schritt: Der Eigentümer startet Codex in einem frischen Chat mit dem Startsatz aus evals/neustart-daten/aufgabe.md; danach übernimmt Claude alle drei Ergebnisse gemeinsam und schließt die Test-PRs.
+stand: Prüffall neustart-daten mit Claude (#137), Astra (#138) und Codex (#141) gelaufen; Auswertung als Entwurf auf Branch lab/neustart-daten-auswertung. Neu: Konzept Fachpaket „KI als Werkzeug“ (research/2026-11-wissensformen/fachpaket-ki-werkzeug.md), Entwurf freigegeben.
+naechster_schritt: Claude im frischen Chat – 1. Prüfung baut die Übersicht selbst und läuft bei Labels neu (f14, Ja); 2. Auswertung übernehmen, #137, #138, #141 schließen; 3. Entwurf Fachpaket „KI als Werkzeug“ (f15) zum Ansehen vorlegen.
 offen: []
 ---
 
 # Thema: Arbeitsweise mit KI · Wissensformen
 
-**Zuletzt fortgeschrieben:** 06.11.2026 (Claude)
+**Zuletzt fortgeschrieben:** 07.11.2026 (Claude)
 
 ## In Worten
 

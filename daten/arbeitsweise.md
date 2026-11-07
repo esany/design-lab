@@ -3,16 +3,18 @@
 > Erzeugt von `node tools/build.mjs` aus `daten/arbeitsweise.json` und dem Merkzettel
 > `anschluss/arbeitsweise.md`. Nicht von Hand ändern. Modelle lesen die Daten, nicht diese Seite.
 
-**Stand:** Pilot Schritte 1–3 übernommen (#135, #136). Schritt 4 gelaufen (#137 Claude, #138 Astra); Auswertung liegt als Entwurf vor, nicht übernommen. Prüffall verlangt jetzt das Label ohne-verlauf.
+**Stand:** Prüffall neustart-daten mit Claude (#137), Astra (#138) und Codex (#141) gelaufen; Auswertung als Entwurf auf Branch lab/neustart-daten-auswertung. Neu: Konzept Fachpaket „KI als Werkzeug“ (research/2026-11-wissensformen/fachpaket-ki-werkzeug.md), Entwurf freigegeben.
 
-**Nächster Schritt:** Der Eigentümer startet Codex in einem frischen Chat mit dem Startsatz aus evals/neustart-daten/aufgabe.md; danach übernimmt Claude alle drei Ergebnisse gemeinsam und schließt die Test-PRs.
+**Nächster Schritt:** Claude im frischen Chat – 1. Prüfung baut die Übersicht selbst und läuft bei Labels neu (f14, Ja); 2. Auswertung übernehmen, #137, #138, #141 schließen; 3. Entwurf Fachpaket „KI als Werkzeug“ (f15) zum Ansehen vorlegen.
 
-## Offene Fragen an den Eigentümer (4)
+## Offene Fragen an den Eigentümer (6)
 
 - **arbeitsweise-f01** Radar als Matrix (Empfehlung) oder Kreis? *(gestellt 2026-11-05)*
 - **arbeitsweise-f02** Gemeinsame Issue-Prüfung zuerst im Labor bauen? *(gestellt 2026-11-05)*
 - **arbeitsweise-f03** Befund zu paleo-type auf #408 notieren (dort gilt Pause)? *(gestellt 2026-11-05)*
 - **arbeitsweise-f04** Dürfen Fremde im öffentlichen Labor Issues anlegen? *(gestellt 2026-11-05)*
+- **arbeitsweise-f16** Soll der Leitfaden die Ansicht des Fachpakets „KI als Werkzeug“ werden (Änderung von 0032)? *(gestellt 2026-11-07)*
+- **arbeitsweise-f17** Lief Codex für #141 im Reiter „Codex“ der ChatGPT-App (Cloud) oder in einem normalen Chat? *(gestellt 2026-11-07)*
 
 ## Aussagen
 
@@ -76,8 +78,12 @@
 - **arbeitsweise-a23** Astra (ChatGPT) kann Code ausführen und über den GitHub-Connector schreiben.
   *Grenze:* Angabe des Eigentümers im Chat vom 06.11.; im Pilot (Schritt 4) zu prüfen.
 
-## Beantwortete Fragen (9, neueste zuerst)
+## Beantwortete Fragen (11, neueste zuerst)
 
+- **2026-11-07** Darf ich das Fachpaket „KI als Werkzeug“ als Entwurf zusammenstellen, aus dem Bestand und mit Verweisen statt Kopien?
+  → „Ja, sehr gerne“ *(Konzept: research/2026-11-wissensformen/fachpaket-ki-werkzeug.md. Bearbeitung in frischem Chat.)*
+- **2026-11-07** Soll ich die zwei Änderungen an der automatischen Prüfung (Übersicht selbst bauen; neu prüfen, wenn ein Label gesetzt wird) als PR vorbereiten?
+  → „Ja“ *(Noch nicht umgesetzt; Übernahme erst nach Ja, weil .github/ betroffen.)*
 - **2026-11-06** Soll ich PR #135 übernehmen und mit Schritt 2 weitermachen?
   → „Ich gebe nächste schritte frei“ *(Gelesen als Freigabe für die Übernahme von #135 und die Schritte 2 bis 4 des Pilots.)*
 - **2026-11-06** Soll ich mit Schritt 1 (Schema und Prüfung) anfangen?

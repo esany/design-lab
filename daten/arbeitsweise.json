@@ -358,6 +358,33 @@
       "antwort": "Ich gebe nächste schritte frei",
       "beantwortet": "2026-11-06",
       "notiz": "Gelesen als Freigabe für die Übernahme von #135 und die Schritte 2 bis 4 des Pilots."
+    },
+    {
+      "id": "arbeitsweise-f14",
+      "frage": "Soll ich die zwei Änderungen an der automatischen Prüfung (Übersicht selbst bauen; neu prüfen, wenn ein Label gesetzt wird) als PR vorbereiten?",
+      "gestellt": "2026-11-07",
+      "antwort": "Ja",
+      "beantwortet": "2026-11-07",
+      "notiz": "Noch nicht umgesetzt; Übernahme erst nach Ja, weil .github/ betroffen."
+    },
+    {
+      "id": "arbeitsweise-f15",
+      "frage": "Darf ich das Fachpaket „KI als Werkzeug“ als Entwurf zusammenstellen, aus dem Bestand und mit Verweisen statt Kopien?",
+      "gestellt": "2026-11-07",
+      "antwort": "Ja, sehr gerne",
+      "beantwortet": "2026-11-07",
+      "notiz": "Konzept: research/2026-11-wissensformen/fachpaket-ki-werkzeug.md. Bearbeitung in frischem Chat."
+    },
+    {
+      "id": "arbeitsweise-f16",
+      "frage": "Soll der Leitfaden die Ansicht des Fachpakets „KI als Werkzeug“ werden (Änderung von 0032)?",
+      "gestellt": "2026-11-07"
+    },
+    {
+      "id": "arbeitsweise-f17",
+      "frage": "Lief Codex für #141 im Reiter „Codex“ der ChatGPT-App (Cloud) oder in einem normalen Chat?",
+      "gestellt": "2026-11-07",
+      "notiz": "Eigentümer am 07.11. unsicher; bleibt sonst „unbekannt“."
     }
   ]
 }
