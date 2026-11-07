@@ -6,6 +6,7 @@
 
 | Datum | Was | Warum | Rückgängig |
 |---|---|---|---|
+| 2026-11-07 | **Leitfaden: Sicherung aus dem Nebenchat (Claude, Entwurf, nicht übernommen):** Entwurf `research/2026-11-wissensformen/leitfaden-wachsend.md` (Wortlaut des Eigentümers, Verständnis, 20 Keime, Verworfenes, Offenes); in `daten/arbeitsweise.json` Aussagen a24–a25 und Fragen f18–f27 mit Antworten im Wortlaut. `leitfaden/eintraege.json` und Merkzettel unverändert | Prüfauftrag des Eigentümers (07.11.): alles, was nur im Chat stand, ins Repo | PR schließen oder revertieren |
 | 2026-11-07 | **Arbeitsweise: Übergabe an frischen Chat (Claude):** Konzept Fachpaket „KI als Werkzeug“ (Dopplung, Schichten, Schwelle, Pflege); Fragen f14–f17 in `daten/arbeitsweise.json`; Merkzettel mit Reihenfolge der nächsten drei Schritte | Ihre Fragen im Chat (06./07.11.) und Ihr Wunsch, in einem frischen Chat weiterzuarbeiten | PR revertieren |
 | 2026-11-06 | **Prüffall neustart-daten: Label für Testeinträge (Claude):** Aufgabe und Erwartung verlangen das Label `ohne-verlauf`; Merkzettel nennt den Codex-Lauf als nächsten Schritt | #137 und #138 scheiterten an „Stand gegen GitHub“, weil die Erwartung weitere Dateien ausschließt; Ihre Frage nach einem Lauf in Codex (06.11.) | PR revertieren |
 | 2026-11-06 | **Arbeitsweise: Merkzettel vor Chatwechsel (Claude):** Stand und nächster Schritt nennen die offenen Testeinträge #137 (Claude) und #138 (Astra) und ihre Auswertung | Ihre Frage nach einem neuen Chat (06.11.) | PR revertieren |
