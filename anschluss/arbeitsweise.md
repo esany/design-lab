@@ -1,7 +1,7 @@
 ---
 thema: Arbeitsweise mit KI · Wissensformen
 stand: Prüffall neustart-daten mit Claude (#137), Astra (#138) und Codex (#141) gelaufen; Auswertung als Entwurf auf Branch lab/neustart-daten-auswertung. Neu: Konzept Fachpaket „KI als Werkzeug“ (research/2026-11-wissensformen/fachpaket-ki-werkzeug.md), Entwurf freigegeben.
-naechster_schritt: Claude im frischen Chat – 1. Prüfung baut die Übersicht selbst und läuft bei Labels neu (f14, Ja); 2. Auswertung übernehmen, #137, #138, #141 schließen; 3. Entwurf Fachpaket „KI als Werkzeug“ (f15) zum Ansehen vorlegen.
+naechster_schritt: Claude im frischen Chat – 1. Prüfung baut die Übersicht selbst und läuft bei Labels neu (f14, Ja); 2. Auswertung übernehmen, #137, #138, #141 schließen; 3. Entwurf Fachpaket „KI als Werkzeug“ (f15), erst wenn der PR des Leitfaden-Chats vorliegt, und nur mit Verweisen auf Leitfaden-Kennungen. Den Prüfauftrag an den Leitfaden-Chat wertet der Chat vom 06./07.11. aus.
 offen: []
 ---
 
