@@ -3,9 +3,9 @@
 > Erzeugt von `node tools/build.mjs` aus `daten/arbeitsweise.json` und dem Merkzettel
 > `anschluss/arbeitsweise.md`. Nicht von Hand ändern. Modelle lesen die Daten, nicht diese Seite.
 
-**Stand:** Drei Stränge (07.11.): A Prüffall neustart-daten – Auswertung als Entwurf, nicht gegengelesen; B Leitfaden – Nebenchat hat gesichert (#143, Konflikt, Bericht fehlt); C Fachpaket „KI als Werkzeug“ – Konzept, Entwurf freigegeben.
+**Stand:** Drei Stränge (07.11.): Prüfstand – Leitfaden-Sicherung geprüft und vorgelegt, Auswertung der Testeinträge als Entwurf, nicht gegengelesen; Leitfaden – Leitfaden-Sicherung mit Bericht, ohne Konflikt, nicht übernommen; KI-Fachpaket – Konzept, Entwurf freigegeben.
 
-**Nächster Schritt:** Frischer Chat „Tests und Prüfungen“ (Claude) prüft zuerst #143, dann den Rest von Strang A (Abschnitt „Stränge und Reihenfolge“); B entscheidet der Eigentümer nach der Prüfung von #143; C erst danach.
+**Nächster Schritt:** Der Eigentümer entscheidet über die Leitfaden-Sicherung (#143); Claude macht im Prüfstand mit der automatischen Prüfung weiter (Abschnitt „Stränge und Reihenfolge“); das KI-Fachpaket erst nach dem Leitfaden.
 
 ## Offene Fragen an den Eigentümer (6)
 
