@@ -5,7 +5,7 @@
 
 **Stand:** Drei Stränge (07.11.): A Prüffall neustart-daten – Auswertung als Entwurf, nicht gegengelesen; B Leitfaden – Nebenchat hat gesichert (#143, Konflikt, Bericht fehlt); C Fachpaket „KI als Werkzeug“ – Konzept, Entwurf freigegeben.
 
-**Nächster Schritt:** Frischer Chat „Tests und Prüfungen“ (Claude) arbeitet Strang A ab, siehe Abschnitt „Stränge und Reihenfolge“; B entscheidet der Eigentümer nach dessen Prüfung von #143; C erst danach.
+**Nächster Schritt:** Frischer Chat „Tests und Prüfungen“ (Claude) prüft zuerst #143, dann den Rest von Strang A (Abschnitt „Stränge und Reihenfolge“); B entscheidet der Eigentümer nach der Prüfung von #143; C erst danach.
 
 ## Offene Fragen an den Eigentümer (6)
 

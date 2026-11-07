@@ -1,7 +1,7 @@
 ---
 thema: Arbeitsweise mit KI · Wissensformen
 stand: Drei Stränge (07.11.): A Prüffall neustart-daten – Auswertung als Entwurf, nicht gegengelesen; B Leitfaden – Nebenchat hat gesichert (#143, Konflikt, Bericht fehlt); C Fachpaket „KI als Werkzeug“ – Konzept, Entwurf freigegeben.
-naechster_schritt: Frischer Chat „Tests und Prüfungen“ (Claude) arbeitet Strang A ab, siehe Abschnitt „Stränge und Reihenfolge“; B entscheidet der Eigentümer nach dessen Prüfung von #143; C erst danach.
+naechster_schritt: Frischer Chat „Tests und Prüfungen“ (Claude) prüft zuerst #143, dann den Rest von Strang A (Abschnitt „Stränge und Reihenfolge“); B entscheidet der Eigentümer nach der Prüfung von #143; C erst danach.
 offen: []
 ---
 
@@ -36,17 +36,19 @@ Maßstab des Eigentümers (07.11.): „Ich will nicht, dass es fertig wird, ich 
 | **C** | Fachpaket „KI als Werkzeug“ | Konzept `research/2026-11-wissensformen/fachpaket-ki-werkzeug.md` | B (Leitfaden als Ansicht? f16, f26) |
 
 **Strang A im frischen Chat, in dieser Reihenfolge:**
-1. Automatische Prüfung: baut die erzeugten Übersichten selbst und läuft beim Setzen eines Labels
-   neu (f14, Ja). Zuerst, weil parallele Chats sonst in erzeugten Dateien kollidieren.
-   Schreibrechte für die Prüfung sind eine Frage an den Eigentümer.
-2. Zwei Beobachtungen als Aussagen (abgeleitet) in `daten/arbeitsweise.json`: Modelle übergehen
+1. #143 prüfen, zuerst, weil B und C davon abhängen und die Prüfung nur liest: Bestand im Repo
+   statt nur im Chat? Branch, PR, nicht übernommen, Verlauf, Prüfungen? Leitfaden-Einträge
+   unangetastet? Ursache genannt? Fachlich: Was tragen Keime, Fragen f18–f27 und a24–a25 für den
+   Leitfaden und für C? Fehlender Bericht und Konflikt mit `main` sind selbst Befunde; den Konflikt
+   löst der Leitfaden-Chat. Ergebnis dem Eigentümer vorlegen.
+2. Automatische Prüfung: baut die erzeugten Übersichten selbst und läuft beim Setzen eines Labels
+   neu (f14, Ja), damit parallele Chats nicht in erzeugten Dateien kollidieren. Schreibrechte für
+   die Prüfung sind eine Frage an den Eigentümer.
+3. Zwei Beobachtungen als Aussagen (abgeleitet) in `daten/arbeitsweise.json`: Modelle übergehen
    Pflichtschritte oder bauen Erzeugtes nach (2 von 3 Läufen); keines nennt eine rote Prüfung
    von sich aus (3 von 3).
-3. Gegenlesen der Auswertung und der Aussagen durch Astra (Auftrag formulieren, Eigentümer gibt
-   ihn weiter). Claude bewertet in #137 sich selbst.
-4. #143 prüfen: Bestand im Repo statt nur im Chat? Branch, PR, nicht übernommen, Verlauf,
-   Prüfungen? Leitfaden-Einträge unangetastet? Ursache genannt? Bericht als Kommentar fehlt noch.
-   Ergebnis dem Eigentümer vorlegen.
+4. Gegenlesen der Auswertung, der Aussagen und der Prüfung von #143 durch Astra (Auftrag
+   formulieren, Eigentümer gibt ihn weiter). Claude bewertet in #137 sich selbst.
 5. Erst danach: Auswertung übernehmen, #137, #138, #141 schließen.
 
 **Hauptfaden:** Welche Struktur braucht das Labor, damit Wissen sparsam, ohne Widersprüche und für
