@@ -61,6 +61,24 @@ in f20.
 „veraltet“; jeder Eintrag dort wird veröffentlicht. Keime haben dort noch keinen Platz. Sie stehen
 deshalb unten, nicht im Leitfaden.
 
+## 2b · Suchen und Navigieren (Recherche 06.11., gesichtet, nicht vollständig gelesen)
+
+Der Eigentümer will die Regeln über Tags bequem durchsuchen (f18). Was der Stand der Technik für
+Filter dazu sagt, gilt auch für freie Tags:
+
+- Mehrfachauswahl, Trefferzahl je Tag, aktive Auswahl sichtbar und mit einem Tipp lösbar; auf dem
+  Handy wenige häufige Tags oben als Chips (Baymard, Algolia, NN/g über Sekundärquellen).
+- Leere Treffer mit Ausweg statt Sackgasse; die Auswahl in der Adresse, damit sich eine Ansicht
+  teilen lässt.
+- Für wenige Dutzend Einträge reicht ein Filter in der Seite ohne neue Abhängigkeit (passt zu
+  `decisions/0009`); fertige Suchbibliotheken wie Pagefind sind für Tausende Seiten gebaut
+  (*abgeleitet*).
+- Werkzeuge im Umfeld: 19 von 20 führenden Design Systems haben einen MCP-Server, 18 Agent Skills
+  (Erhebung Juli 2026, laut
+  [Dr. Web](https://www.drweb.de/design-systeme-ki-agenten-studie/)); das Format für Design Tokens
+  (W3C DTCG) gilt seit Oktober 2025 als stabil. Nur als Hinweis für spätere Tags wie
+  „schnittstelle“.
+
 ## 3 · Erste Keime (Entwurf, Status „Keim“)
 
 Aus dem Gespräch selbst entstanden („Deinesota Ansätze sind selbst wieder pattern des
@@ -112,4 +130,8 @@ und in den Korpus aufnehmen.
   ob und wie sie generisch werden, ist nicht entschieden.
 - „Übergeordnete Codeskills“ (Frage des Eigentümers, 06.11.): nicht geklärt.
 - Prüfauftrag an den Hauptchat (nicht gesendet): Feld „berührt“ je Aufgabe, damit der Build
-  Überschneidungen meldet; Stand „mit Vorbehalt“ für Antworten des Eigentümers.
+  Überschneidungen meldet; Stand „mit Vorbehalt“ für Antworten des Eigentümers. Gegenlesung der
+  geparkten Nebenschauplätze vom 06.11. (*abgeleitet*): unabhängig vom Hauptfaden sind die
+  Projektnotiz paleo-type und die Radar-Zeile Basic Memory; abhängig sind #132 (berührt
+  Merkzettel-Felder, `stand.md`, AGENTS.md) und der Modellvergleich (Teil des Pilots); Hooks gehören
+  zu #132.
