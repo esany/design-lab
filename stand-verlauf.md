@@ -6,6 +6,7 @@
 
 | Datum | Was | Warum | Rückgängig |
 |---|---|---|---|
+| 2026-11-07 | **Arbeitsweise: Steuerung zweier Chats (Claude):** Merkzettel trennt die Schritte des frischen Chats von der Auswertung des Leitfaden-Chats; Fachpaket-Entwurf wartet auf dessen PR und ändert keine Leitfaden-Einträge | Leitfaden-Arbeit war im Repo nicht sichtbar; Prüfauftrag an den Leitfaden-Chat (07.11.) | PR revertieren |
 | 2026-11-07 | **Arbeitsweise: Übergabe an frischen Chat (Claude):** Konzept Fachpaket „KI als Werkzeug“ (Dopplung, Schichten, Schwelle, Pflege); Fragen f14–f17 in `daten/arbeitsweise.json`; Merkzettel mit Reihenfolge der nächsten drei Schritte | Ihre Fragen im Chat (06./07.11.) und Ihr Wunsch, in einem frischen Chat weiterzuarbeiten | PR revertieren |
 | 2026-11-06 | **Prüffall neustart-daten: Label für Testeinträge (Claude):** Aufgabe und Erwartung verlangen das Label `ohne-verlauf`; Merkzettel nennt den Codex-Lauf als nächsten Schritt | #137 und #138 scheiterten an „Stand gegen GitHub“, weil die Erwartung weitere Dateien ausschließt; Ihre Frage nach einem Lauf in Codex (06.11.) | PR revertieren |
 | 2026-11-06 | **Arbeitsweise: Merkzettel vor Chatwechsel (Claude):** Stand und nächster Schritt nennen die offenen Testeinträge #137 (Claude) und #138 (Astra) und ihre Auswertung | Ihre Frage nach einem neuen Chat (06.11.) | PR revertieren |
