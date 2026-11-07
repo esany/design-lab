@@ -6,6 +6,7 @@
 
 | Datum | Was | Warum | Rückgängig |
 |---|---|---|---|
+| 2026-11-07 | **Leitfaden: Sicherung aus dem Nebenchat (Claude, Entwurf, nicht übernommen):** Entwurf `research/2026-11-wissensformen/leitfaden-wachsend.md` (Wortlaut des Eigentümers, Verständnis, 20 Keime, Verworfenes, Offenes); in `daten/arbeitsweise.json` Aussagen a24–a25 und Fragen f18–f27 mit Antworten im Wortlaut. `leitfaden/eintraege.json` und Merkzettel unverändert | Prüfauftrag des Eigentümers (07.11.): alles, was nur im Chat stand, ins Repo | PR schließen oder revertieren |
 | 2026-11-07 | **Arbeitsweise: Prüfung von #143 nach vorn (Claude):** zuerst, weil B und C davon abhängen und sie nur liest | Ihre Frage, ob die Analyse des Leitfaden-Chats parallel laufen kann (07.11.) | PR revertieren |
 | 2026-11-07 | **Arbeitsweise: Abschluss des Chats vom 06./07.11. (Claude):** Merkzettel ordnet drei Stränge (Prüffall, Leitfaden, Fachpaket) mit Abhängigkeiten und Reihenfolge; Auswertungsentwürfe berichtigt (Branch, nicht übernommen) | Ihr Wunsch, Tests und Prüfungen in einem frischen Chat fortzusetzen und hier sauber abzuschließen (07.11.) | PR revertieren |
 | 2026-11-07 | **Arbeitsweise: Steuerung zweier Chats (Claude):** Merkzettel trennt die Schritte des frischen Chats von der Auswertung des Leitfaden-Chats; Fachpaket-Entwurf wartet auf dessen PR und ändert keine Leitfaden-Einträge | Leitfaden-Arbeit war im Repo nicht sichtbar; Prüfauftrag an den Leitfaden-Chat (07.11.) | PR revertieren |
