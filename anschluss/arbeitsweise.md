@@ -44,7 +44,7 @@ Nummern):
 |---|---|---|---|
 | **A** | Prüfstand | Leitfaden-Sicherung geprüft, vorgelegt (07.11.); Auswertung der Testeinträge auf Branch `lab/neustart-daten-auswertung`, nicht gegengelesen; Testeinträge offen als Belege | – |
 | **B** | Leitfaden | Leitfaden-Sicherung: Keime, offenes System, Fragen f18–f27; Bericht als Kommentar, Konflikt gelöst, nicht übernommen | Prüfstand (Prüfung der Leitfaden-Sicherung) |
-| **C** | KI-Fachpaket | Konzept `research/2026-11-wissensformen/fachpaket-ki-werkzeug.md` | Leitfaden (als Ansicht? f16, f26) |
+| **C** | KI-Fachpaket | Konzept `research/2026-11-wissensformen/fachpaket-ki-werkzeug.md` | Leitfaden: übergeordnet und konzeptionell früher (f16, 08.11.); Minimalform offen (f26) |
 
 **Prüfstand im frischen Chat, in dieser Reihenfolge:**
 1. *Erledigt 07.11., dem Eigentümer vorgelegt:* Leitfaden-Sicherung prüfen (Bestand im Repo,

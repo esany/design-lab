@@ -378,7 +378,10 @@
     {
       "id": "arbeitsweise-f16",
       "frage": "Soll der Leitfaden die Ansicht des Fachpakets „KI als Werkzeug“ werden (Änderung von 0032)?",
-      "gestellt": "2026-11-07"
+      "gestellt": "2026-11-07",
+      "antwort": "Nein, auch der Leitfaden versteht sich als übergeordnete fachlichkeit. Er ist konzeptionell früher",
+      "beantwortet": "2026-11-08",
+      "notiz": "Gelesen als: Der Leitfaden steht über dem KI-Fachpaket und kommt zuerst; das KI-Fachpaket richtet sich nach ihm, nicht umgekehrt. Passt zu f24."
     },
     {
       "id": "arbeitsweise-f17",

@@ -7,13 +7,12 @@
 
 **Nächster Schritt:** Der Eigentümer entscheidet über die Leitfaden-Sicherung (#143); Claude macht im Prüfstand mit der automatischen Prüfung weiter (Abschnitt „Stränge und Reihenfolge“); das KI-Fachpaket erst nach dem Leitfaden.
 
-## Offene Fragen an den Eigentümer (6)
+## Offene Fragen an den Eigentümer (5)
 
 - **arbeitsweise-f01** Radar als Matrix (Empfehlung) oder Kreis? *(gestellt 2026-11-05)*
 - **arbeitsweise-f02** Gemeinsame Issue-Prüfung zuerst im Labor bauen? *(gestellt 2026-11-05)*
 - **arbeitsweise-f03** Befund zu paleo-type auf #408 notieren (dort gilt Pause)? *(gestellt 2026-11-05)*
 - **arbeitsweise-f04** Dürfen Fremde im öffentlichen Labor Issues anlegen? *(gestellt 2026-11-05)*
-- **arbeitsweise-f16** Soll der Leitfaden die Ansicht des Fachpakets „KI als Werkzeug“ werden (Änderung von 0032)? *(gestellt 2026-11-07)*
 - **arbeitsweise-f17** Lief Codex für #141 im Reiter „Codex“ der ChatGPT-App (Cloud) oder in einem normalen Chat? *(gestellt 2026-11-07)*
 
 ## Aussagen
@@ -78,8 +77,10 @@
 - **arbeitsweise-a23** Astra (ChatGPT) kann Code ausführen und über den GitHub-Connector schreiben.
   *Grenze:* Angabe des Eigentümers im Chat vom 06.11.; im Pilot (Schritt 4) zu prüfen.
 
-## Beantwortete Fragen (11, neueste zuerst)
+## Beantwortete Fragen (12, neueste zuerst)
 
+- **2026-11-08** Soll der Leitfaden die Ansicht des Fachpakets „KI als Werkzeug“ werden (Änderung von 0032)?
+  → „Nein, auch der Leitfaden versteht sich als übergeordnete fachlichkeit. Er ist konzeptionell früher“ *(Gelesen als: Der Leitfaden steht über dem KI-Fachpaket und kommt zuerst; das KI-Fachpaket richtet sich nach ihm, nicht umgekehrt. Passt zu f24.)*
 - **2026-11-07** Darf ich das Fachpaket „KI als Werkzeug“ als Entwurf zusammenstellen, aus dem Bestand und mit Verweisen statt Kopien?
   → „Ja, sehr gerne“ *(Konzept: research/2026-11-wissensformen/fachpaket-ki-werkzeug.md. Bearbeitung in frischem Chat.)*
 - **2026-11-07** Soll ich die zwei Änderungen an der automatischen Prüfung (Übersicht selbst bauen; neu prüfen, wenn ein Label gesetzt wird) als PR vorbereiten?
