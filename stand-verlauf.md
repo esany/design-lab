@@ -6,7 +6,7 @@
 
 | Datum | Was | Warum | Rückgängig |
 |---|---|---|---|
-| 2026-11-08 | **Arbeitsweise: Antwort zu f16 (Claude):** Leitfaden ist dem KI-Fachpaket übergeordnet und konzeptionell früher; Antwort im Wortlaut in `daten/arbeitsweise.json`, Zeile KI-Fachpaket im Merkzettel angepasst | Ihre Antwort im Chat (08.11.) | PR revertieren |
+| 2026-11-08 | **Arbeitsweise: Antwort zu f16 (Claude):** KI-Fachpaket ist dem Leitfaden übergeordnet und konzeptionell früher; der Leitfaden ist eigene Fachlichkeit, keine Ansicht; Antwort im Wortlaut in `daten/arbeitsweise.json`, Abhängigkeiten im Merkzettel angepasst | Ihre Antwort im Chat (08.11.) | PR revertieren |
 | 2026-11-07 | **Arbeitsweise: Kurzformen und Prüfung der Leitfaden-Sicherung (Claude):** Merkzettel nennt Prüfstand, Leitfaden, KI-Fachpaket, Testeinträge und Leitfaden-Sicherung statt Buchstaben und Nummern; Schritt 1 des Prüfstands als erledigt und vorgelegt markiert | Ihr Wunsch im Chat (07.11.), Sie mit Namen statt Kürzeln anzusprechen | PR revertieren |
 | 2026-11-07 | **Arbeitsweise: Prüfung von #143 nach vorn (Claude):** zuerst, weil B und C davon abhängen und sie nur liest | Ihre Frage, ob die Analyse des Leitfaden-Chats parallel laufen kann (07.11.) | PR revertieren |
 | 2026-11-07 | **Arbeitsweise: Abschluss des Chats vom 06./07.11. (Claude):** Merkzettel ordnet drei Stränge (Prüffall, Leitfaden, Fachpaket) mit Abhängigkeiten und Reihenfolge; Auswertungsentwürfe berichtigt (Branch, nicht übernommen) | Ihr Wunsch, Tests und Prüfungen in einem frischen Chat fortzusetzen und hier sauber abzuschließen (07.11.) | PR revertieren |

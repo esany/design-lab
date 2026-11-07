@@ -1,7 +1,7 @@
 ---
 thema: Arbeitsweise mit KI · Wissensformen
 stand: Drei Stränge (07.11.): Prüfstand – Leitfaden-Sicherung geprüft und vorgelegt, Auswertung der Testeinträge als Entwurf, nicht gegengelesen; Leitfaden – Leitfaden-Sicherung mit Bericht, ohne Konflikt, nicht übernommen; KI-Fachpaket – Konzept, Entwurf freigegeben.
-naechster_schritt: Der Eigentümer entscheidet über die Leitfaden-Sicherung (#143); Claude macht im Prüfstand mit der automatischen Prüfung weiter (Abschnitt „Stränge und Reihenfolge“); das KI-Fachpaket erst nach dem Leitfaden.
+naechster_schritt: Der Eigentümer entscheidet über die Leitfaden-Sicherung (#143); Claude macht im Prüfstand mit der automatischen Prüfung weiter (Abschnitt „Stränge und Reihenfolge“); das KI-Fachpaket ist dem Leitfaden übergeordnet (f16).
 offen: []
 ---
 
@@ -43,8 +43,8 @@ Nummern):
 | | Strang | Stand | Hängt ab von |
 |---|---|---|---|
 | **A** | Prüfstand | Leitfaden-Sicherung geprüft, vorgelegt (07.11.); Auswertung der Testeinträge auf Branch `lab/neustart-daten-auswertung`, nicht gegengelesen; Testeinträge offen als Belege | – |
-| **B** | Leitfaden | Leitfaden-Sicherung: Keime, offenes System, Fragen f18–f27; Bericht als Kommentar, Konflikt gelöst, nicht übernommen | Prüfstand (Prüfung der Leitfaden-Sicherung) |
-| **C** | KI-Fachpaket | Konzept `research/2026-11-wissensformen/fachpaket-ki-werkzeug.md` | Leitfaden: übergeordnet und konzeptionell früher (f16, 08.11.); Minimalform offen (f26) |
+| **B** | Leitfaden | Leitfaden-Sicherung: Keime, offenes System, Fragen f18–f27; Bericht als Kommentar, Konflikt gelöst, nicht übernommen | Prüfstand (Prüfung der Leitfaden-Sicherung); KI-Fachpaket (übergeordnet) |
+| **C** | KI-Fachpaket | Konzept `research/2026-11-wissensformen/fachpaket-ki-werkzeug.md` | – (übergeordnet und konzeptionell früher als der Leitfaden, f16, 08.11.) |
 
 **Prüfstand im frischen Chat, in dieser Reihenfolge:**
 1. *Erledigt 07.11., dem Eigentümer vorgelegt:* Leitfaden-Sicherung prüfen (Bestand im Repo,

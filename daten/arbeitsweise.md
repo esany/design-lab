@@ -5,7 +5,7 @@
 
 **Stand:** Drei Stränge (07.11.): Prüfstand – Leitfaden-Sicherung geprüft und vorgelegt, Auswertung der Testeinträge als Entwurf, nicht gegengelesen; Leitfaden – Leitfaden-Sicherung mit Bericht, ohne Konflikt, nicht übernommen; KI-Fachpaket – Konzept, Entwurf freigegeben.
 
-**Nächster Schritt:** Der Eigentümer entscheidet über die Leitfaden-Sicherung (#143); Claude macht im Prüfstand mit der automatischen Prüfung weiter (Abschnitt „Stränge und Reihenfolge“); das KI-Fachpaket erst nach dem Leitfaden.
+**Nächster Schritt:** Der Eigentümer entscheidet über die Leitfaden-Sicherung (#143); Claude macht im Prüfstand mit der automatischen Prüfung weiter (Abschnitt „Stränge und Reihenfolge“); das KI-Fachpaket ist dem Leitfaden übergeordnet (f16).
 
 ## Offene Fragen an den Eigentümer (5)
 
@@ -80,7 +80,7 @@
 ## Beantwortete Fragen (12, neueste zuerst)
 
 - **2026-11-08** Soll der Leitfaden die Ansicht des Fachpakets „KI als Werkzeug“ werden (Änderung von 0032)?
-  → „Nein, auch der Leitfaden versteht sich als übergeordnete fachlichkeit. Er ist konzeptionell früher“ *(Gelesen als: Der Leitfaden steht über dem KI-Fachpaket und kommt zuerst; das KI-Fachpaket richtet sich nach ihm, nicht umgekehrt. Passt zu f24.)*
+  → „Nein, auch der Leitfaden versteht sich als übergeordnete fachlichkeit. Er ist konzeptionell früher“ *(Gelesen als (vom Eigentümer am 08.11. berichtigt): Das KI-Fachpaket ist die übergeordnete Fachlichkeit und konzeptionell früher; der Leitfaden ist ebenfalls Fachlichkeit, keine bloße Ansicht, und ordnet sich ihm unter.)*
 - **2026-11-07** Darf ich das Fachpaket „KI als Werkzeug“ als Entwurf zusammenstellen, aus dem Bestand und mit Verweisen statt Kopien?
   → „Ja, sehr gerne“ *(Konzept: research/2026-11-wissensformen/fachpaket-ki-werkzeug.md. Bearbeitung in frischem Chat.)*
 - **2026-11-07** Soll ich die zwei Änderungen an der automatischen Prüfung (Übersicht selbst bauen; neu prüfen, wenn ein Label gesetzt wird) als PR vorbereiten?
