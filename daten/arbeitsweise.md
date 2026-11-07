@@ -3,9 +3,9 @@
 > Erzeugt von `node tools/build.mjs` aus `daten/arbeitsweise.json` und dem Merkzettel
 > `anschluss/arbeitsweise.md`. Nicht von Hand ändern. Modelle lesen die Daten, nicht diese Seite.
 
-**Stand:** Prüffall neustart-daten mit Claude (#137), Astra (#138) und Codex (#141) gelaufen; Auswertung als Entwurf auf Branch lab/neustart-daten-auswertung. Neu: Konzept Fachpaket „KI als Werkzeug“ (research/2026-11-wissensformen/fachpaket-ki-werkzeug.md), Entwurf freigegeben.
+**Stand:** Drei Stränge (07.11.): A Prüffall neustart-daten – Auswertung als Entwurf, nicht gegengelesen; B Leitfaden – Nebenchat hat gesichert (#143, Konflikt, Bericht fehlt); C Fachpaket „KI als Werkzeug“ – Konzept, Entwurf freigegeben.
 
-**Nächster Schritt:** Claude im frischen Chat – 1. Prüfung baut die Übersicht selbst und läuft bei Labels neu (f14, Ja); 2. Auswertung übernehmen, #137, #138, #141 schließen; 3. Entwurf Fachpaket „KI als Werkzeug“ (f15), erst wenn der PR des Leitfaden-Chats vorliegt, und nur mit Verweisen auf Leitfaden-Kennungen. Den Prüfauftrag an den Leitfaden-Chat wertet der Chat vom 06./07.11. aus.
+**Nächster Schritt:** Frischer Chat „Tests und Prüfungen“ (Claude) arbeitet Strang A ab, siehe Abschnitt „Stränge und Reihenfolge“; B entscheidet der Eigentümer nach dessen Prüfung von #143; C erst danach.
 
 ## Offene Fragen an den Eigentümer (6)
 

@@ -1,7 +1,7 @@
 ---
 thema: Arbeitsweise mit KI · Wissensformen
-stand: Prüffall neustart-daten mit Claude (#137), Astra (#138) und Codex (#141) gelaufen; Auswertung als Entwurf auf Branch lab/neustart-daten-auswertung. Neu: Konzept Fachpaket „KI als Werkzeug“ (research/2026-11-wissensformen/fachpaket-ki-werkzeug.md), Entwurf freigegeben.
-naechster_schritt: Claude im frischen Chat – 1. Prüfung baut die Übersicht selbst und läuft bei Labels neu (f14, Ja); 2. Auswertung übernehmen, #137, #138, #141 schließen; 3. Entwurf Fachpaket „KI als Werkzeug“ (f15), erst wenn der PR des Leitfaden-Chats vorliegt, und nur mit Verweisen auf Leitfaden-Kennungen. Den Prüfauftrag an den Leitfaden-Chat wertet der Chat vom 06./07.11. aus.
+stand: Drei Stränge (07.11.): A Prüffall neustart-daten – Auswertung als Entwurf, nicht gegengelesen; B Leitfaden – Nebenchat hat gesichert (#143, Konflikt, Bericht fehlt); C Fachpaket „KI als Werkzeug“ – Konzept, Entwurf freigegeben.
+naechster_schritt: Frischer Chat „Tests und Prüfungen“ (Claude) arbeitet Strang A ab, siehe Abschnitt „Stränge und Reihenfolge“; B entscheidet der Eigentümer nach dessen Prüfung von #143; C erst danach.
 offen: []
 ---
 
@@ -24,6 +24,30 @@ statt Textberge, und wie bleibt das Wissen für jeden Chat erreichbar, ohne dass
 - **06.11.:** Pilot an diesem Thema: Datenmodell im Kleinen, daraus erzeugte Übersicht; danach
   dieselbe Aufgabe getrennt für Claude und Astra und der Test, ob ein frischer Chat richtig
   weitermacht. Maßstab des Eigentümers: flexibel, nachhaltig, tokensparend, gut pflegbar.
+
+## Stränge und Reihenfolge (07.11.)
+
+Maßstab des Eigentümers (07.11.): „Ich will nicht, dass es fertig wird, ich will, dass es gut wird.“
+
+| | Strang | Stand | Hängt ab von |
+|---|---|---|---|
+| **A** | Prüffall neustart-daten, Prüfung des Leitfaden-Chats | Auswertung auf Branch `lab/neustart-daten-auswertung`, nicht gegengelesen; #137, #138, #141 offen als Belege | – |
+| **B** | Leitfaden, fachlich und technisch | #143 aus dem Nebenchat: Keime, offenes System, Fragen f18–f27; Konflikt mit `main`, Bericht fehlt | A (Prüfung von #143) |
+| **C** | Fachpaket „KI als Werkzeug“ | Konzept `research/2026-11-wissensformen/fachpaket-ki-werkzeug.md` | B (Leitfaden als Ansicht? f16, f26) |
+
+**Strang A im frischen Chat, in dieser Reihenfolge:**
+1. Automatische Prüfung: baut die erzeugten Übersichten selbst und läuft beim Setzen eines Labels
+   neu (f14, Ja). Zuerst, weil parallele Chats sonst in erzeugten Dateien kollidieren.
+   Schreibrechte für die Prüfung sind eine Frage an den Eigentümer.
+2. Zwei Beobachtungen als Aussagen (abgeleitet) in `daten/arbeitsweise.json`: Modelle übergehen
+   Pflichtschritte oder bauen Erzeugtes nach (2 von 3 Läufen); keines nennt eine rote Prüfung
+   von sich aus (3 von 3).
+3. Gegenlesen der Auswertung und der Aussagen durch Astra (Auftrag formulieren, Eigentümer gibt
+   ihn weiter). Claude bewertet in #137 sich selbst.
+4. #143 prüfen: Bestand im Repo statt nur im Chat? Branch, PR, nicht übernommen, Verlauf,
+   Prüfungen? Leitfaden-Einträge unangetastet? Ursache genannt? Bericht als Kommentar fehlt noch.
+   Ergebnis dem Eigentümer vorlegen.
+5. Erst danach: Auswertung übernehmen, #137, #138, #141 schließen.
 
 **Hauptfaden:** Welche Struktur braucht das Labor, damit Wissen sparsam, ohne Widersprüche und für
 Claude und Astra gleich gut nutzbar ist?
