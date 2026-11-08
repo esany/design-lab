@@ -2,7 +2,7 @@
 import { readFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { leseKopf, aktualisiereStand, pruefeLaenge, pruefeGitHub, MAX_MERKZETTEL, MAX_STAND } from './gitter.mjs';
+import { leseKopf, aktualisiereStand, pruefeLaenge, pruefeGitHub, pruefeVerlaufseintrag, MAX_MERKZETTEL, MAX_STAND } from './gitter.mjs';
 const fixture = f => readFileSync(join(dirname(fileURLToPath(import.meta.url)), 'fixtures/gitter', f), 'utf8');
 const t = { datei: 'beispiel.md', ...leseKopf(fixture('richtig.md'), 'richtig.md') };
 const tests = [
@@ -16,6 +16,13 @@ const tests = [
     console.warn(darueber.join('\n'));
   }, null],
   ['G4 GitHub', () => { const e=pruefeGitHub([t], {1:'open'}, true, ['stand-verlauf.md'], []); if(e.length) throw Error(e.join(', ')); if(pruefeGitHub([t], {1:'open'}, true, [], ['ohne-verlauf']).length) throw Error('Ausnahme nicht erkannt'); }, () => { const e=pruefeGitHub([t], {1:'closed'}, true, [], []); if(e.length !== 2) throw Error('Fehler nicht erkannt'); throw Error(e.join('; ')); }],
+  ['G5 Verlauf als Datei', () => {
+    const e=pruefeGitHub([t], {1:'open'}, true, ['verlauf/2026-11-08-test.md'], []); if(e.length) throw Error(e.join(', '));
+    const v=pruefeVerlaufseintrag('2026-11-08-test.md', '# 2026-11-08 · Test\n\n**Warum:** Prüffall.\n\n**Rückgängig:** PR revertieren.\n'); if(v.length) throw Error(v.join(', '));
+  }, () => {
+    const e=[...pruefeGitHub([t], {1:'open'}, true, ['verlauf/README.md'], []), ...pruefeVerlaufseintrag('test.md', ''), ...pruefeVerlaufseintrag('2026-11-08-test.md', '# 2026-11-08 · Test\n')];
+    if(e.length !== 4) throw Error(`erwartet 4 Fehler, gefunden ${e.length}: ${e.join('; ')}`); throw Error(e.join('; '));
+  }],
 ];
 let fail = false;
 for (const [name, good, bad] of tests) {

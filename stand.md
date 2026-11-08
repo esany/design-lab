@@ -2,7 +2,7 @@
 
 Das Labor ist ein Experiment für Gestaltung mit KI-Assistenz.
 Die Website wird nach jeder Übernahme aktualisiert: https://esany.github.io/design-lab/.
-Änderungen und Rückgängig-Hinweise stehen im [Verlauf](stand-verlauf.md).
+Änderungen und Rückgängig-Hinweise stehen im [Verlauf](verlauf/), ältere bis 08.11. in [stand-verlauf.md](stand-verlauf.md).
 
 <!-- themen:start -->
 ## Themen

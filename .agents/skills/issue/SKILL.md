@@ -71,7 +71,7 @@ Auftragsart. Das kommt aus der Untersuchung (#59, wartet auf #56).
 ## C · Bearbeiten
 
 1. Kurz spiegeln, was verstanden wurde und welche Annahme gilt.
-2. Branch, Pull Request mit `Closes #n` und Anforderung, Zeile in `stand-verlauf.md`.
+2. Branch, Pull Request mit `Closes #n` und Anforderung, eigene Datei in `verlauf/` (0034).
 3. Im Pull Request jede Zeile von „Fertig, wenn“ mit Ja, Nein oder „nicht geprüft“ und Beleg.
    Die eigene Arbeit erklärt kein Modell für bestanden.
 

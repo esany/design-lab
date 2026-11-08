@@ -146,3 +146,45 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_NUMMER: ${{ inputs.pr }}
         run: node tools/stand-github.mjs
+
+  melden:
+    # Ist eine Prüfung rot, schreibt die Prüfung selbst einen Hinweis in den PR (0034).
+    # Im Prüffall nannte kein Modell eine rote Prüfung von sich aus (Aussage a27).
+    name: Rote Prüfung melden
+    needs: [uebersichten, struktur, messwerte, links, rendern, stand-github]
+    if: ${{ always() && (github.event_name == 'pull_request' || inputs.pr != '') }}
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+    steps:
+      - name: Hinweis in den PR schreiben oder aktualisieren
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR: ${{ github.event.number || inputs.pr }}
+          NEEDS: ${{ toJSON(needs) }}
+          LAUF: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          ROT=$(echo "$NEEDS" | jq -r '{"uebersichten":"Übersichten erzeugen","struktur":"Tokens, Studien, Index","messwerte":"Eingriffe und Lesekosten","links":"Interne Links","rendern":"Studien rendern","stand-github":"Stand gegen GitHub"} as $n | [to_entries[] | select(.value.result=="failure") | "„" + ($n[.key] // .key) + "“"] | join(", ")')
+          MARKE='<!-- rote-pruefung -->'
+          TEXT="$MARKE
+          **Prüfung rot** für \`${SHA:0:7}\`: ${ROT}.
+
+          [Zum Lauf]($LAUF). Bitte beheben oder im PR begründen, warum es rot bleiben darf. Dieser Hinweis kommt von der Prüfung selbst (0034) und wird bei jedem roten Lauf aktualisiert."
+          ID=$(gh api "repos/${{ github.repository }}/issues/$PR/comments" --paginate --jq ".[] | select(.body | startswith(\"$MARKE\")) | .id" | head -1)
+          if [ -z "$ROT" ]; then
+            # Grün: einen früheren Hinweis als erledigt markieren, sonst nichts tun.
+            if [ -n "$ID" ]; then
+              gh api -X PATCH "repos/${{ github.repository }}/issues/comments/$ID" -f body="$MARKE
+          **Prüfung wieder grün** für \`${SHA:0:7}\`. [Zum Lauf]($LAUF)." > /dev/null
+            fi
+            echo "Keine rote Prüfung."
+            exit 0
+          fi
+          if [ -n "$ID" ]; then
+            gh api -X PATCH "repos/${{ github.repository }}/issues/comments/$ID" -f body="$TEXT" > /dev/null
+          else
+            gh api "repos/${{ github.repository }}/issues/$PR/comments" -f body="$TEXT" > /dev/null
+          fi
+          echo "Gemeldet: $ROT"
