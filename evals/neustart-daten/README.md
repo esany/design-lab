@@ -16,5 +16,5 @@ Testeinträge (#137, #138, #141) sind geschlossen und bleiben als Belege.
   selbst.
 - **Rahmen der Gegenprüfung** (Angabe des Eigentümers): Codex mit Luna, Stufe mittel, längerer
   Auftrag. Rund neun Quellen gelesen; Prüfergebnisse wieder nicht nachgetragen; beim Vergleich die
-  Wertungen der Läufe mit Astras Urteil verwechselt (Kommentar in #156). Eine knappere Fassung des
-  Auftrags liegt im Chat vom 08.11. als Vergleich für einen späteren Lauf.
+  Wertungen der Läufe mit Astras Urteil verwechselt (Kommentar in #156). Beide Fassungen des
+  Auftrags, die verwendete und eine knappere zum Vergleich: [Aufträge](auftraege-gegenpruefung.md).
