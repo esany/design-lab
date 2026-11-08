@@ -3,7 +3,7 @@
 > Erzeugt von `node tools/build.mjs` aus `referenzen.json` und `recherche.json`. Nicht von Hand ändern.
 > Schema: [`schema.md`](schema.md).
 
-**132 Quellen** — 27 ausgewählt vom Eigentümer, 105 recherchiert vom Agenten.
+**133 Quellen** — 27 ausgewählt vom Eigentümer, 106 recherchiert vom Agenten.
 Je Feld zuerst die Verweise des Eigentümers (Ausgangspunkte, kein Kanon). Eine Quelle kann in mehreren Feldern stehen.
 
 ## vermitteln
@@ -32,6 +32,7 @@ Je Feld zuerst die Verweise des Eigentümers (Ausgangspunkte, kein Kanon). Eine 
 | `cleveland-mcgill-1984` | [Graphical Perception: Theory, Experimentation, and Application to the Development of Graphical Methods](https://en.wikipedia.org/wiki/Graphical_perception) | William S. Cleveland, Robert McGill | 1984 | Paper | belegt | Agent | `.agents/skills/fachpaket-vermitteln/SKILL.md` |
 | `d3` | [D3](https://www.npmjs.com/package/d3) | Mike Bostock u. a. | 2025 | Werkzeug | belegt | Agent | `.agents/skills/fachpaket-vermitteln/SKILL.md` |
 | `dignazio-klein-2020` | [Data Feminism](https://en.wikipedia.org/wiki/Data_Feminism) | Catherine D'Ignazio, Lauren F. Klein | 2020 | Buch | belegt | Agent | `.agents/skills/fachpaket-vermitteln/SKILL.md` |
+| `guerra-papers-navigator-2026` | [IEEE VIS 2026 Papers Navigator](https://johnguerra.co/viz/papersNavigator/ieeevis2026/) | John Alexis Guerra Gómez | 2026 | Projekt | belegt | Agent | `anschluss/wissen.md`, `radar.md` |
 | `legge-bigelow-2011` | [Does print size matter for reading? A review of findings from vision science and typography](https://legge.dl8.umn.edu/sites/legge.psych.umn.edu/files/2020-08/Legge%20Bigelow%202011%20Does%20size%20matter%20for%20reading%3F%20A%20review%20of%20findings%20from%20vision%20science%20and%20typography.pdf) | Gordon E. Legge, Charles A. Bigelow | 2011 | Paper | belegt | Agent | `.agents/skills/fachpaket-form/SKILL.md`, `manifest.md` |
 | `mackinlay-1986` | [Automating the Design of Graphical Presentations of Relational Information](https://courses.ischool.berkeley.edu/i247/f05/readings/Mackinlay_APT_TOG86.pdf) | Jock D. Mackinlay | 1986 | Paper | belegt | Agent | `.agents/skills/fachpaket-vermitteln/SKILL.md` |
 | `mermaid` | [Mermaid](https://www.npmjs.com/package/mermaid) | Mermaid-Community | 2026 | Werkzeug | belegt | Agent | `.agents/skills/fachpaket-vermitteln/SKILL.md` |
@@ -91,6 +92,7 @@ Je Feld zuerst die Verweise des Eigentümers (Ausgangspunkte, kein Kanon). Eine 
 | `mueller-esono` | [esono — Boris Müller](https://www.esono.com/) | Boris Müller | 2001 | Person | belegt | Mensch | `.agents/skills/fachpaket-form/SKILL.md`, `.agents/skills/fachpaket-vermitteln/SKILL.md` |
 | `pinterest-el0631` | [Pinterest-Sammlung el0631](https://de.pinterest.com/el0631/) | Eigentümer des Labors | — | Sammlung | belegt · blockiert | Mensch | `.agents/skills/fachpaket-form/SKILL.md`, `.agents/skills/fachpaket-vermitteln/SKILL.md` |
 | `generative-gestaltung` | [Generative Gestaltung — Code-Paket p5.js](https://github.com/generative-design/Code-Package-p5.js) | Benedikt Groß, Hartmut Bohnacker, Julia Laub, Claudius Lazzeroni | — | Repo | belegt | Agent | — |
+| `guerra-papers-navigator-2026` | [IEEE VIS 2026 Papers Navigator](https://johnguerra.co/viz/papersNavigator/ieeevis2026/) | John Alexis Guerra Gómez | 2026 | Projekt | belegt | Agent | `anschluss/wissen.md`, `radar.md` |
 | `p5js` | [p5.js](https://p5js.org/) | Processing Foundation | 2026 | Werkzeug | belegt | Agent | `.agents/skills/fachpaket-vermitteln/SKILL.md` |
 | `ruder-1967` | [Typographie. Ein Gestaltungslehrbuch](https://www.niggli.ch/en/produkt/typographie) | Emil Ruder | 1967 | Buch | belegt | Agent | `.agents/skills/fachpaket-form/SKILL.md` |
 
@@ -169,6 +171,7 @@ Je Feld zuerst die Verweise des Eigentümers (Ausgangspunkte, kein Kanon). Eine 
 | `stefaner` | [Truth & Beauty — Moritz Stefaner](https://truth-and-beauty.net/) | Moritz Stefaner | — | Person | belegt | Mensch | `.agents/skills/fachpaket-vermitteln/SKILL.md` |
 | `uclab` | [Urban Complexity Lab (UCLAB), FH Potsdam](https://uclab.fh-potsdam.de/) | Marian Dörk, Boris Müller (Leitung) | — | Labor | belegt | Mensch | `.agents/skills/fachpaket-vermitteln/SKILL.md` |
 | `d3` | [D3](https://www.npmjs.com/package/d3) | Mike Bostock u. a. | 2025 | Werkzeug | belegt | Agent | `.agents/skills/fachpaket-vermitteln/SKILL.md` |
+| `guerra-papers-navigator-2026` | [IEEE VIS 2026 Papers Navigator](https://johnguerra.co/viz/papersNavigator/ieeevis2026/) | John Alexis Guerra Gómez | 2026 | Projekt | belegt | Agent | `anschluss/wissen.md`, `radar.md` |
 | `ml5js` | [ml5.js](https://ml5js.org/about) | NYU ITP / ml5-Community | 2026 | Werkzeug | belegt | Agent | — |
 | `p5js` | [p5.js](https://p5js.org/) | Processing Foundation | 2026 | Werkzeug | belegt | Agent | `.agents/skills/fachpaket-vermitteln/SKILL.md` |
 | `reshape-2025` | [re:shape forum 2025](https://aid-lab.hfg-gmuend.de/appearances/2025-reshape-summer-school-hfg-schwaebisch-gmuend/) | HfG Schwäbisch Gmünd, AI+Design Lab | 2025 | Konferenz | belegt | Agent | — |
