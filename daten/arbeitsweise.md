@@ -3,9 +3,9 @@
 > Erzeugt von `node tools/build.mjs` aus `daten/arbeitsweise.json` und dem Merkzettel
 > `anschluss/arbeitsweise.md`. Nicht von Hand ändern. Modelle lesen die Daten, nicht diese Seite.
 
-**Stand:** Drei Stränge (08.11.): Prüfstand – automatische Prüfung baut die Übersichten selbst (0033), Testeinträge von Astra gegengelesen; Leitfaden – Leitfaden-Sicherung und Konzeptstand übernommen, Konkretisierung im eigenen Chat; KI-Fachpaket – Konzept, in Teilen überholt durch den Konzeptstand.
+**Stand:** Drei Stränge (08.11.): Prüfstand abgeschlossen – Testeinträge ausgewertet, zweimal gegengelesen, geschlossen; automatische Prüfung baut die Übersichten selbst (0033); Leitfaden – Leitfaden-Sicherung und Konzeptstand übernommen, Konkretisierung im eigenen Chat; KI-Fachpaket – Konzept, in Teilen überholt durch den Konzeptstand.
 
-**Nächster Schritt:** Codex prüft Astras Selbstbewertung ihres Testeintrags gegen (Auftrag beim Eigentümer); danach übernimmt Claude die Auswertung der Testeinträge und schließt die drei Testeinträge und damit den Prüfstand.
+**Nächster Schritt:** Der Leitfaden-Chat konkretisiert den Leitfaden auf Grundlage des Konzeptstands (Eigentümer und Leitfaden-Chat); der Prüfstand hat keinen offenen Schritt.
 
 ## Offene Fragen an den Eigentümer (6)
 

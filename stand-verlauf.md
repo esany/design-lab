@@ -6,6 +6,7 @@
 
 | Datum | Was | Warum | Rückgängig |
 |---|---|---|---|
+| 2026-11-08 | **Prüfstand abgeschlossen (Claude):** Auswertung der drei Testeinträge mit Verweis auf Gegenlesen und Gegenprüfung in `evals/neustart-daten/ergebnisse/`; Testeinträge von Claude, Astra und Codex geschlossen; Ergebnis im Merkzettel | Ihr Ja zum Abschluss (08.11.) | PR revertieren; Testeinträge wieder öffnen |
 | 2026-11-08 | **Fundstück Papers Navigator (Claude):** Radar „Beobachten“ mit Verfallsdatum 2027-05, Quelle `guerra-papers-navigator-2026` im Korpus, Hinweis im Merkzettel Wissen als Muster für den Bibliothekar (Bedeutungskarte des Korpus); nichts installiert | Ihr Auftrag im Chat (08.11.): „so wie du geplant hast“ | PR revertieren |
 | 2026-11-08 | **Prüfstand: zwei Beobachtungen aus dem Prüffall als Aussagen (Claude):** a26, Build-Weg in 2 von 3 Läufen nicht eingehalten (abgeleitet); a27, kein Prüfling trug eine rote Prüfung nach (belegt); Herleitung ist Astras Gegenlesen | Ihr Ja zur engeren Fassung (08.11.) | PR revertieren |
 | 2026-11-08 | **Prüfstand: Die automatische Prüfung baut die Übersichten selbst (Claude, 0033):** Bei jedem PR erzeugt sie die Übersichten neu, schreibt sie in den PR-Branch zurück und prüft danach erneut; sie läuft auch beim Setzen eines Labels. Schreibregel 8: erzeugte Dateien nie von Hand nachbauen | Ihr Ja zu f14 (07.11.) und zu Schreibrechten auf PR-Branches (08.11.); parallele Chats kollidierten in erzeugten Dateien | PR revertieren |

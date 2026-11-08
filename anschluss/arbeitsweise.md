@@ -1,13 +1,13 @@
 ---
 thema: Arbeitsweise mit KI · Wissensformen
-stand: Drei Stränge (08.11.): Prüfstand – automatische Prüfung baut die Übersichten selbst (0033), Testeinträge von Astra gegengelesen; Leitfaden – Leitfaden-Sicherung und Konzeptstand übernommen, Konkretisierung im eigenen Chat; KI-Fachpaket – Konzept, in Teilen überholt durch den Konzeptstand.
-naechster_schritt: Codex prüft Astras Selbstbewertung ihres Testeintrags gegen (Auftrag beim Eigentümer); danach übernimmt Claude die Auswertung der Testeinträge und schließt die drei Testeinträge und damit den Prüfstand.
+stand: Drei Stränge (08.11.): Prüfstand abgeschlossen – Testeinträge ausgewertet, zweimal gegengelesen, geschlossen; automatische Prüfung baut die Übersichten selbst (0033); Leitfaden – Leitfaden-Sicherung und Konzeptstand übernommen, Konkretisierung im eigenen Chat; KI-Fachpaket – Konzept, in Teilen überholt durch den Konzeptstand.
+naechster_schritt: Der Leitfaden-Chat konkretisiert den Leitfaden auf Grundlage des Konzeptstands (Eigentümer und Leitfaden-Chat); der Prüfstand hat keinen offenen Schritt.
 offen: []
 ---
 
 # Thema: Arbeitsweise mit KI · Wissensformen
 
-**Zuletzt fortgeschrieben:** 08.11.2026 (Claude, Verhältnis Leitfaden – Fachpakete)
+**Zuletzt fortgeschrieben:** 08.11.2026 (Claude, Abschluss Prüfstand)
 
 ## In Worten
 
@@ -42,19 +42,29 @@ Nummern):
 
 | | Strang | Stand | Hängt ab von |
 |---|---|---|---|
-| **A** | Prüfstand | Leitfaden-Sicherung geprüft (Kommentar dort); automatische Prüfung baut die Übersichten selbst (0033); Auswertung der Testeinträge auf Branch `lab/neustart-daten-auswertung`, von Astra gegengelesen (#148); Testeinträge offen als Belege | – |
+| **A** | Prüfstand | **Abgeschlossen 08.11.** Ergebnis im Abschnitt darunter | – |
 | **B** | Leitfaden | Leitfaden-Sicherung (Keime, offenes System, Fragen f18–f27) und Konzeptstand übernommen (08.11.); Konkretisierung im eigenen Chat | Prüfstand (Prüfung der Leitfaden-Sicherung) |
 | **C** | KI-Fachpaket | Konzept `research/2026-11-wissensformen/fachpaket-ki-werkzeug.md`; „Rollen der Orte“ und „Schwelle“ überholt durch den [Konzeptstand 08.11.](../research/2026-11-wissensformen/konzeptstand-2026-11-08.md) | Leitfaden (erst danach; getrennte Erkenntnisorte, keine Ansicht) |
 
-**Prüfstand, in dieser Reihenfolge:**
-1. *Erledigt:* Leitfaden-Sicherung geprüft; Ergebnis als Kommentar dort (08.11.).
-2. *Erledigt (08.11.):* Die automatische Prüfung baut die Übersichten selbst und läuft beim Setzen
-   eines Labels neu (f14, Ja; Schreibrechte auf PR-Branches, Ja; Entscheidung 0033).
-3. *Erledigt (08.11.):* Zwei Beobachtungen in Astras engerer Fassung eingetragen: a26
-   (abgeleitet) und a27 (belegt).
-4. *Erledigt:* Astra hat die Auswertung gegengelesen; übernommen (#148). Offen: Codex prüft Astras
-   Selbstbewertung ihres eigenen Testeintrags gegen (Eigentümer: Ja, 08.11.).
-5. Danach: Auswertung und Gegenlesen übernehmen, die drei Testeinträge schließen.
+**Prüfstand, Ergebnis (abgeschlossen 08.11.):** Getestet wurde, ob ein frischer Chat im Labor
+richtig weitermacht. Claude, Astra und Codex bekamen dieselbe Aufgabe; Claude wertete aus, Astra
+las gegen, Codex prüfte Astras Selbstbewertung. Ablage: `evals/neustart-daten/ergebnisse/`; die
+drei Testeinträge sind geschlossen und bleiben als Belege.
+- Was wir über die Modelle wissen: Den Weg zum Erzeugen halten sie oft nicht ein, und eine rote
+  Prüfung trägt keines nach ([a:arbeitsweise-a26], [a:arbeitsweise-a27]). Drei Läufe tragen
+  keinen Modellvergleich.
+- Was daraus folgt: Was Modelle wiederholt übergehen, übernimmt die Maschine. Die Prüfung baut
+  die Übersichten jetzt selbst und läuft beim Setzen eines Labels neu (0033); beides hat sich am
+  08.11. im Betrieb bewährt.
+- Was wir über das Prüfen gelernt haben: Gegenlesen durch ein anderes Modell hat überzogene
+  Formulierungen gefunden; die Selbstbewertung von Astra hielt der fremden Prüfung stand. Wer
+  einen Text selbst geschrieben hat, prüft ihn nicht selbst.
+- Rahmen der Gegenprüfung (Angabe des Eigentümers): Codex mit Luna, Stufe mittel, längerer
+  Auftrag. Sie las rund neun Quellen, trug die Prüfergebnisse wieder nicht nach und verwechselte
+  beim Vergleich die Wertungen der Läufe mit Astras Urteil (Kommentar in #156).
+- Offen, nicht Teil des Prüfstands: Bei einem Konflikt startet GitHub keine Prüfung; Konflikte im
+  Verlauf bleiben Handarbeit. Eine knappere Fassung des Codex-Auftrags liegt im Chat vom 08.11.
+  als Vergleich für einen späteren Lauf.
 
 **Hauptfaden:** Welche Struktur braucht das Labor, damit Wissen sparsam, ohne Widersprüche und für
 Claude und Astra gleich gut nutzbar ist?
