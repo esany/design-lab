@@ -5,7 +5,7 @@
 
 **Stand:** Drei Stränge (08.11.): Prüfstand – automatische Prüfung baut die Übersichten selbst (0033), Testeinträge von Astra gegengelesen; Leitfaden – Leitfaden-Sicherung und Konzeptstand übernommen, Konkretisierung im eigenen Chat; KI-Fachpaket – Konzept, in Teilen überholt durch den Konzeptstand.
 
-**Nächster Schritt:** Claude trägt die zwei Beobachtungen in Astras engerer Fassung ein; Codex prüft Astras Selbstbewertung ihres Testeintrags gegen (Auftrag beim Eigentümer); danach schließt Claude den Prüfstand ab.
+**Nächster Schritt:** Codex prüft Astras Selbstbewertung ihres Testeintrags gegen (Auftrag beim Eigentümer); danach übernimmt Claude die Auswertung der Testeinträge und schließt die drei Testeinträge und damit den Prüfstand.
 
 ## Offene Fragen an den Eigentümer (6)
 
@@ -18,7 +18,7 @@
 
 ## Aussagen
 
-### Belegt (13)
+### Belegt (14)
 
 - **arbeitsweise-a02** Im Labor folgte auf einen Vorfall meist eine neue Regel: 30 Entscheidungen in drei Tagen.
   *Beleg:* `research/2026-10-audit-zusammenarbeit/befunde.md`, In Worten, Punkt 4
@@ -55,8 +55,11 @@
   *Beleg:* [k:santos-2026-smells], Abstract
 - **arbeitsweise-a19** Skills nach dem offenen Agent-Skills-Standard lesen Claude, ChatGPT und Codex gleichermaßen; der Ordner .agents/skills des Labors passt dazu.
   *Beleg:* [k:openai-codex-skills-2026], Einleitung
+- **arbeitsweise-a27** In keinem der 3 Test-PRs hat der Prüfling ein rot gebliebenes Prüfergebnis ausdrücklich nachgetragen, obwohl jeder mindestens eine rote Prüfung hatte.
+  *Beleg:* `evals/neustart-daten/ergebnisse/2026-11-07-gegenlesen-astra.md`, Prüfung der zwei vorgesehenen Aussagen, 4b; Prüfläufe im Vergleich
+  *Grenze:* Die Kommentare entstanden vor Abschluss der Prüfungen; ob die Prüflinge die Fehler sehen konnten, ist nicht nachgewiesen.
 
-### Abgeleitet (11)
+### Abgeleitet (12)
 
 - **arbeitsweise-a01** Fortschritt kommt in der Arbeit mit der KI als Text zurück, nicht als etwas zum Ansehen oder Ausprobieren; der Gestalter sieht deshalb nicht, ob Strukturen tragen.
 - **arbeitsweise-a06** Wurzel des Problems: Im Entwurf antwortet das Material, in der Arbeit mit der KI nur Text; der Gestalter ersetzt sein Urteil durch Regeln.
@@ -76,6 +79,8 @@
   *Grenze:* Beispiel: Der Merkzettel führt „Mehrere Leitfäden je Thema“ unter „Entschieden“; laut Rückschau des Chats vom 05.11. war es ein „vielleicht“.
 - **arbeitsweise-a25** Zwei Chats am selben Thema, die nichts voneinander wissen, erzeugen widersprüchliche Änderungen an denselben Dateien; parallel trägt nur nach Thema getrennt oder als bewusster Vergleich.
   *Grenze:* Im Labor: #129 übernommen 30 Sekunden vor dem Anhalten aus einem zweiten Chat; extern CooperBench (Keim in der Herleitung, Quelle noch nicht im Korpus).
+- **arbeitsweise-a26** In 2 von 3 dokumentierten Prüfläufen wurde der vorgesehene Weg zum Erzeugen der Übersicht nicht eingehalten: Astra rekonstruierte die Erzeugung laut eigener Angabe, Codex lieferte die aktualisierte Übersicht nicht mit.
+  *Grenze:* Drei Läufe unter verschiedenen Bedingungen; ein Vergleich der Modelle folgt daraus nicht. Engere Fassung nach Astras Gegenlesen, vom Eigentümer am 08.11. bestätigt.
 
 ### Nicht belegt (1)
 

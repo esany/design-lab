@@ -278,6 +278,27 @@
       "seit": "2026-11-06",
       "herleitung": "research/2026-11-wissensformen/leitfaden-wachsend.md",
       "notiz": "Im Labor: #129 übernommen 30 Sekunden vor dem Anhalten aus einem zweiten Chat; extern CooperBench (Keim in der Herleitung, Quelle noch nicht im Korpus)."
+    },
+    {
+      "id": "arbeitsweise-a26",
+      "aussage": "In 2 von 3 dokumentierten Prüfläufen wurde der vorgesehene Weg zum Erzeugen der Übersicht nicht eingehalten: Astra rekonstruierte die Erzeugung laut eigener Angabe, Codex lieferte die aktualisierte Übersicht nicht mit.",
+      "status": "abgeleitet",
+      "seit": "2026-11-08",
+      "herleitung": "evals/neustart-daten/ergebnisse/2026-11-07-gegenlesen-astra.md",
+      "notiz": "Drei Läufe unter verschiedenen Bedingungen; ein Vergleich der Modelle folgt daraus nicht. Engere Fassung nach Astras Gegenlesen, vom Eigentümer am 08.11. bestätigt."
+    },
+    {
+      "id": "arbeitsweise-a27",
+      "aussage": "In keinem der 3 Test-PRs hat der Prüfling ein rot gebliebenes Prüfergebnis ausdrücklich nachgetragen, obwohl jeder mindestens eine rote Prüfung hatte.",
+      "status": "belegt",
+      "seit": "2026-11-08",
+      "quellen": [
+        {
+          "datei": "evals/neustart-daten/ergebnisse/2026-11-07-gegenlesen-astra.md",
+          "stelle": "Prüfung der zwei vorgesehenen Aussagen, 4b; Prüfläufe im Vergleich"
+        }
+      ],
+      "notiz": "Die Kommentare entstanden vor Abschluss der Prüfungen; ob die Prüflinge die Fehler sehen konnten, ist nicht nachgewiesen."
     }
   ],
   "fragen": [

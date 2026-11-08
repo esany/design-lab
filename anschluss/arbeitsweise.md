@@ -1,7 +1,7 @@
 ---
 thema: Arbeitsweise mit KI · Wissensformen
 stand: Drei Stränge (08.11.): Prüfstand – automatische Prüfung baut die Übersichten selbst (0033), Testeinträge von Astra gegengelesen; Leitfaden – Leitfaden-Sicherung und Konzeptstand übernommen, Konkretisierung im eigenen Chat; KI-Fachpaket – Konzept, in Teilen überholt durch den Konzeptstand.
-naechster_schritt: Claude trägt die zwei Beobachtungen in Astras engerer Fassung ein; Codex prüft Astras Selbstbewertung ihres Testeintrags gegen (Auftrag beim Eigentümer); danach schließt Claude den Prüfstand ab.
+naechster_schritt: Codex prüft Astras Selbstbewertung ihres Testeintrags gegen (Auftrag beim Eigentümer); danach übernimmt Claude die Auswertung der Testeinträge und schließt die drei Testeinträge und damit den Prüfstand.
 offen: []
 ---
 
@@ -50,10 +50,9 @@ Nummern):
 1. *Erledigt:* Leitfaden-Sicherung geprüft; Ergebnis als Kommentar dort (08.11.).
 2. *Erledigt (08.11.):* Die automatische Prüfung baut die Übersichten selbst und läuft beim Setzen
    eines Labels neu (f14, Ja; Schreibrechte auf PR-Branches, Ja; Entscheidung 0033).
-3. Zwei Beobachtungen in Astras engerer Fassung als Aussagen eintragen (Eigentümer: Ja, 08.11.):
-   Build-Weg in 2 von 3 Läufen nicht eingehalten, kein Modellvergleich; in 0 von 3 Läufen eine
-   rote Prüfung nachgetragen, ob sichtbar, offen. Nächste freie Nummer: a26.
-4. *Erledigt:* Astra hat die Auswertung gegengelesen (#148). Offen: Codex prüft Astras
+3. *Erledigt (08.11.):* Zwei Beobachtungen in Astras engerer Fassung eingetragen: a26
+   (abgeleitet) und a27 (belegt).
+4. *Erledigt:* Astra hat die Auswertung gegengelesen; übernommen (#148). Offen: Codex prüft Astras
    Selbstbewertung ihres eigenen Testeintrags gegen (Eigentümer: Ja, 08.11.).
 5. Danach: Auswertung und Gegenlesen übernehmen, die drei Testeinträge schließen.
 
