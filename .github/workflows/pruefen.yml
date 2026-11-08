@@ -2,15 +2,66 @@ name: Prüfen
 
 on:
   pull_request:
+    # labeled/unlabeled: Ein nachträglich gesetztes Label (z. B. ohne-verlauf) prüft neu (0033).
+    types: [opened, synchronize, reopened, labeled, unlabeled]
   push:
     branches: [main]
+  workflow_dispatch:
+    # Start durch „Übersichten erzeugen“ nach dessen Commit; pr nennt den Pull Request.
+    inputs:
+      pr:
+        description: Nummer des Pull Requests
+        required: false
 
 permissions:
   contents: read
 
 jobs:
+  uebersichten:
+    # Baut die erzeugten Dateien im PR-Branch selbst und schreibt sie zurück (0033).
+    # Nur für Branches dieses Repos, nie auf main.
+    name: Übersichten erzeugen
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.event.pull_request.head.ref != 'main'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: write
+    outputs:
+      gebaut: ${{ steps.bauen.outputs.gebaut }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Neu erzeugen, bei Änderung committen und Prüfung neu starten
+        id: bauen
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ZWEIG: ${{ github.event.pull_request.head.ref }}
+          PR: ${{ github.event.number }}
+        run: |
+          node tools/build.mjs
+          git add -A
+          if git diff --cached --quiet; then
+            echo "gebaut=false" >> "$GITHUB_OUTPUT"
+            echo "Übersichten waren aktuell."
+            exit 0
+          fi
+          git diff --cached --stat
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Übersichten neu erzeugt (automatische Prüfung, 0033)"
+          git push origin "HEAD:$ZWEIG"
+          # Ein Push mit GITHUB_TOKEN startet keine Prüfung; workflow_dispatch schon.
+          gh workflow run pruefen.yml --ref "$ZWEIG" -f pr="$PR"
+          echo "gebaut=true" >> "$GITHUB_OUTPUT"
+
   struktur:
     name: Tokens, Studien, Index
+    needs: uebersichten
+    if: ${{ !cancelled() }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -18,6 +69,8 @@ jobs:
         with:
           node-version: 22
       - name: Erzeugte Dateien aktuell?
+        # Hat „Übersichten erzeugen“ neu gebaut, prüft der neu gestartete Lauf den neuen Stand.
+        if: needs.uebersichten.outputs.gebaut != 'true'
         run: node tools/build.mjs --check
       - name: Gegenbeweise für Stand-Gitter
         run: node tools/gitter-test.mjs
@@ -91,4 +144,5 @@ jobs:
       - name: Offene Issues und Verlauf prüfen
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMMER: ${{ inputs.pr }}
         run: node tools/stand-github.mjs
