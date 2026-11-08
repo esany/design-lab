@@ -17,8 +17,10 @@ statt Textberge, und wie bleibt das Wissen für jeden Chat erreichbar, ohne dass
 **Entschieden:**
 - Leitfaden „Mit KI arbeiten“ auf der Website, monatlich gepflegt (0032, Probe bis 05.12.); seit
   06.11. mit Einträgen zu Unsicherheit, Nichtwissen und Freigabe vor dem Handeln (#131).
-- Mehrere Leitfäden je Thema; das Labor ist für Gestaltung und Entwurf, fremdes Fachwissen bleibt
-  in dessen Projekt.
+- Mehrere Leitfäden je Thema *(überholt durch den [Konzeptstand 08.11.](../research/2026-11-wissensformen/konzeptstand-2026-11-08.md):
+  war nicht entschieden, sondern ein „vielleicht“ des Eigentümers (konzept.md, Abschnitt 5); seit
+  06.11. gilt die Richtung eines wachsenden Leitfadens; ob es mehrere gibt, ist offen)*; das Labor
+  ist für Gestaltung und Entwurf, fremdes Fachwissen bleibt in dessen Projekt.
 - **06.11.:** Die einzige Wahrheit liegt in Git (Dateien und Datensätze mit Schema). Eine Datenbank
   kommt höchstens später als abgeleiteter Suchindex.
 - **06.11.:** Pilot an diesem Thema: Datenmodell im Kleinen, daraus erzeugte Übersicht; danach
@@ -43,7 +45,7 @@ Nummern):
 | | Strang | Stand | Hängt ab von |
 |---|---|---|---|
 | **A** | Prüfstand | Leitfaden-Sicherung geprüft, vorgelegt (07.11.); Auswertung der Testeinträge auf Branch `lab/neustart-daten-auswertung`, nicht gegengelesen; Testeinträge offen als Belege | – |
-| **B** | Leitfaden | Leitfaden-Sicherung: Keime, offenes System, Fragen f18–f27; Bericht als Kommentar, Konflikt gelöst, nicht übernommen | Prüfstand (Prüfung der Leitfaden-Sicherung) |
+| **B** | Leitfaden | Konzeptstand 08.11.: Gegenstand Entwurfsarbeit, KI ein Werkzeug darin; eigener Erkenntnisort, keine Ansicht des KI-Fachpakets (Abschnitt „Leitfaden: was gilt, was offen“). Leitfaden-Sicherung (Keime, offenes System, Fragen f18–f27) geprüft, nicht übernommen | Entscheidung des Eigentümers über die Leitfaden-Sicherung (Prüfung erledigt 07.11.) |
 | **C** | KI-Fachpaket | Konzept `research/2026-11-wissensformen/fachpaket-ki-werkzeug.md`; „Rollen der Orte“ und „Schwelle“ überholt durch den [Konzeptstand 08.11.](../research/2026-11-wissensformen/konzeptstand-2026-11-08.md) | Leitfaden (erst danach; getrennte Erkenntnisorte, keine Ansicht) |
 
 **Prüfstand im frischen Chat, in dieser Reihenfolge:**
@@ -61,6 +63,23 @@ Nummern):
    07.11. im Chat formuliert, der Eigentümer gibt ihn weiter. Claude bewertet im Testeintrag von
    Claude sich selbst.
 5. Erst danach: Auswertung übernehmen, die drei Testeinträge schließen.
+
+**Leitfaden: was gilt, was offen (08.11.)** · Herleitung und Fundstellen im
+[Konzeptstand 08.11.](../research/2026-11-wissensformen/konzeptstand-2026-11-08.md), Antworten im Wortlaut in
+den Daten.
+- *Gilt:* Der Leitfaden steht für Entwurfsarbeit als übergeordnete Fachlichkeit; die KI ist ein
+  Werkzeug darin, nicht das Zentrum. Er ist der Erkenntnisort des Gestalters, getrennt vom
+  KI-Fachpaket und nicht dessen Ansicht. Er wächst offen: generisch, mit Fachbegriffen, freien Tags
+  und Relationen, ohne feste Bereiche. Wissen entsteht im Chat (Projekte, Fundstücke, Recherchen,
+  Diskussionen, Arbeit am Labor); feste Wege gibt es nicht; der Eigentümer gibt Themen frei, die KI
+  schlägt den Ort vor.
+- *Offen:* Übernahme der Leitfaden-Sicherung; Minimalform als Anfang; Name (0032 sagt „Mit KI
+  arbeiten“); ein oder mehrere Leitfäden; die 24 bestehenden Einträge, davon 15 mit Bezug zur
+  eigenen Arbeit; das Datenformat (Konzeptstand, Abschnitt „Datenformat“), gebaut wird erst nach
+  der Minimalform. Warten auf Ja: der Satz des Eigentümers zum Labor als Werkzeug, dessen Prinzipien
+  seinem eigenen Entwurf zugrunde liegen, für den Intent; zwei Keime und eine Beobachtung aus dem
+  Chat vom 08.11.; zwei Vorschläge zu parallelen Entwurfsrichtungen (Konzeptstand, Abschnitt
+  „Befund“).
 
 **Vorschläge aus dem Konzeptstand 08.11.** (keine Regeln, nicht beschlossen): fester Moment am
 Chatende („Das ist nebenbei entstanden, soll es bleiben?“; der Eigentümer gibt Themen frei, die KI

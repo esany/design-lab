@@ -2,7 +2,7 @@
 dient: A04, A05, A07, A08, A10, A14, A23, A27, A33
 datum: 2026-11-05
 modell: Claude Opus 5.5 (Claude-App, Cloud-Sitzung)
-status: Konzept. Beschlossen ist nur der Leitfaden (0032). Alles Weitere wartet auf die Antworten des Eigentümers.
+status: Konzept. Beschlossen ist nur der Leitfaden (0032). Abschnitt 2 (Leitfaden und Fachpaket), 5 und 7 teilweise überholt durch konzeptstand-2026-11-08.md.
 ---
 
 # Arbeitsteilung der Wissensformen: Leitfaden, Radar, Fachpakete, Korpus
@@ -58,6 +58,8 @@ Zeit bleiben, ohne dafür Techniker werden zu müssen.
 - Der Leitfaden verweist auf Radar-Einträge, das Radar verweist auf Leitfaden-Kriterien. Keiner
   kopiert den anderen.
 
+> **Überholt durch [Konzeptstand 08.11.](konzeptstand-2026-11-08.md):** Leitfaden und Fachpaket unterscheiden sich nicht nur durch den Leser, sondern als Erkenntnisorte; zwischen ihnen gibt es keine festen Wege, auch keine Übersetzung vom Fachpaket in einen Leitfaden-Bereich „Domänen“.
+
 **Leitfaden und Fachpaket** unterscheiden sich durch den Leser. Ein Fachpaket wird vom Modell
 während der Arbeit geladen und ist dicht und lang. Der Leitfaden-Bereich „Domänen“ übersetzt
 für den Menschen nur, was dort gerade wichtig ist, und verlinkt hinein.
@@ -102,6 +104,8 @@ aber für dieses Publikum, Gerät und diese Menge eine ästhetische Wahl mit ben
 (Manifest, Leitsatz 3).
 
 ## 5 · Leitfäden je Thema statt eines wachsenden Leitfadens
+
+> **Überholt durch [Konzeptstand 08.11.](konzeptstand-2026-11-08.md):** Die Familie von Leitfäden mit festen Fragen und Bereichen ist nicht beschlossen; seit 06.11. gilt die Richtung eines wachsenden Leitfadens für Entwurfsarbeit mit freien Tags und Relationen, ohne feste Bereiche. Ob es mehrere Leitfäden gibt, ist offen. Der Leitfaden „Gestalten mit KI“ als Übersetzung der Fachpakete entfällt (keine festen Wege). **Weiter gültig** ist der Absatz „Grenze des Labors“ am Ende dieses Abschnitts.
 
 **Anlass (Eigentümer, 05.11.):** „Vielleicht gibt es auch verschiedene Themen in den Leitfäden,
 das hatten wir ja schon bei der KI festgestellt.“ Schon der erste Leitfaden hatte zwei
@@ -153,6 +157,8 @@ und der Leitfaden „Gestalten mit KI“ bleiben bei den Gestaltungsfeldern.
   Werkzeug ins Radar.
 
 ## 7 · Reihenfolge (Vorschlag)
+
+> **Überholt durch [Konzeptstand 08.11.](konzeptstand-2026-11-08.md):** Die Schritte 1 (Leitfäden aufteilen, „Systeme entwickeln“ anlegen) und 3 (weitere Leitfäden und Bereiche, je einer pro Monat). Nächster Schritt am Leitfaden ist die Minimalform (Frage `arbeitsweise-f26`). Schritt 2 (Radar als Daten und Ansicht) ist davon nicht berührt.
 
 1. Leitfäden aufteilen und den zweiten Leitfaden „Systeme entwickeln“ mit den Bereichen „Prüfen und
    Qualität“ sowie „Anforderungen und Abnahme“ anlegen. Das ist das akute Problem in paleo-type.

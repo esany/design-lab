@@ -47,10 +47,83 @@ Soll der Leitfaden die Ansicht des Fachpakets „KI als Werkzeug“ werden (f16)
   Stufenfolge, Stufe 3 „Eintrag im Fachpaket, sichtbar im Leitfaden“). Der übrige Inhalt bleibt
   als Bestand brauchbar.
 - Merkzettel Arbeitsweise, Strang „KI-Fachpaket“: die Abhängigkeit „als Ansicht?“.
+- *Nachtrag 08.11.:* `konzept.md`, Abschnitt 2 (Leitfaden und Fachpaket nur nach Leser), Abschnitt 5
+  (Familie von Leitfäden mit festen Bereichen; weiter gültig: „Grenze des Labors“) und Abschnitt 7,
+  Schritte 1 und 3.
+- *Nachtrag 08.11.:* Merkzettel, „Entschieden“: „Mehrere Leitfäden je Thema“ war ein „vielleicht“.
+- *Nachtrag 08.11.:* `decisions/0032`: der Gegenstand („Mit KI arbeiten“, KI im Zentrum); Vermerk im
+  Kopf der Entscheidung.
 
-**Nicht berührt, weiter offen:** f26 (Minimalform des Leitfadens), Name und Gegenstand des
-Leitfadens in 0032, ein oder mehrere Leitfäden (Bericht zu #143, A1), das Fachpaket „Entwerfen“
-(Merkzettel Wissen, Frage 3). Sie folgen nicht aus diesem Stand und warten auf echte Arbeit.
+**Nicht berührt, weiter offen:** f26 (Minimalform des Leitfadens), der Name des Leitfadens in 0032,
+ein oder mehrere Leitfäden (Bericht zu #143, A1), das Fachpaket „Entwerfen“ (Merkzettel Wissen,
+Frage 3). *Berichtigt am 08.11.:* Der Gegenstand ist nicht offen, er folgt aus Stand 1.
+
+## Befund: parallele Entwurfsrichtungen (Nachtrag 08.11., *abgeleitet*)
+
+These des Eigentümers (f37): vorgesorgt war, aber parallele Entwurfsrichtungen mit Schnittmengen
+haben den Prozess nicht ausreichend unterstützt und gesteuert.
+
+- **Vorgesorgt war** (*belegt*): Merkzettel je Thema, Regel „Kein Wissen nur im Chat“ (0024), Fragen
+  mit Antworten im Wortlaut (`daten/`), die Beobachtung vom 06.11., dass parallele Chats am selben
+  Thema kollidieren (Aussage a25 in der Leitfaden-Sicherung).
+- **Gebrochen ist es so** (*belegt*): Das Konzept zum KI-Fachpaket wurde am 07.11. um 08:15 Uhr
+  übernommen (#142), die Leitfaden-Sicherung kam elf Minuten später ins Repo (#143). Bis dahin stand
+  „Ki steht nicht im Zentrum“ (f24, 06.11.) nur im Nebenchat und einem privaten Dokument; das
+  Fachpaket-Konzept schlug das Gegenteil vor. Die Reihenfolge der Stränge wurde erst danach
+  festgelegt (#145). Der Auftrag, je Aufgabe festzuhalten, was sie berührt, wurde nie gesendet
+  (`leitfaden-wachsend.md`, Abschnitt 5).
+- **Kern:** Git meldete den Konflikt in den Dateien, und er wurde gelöst. Den Konflikt in der
+  Bedeutung sah keine Prüfung. Parallelität war nicht das Problem, sondern unsichtbare
+  Schnittmengen und kein geplantes Zusammenführen.
+- **Stand der Technik** (gesichtet, nicht im Korpus): mengenbasiertes Entwerfen nach Toyota
+  (Sobek, Ward, Liker 1999: parallele Alternativen, Zusammenführen an Schnittmengen, Festlegen erst
+  bei erwiesener Machbarkeit); Design Structure Matrix (Steward; Eppinger: Abhängigkeiten zeigen,
+  wo Abstimmung nötig ist); Mehrere KIs an einem Repo (2026): isolierte Arbeitskopien verschieben
+  Konflikte ins Zusammenführen, neuere Ansätze melden sie beim Schreiben (STORM, arXiv 2605.20563;
+  ICML-Position 2026 zu Concurrency Control).
+- **Vorschläge, nicht beschlossen:** Jede Entwurfsrichtung hält fest, welche Fragen und Konzepte sie
+  berührt, und eine erzeugte Übersicht zeigt Schnittmengen; laufen Richtungen parallel, wird ein
+  Moment des Zusammenführens geplant, an dem die KI den Konzeptstand schreibt und der Eigentümer
+  urteilt.
+
+## Warten auf das Ja des Eigentümers (Nachtrag 08.11.)
+
+- Sein Satz (f35) über das Labor als systemisch-methodisches Werkzeug, dessen Prinzipien seinem
+  eigenen Entwurfsprozess zugrunde liegen, und die Experimente als Prüfung, im Wortlaut in
+  `intent.md`.
+- Zwei Keime für den Leitfaden: „Trenne Fragen nach Ebene, bevor du Positionen abwägst“ und „Halte
+  einen aktuellen Konzeptstand; ältere Stände tragen ‚überholt durch‘“ (Bezug IBIS).
+- Eine Beobachtung, einmal gemacht: Die KI legt Widersprüche gleichrangig vor, statt zuerst die eine
+  Frage zum Entscheiden zu zeigen, verkürzt Bedeutung auf Struktur und übergeht den Wunsch nach
+  Namen statt Nummern (f36).
+- Die beiden Vorschläge aus dem Befund oben.
+
+## Datenformat des Leitfadens: was sich ändern müsste (nur genannt, nicht gebaut)
+
+Heute (`tools/build.mjs`, Abschnitt Leitfaden; `leitfaden/eintraege.json`): Pflichtfelder `id`,
+`bereich`, `status`, `regel`, `kurz`, `warum`, `beleg`, `quellen`, `labor`, `seit`, `geprueft`;
+Status `gilt` · `umstritten` · `veraltet`; jeder Eintrag wird veröffentlicht und nach Bereich
+gruppiert. Für den Stand oben und die Minimalform (f26) müsste sich ändern (*abgeleitet*):
+
+1. **Status „Keim“:** neuer Status vor „gilt“; Keime werden nicht als geltende Regel gezeigt
+   (eigene Ansicht oder sichtbar markiert). Zu klären: Verhältnis zu `beleg` (belegt · abgeleitet)
+   und Name „veraltet“ gegenüber „überholt“.
+2. **Freie Tags statt Bereich:** Feld `tags` (Liste, frei); `bereich` nicht mehr Pflicht. Die Seite
+   gruppiert nicht mehr nach Bereich, sondern filtert nach Tags (Mehrfachauswahl, Trefferzahl,
+   Auswahl in der Adresse; `leitfaden-wachsend.md`, Abschnitt 2b). Der Bereich „Überholt“ wird zum
+   Status.
+3. **Relationen:** Feld `relationen` mit `art` (verwandt · folgt aus · widerspricht) und `ziel`
+   (Kennung); der Build prüft, dass das Ziel existiert und die Art erlaubt ist.
+4. **Begriff:** Feld `begriff` für den Fachbegriff (Pattern-Name), mit Quelle.
+5. **Laborbelege:** `labor` nicht mehr Pflicht; Belege aus der eigenen Arbeit wandern in `daten/`
+   und verweisen auf die Kennung des Eintrags (f19). Bekannte Anwendungen aus der Literatur in
+   `quellen`.
+6. **Quellen bei Keimen:** Heute muss jede Quelle im Korpus stehen. Keime brauchen entweder eine
+   Aufnahme in den Korpus mit Lesestand oder dürfen bis „gilt“ ohne geprüfte Quelle sein.
+7. **Erzeugte Ansichten zum Wachsen:** Netz aus Tags, Einträgen und Relationen; Verlauf, wann was
+   dazukam (aus `seit` und `aenderungen`); Hinweise der KI auf ähnliche Tags, isolierte Einträge,
+   Keime ohne Quelle.
+8. **Titel:** `titel` und Kommentar im Build sagen „Mit KI arbeiten“; ändert sich erst mit dem Namen.
 
 ## Was wir gelernt haben (*abgeleitet*)
 
