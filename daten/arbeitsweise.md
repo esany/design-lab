@@ -7,13 +7,14 @@
 
 **Nächster Schritt:** Der Eigentümer entscheidet über die Leitfaden-Sicherung (#143); Claude macht im Prüfstand mit der automatischen Prüfung weiter (Abschnitt „Stränge und Reihenfolge“); das KI-Fachpaket erst nach dem Leitfaden.
 
-## Offene Fragen an den Eigentümer (5)
+## Offene Fragen an den Eigentümer (6)
 
 - **arbeitsweise-f01** Radar als Matrix (Empfehlung) oder Kreis? *(gestellt 2026-11-05)*
 - **arbeitsweise-f02** Gemeinsame Issue-Prüfung zuerst im Labor bauen? *(gestellt 2026-11-05)*
 - **arbeitsweise-f03** Befund zu paleo-type auf #408 notieren (dort gilt Pause)? *(gestellt 2026-11-05)*
 - **arbeitsweise-f04** Dürfen Fremde im öffentlichen Labor Issues anlegen? *(gestellt 2026-11-05)*
 - **arbeitsweise-f17** Lief Codex für #141 im Reiter „Codex“ der ChatGPT-App (Cloud) oder in einem normalen Chat? *(gestellt 2026-11-07)*
+- **arbeitsweise-f26** Minimalform für den Leitfaden: Einträge mit freien Tags und drei Arten von Relationen, eine erzeugte Ansicht als Netz und Verlauf, erste Keime generisch – soll ich so anfangen? *(gestellt 2026-11-06)*
 
 ## Aussagen
 
@@ -55,7 +56,7 @@
 - **arbeitsweise-a19** Skills nach dem offenen Agent-Skills-Standard lesen Claude, ChatGPT und Codex gleichermaßen; der Ordner .agents/skills des Labors passt dazu.
   *Beleg:* [k:openai-codex-skills-2026], Einleitung
 
-### Abgeleitet (9)
+### Abgeleitet (11)
 
 - **arbeitsweise-a01** Fortschritt kommt in der Arbeit mit der KI als Text zurück, nicht als etwas zum Ansehen oder Ausprobieren; der Gestalter sieht deshalb nicht, ob Strukturen tragen.
 - **arbeitsweise-a06** Wurzel des Problems: Im Entwurf antwortet das Material, in der Arbeit mit der KI nur Text; der Gestalter ersetzt sein Urteil durch Regeln.
@@ -71,13 +72,17 @@
 - **arbeitsweise-a21** Sperren, die für Claude und Astra in ihren Chats gleich gelten, sind nur die Prüfungen auf GitHub; Hooks wirken nur in Claude Code und in der Codex-Kommandozeile.
 - **arbeitsweise-a22** Bei der Größe des Labors (wenige tausend Tokens Startlast) zählt für die Tokenökonomie weniger die Textmenge als Widerspruchsfreiheit: keine Doppelungen, keine alten Fassungen neben neuen.
   *Beleg:* [k:chroma-context-rot-2025], Ablenkung durch ähnliche, irrelevante Inhalte
+- **arbeitsweise-a24** Beim Übertragen ins Repo wird ein bedingtes Ja des Eigentümers leicht zu einem glatten Ja verdichtet; der Vorbehalt geht verloren, und das Repo wirkt entschiedener als der Eigentümer war.
+  *Grenze:* Beispiel: Der Merkzettel führt „Mehrere Leitfäden je Thema“ unter „Entschieden“; laut Rückschau des Chats vom 05.11. war es ein „vielleicht“.
+- **arbeitsweise-a25** Zwei Chats am selben Thema, die nichts voneinander wissen, erzeugen widersprüchliche Änderungen an denselben Dateien; parallel trägt nur nach Thema getrennt oder als bewusster Vergleich.
+  *Grenze:* Im Labor: #129 übernommen 30 Sekunden vor dem Anhalten aus einem zweiten Chat; extern CooperBench (Keim in der Herleitung, Quelle noch nicht im Korpus).
 
 ### Nicht belegt (1)
 
 - **arbeitsweise-a23** Astra (ChatGPT) kann Code ausführen und über den GitHub-Connector schreiben.
   *Grenze:* Angabe des Eigentümers im Chat vom 06.11.; im Pilot (Schritt 4) zu prüfen.
 
-## Beantwortete Fragen (17, neueste zuerst)
+## Beantwortete Fragen (26, neueste zuerst)
 
 - **2026-11-08** Soll ich den berichtigten Konzeptstand so ablegen (Antworten im Wortlaut, Seite zum Konzeptstand, Teile des Fachpaket-Konzepts als überholt markieren, zwei Vorschläge in den Merkzettel)?
   → „Ja“ *(Chat zum Verhältnis Leitfaden – Fachpakete (Claude, 08.11.); Konzeptstand: research/2026-11-wissensformen/konzeptstand-2026-11-08.md.)*
@@ -95,6 +100,24 @@
   → „Ja, sehr gerne“ *(Konzept: research/2026-11-wissensformen/fachpaket-ki-werkzeug.md. Bearbeitung in frischem Chat.)*
 - **2026-11-07** Soll ich die zwei Änderungen an der automatischen Prüfung (Übersicht selbst bauen; neu prüfen, wenn ein Label gesetzt wird) als PR vorbereiten?
   → „Ja“ *(Noch nicht umgesetzt; Übernahme erst nach Ja, weil .github/ betroffen.)*
+- **2026-11-06** Das Material aus dem Nebenchat jetzt über einen PR mit eigener Datei sichern, oder warten, bis der Prüffall neustart-daten ausgewertet ist?
+  → „Dann warten wir“ *(Nebenchat zum Leitfaden; gesichert per Prüfauftrag am 07.11. Gesichert am 07.11. auf Prüfauftrag des Eigentümers.)*
+- **2026-11-06** Magst du zwei oder drei konkrete Erfahrungen mit dem Tooling erzählen, die dich am meisten gebremst haben?
+  → „Deinesota Ansätze sind selbst wieder pattern des leitfadens. Ich hatte ja auch nicht von facettierung gesprochen, sondern tagging. Aber natürlich irgendwelche Relationen. Ich will und wenn ich dich richtig verstehe dem leitfaden beim wachsen zuschauen können. Das tagging system erlaubt mir eine intuitive nuederschwellige Orientierung, Navigation und Vermittlung und wird zum Werkzeug für Erkenntnisgewinn. Meine Erfahrungen und fragen habe ich dich schon in fülle dokumentiert!“ *(Nebenchat zum Leitfaden; gesichert per Prüfauftrag am 07.11. Die Frage war überflüssig: Erfahrungen und Fragen standen schon in f20 und im Intent.)*
+- **2026-11-06** Ich schreibe das Zielbild-Dokument auf den Leitfaden um; die Entwurfsprinzipien bleiben als erste Einträge. Soll ich das so machen?
+  → „Ja, ein Anfang, du verfehlst aber meinen intent, den wir am ende der Konzeption herausgearbeitet haben. Ki steht nicht im Zentrum“ *(Nebenchat zum Leitfaden; gesichert per Prüfauftrag am 07.11.)*
+- **2026-11-06** Soll der Leitfaden „Entwurfsarbeit“ heißen und so gebaut werden, mit der KI als einer Kategorie?
+  → „Ich will ein organisches wachsendes dynamisches System haben, und ich glaube durch ki wird möglich“ *(Nebenchat zum Leitfaden; gesichert per Prüfauftrag am 07.11. Der Name ist damit nicht entschieden.)*
+- **2026-11-06** „Übergeordnete Codeskills“: a) Code-Verständnis für dich oder b) Skills für die KI? Ich vermute a.
+  → „Du hast mich nicht verstanden.. wir könnten den leitfaden auf entwurfsarbeit erweitern.. dann wird ki zum Werkzeug. Genauso wie code, generisches oder parametrisches design, gestaltgesetze, infoarchitektur.. ist das zu groß“ *(Nebenchat zum Leitfaden; gesichert per Prüfauftrag am 07.11. Die Frage nach den Codeskills selbst blieb offen.)*
+- **2026-11-06** Schritt 1, angepasst: Nachtrag in 0032 (vier Anforderungen, Leitfragen im Wortlaut), die 24 Einträge generisch mit Facetten, Abdeckungsmatrix – passt Schritt 1 so?
+  → „Für mich ist der leitfaden einfach das erschließen eines werkzeuges zur entwurfsarbeit mit der ki. Design systeme etc. Sind vlt. In einer anderen Leitfaden Kategorie anzusiedeln, Schnittstellen wären dann json strukturen und mcp.. vlt. Braucht der Leitfaden auch übergeordnete codeskills“ *(Nebenchat zum Leitfaden; gesichert per Prüfauftrag am 07.11.)*
+- **2026-11-06** Passen die Facetten? Nenne mir drei bis fünf echte Fragen, mit denen du im Leitfaden suchen würdest.
+  → „Keine ahnung, es geht mir um allgemeine fragen und verständnis zur ki, der Arbeitsteilung zwischen mensch und Maschine. Wir gestalten wir sie, was heißt das konkret in meinem versuch komplexe werkzeuge zu bauen? Welche Ansätze sind aber auch im kreativen und visuellen kontext mit der ki sota. Banal sind design systeme, mcp, keine Ahnung anderes tooling und workarounds.. wie kann ich die ki steuern ( prompts, git, issues) Ich will maximale Entlastung, ich möchte mich auf kreatives arbeiten konzentrieren, statt die ki babysitten und dabei zu versagen. Tokenokönomie, wie halte ich Projekte maximal günstig, ohne Qualität zu reduzieren? Wie baue ich Schwergewichtige Werkzeuge statt prosa, welche Strukturen braucht die ki, welche Struktur men braucht der Mensch, wo können / müssen sie transparent sichtbar werden.. wo braucht es Schnittstellen. Auch hier, wo ist der traidoff zu pflegbar, nachhaltig, tokeneffizient, basierend auf giten engineering prinzipien Das ganze sollte ganzheitlich und systematisch verstanden werden“ *(Nebenchat zum Leitfaden; gesichert per Prüfauftrag am 07.11.)*
+- **2026-11-06** Wohin mit den Laborbelegen (Feld labor)? Empfehlung: Der Leitfaden nennt bekannte Anwendungen (Known Uses) aus der Literatur; die Laborbelege wandern in die Pilotdaten und verweisen auf den Eintrag.
+  → „Zu 1 ja“ *(Nebenchat zum Leitfaden; gesichert per Prüfauftrag am 07.11.)*
+- **2026-11-06** Zwei neue Einträge (Arbeite parallel nur an getrennten Dingen; Gib Ergebnisse über das Repo weiter, nicht über dich) in leitfaden/eintraege.json, eine Zeile unter „Änderungen“ und CooperBench im Korpus – passt das so?
+  → „Bitte las den Leitfaden generisch!! Keine Beispiele aus unserer Arbeit. Tage ihn, damit wir die regeln des Leitfadens koformtabel durchsuchen können. Prüfe auf sota interaction pattern und informationsarchitektur. Organisiere dir diese Anweisungen passfähig“ *(Nebenchat zum Leitfaden; gesichert per Prüfauftrag am 07.11. Danach im selben Chat: „Verwende auch Fachbegriffe oder verweise, der begriff oder ansatz des .. pattern wurde weichgespült“.)*
 - **2026-11-06** Soll ich PR #135 übernehmen und mit Schritt 2 weitermachen?
   → „Ich gebe nächste schritte frei“ *(Gelesen als Freigabe für die Übernahme von #135 und die Schritte 2 bis 4 des Pilots.)*
 - **2026-11-06** Soll ich mit Schritt 1 (Schema und Prüfung) anfangen?
