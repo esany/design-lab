@@ -3,9 +3,9 @@
 > Erzeugt von `node tools/build.mjs` aus `daten/arbeitsweise.json` und dem Merkzettel
 > `anschluss/arbeitsweise.md`. Nicht von Hand ändern. Modelle lesen die Daten, nicht diese Seite.
 
-**Stand:** Drei Stränge (08.11.): Prüfstand abgeschlossen – Testeinträge ausgewertet, zweimal gegengelesen, geschlossen; automatische Prüfung baut die Übersichten selbst (0033); Leitfaden – Leitfaden-Sicherung und Konzeptstand übernommen, Konkretisierung im eigenen Chat; KI-Fachpaket – Konzept, in Teilen überholt durch den Konzeptstand.
+**Stand:** Prüfstand abgeschlossen (08.11.); Prüfung baut Übersichten selbst, Verlauf als Einzeldateien, rote Prüfung wird gemeldet; Leitfaden auf Grundlage des Konzeptstands 08.11. im eigenen Chat; KI-Fachpaket wartet auf den Leitfaden.
 
-**Nächster Schritt:** Der Leitfaden-Chat konkretisiert den Leitfaden auf Grundlage des Konzeptstands (Eigentümer und Leitfaden-Chat); der Prüfstand hat keinen offenen Schritt.
+**Nächster Schritt:** Leitfaden-Chat: Minimalform und Datenformat des Leitfadens mit dem Eigentümer klären und bauen.
 
 ## Offene Fragen an den Eigentümer (6)
 
