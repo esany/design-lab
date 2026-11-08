@@ -2,91 +2,100 @@
 dient: A04, A06, A10, A27
 datum: 2026-11-08
 modell: Claude Opus 5.5 (Claude-App, Cloud-Sitzung)
-status: Fall gelesen (Stufe 2 nach Vorschlag 0031). Nicht gegengelesen. Keine Regel abgeleitet; Fragen an den Eigentümer am Ende.
+status: Stufe 2 nach Vorschlag 0031. Nicht gegengelesen. Keine Regel abgeleitet; Kandidaten am Ende.
 ---
 
-# Fall: Lev Manovich, Text Time-lapse 1 → 2, mit Claude gebaut
+# Fall: Lev Manovich, Text Time-lapse 2 – was man über Infrastruktur, Bedienung und Darstellung lernen kann
 
-Auftrag des Eigentümers (Chat, 08.11.): das Fundstück vertiefen, also die Commit-Folge als Fall
-lesen und gegen die eigene Studienpraxis halten. Sichtung und Nachtrag: Issue #153.
+Auftrag des Eigentümers (Chat, 08.11.): das Fundstück vertiefen. Eine erste Fassung verglich Takt
+und Textmenge mit dem Labor. Der Eigentümer hat das verworfen, weil die Rahmenbedingungen unbekannt
+sind (Werkzeuge, Vorarbeit, Infrastruktur, Kosten). Gefragt ist jetzt: Was lässt sich am Werk selbst
+über Infrastruktur, UI und UX lernen? Sichtung: Issue #153.
 
-**Kurzantwort:** Manovich arbeitet mit derselben KI und in derselben Form wie das Labor, aber in
-umgekehrtem Verhältnis. Bei ihm antwortet alle fünf Minuten das Werk, und der Text (Commit-Zeile,
-Anleitung) beschreibt nur, was man sieht. Im Labor wächst der Text schneller als das Werk. Der Fall
-stützt die Wurzel, die das Labor am 05.11. selbst benannt hat: Im Entwurf muss das Material
-antworten (`experiments/2026-10-entwurfsprozess.md`, Abschnitt „Beobachtung 05.11.“).
+**Kurzantwort:** Am meisten lässt sich über die Infrastruktur lernen. Eine öffentliche Seite liest
+private Dateien nur im Browser, also ohne Server und ohne Hochladen, und das Beispiel steckt als
+kleines, vorberechnetes Datenmodell in der Seite. Bei der Bedienung lohnen sich fünf Muster:
+Start mit Beispiel, Zahlen auf den Knöpfen, Hilfemodus, ein Layout, das beim Umschalten stillsteht,
+und Einstellungen nur dort, wo sie wirken. Schwach ist die Lesbarkeit: Farbe trägt zugleich Daten
+und Text, späte Fassungen liegen unter dem Kontrastminimum.
 
-## 1 Material
+## 1 Material und was unbekannt bleibt
 
-Quelle: öffentliches Repo `levmanovich/manovich-interactive`, Zweig `main`, Klon vom 08.11.2026,
-Ordner `text-time-lapse/` und `text-time-lapse-2/`. Laufende Fassung:
-https://levmanovich.github.io/manovich-interactive/text-time-lapse-2/. Das Repo hat keine
-Lizenzdatei. Deshalb steht hier kein Code und keine Zeile aus dem Beispiel-Essay, nur Zahlen und
-kurze Commit-Titel als Fundstellen.
+Quelle: öffentliches Repo `levmanovich/manovich-interactive`, Klon vom 08.11.2026, Ordner
+`text-time-lapse-2/`; laufende Fassung
+https://levmanovich.github.io/manovich-interactive/text-time-lapse-2/. Keine Lizenzdatei, daher
+hier kein Code, kein Text aus dem Beispiel-Essay und keine Bildschirmfotos (sie zeigen den Essay).
+Eigene Tests: Seite aus dem Klon in Chrome ohne Bildschirm, 1440 × 900 hell und dunkel, 390 × 844
+mobil; Tastatur; axe-core 4 (WCAG 2 A/AA).
 
-## 2 Was die Commit-Folge zeigt
+| Bekannt | Unbekannt |
+|---|---|
+| Alle 48 Commits beider Fassungen nennen Claude Opus 5.5 als Mitautor, mit Claude-Sitzung (git log) | weitere Werkzeuge, Tarif, Tokenkosten, Zeit außerhalb der Commits |
+| Der Code verweist auf ein älteres Werkzeug: Kommentare „same steps as history.py“ und „so results match the original tool“ (`index.html`) | dieses Werkzeug selbst, frühere Studien, wie Fassung 1 entstand (sie kommt als ein Commit mit 1 265 Zeilen) |
+| Manovich hat Erfahrung mit Werkzeugen dieser Art (ImagePlot seit 2009, README) | seine Vorgaben an die KI, Anteil der KI an Ideen |
 
-| Befund | Zahl oder Fundstelle | Status |
+Die Vorarbeit ist also real und nur zum Teil sichtbar. *belegt (Verweise); Umfang nicht belegt*
+
+## 2 Infrastruktur
+
+| Befund | Fundstelle, Messung | Status |
 |---|---|---|
-| Umfang | 48 Commits auf beide Fassungen, 06.11. 10:21 bis 08.11. 10:32 | belegt (git log) |
-| Mitautor | alle 48 mit `Co-Authored-By: Claude Opus 5.5` und Link auf eine Claude-Sitzung | belegt |
-| Takt | 44 der 47 Abstände unter einer Stunde, Median 5,3 Minuten | belegt (gerechnet) |
-| Schrittgröße | Median 14 geänderte Code-Zeilen je Commit; 25 von 43 Commits mit Code-Änderung ändern höchstens 20 Zeilen | belegt (gerechnet) |
-| Anleitung wächst mit | 31 von 48 Commits ändern zugleich eine README (Anleitung für Nutzer) | belegt (gerechnet) |
-| Vorgeschichte | Fassung 1 kommt als ein Commit mit 1 265 Zeilen; wie sie entstand, ist nicht sichtbar | belegt; Lücke |
-| Abzweig statt Umbau | Fassung 2 entsteht am 07.11. 17:32 als Kopie (1 506 Zeilen); Fassung 1 bleibt erhalten und verlinkt | belegt |
-| Commit-Titel | beschreiben, was man sieht, in Alltagssprache, z. B. „quieter panel“, „calmer Advanced“, „removed words as pale bars instead of outlines“ | belegt |
-| Korrektur offen | „(work in progress)“ um 22:20, „(fixed)“ um 22:28 | belegt |
-| Gestaltungsthemen | Ruhe (weniger auf einmal zeigen), Stillstand beim Umschalten („nothing moves“, „keeps one height“), Einheitlichkeit („same design as the upper controls“), sinnvolle Vorgabe („Revisions chosen at the start, so Play works right away“) | belegt (Titel); Bündelung abgeleitet |
-| Kein Regelapparat im Repo | keine AGENTS.md, CLAUDE.md, Entscheidungen oder Prüfregeln; die Steuerung liegt im Chat und in seinem Urteil beim Ansehen | belegt (Dateiliste); Deutung abgeleitet |
-| Rollen | Manovich entscheidet, Claude setzt um | abgeleitet (Titel als Entscheidungen formuliert); die Chats selbst sind nicht einsehbar |
+| Eine Datei, ohne Build und ohne Framework: 227 KB, davon ≈ 193 KB JavaScript und ≈ 20 KB CSS | `index.html`, gemessen | belegt |
+| Nur zwei fremde Abhängigkeiten: JSZip (nur für .docx) und Google Fonts | Netzanfragen beim Laden | getestet |
+| Veröffentlichung über GitHub Pages; die README ist zugleich Anleitung; eine Startseite im Repo verbindet die Werkzeuge | Repo | belegt |
+| **Private Dateien bleiben im Browser:** Ordner- und Dateiwahl, Ziehen und Ablegen, Lesen über die Datei-Schnittstelle des Browsers; keine Netzaufrufe für Inhalte | `webkitdirectory`, Ereignis `drop`; keine `fetch`-Aufrufe ins Netz | belegt (Code); mit eigenen Dateien nicht getestet |
+| **Beispiel als Datenmodell, nicht als 16 Dateien:** eine „Wortgeschichte“, je Wort: Text, Fassung der Entstehung, Fassung der Streichung, Art der Änderung (≈ 105 KB) | Konstante `EX_D` | belegt |
+| Der Wortvergleich ist eine Übertragung von Pythons `difflib.SequenceMatcher`, damit die Ergebnisse dem älteren Werkzeug gleichen | Kommentar am `matcher` | belegt |
+| Einstellungen bleiben im Browser gespeichert, Zugriffe in `try/catch` | `localStorage` | belegt |
+| Der Seitenumbruch je Ansicht wird berechnet, zwischengespeichert und im Hintergrund vorab gerechnet | `solve`, `fitCache`, `prefetch` | belegt |
+| Fassung 1 bleibt als eigener Ordner und eigene Adresse stehen; Varianten sind Adressen, keine Zweige | Repo | belegt |
 
-## 3 Gegenprobe Labor (vom Beginn bis 08.11.)
+## 3 Bedienung (UI und UX)
 
-| Befund | Zahl | Status |
+| Muster | Beobachtung | Status |
 |---|---|---|
-| Commits auf `main` | 143, 27.10. bis 08.11. | belegt (git log) |
-| davon in `studies/` | 3, alle am 27.10. | belegt |
-| Markdown im Repo | ≈ 672 KB | belegt (gemessen) |
-| Code von Studien und Flyer-Werkzeugen | ≈ 46 KB (nur `.js`/`index.html`/`.html` in `studies/` und im Flyer-Experiment) | belegt (gemessen); grobe Messung, Werk- und Systemanteile nicht getrennt |
-| Commit-Titel | überwiegend Verfahren: „Arbeitsweise: …“, „Leitfaden: …“, „Pilot Datenmodell …“ | belegt (letzte 15 Titel) |
+| **Start mit Beispiel** | Die Seite öffnet nie leer: Beispiel geladen, „Revisions“ vorgewählt, ein Druck auf Play genügt; „Example“ holt es zurück | getestet |
+| **Zahlen auf den Knöpfen** | Jeder Ansichtsknopf nennt, was er zeigt: „Final text 3,946“, „Deleted 1,477“, „16 pages“ | getestet |
+| **Hilfemodus** | „?“ schaltet einen Modus, in dem ein Zeigen auf ein Bedienelement eine Erklärung daneben öffnet und nichts auslöst; Esc beendet; dazu ein Hinweis unten | getestet |
+| **Stillstand beim Umschalten** | Die Spieler-Zeile ist von Anfang an da, nur blass; Höhe bleibt beim Wechsel der Animation | getestet; als Ziel in Commit-Titeln benannt |
+| **Einstellungen nur, wo sie wirken** | Fünf Zeilen sichtbar, der Rest unter „Advanced“; Zeitsteuerung erscheint nur bei Revisions, Balkenregler nur bei Blocks | getestet |
+| **Eine Gestaltung für alles** | „Advanced“ nutzt dieselben Umschaltknöpfe und Abstände wie oben, je Zeile eine Art Bedienelement | getestet |
+| **Dieselben Daten, vier Ansichten** | Text, Balken, kleine Seite je Fassung, 3D-Stapel; dazu drei Animationen | getestet (Text, 16 pages, Player) |
+| **Bildschirmgröße** | Breit: Steuerung links, Seite rechts. Mobil: Steuerung eingeklappt, ganze Seite im Überblick, nichts läuft seitlich über | getestet |
+| **Dunkelmodus** | Die Oberfläche wird dunkel, die Seite bleibt weißes Papier | getestet; Absicht abgeleitet |
 
-Das Verhältnis Text zu Werk liegt grob bei 15 zu 1. Das deckt sich mit Symptom 4 der Beobachtung
-vom 05.11. („Text wächst schneller als Werk“). *abgeleitet*
+## 4 Darstellung und Lesbarkeit
 
-## 4 Lesart
+| Befund | Messung | Status |
+|---|---|---|
+| Fassung als Farbe auf einem Verlauf (Navy → Magenta → Orange), im Lab-Raum gemischt | Code `toLab`, `fromLab` | belegt |
+| Die Helligkeit steigt mit der Fassung: frühe Fassungen dunkel, späte hell; späte Wörter wirken leichter, obwohl sie den Endtext prägen | Bild, Kontrastwerte unten | abgeleitet |
+| Späte Fassungen (Orange) auf Weiß: Kontrast 2,2 bis 3,4 zu 1, unter dem Minimum 4,5 zu 1 | axe-core, 200 Stellen | getestet |
+| Graue Zeilenbeschriftungen der Steuerung: 3,1 zu 1 | axe-core | getestet |
+| Seite ohne Sprachangabe (`lang`) | axe-core | getestet |
+| Positiv: echte Knöpfe, Zustände für Hilfstechnik (`aria-pressed`, `aria-expanded`, 85 `aria-`-Angaben), sichtbarer Fokus, Rücksicht auf „weniger Bewegung“ bei der Einblendung | Tastaturtest, Code | getestet |
 
-1. **Das Material antwortet.** Jeder Schritt ist klein genug, dass Manovich ihn sofort ansieht
-   und beurteilt. Sein Urteilsinstrument ist das Ansehen der Seite, nicht ein Bericht. Genau das
-   fehlt laut Warum-Kette des Labors (Schritt 1 und 3). *abgeleitet*
-2. **Die Commit-Zeile ist eine Gestaltungsentscheidung.** Sie ist zugleich Protokoll, Begründung
-   in einem Halbsatz und Rückgängig-Punkt. Das Labor schreibt dafür Entscheidungsdateien,
-   Merkzettel und Verlaufseinträge. *abgeleitet*
-3. **Varianten als Werk.** Statt eine Entscheidung zwischen „alles zeigen“ und „ruhig“ zu
-   dokumentieren, veröffentlicht er beide Fassungen nebeneinander. Der Vergleich ist selbst Teil
-   des Werks. *abgeleitet*
-4. **Text dient dem Gebrauch.** Was neben dem Code wächst, ist die Anleitung für Nutzer, nicht
-   Verwaltung. *abgeleitet*
-5. **Das Werkzeug ist selbst ein Baustein, den das Labor geplant hat.** Text Time-lapse zeigt
-   Fassungen, Änderungen je Fassung und eine Zeitleiste. Das entspricht den Bausteinen B
-   (Laborbuch) und C (Vergleichsansicht) aus `experiments/2026-10-entwurfsprozess.md`, für Texte.
+Der Kern-Zielkonflikt: Dieselbe Farbe soll eine geordnete Größe (Zeit) zeigen und Text lesbar
+halten. Nach Bertin taugt der Farbton schlecht für Ordnung, die Helligkeit gut; die Helligkeit ist
+hier aber durch die Lesbarkeit begrenzt. *abgeleitet (Skill `bertin-semiologie`)*
+
+## 5 Kandidaten für das Labor (keine Regeln, Entscheidung beim Eigentümer)
+
+1. **Öffentliche Seite, private Daten im Browser.** Das löst einen offenen Punkt aus
+   `experiments/2026-10-entwurfsprozess.md`: Werke enthalten fremde Inhalte und brauchen deshalb
+   bisher eine private Oberfläche. Eine Studie oder ein Werkzeug könnte öffentlich liegen und die
+   Dateien des Eigentümers nur lokal lesen. *abgeleitet*
+2. **Wortgeschichte als Datenmodell** für die geplanten Bausteine Laborbuch und Vergleichsansicht
+   (gleiche Datei): ein Datensatz, aus dem alle Ansichten entstehen. *abgeleitet*
+3. **Bedienmuster** für Studien prüfen: Start mit Beispiel, Zahlen auf Knöpfen, Hilfemodus neben
+   der eigenen gestuften Erklärung (Studie „Reihe und Verschiebung“), Stillstand beim Umschalten.
    *abgeleitet*
+4. **Gegenbeispiel Farbe:** Fassungs- oder Zeitfarben auf Text brauchen eine Kontrastprüfung; der
+   Fall eignet sich als Prüffall für `bertin-semiologie` und `farbkontraste-itten`. *abgeleitet*
 
-## 5 Grenzen
+## 6 Grenzen
 
-- Ein einzelner Fall, öffentlich und erfolgreich: was gescheitert ist, sieht man nicht.
-- Die Chats mit Claude sind nicht einsehbar; Rollenverteilung und Anteil der KI an Ideen sind
-  nicht belegt.
-- Manovich baut ein Werkzeug für ein klares Ziel. Das Labor ist zugleich Werk und System
-  (Prinzip 9); ein Teil seines Textes gehört zum Systemexperiment und ist nicht einfach Überbau.
-- Die Byte-Messung trennt Werk und System nicht sauber.
+- Ein Werkzeug, eine Momentaufnahme vom 08.11.; es ändert sich stündlich.
+- .docx-Lesen nicht getestet (JSZip im Container nicht erreichbar); eigene Dateien nicht getestet.
+- axe-core findet nur einen Teil der Barrieren; kein Test mit Bildschirmleser.
 - Nicht gegengelesen durch ein anderes Modell.
-
-## 6 Fragen an den Eigentümer
-
-1. Soll das Labor eine nächste Studie bewusst in Manovichs Takt bauen (kleine sichtbare Schritte,
-   eine Commit-Zeile als Entscheidung, keine weiteren Dokumente während der Arbeit) und danach
-   vergleichen? Das wäre ein Experiment, keine neue Regel.
-2. Soll Text Time-lapse als Pilot für die Bausteine B und C dienen, zuerst an einem Labortext
-   (z. B. den Fassungen von `intent.md` aus der git-Geschichte), lokal im Browser, ohne Hochladen?
-3. Korpus und Radar: Eintrag als Referenz (Werkzeug und Fallbeispiel), wie in #153 vorgeschlagen?
