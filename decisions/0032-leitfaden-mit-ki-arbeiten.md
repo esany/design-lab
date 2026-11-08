@@ -9,6 +9,15 @@ perspektive: gebrauch, system
 
 # 0032 · Leitfaden „Mit KI arbeiten“ auf der Labor-Website
 
+> **Vermerk 08.11.2026, teilweise überholt durch den [Konzeptstand 08.11.](../research/2026-11-wissensformen/konzeptstand-2026-11-08.md):**
+> - **Gegenstand überholt:** Der Leitfaden steht für Entwurfsarbeit als übergeordnete Fachlichkeit; die KI ist ein Werkzeug
+>   darin, nicht das Zentrum (Antworten des Eigentümers in `daten/arbeitsweise.json`: f16, f22, f24, f28).
+> - **Name offen:** „Mit KI arbeiten“ passt nicht mehr zum Gegenstand; ein neuer Name ist nicht entschieden.
+> - **Bestätigt:** Die verworfene Alternative „Einträge als Fachpaket“ bleibt verworfen; der Leitfaden wird nicht die
+>   Ansicht eines Fachpakets (f16).
+> - **Offen, nicht überholt:** die drei Bereiche (Punkt 2) und die Pflichtfelder; sie ändern sich erst mit der Minimalform
+>   (f26). Ort, Stufen, Korpusverweise, Pflege und Umgang mit Überholtem gelten weiter.
+
 `perspektive:` gebrauch, system. Der Leitfaden dient dem Eigentümer bei der Arbeit (Gebrauch).
 Die monatliche Pflege hält ihn aktuell (System).
 
