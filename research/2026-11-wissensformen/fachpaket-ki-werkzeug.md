@@ -2,7 +2,7 @@
 dient: A04, A05, A23, A26, A33
 datum: 2026-11-07
 modell: Claude Opus 5.5 (Claude-App, Cloud-Sitzung)
-status: Konzept aus dem Chat vom 06./07.11. Beschlossen ist nur, dass ein Entwurf entsteht (arbeitsweise-f15). Alles andere wartet auf den Eigentümer.
+status: Konzept aus dem Chat vom 06./07.11. Beschlossen ist nur, dass ein Entwurf entsteht (arbeitsweise-f15). „Rollen der Orte“ und „Schwelle“ sind überholt durch konzeptstand-2026-11-08.md.
 ---
 
 # Fachpaket „KI als Werkzeug“: Wissen einmal, Anwendung mehrfach
@@ -47,6 +47,8 @@ Mittelmaß, Verlernen) gilt für alle Fachpakete; „Entwerfen“ bleibt ein eig
 | Verlernen | Rollenvorgabe, „Denk Schritt für Schritt“ | Leitfaden „Überholt“ | Jahre |
 
 **Rollen der Orte**
+> **Überholt durch [Konzeptstand 08.11.](konzeptstand-2026-11-08.md):** Der Leitfaden wird nicht die Ansicht dieses Pakets (f16: Nein). Leitfaden und Fachpaket sind getrennte Erkenntnisorte.
+
 - Fachpakete der Felder behalten unter „Rolle der KI“ nur das Feldspezifische und verweisen für
   das Allgemeine auf dieses Paket.
 - Der Leitfaden wird die Ansicht dieses Pakets für den Menschen (dieselben Daten, zwei Leser).
@@ -56,6 +58,8 @@ Mittelmaß, Verlernen) gilt für alle Fachpakete; „Entwerfen“ bleibt ein eig
   nicht neu.
 
 **Schwelle** (nach der Reifegrade-Hypothese, `experiments/2026-10-entwurfsprozess.md`)
+> **Überholt durch [Konzeptstand 08.11.](konzeptstand-2026-11-08.md):** Es gibt keine feste Stufenfolge und keine festen Wege zwischen Leitfaden und Fachpaket (f30).
+
 1. Beobachtung, einmal: Aussage in `daten/` mit Modell und Datum.
 2. Muster, mindestens zweimal unabhängig oder extern belegt: Kandidat.
 3. Grundsatz, ohne Werkzeugnamen formulierbar und prüfbar: Eintrag im Fachpaket, sichtbar im Leitfaden.

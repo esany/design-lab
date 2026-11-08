@@ -1,13 +1,13 @@
 ---
 thema: Arbeitsweise mit KI · Wissensformen
-stand: Drei Stränge (07.11.): Prüfstand – Leitfaden-Sicherung geprüft und vorgelegt, Auswertung der Testeinträge als Entwurf, nicht gegengelesen; Leitfaden – Leitfaden-Sicherung mit Bericht, ohne Konflikt, nicht übernommen; KI-Fachpaket – Konzept, Entwurf freigegeben.
+stand: Drei Stränge (07.11.): Prüfstand – Leitfaden-Sicherung geprüft und vorgelegt, Auswertung der Testeinträge als Entwurf, nicht gegengelesen; Leitfaden – Leitfaden-Sicherung mit Bericht, ohne Konflikt, nicht übernommen; KI-Fachpaket – Konzept, Entwurf freigegeben; f16 beantwortet: der Leitfaden wird nicht seine Ansicht (Konzeptstand 08.11.).
 naechster_schritt: Der Eigentümer entscheidet über die Leitfaden-Sicherung (#143); Claude macht im Prüfstand mit der automatischen Prüfung weiter (Abschnitt „Stränge und Reihenfolge“); das KI-Fachpaket erst nach dem Leitfaden.
 offen: []
 ---
 
 # Thema: Arbeitsweise mit KI · Wissensformen
 
-**Zuletzt fortgeschrieben:** 07.11.2026 (Claude, Prüfstand)
+**Zuletzt fortgeschrieben:** 08.11.2026 (Claude, Verhältnis Leitfaden – Fachpakete)
 
 ## In Worten
 
@@ -44,7 +44,7 @@ Nummern):
 |---|---|---|---|
 | **A** | Prüfstand | Leitfaden-Sicherung geprüft, vorgelegt (07.11.); Auswertung der Testeinträge auf Branch `lab/neustart-daten-auswertung`, nicht gegengelesen; Testeinträge offen als Belege | – |
 | **B** | Leitfaden | Leitfaden-Sicherung: Keime, offenes System, Fragen f18–f27; Bericht als Kommentar, Konflikt gelöst, nicht übernommen | Prüfstand (Prüfung der Leitfaden-Sicherung) |
-| **C** | KI-Fachpaket | Konzept `research/2026-11-wissensformen/fachpaket-ki-werkzeug.md` | Leitfaden (als Ansicht? f16, f26) |
+| **C** | KI-Fachpaket | Konzept `research/2026-11-wissensformen/fachpaket-ki-werkzeug.md`; „Rollen der Orte“ und „Schwelle“ überholt durch den [Konzeptstand 08.11.](../research/2026-11-wissensformen/konzeptstand-2026-11-08.md) | Leitfaden (erst danach; getrennte Erkenntnisorte, keine Ansicht) |
 
 **Prüfstand im frischen Chat, in dieser Reihenfolge:**
 1. *Erledigt 07.11., dem Eigentümer vorgelegt:* Leitfaden-Sicherung prüfen (Bestand im Repo,
@@ -61,6 +61,10 @@ Nummern):
    07.11. im Chat formuliert, der Eigentümer gibt ihn weiter. Claude bewertet im Testeintrag von
    Claude sich selbst.
 5. Erst danach: Auswertung übernehmen, die drei Testeinträge schließen.
+
+**Vorschläge aus dem Konzeptstand 08.11.** (keine Regeln, nicht beschlossen): fester Moment am
+Chatende („Das ist nebenbei entstanden, soll es bleiben?“; der Eigentümer gibt Themen frei, die KI
+schlägt den Ort vor); Prüfung, die meldet, wenn dasselbe schon an einem anderen Ort steht.
 
 **Hauptfaden:** Welche Struktur braucht das Labor, damit Wissen sparsam, ohne Widersprüche und für
 Claude und Astra gleich gut nutzbar ist?
