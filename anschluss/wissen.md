@@ -7,7 +7,7 @@ offen: [49]
 
 # Thema: Wissen erschließen · der Bibliothekar
 
-**Zuletzt fortgeschrieben:** 05.11.2026 (Claude, Leitfaden „Mit KI arbeiten“)
+**Zuletzt fortgeschrieben:** 08.11.2026 (Claude, Fundstück Papers Navigator)
 
 ## In Worten
 
@@ -39,6 +39,9 @@ Quellenangabe wurde als falsch „berichtigt“.
 3. Sollen die fünf Bücher der Grundstock eines Fachpakets „Entwerfen“ werden, wenn die ersten
    Kapitel gelesen sind?
 4. Wo liegen die fünf PDFs, damit ein zweites Modell die Kapitel selbst lesen kann?
+
+**Muster (nichts beschlossen):** Korpus als Bedeutungskarte erkunden, nach
+`[k:guerra-papers-navigator-2026]`.
 
 **Leitfaden und Arbeitsweise mit KI:** eigenes Thema, siehe `anschluss/arbeitsweise.md`.
 
