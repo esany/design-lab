@@ -5,7 +5,7 @@
 
 **Stand:** Drei Stränge (07.11.): Prüfstand – Leitfaden-Sicherung geprüft und vorgelegt, Auswertung der Testeinträge als Entwurf, nicht gegengelesen; Leitfaden – Leitfaden-Sicherung mit Bericht, ohne Konflikt, nicht übernommen; KI-Fachpaket – Konzept, Entwurf freigegeben.
 
-**Nächster Schritt:** Der Eigentümer entscheidet über die Leitfaden-Sicherung (#143); Claude macht im Prüfstand mit der automatischen Prüfung weiter (Abschnitt „Stränge und Reihenfolge“); das KI-Fachpaket erst nach dem Leitfaden.
+**Nächster Schritt:** Der Eigentümer entscheidet über die automatische Prüfung (Prüfstand, 0033) und die Leitfaden-Sicherung (#143); danach trägt Claude die zwei Beobachtungen als Aussagen ein. Das Verhältnis von Leitfaden und KI-Fachpaket untersucht ein eigener Chat.
 
 ## Offene Fragen an den Eigentümer (6)
 
