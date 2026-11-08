@@ -3,17 +3,16 @@
 > Erzeugt von `node tools/build.mjs` aus `daten/arbeitsweise.json` und dem Merkzettel
 > `anschluss/arbeitsweise.md`. Nicht von Hand ändern. Modelle lesen die Daten, nicht diese Seite.
 
-**Stand:** Drei Stränge (07.11.): A Prüffall neustart-daten – Auswertung als Entwurf, nicht gegengelesen; B Leitfaden – Nebenchat hat gesichert (#143, Konflikt, Bericht fehlt); C Fachpaket „KI als Werkzeug“ – Konzept, Entwurf freigegeben.
+**Stand:** Drei Stränge (07.11.): Prüfstand – Leitfaden-Sicherung geprüft und vorgelegt, Auswertung der Testeinträge als Entwurf, nicht gegengelesen; Leitfaden – Leitfaden-Sicherung mit Bericht, ohne Konflikt, nicht übernommen; KI-Fachpaket – Konzept, Entwurf freigegeben; f16 beantwortet: der Leitfaden wird nicht seine Ansicht (Konzeptstand 08.11.).
 
-**Nächster Schritt:** Frischer Chat „Tests und Prüfungen“ (Claude) prüft zuerst #143, dann den Rest von Strang A (Abschnitt „Stränge und Reihenfolge“); B entscheidet der Eigentümer nach der Prüfung von #143; C erst danach.
+**Nächster Schritt:** Der Eigentümer entscheidet über die Leitfaden-Sicherung (#143); Claude macht im Prüfstand mit der automatischen Prüfung weiter (Abschnitt „Stränge und Reihenfolge“); das KI-Fachpaket erst nach dem Leitfaden.
 
-## Offene Fragen an den Eigentümer (7)
+## Offene Fragen an den Eigentümer (6)
 
 - **arbeitsweise-f01** Radar als Matrix (Empfehlung) oder Kreis? *(gestellt 2026-11-05)*
 - **arbeitsweise-f02** Gemeinsame Issue-Prüfung zuerst im Labor bauen? *(gestellt 2026-11-05)*
 - **arbeitsweise-f03** Befund zu paleo-type auf #408 notieren (dort gilt Pause)? *(gestellt 2026-11-05)*
 - **arbeitsweise-f04** Dürfen Fremde im öffentlichen Labor Issues anlegen? *(gestellt 2026-11-05)*
-- **arbeitsweise-f16** Soll der Leitfaden die Ansicht des Fachpakets „KI als Werkzeug“ werden (Änderung von 0032)? *(gestellt 2026-11-07)*
 - **arbeitsweise-f17** Lief Codex für #141 im Reiter „Codex“ der ChatGPT-App (Cloud) oder in einem normalen Chat? *(gestellt 2026-11-07)*
 - **arbeitsweise-f26** Minimalform für den Leitfaden: Einträge mit freien Tags und drei Arten von Relationen, eine erzeugte Ansicht als Netz und Verlauf, erste Keime generisch – soll ich so anfangen? *(gestellt 2026-11-06)*
 
@@ -83,8 +82,20 @@
 - **arbeitsweise-a23** Astra (ChatGPT) kann Code ausführen und über den GitHub-Connector schreiben.
   *Grenze:* Angabe des Eigentümers im Chat vom 06.11.; im Pilot (Schritt 4) zu prüfen.
 
-## Beantwortete Fragen (20, neueste zuerst)
+## Beantwortete Fragen (26, neueste zuerst)
 
+- **2026-11-08** Soll ich den berichtigten Konzeptstand so ablegen (Antworten im Wortlaut, Seite zum Konzeptstand, Teile des Fachpaket-Konzepts als überholt markieren, zwei Vorschläge in den Merkzettel)?
+  → „Ja“ *(Chat zum Verhältnis Leitfaden – Fachpakete (Claude, 08.11.); Konzeptstand: research/2026-11-wissensformen/konzeptstand-2026-11-08.md.)*
+- **2026-11-08** Soll ich das als den neuen Konzeptstand ablegen, mit einem festen Moment am Chatende („Was ist hier nebenbei entstanden, und wo könnte es hin?“) als Vorschlag, nicht als Regel?
+  → „Wohin gesichert wird, kann ich nicht sagen. Gern kann ich aber eine freigabe der themen sein. Und die Inhalte entstehen nicht nur aus den Projekten, sonderauch fundstücken, rechechen, Diskussionen, der Arbeit mit und am design lab“ *(Chat zum Verhältnis Leitfaden – Fachpakete (Claude, 08.11.); Konzeptstand: research/2026-11-wissensformen/konzeptstand-2026-11-08.md.)*
+- **2026-11-08** Stimmt das so: Im Leitfaden entsteht die Erkenntnis, und das Fachpaket wendet sie an?
+  → „Und die wege wie welche wissensstruktur befüllt wird, kann individuell sein, es gibt keine festen flows.. wer triggert wen? Erstmal entsteht alles im chat und ist „Abfallprodukt“ der Projekte“ *(Chat zum Verhältnis Leitfaden – Fachpakete (Claude, 08.11.); Konzeptstand: research/2026-11-wissensformen/konzeptstand-2026-11-08.md.)*
+- **2026-11-08** A ist der Inhalt, B die Form (Leitfaden für dich, Fachpaket für die Modelle) – soll ich das so ablegen?
+  → „B ist nicht die form sondern der erkenntnisort? Ist das für dich nur eine formale frage?“ *(Chat zum Verhältnis Leitfaden – Fachpakete (Claude, 08.11.); Konzeptstand: research/2026-11-wissensformen/konzeptstand-2026-11-08.md.)*
+- **2026-11-08** Meinst du A (der Leitfaden umfasst Entwurfsarbeit, die KI ist ein Werkzeug darin) oder B (Leitfaden und KI-Fachpaket stehen gleichrangig und getrennt nebeneinander)?
+  → „A und b agieren auf unterschiedlichen ebene .. beides gilt“ *(Chat zum Verhältnis Leitfaden – Fachpakete (Claude, 08.11.); Konzeptstand: research/2026-11-wissensformen/konzeptstand-2026-11-08.md.)*
+- **2026-11-08** Soll der Leitfaden die Ansicht des Fachpakets „KI als Werkzeug“ werden (Änderung von 0032)?
+  → „Nein, auch der Leitfaden versteht sich als übergeordnete fachlichkeit. Er ist konzeptionell früher“ *(Lesart in den Nachfragen f28–f32 geklärt. Chat zum Verhältnis Leitfaden – Fachpakete (Claude, 08.11.); Konzeptstand: research/2026-11-wissensformen/konzeptstand-2026-11-08.md.)*
 - **2026-11-07** Darf ich das Fachpaket „KI als Werkzeug“ als Entwurf zusammenstellen, aus dem Bestand und mit Verweisen statt Kopien?
   → „Ja, sehr gerne“ *(Konzept: research/2026-11-wissensformen/fachpaket-ki-werkzeug.md. Bearbeitung in frischem Chat.)*
 - **2026-11-07** Soll ich die zwei Änderungen an der automatischen Prüfung (Übersicht selbst bauen; neu prüfen, wenn ein Label gesetzt wird) als PR vorbereiten?

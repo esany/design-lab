@@ -394,7 +394,10 @@
     {
       "id": "arbeitsweise-f16",
       "frage": "Soll der Leitfaden die Ansicht des Fachpakets „KI als Werkzeug“ werden (Änderung von 0032)?",
-      "gestellt": "2026-11-07"
+      "gestellt": "2026-11-07",
+      "antwort": "Nein, auch der Leitfaden versteht sich als übergeordnete fachlichkeit. Er ist konzeptionell früher",
+      "beantwortet": "2026-11-08",
+      "notiz": "Lesart in den Nachfragen f28–f32 geklärt. Chat zum Verhältnis Leitfaden – Fachpakete (Claude, 08.11.); Konzeptstand: research/2026-11-wissensformen/konzeptstand-2026-11-08.md."
     },
     {
       "id": "arbeitsweise-f17",
@@ -479,6 +482,46 @@
       "antwort": "Dann warten wir",
       "beantwortet": "2026-11-06",
       "notiz": "Nebenchat zum Leitfaden; gesichert per Prüfauftrag am 07.11. Gesichert am 07.11. auf Prüfauftrag des Eigentümers."
+    },
+    {
+      "id": "arbeitsweise-f28",
+      "frage": "Meinst du A (der Leitfaden umfasst Entwurfsarbeit, die KI ist ein Werkzeug darin) oder B (Leitfaden und KI-Fachpaket stehen gleichrangig und getrennt nebeneinander)?",
+      "gestellt": "2026-11-08",
+      "antwort": "A und b agieren auf unterschiedlichen ebene .. beides gilt",
+      "beantwortet": "2026-11-08",
+      "notiz": "Chat zum Verhältnis Leitfaden – Fachpakete (Claude, 08.11.); Konzeptstand: research/2026-11-wissensformen/konzeptstand-2026-11-08.md."
+    },
+    {
+      "id": "arbeitsweise-f29",
+      "frage": "A ist der Inhalt, B die Form (Leitfaden für dich, Fachpaket für die Modelle) – soll ich das so ablegen?",
+      "gestellt": "2026-11-08",
+      "antwort": "B ist nicht die form sondern der erkenntnisort? Ist das für dich nur eine formale frage?",
+      "beantwortet": "2026-11-08",
+      "notiz": "Chat zum Verhältnis Leitfaden – Fachpakete (Claude, 08.11.); Konzeptstand: research/2026-11-wissensformen/konzeptstand-2026-11-08.md."
+    },
+    {
+      "id": "arbeitsweise-f30",
+      "frage": "Stimmt das so: Im Leitfaden entsteht die Erkenntnis, und das Fachpaket wendet sie an?",
+      "gestellt": "2026-11-08",
+      "antwort": "Und die wege wie welche wissensstruktur befüllt wird, kann individuell sein, es gibt keine festen flows.. wer triggert wen? Erstmal entsteht alles im chat und ist „Abfallprodukt“ der Projekte",
+      "beantwortet": "2026-11-08",
+      "notiz": "Chat zum Verhältnis Leitfaden – Fachpakete (Claude, 08.11.); Konzeptstand: research/2026-11-wissensformen/konzeptstand-2026-11-08.md."
+    },
+    {
+      "id": "arbeitsweise-f31",
+      "frage": "Soll ich das als den neuen Konzeptstand ablegen, mit einem festen Moment am Chatende („Was ist hier nebenbei entstanden, und wo könnte es hin?“) als Vorschlag, nicht als Regel?",
+      "gestellt": "2026-11-08",
+      "antwort": "Wohin gesichert wird, kann ich nicht sagen. Gern kann ich aber eine freigabe der themen sein. Und die Inhalte entstehen nicht nur aus den Projekten, sonderauch fundstücken, rechechen, Diskussionen, der Arbeit mit und am design lab",
+      "beantwortet": "2026-11-08",
+      "notiz": "Chat zum Verhältnis Leitfaden – Fachpakete (Claude, 08.11.); Konzeptstand: research/2026-11-wissensformen/konzeptstand-2026-11-08.md."
+    },
+    {
+      "id": "arbeitsweise-f32",
+      "frage": "Soll ich den berichtigten Konzeptstand so ablegen (Antworten im Wortlaut, Seite zum Konzeptstand, Teile des Fachpaket-Konzepts als überholt markieren, zwei Vorschläge in den Merkzettel)?",
+      "gestellt": "2026-11-08",
+      "antwort": "Ja",
+      "beantwortet": "2026-11-08",
+      "notiz": "Chat zum Verhältnis Leitfaden – Fachpakete (Claude, 08.11.); Konzeptstand: research/2026-11-wissensformen/konzeptstand-2026-11-08.md."
     }
   ]
 }

@@ -1,13 +1,13 @@
 ---
 thema: Arbeitsweise mit KI · Wissensformen
-stand: Drei Stränge (07.11.): A Prüffall neustart-daten – Auswertung als Entwurf, nicht gegengelesen; B Leitfaden – Nebenchat hat gesichert (#143, Konflikt, Bericht fehlt); C Fachpaket „KI als Werkzeug“ – Konzept, Entwurf freigegeben.
-naechster_schritt: Frischer Chat „Tests und Prüfungen“ (Claude) prüft zuerst #143, dann den Rest von Strang A (Abschnitt „Stränge und Reihenfolge“); B entscheidet der Eigentümer nach der Prüfung von #143; C erst danach.
+stand: Drei Stränge (07.11.): Prüfstand – Leitfaden-Sicherung geprüft und vorgelegt, Auswertung der Testeinträge als Entwurf, nicht gegengelesen; Leitfaden – Leitfaden-Sicherung mit Bericht, ohne Konflikt, nicht übernommen; KI-Fachpaket – Konzept, Entwurf freigegeben; f16 beantwortet: der Leitfaden wird nicht seine Ansicht (Konzeptstand 08.11.).
+naechster_schritt: Der Eigentümer entscheidet über die Leitfaden-Sicherung (#143); Claude macht im Prüfstand mit der automatischen Prüfung weiter (Abschnitt „Stränge und Reihenfolge“); das KI-Fachpaket erst nach dem Leitfaden.
 offen: []
 ---
 
 # Thema: Arbeitsweise mit KI · Wissensformen
 
-**Zuletzt fortgeschrieben:** 07.11.2026 (Claude)
+**Zuletzt fortgeschrieben:** 08.11.2026 (Claude, Verhältnis Leitfaden – Fachpakete)
 
 ## In Worten
 
@@ -29,27 +29,42 @@ statt Textberge, und wie bleibt das Wissen für jeden Chat erreichbar, ohne dass
 
 Maßstab des Eigentümers (07.11.): „Ich will nicht, dass es fertig wird, ich will, dass es gut wird.“
 
+**Kurzformen** (Wunsch des Eigentümers, 07.11.: im Gespräch diese Namen statt Buchstaben und
+Nummern):
+
+| Kurzform | meint |
+|---|---|
+| Prüfstand | Strang A: Prüffall neustart-daten und Prüfung der Leitfaden-Sicherung |
+| Leitfaden | Strang B: Leitfaden, fachlich und technisch |
+| KI-Fachpaket | Strang C: Fachpaket „KI als Werkzeug“ |
+| Testeintrag von Claude · Astra · Codex | #137 · #138 · #141 |
+| Leitfaden-Sicherung | #143 |
+
 | | Strang | Stand | Hängt ab von |
 |---|---|---|---|
-| **A** | Prüffall neustart-daten, Prüfung des Leitfaden-Chats | Auswertung auf Branch `lab/neustart-daten-auswertung`, nicht gegengelesen; #137, #138, #141 offen als Belege | – |
-| **B** | Leitfaden, fachlich und technisch | #143 aus dem Nebenchat: Keime, offenes System, Fragen f18–f27; Konflikt mit `main`, Bericht fehlt | A (Prüfung von #143) |
-| **C** | Fachpaket „KI als Werkzeug“ | Konzept `research/2026-11-wissensformen/fachpaket-ki-werkzeug.md` | B (Leitfaden als Ansicht? f16, f26) |
+| **A** | Prüfstand | Leitfaden-Sicherung geprüft, vorgelegt (07.11.); Auswertung der Testeinträge auf Branch `lab/neustart-daten-auswertung`, nicht gegengelesen; Testeinträge offen als Belege | – |
+| **B** | Leitfaden | Leitfaden-Sicherung: Keime, offenes System, Fragen f18–f27; Bericht als Kommentar, Konflikt gelöst, nicht übernommen | Prüfstand (Prüfung der Leitfaden-Sicherung) |
+| **C** | KI-Fachpaket | Konzept `research/2026-11-wissensformen/fachpaket-ki-werkzeug.md`; „Rollen der Orte“ und „Schwelle“ überholt durch den [Konzeptstand 08.11.](../research/2026-11-wissensformen/konzeptstand-2026-11-08.md) | Leitfaden (erst danach; getrennte Erkenntnisorte, keine Ansicht) |
 
-**Strang A im frischen Chat, in dieser Reihenfolge:**
-1. #143 prüfen, zuerst, weil B und C davon abhängen und die Prüfung nur liest: Bestand im Repo
-   statt nur im Chat? Branch, PR, nicht übernommen, Verlauf, Prüfungen? Leitfaden-Einträge
-   unangetastet? Ursache genannt? Fachlich: Was tragen Keime, Fragen f18–f27 und a24–a25 für den
-   Leitfaden und für C? Fehlender Bericht und Konflikt mit `main` sind selbst Befunde; den Konflikt
-   löst der Leitfaden-Chat. Ergebnis dem Eigentümer vorlegen.
+**Prüfstand im frischen Chat, in dieser Reihenfolge:**
+1. *Erledigt 07.11., dem Eigentümer vorgelegt:* Leitfaden-Sicherung prüfen (Bestand im Repo,
+   Branch, PR, Verlauf, Prüfungen, Leitfaden-Einträge unangetastet, Ursache, fachlicher Ertrag
+   für Leitfaden und KI-Fachpaket). Ergebnis bisher nur im Chat; ob es als Kommentar in die
+   Leitfaden-Sicherung geht, ist eine Frage an den Eigentümer.
 2. Automatische Prüfung: baut die erzeugten Übersichten selbst und läuft beim Setzen eines Labels
    neu (f14, Ja), damit parallele Chats nicht in erzeugten Dateien kollidieren. Schreibrechte für
    die Prüfung sind eine Frage an den Eigentümer.
 3. Zwei Beobachtungen als Aussagen (abgeleitet) in `daten/arbeitsweise.json`: Modelle übergehen
    Pflichtschritte oder bauen Erzeugtes nach (2 von 3 Läufen); keines nennt eine rote Prüfung
-   von sich aus (3 von 3).
-4. Gegenlesen der Auswertung, der Aussagen und der Prüfung von #143 durch Astra (Auftrag
-   formulieren, Eigentümer gibt ihn weiter). Claude bewertet in #137 sich selbst.
-5. Erst danach: Auswertung übernehmen, #137, #138, #141 schließen.
+   von sich aus (3 von 3). Nächste freie Nummer nach der Leitfaden-Sicherung: a26.
+4. Gegenlesen der Auswertung der Testeinträge und der zwei Beobachtungen durch Astra: Auftrag am
+   07.11. im Chat formuliert, der Eigentümer gibt ihn weiter. Claude bewertet im Testeintrag von
+   Claude sich selbst.
+5. Erst danach: Auswertung übernehmen, die drei Testeinträge schließen.
+
+**Vorschläge aus dem Konzeptstand 08.11.** (keine Regeln, nicht beschlossen): fester Moment am
+Chatende („Das ist nebenbei entstanden, soll es bleiben?“; der Eigentümer gibt Themen frei, die KI
+schlägt den Ort vor); Prüfung, die meldet, wenn dasselbe schon an einem anderen Ort steht.
 
 **Hauptfaden:** Welche Struktur braucht das Labor, damit Wissen sparsam, ohne Widersprüche und für
 Claude und Astra gleich gut nutzbar ist?
