@@ -30,7 +30,11 @@
 7. **Rückgängig:** Sagt der Mensch „X rückgängig“, erstellt der Agent einen
    Revert als eigenen Pull Request und vermerkt ihn in `stand-verlauf.md`.
 8. Nach Änderungen an `system/` oder `studies/`: `node tools/build.mjs`
-   ausführen und das Ergebnis mit committen.
+   ausführen und das Ergebnis mit committen. Erzeugte Dateien nie von Hand
+   nachbauen. Wer den Build nicht ausführen kann, lässt sie weg: Die
+   automatische Prüfung erzeugt sie im PR-Branch selbst (0033). Bei einem
+   Konflikt in einer erzeugten Datei genügt irgendeine Seite; die Prüfung
+   baut danach neu.
 9. **Jede Entscheidung und jeder Skill nennt im Kopf `dient: A..`**, also die
    Anforderung(en) aus `intent.md`. Der Build prüft das und erzeugt daraus
    `verknuepfung.md` (A33).

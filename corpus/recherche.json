@@ -655,6 +655,40 @@
     "geprueft": "2026-10-28"
   },
   {
+    "id": "rodighiero-print-studio-2026",
+    "titel": "Print Studio",
+    "autor": "Dario Rodighiero",
+    "jahr": 2026,
+    "art": "Repo",
+    "url": "https://github.com/rodighiero/print-studio",
+    "lizenz": "MIT",
+    "felder": [
+      "form"
+    ],
+    "status": "belegt",
+    "notiz": "Methodische Referenz für die Druckvorstufe als eigenen Schritt: Siebdruckfilme je Farbe aus einer Datenvisualisierung (Surprise Machines), Raster in absoluten Bogenpixeln, Prüfansicht in Exportauflösung, Beschnitt und Passkreuze. Code und 34 Tests gesichtet und ausgeführt (08.11.); an einen Datensatz gebunden, CMYK ohne Farbprofil. Bilder der Harvard Art Museums nicht unter MIT.",
+    "zugang": "offen",
+    "geprueft": "2026-11-08"
+  },
+  {
+    "id": "guerra-papers-navigator-2026",
+    "titel": "IEEE VIS 2026 Papers Navigator",
+    "autor": "John Alexis Guerra Gómez",
+    "jahr": 2026,
+    "art": "Projekt",
+    "url": "https://johnguerra.co/viz/papersNavigator/ieeevis2026/",
+    "lizenz": "MIT",
+    "felder": [
+      "ordnung",
+      "interaktion",
+      "vermitteln"
+    ],
+    "status": "belegt",
+    "notiz": "Muster für das Erschließen eines Bestands: Beiträge einer Konferenz als Bedeutungskarte (ähnliche liegen nah, per Dimensionsreduktion), Suche hebt Treffer auf der Karte hervor, Auswahl durch Ziehen, eigene Merkliste; Observable Framework. Nur die Seite gesichtet (08.11.); Embedding-Modell, Rechenort und Quellcode nicht geprüft.",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-11-08"
+  },
+  {
     "id": "scribus",
     "titel": "Scribus",
     "autor": "Scribus-Team",

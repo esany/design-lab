@@ -1,13 +1,13 @@
 ---
 thema: Arbeitsweise mit KI · Wissensformen
-stand: Drei Stränge (07.11.): Prüfstand – Leitfaden-Sicherung geprüft und vorgelegt, Auswertung der Testeinträge als Entwurf, nicht gegengelesen; Leitfaden – Leitfaden-Sicherung mit Bericht, ohne Konflikt, nicht übernommen; KI-Fachpaket – Konzept, Entwurf freigegeben; f16 beantwortet: der Leitfaden wird nicht seine Ansicht (Konzeptstand 08.11.).
-naechster_schritt: Der Eigentümer entscheidet über die Leitfaden-Sicherung (#143); Claude macht im Prüfstand mit der automatischen Prüfung weiter (Abschnitt „Stränge und Reihenfolge“); das KI-Fachpaket erst nach dem Leitfaden.
+stand: Drei Stränge (08.11.): Prüfstand abgeschlossen – Testeinträge ausgewertet, zweimal gegengelesen, geschlossen; automatische Prüfung baut die Übersichten selbst (0033); Leitfaden – Leitfaden-Sicherung und Konzeptstand übernommen, Konkretisierung im eigenen Chat; KI-Fachpaket – Konzept, in Teilen überholt durch den Konzeptstand.
+naechster_schritt: Der Leitfaden-Chat konkretisiert den Leitfaden auf Grundlage des Konzeptstands (Eigentümer und Leitfaden-Chat); der Prüfstand hat keinen offenen Schritt.
 offen: []
 ---
 
 # Thema: Arbeitsweise mit KI · Wissensformen
 
-**Zuletzt fortgeschrieben:** 08.11.2026 (Claude, Verhältnis Leitfaden – Fachpakete)
+**Zuletzt fortgeschrieben:** 08.11.2026 (Claude, Abschluss Prüfstand; Claude, Stand Leitfaden)
 
 ## In Worten
 
@@ -44,25 +44,29 @@ Nummern):
 
 | | Strang | Stand | Hängt ab von |
 |---|---|---|---|
-| **A** | Prüfstand | Leitfaden-Sicherung geprüft, vorgelegt (07.11.); Auswertung der Testeinträge auf Branch `lab/neustart-daten-auswertung`, nicht gegengelesen; Testeinträge offen als Belege | – |
-| **B** | Leitfaden | Konzeptstand 08.11.: Gegenstand Entwurfsarbeit, KI ein Werkzeug darin; eigener Erkenntnisort, keine Ansicht des KI-Fachpakets (Abschnitt „Leitfaden: was gilt, was offen“). Leitfaden-Sicherung (Keime, offenes System, Fragen f18–f27) geprüft, nicht übernommen | Entscheidung des Eigentümers über die Leitfaden-Sicherung (Prüfung erledigt 07.11.) |
+| **A** | Prüfstand | **Abgeschlossen 08.11.** Ergebnis im Abschnitt darunter | – |
+| **B** | Leitfaden | Leitfaden-Sicherung (Keime, offenes System, Fragen f18–f27) und Konzeptstand übernommen (08.11.). Stand: Gegenstand Entwurfsarbeit, KI ein Werkzeug darin; eigener Erkenntnisort, keine Ansicht des KI-Fachpakets (Abschnitt „Leitfaden: was gilt, was offen“). Konkretisierung im eigenen Chat | – (Prüfstand abgeschlossen) |
 | **C** | KI-Fachpaket | Konzept `research/2026-11-wissensformen/fachpaket-ki-werkzeug.md`; „Rollen der Orte“ und „Schwelle“ überholt durch den [Konzeptstand 08.11.](../research/2026-11-wissensformen/konzeptstand-2026-11-08.md) | Leitfaden (erst danach; getrennte Erkenntnisorte, keine Ansicht) |
 
-**Prüfstand im frischen Chat, in dieser Reihenfolge:**
-1. *Erledigt 07.11., dem Eigentümer vorgelegt:* Leitfaden-Sicherung prüfen (Bestand im Repo,
-   Branch, PR, Verlauf, Prüfungen, Leitfaden-Einträge unangetastet, Ursache, fachlicher Ertrag
-   für Leitfaden und KI-Fachpaket). Ergebnis bisher nur im Chat; ob es als Kommentar in die
-   Leitfaden-Sicherung geht, ist eine Frage an den Eigentümer.
-2. Automatische Prüfung: baut die erzeugten Übersichten selbst und läuft beim Setzen eines Labels
-   neu (f14, Ja), damit parallele Chats nicht in erzeugten Dateien kollidieren. Schreibrechte für
-   die Prüfung sind eine Frage an den Eigentümer.
-3. Zwei Beobachtungen als Aussagen (abgeleitet) in `daten/arbeitsweise.json`: Modelle übergehen
-   Pflichtschritte oder bauen Erzeugtes nach (2 von 3 Läufen); keines nennt eine rote Prüfung
-   von sich aus (3 von 3). Nächste freie Nummer nach der Leitfaden-Sicherung: a26.
-4. Gegenlesen der Auswertung der Testeinträge und der zwei Beobachtungen durch Astra: Auftrag am
-   07.11. im Chat formuliert, der Eigentümer gibt ihn weiter. Claude bewertet im Testeintrag von
-   Claude sich selbst.
-5. Erst danach: Auswertung übernehmen, die drei Testeinträge schließen.
+**Prüfstand, Ergebnis (abgeschlossen 08.11.):** Getestet wurde, ob ein frischer Chat im Labor
+richtig weitermacht. Claude, Astra und Codex bekamen dieselbe Aufgabe; Claude wertete aus, Astra
+las gegen, Codex prüfte Astras Selbstbewertung. Ablage: `evals/neustart-daten/ergebnisse/`; die
+drei Testeinträge sind geschlossen und bleiben als Belege.
+- Was wir über die Modelle wissen: Den Weg zum Erzeugen halten sie oft nicht ein, und eine rote
+  Prüfung trägt keines nach ([a:arbeitsweise-a26], [a:arbeitsweise-a27]). Drei Läufe tragen
+  keinen Modellvergleich.
+- Was daraus folgt: Was Modelle wiederholt übergehen, übernimmt die Maschine. Die Prüfung baut
+  die Übersichten jetzt selbst und läuft beim Setzen eines Labels neu (0033); beides hat sich am
+  08.11. im Betrieb bewährt.
+- Was wir über das Prüfen gelernt haben: Gegenlesen durch ein anderes Modell hat überzogene
+  Formulierungen gefunden; die Selbstbewertung von Astra hielt der fremden Prüfung stand. Wer
+  einen Text selbst geschrieben hat, prüft ihn nicht selbst.
+- Rahmen der Gegenprüfung (Angabe des Eigentümers): Codex mit Luna, Stufe mittel, längerer
+  Auftrag. Sie las rund neun Quellen, trug die Prüfergebnisse wieder nicht nach und verwechselte
+  beim Vergleich die Wertungen der Läufe mit Astras Urteil (Kommentar in #156).
+- Offen, nicht Teil des Prüfstands: Bei einem Konflikt startet GitHub keine Prüfung; Konflikte im
+  Verlauf bleiben Handarbeit. Eine knappere Fassung des Codex-Auftrags liegt im Chat vom 08.11.
+  als Vergleich für einen späteren Lauf.
 
 **Leitfaden: was gilt, was offen (08.11.)** · Herleitung und Fundstellen im
 [Konzeptstand 08.11.](../research/2026-11-wissensformen/konzeptstand-2026-11-08.md), Antworten im Wortlaut in
@@ -73,7 +77,7 @@ den Daten.
   und Relationen, ohne feste Bereiche. Wissen entsteht im Chat (Projekte, Fundstücke, Recherchen,
   Diskussionen, Arbeit am Labor); feste Wege gibt es nicht; der Eigentümer gibt Themen frei, die KI
   schlägt den Ort vor.
-- *Offen:* Übernahme der Leitfaden-Sicherung; Minimalform als Anfang; Name (0032 sagt „Mit KI
+- *Offen:* Minimalform als Anfang; Name (0032 sagt „Mit KI
   arbeiten“); ein oder mehrere Leitfäden; die 24 bestehenden Einträge, davon 15 mit Bezug zur
   eigenen Arbeit; das Datenformat (Konzeptstand, Abschnitt „Datenformat“), gebaut wird erst nach
   der Minimalform. Warten auf Ja: der Satz des Eigentümers zum Labor als Werkzeug, dessen Prinzipien

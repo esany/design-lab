@@ -8,7 +8,7 @@ Werkzeuge und Entwicklungen, die das Labor beobachtet. Vier Ringe:
 - **Halten** — bewusst nicht (mehr) nutzen
 
 Jeder Eintrag: was es ist · warum relevant · Quelle · Stand. Änderungen nur mit
-Begründung (Skill `pflege`). Stand des Radars: **2026-11-02**.
+Begründung (Skill `pflege`). Stand des Radars: **2026-11-08**.
 
 ## Einsetzen
 
@@ -53,6 +53,8 @@ Begründung (Skill `pflege`). Stand des Radars: **2026-11-02**.
 | Affinity (Canva) | kostenlos, Profiniveau, IDML-Import; aber Konto, geschlossenes Format — widerspricht Unabhängigkeit | [Printweek](https://printweek.mydigitalpublication.co.uk/articles/canva-s-free-affinity-app-shakes-up-design-market) | 2026-10-28 |
 | Inkscape (CMYK) | CMYK-PDF angekündigt, Stabilität nicht belegt | [inkscape.org](https://inkscape.org/learn/cms) | 2026-10-28 |
 | Basic Memory (MCP) | Gedächtnis über Chats als lokale Markdown-Dateien mit Wissensgraph; AGPL-3.0, Bezahlwolke optional. Liegt außerhalb des Repos, also sieht nicht jedes Werkzeug denselben Stand (0024) | [GitHub](https://github.com/basicmachines-co/basic-memory), [dev.co](https://dev.co/ai/mcp/basic-memory) | 2026-11-05 |
+| Print Studio (Rodighiero) | Siebdruckfilme aus einer Datenvisualisierung im Browser: Farbtrennung (1–3 Sonderfarben, CMYK), Raster (Punkt, Linie, FM), Beschnitt, Passkreuze. Nur als methodische Referenz für die Druckvorstufe als eigenen Schritt: Raster am Bogen verankert, Prüfansicht in Exportauflösung. An einen Datensatz gebunden; CMYK ohne Farbprofil. Verfällt: ohne Weiterentwicklung bis 2027-05 nach „Halten“ (veraltet), ohne neue Prüfung | [GitHub](https://github.com/rodighiero/print-studio), [k:rodighiero-print-studio-2026] | 2026-11-08 |
+| Papers Navigator (Guerra Gómez) | Konferenzbeiträge (IEEE VIS 2026) als Bedeutungskarte: Ähnliches liegt nah, Suche hebt Treffer hervor, Auswahl durch Ziehen, eigene Merkliste; Observable Framework, MIT. Erkenntnis für den Bibliothekar: den eigenen Korpus erkunden statt nur auflisten. Embedding-Modell und Rechenort nicht belegt. Verfällt: ohne neue Prüfung bis 2027-05 nach „Halten“ (veraltet) | [Seite](https://johnguerra.co/viz/papersNavigator/ieeevis2026/), [k:guerra-papers-navigator-2026] | 2026-11-08 |
 
 ## Halten
 
