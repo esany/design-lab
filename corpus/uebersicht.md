@@ -3,7 +3,7 @@
 > Erzeugt von `node tools/build.mjs` aus `referenzen.json` und `recherche.json`. Nicht von Hand ändern.
 > Schema: [`schema.md`](schema.md).
 
-**131 Quellen** — 27 ausgewählt vom Eigentümer, 104 recherchiert vom Agenten.
+**132 Quellen** — 27 ausgewählt vom Eigentümer, 105 recherchiert vom Agenten.
 Je Feld zuerst die Verweise des Eigentümers (Ausgangspunkte, kein Kanon). Eine Quelle kann in mehreren Feldern stehen.
 
 ## vermitteln
@@ -70,6 +70,7 @@ Je Feld zuerst die Verweise des Eigentümers (Ausgangspunkte, kein Kanon). Eine 
 | `legge-bigelow-2011` | [Does print size matter for reading? A review of findings from vision science and typography](https://legge.dl8.umn.edu/sites/legge.psych.umn.edu/files/2020-08/Legge%20Bigelow%202011%20Does%20size%20matter%20for%20reading%3F%20A%20review%20of%20findings%20from%20vision%20science%20and%20typography.pdf) | Gordon E. Legge, Charles A. Bigelow | 2011 | Paper | belegt | Agent | `.agents/skills/fachpaket-form/SKILL.md`, `manifest.md` |
 | `p5js` | [p5.js](https://p5js.org/) | Processing Foundation | 2026 | Werkzeug | belegt | Agent | `.agents/skills/fachpaket-vermitteln/SKILL.md` |
 | `pagedjs` | [Paged.js](https://pagedjs.org/en/about/) | Paged.js-Community (gegründet von Adam Hyde) | 2024 | Werkzeug | belegt | Agent | `.agents/skills/fachpaket-form/SKILL.md` |
+| `rodighiero-print-studio-2026` | [Print Studio](https://github.com/rodighiero/print-studio) | Dario Rodighiero | 2026 | Repo | belegt | Agent | `radar.md` |
 | `ruder-1967` | [Typographie. Ein Gestaltungslehrbuch](https://www.niggli.ch/en/produkt/typographie) | Emil Ruder | 1967 | Buch | belegt | Agent | `.agents/skills/fachpaket-form/SKILL.md` |
 | `rutter-webtypography` | [The Elements of Typographic Style Applied to the Web](https://webtypography.net/2.1.2) | Richard Rutter | — | Projekt | belegt | Agent | `.agents/skills/fachpaket-form/SKILL.md` |
 | `scribus` | [Scribus](https://en.wikipedia.org/wiki/Scribus) | Scribus-Team | 2026 | Werkzeug | belegt | Agent | `.agents/skills/fachpaket-form/SKILL.md` |

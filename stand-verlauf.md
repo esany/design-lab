@@ -6,6 +6,7 @@
 
 | Datum | Was | Warum | Rückgängig |
 |---|---|---|---|
+| 2026-11-08 | **Fundstück Print Studio (Claude):** Radar „Beobachten“ mit Verfallsdatum 2027-05, Quelle `rodighiero-print-studio-2026` im Korpus als methodische Referenz für die Druckvorstufe | Ihr Auftrag im Chat (08.11.): „nur beobachten und als methodische Referenz sichern; wenn veraltet auch vergessen“ | PR revertieren |
 | 2026-11-07 | **Arbeitsweise: Kurzformen und Prüfung der Leitfaden-Sicherung (Claude):** Merkzettel nennt Prüfstand, Leitfaden, KI-Fachpaket, Testeinträge und Leitfaden-Sicherung statt Buchstaben und Nummern; Schritt 1 des Prüfstands als erledigt und vorgelegt markiert | Ihr Wunsch im Chat (07.11.), Sie mit Namen statt Kürzeln anzusprechen | PR revertieren |
 | 2026-11-07 | **Arbeitsweise: Prüfung von #143 nach vorn (Claude):** zuerst, weil B und C davon abhängen und sie nur liest | Ihre Frage, ob die Analyse des Leitfaden-Chats parallel laufen kann (07.11.) | PR revertieren |
 | 2026-11-07 | **Arbeitsweise: Abschluss des Chats vom 06./07.11. (Claude):** Merkzettel ordnet drei Stränge (Prüffall, Leitfaden, Fachpaket) mit Abhängigkeiten und Reihenfolge; Auswertungsentwürfe berichtigt (Branch, nicht übernommen) | Ihr Wunsch, Tests und Prüfungen in einem frischen Chat fortzusetzen und hier sauber abzuschließen (07.11.) | PR revertieren |
