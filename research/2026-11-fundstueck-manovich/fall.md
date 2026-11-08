@@ -2,10 +2,12 @@
 dient: A04, A06, A10, A27
 datum: 2026-11-08
 modell: Claude Opus 5.5 (Claude-App, Cloud-Sitzung)
-status: Stufe 2 nach Vorschlag 0031. Nicht gegengelesen. Keine Regel abgeleitet; Kandidaten am Ende.
+status: Prüfprotokoll zur Analyse (analyse.md). Nicht gegengelesen.
 ---
 
-# Fall: Lev Manovich, Text Time-lapse 2 – was man über Infrastruktur, Bedienung und Darstellung lernen kann
+# Prüfprotokoll: Text Time-lapse 2 – Infrastruktur, Bedienung, Lesbarkeit
+
+Die Hauptanalyse steht in [analyse.md](analyse.md); hier stehen Material, Tests und Messungen.
 
 Auftrag des Eigentümers (Chat, 08.11.): das Fundstück vertiefen. Eine erste Fassung verglich Takt
 und Textmenge mit dem Labor. Der Eigentümer hat das verworfen, weil die Rahmenbedingungen unbekannt
