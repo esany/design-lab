@@ -59,7 +59,7 @@
   *Beleg:* `evals/neustart-daten/ergebnisse/2026-11-07-gegenlesen-astra.md`, Prüfung der zwei vorgesehenen Aussagen, 4b; Prüfläufe im Vergleich
   *Grenze:* Die Kommentare entstanden vor Abschluss der Prüfungen; ob die Prüflinge die Fehler sehen konnten, ist nicht nachgewiesen.
 
-### Abgeleitet (12)
+### Abgeleitet (13)
 
 - **arbeitsweise-a01** Fortschritt kommt in der Arbeit mit der KI als Text zurück, nicht als etwas zum Ansehen oder Ausprobieren; der Gestalter sieht deshalb nicht, ob Strukturen tragen.
 - **arbeitsweise-a06** Wurzel des Problems: Im Entwurf antwortet das Material, in der Arbeit mit der KI nur Text; der Gestalter ersetzt sein Urteil durch Regeln.
@@ -81,6 +81,8 @@
   *Grenze:* Im Labor: #129 übernommen 30 Sekunden vor dem Anhalten aus einem zweiten Chat; extern CooperBench (Keim in der Herleitung, Quelle noch nicht im Korpus).
 - **arbeitsweise-a26** In 2 von 3 dokumentierten Prüfläufen wurde der vorgesehene Weg zum Erzeugen der Übersicht nicht eingehalten: Astra rekonstruierte die Erzeugung laut eigener Angabe, Codex lieferte die aktualisierte Übersicht nicht mit.
   *Grenze:* Drei Läufe unter verschiedenen Bedingungen; ein Vergleich der Modelle folgt daraus nicht. Engere Fassung nach Astras Gegenlesen, vom Eigentümer am 08.11. bestätigt.
+- **arbeitsweise-a28** Die KI legt Widersprüche gleichrangig nebeneinander, statt dem Eigentümer zuerst die eine Frage zu zeigen, die er entscheiden muss; sie verkürzt Bedeutung auf Struktur und übergeht seinen Wunsch nach Namen statt Nummern.
+  *Grenze:* Einmal beobachtet (08.11.), im Leitfaden-Chat und im Chat zum Prüfstand; keine Regel. Wortlaut des Eigentümers: f36.
 
 ### Nicht belegt (1)
 

@@ -41,6 +41,15 @@ Daraus folgt für jede Arbeit:
   Wissensprojekte in anderen Domänen (Herleitung:
   `research/gespraeche/2026-10-29-system-als-organismus.md`).
 
+### Das Labor als Entwurfsgegenstand (Eigentümer, 08.11.2026)
+
+> Wir entwerfen ein systemisch methodisches werkzeug, dessen Prinzipien seinem eigenen
+> entwurfsprozeß zugrunde liegt. Die experimente dienen dazu zu prüfen, wie gut das Werkzeug
+> design-lab wirklich arbeitet und was überhaupt können sollte
+
+Wortlaut aus dem Chat (Frage f35 in `daten/arbeitsweise.json`). Daraus folgt: Prüffälle wie
+`evals/neustart-daten/` sind keine Nebenarbeit, sondern die Prüfung des Werkzeugs selbst.
+
 ## Zielstellung
 
 **Maximale Qualität und Ergebnisse mit minimalen Ressourcen und Invest — ohne

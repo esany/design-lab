@@ -299,6 +299,14 @@
         }
       ],
       "notiz": "Die Kommentare entstanden vor Abschluss der Prüfungen; ob die Prüflinge die Fehler sehen konnten, ist nicht nachgewiesen."
+    },
+    {
+      "id": "arbeitsweise-a28",
+      "aussage": "Die KI legt Widersprüche gleichrangig nebeneinander, statt dem Eigentümer zuerst die eine Frage zu zeigen, die er entscheiden muss; sie verkürzt Bedeutung auf Struktur und übergeht seinen Wunsch nach Namen statt Nummern.",
+      "status": "abgeleitet",
+      "seit": "2026-11-08",
+      "herleitung": "research/2026-11-wissensformen/konzeptstand-2026-11-08.md",
+      "notiz": "Einmal beobachtet (08.11.), im Leitfaden-Chat und im Chat zum Prüfstand; keine Regel. Wortlaut des Eigentümers: f36."
     }
   ],
   "fragen": [

@@ -88,6 +88,8 @@ haben den Prozess nicht ausreichend unterstützt und gesteuert.
 
 ## Warten auf das Ja des Eigentümers (Nachtrag 08.11.)
 
+*Übernommen am 08.11. auf das Ja des Eigentümers („Übernimm alles“):* der Satz im Intent (Abschnitt „Das Labor als Entwurfsgegenstand“), die zwei Keime in `leitfaden-wachsend.md`, Abschnitt 3, und die Beobachtung als Aussage a28. Weiter offen: die beiden Vorschläge aus dem Befund.
+
 - Sein Satz (f35) über das Labor als systemisch-methodisches Werkzeug, dessen Prinzipien seinem
   eigenen Entwurfsprozess zugrunde liegen, und die Experimente als Prüfung, im Wortlaut in
   `intent.md`.
