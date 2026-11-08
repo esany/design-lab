@@ -655,6 +655,22 @@
     "geprueft": "2026-10-28"
   },
   {
+    "id": "rodighiero-print-studio-2026",
+    "titel": "Print Studio",
+    "autor": "Dario Rodighiero",
+    "jahr": 2026,
+    "art": "Repo",
+    "url": "https://github.com/rodighiero/print-studio",
+    "lizenz": "MIT",
+    "felder": [
+      "form"
+    ],
+    "status": "belegt",
+    "notiz": "Methodische Referenz für die Druckvorstufe als eigenen Schritt: Siebdruckfilme je Farbe aus einer Datenvisualisierung (Surprise Machines), Raster in absoluten Bogenpixeln, Prüfansicht in Exportauflösung, Beschnitt und Passkreuze. Code und 34 Tests gesichtet und ausgeführt (08.11.); an einen Datensatz gebunden, CMYK ohne Farbprofil. Bilder der Harvard Art Museums nicht unter MIT.",
+    "zugang": "offen",
+    "geprueft": "2026-11-08"
+  },
+  {
     "id": "scribus",
     "titel": "Scribus",
     "autor": "Scribus-Team",
