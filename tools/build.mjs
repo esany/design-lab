@@ -10,7 +10,7 @@ import { pruefeDaten, pruefeVerweise, ansicht } from "./daten.mjs";
 import { readFileSync, writeFileSync, readdirSync, existsSync, statSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { leseKopf, aktualisiereStand, pruefeLaenge } from "./gitter.mjs";
+import { leseKopf, aktualisiereStand, pruefeLaenge, pruefeVerlaufseintrag } from "./gitter.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const check = process.argv.includes("--check");
@@ -174,6 +174,11 @@ for (const [file, auswahl] of Object.entries(CORPUS)) {
     if (q.id) corpus.set(q.id, { ...q, auswahl });
   }
 }
+
+// ---------- Verlauf als Einzeldateien (verlauf/JJJJ-MM-TT-kurz.md, 0034) → prüfen ----------
+const verlaufDir = join(root, "verlauf");
+if (existsSync(verlaufDir)) for (const n of readdirSync(verlaufDir).filter((n) => n.endsWith(".md") && n !== "README.md"))
+  errors.push(...pruefeVerlaufseintrag(n, readFileSync(join(verlaufDir, n), "utf8")));
 
 // ---------- Daten je Thema (daten/<thema>.json) → prüfen ----------
 // Aussagen und Fragen an den Eigentümer; Schema: daten/schema.md; Prüffälle: tools/daten-test.mjs

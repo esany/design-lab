@@ -7,7 +7,7 @@
    - die Änderung liegt im Rahmen freigegebener Anforderungen, Prinzipien und
      Entscheidungen;
    - alle automatischen Prüfungen sind grün;
-   - die Änderung ist in `stand-verlauf.md` eingetragen (was · warum · wie rückgängig;
+   - die Änderung hat eine eigene Datei in `verlauf/` (was · warum · wie rückgängig, 0034;
      geprüft durch „Stand gegen GitHub“).
    **Zum Menschen** gehen stattdessen — als Frage, nicht als Review-Auftrag:
    offene Punkte und Unsicherheiten; Gestaltungs- und Bedeutungsentscheidungen;
@@ -15,7 +15,7 @@
    Kosten, Konten, externe Dienste, Sicherheit). Der Mensch ist kein
    Durchreicher für Klicks.
 3. **Autonomie nach Umkehrbarkeit:**
-   - frei: `studies/`, `experiments/`, `radar.md`, `corpus/`, `stand.md`, `stand-verlauf.md`
+   - frei: `studies/`, `experiments/`, `radar.md`, `corpus/`, `stand.md`, `verlauf/`
    - nur mit Rückfrage, wenn es Haltung oder Regeln ändert: `principles.md`,
      `AGENTS.md`, `.agents/skills/`, `system/`, `.github/`
 4. Nichts löschen, was nicht im eigenen Branch entstanden ist. Veraltetes
@@ -28,7 +28,7 @@
    die Antwort des Menschen; der Agent trägt sie ein. Kopf: `perspektive:` (system, fach,
    gebrauch); Aufbau nach `decisions/VORLAGE.md` mit Alternativen und Folgen (0030).
 7. **Rückgängig:** Sagt der Mensch „X rückgängig“, erstellt der Agent einen
-   Revert als eigenen Pull Request und vermerkt ihn in `stand-verlauf.md`.
+   Revert als eigenen Pull Request und legt dafür eine Datei in `verlauf/` an.
 8. Nach Änderungen an `system/` oder `studies/`: `node tools/build.mjs`
    ausführen und das Ergebnis mit committen. Erzeugte Dateien nie von Hand
    nachbauen. Wer den Build nicht ausführen kann, lässt sie weg: Die

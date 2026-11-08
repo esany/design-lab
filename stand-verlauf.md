@@ -1,5 +1,8 @@
 # Stand — Verlauf
 
+> **Seit 08.11.2026 nicht mehr fortgeschrieben.** Neue Einträge stehen als eigene Dateien in
+> [`verlauf/`](verlauf/) (Entscheidung 0034). Diese Datei bleibt als Historie.
+
 **2026-10-29 · #103:** Stand aus Merkzetteln erzeugt und automatisch geprüft. Rückgängig: „Stand-Gitter rückgängig“ (Revert des zugehörigen Pull Requests).
 
 ## Letzte Änderungen

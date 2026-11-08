@@ -38,6 +38,19 @@ export function pruefeGitHub(themen, issues, isPR, dateien, labels) {
     if (!(n in issues)) errors.push(`Issue #${n}: Status fehlt`);
     else if (issues[n] !== 'open') errors.push(`Issue #${n} ist ${issues[n]}`);
   }
-  if (isPR && !dateien.includes('stand-verlauf.md') && !labels.includes('ohne-verlauf')) errors.push('Pull Request ändert stand-verlauf.md nicht und trägt kein Label ohne-verlauf');
+  // Seit 0034: Eintrag als eigene Datei in verlauf/; stand-verlauf.md gilt für ältere Branches weiter.
+  const eintrag = dateien.some(d => d === 'stand-verlauf.md' || /^verlauf\/\d{4}-\d{2}-\d{2}-[^/]+\.md$/.test(d));
+  if (isPR && !eintrag && !labels.includes('ohne-verlauf')) errors.push('Pull Request legt keinen Eintrag in verlauf/ an und trägt kein Label ohne-verlauf');
+  return errors;
+}
+
+// Ein Verlaufseintrag (0034): verlauf/JJJJ-MM-TT-kurz.md mit Titelzeile, Warum und Rückgängig.
+export function pruefeVerlaufseintrag(name, text) {
+  const errors = [];
+  const m = name.match(/^(\d{4}-\d{2}-\d{2})-[a-z0-9äöüß-]+\.md$/);
+  if (!m) return [`verlauf/${name}: Name muss JJJJ-MM-TT-kurz.md sein`];
+  if (!text.startsWith(`# ${m[1]} · `)) errors.push(`verlauf/${name}: erste Zeile muss „# ${m[1]} · Titel“ sein`);
+  if (!/^\*\*Warum:\*\* \S/m.test(text)) errors.push(`verlauf/${name}: Zeile „**Warum:** …“ fehlt`);
+  if (!/^\*\*Rückgängig:\*\* \S/m.test(text)) errors.push(`verlauf/${name}: Zeile „**Rückgängig:** …“ fehlt`);
   return errors;
 }
