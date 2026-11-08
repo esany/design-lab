@@ -6,6 +6,7 @@
 
 | Datum | Was | Warum | Rückgängig |
 |---|---|---|---|
+| 2026-11-08 | **Prüfstand: Die automatische Prüfung baut die Übersichten selbst (Claude, 0033):** Bei jedem PR erzeugt sie die Übersichten neu, schreibt sie in den PR-Branch zurück und prüft danach erneut; sie läuft auch beim Setzen eines Labels. Schreibregel 8: erzeugte Dateien nie von Hand nachbauen | Ihr Ja zu f14 (07.11.) und zu Schreibrechten auf PR-Branches (08.11.); parallele Chats kollidierten in erzeugten Dateien | PR revertieren |
 | 2026-11-07 | **Arbeitsweise: Kurzformen und Prüfung der Leitfaden-Sicherung (Claude):** Merkzettel nennt Prüfstand, Leitfaden, KI-Fachpaket, Testeinträge und Leitfaden-Sicherung statt Buchstaben und Nummern; Schritt 1 des Prüfstands als erledigt und vorgelegt markiert | Ihr Wunsch im Chat (07.11.), Sie mit Namen statt Kürzeln anzusprechen | PR revertieren |
 | 2026-11-07 | **Arbeitsweise: Prüfung von #143 nach vorn (Claude):** zuerst, weil B und C davon abhängen und sie nur liest | Ihre Frage, ob die Analyse des Leitfaden-Chats parallel laufen kann (07.11.) | PR revertieren |
 | 2026-11-07 | **Arbeitsweise: Abschluss des Chats vom 06./07.11. (Claude):** Merkzettel ordnet drei Stränge (Prüffall, Leitfaden, Fachpaket) mit Abhängigkeiten und Reihenfolge; Auswertungsentwürfe berichtigt (Branch, nicht übernommen) | Ihr Wunsch, Tests und Prüfungen in einem frischen Chat fortzusetzen und hier sauber abzuschließen (07.11.) | PR revertieren |

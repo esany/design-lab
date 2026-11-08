@@ -20,11 +20,12 @@ for (const n of new Set(themen.flatMap(t => t.offen))) {
   if (issue.pull_request) throw new Error(`#${n} ist ein Pull Request, kein Issue`);
   issues[n] = issue.state;
 }
-const isPR = process.env.GITHUB_EVENT_NAME === 'pull_request';
+// Neu gestartete Prüfung (workflow_dispatch, 0033) nennt den Pull Request über PR_NUMMER.
+const prNummer = process.env.PR_NUMMER ? Number(process.env.PR_NUMMER) : null;
+const isPR = process.env.GITHUB_EVENT_NAME === 'pull_request' || prNummer !== null;
 let dateien = [], labels = [];
 if (isPR) {
-  const event = JSON.parse(readFileSync(process.env.GITHUB_EVENT_PATH, 'utf8'));
-  const number = event.number;
+  const number = prNummer ?? JSON.parse(readFileSync(process.env.GITHUB_EVENT_PATH, 'utf8')).number;
   if (!Number.isSafeInteger(number) || number < 1) throw new Error('Pull-Request-Nummer fehlt');
   // Labels aus der API lesen, damit auch nachträglich gesetzte Labels berücksichtigt werden.
   const pr = await get(`/issues/${number}`);

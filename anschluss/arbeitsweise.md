@@ -47,13 +47,10 @@ Nummern):
 | **C** | KI-Fachpaket | Konzept `research/2026-11-wissensformen/fachpaket-ki-werkzeug.md` | Leitfaden (als Ansicht? f16, f26) |
 
 **Prüfstand im frischen Chat, in dieser Reihenfolge:**
-1. *Erledigt 07.11., dem Eigentümer vorgelegt:* Leitfaden-Sicherung prüfen (Bestand im Repo,
-   Branch, PR, Verlauf, Prüfungen, Leitfaden-Einträge unangetastet, Ursache, fachlicher Ertrag
-   für Leitfaden und KI-Fachpaket). Ergebnis bisher nur im Chat; ob es als Kommentar in die
-   Leitfaden-Sicherung geht, ist eine Frage an den Eigentümer.
-2. Automatische Prüfung: baut die erzeugten Übersichten selbst und läuft beim Setzen eines Labels
-   neu (f14, Ja), damit parallele Chats nicht in erzeugten Dateien kollidieren. Schreibrechte für
-   die Prüfung sind eine Frage an den Eigentümer.
+1. *Erledigt:* Leitfaden-Sicherung geprüft; Ergebnis als Kommentar in der Leitfaden-Sicherung
+   (08.11.).
+2. *Als PR vorgelegt (08.11.):* Die automatische Prüfung baut die Übersichten selbst und läuft
+   beim Setzen eines Labels neu (f14, Ja; Schreibrechte auf PR-Branches, Ja; Entscheidung 0033).
 3. Zwei Beobachtungen als Aussagen (abgeleitet) in `daten/arbeitsweise.json`: Modelle übergehen
    Pflichtschritte oder bauen Erzeugtes nach (2 von 3 Läufen); keines nennt eine rote Prüfung
    von sich aus (3 von 3). Nächste freie Nummer nach der Leitfaden-Sicherung: a26.
