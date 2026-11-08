@@ -108,6 +108,8 @@ und in den Korpus aufnehmen.
 | Arbeite parallel nur an getrennten Aufgaben | Curse of Coordination | parallel, zusammenarbeit | verwandt: Artifact Pattern | [CooperBench, arXiv 2601.13295](https://arxiv.org/abs/2601.13295): im Schnitt 30 % weniger Erfolg zu zweit |
 | Gib Ergebnisse über einen gemeinsamen Ort weiter, nicht durch Nacherzählen | Artifact Pattern, Blackboard | übergabe, zusammenarbeit | verwandt: Curse of Coordination | [arXiv 2601.11672](https://arxiv.org/pdf/2601.11672) zu Anthropics Multi-Agent-System |
 | Halte den geladenen Kern stabil, dann wird er billig | Prompt Caching | kosten, tokens | — | [Don't Break the Cache, arXiv 2601.06007](https://arxiv.org/abs/2601.06007): 41–80 % geringere Kosten bei API-Agenten |
+| Trenne Fragen nach Ebene, bevor du Positionen abwägst | Issue-Based Information System (IBIS) | entscheiden, analyse, erkenntnis | verwandt: Offenes Kodieren | Kunz, Rittel 1970, über Sekundärquellen gesichtet, nicht im Korpus |
+| Halte einen aktuellen Konzeptstand; ältere Stände tragen „überholt durch“ | Design Rationale | wissen, entscheiden, struktur | verwandt: Single Source of Truth | Kunz, Rittel 1970, wie oben |
 
 ## 4 · Verworfen im Chat (nur zur Nachvollziehbarkeit)
 
