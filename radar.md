@@ -8,7 +8,7 @@ Werkzeuge und Entwicklungen, die das Labor beobachtet. Vier Ringe:
 - **Halten** — bewusst nicht (mehr) nutzen
 
 Jeder Eintrag: was es ist · warum relevant · Quelle · Stand. Änderungen nur mit
-Begründung (Skill `pflege`). Stand des Radars: **2026-11-08**.
+Begründung (Skill `pflege`). Stand des Radars: **2026-11-09**.
 
 ## Einsetzen
 
@@ -79,6 +79,8 @@ Begründung (Skill `pflege`). Stand des Radars: **2026-11-08**.
 | Penpot 2.19 „Is this it“ | Design-Tokens aus einer Bibliothek in alle verbundenen Dateien teilen, synchron bei Updates; Pfad-Editor, WebGL-Darstellung (Einstellung) — prüfen, ob DTCG-Tokens des Labors so zentral in Penpot liegen können | [Penpot Release Notes](https://penpot.app/release-notes/2-19-is-this-it) | 2026-10-28 |
 | Style Dictionary 5.7 | Token-Übersetzer unterstützt DTCG-2025.10-`duration`-Tokens und `$root`-Gruppen — passt zu „DTCG-Tokens (2025.10)“ unter Einsetzen | [GitHub Release v5.7.0](https://github.com/style-dictionary/style-dictionary/releases/tag/v5.7.0) | 2026-10-16 |
 | Observable Notebook Kit 2.9 (ISC) | offene Grundlage der Observable-Notebooks 2.0; neu: SQLite- und DuckDB-Dateien direkt als Datenquelle in Notebooks — für Datenvisualisierung ohne Server | [GitHub Release v2.9.0](https://github.com/observablehq/notebook-kit/releases/tag/v2.9.0) | 2026-10-27 |
+| Scribus 1.6.7 (stabil) und 1.7.4 (Entwicklung) | 1.6.7 schließt sieben Speicherfehler beim Laden von PSD-, PICT-, TIFF-, DRW- und SVM-Bildern (Absturz bis Codeausführung möglich); 1.7.4 bringt überarbeitete Tabellen, Rechts-nach-links-Satz und neue Seitenformat-Vorlagen. Vor dem geplanten Flyer-Vergleich mindestens 1.6.7 verwenden. PDF/X und CMYK in den Meldungen nicht erwähnt (nicht belegt) | [ubuntuhandbook](https://ubuntuhandbook.org/index.php/2026/10/scribus-1-6-7-released-with-various-fixes-ppa-updated-for-ubuntu/), [linuxcompatible](https://www.linuxcompatible.org/story/scribus-167-and-174-ship-security-fixes-and-longawaited-tables-overhaul/); offizielle Notizen laut beiden: scribus.net (nicht selbst geprüft) | 2026-10-27 |
+| Blender 5.3 (Release Candidate, Freigabe angekündigt für 2026-11-10) | Neu u. a. Gaussian Splatting, OpenTimelineIO, „Blender Projects“, verbesserter Video-Sequencer, Grease Pencil — für Raum- und Ausstellungsstudien (Blender steht unter „Erproben“). Inhalte der Unterseiten (Python-API, Projects) nicht geprüft; Verträglichkeit mit dem Blender-MCP offen | [blender.org](https://www.blender.org/releases/5-3/), [Release Notes](https://developer.blender.org/docs/release_notes/5.3/) | 2026-11-09 |
 
 ### Feld: Hochschulen und Konferenzen (beobachten)
 
