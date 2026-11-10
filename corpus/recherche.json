@@ -1708,5 +1708,273 @@
     "status": "belegt",
     "notiz": "Skills für ChatGPT und Codex bauen auf dem offenen Agent-Skills-Standard auf. Seite angesehen (Auszug).",
     "geprueft": "2026-11-06"
+  },
+  {
+    "id": "card-mackinlay-shneiderman-1999",
+    "titel": "Readings in Information Visualization: Using Vision to Think",
+    "autor": "Stuart K. Card, Jock D. Mackinlay, Ben Shneiderman (Hrsg.)",
+    "jahr": 1999,
+    "art": "Buch",
+    "url": "https://shop.elsevier.com/books/readings-in-information-visualization/card/978-0-08-051573-1",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "vermitteln",
+      "erkennen"
+    ],
+    "status": "belegt",
+    "notiz": "Morgan Kaufmann 1999. Grundlegende Sammlung; daraus der Satz „The purpose of visualization is insight, not pictures“ (von Shneiderman in einem Interview wiederholt, Medium „Multiple Views“). Buch selbst nicht gelesen.",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-11-10"
+  },
+  {
+    "id": "shneiderman-1996",
+    "titel": "The Eyes Have It: A Task by Data Type Taxonomy for Information Visualizations",
+    "autor": "Ben Shneiderman",
+    "jahr": 1996,
+    "art": "Paper",
+    "url": "https://drum.lib.umd.edu/handle/1903/5784",
+    "lizenz": "unbekannt",
+    "felder": [
+      "vermitteln",
+      "interaktion"
+    ],
+    "status": "belegt",
+    "notiz": "IEEE Symposium on Visual Languages 1996, DOI 10.1109/VL.1996.545307. Mantra „Overview first, zoom and filter, then details-on-demand“; sieben Aufgaben (overview, zoom, filter, details-on-demand, relate, history, extract). Abstract gesehen.",
+    "zugang": "offen",
+    "geprueft": "2026-11-10"
+  },
+  {
+    "id": "wilkinson-2005",
+    "titel": "The Grammar of Graphics (2. Auflage)",
+    "autor": "Leland Wilkinson",
+    "jahr": 2005,
+    "art": "Buch",
+    "url": "https://doi.org/10.1007/0-387-28695-0",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "vermitteln",
+      "system"
+    ],
+    "status": "belegt",
+    "notiz": "Springer, Reihe Statistics and Computing; 1. Auflage 1999. Grafik als Zusammensetzung aus Regeln (Data, Variables, Algebra, Scales, Statistics, Geometry, Coordinates, Aesthetics, Facets, Guides …) statt Katalog von Diagrammtypen; Grundlage u. a. von Vega-Lite. Inhaltsverzeichnis gesehen, Buch nicht gelesen.",
+    "zugang": "eingeschränkt",
+    "geprueft": "2026-11-10"
+  },
+  {
+    "id": "roberts-2007",
+    "titel": "State of the Art: Coordinated & Multiple Views in Exploratory Visualization",
+    "autor": "Jonathan C. Roberts",
+    "jahr": 2007,
+    "art": "Paper",
+    "url": "https://kar.kent.ac.uk/14569",
+    "lizenz": "unbekannt",
+    "felder": [
+      "interaktion",
+      "system"
+    ],
+    "status": "belegt",
+    "notiz": "CMV 2007, IEEE, S. 61–71, DOI 10.1109/CMV.2007.20. Überblick über koordinierte Mehrfachansichten (Linked Views, Brushing). Abstract gesehen.",
+    "zugang": "offen",
+    "geprueft": "2026-11-10"
+  },
+  {
+    "id": "segel-heer-2010",
+    "titel": "Narrative Visualization: Telling Stories with Data",
+    "autor": "Edward Segel, Jeffrey Heer",
+    "jahr": 2010,
+    "art": "Paper",
+    "url": "https://idl.uw.edu/papers/narrative",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "vermitteln",
+      "interaktion"
+    ],
+    "status": "belegt",
+    "notiz": "IEEE TVCG (Proc. InfoVis) 2010. 58 Fallbeispiele; sieben Genres (u. a. annotated chart, partitioned poster, slide show); Spektrum vom Autor geführt bis vom Leser gesteuert; Muster Martini-Glas, interaktive Diashow, Drill-down-Geschichte. Abstract und Einleitung gesehen.",
+    "zugang": "offen",
+    "geprueft": "2026-11-10"
+  },
+  {
+    "id": "hullman-diakopoulos-2011",
+    "titel": "Visualization Rhetoric: Framing Effects in Narrative Visualization",
+    "autor": "Jessica Hullman, Nicholas Diakopoulos",
+    "jahr": 2011,
+    "art": "Paper",
+    "url": "https://mucollective.northwestern.edu/project/vis-rhetoric",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "vermitteln"
+    ],
+    "status": "belegt",
+    "notiz": "IEEE TVCG 17(12), S. 2231–2240, DOI 10.1109/TVCG.2011.255. Gestaltungsentscheidungen auf den Ebenen Daten, Darstellung, Text und Interaktion lenken die Deutung (Rahmung); Begriffe Denotation und Konnotation. Abstract gesehen.",
+    "zugang": "offen",
+    "geprueft": "2026-11-10"
+  },
+  {
+    "id": "kosara-mackinlay-2013",
+    "titel": "Storytelling: The Next Step for Visualization",
+    "autor": "Robert Kosara, Jock Mackinlay",
+    "jahr": 2013,
+    "art": "Artikel",
+    "url": "https://www.tableau.com/research/publications/storytelling-next-step-visualization",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "vermitteln"
+    ],
+    "status": "belegt",
+    "notiz": "IEEE Computer 46(5), S. 44–50. These: Präsentation und Kommunikation spielten in der Forschung bisher eine Nebenrolle gegenüber Exploration und Analyse und verdienen mindestens gleiches Gewicht. Abstract gesehen.",
+    "zugang": "offen",
+    "geprueft": "2026-11-10"
+  },
+  {
+    "id": "victor-2011",
+    "titel": "Up and Down the Ladder of Abstraction",
+    "autor": "Bret Victor",
+    "jahr": 2011,
+    "art": "Artikel",
+    "url": "https://worrydream.com/LadderOfAbstraction/",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "vermitteln",
+      "interaktion",
+      "system"
+    ],
+    "status": "abgeleitet",
+    "notiz": "Interaktiver Essay, Oktober 2011 (Datum belegt über worrydream.com/process). Kern nach Sekundärquellen: zwischen konkretem Einzelfall und abstrakter Gesamtsicht hin- und herwechseln, beides gekoppelt. Essay selbst für Agenten nicht abrufbar.",
+    "zugang": "blockiert",
+    "geprueft": "2026-11-10"
+  },
+  {
+    "id": "sarikaya-2019",
+    "titel": "What Do We Talk About When We Talk About Dashboards?",
+    "autor": "Alper Sarikaya, Michael Correll, Lyn Bartram, Melanie Tory, Danyel Fisher",
+    "jahr": 2019,
+    "art": "Paper",
+    "url": "https://tableau.com/research/publications/what-do-we-talk-about-when-we-talk-about-dashboards",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "vermitteln",
+      "system"
+    ],
+    "status": "belegt",
+    "notiz": "IEEE TVCG 25(1), 2019 (InfoVis 2018). Dashboards unterscheiden sich in Gestaltung und Gebrauch deutlich von explorativen Werkzeugen; Gestaltungsraum, Dashboard-Typen nach Zielen, Interaktionsgrad und Praxis. Abstract gesehen.",
+    "zugang": "offen",
+    "geprueft": "2026-11-10"
+  },
+  {
+    "id": "bach-2023",
+    "titel": "Dashboard Design Patterns",
+    "autor": "Benjamin Bach, Euan Freeman, Alfie Abdul-Rahman, Cagatay Turkay, Saiful Khan, Yulei Fan, Min Chen",
+    "jahr": 2023,
+    "art": "Paper",
+    "url": "https://arxiv.org/abs/2205.00757",
+    "lizenz": "unbekannt",
+    "felder": [
+      "vermitteln",
+      "system"
+    ],
+    "status": "belegt",
+    "notiz": "IEEE TVCG 29(1), S. 342–352, DOI 10.1109/TVCG.2022.3209448. 144 Dashboards ausgewertet, 42 Muster in acht Gruppen, Genres (u. a. narrativ, analytisch). Aussage zum Informationsverlust (Datenraum des Dashboards kleiner als der der Daten, größer als der der Entscheidung) gesehen in der Wiedergabe der Autoren auf der IVAS-Seite, ursprünglicher Abschnitt 7.1, veröffentlicht als 5.1.",
+    "zugang": "offen",
+    "geprueft": "2026-11-10"
+  },
+  {
+    "id": "brossier-2026",
+    "titel": "State of the Art of LLM-Enabled Interaction with Visualization",
+    "autor": "Mathis Brossier, Tobias Isenberg, Konrad Schönborn, Jonas Unger, Mario Romero, Johanna Björklund, Anders Ynnerman, Lonni Besançon",
+    "jahr": 2026,
+    "art": "Paper",
+    "url": "https://arxiv.org/abs/2601.14943",
+    "lizenz": "unbekannt",
+    "felder": [
+      "vermitteln",
+      "interaktion"
+    ],
+    "status": "belegt",
+    "notiz": "EuroVis 2026 STAR, Computer Graphics Forum 45(3). Systematische Übersicht (PRISMA) über 48 Arbeiten zu Sprachmodellen und Visualisierung, Schwerpunkt Wort-Bild-Interaktion fürs Verstehen von Daten; benennt Lücken in der Evaluation. Abstract und Einleitung gesehen.",
+    "zugang": "offen",
+    "geprueft": "2026-11-10"
+  },
+  {
+    "id": "ye-2024-genai4vis",
+    "titel": "Generative AI for Visualization: State of the Art and Future Directions",
+    "autor": "Yilin Ye, Jianing Hao, Yihan Hou, Zhan Wang, Shishi Xiao, Yuyu Luo, Wei Zeng",
+    "jahr": 2024,
+    "art": "Paper",
+    "url": "https://doi.org/10.1016/j.visinf.2024.04.003",
+    "lizenz": "unbekannt",
+    "felder": [
+      "vermitteln"
+    ],
+    "status": "belegt",
+    "notiz": "Visual Informatics 2024. Vier Aufgaben (Datenanreicherung, visuelle Zuordnung, Stilisierung, Interaktion); drei Herausforderungen: Evaluation, Datensätze, Lücke zwischen End-to-End-Generierung und Visualisierung. Abstract gesehen.",
+    "zugang": "offen",
+    "geprueft": "2026-11-10"
+  },
+  {
+    "id": "he-2025-narrative-fm",
+    "titel": "Leveraging Foundation Models for Crafting Narrative Visualization: A Survey",
+    "autor": "Yi He, Ke Xu, Shixiong Cao, Yang Shi, Qing Chen, Nan Cao",
+    "jahr": 2025,
+    "art": "Paper",
+    "url": "https://arxiv.org/abs/2401.14010",
+    "lizenz": "unbekannt",
+    "felder": [
+      "vermitteln"
+    ],
+    "status": "belegt",
+    "notiz": "arXiv 2401.14010, Fassung 4 (Feb. 2025), 66 Arbeiten; Referenzmodell mit vier Phasen (Analyse, Erzählung, Visualisierung, Präsentation). Abstract gesehen.",
+    "zugang": "offen",
+    "geprueft": "2026-11-10"
+  },
+  {
+    "id": "li-2025-storytelling-ki",
+    "titel": "Reflection on Data Storytelling Tools in the Generative AI Era from the Human-AI Collaboration Perspective",
+    "autor": "Haotian Li, Yun Wang, Huamin Qu",
+    "jahr": 2025,
+    "art": "Paper",
+    "url": "https://arxiv.org/abs/2503.02631",
+    "lizenz": "unbekannt",
+    "felder": [
+      "vermitteln",
+      "labor"
+    ],
+    "status": "belegt",
+    "notiz": "27 Werkzeuge (Juni 2023 bis Dez. 2024) verglichen mit früheren; bleibendes Muster Mensch als Urheber mit KI als Assistenz, neues Muster KI als Urheber mit Mensch als Prüfer. Abstract gesehen.",
+    "zugang": "offen",
+    "geprueft": "2026-11-10"
+  },
+  {
+    "id": "wang-2025-data-formulator",
+    "titel": "Data Formulator 2: Iterative Creation of Data Visualizations, with AI Transforming Data Along the Way",
+    "autor": "Chenglong Wang, Bongshin Lee, Steven Drucker, Dan Marshall, Jianfeng Gao",
+    "jahr": 2025,
+    "art": "Paper",
+    "url": "https://arxiv.org/abs/2408.16119",
+    "lizenz": "unbekannt",
+    "felder": [
+      "vermitteln",
+      "interaktion"
+    ],
+    "status": "belegt",
+    "notiz": "CHI 2025. Oberfläche plus Sprache statt reinem Prompt; KI übernimmt die Datenumformung, Verlauf als verzweigte „data threads“; baut auf Vega-Lite; Werkzeug quelloffen (MIT, github.com/microsoft/data-formulator). Studie mit acht Personen. Abstract und Einleitung gesehen.",
+    "zugang": "offen",
+    "geprueft": "2026-11-10"
+  },
+  {
+    "id": "tableau-pulse-2024",
+    "titel": "Tableau Pulse: LLM-basierte Zusammenfassungen von Kennzahlen",
+    "autor": "Salesforce AI Research, Tableau",
+    "jahr": 2024,
+    "art": "Artikel",
+    "url": "https://www.salesforce.com/blog/?p=100943",
+    "lizenz": "alle Rechte vorbehalten",
+    "felder": [
+      "vermitteln"
+    ],
+    "status": "belegt",
+    "notiz": "Stand der Praxis: Kennzahlen werden statistisch auf Auffälligkeiten geprüft, gerankt und per Sprachmodell als Text zusammengefasst; laut Entwicklerblog ist die direkte Übersetzung von Zahlen in korrekte Texte für Sprachmodelle schwierig, deshalb Zwischenschritt über Vorlagen. Funktion seit Tableau Cloud 2024.1 (help.tableau.com). Blog gesehen.",
+    "zugang": "offen",
+    "geprueft": "2026-11-10"
   }
 ]
