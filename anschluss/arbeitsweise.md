@@ -2,12 +2,12 @@
 thema: Arbeitsweise mit KI · Wissensformen
 stand: Prüfstand abgeschlossen (08.11.); Prüfung baut Übersichten selbst, Verlauf als Einzeldateien, rote Prüfung wird gemeldet; Leitfaden auf Grundlage des Konzeptstands 08.11. im eigenen Chat; KI-Fachpaket wartet auf den Leitfaden.
 naechster_schritt: Leitfaden-Chat: Minimalform und Datenformat des Leitfadens mit dem Eigentümer klären und bauen.
-offen: []
+offen: [168]
 ---
 
 # Thema: Arbeitsweise mit KI · Wissensformen
 
-**Zuletzt fortgeschrieben:** 08.11.2026 (Claude, gekürzt)
+**Zuletzt fortgeschrieben:** 10.11.2026 (ChatGPT, Praxisfall-Verweis)
 
 **Worum es geht:** Wie arbeitet der Gestalter mit KI so, dass echte Werke und Werkzeuge entstehen
 statt Textberge, und wie bleibt Wissen für jeden Chat erreichbar, ohne dass er alles lesen muss?
@@ -35,6 +35,8 @@ bedeutet (Wunsch des Eigentümers, 07./08.11.; [a:arbeitsweise-a28]).
 **Vorschläge, nicht beschlossen** (Konzeptstand): fester Moment am Chatende („Soll das bleiben?“);
 Prüfung, die meldet, wenn dasselbe an zwei Orten steht; parallele Entwurfsrichtungen halten fest,
 welche Fragen sie berühren, eine Übersicht zeigt Schnittmengen, und das Zusammenführen wird geplant.
+
+**Praxisfall (10.11., Entwurf):** [#168](https://github.com/esany/design-lab/issues/168) hält den anonymisierten 40-Stunden-UX/UI-Gestaltungsablauf als gemeinsamen Einstieg für KI-Werkzeuge fest. Noch kein Audit gestartet oder Pilot freigegeben; nächster Schritt ist die Wahl eines kleinen, messbaren Tests durch den Eigentümer. Keine Kunden- oder Produktdaten ins öffentliche Labor.
 
 **Geparkt:** Radar als Daten und Ansicht (Matrix oder Kreis offen); Freigabe-Prüfung (#132);
 Hooks; Projektnotiz paleo-type; Radar-Zeile Basic Memory; bei Konflikt startet GitHub keine Prüfung.
