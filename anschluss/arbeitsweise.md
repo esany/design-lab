@@ -9,14 +9,9 @@ offen: [168]
 
 **Zuletzt fortgeschrieben:** 10.11.2026 (ChatGPT, Praxisfall-Verweis)
 
-**Worum es geht:** Wie arbeitet der Gestalter mit KI so, dass echte Werke und Werkzeuge entstehen
-statt Textberge, und wie bleibt Wissen für jeden Chat erreichbar, ohne dass er alles lesen muss?
-Maßstab: „Ich will nicht, dass es fertig wird, ich will, dass es gut wird.“
-Leitfrage: Welche Struktur braucht das Labor, damit Wissen sparsam, ohne Widersprüche und für alle
-Modelle gleich gut nutzbar ist?
+**Leitfrage:** Wie hilft KI, echte Werke statt Textberge zu schaffen, und hält das Labor Wissen sparsam, widerspruchsfrei und modellübergreifend erreichbar? Maßstab: „Ich will nicht, dass es fertig wird, ich will, dass es gut wird.“
 
-**Im Gespräch:** Namen statt Nummern, immer mit Kontext und dem, was es für den Erkenntnisprozess
-bedeutet (Wunsch des Eigentümers, 07./08.11.; [a:arbeitsweise-a28]).
+**Im Gespräch:** Namen mit Kontext und Erkenntnisbedeutung statt Nummern (Wunsch 07./08.11.; [a:arbeitsweise-a28]).
 
 **Gilt:**
 - Das Labor ist selbst Entwurfsgegenstand; Experimente prüfen, wie gut es arbeitet (Intent, 08.11.).
@@ -36,7 +31,7 @@ bedeutet (Wunsch des Eigentümers, 07./08.11.; [a:arbeitsweise-a28]).
 Prüfung, die meldet, wenn dasselbe an zwei Orten steht; parallele Entwurfsrichtungen halten fest,
 welche Fragen sie berühren, eine Übersicht zeigt Schnittmengen, und das Zusammenführen wird geplant.
 
-**Praxisfall (10.11., Entwurf):** [#168](https://github.com/esany/design-lab/issues/168) hält den anonymisierten 40-Stunden-UX/UI-Gestaltungsablauf als gemeinsamen Einstieg für KI-Werkzeuge fest. Noch kein Audit gestartet oder Pilot freigegeben; nächster Schritt ist die Wahl eines kleinen, messbaren Tests durch den Eigentümer. Keine Kunden- oder Produktdaten ins öffentliche Labor.
+**Praxisfall:** [#168](https://github.com/esany/design-lab/issues/168) dokumentiert den anonymisierten 40-Stunden-UX/UI-Workflow. Pilot nicht freigegeben; keine Projektdaten öffentlich.
 
 **Geparkt:** Radar als Daten und Ansicht (Matrix oder Kreis offen); Freigabe-Prüfung (#132);
 Hooks; Projektnotiz paleo-type; Radar-Zeile Basic Memory; bei Konflikt startet GitHub keine Prüfung.
