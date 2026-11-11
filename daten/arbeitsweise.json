@@ -328,6 +328,27 @@
       "status": "abgeleitet",
       "seit": "2026-11-11",
       "notiz": "Einmal beobachtet (Claude, Kundenauftrag, 10./11.11.; Audit privat in esany/werke). Folgt auf a29 und a30. Gegenmittel im Werk: Wissensbasis und Prüfinstrument vor jedem Auftrag an ein Modell."
+    },
+    {
+      "id": "arbeitsweise-a32",
+      "aussage": "In einem Werkchat hat die KI das Laborwissen, das der Startauftrag nannte (Fachpaket, Laborarbeit, Leitfaden), nicht oder erst spät abgerufen und Gelesenes nicht angewendet: w-lesart war bekannt, trotzdem wurde zweimal vor der Klärung gebaut.",
+      "status": "abgeleitet",
+      "seit": "2026-11-11",
+      "notiz": "Einmal beobachtet (Claude, Kundenauftrag, 11.11.; privat in esany/werke). Prüffall evals/werkchat-lernen. Folgt auf a29–a31: Anweisungen allein tragen nicht."
+    },
+    {
+      "id": "arbeitsweise-a33",
+      "aussage": "Korrekturen des Eigentümers in einem Werk wurden nicht als Eingang an das Labor zurückgeführt, sondern nur im Werk abgelegt; die Rückkopplung des Organismus fehlte, auch weil das Labor im Werkchat nur lesbar freigegeben war.",
+      "status": "abgeleitet",
+      "seit": "2026-11-11",
+      "notiz": "Einmal beobachtet (Claude, 11.11.). Vom Eigentümer als schwerer Fehler benannt. Vorschlag zur Abhilfe: decisions/0035."
+    },
+    {
+      "id": "arbeitsweise-a34",
+      "aussage": "In einer frühen Entwurfsphase erzeugte die KI Dateien, einen Generator und acht Pull Requests, statt im Gespräch Lesart und Format zu klären; das Ergebnis wurde verworfen, die Kosten waren hoch.",
+      "status": "abgeleitet",
+      "seit": "2026-11-11",
+      "notiz": "Einmal beobachtet (Claude, 11.11.). Prinzipien 9 und 11; Eigentümer: der Chat sei richtig teuer."
     }
   ],
   "fragen": [
@@ -628,6 +649,12 @@
       "antwort": "ja mach das",
       "beantwortet": "2026-11-11",
       "notiz": "Chat zum Kundenauftrag (Claude); Antwort auf die Folgefrage nach Schreibzugang zum Labor."
+    },
+    {
+      "id": "arbeitsweise-f40",
+      "frage": "Soll ein Werkchat das Labor mit Schreibrecht für Eingänge (daten/, verlauf/, Issues) anhängen statt nur lesend? (decisions/0035)",
+      "gestellt": "2026-11-11",
+      "notiz": "Aus dem Werkchat vom 11.11., Anlass a33."
     }
   ]
 }
