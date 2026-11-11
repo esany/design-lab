@@ -307,6 +307,20 @@
       "seit": "2026-11-08",
       "herleitung": "research/2026-11-wissensformen/konzeptstand-2026-11-08.md",
       "notiz": "Einmal beobachtet (08.11.), im Leitfaden-Chat und im Chat zum Prüfstand; keine Regel. Wortlaut des Eigentümers: f36."
+    },
+    {
+      "id": "arbeitsweise-a29",
+      "aussage": "Auf die Frage, wo die KI bei einem fachfremden Auftrag echt entlastet, hat sie das Thema zuerst ausgeweitet (Matrizen, Taxonomien, Domänenrecherche), bevor Auftrag, Umfang und Stundenrahmen geklärt waren; zurück auf den Auftrag kam es erst, als der Eigentümer die Aufgabenbeschreibung einbrachte.",
+      "status": "abgeleitet",
+      "seit": "2026-11-11",
+      "notiz": "Einmal beobachtet (Claude, 10./11.11.) in einem Kundenauftrag; Inhalte privat in esany/werke. Muster wie die größere Lesart (a28). Gegenfrage, die gefehlt hat: Was ist der Auftrag, wie viel Zeit, was ist nicht relevant?"
+    },
+    {
+      "id": "arbeitsweise-a30",
+      "aussage": "Ein Startauftrag an ein anderes Modell, der Befunde nach Anzahl und Detailfeldern begrenzt statt Fragestellung, Methode, Nutzergruppe und Gewichtung vorzugeben, ergab eine zusammenhanglose Detailliste, die einen fachfremden Eigentümer belastet statt entlastet.",
+      "status": "abgeleitet",
+      "seit": "2026-11-11",
+      "notiz": "Einmal beobachtet (Startauftrag von Claude, Lauf mit ChatGPT, 11.11.). Gegenmittel im Gespräch: Eingrenzung zuerst, eine passende Methode, Befunde zu Themen verdichten und nach Schmerz ordnen (was kostet es heute, was wird besser), nicht nach Anzahl."
     }
   ],
   "fragen": [
@@ -599,6 +613,14 @@
       "antwort": "Bitte sichere jetzt deinen aktuellen Stand im Repo, damit andere Chats wissen, was gilt. Eigener Branch und PR, nicht übernehmen. 1. Trag im Merkzettel anschluss/arbeitsweise.md nur im Teil zum Leitfaden (Zeile „Leitfaden“ in der Tabelle der Stränge, dazu bei Bedarf ein kurzer Abschnitt) ein, was gilt und was offen ist. Den Teil zum Prüfstand nicht ändern. 2. Markiere, was durch deinen Stand überholt ist, mit „überholt durch …“, ohne zu löschen. Prüfe dafür ausdrücklich: - research/2026-11-wissensformen/konzept.md, Abschnitt 5 („Leitfäden je Thema“) und Abschnitt 7 - im Merkzettel unter „Entschieden“ den Punkt „Mehrere Leitfäden je Thema“ - decisions/0032 (Name und Gegenstand des Leitfadens) 3. Nenne, was sich am Datenformat des Leitfadens ändern muss (leitfaden/eintraege.json, Build), z. B. Status „Keim“, freie Tags, Relationen. Nur nennen, noch nicht bauen. 4. Neue Antworten von mir im Wortlaut in daten/arbeitsweise.json, ab der nächsten freien Nummer. Erzeugte Übersichten nicht von Hand bauen, das macht die Prüfung. Melde am Ende, welche Prüfungen grün oder rot sind.",
       "beantwortet": "2026-11-08",
       "notiz": "Auftrag zur Sicherung; Intent, Keime und Beobachtung damit nicht freigegeben, sie warten auf Ja. Chat zum Verhältnis Leitfaden – Fachpakete (Claude, 08.11.); Absätze zu Leerzeichen zusammengezogen; Konzeptstand: research/2026-11-wissensformen/konzeptstand-2026-11-08.md."
+    },
+    {
+      "id": "arbeitsweise-f39",
+      "frage": "Soll ich diesen Befund abstrahiert und ohne Kundeninhalte im Merkzettel „Arbeitsweise“ des Labors festhalten?",
+      "gestellt": "2026-11-11",
+      "antwort": "ja mach das",
+      "beantwortet": "2026-11-11",
+      "notiz": "Chat zum Kundenauftrag (Claude); Antwort auf die Folgefrage nach Schreibzugang zum Labor."
     }
   ]
 }
