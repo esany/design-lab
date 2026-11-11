@@ -60,7 +60,7 @@
   *Beleg:* `evals/neustart-daten/ergebnisse/2026-11-07-gegenlesen-astra.md`, Prüfung der zwei vorgesehenen Aussagen, 4b; Prüfläufe im Vergleich
   *Grenze:* Die Kommentare entstanden vor Abschluss der Prüfungen; ob die Prüflinge die Fehler sehen konnten, ist nicht nachgewiesen.
 
-### Abgeleitet (23)
+### Abgeleitet (24)
 
 - **arbeitsweise-a01** Fortschritt kommt in der Arbeit mit der KI als Text zurück, nicht als etwas zum Ansehen oder Ausprobieren; der Gestalter sieht deshalb nicht, ob Strukturen tragen.
 - **arbeitsweise-a06** Wurzel des Problems: Im Entwurf antwortet das Material, in der Arbeit mit der KI nur Text; der Gestalter ersetzt sein Urteil durch Regeln.
@@ -104,6 +104,8 @@
   *Grenze:* Einmal beobachtet (Claude, Werkchat 11.11.). Gegenmittel: Persönliches gehört nicht in ein Dokument, das geteilt werden kann; es bleibt im privaten Werk. Namen von Personen nur, wo nötig, sonst Rollen.
 - **arbeitsweise-a38** Die KI verwies mit bloßen Kürzeln und Überschriften (Nummern von Rückmeldungen, Aufgaben, Anforderungen) statt den Inhalt dahinter zu zeigen; der Eigentümer kann so nicht prüfen, was gemeint ist.
   *Grenze:* Zweite Beobachtung nach a28 (Wunsch nach Namen statt Nummern, 08.11.), Werkchat 11.11. Gegenmittel: Kontextwissen immer mitgeben, gestuft (Kernsatz sichtbar, Bedeutung in einem Satz, Beleg und Herleitung aufklappbar oder verlinkt), Vorbild: Fokus und Inhaltsblöcke in iA Writer.
+- **arbeitsweise-a39** Nach mehreren Korrekturen im selben Werkchat schlug die KI keinen Arbeitsmodus vor, obwohl Leitfaden und Laborregeln ihn vorgeben (neu anfangen nach zwei Korrekturen; Gebrauch, fachliche Entwicklung und Systementwicklung getrennt halten); sie lieferte Prosa statt Planung und Anforderungen und nahm ein genanntes Beispiel (eine fremde App) als Referenz statt des Labors selbst.
+  *Grenze:* Einmal beobachtet (Claude, Werkchat 11.11.; privat in esany/werke). Der Leitfaden hat die verlangte Stufung schon selbst (Regel, warum, Hintergrund und Quellen). Gegenmittel: bei Unzufriedenheit zuerst Modus und Lesart nennen, Planung als Struktur, bei Unklarheit fragen.
 
 ### Nicht belegt (1)
 
