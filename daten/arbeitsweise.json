@@ -831,6 +831,22 @@
       "antwort": "Ja gern, lass es uns ausprobieren",
       "beantwortet": "2026-11-11",
       "notiz": "Leitfaden-Chat (Claude)."
+    },
+    {
+      "id": "arbeitsweise-f63",
+      "frage": "Vor dem Schluss: #167 übernehmen? Ersetzte PRs #164, #166, #176 schließen? Rückmeldung zu Iteration 6 jetzt oder im neuen Chat?",
+      "gestellt": "2026-11-11",
+      "antwort": "Kurz, was ist mit 2. was wird durch was ersetzt und wieso überschreibt Codex überhaupt",
+      "beantwortet": "2026-11-11",
+      "notiz": "Leitfaden-Chat (Claude)."
+    },
+    {
+      "id": "arbeitsweise-f64",
+      "frage": "Bei Übergaben schreibt nur das orchestrierende Modell den Merkzettel – als Impuls aufnehmen?",
+      "gestellt": "2026-11-11",
+      "antwort": "Ja gern. Muss noch erwas in diesem Chat abgeschlossen werden?",
+      "beantwortet": "2026-11-11",
+      "notiz": "Leitfaden-Chat (Claude)."
     }
   ]
 }

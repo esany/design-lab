@@ -102,8 +102,12 @@
 - **arbeitsweise-a23** Astra (ChatGPT) kann Code ausführen und über den GitHub-Connector schreiben.
   *Grenze:* Angabe des Eigentümers im Chat vom 06.11.; im Pilot (Schritt 4) zu prüfen.
 
-## Beantwortete Fragen (55, neueste zuerst)
+## Beantwortete Fragen (57, neueste zuerst)
 
+- **2026-11-11** Bei Übergaben schreibt nur das orchestrierende Modell den Merkzettel – als Impuls aufnehmen?
+  → „Ja gern. Muss noch erwas in diesem Chat abgeschlossen werden?“ *(Leitfaden-Chat (Claude).)*
+- **2026-11-11** Vor dem Schluss: #167 übernehmen? Ersetzte PRs #164, #166, #176 schließen? Rückmeldung zu Iteration 6 jetzt oder im neuen Chat?
+  → „Kurz, was ist mit 2. was wird durch was ersetzt und wieso überschreibt Codex überhaupt“ *(Leitfaden-Chat (Claude).)*
 - **2026-11-11** Teil „Aufträge“ im Zielbild anlegen, Werkbuch als erster Auftrag?
   → „Ja gern, lass es uns ausprobieren“ *(Leitfaden-Chat (Claude).)*
 - **2026-11-11** „Auftrag“ statt „Paket“; Teil „Begriffe“ als Impuls – Freigabe für den ersten Auftrag?

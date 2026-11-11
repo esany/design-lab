@@ -25,7 +25,7 @@ bedeutet (Wunsch des Eigentümers, 07./08.11.; [a:arbeitsweise-a28]).
   (0033), Verlaufseinträge sind einzelne Dateien in `verlauf/`, Rot meldet die Prüfung (0034).
 - Leitfaden (Arbeitsname Werkbuch): Stand als Punkte auf der Seite „Zielbild Leitfaden“
   (`leitfaden/zielbild/`, PR #167); bestätigte Punkte sind die Baseline, Aufträge stehen oben.
-  Wortlaut des Eigentümers: `daten/arbeitsweise.json`, f41–f62.
+  Wortlaut des Eigentümers: `daten/arbeitsweise.json`, f41–f64.
 
 | Strang | Stand | Als Nächstes |
 |---|---|---|

@@ -497,6 +497,15 @@
           "g": "Dein Hinweis, 11.11.: „Wir müssen auf Begrifflichkeiten achten“."
         },
         {
+          "id": "i-merkzettel-zustaendig",
+          "s": "impuls",
+          "prio": "jetzt",
+          "n": "neu",
+          "t": "Bei Übergaben schreibt nur das Modell, das orchestriert, den Merkzettel.",
+          "k": "Codex hat nach #173 den Merkzettel fortgeschrieben (#176), weil AGENTS.md, Schritt 5, das verlangt; zugleich schrieb Claude ihn in #167. Künftig steht in jeder Übergabe unter „Nicht tun“: Merkzettel nicht fortschreiben, das macht das orchestrierende Modell.",
+          "g": "Deine Frage und dein „Ja gern“, 11.11."
+        },
+        {
           "id": "i-issues",
           "s": "impuls",
           "prio": "jetzt",
