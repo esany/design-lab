@@ -6,7 +6,7 @@ dient: A04, A07, A26, A34
 perspektive: system, gebrauch
 ---
 
-# 0035 · Ein Werkchat lädt das Labor nachweisbar und führt Korrekturen sofort zurück
+# 0035 · Laborregeln gelten für jedes Werk; ein Werkchat lädt das Labor nachweisbar und führt Korrekturen sofort zurück
 
 `perspektive:` system, gebrauch
 
@@ -18,6 +18,13 @@ technisch unmöglich. Anweisungen allein haben schon in a29–a31 nicht getragen
 
 **Entscheidung (Vorschlag):**
 
+0. **Geltung.** Alle Entwurfsregeln des Labors und die grundlegenden Prinzipien guter Entwurfs- und
+   Gestaltungsarbeit (`principles.md`, `manifest.md`, Fachpakete, Methoden-Skills, Leitfaden) gelten
+   für jedes neue Projekt, jedes Werk und jedes Artefakt, sofern dort nichts anderes vorgegeben ist.
+   Abweichungen stehen ausdrücklich in `werk.md` des Werkes. Wortlaut des Eigentümers (11.11.): „alle
+   Entwurfsregeln des Design Labs und grundlegenden Prinzipien für gute Entwurfs- und
+   Gestaltungsarbeit müssen auch für neue Projekte und Artefakte gelten, wenn nicht anders
+   vorgegeben“.
 1. **Schreibrecht für Eingänge.** Ein Werkchat hängt das Labor mit Schreibrecht an. Er schreibt dort
    nur Eingänge ohne Kundeninhalte: Aussagen in `daten/arbeitsweise.json`, Ergebnisse in `evals/`,
    Bug-Issues, `verlauf/`. Alles andere bleibt Frage an den Menschen.
@@ -40,7 +47,7 @@ technisch unmöglich. Anweisungen allein haben schon in a29–a31 nicht getragen
 
 **Folgen:** Werkchats brauchen Schreibrecht im Labor; die Trennung öffentlich/privat hängt dann an
 der Disziplin des Eingangs ohne Kundeninhalte (Risiko, Prüfung durch den bestehenden Build nur für
-Dateinamen und Schriften). Startdateien von Werken ändern sich (Labor nicht mehr „nur lesend“).
+Dateinamen und Schriften). Startdateien von Werken ändern sich (Labor nicht mehr „nur lesend“). Die Vorlage `werke/_vorlage/werk.md` in `esany/werke` bekommt ein Feld „Abweichungen vom Labor“.
 Neue Prüfung in `esany/werke`. Prüffall `werkchat-lernen` wird nach jedem Werkchat ausgewertet.
 
 **Rückgängig:** Entscheidung auf „verworfen“ setzen; Startdateien wieder auf „nur lesend“; Prüfung in
