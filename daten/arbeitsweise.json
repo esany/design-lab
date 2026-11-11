@@ -655,6 +655,198 @@
       "frage": "Soll ein Werkchat das Labor mit Schreibrecht für Eingänge (daten/, verlauf/, Issues) anhängen statt nur lesend? (decisions/0035)",
       "gestellt": "2026-11-11",
       "notiz": "Aus dem Werkchat vom 11.11., Anlass a33."
+    },
+    {
+      "id": "arbeitsweise-f41",
+      "frage": "Minimalform: drei Pflichtfelder (Regel, Status, Tags), Rest optional – passt das?",
+      "gestellt": "2026-11-08",
+      "antwort": "Wir wollten doch qualität statt einfache Lösungen",
+      "beantwortet": "2026-11-08",
+      "notiz": "Leitfaden-Chat (Claude, 08./09.11.); Wortlaut aus dem Chat übernommen."
+    },
+    {
+      "id": "arbeitsweise-f42",
+      "frage": "Pattern-Form (Kontext, Kräfte, Lösung, Folgen, bekannte Anwendungen) als Maßstab für einen Eintrag?",
+      "gestellt": "2026-11-08",
+      "antwort": "Ich hatte ganz konkrete Anforderungen, du verwäscht diese, das geht gar nicht",
+      "beantwortet": "2026-11-08",
+      "notiz": "Leitfaden-Chat (Claude, 08./09.11.); Wortlaut aus dem Chat übernommen."
+    },
+    {
+      "id": "arbeitsweise-f43",
+      "frage": "Tabelle der Anforderungen; Begründung („warum“) nur, wenn der Eigentümer sie will?",
+      "gestellt": "2026-11-08",
+      "antwort": "Warum?",
+      "beantwortet": "2026-11-08",
+      "notiz": "Leitfaden-Chat (Claude, 08./09.11.); Wortlaut aus dem Chat übernommen."
+    },
+    {
+      "id": "arbeitsweise-f44",
+      "frage": "Verstehe ich „Warum?“ als Frage, warum die Anforderungen verwässert wurden?",
+      "gestellt": "2026-11-08",
+      "antwort": "Nein ich meinte das erste warum, das ein bruch mit dem Intent! Es geht um gemeinsame entwurfsarbeit und Qualität, du darfst an dieser stelle nicht willkürlich Lösungen suchen",
+      "beantwortet": "2026-11-08",
+      "notiz": "Leitfaden-Chat (Claude, 08./09.11.); Wortlaut aus dem Chat übernommen."
+    },
+    {
+      "id": "arbeitsweise-f45",
+      "frage": "Unfertige Einträge sichtbar markiert im Leitfaden zulassen – passt diese Richtung?",
+      "gestellt": "2026-11-08",
+      "antwort": "Wir testen das, das Konzept muss sauber und richtige grundlage der entwurfsarbeit sein",
+      "beantwortet": "2026-11-08",
+      "notiz": "Leitfaden-Chat (Claude, 08./09.11.); Wortlaut aus dem Chat übernommen."
+    },
+    {
+      "id": "arbeitsweise-f46",
+      "frage": "Konzept: Entwurf zum Leitfaden-Eintrag (PR #164) – so weiter?",
+      "gestellt": "2026-11-09",
+      "antwort": "Ich meinte das Konzept des Leitfadens.. was ist den für dich dieser schritt? Es geht um entwurfsarbeit! Analyse und Recherche. Das Konzept ist der erdte versuch einer Synthese aller relevanten stränge eines untersuchten themas.. ganzheitlich und systemisch",
+      "beantwortet": "2026-11-09",
+      "notiz": "Leitfaden-Chat (Claude, 08./09.11.); Wortlaut aus dem Chat übernommen."
+    },
+    {
+      "id": "arbeitsweise-f47",
+      "frage": "Fehlt ein Strang, oder ist einer falsch geschnitten?",
+      "gestellt": "2026-11-09",
+      "antwort": "Und nicht meine arbeiten als Beispiel und referenz nutzen. Ich möchte einen generalisierten und auch zeitlosen Ansatz! Auch für andere nutzbar. Das ist sonst auch ein zusätzliches pflegetjema ohne grund.\n\n\nWas ist bei dir denn der keim? \n\nHier wollen und müssen wir etwas bauen, und es braucht aus meiner Sicht als entwurfsprozess und Entwicklung mit der ki hier auch nochmal eine sota recherche auf Basis unseren bisherigen standes. Von der idee bis zum funktionsfähigen Artefakt, Produkt oder Werkzeug. \n\nWir haben inte \nNt, Bedürfnisse, pain, ziele, Anforderungen, Rahmenbedingungen.. was machen wir damit, das am ende all die Sachen erfüllt und funktional  deployt sind. Für mich wäre das ein parallel arbeitendes Learningsprojekt, das wieder auf unsere wissenquellen und tooling einzahlt.\n\nAus meiner Sicht braucht es dazu immer parallele sota und prozess(stand)analysen? \n\n\nOder bin ich so verkopft und kann mein mindset über board werfen und mich der black Box ergeben",
+      "beantwortet": "2026-11-09",
+      "notiz": "Leitfaden-Chat (Claude, 08./09.11.); Wortlaut aus dem Chat übernommen."
+    },
+    {
+      "id": "arbeitsweise-f48",
+      "frage": "Lernprojekt als eigenen Strang anlegen und mit der Recherche beginnen?",
+      "gestellt": "2026-11-09",
+      "antwort": "Kein dann eher als Idee verstehen oder impuls?\n\nIch will einfach perfekt unkomplizierte qualitative arbeitsteilige entwurfsarbeit mit ki und Erschließung neuer fertig und Fähigkeiten ohne in den ständigen impuls zu kommen Verwaltung und Kontrolle bauen zu müssen \n\nSota und Recherche können im entwurfprozan ganz unterschiedlich Motivationen entstehen. Definierte prüfpunkte sind wichtig es geht ja aber auch um kreative Suchprozesse Inspirationen und assoziation. Also auch hier die frage der Arbeitsteilung und des auslösers, es ist sicher sowohl alsaucg, ich kann du musst?\n\nLeitfaden ist entwurfsgegendtand.\n\nDu hälst die stränge\n\nUnd der Ansatz selbst ist sota prüfwürdig",
+      "beantwortet": "2026-11-09",
+      "notiz": "Leitfaden-Chat (Claude, 08./09.11.); Wortlaut aus dem Chat übernommen."
+    },
+    {
+      "id": "arbeitsweise-f49",
+      "frage": "Als Nächstes Analyse und Recherche zum Leitfaden, zuerst divergent?",
+      "gestellt": "2026-11-09",
+      "antwort": "Hier meine rückfrage hinsichtlich genau dem ganzheitlichen systematischen zusammenhalten der stränge? Was ich beobachte .. die Idee wächst, neues kommt dazu, schärft oder widerspricht vielleicht auch dem ansatz und du prüfst dennoch nur die letzten Ergänzungen, obwohl das ganze sich damit doch ständig modelliert und verändert! Das ist aus meiner Sicht eine Fehlerquelle",
+      "beantwortet": "2026-11-09",
+      "notiz": "Leitfaden-Chat (Claude, 08./09.11.); Wortlaut aus dem Chat übernommen."
+    },
+    {
+      "id": "arbeitsweise-f50",
+      "frage": "Wohin gehört das schnell veraltende Wissen, wie man KI gerade am besten nutzt?",
+      "gestellt": "2026-11-09",
+      "antwort": "Stop, die halbwärtszeit von wissen im Leitfaden ist gut so wie wir es gemacht haben. Zeitlos im Sinne von, da stehen keine komischen (alten) Referenzen drin.. mir geht es eher im implizites wissen. Und halt auch damit verbunden eine sinnlose pflege, wenn wir wissen updaten, was passiert dann mit den beispielen.",
+      "beantwortet": "2026-11-09",
+      "notiz": "Leitfaden-Chat (Claude, 08./09.11.); Wortlaut aus dem Chat übernommen."
+    },
+    {
+      "id": "arbeitsweise-f51",
+      "frage": "Meinst du mit implizitem Wissen, dass der Eintrag das Wissen allgemein trägt, oder mehr?",
+      "gestellt": "2026-11-09",
+      "antwort": "Wenn du einfach 24 Dinge nennst, fehlt mir, wie schso oft gesader kontext. Ich neige schon zu abstrakter Sprache, wenn du dinge jetzt auch nur meta referenzierst, komen wir in teufelsküche, \n\nEine Einordnung in projektstruktur und kürzel ist genauso wichtig. Es geht mir um Klarheit und Verständnis. Wir müssen nicht einen satz durch 3 Absätze tauschen, das entlastet mich kein bisschen \n\nDer Leitfaden ist eine wissenstruktur, auch hier kennt das Konzept wirkmechanismen und synergien und arbhängigkeiten zu anderen modulen (fachpakete, baumechanismen,..)\n\nDie anderen Punkten würde icv erst nach einer Interation anschauen..",
+      "beantwortet": "2026-11-09",
+      "notiz": "Leitfaden-Chat (Claude, 08./09.11.); Wortlaut aus dem Chat übernommen."
+    },
+    {
+      "id": "arbeitsweise-f52",
+      "frage": "Konzept Leitfaden, Iteration 1 (PR #166) – Rückmeldung?",
+      "gestellt": "2026-11-09",
+      "antwort": "Nur ein impuls, aber im sinne der prüfung deiner Arbeit würde ich mir dafür auch eine visuelle struktur wünschen, es zu prüfen. Welche Strukturen und formate brauchst du , welche och, können die nebeneinander bestehen mit Schnittstellen? So müssen wir keine faulen Kompromisse eingehen, die uns beiden nichts bringen prüfe auf sota",
+      "beantwortet": "2026-11-09",
+      "notiz": "Leitfaden-Chat (Claude, 08./09.11.); Wortlaut aus dem Chat übernommen."
+    },
+    {
+      "id": "arbeitsweise-f53",
+      "frage": "Iteration 1 als kleines Modell mit erzeugter Begriffskarte umsetzen?",
+      "gestellt": "2026-11-09",
+      "antwort": "wird das eine eierlegende Wollmichsau oder der erste Schritt zur Weltherrschaft? Ich habe einfach maximale PAIN in der Zusammenarbeit mit dir .. wenn du einen anderen Vorschlag hast, der mein Ziel (inkl. Bedürfnis, Anforderung) ebenso und schneller, einfacher erfüllt, dann bitte. \n\nIst es den auch der Richtige Hebel: Intent, Bedüfrnisse, Anforderungen, Pain, Ziel etc. als Motor für die Gemeinsame Entwurfsarbeit zu wählen? Fehlt da etwas?",
+      "beantwortet": "2026-11-09",
+      "notiz": "Leitfaden-Chat (Claude, 08./09.11.); Wortlaut aus dem Chat übernommen."
+    },
+    {
+      "id": "arbeitsweise-f54",
+      "frage": "Iteration 2 mit Karte, vier fehlenden Teilen, Prototyp und Zweitblick – der richtige Schritt?",
+      "gestellt": "2026-11-09",
+      "antwort": "Was meinst du mit einer Begriffskarte, reden wir überhaupt über das selbe? ICh möchte einfach nicht über ewig lange md-dateien schauen und diese prüfen müssen, obwohl eine andere Repräsentation bzw. die offenen Punkte oder ein Ort für ein meinsames Zielbild besser funktioniert. Wie die Seite des Leitfadens, da kann ich schauen, was hast du verstanden, was ist schon gut, was muss besser weren.",
+      "beantwortet": "2026-11-09",
+      "notiz": "Leitfaden-Chat (Claude, 08./09.11.); Wortlaut aus dem Chat übernommen."
+    },
+    {
+      "id": "arbeitsweise-f55",
+      "frage": "Rückmeldung zur Seite „Zielbild Leitfaden“, Iteration 1 (Prototyp, 24 Punkte)",
+      "gestellt": "2026-11-09",
+      "antwort": "Rückmeldung Zielbild Leitfaden (Iteration 1):\n\n• Er erschließt Entwurfsarbeit. Die KI ist darin ein Werkzeug unter mehreren.\n  → passt: ja, es hat eine innere Logik als Werkzeug und natürlich auch Schnittstellen und Synergien zu anderen Themen.\n• Er ist dein Erkenntnisort und auch für andere nutzbar.\n  → passt: Ich kann ihn selbst nutzen und sehe unseren aktuellen Wissenstand. Gleichzeitig kann ich mich darauf verlassen, das es sich hier auch bekannte Systemregeln handelt. Vlt. muss nochmal differenziert werden, was davon wie im Fachpaket vorhanden ist (Bringt er dir auch was, oder nur dem Menshcen?)\n• Die Fachpakete sind ein eigener Ort, keiner ist die Ansicht des anderen.\n  → muss besser: die Fachpakete und er Leitfaden haben verschiedenste Wechselwirkungen, dass sieht wie ein alter Arbeitsstand aus\n• Der Leitfaden ist selbst Entwurfsgegenstand und wird bis zum Funktionieren gebaut.\n  → muss besser: ja .. und hier müssen wir vlt. auch nochmal an verschiedenen Ebenen arbeiten, herausarbeiten was das dann heißt. Was braucht es jetzt, damit wir daran gut arbeiten können, was sind Todos für später.\n\nEr ist als Werkzeug zu verstehen.\nGleichzeitig wird er mit dem Design-Lab als Werkzeug gebaut.  Dieses ist selbst in der Entwicklung.\nDer Leitfaden wächst und unterstützt selbst wieder das Entwerfen des und gleichzeitig mit dem Werkzeug (Design-Lab).\n\nHier müssen wir sehr aufmerksam sein, das birgt aus meiner Sicht ein enormes Potential für Missverständnisse und Fehlerquellen und gilt auch für den zuküntigen gebrauch des Systems. Hier ist aus meiner Sicht auch nochmal Sota nötig. Es ist ja auch wieder eine Frage der Arbeitsteilung und Assistenz zwischen Mensch und Maschine. Gerade entstehen doch an allen Ecken und Enden solche Systeme\n• Ein Eintrag trägt das Wissen allgemein, mit Fachbegriff und Quelle aus der Fachwelt.\n  → muss besser: Das eine ist die Doku und die Arbeit und Arbeitsteilung mithilfe der Issues (plegen wir diese überhaupt noch, oder haben wir die vergessen)\n\nDas andere das Datenformat in dem der Eintrag erzeugt und dokumentiert wird.\n\nUnd dann,wie wird er angezeigt, welche transdisziplinären Prinzipien unterliegt er. Das hatten wir besser aufgearbeitet.\n• Jeder Eintrag hat drei Stufen: Regel, Warum, Hintergrund und Quellen.\n  → passt\n• Erfahrungen aus dem Labor zeigen auf den Eintrag, nie umgekehrt.\n  → muss besser: Vorsicht, ich will im Leitfaden aber keine Bezüge aus meinen Arbeiten oder Beispielen.\n\nIch verstehe den Satz auch nicht so richtig. Es ist her, in der praktischen Entwurfsarbeit gibt es ständig Impulse, versch. vlt. auch parallele Systementwicklungen an Design-Lab oder Projekten / Artefakten. Dort entstehen überall Fragen, Analysen und Recherchen bzw. Methodisches. oder bestpractise arbeiten .. Learnings .. wie bekommen wir hier die Schwelle zum Leitfaden und den anderen Wissensstrukturen gestaltet? Es muss dienen und darf nicht selbst zum Sumpf werden. Aber, es sind auch alles wertvolle Erkenntnisse für mich bzw. Regeln, die unsere Zusammenarbeit definieren. \n\nEs gibt ja noch einen dritten schritt. \nLeitfaden und Fachpakete als Wissensspeicher. Aber wer hält die Regeln, wer überwacht, orchestriert die funktionale Arbeit auf der Basis der wissensspeicher. Nur weil es im Arbeitsspeicher steht ist es ja nicht funktional verfügbar. Das müssen auch erneut prüfen, was haben wir, was fehlt. was ist sota. \n\nAber eben nicht punktell, sondern in Bezug zum System, der Design-Lab und seinen versch. (Entwurfs-Entwicklungs)-Ebenen / Use Cases .. Was ist Sota\n• Jeder geltende Eintrag nennt seine Grenzen: wann er nicht trägt und was er kostet.\n  → passt: können wir probieren.\n• Ein Eintrag darf werdend sein. Er gilt erst, wenn er vollständig ist.\n  → muss besser: ja, aber wann kann man schon in eine Iteration gehen, gibt es kritierien. Muss erst alles fertig sein, bevor man der ersten Test macht. Hier habe ich die Sorge vor Wasserfall, aber auf der anderen Seite, das du zu schnell in die Umsetzung gehst und wir nocht alle Faketten bzw. Rahmenbedingungen kurz geprüft haben. Das kann sich natürlich auch gerade erst durch die Iteration zeigen. Mir geht es eher um eine Freigabe von mir, damit du dich nicht selbstständig machst und wir die Konsequenzen mühsam wieder auseinander nehemen müssen. Auf der anderen Seite, kannst du auch sagen, du bist startklar.\n• Freie Tags statt fester Bereiche, nichts vorschnell starr.\n  → passt: Wir wissen nicht was wir organisch sammeln. Ich brauche aber eine niederschwellige Interaktion und Navigation im Leitfaden. Tags waren für mich ein passender Ansatz.\n• Relationen zwischen Einträgen, vier Arten zum Anfang: umfasst, ergänzt, in Spannung mit, verwandt.\n  → passt: ich finde deine provinenz sehr komisch.. da haben wir sicher konkretere Passagen dazu\n• Du willst dem Wachsen zusehen.\n  → passt: Ich soll ja konkrollieren. Es ist wie dieses Formular, eine Umgebung, in der wir beide nach unseren Bedürfnissen zusammenarbeiten können.\n• Die Halbwertszeit bleibt wie angelegt.\n  → passt: ja, total. Auch hier wieder, eine rückfrage, was kostet uns dieser Wunsch. Oder macht er es am Ende billiger, da wir auch Dinge wieder vergessen dürfen und Balast abwerfen. Wie Pflegt man diese komplexen Wissenstrutkuren mit ihren Abhängigkeiten und dynamischen Relationen am besten. Braucht es dafür sota?\n• Quellen stehen nur im Korpus, der Leitfaden verweist darauf.\n  → passt: Da muss ich mich auf dich verlassen. Du kennst die Anforderungen an das System und dessen Entwicklung selbst und was ich damit vorhabe bzw. in welchen Rahmenbedingungen es sich bewegt. Die Architektur, Daten - und infrastruktur sind in deiner Verantwortung. Kann es dynamisch wachsen, ist es Wart- und Pflegbar - ist es angemessen hinsichtlich der Tokenökonomie. Auch hier gilt wieder ein ganzheitlich systemischer Blick auf Entwicklungsthemen, keine schnellen kurzfristigen Ansätz für ein Systemteil.\n• Der Leitfaden sagt, woran man ein gutes Werkzeug erkennt. Das Radar sagt, welches es heute ist.\n  → muss besser: ja,  hier würde ich mir im Sinne der Fachpakete und des Leitfadens aber auch einen ganzheitlichen transdisziplinären Ansatz für den Radar wünschen.\n\nAuch eine zusätzliche Einordnung, was das für das System bedeutet .. welchen Mehrwert schaffen wir damit. Was ist neu gekoppelt, wie war es bisher ..\n\nda ,müssen wir erfahrungen sammeln\n• Dasselbe Wissen steht an mehreren Orten und läuft auseinander. Das bemerkt heute niemand.\n  → muss besser: Ja, mein Input schärft hier die Grundlage auf der wir eine Lösung erarbeiten müssen. Wie wir das erreichen, liegt doch aber bei dir. Hier sehe ich auch ein zu kurzes Verständnis bzw. einfache Lösungen für systemische Fragen\n• Die heutige Seite „Mit KI arbeiten“ deckt nur eine Region der Entwurfsarbeit ab.\n  → muss besser: Ich hatte in den alten Leitfadenchats eine lange Liste mit potentiellen Fragen und damit fachlichen Erweiterungen des Leitfadens dokumentiert. Wir haben bereits begeonnene Fachpakete (für mich Black Boxes) .. diese müssen nach den Prinzipien doch dann auch in den Wissensspeicher wanderen.\n• Wissen entsteht im Chat nebenbei. Ich schlage den Ort vor, du gibst frei, ob es bleibt.\n  → muss besser: passt, aber denoch brauchen wir vlt. einen mechanismus diese Impulse zu steuern .. sie drängeln sich aktuell ständig in unsere entwicklungsarbeit. Fokus und Priorisierung, sehe ich bei dir? Ich kann ja immer noch wiedersprechen\n• Ich halte die Stränge und prüfe bei jedem neuen Input das Ganze, nicht nur das Neue.\n  → passt: Muster transdiszipliniäre ganzheitliche systemische Entwurfs- und Entwicklungsarbeit\n• Du kannst Recherche anstoßen, ich muss es an den Übergängen tun.\n  → passt: Wann ist vlt. auch bei dir eine zusätzliche Schwelle erreicht, in der du auch außerordenlich reagieren musst?\n• Keine Verwaltung für dich: Ergebnisse als Seite wie diese, nicht als lange Textdateien.\n  → passt: Das ist ein super Format! - mehr davon\n• Ein zweites Modell prüft meine Arbeit, bevor du sie siehst.\n  → passt: Prinzipiell ja, Es darf uns nur kein Zeit kosten und das System langsam machen .. kein Flaschenhals .. können wir das als Batch oä. machen?\n\nsonst sind es ja wieder meine Verwaltungskosten. Achtung eigentlich bist du das BRAIN, und Openai Chats inkl. uu. Work entwickeln kostenlos. Eigentlich musst du auch Delegieren und dann wirst du zum Prüfer. Deine Tokens sind Gold wert und eine rare teure Resource. Hier halten wir uns auch nicht an unsere eigenen Regeln\n• Wie heißt der Leitfaden?\n  → Antwort: Hast du einen Vorschlag .. Irgendwas mit Wissen oder Pattern .. ich weiß es nicht.\n• Ein Leitfaden oder mehrere?\n  → Antwort: Jein. In meinem Kopf ist alles ein großes System und alles hängt mit allem zusammen, ich mag da nicht in Schubladen denken. Für mich ist es eher eine Frage der Informationsarchitektur, Interaktionspatterns, Navigation und Logik, damit wir einen intuitiven und niederschwelligen zugang zum Leitfaden ermöglichen.\n• Was meinst du mit implizitem Wissen?\n  → Antwort: Na, wenn du auf z.Bsp. auf ein Projekt verweist .. Projekt X .. und dann war man nicht dabei, dann ist das kein expliziter Fakt, sondern adressiert Erfahrungswissen, was niemand außerhalb des Projekts hat. Also keine impliziten wissensverweise .. einige alte Einträge basieren auf diesem Muster! \n\nBeispiele sollen eh raus.\n• Woran merken wir, dass der Leitfaden wirkt?\n  → Antwort: hmm .. hast du eine Idee? Ich würde es ja auch wieder als System sehen, der Leitfaden ist an die Fachpakete gekoppelt. Bekommen wir hier eine bessere gemeinsame Arbeitsgrundlage hin. Ich scheue mich hier nur quantitative Kriterien anzuführen .. Wir haben doch schon gelernt, das sie wenig über die Qualtiät sagen, oder das System dazu neigt sie in Prio 1 erfüllen zu wollen, auf Kosten der Qualität.\n\nAber mach gern einen Vorschlag - oder prüfe auf sota\n• Was hat Vorrang, wenn Anforderungen gegeneinander ziehen?\n  → Antwort: Das muss transparent gemacht werden. Genauer angeschaut und dann eine tragfähige Lösung gefunden. Prüfung, ist es wirklich konträr .. oder gibt es unterschiedliche Erwartungen, Rahmenbedingungen, Ebenen auf denen diese Anforderungen gelten. Welche Methodischen Skills brignt hier das Req-Engineering auch schon mit.\n\n[Begleitsatz im Chat:] Das war sehr dicht und kompakt und hat sicher endlose Schleifen und Missverständnisse vorgebeugt",
+      "beantwortet": "2026-11-09",
+      "notiz": "Leitfaden-Chat (Claude, 08./09.11.); Wortlaut aus dem Chat übernommen."
+    },
+    {
+      "id": "arbeitsweise-f56",
+      "frage": "Rückmeldung zur Seite „Zielbild Leitfaden“, Iteration 2 (34 Punkte, drei Freigaben)",
+      "gestellt": "2026-11-09",
+      "antwort": "Rückmeldung Zielbild Leitfaden (Iteration 2):\n\n• Er erschließt Entwurfsarbeit. Die KI ist darin ein Werkzeug unter mehreren.\n  → passt\n• Er ist dein Erkenntnisort: du siehst unseren aktuellen Wissensstand und kannst dich darauf verlassen.\n  → passt\n• Leitfaden und Fachpakete wirken vielfältig aufeinander. „Getrennte Orte“ war ein alter Stand.\n  → muss besser: Passt, vermitteln und informationsdesign vorschnell gleich zu setzen, finde ich sehr sehr kritisch. Das sind für mich zwei, wenn nicht mehr pakete. Sind pakete modular organisiert?\n• Drei Ebenen greifen ineinander und müssen auseinandergehalten werden.\n  → passt: Und als leitfaden im labor untersützt es ja das arbeiten mit dem design lab.. also den entwurfsarbeit an Projekten und Artefakten\n• Wir trennen, was jetzt nötig ist, um gut am Leitfaden zu arbeiten, von dem, was später kommt.\n  → passt: Wenn es aber notwendig wird und Qualität sichert, aktuelle entwurfsprobleme unterstützt, dann bekommt es Priorität.\n• Drei Fragen, getrennt zu beantworten: wie gearbeitet wird, in welchem Datenformat, wie angezeigt.\n  → passt\n• Jeder Eintrag hat drei Stufen: Regel, Warum, Hintergrund und Quellen.\n  → passt\n• Keine impliziten Wissensverweise: kein „wie in Projekt X“, keine Beispiele aus deinen Arbeiten.\n  → passt: Aufräumen nötig\n• Offen ist die Schwelle: Wie wird aus Impulsen, Fragen, Analysen und Learnings aus Projekten und Labor ein Eintrag?\n  → passt\n• Jeder geltende Eintrag nennt seine Grenzen: wann er nicht trägt und was er kostet.\n  → passt\n• Eine Iteration beginnt mit deiner Freigabe. Ich melde „startklar“, wenn der Rahmen kurz geprüft ist.\n  → passt\n• Freie Tags für eine niederschwellige Interaktion und Navigation.\n  → passt\n• Ein System statt Schubladen. Ob einer oder mehrere Leitfäden, ist eine Frage der Informationsarchitektur.\n  → passt\n• Relationen zwischen Einträgen, vier Arten zum Anfang: umfasst, ergänzt, in Spannung mit, verwandt.\n  → passt\n• Dem Wachsen zusehen heißt: eine Umgebung wie diese Seite, in der wir beide nach unseren Bedürfnissen zusammenarbeiten.\n  → passt\n• Die Halbwertszeit bleibt. Offen ist, was sie kostet oder spart.\n  → passt\n• Name, drei Vorschläge: „Musterbuch“, „Entwurfsmuster“, „Wissensmuster“.\n  → muss besser: Worum geht es hier, welche Assoziationen komm dir in den sinn?\n• Architektur, Daten und Infrastruktur liegen in meiner Verantwortung.\n  → passt\n• Quellen stehen nur im Korpus, der Quellensammlung des Labors; der Leitfaden verweist darauf.\n  → passt\n• Dasselbe Wissen an mehreren Orten läuft auseinander. Die Lösung ist meine Aufgabe, systemisch statt einfach.\n  → passt\n• Der Leitfaden soll über die Arbeit mit KI hinaus wachsen. Deine lange Fragenliste dazu finde ich im Repo nicht.\n  → passt\n• Impulse brauchen einen Mechanismus, damit sie die laufende Arbeit nicht ständig verdrängen.\n  → passt: Vlt. Auch in einer visuellen struktur?\n• Ich halte die Stränge und prüfe bei jedem Input das Ganze.\n  → passt\n• Ich unterbreche von mir aus, wenn ein Input einen bestätigten Punkt kippt, etwas schwer umkehrbar wird oder ein Fehler im System sichtbar wird.\n  → passt\n• Ergebnisse als Seite wie diese statt langer Textdateien.\n  → passt\n• Ich bin das Gehirn und prüfe; die Arbeit delegiere ich an günstigere Modelle, gebündelt und ohne Flaschenhals.\n  → passt\n• Die Issues werden nicht gepflegt.\n  → passt: Aber wir müssen sie pflegen, sie gehören doch zur Infrastruktur\n• Erfolg zeigt sich qualitativ und im System, nicht in Zahlen.\n  → passt\n• Ziehen Anforderungen gegeneinander, wird das sichtbar gemacht und geprüft, ob es wirklich ein Widerspruch ist.\n  → passt\n• Fünf Recherchen gebündelt an ChatGPT oder Codex, ich prüfe die Ergebnisse.\n  → freigegeben\n• Diese Seite kommt ins Labor: Punkte als Daten, der Build erzeugt die Seite.\n  → freigegeben: Können wir den merkzettel auch auf diese weise sichtbar machen? Nur lesend?\n• Ich hole die besser aufgearbeiteten Prinzipien der Anzeige zurück und prüfe die alten Einträge auf implizite Verweise.\n  → freigegeben",
+      "beantwortet": "2026-11-10",
+      "notiz": "Leitfaden-Chat (Claude); Freigaben daraus: #172, #173, Seite ins Labor (leitfaden/zielbild/)."
+    },
+    {
+      "id": "arbeitsweise-f57",
+      "frage": "Rückmeldung zur Seite „Zielbild Leitfaden“, Iteration 3",
+      "gestellt": "2026-11-10",
+      "antwort": "Rückmeldung Zielbild Leitfaden (Iteration 3):\n\n• Leitfaden und Fachpakete wirken vielfältig aufeinander. Auch die Fachpakete selbst sind noch nicht richtig geschnitten.\n  → muss besser: Natürlich eigene module! Das sind ja eigene themen. Prüfe auch für dich was brauchst du, um dieses Wissen gut anwenden zu können, was brauche ich um damit arbeiten und entwerfen zu können. Wie arbeiten wir es aus?\n\nWelche Strukturen haben also fachpakete, module, Felder? Wie erfolgt ein organischer Wachstumsprozess, der optimal auf deine Bedürfnisse zugeschnitten ist.wie sichern wir das nachhaltig, pflegbar, tolensparend und auf hoher qualität ab? Generell unabhängig davon, haben wir reviewstrukturen bzw. Auch eine kritische pflege, die unsere Arbeit hinreichend prüft? Welche Symptome zeigen, das wir nicht auf dem richtigen Weg sind\n• Drei Ebenen greifen ineinander und müssen auseinandergehalten werden.\n  → passt\n• Wir trennen, was jetzt nötig ist, um gut am Leitfaden zu arbeiten, von dem, was später kommt.\n  → passt\n• Keine impliziten Wissensverweise: kein „wie in Projekt X“, keine Beispiele aus deinen Arbeiten.\n  → passt\n• Name: erst die Assoziationen, dann der Name.\n  → passt: Werkbuch finde ich p\n• Impulse brauchen einen Mechanismus, damit sie die laufende Arbeit nicht ständig verdrängen.\n  → passt\n• Die Issues gehören zur Infrastruktur und werden gepflegt.\n  → passt\n• Daten statt Seite: Die Seite wird aus Daten erzeugt und kann von ihnen nicht abweichen.\n  → passt\n• Erklären in Stufen: Überblick in einem Satz, dann Warum, dann Hintergrund und Quellen.\n  → passt\n• Status und Datum sind sichtbar: Belegstatus, geprüft am, überholt seit.\n  → passt\n• Änderungen sind sichtbar: was vorher galt, was den Anstoß gab, was jetzt gilt.\n  → passt\n• Handy zuerst: einspaltig, die Aussage groß, Details zum Aufklappen.\n  → passt\n• Navigieren mit Tags: Mehrfachauswahl mit Trefferzahl, die aktive Auswahl sichtbar und mit einem Tipp lösbar, häufige Tags oben als Chips.\n  → passt\n• Die Issues pflegen.\n  → passt\n• Den Merkzettel als lesende Seite zeigen, wie diese.\n  → passt\n• Die Fachpakete neu schneiden und für dich lesbar machen.\n  → muss besser: Ja, sber eher als struktur, erstmal ist es die prio, das sie für deine aufgaben passen\n• Die Recherchen laufen: fünf Fragen bei ChatGPT, die Erfassung der alten Einträge bei Codex.\n  → passt\n• Die Seite liegt im Labor: Die Punkte sind Daten, der Build erzeugt die Seite.\n  → passt\n• Die Prinzipien der Anzeige sind zurückgeholt, im neuen Teil „Anzeige“.\n  → passt",
+      "beantwortet": "2026-11-11",
+      "notiz": "Leitfaden-Chat (Claude); im Chat als Text eingefügt."
+    },
+    {
+      "id": "arbeitsweise-f58",
+      "frage": "Rückmeldung zur Seite „Zielbild Leitfaden“, Iteration 4",
+      "gestellt": "2026-11-11",
+      "antwort": "Rückmeldung Zielbild Leitfaden (Iteration 4):\n\n• Er erschließt Entwurfsarbeit. Die KI ist darin ein Werkzeug unter mehreren.\n  → passt\n• Er ist dein Erkenntnisort: du siehst unseren aktuellen Wissensstand und kannst dich darauf verlassen.\n  → passt\n• Jedes Feld ist ein eigenes Modul, weil es ein eigenes Thema ist. Wie Fachwissen geschnitten wird, steht im neuen Teil „Fachwissen als Module“.\n  → muss besser: Vermitteln kann doch nicht über dem ganzen stehen, das ist aus meiner Sicht fachlich falsch! Das ist anwendungskontext unter vielen für die felder. Du hast nicht sota geprüft\n• Drei Ebenen greifen ineinander und müssen auseinandergehalten werden.\n  → passt\n• Wir trennen, was jetzt nötig ist, um gut am Leitfaden zu arbeiten, von dem, was später kommt.\n  → passt\n• Drei Fragen, getrennt zu beantworten: wie gearbeitet wird, in welchem Datenformat, wie angezeigt.\n  → passt\n• Jeder Eintrag hat drei Stufen: Regel, Warum, Hintergrund und Quellen.\n  → passt\n• Keine impliziten Wissensverweise: kein „wie in Projekt X“, keine Beispiele aus deinen Arbeiten.\n  → passt\n• Offen ist die Schwelle: Wie wird aus Impulsen, Fragen, Analysen und Learnings aus Projekten und Labor ein Eintrag?\n  → passt\n• Jeder geltende Eintrag nennt seine Grenzen: wann er nicht trägt und was er kostet.\n  → passt\n• Eine Iteration beginnt mit deiner Freigabe. Ich melde „startklar“, wenn der Rahmen kurz geprüft ist.\n  → passt\n• Freie Tags für eine niederschwellige Interaktion und Navigation.\n  → passt\n• Ein System statt Schubladen. Ob einer oder mehrere Leitfäden, ist eine Frage der Informationsarchitektur.\n  → passt\n• Relationen zwischen Einträgen, vier Arten zum Anfang: umfasst, ergänzt, in Spannung mit, verwandt.\n  → passt\n• Dem Wachsen zusehen heißt: eine Umgebung wie diese Seite, in der wir beide nach unseren Bedürfnissen zusammenarbeiten.\n  → passt\n• Arbeitsname: Werkbuch.\n  → passt\n• Architektur, Daten und Infrastruktur liegen in meiner Verantwortung.\n  → passt\n• Wissen im Speicher ist noch nicht verfügbar. Wer hält die Regeln, wer überwacht und orchestriert die Arbeit?\n  → passt\n• Quellen stehen nur im Korpus, der Quellensammlung des Labors; der Leitfaden verweist darauf.\n  → passt\n• Auch das Radar braucht einen ganzheitlichen, transdisziplinären Ansatz wie Fachpakete und Leitfaden.\n  → passt\n• Dasselbe Wissen an mehreren Orten läuft auseinander. Die Lösung ist meine Aufgabe, systemisch statt einfach.\n  → passt\n• Der Leitfaden soll über die Arbeit mit KI hinaus wachsen. Deine lange Fragenliste dazu finde ich im Repo nicht.\n  → muss besser: Ok, wir können nochmal suchen ggf. Mit einem suchprompt\n• Impulse brauchen einen Mechanismus, damit sie die laufende Arbeit nicht ständig verdrängen.\n  → passt\n• Ich halte die Stränge und prüfe bei jedem Input das Ganze.\n  → passt\n• Ich unterbreche von mir aus, wenn ein Input einen bestätigten Punkt kippt, etwas schwer umkehrbar wird oder ein Fehler im System sichtbar wird.\n  → passt\n• Ergebnisse als Seite wie diese statt langer Textdateien.\n  → passt\n• Ich bin das Gehirn und prüfe; die Arbeit delegiere ich an günstigere Modelle, gebündelt und ohne Flaschenhals.\n  → passt\n• Die Issues gehören zur Infrastruktur und werden gepflegt.\n  → passt\n• Erfolg zeigt sich qualitativ und im System, nicht in Zahlen.\n  → passt\n• Ziehen Anforderungen gegeneinander, wird das sichtbar gemacht und geprüft, ob es wirklich ein Widerspruch ist.\n  → passt\n• Daten statt Seite: Die Seite wird aus Daten erzeugt und kann von ihnen nicht abweichen.\n  → passt\n• Erklären in Stufen: Überblick in einem Satz, dann Warum, dann Hintergrund und Quellen.\n  → passt\n• Status und Datum sind sichtbar: Belegstatus, geprüft am, überholt seit.\n  → passt\n• Änderungen sind sichtbar: was vorher galt, was den Anstoß gab, was jetzt gilt.\n  → passt\n• Handy zuerst: einspaltig, die Aussage groß, Details zum Aufklappen.\n  → passt\n• Navigieren mit Tags: Mehrfachauswahl mit Trefferzahl, die aktive Auswahl sichtbar und mit einem Tipp lösbar, häufige Tags oben als Chips.\n  → passt\n• Was ich brauche, um Fachwissen gut anzuwenden: wissen, wann es gilt, und nur das laden, was die Aufgabe braucht.\n  → passt\n• Ein Modul entsteht, wenn eine Aufgabe es braucht, und wächst mit dem Gebrauch.\n  → passt\n• Ausarbeiten an einem Pilot: „Vermitteln“ in Module teilen und an einer echten Aufgabe erproben.\n  → passt\n• Wir prüfen die Technik, aber niemand prüft regelmäßig, ob unsere Arbeit inhaltlich trägt.\n  → passt\n• Zeichen, dass wir vom Weg abkommen.\n  → passt\n• Diese Zeichen werden eine Prüfliste: am Ende jeder Iteration und in der monatlichen Pflege.\n  → passt\n• Die Issues pflegen.\n  → passt\n• Den Merkzettel als lesende Seite zeigen, wie diese.\n  → passt\n• Die Fachpakete neu schneiden: zuerst so, dass sie für meine Aufgaben passen; die Struktur folgt daraus.\n  → passt\n• Die Recherchen laufen: fünf Fragen bei ChatGPT, die Erfassung der alten Einträge bei Codex.\n  → passt\n• Die Seite liegt im Labor: Die Punkte sind Daten, der Build erzeugt die Seite.\n  → passt\n• Die Prinzipien der Anzeige sind zurückgeholt, im neuen Teil „Anzeige“.\n  → passt\n\n[Begleittext im Chat:] Mir ist nicht klar, ob ich immer alles wieder passt sagen miss, wenn sich nichts geändert hat. Vlt. Lässt sich das gesondert als aktuelles zielbild markieren. Was wäre dafür sota",
+      "beantwortet": "2026-11-11",
+      "notiz": "Leitfaden-Chat (Claude)."
+    },
+    {
+      "id": "arbeitsweise-f59",
+      "frage": "Bestätigtes bleibt bestätigt (Iteration 5); als Nächstes Issue-Pflege",
+      "gestellt": "2026-11-11",
+      "antwort": "Wie kommst du aber ins arbeiten? Durch die übergabe der zielbilder doch wohl nicht",
+      "beantwortet": "2026-11-11",
+      "notiz": "Leitfaden-Chat (Claude)."
+    },
+    {
+      "id": "arbeitsweise-f60",
+      "frage": "Startklar: Werkbuch; aus bestätigten Punkten werden Pakete – freigeben?",
+      "gestellt": "2026-11-11",
+      "antwort": "Was sind hier pakete? Wir müssen auf Begrifflichkeiten achten",
+      "beantwortet": "2026-11-11",
+      "notiz": "Leitfaden-Chat (Claude)."
+    },
+    {
+      "id": "arbeitsweise-f61",
+      "frage": "„Auftrag“ statt „Paket“; Teil „Begriffe“ als Impuls – Freigabe für den ersten Auftrag?",
+      "gestellt": "2026-11-11",
+      "antwort": "Wann meldest du startklar, welche orte der Kommunikation haben wir, jenseits chat und zielbild?",
+      "beantwortet": "2026-11-11",
+      "notiz": "Leitfaden-Chat (Claude)."
+    },
+    {
+      "id": "arbeitsweise-f62",
+      "frage": "Teil „Aufträge“ im Zielbild anlegen, Werkbuch als erster Auftrag?",
+      "gestellt": "2026-11-11",
+      "antwort": "Ja gern, lass es uns ausprobieren",
+      "beantwortet": "2026-11-11",
+      "notiz": "Leitfaden-Chat (Claude)."
+    },
+    {
+      "id": "arbeitsweise-f63",
+      "frage": "Vor dem Schluss: #167 übernehmen? Ersetzte PRs #164, #166, #176 schließen? Rückmeldung zu Iteration 6 jetzt oder im neuen Chat?",
+      "gestellt": "2026-11-11",
+      "antwort": "Kurz, was ist mit 2. was wird durch was ersetzt und wieso überschreibt Codex überhaupt",
+      "beantwortet": "2026-11-11",
+      "notiz": "Leitfaden-Chat (Claude)."
+    },
+    {
+      "id": "arbeitsweise-f64",
+      "frage": "Bei Übergaben schreibt nur das orchestrierende Modell den Merkzettel – als Impuls aufnehmen?",
+      "gestellt": "2026-11-11",
+      "antwort": "Ja gern. Muss noch erwas in diesem Chat abgeschlossen werden?",
+      "beantwortet": "2026-11-11",
+      "notiz": "Leitfaden-Chat (Claude)."
     }
   ]
 }

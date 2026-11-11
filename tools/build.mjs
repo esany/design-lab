@@ -401,6 +401,56 @@ outputs.set("verknuepfung.md", `# Verknüpfung — Anforderungen und Mechanismen
 ${[...reqs].map(([a, r]) => { const l = byReq.get(a); return `| ${a} | ${cell(r.titel)} | ${r.stand} | ${l.filter((x) => x.art === "Entscheidung").map(link).join(", ") || "—"} | ${l.filter((x) => x.art === "Skill").map(link).join(", ") || "—"} |`; }).join("\n")}
 `);
 
+// ---------- Zielbild Leitfaden: Punkte als Daten, Seite erzeugt ----------
+// leitfaden/zielbild/punkte.json → leitfaden/zielbild/index.html (Vorlage: leitfaden/zielbild/vorlage.html)
+{
+  const ZB = "leitfaden/zielbild/punkte.json", VORLAGE = "leitfaden/zielbild/vorlage.html";
+  if (existsSync(join(root, ZB)) && existsSync(join(root, VORLAGE))) {
+    try {
+      const z = JSON.parse(readFileSync(join(root, ZB), "utf8"));
+      const S = ["bestaetigt", "ableitung", "vorschlag", "befund", "offen", "freigabe", "impuls", "auftrag"];
+      const STAND = ["vorbereitet", "startklar", "freigegeben", "läuft", "fertig"];
+      const N = ["neu", "geändert", "ergänzt"];
+      const P = ["jetzt", "später", "parken"];
+      const ids = new Set();
+      if (!Number.isInteger(z.iteration) || !/^\d{4}-\d{2}-\d{2}$/.test(z.stand ?? "")) errors.push(`${ZB}: „iteration“ (Zahl) und „stand“ (JJJJ-MM-TT) sind Pflicht`);
+      for (const teil of z.teile ?? []) for (const p of teil.punkte ?? []) {
+        const w = `${ZB}: Punkt „${p.id ?? "?"}“`;
+        if (!/^[a-z0-9-]+$/.test(p.id ?? "")) errors.push(`${w}: Kennung fehlt oder ist nicht klein-mit-bindestrich`);
+        if (ids.has(p.id)) errors.push(`${w}: Kennung doppelt`); ids.add(p.id);
+        if (!S.includes(p.s)) errors.push(`${w}: Status „${p.s}“ unbekannt (erlaubt: ${S.join(", ")})`);
+        if (!p.t) errors.push(`${w}: Satz „t“ fehlt`);
+        if (p.n && !N.includes(p.n)) errors.push(`${w}: Änderung „${p.n}“ unbekannt (erlaubt: ${N.join(", ")})`);
+        if ((p.v || p.f) && !p.n) errors.push(`${w}: „vorher“ oder Rückmeldung ohne Änderungsart „n“`);
+        if (p.prio && !P.includes(p.prio)) errors.push(`${w}: Priorität „${p.prio}“ unbekannt (erlaubt: ${P.join(", ")})`);
+        if (p.s === "impuls" && !p.prio) errors.push(`${w}: Impuls ohne Vorschlag zur Priorität`);
+        if (p.bestaetigt && !/^\d{4}-\d{2}-\d{2}$/.test(p.bestaetigt)) errors.push(`${w}: „bestaetigt“ muss ein Datum JJJJ-MM-TT sein`);
+        if (p.bestaetigt && p.n) errors.push(`${w}: geändert („n“) und zugleich bestätigt; eine Änderung hebt die Bestätigung auf`);
+        if (p.s === "auftrag") {
+          if (!STAND.includes(p.stand)) errors.push(`${w}: Auftrag mit Stand „${p.stand}“ (erlaubt: ${STAND.join(", ")})`);
+          if (!p.wer) errors.push(`${w}: Auftrag ohne „wer“`);
+          if (!Array.isArray(p.stuetzt) || !p.stuetzt.length) errors.push(`${w}: Auftrag ohne „stuetzt“ (auf welchen Punkten er beruht)`);
+        }
+      }
+      const alle = new Map((z.teile ?? []).flatMap((x) => x.punkte ?? []).map((p) => [p.id, p]));
+      for (const p of alle.values()) if (p.s === "auftrag") for (const i of p.stuetzt ?? []) {
+        const q = alle.get(i);
+        if (!q) errors.push(`${ZB}: Auftrag „${p.id}“ beruht auf unbekanntem Punkt „${i}“`);
+        else if (p.stand === "startklar" && !(q.bestaetigt && !q.n)) errors.push(`${ZB}: Auftrag „${p.id}“ ist „startklar“, aber Punkt „${i}“ ist nicht bestätigt`);
+      }
+      const [j, m, d] = [z.stand.slice(0, 4), z.stand.slice(5, 7), z.stand.slice(8, 10)];
+      const html = readFileSync(join(root, VORLAGE), "utf8")
+        .replace("/*DATEN*/", JSON.stringify(z.teile).replace(/</g, "\\u003c"))
+        .replaceAll("/*ITERATION*/", String(z.iteration))
+        .replace("/*VORHER*/", String(z.iteration - 1))
+        .replace("/*STAND*/", `${d}.${m}.${j}`)
+        .replace("/*RUECKMELDUNG*/", z.rueckmeldung ?? "")
+        .replace("<head>", "<head>\n<!-- Erzeugt von node tools/build.mjs aus leitfaden/zielbild/punkte.json. Nicht von Hand ändern. -->");
+      outputs.set("leitfaden/zielbild/index.html", html);
+    } catch (e) { errors.push(`${ZB}: ${e.message}`); }
+  }
+}
+
 // ---------- Stand aus den Merkzetteln ----------
 const themen = [];
 for (const datei of readdirSync(join(root, "anschluss")).filter(f => f.endsWith(".md") && f !== "README.md").sort()) {
