@@ -3,9 +3,9 @@
 > Erzeugt von `node tools/build.mjs` aus `daten/arbeitsweise.json` und dem Merkzettel
 > `anschluss/arbeitsweise.md`. Nicht von Hand ändern. Modelle lesen die Daten, nicht diese Seite.
 
-**Stand:** Prüfstand abgeschlossen (08.11.); Prüfung baut Übersichten selbst, Verlauf als Einzeldateien, rote Prüfung wird gemeldet; Leitfaden auf Grundlage des Konzeptstands 08.11. im eigenen Chat; KI-Fachpaket wartet auf den Leitfaden.
+**Stand:** Leitfaden-Bestandsaufnahme zu #173 liegt in PR #175; automatische Prüfungen grün, Ursprungseinträge unverändert. Die inhaltliche Sichtung durch den Eigentümer steht aus.
 
-**Nächster Schritt:** Leitfaden-Chat: Minimalform und Datenformat des Leitfadens mit dem Eigentümer klären und bauen.
+**Nächster Schritt:** Eigentümer sichtet die Tabelle in PR #175; danach Minimalform und Datenformat klären und entscheiden, wie die 24 Einträge aufzuräumen sind.
 
 ## Offene Fragen an den Eigentümer (6)
 
