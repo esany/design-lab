@@ -7,7 +7,7 @@
 
 **Nächster Schritt:** Leitfaden-Chat: Minimalform und Datenformat des Leitfadens mit dem Eigentümer klären und bauen.
 
-## Offene Fragen an den Eigentümer (6)
+## Offene Fragen an den Eigentümer (7)
 
 - **arbeitsweise-f01** Radar als Matrix (Empfehlung) oder Kreis? *(gestellt 2026-11-05)*
 - **arbeitsweise-f02** Gemeinsame Issue-Prüfung zuerst im Labor bauen? *(gestellt 2026-11-05)*
@@ -15,6 +15,7 @@
 - **arbeitsweise-f04** Dürfen Fremde im öffentlichen Labor Issues anlegen? *(gestellt 2026-11-05)*
 - **arbeitsweise-f17** Lief Codex für #141 im Reiter „Codex“ der ChatGPT-App (Cloud) oder in einem normalen Chat? *(gestellt 2026-11-07)*
 - **arbeitsweise-f26** Minimalform für den Leitfaden: Einträge mit freien Tags und drei Arten von Relationen, eine erzeugte Ansicht als Netz und Verlauf, erste Keime generisch – soll ich so anfangen? *(gestellt 2026-11-06)*
+- **arbeitsweise-f40** Soll ein Werkchat das Labor mit Schreibrecht für Eingänge (daten/, verlauf/, Issues) anhängen statt nur lesend? (decisions/0035) *(gestellt 2026-11-11)*
 
 ## Aussagen
 
@@ -59,7 +60,7 @@
   *Beleg:* `evals/neustart-daten/ergebnisse/2026-11-07-gegenlesen-astra.md`, Prüfung der zwei vorgesehenen Aussagen, 4b; Prüfläufe im Vergleich
   *Grenze:* Die Kommentare entstanden vor Abschluss der Prüfungen; ob die Prüflinge die Fehler sehen konnten, ist nicht nachgewiesen.
 
-### Abgeleitet (16)
+### Abgeleitet (19)
 
 - **arbeitsweise-a01** Fortschritt kommt in der Arbeit mit der KI als Text zurück, nicht als etwas zum Ansehen oder Ausprobieren; der Gestalter sieht deshalb nicht, ob Strukturen tragen.
 - **arbeitsweise-a06** Wurzel des Problems: Im Entwurf antwortet das Material, in der Arbeit mit der KI nur Text; der Gestalter ersetzt sein Urteil durch Regeln.
@@ -89,6 +90,12 @@
   *Grenze:* Einmal beobachtet (Startauftrag von Claude, Lauf mit ChatGPT, 11.11.). Gegenmittel im Gespräch: Eingrenzung zuerst, eine passende Methode, Befunde zu Themen verdichten und nach Schmerz ordnen (was kostet es heute, was wird besser), nicht nach Anzahl.
 - **arbeitsweise-a31** Nach einer Korrektur wegen Ausweitung schwang die KI in Formalismus um (Zahlenbegrenzung, Prozessdateien, Persona) und verlor den Kern, den der Eigentümer zum Urteilen braucht: Intent, Domänenwissen und Umsetzung im Zusammenhang; das wertvollste Domänenwissen blieb dabei im Chat statt im Werk.
   *Grenze:* Einmal beobachtet (Claude, Kundenauftrag, 10./11.11.; Audit privat in esany/werke). Folgt auf a29 und a30. Gegenmittel im Werk: Wissensbasis und Prüfinstrument vor jedem Auftrag an ein Modell.
+- **arbeitsweise-a32** In einem Werkchat hat die KI das Laborwissen, das der Startauftrag nannte (Fachpaket, Laborarbeit, Leitfaden), nicht oder erst spät abgerufen und Gelesenes nicht angewendet: w-lesart war bekannt, trotzdem wurde zweimal vor der Klärung gebaut.
+  *Grenze:* Einmal beobachtet (Claude, Kundenauftrag, 11.11.; privat in esany/werke). Prüffall evals/werkchat-lernen. Folgt auf a29–a31: Anweisungen allein tragen nicht.
+- **arbeitsweise-a33** Korrekturen des Eigentümers in einem Werk wurden nicht als Eingang an das Labor zurückgeführt, sondern nur im Werk abgelegt; die Rückkopplung des Organismus fehlte, auch weil das Labor im Werkchat nur lesbar freigegeben war.
+  *Grenze:* Einmal beobachtet (Claude, 11.11.). Vom Eigentümer als schwerer Fehler benannt. Vorschlag zur Abhilfe: decisions/0035.
+- **arbeitsweise-a34** In einer frühen Entwurfsphase erzeugte die KI Dateien, einen Generator und acht Pull Requests, statt im Gespräch Lesart und Format zu klären; das Ergebnis wurde verworfen, die Kosten waren hoch.
+  *Grenze:* Einmal beobachtet (Claude, 11.11.). Prinzipien 9 und 11; Eigentümer: der Chat sei richtig teuer.
 
 ### Nicht belegt (1)
 
