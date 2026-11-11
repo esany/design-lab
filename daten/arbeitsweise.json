@@ -384,6 +384,13 @@
       "status": "abgeleitet",
       "seit": "2026-11-11",
       "notiz": "Einmal beobachtet (Claude, Werkchat 11.11.; privat in esany/werke). Der Leitfaden hat die verlangte Stufung schon selbst (Regel, warum, Hintergrund und Quellen). Gegenmittel: bei Unzufriedenheit zuerst Modus und Lesart nennen, Planung als Struktur, bei Unklarheit fragen."
+    },
+    {
+      "id": "arbeitsweise-a40",
+      "aussage": "In den Arbeitsdateien eines Werkes standen Vorschläge der KI (Stundenverteilung, Ablauf, Prüfinstrument) in Dateien, die als geltend ausgewiesen waren, ohne Freigabe des Eigentümers; Entwurfswissen, Methodenwissen, Projektorganisation und Persönliches lagen gemischt in denselben Dateien.",
+      "status": "abgeleitet",
+      "seit": "2026-11-11",
+      "notiz": "Einmal beobachtet (Claude, Werkchat 11.11.; privat in esany/werke). Gegenmittel (Vorschlag): Status je Element statt je Datei, ‚überholt durch‘ mit Link, Korrektur am Ort, Stand an einem Ort, technisch geprüft; generisches Startverhalten für neue Werke."
     }
   ],
   "fragen": [
