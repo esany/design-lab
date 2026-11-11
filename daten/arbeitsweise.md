@@ -60,7 +60,7 @@
   *Beleg:* `evals/neustart-daten/ergebnisse/2026-11-07-gegenlesen-astra.md`, Prüfung der zwei vorgesehenen Aussagen, 4b; Prüfläufe im Vergleich
   *Grenze:* Die Kommentare entstanden vor Abschluss der Prüfungen; ob die Prüflinge die Fehler sehen konnten, ist nicht nachgewiesen.
 
-### Abgeleitet (19)
+### Abgeleitet (20)
 
 - **arbeitsweise-a01** Fortschritt kommt in der Arbeit mit der KI als Text zurück, nicht als etwas zum Ansehen oder Ausprobieren; der Gestalter sieht deshalb nicht, ob Strukturen tragen.
 - **arbeitsweise-a06** Wurzel des Problems: Im Entwurf antwortet das Material, in der Arbeit mit der KI nur Text; der Gestalter ersetzt sein Urteil durch Regeln.
@@ -96,6 +96,8 @@
   *Grenze:* Einmal beobachtet (Claude, 11.11.). Vom Eigentümer als schwerer Fehler benannt. Vorschlag zur Abhilfe: decisions/0035.
 - **arbeitsweise-a34** In einer frühen Entwurfsphase erzeugte die KI Dateien, einen Generator und acht Pull Requests, statt im Gespräch Lesart und Format zu klären; das Ergebnis wurde verworfen, die Kosten waren hoch.
   *Grenze:* Einmal beobachtet (Claude, 11.11.). Prinzipien 9 und 11; Eigentümer: der Chat sei richtig teuer.
+- **arbeitsweise-a35** Beauftragt, einen Ansatz mit dem fachfremden Eigentümer im Gespräch zu klären, gab die KI Einwände und eine offene Frage nach Werkzeug und Arbeitsweise zurück statt eines eigenen, begründeten Vorschlags; der Eigentümer musste den Vorschlag ausdrücklich einfordern.
+  *Grenze:* Einmal beobachtet (Claude, Werkchat 11.11.; privat in esany/werke). Pendel wie a31: nach der Korrektur ‚gebaut vor Klärung‘ (a34) zu weit ins Fragen. Gegenmittel: Klären heißt einen Vorschlag mit Standardwahl vorlegen, Einwände eingearbeitet, Anforderungen abgeglichen; fragen nur, was nur der Eigentümer weiß (a28, k-zweck).
 
 ### Nicht belegt (1)
 
