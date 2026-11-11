@@ -8,7 +8,7 @@ Werkzeuge und Entwicklungen, die das Labor beobachtet. Vier Ringe:
 - **Halten** — bewusst nicht (mehr) nutzen
 
 Jeder Eintrag: was es ist · warum relevant · Quelle · Stand. Änderungen nur mit
-Begründung (Skill `pflege`). Stand des Radars: **2026-11-09**.
+Begründung (Skill `pflege`). Stand des Radars: **2026-11-11**.
 
 ## Einsetzen
 
@@ -41,6 +41,7 @@ Begründung (Skill `pflege`). Stand des Radars: **2026-11-09**.
 
 | Was | Warum | Quelle | Stand |
 |---|---|---|---|
+| Dataviz Inspiration (Yan Holtz) | kuratierte Beispielgalerie, rund 250 Projekte, filterbar nach Diagrammtyp (Typologie von data-to-viz) und Werkzeug; nur als Bildreferenz verlinken, Bilder nicht ins Repo; ordnet nach Einzeldarstellung, nicht nach Gefüge | [dataviz-inspiration.com](https://www.dataviz-inspiration.com/) · [Holtz](https://prodigious-trailblazer-3628.kit.com/posts/12-years-13-dataviz-resources) | 2026-11-11 |
 | ComfyUI + Comfy MCP | steuerbare Bildgenerierung; offizieller MCP (Cloud, Beta) | [ComfyUI Wiki](https://comfyui-wiki.com/en/news/2026-06-30-comfy-mcp-agent-integration) | 2026-10 |
 | TouchDesigner + MCP | Echtzeit, Installation; nicht Open Source | [mcpservers.org](https://mcpservers.org/servers/8beeeaaat/touchdesigner-mcp) | 2026-10 |
 | cables.gl, Three.js | offene Echtzeit-Grafik | — | 2026-10 |

@@ -7,7 +7,7 @@ offen: []
 
 # Thema: Visualisierungssysteme · Reporting jenseits des Dashboards
 
-**Zuletzt fortgeschrieben:** 10.11.2026 (Claude, Befund angelegt)
+**Zuletzt fortgeschrieben:** 11.11.2026 (Claude, Fundstück Dataviz Inspiration)
 
 ## In Worten
 
@@ -28,6 +28,13 @@ Die Quellen sind nur auf Ebene von Abstract oder Inhaltsverzeichnis gesehen.
 **Fundstück:** Ein eigener vertraulicher Reporting-Leitfaden (2021) wurde bewertet und als
 Grundlage verworfen. Er liegt bewusst nirgends im Labor. Übernommen ist nur eine abstrakte
 Beobachtung (Befund, Abschnitt 6).
+
+**Fundstück Dataviz Inspiration (11.11.):** kuratierte Galerie von Yan Holtz mit rund 250
+Projekten, filterbar nach Diagrammtyp und Werkzeug (belegt: Holtz, Newsletter; Seite selbst nur
+als Metadaten gesehen). Status `beobachten`, Integrationsgrad `referenzieren`: brauchbar als
+schnelle Bildreferenz, aber sie ordnet nach Einzeldarstellung und Form, nicht nach Zweck oder
+Gefüge, also eher Nachbar von „Vermitteln“ als Grundlage dieses Pakets. Bildrechte liegen bei den
+Urhebern (abgeleitet), deshalb nur Link, keine Bilder im Repo.
 
 **Offene Fragen an den Eigentümer:**
 1. Eigenes Fachpaket, getrennt von „Vermitteln“ (einzelne Darstellung gegen Gefüge)?
