@@ -60,7 +60,7 @@
   *Beleg:* `evals/neustart-daten/ergebnisse/2026-11-07-gegenlesen-astra.md`, Prüfung der zwei vorgesehenen Aussagen, 4b; Prüfläufe im Vergleich
   *Grenze:* Die Kommentare entstanden vor Abschluss der Prüfungen; ob die Prüflinge die Fehler sehen konnten, ist nicht nachgewiesen.
 
-### Abgeleitet (25)
+### Abgeleitet (26)
 
 - **arbeitsweise-a01** Fortschritt kommt in der Arbeit mit der KI als Text zurück, nicht als etwas zum Ansehen oder Ausprobieren; der Gestalter sieht deshalb nicht, ob Strukturen tragen.
 - **arbeitsweise-a06** Wurzel des Problems: Im Entwurf antwortet das Material, in der Arbeit mit der KI nur Text; der Gestalter ersetzt sein Urteil durch Regeln.
@@ -108,6 +108,8 @@
   *Grenze:* Einmal beobachtet (Claude, Werkchat 11.11.; privat in esany/werke). Der Leitfaden hat die verlangte Stufung schon selbst (Regel, warum, Hintergrund und Quellen). Gegenmittel: bei Unzufriedenheit zuerst Modus und Lesart nennen, Planung als Struktur, bei Unklarheit fragen.
 - **arbeitsweise-a40** In den Arbeitsdateien eines Werkes standen Vorschläge der KI (Stundenverteilung, Ablauf, Prüfinstrument) in Dateien, die als geltend ausgewiesen waren, ohne Freigabe des Eigentümers; Entwurfswissen, Methodenwissen, Projektorganisation und Persönliches lagen gemischt in denselben Dateien.
   *Grenze:* Einmal beobachtet (Claude, Werkchat 11.11.; privat in esany/werke). Gegenmittel (Vorschlag): Status je Element statt je Datei, ‚überholt durch‘ mit Link, Korrektur am Ort, Stand an einem Ort, technisch geprüft; generisches Startverhalten für neue Werke.
+- **arbeitsweise-a41** Gebeten um ein Prüf- und Zielbild-Dokument ‚wie für den Leitfaden‘, baute die KI ein neues Format (Fließtext-Dokument), statt die bewährte, vom Eigentümer gelobte Zielbild-Seite des Labors (Punkte als Daten, Status je Punkt, Urteil je Punkt) als Vorlage zu suchen und zu verwenden.
+  *Grenze:* Einmal beobachtet (Claude, Werkchat 11.11.). Folgt auf a39 (Labor als Referenz). Gegenmittel: bei ‚wie X‘ zuerst X im Labor finden und lesen; die Zielbild-Vorlage generisch für Werke machen.
 
 ### Nicht belegt (1)
 
