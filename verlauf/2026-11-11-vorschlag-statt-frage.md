@@ -5,3 +5,5 @@
 **Warum:** Korrektur des Eigentümers im Werkchat vom 11.11. („machst du mir dafür einen Vorschlag, der meine Bedürfnisse und meinen Auftrag erfüllt“); nach 0035 erzeugt jede Korrektur sofort einen Eingang im Labor.
 
 **Rückgängig:** PR revertieren.
+
+**Nachtrag, gleicher Chat:** Aussagen a36–a38 (Domäne und Darstellung trennen; nichts Persönliches in teilbare Dokumente; Kontext statt Kürzel) aus drei weiteren Korrekturen des Eigentümers.

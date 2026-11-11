@@ -356,6 +356,27 @@
       "status": "abgeleitet",
       "seit": "2026-11-11",
       "notiz": "Einmal beobachtet (Claude, Werkchat 11.11.; privat in esany/werke). Pendel wie a31: nach der Korrektur ‚gebaut vor Klärung‘ (a34) zu weit ins Fragen. Gegenmittel: Klären heißt einen Vorschlag mit Standardwahl vorlegen, Einwände eingearbeitet, Anforderungen abgeglichen; fragen nur, was nur der Eigentümer weiß (a28, k-zweck)."
+    },
+    {
+      "id": "arbeitsweise-a36",
+      "aussage": "Die KI hat Begriffe der Fachdomäne und Begriffe der Darstellung im Werkzeug vermischt: Fragen der Nutzer standen in der Sprache der Software (etwa die Gruppe einer Gruppier-Funktion statt des fachlichen Begriffs); damit ist nicht mehr prüfbar, ob die Darstellung die Domäne trifft.",
+      "status": "abgeleitet",
+      "seit": "2026-11-11",
+      "notiz": "Einmal beobachtet (Claude, Werkchat 11.11.; privat in esany/werke); vom Eigentümer als ‚tödlich‘ benannt. Gegenmittel: Domäne, Daten und Darstellung getrennt halten (Ebenen nach Munzner, fachpaket-vermitteln) und die Zuordnung ausdrücklich zeigen; Brüche liegen oft genau in der Zuordnung."
+    },
+    {
+      "id": "arbeitsweise-a37",
+      "aussage": "Die KI plante interne und persönliche Angaben zum Auftragsverhältnis in ein Arbeitsdokument ein, das an den Auftraggeber verteilt werden soll, wenn auch in einem eigenen Reiter.",
+      "status": "abgeleitet",
+      "seit": "2026-11-11",
+      "notiz": "Einmal beobachtet (Claude, Werkchat 11.11.). Gegenmittel: Persönliches gehört nicht in ein Dokument, das geteilt werden kann; es bleibt im privaten Werk. Namen von Personen nur, wo nötig, sonst Rollen."
+    },
+    {
+      "id": "arbeitsweise-a38",
+      "aussage": "Die KI verwies mit bloßen Kürzeln und Überschriften (Nummern von Rückmeldungen, Aufgaben, Anforderungen) statt den Inhalt dahinter zu zeigen; der Eigentümer kann so nicht prüfen, was gemeint ist.",
+      "status": "abgeleitet",
+      "seit": "2026-11-11",
+      "notiz": "Zweite Beobachtung nach a28 (Wunsch nach Namen statt Nummern, 08.11.), Werkchat 11.11. Gegenmittel: Kontextwissen immer mitgeben, gestuft (Kernsatz sichtbar, Bedeutung in einem Satz, Beleg und Herleitung aufklappbar oder verlinkt), Vorbild: Fokus und Inhaltsblöcke in iA Writer."
     }
   ],
   "fragen": [
