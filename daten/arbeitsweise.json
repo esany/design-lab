@@ -391,6 +391,13 @@
       "status": "abgeleitet",
       "seit": "2026-11-11",
       "notiz": "Einmal beobachtet (Claude, Werkchat 11.11.; privat in esany/werke). Gegenmittel (Vorschlag): Status je Element statt je Datei, ‚überholt durch‘ mit Link, Korrektur am Ort, Stand an einem Ort, technisch geprüft; generisches Startverhalten für neue Werke."
+    },
+    {
+      "id": "arbeitsweise-a41",
+      "aussage": "Gebeten um ein Prüf- und Zielbild-Dokument ‚wie für den Leitfaden‘, baute die KI ein neues Format (Fließtext-Dokument), statt die bewährte, vom Eigentümer gelobte Zielbild-Seite des Labors (Punkte als Daten, Status je Punkt, Urteil je Punkt) als Vorlage zu suchen und zu verwenden.",
+      "status": "abgeleitet",
+      "seit": "2026-11-11",
+      "notiz": "Einmal beobachtet (Claude, Werkchat 11.11.). Folgt auf a39 (Labor als Referenz). Gegenmittel: bei ‚wie X‘ zuerst X im Labor finden und lesen; die Zielbild-Vorlage generisch für Werke machen."
     }
   ],
   "fragen": [
