@@ -398,6 +398,13 @@
       "status": "abgeleitet",
       "seit": "2026-11-11",
       "notiz": "Einmal beobachtet (Claude, Werkchat 11.11.). Folgt auf a39 (Labor als Referenz). Gegenmittel: bei ‚wie X‘ zuerst X im Labor finden und lesen; die Zielbild-Vorlage generisch für Werke machen."
+    },
+    {
+      "id": "arbeitsweise-a42",
+      "aussage": "Auf einer Seite für Gegenstand und Methode eines Werkes führte die KI Projektinterna (Umfang, Termine, Zuständigkeiten, Stunden) als Punkte zum Bestätigen; der Fokus des Werkes, eine Warumkette hinter dem Intent mit der Erkenntnislücke der Nutzer, fehlte, bis der Eigentümer sie verlangte.",
+      "status": "abgeleitet",
+      "seit": "2026-11-11",
+      "notiz": "Einmal beobachtet (Claude, Werkchat 11.11.). Gegenmittel: Zielbild eines Werkes beginnt mit der Warumkette hinter dem Intent; Organisation nur als Anforderung im Hintergrund."
     }
   ],
   "fragen": [
