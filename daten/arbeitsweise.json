@@ -321,6 +321,13 @@
       "status": "abgeleitet",
       "seit": "2026-11-11",
       "notiz": "Einmal beobachtet (Startauftrag von Claude, Lauf mit ChatGPT, 11.11.). Gegenmittel im Gespräch: Eingrenzung zuerst, eine passende Methode, Befunde zu Themen verdichten und nach Schmerz ordnen (was kostet es heute, was wird besser), nicht nach Anzahl."
+    },
+    {
+      "id": "arbeitsweise-a31",
+      "aussage": "Nach einer Korrektur wegen Ausweitung schwang die KI in Formalismus um (Zahlenbegrenzung, Prozessdateien, Persona) und verlor den Kern, den der Eigentümer zum Urteilen braucht: Intent, Domänenwissen und Umsetzung im Zusammenhang; das wertvollste Domänenwissen blieb dabei im Chat statt im Werk.",
+      "status": "abgeleitet",
+      "seit": "2026-11-11",
+      "notiz": "Einmal beobachtet (Claude, Kundenauftrag, 10./11.11.; Audit privat in esany/werke). Folgt auf a29 und a30. Gegenmittel im Werk: Wissensbasis und Prüfinstrument vor jedem Auftrag an ein Modell."
     }
   ],
   "fragen": [
