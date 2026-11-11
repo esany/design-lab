@@ -1,13 +1,13 @@
 ---
 thema: Arbeitsweise mit KI · Wissensformen
-stand: Prüfstand abgeschlossen (08.11.); Prüfung baut Übersichten selbst, Verlauf als Einzeldateien, rote Prüfung wird gemeldet; Leitfaden auf Grundlage des Konzeptstands 08.11. im eigenen Chat; KI-Fachpaket wartet auf den Leitfaden.
-naechster_schritt: Leitfaden-Chat: Minimalform und Datenformat des Leitfadens mit dem Eigentümer klären und bauen.
+stand: Prüfstand abgeschlossen (08.11.); Leitfaden (Arbeitsname Werkbuch) wird über die Seite „Zielbild Leitfaden“ (leitfaden/zielbild/, PR #167) entworfen, Iteration 6 vom 11.11. mit Teil „Aufträge“; Ergebnisse von #172 (PR #174) und #173 (PR #175) liegen ungeprüft; KI-Fachpaket wartet.
+naechster_schritt: Neuer Leitfaden-Chat (Claude): PR #174 und #175 prüfen; Rückmeldung des Eigentümers zu Iteration 6 einarbeiten; Werkbuch startklar, sobald „werdend und gilt“ bestätigt ist; Issues pflegen.
 offen: [180]
 ---
 
 # Thema: Arbeitsweise mit KI · Wissensformen
 
-**Zuletzt fortgeschrieben:** 11.11.2026 (Claude)
+**Zuletzt fortgeschrieben:** 11.11.2026 (Claude, Leitfaden-Chat, Abschluss)
 
 **Worum es geht:** Wie arbeitet der Gestalter mit KI so, dass echte Werke und Werkzeuge entstehen
 statt Textberge, und wie bleibt Wissen für jeden Chat erreichbar, ohne dass er alles lesen muss?
@@ -23,19 +23,19 @@ bedeutet (Wunsch des Eigentümers, 07./08.11.; [a:arbeitsweise-a28]).
 - Das Labor ist selbst Entwurfsgegenstand; Experimente prüfen, wie gut es arbeitet (Intent, 08.11.).
 - Die einzige Wahrheit liegt in Git, Übersichten werden erzeugt. Die Prüfung baut sie selbst
   (0033), Verlaufseinträge sind einzelne Dateien in `verlauf/`, Rot meldet die Prüfung (0034).
-- Leitfaden: Entwurfsarbeit als übergeordnete Fachlichkeit, die KI ein Werkzeug darin; eigener
-  Erkenntnisort des Gestalters, keine Ansicht des KI-Fachpakets; wächst offen, generisch, mit
-  Fachbegriffen, freien Tags und Relationen. Fremdes Fachwissen bleibt in dessen Projekt.
+- Leitfaden (Arbeitsname Werkbuch): Stand als Punkte auf der Seite „Zielbild Leitfaden“
+  (`leitfaden/zielbild/`, PR #167); bestätigte Punkte sind die Baseline, Aufträge stehen oben.
+  Wortlaut des Eigentümers: `daten/arbeitsweise.json`, f41–f62.
 
 | Strang | Stand | Als Nächstes |
 |---|---|---|
 | Prüfstand | abgeschlossen 08.11.; [Ergebnis](../evals/neustart-daten/README.md) | – |
-| Leitfaden | [Konzeptstand 08.11.](../research/2026-11-wissensformen/konzeptstand-2026-11-08.md); Keime in `leitfaden-wachsend.md`; 0032 auf Probe bis 05.12. | Minimalform und Datenformat; Name; ein oder mehrere; Umgang mit den 24 Einträgen |
+| Leitfaden | Zielbild Iteration 6 (`leitfaden/zielbild/`, PR #167); ersetzt Konzeptstand 08.11. sowie PR #164 und #166 als Arbeitsstand; 0032 auf Probe bis 05.12. | PR #174/#175 prüfen; Frage 7 (Schnitt von Fachwissen) nachreichen; Werkbuch bauen nach Freigabe; Begriffe festlegen |
 | KI-Fachpaket | Konzept, teils überholt | erst nach dem Leitfaden |
 
-**Vorschläge, nicht beschlossen** (Konzeptstand): fester Moment am Chatende („Soll das bleiben?“);
-Prüfung, die meldet, wenn dasselbe an zwei Orten steht; parallele Entwurfsrichtungen halten fest,
-welche Fragen sie berühren, eine Übersicht zeigt Schnittmengen, und das Zusammenführen wird geplant.
+**Vorschläge aus dem Konzeptstand 08.11.** (Moment am Chatende, Prüfung auf Dopplungen, Schnittmengen paralleler Richtungen) stehen jetzt im Zielbild.
+
+**Zu beachten:** PR #187 baut den Zielbild-Generator als Werkzeug (0036); nach Übernahme nutzt #167 es statt eigener Vorlage. PR #176 kollidiert mit #167.
 
 **Geparkt:** Radar als Daten und Ansicht (Matrix oder Kreis offen); Freigabe-Prüfung (#132);
 Hooks; Projektnotiz paleo-type; Radar-Zeile Basic Memory; bei Konflikt startet GitHub keine Prüfung.

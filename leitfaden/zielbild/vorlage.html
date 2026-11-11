@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zielbild Leitfaden – was Claude verstanden hat</title>
+<style>
+:root{--bg:#f4f2ed;--fg:#121211;--muted:#71706b;--line:#cfccc5;--accent:#d92d17;--ok:#2f6b3a;--warn:#8a5a00;--sans:"Helvetica Neue",Helvetica,Arial,system-ui,sans-serif;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root{--bg:#151514;--fg:#e8e6e0;--muted:#a09e99;--line:#363533;--ok:#7fbf8a;--warn:#e0b060}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:1rem/1.5 var(--sans)}
+main{max-width:38rem;margin:0 auto;padding:24px 16px 96px}
+h1{font-size:2rem;line-height:1.1;margin:0 0 8px;letter-spacing:-.01em}
+.lede{margin:0 0 8px}
+.meta{font:.8125rem/1.4 var(--mono);color:var(--muted);margin:0}
+.legende{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0;padding:0;list-style:none}
+.chip{font:.75rem/1 var(--mono);padding:5px 8px;border:1px solid var(--line);border-radius:999px;white-space:nowrap}
+.chip.bestaetigt{border-color:var(--ok);color:var(--ok)}
+.chip.ableitung{border-color:var(--muted);color:var(--muted)}
+.chip.vorschlag{border-color:var(--warn);color:var(--warn)}
+.punkt.wandel-an{border-left:3px solid var(--accent);padding-left:14px}
+.punkt.wandel-an[data-n="ergänzt"]{border-left:2px solid var(--muted)}
+.aend{font:.75rem/1 var(--mono);color:var(--accent);margin-left:6px}
+.aend.erg{color:var(--muted)}
+.stuetzt{list-style:none;padding:0;margin:6px 0 0;font-size:.875rem}
+.stuetzt li{padding:3px 0;display:grid;grid-template-columns:5.5rem 1fr}
+.stuetzt span{font:.6875rem/1.9 var(--mono)}
+.stuetzt .st{font:inherit!important;color:inherit!important}
+.stuetzt .ja span{color:var(--ok)}
+.stuetzt .nein span{color:var(--accent)}
+.fest-mark{font:.75rem/1 var(--mono);color:var(--ok);margin-left:6px}
+.punkt.fest h3{font-weight:400;font-size:1rem}
+.punkt.fest{padding:12px 0}
+.wandel{display:grid;grid-template-columns:3.75rem 1fr;gap:6px 12px;margin:12px 0 4px}
+.wandel dt{font:.75rem/1.55 var(--mono);color:var(--muted);padding-top:2px}
+.wandel dd{margin:0;font-size:.9375rem;line-height:1.45}
+.wandel .vorher{color:var(--muted)}
+.wandel .du{border-left:1px solid var(--fg);padding-left:10px}
+.wandel .du q{quotes:"„" "“"}
+.bilanz{font:.8125rem/1.4 var(--mono);color:var(--accent);margin:12px 0 0}
+.chip.befund{border-color:var(--accent);color:var(--accent)}
+.filter{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+.filter button{font:.8125rem var(--sans);background:none;color:var(--fg);border:1px solid var(--line);border-radius:999px;padding:6px 12px;cursor:pointer}
+.filter button[aria-pressed=true]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+h2{font-size:1.25rem;margin:40px 0 0;padding-top:16px;border-top:2px solid var(--fg)}
+.punkt{padding:16px 0;border-bottom:1px solid var(--line)}
+.punkt h3{font-size:1.125rem;line-height:1.3;margin:8px 0 0;font-weight:700}
+.punkt p{margin:6px 0 0}
+details{margin-top:8px}
+summary{cursor:pointer;font-weight:700;font-size:.875rem;width:fit-content}
+summary:hover{color:var(--accent)}
+details p{color:var(--muted);font-size:.9375rem}
+.urteil{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap;align-items:center}
+.urteil button{font:.875rem var(--sans);background:none;color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:8px 14px;cursor:pointer;min-height:40px}
+.urteil button.an[data-v=passt]{background:var(--ok);border-color:var(--ok);color:var(--bg)}
+.urteil button.an[data-v=besser]{background:var(--accent);border-color:var(--accent);color:#fff}
+textarea{width:100%;margin-top:8px;font:.9375rem var(--sans);color:var(--fg);background:transparent;border:1px solid var(--line);border-radius:8px;padding:8px;min-height:64px;display:none}
+textarea.zeigen{display:block}
+.leiste{position:sticky;bottom:0;background:var(--bg);border-top:1px solid var(--line);padding:12px 16px;display:flex;gap:12px;align-items:center;justify-content:space-between;max-width:38rem;margin:0 auto}
+.leiste button{font:.9375rem var(--sans);background:var(--fg);color:var(--bg);border:0;border-radius:8px;padding:10px 16px;cursor:pointer}
+.leiste .stand{font:.8125rem var(--mono);color:var(--muted)}
+.ausgabe{display:none;margin-top:16px;white-space:pre-wrap;font:.875rem/1.5 var(--mono);border:1px solid var(--line);border-radius:8px;padding:12px}
+.ausgabe.zeigen{display:block}
+.hinweis{font-size:.8125rem;color:var(--muted)}
+</style>
+</head>
+<body>
+<main>
+<p class="meta">design-lab · Leitfaden · Zielbild, Iteration&nbsp;/*ITERATION*/ · Stand /*STAND*/</p>
+<h1>Zielbild Leitfaden</h1>
+<p class="lede">Die Seite zeigt zuerst, was du prüfen sollst: neu, geändert oder noch nicht bestätigt. Rot am Rand heißt geändert, darunter steht, was vorher galt und was du gesagt hast. Bestätigtes steht im aktuellen Zielbild, bis es sich ändert.</p>
+<ul class="legende" aria-label="Legende">
+<li class="chip bestaetigt">von dir gesagt</li>
+<li class="chip ableitung">meine Ableitung</li>
+<li class="chip vorschlag">Vorschlag, du entscheidest</li>
+<li class="chip befund">Befund, Lösung offen</li>
+</ul>
+<p class="bilanz" id="bilanz"></p>
+<div class="filter" role="group" aria-label="Filter">
+<button aria-pressed="false" data-f="pruefen">zur Prüfung</button><button aria-pressed="false" data-f="zielbild">aktuelles Zielbild</button><button aria-pressed="true" data-f="alle">alle</button>
+<button aria-pressed="false" data-f="bestaetigt">von dir</button>
+<button aria-pressed="false" data-f="ableitung">Ableitung</button>
+<button aria-pressed="false" data-f="vorschlag">Vorschlag</button>
+<button aria-pressed="false" data-f="befund">Befund</button>
+<button aria-pressed="false" data-f="auftrag">Aufträge</button><button aria-pressed="false" data-f="impuls">Eingang</button><button aria-pressed="false" data-f="freigabe">Freigabe</button>
+</div>
+<div id="inhalt"></div>
+<pre class="ausgabe" id="ausgabe"></pre>
+<p class="hinweis">Diese Seite ist ein Prototyp. Deine Markierungen bleiben nur in diesem Browser; was zählt, ist die kopierte Rückmeldung im Chat.</p>
+</main>
+<div class="leiste"><span class="stand" id="stand">0 markiert</span><button id="kopieren">Rückmeldung kopieren</button></div>
+<script>
+const LABEL={bestaetigt:"von dir gesagt",ableitung:"meine Ableitung",vorschlag:"Vorschlag, du entscheidest",befund:"Befund, Lösung offen",offen:"offen, du entscheidest",freigabe:"wartet auf Freigabe",impuls:"Impuls"};
+const DATEN=/*DATEN*/;
+const KEY="zielbild-leitfaden-v/*ITERATION*/";
+let urteil={};try{urteil=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){}
+const speichern=()=>{try{localStorage.setItem(KEY,JSON.stringify(urteil))}catch(e){}};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"})[c]);
+const ALLE=Object.fromEntries(DATEN.flatMap(t=>t.punkte).map(p=>[p.id,p]));
+function render(){
+ const h=DATEN.map(t=>`<section data-teil><h2>${esc(t.teil)}</h2>${t.punkte.map(p=>{
+  const u=urteil[p.id]||{};
+  if(p.s==="auftrag"){const L=(p.stuetzt||[]).map(i=>{const q=ALLE[i];const ok=q&&q.bestaetigt&&!q.n;return `<li class="${ok?"ja":"nein"}"><span>${ok?"bestätigt":"offen"}</span><span class="st">${esc(q?q.t:i)}</span></li>`}).join("");const sk=p.stand==="startklar";return `<article class="punkt auftrag${sk?" wandel-an":""}" data-s="auftrag" id="${p.id}"><span class="chip vorschlag">Auftrag · ${esc(p.stand)} · ${esc(p.wer)}</span><h3>${esc(p.t)}</h3>${p.k?`<p>${esc(p.k)}</p>`:""}${L?`<details${sk||p.stand==="vorbereitet"?" open":""}><summary>Beruht auf</summary><ul class="stuetzt">${L}</ul></details>`:""}${p.offen?`<p class="hinweis">Bewusst offen: ${esc(p.offen)}</p>`:""}${p.zurueck?`<p class="hinweis">Rückgängig: ${esc(p.zurueck)}</p>`:""}${sk?`<div class="urteil"><button data-id="${p.id}" data-v="passt" class="${u.v==="passt"?"an":""}" aria-pressed="${u.v==="passt"}">freigeben</button><button data-id="${p.id}" data-v="besser" class="${u.v==="besser"?"an":""}" aria-pressed="${u.v==="besser"}">anders</button></div><textarea data-id="${p.id}" aria-label="Notiz" class="${u.v||u.n?"zeigen":""}" placeholder="Was genau? (optional)">${esc(u.n||"")}</textarea>`:""}</article>`}
+  if(p.bestaetigt&&!p.n){const dd=p.bestaetigt.slice(8,10)+"."+p.bestaetigt.slice(5,7)+".";return `<article class="punkt fest" data-s="${p.s}" data-z="1" id="${p.id}"><span class="chip ${p.s==="offen"||p.s==="freigabe"||p.s==="impuls"?"vorschlag":p.s}">${LABEL[p.s]}</span><span class="fest-mark">bestätigt ${dd}</span><h3>${esc(p.t)}</h3>${p.k||p.g?`<details><summary>Mehr</summary>${p.k?`<p>${esc(p.k)}</p>`:""}${p.g?`<p>${esc(p.g)}</p>`:""}</details>`:""}</article>`}
+  return `<article class="punkt${p.n?" wandel-an":""}" data-s="${p.s}"${p.n?` data-n="${p.n}"`:""} id="${p.id}"><span class="chip ${p.s==="offen"||p.s==="freigabe"||p.s==="impuls"?"vorschlag":p.s}">${LABEL[p.s]}${p.prio?" · Vorschlag: "+p.prio:""}</span>${p.n?`<span class="aend${p.n==="ergänzt"?" erg":""}">${p.n==="ergänzt"?"ergänzt":p.v?"geändert":"neu"}</span>`:""}<h3>${esc(p.t)}</h3>${p.f?`<dl class="wandel">${p.v===p.t?"":`<dt>vorher</dt><dd class="vorher">${p.v?esc(p.v):"nicht da"}</dd>`}<dt>du</dt><dd class="du"><q>${esc(p.f)}</q></dd></dl>`:""}${p.k?`<p>${esc(p.k)}</p>`:""}${p.g?`<details><summary>Worauf das beruht</summary><p>${esc(p.g)}</p></details>`:""}<div class="urteil"><button data-id="${p.id}" data-v="passt" class="${u.v==="passt"?"an":""}" aria-pressed="${u.v==="passt"}">${p.s==="freigabe"?"freigeben":p.s==="impuls"?"einverstanden":p.s==="offen"?"beantwortet":"passt"}</button><button data-id="${p.id}" data-v="besser" class="${u.v==="besser"?"an":""}" aria-pressed="${u.v==="besser"}">${p.s==="freigabe"||p.s==="impuls"?"anders":p.s==="offen"?"Antwort":"muss besser"}</button></div><textarea data-id="${p.id}" aria-label="Notiz" class="${u.v||u.n?"zeigen":""}" placeholder="Was genau? (optional)">${esc(u.n||"")}</textarea></article>`}).join("")}</section>`).join("");
+ document.getElementById("inhalt").innerHTML=h;const alle=DATEN.flatMap(t=>t.punkte),fest=alle.filter(p=>p.bestaetigt&&!p.n).length,auf=alle.filter(p=>p.s==="auftrag").length,ne=alle.filter(p=>p.n&&!p.v).length,ge=alle.filter(p=>p.n&&p.v).length;document.getElementById("bilanz").textContent=`Nach deiner Rückmeldung vom /*RUECKMELDUNG*/: ${auf} Aufträge, ${alle.length-fest-auf} Punkte zur Prüfung (${ge} geändert oder ergänzt, ${ne} neu), ${fest} im aktuellen Zielbild bestätigt.`;zaehlen();
+}
+function zaehlen(){const n=Object.values(urteil).filter(u=>u.v||u.n).length;document.getElementById("stand").textContent=n+" markiert";}
+document.getElementById("inhalt").addEventListener("click",e=>{
+ const b=e.target.closest("button[data-id]");if(!b)return;
+ const id=b.dataset.id,v=b.dataset.v,u=urteil[id]||{};
+ u.v=u.v===v?"":v;urteil[id]=u;speichern();
+ b.parentElement.querySelectorAll("button").forEach(x=>{const on=x.dataset.v===u.v;x.classList.toggle("an",on);x.setAttribute("aria-pressed",on)});
+ const ta=b.closest(".punkt").querySelector("textarea");ta.classList.add("zeigen");if(u.v==="besser")ta.focus();zaehlen();
+});
+document.getElementById("inhalt").addEventListener("input",e=>{const t=e.target;if(t.tagName!=="TEXTAREA")return;const u=urteil[t.dataset.id]||{};u.n=t.value;urteil[t.dataset.id]=u;speichern();zaehlen();});
+document.querySelector(".filter").addEventListener("click",e=>{
+ const b=e.target.closest("button");if(!b)return;
+ document.querySelectorAll(".filter button").forEach(x=>x.setAttribute("aria-pressed",x===b));
+ const f=b.dataset.f;
+ document.querySelectorAll(".punkt").forEach(p=>p.hidden=!(f==="alle"||(f==="pruefen"&&!p.dataset.z)||(f==="zielbild"&&p.dataset.z)||(f!=="pruefen"&&f!=="zielbild"&&p.dataset.s===f)));
+ document.querySelectorAll("section[data-teil]").forEach(s=>s.hidden=![...s.querySelectorAll(".punkt")].some(p=>!p.hidden));
+});
+document.getElementById("kopieren").addEventListener("click",async()=>{
+ const zeilen=[];DATEN.forEach(t=>t.punkte.forEach(p=>{const u=urteil[p.id];if(!u||!(u.v||u.n))return;
+  const w=p.s==="auftrag"?(u.v==="passt"?"freigegeben":u.v==="besser"?"anders":"Notiz"):p.s==="freigabe"?(u.v==="passt"?"freigegeben":u.v==="besser"?"nicht so":"Notiz"):p.s==="offen"?(u.v==="passt"?"beantwortet":"Antwort"):(u.v==="passt"?"passt":u.v==="besser"?"muss besser":"Notiz");
+  zeilen.push(`• ${p.t}\n  → ${w}${u.n?": "+u.n.trim():""}`)}));
+ const text=zeilen.length?"Rückmeldung Zielbild Leitfaden (Iteration /*ITERATION*/):\n\n"+zeilen.join("\n"):"Noch nichts markiert.";
+ const out=document.getElementById("ausgabe");out.textContent=text;out.classList.add("zeigen");
+ const btn=document.getElementById("kopieren");
+ try{await navigator.clipboard.writeText(text);btn.textContent="Kopiert";}catch(e){btn.textContent="Text oben markieren";}
+ setTimeout(()=>btn.textContent="Rückmeldung kopieren",2500);
+});
+render();
+document.querySelector('.filter button[data-f="pruefen"]').click();
+</script>
+</body>
+</html>
