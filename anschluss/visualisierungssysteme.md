@@ -1,13 +1,13 @@
 ---
 thema: Visualisierungssysteme · Reporting jenseits des Dashboards
 stand: Befund mit Leiter, Feldkarte und Stand der Technik einschließlich KI liegt vor (16 neue Quellen, nur Abstracts gesehen); nichts beschlossen
-naechster_schritt: Der Eigentümer beantwortet drei Fragen (eigenes Paket, Prüffall, welche Quellen zuerst ganz gelesen werden); danach baut Claude das Fachpaket.
+naechster_schritt: Der Eigentümer beantwortet vier Fragen (eigenes Paket, Prüffall, welche Quellen zuerst ganz gelesen werden, Zielbild-Prüffragen); danach baut Claude das Fachpaket.
 offen: []
 ---
 
 # Thema: Visualisierungssysteme · Reporting jenseits des Dashboards
 
-**Zuletzt fortgeschrieben:** 11.11.2026 (Claude, Fundstück Dataviz Inspiration)
+**Zuletzt fortgeschrieben:** 11.11.2026 (Claude, Zielbild-Pilot Dataviz Inspiration)
 
 ## In Worten
 
@@ -29,18 +29,19 @@ Die Quellen sind nur auf Ebene von Abstract oder Inhaltsverzeichnis gesehen.
 Grundlage verworfen. Er liegt bewusst nirgends im Labor. Übernommen ist nur eine abstrakte
 Beobachtung (Befund, Abschnitt 6).
 
-**Fundstück Dataviz Inspiration (11.11.):** erst als bloße Galerie unterschätzt, auf Hinweis
-des Eigentümers neu bewertet: ein Zielbild-Bestand für Dataviz und die Fachpakete. Belegt aus dem
-Repo `holtzy/dataviz-inspiration` (Stand 10.11.2026): 462 Einträge von 201 Urhebern, jeder mit
-Kontext- und Gestaltungsbeschreibung, Diagrammtyp, Werkzeug und Technik-Labels. Der Katalog steht
-unter CC BY 4.0, die Bilder nicht. Schlagseite (abgeleitet): ein Geschmack, viel Redaktion und
-Nadieh Bremer, kaum Unsicherheit (9) und Dashboards (9), also wenig zum Gefüge. Radar: Erproben;
-Umfang der Übernahme ist offen beim Eigentümer.
+**Fundstück Dataviz Inspiration (11.11.):** auf Hinweis des Eigentümers als Zielbild-Bestand
+übernommen: Katalog mit 462 Einträgen (CC BY 4.0, ohne Bilder), Zuordnung der Technik-Labels zu
+den Fachpaketen und ein Pilot mit zehn Favoriten in
+`experiments/2026-11-zielbild-dataviz-inspiration/`. Der Pilot schlägt vier Zielbild-Prüffragen für
+„Vermitteln“ vor (Titel als Befund, Leseanleitung am Ort, Achsenrichtung in Worten, Grund dämpfen)
+und nennt eine Spannung (Klimastreifen gegen „Herkunft sichtbar“). Für dieses Thema ist der
+Bestand Nachbar: kaum Dashboards (9) und Unsicherheit (9).
 
 **Offene Fragen an den Eigentümer:**
 1. Eigenes Fachpaket, getrennt von „Vermitteln“ (einzelne Darstellung gegen Gefüge)?
 2. Erprobung an einem selbst gewählten, offenen Datensatz?
 3. Welche Quellen liest ein Modell zuerst ganz? Vorschlag: Bertin, Segel/Heer, Bach et al.
+4. Sollen die vier Zielbild-Prüffragen aus dem Pilot in `fachpaket-vermitteln` aufgenommen werden?
 
 <details><summary>Für die Modelle: Nummern</summary>
 
