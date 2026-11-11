@@ -21,6 +21,7 @@ evals/<fall>/
 | `uebergabe` | erkennt ein zweites Modell ein nach Vorlage geschriebenes Issue als seine Aufgabe und bearbeitet es ohne Rückfrage? (angelegt, nicht getestet) | `issue` |
 | `parallel` | Start und Abschluss, wenn mehrere Chats parallel an verschiedenen Themen arbeiten (angelegt; erste Beobachtung: nicht bestanden) | Orchestrator, Skill `issue` |
 | `neustart-daten` | macht ein frischer Chat mit `daten/` richtig weiter, getrennt für Claude und Astra? Lesen und ein Testeintrag (angelegt 06.11., nicht getestet) | Pilot Datenmodell |
+| `fundstueck-bedarf` | erkennt ein Modell bei einem Fundstück zuerst den Bedarf aus dem Intent, statt eine Lücke im Labor als „passt nicht“ zu lesen? (angelegt 11.11.; Anlass: nicht bestanden, #180) | `fundstueck` |
 | `beleg-kunstgeschichte` | 5 Fragen mit bekannten, belegbaren Antworten; erfindet das Modell Quellen? | `belegpflicht` |
 | `regel-umsetzen` | eine schriftlich formulierte Kompositionsregel exakt als Studie umsetzen | `konkrete-kunst`, `studie` |
 | `diagramm-zuordnung` | Datensatz → richtige visuelle Variablen nach Bertin | `bertin-semiologie` |
