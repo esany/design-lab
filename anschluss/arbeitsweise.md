@@ -18,6 +18,9 @@ Modelle gleich gut nutzbar ist?
 **Im Gespräch:** Namen statt Nummern, immer mit Kontext und dem, was es für den Erkenntnisprozess
 bedeutet (Wunsch des Eigentümers, 07./08.11.; [a:arbeitsweise-a28]).
 
+**Neu (11.11., Kundenauftrag, Inhalte privat):** erst ausgeweitet statt Auftrag geklärt
+[a:arbeitsweise-a29]; nach Anzahl begrenzter Startauftrag ergab Detailliste [a:arbeitsweise-a30].
+
 **Gilt:**
 - Fundstücke werden zuerst am Bedarf aus dem Intent gemessen; eine Lücke im Labor ist Bedarf, kein Ausschluss (Skill `fundstueck`, Prüffall `fundstueck-bedarf`, 11.11.). Offen: agent-skills (Osmani) als Plugin installieren oder die Entwicklungsabläufe in eigene Labor-Skills übernehmen; Empfehlung: übernehmen, Pilot an „Raster als Programm“ (#180).
 - Das Labor ist selbst Entwurfsgegenstand; Experimente prüfen, wie gut es arbeitet (Intent, 08.11.).

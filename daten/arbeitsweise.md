@@ -59,7 +59,7 @@
   *Beleg:* `evals/neustart-daten/ergebnisse/2026-11-07-gegenlesen-astra.md`, Prüfung der zwei vorgesehenen Aussagen, 4b; Prüfläufe im Vergleich
   *Grenze:* Die Kommentare entstanden vor Abschluss der Prüfungen; ob die Prüflinge die Fehler sehen konnten, ist nicht nachgewiesen.
 
-### Abgeleitet (13)
+### Abgeleitet (15)
 
 - **arbeitsweise-a01** Fortschritt kommt in der Arbeit mit der KI als Text zurück, nicht als etwas zum Ansehen oder Ausprobieren; der Gestalter sieht deshalb nicht, ob Strukturen tragen.
 - **arbeitsweise-a06** Wurzel des Problems: Im Entwurf antwortet das Material, in der Arbeit mit der KI nur Text; der Gestalter ersetzt sein Urteil durch Regeln.
@@ -83,14 +83,20 @@
   *Grenze:* Drei Läufe unter verschiedenen Bedingungen; ein Vergleich der Modelle folgt daraus nicht. Engere Fassung nach Astras Gegenlesen, vom Eigentümer am 08.11. bestätigt.
 - **arbeitsweise-a28** Die KI legt Widersprüche gleichrangig nebeneinander, statt dem Eigentümer zuerst die eine Frage zu zeigen, die er entscheiden muss; sie verkürzt Bedeutung auf Struktur und übergeht seinen Wunsch nach Namen statt Nummern.
   *Grenze:* Einmal beobachtet (08.11.), im Leitfaden-Chat und im Chat zum Prüfstand; keine Regel. Wortlaut des Eigentümers: f36.
+- **arbeitsweise-a29** Auf die Frage, wo die KI bei einem fachfremden Auftrag echt entlastet, hat sie das Thema zuerst ausgeweitet (Matrizen, Taxonomien, Domänenrecherche), bevor Auftrag, Umfang und Stundenrahmen geklärt waren; zurück auf den Auftrag kam es erst, als der Eigentümer die Aufgabenbeschreibung einbrachte.
+  *Grenze:* Einmal beobachtet (Claude, 10./11.11.) in einem Kundenauftrag; Inhalte privat in esany/werke. Muster wie die größere Lesart (a28). Gegenfrage, die gefehlt hat: Was ist der Auftrag, wie viel Zeit, was ist nicht relevant?
+- **arbeitsweise-a30** Ein Startauftrag an ein anderes Modell, der Befunde nach Anzahl und Detailfeldern begrenzt statt Fragestellung, Methode, Nutzergruppe und Gewichtung vorzugeben, ergab eine zusammenhanglose Detailliste, die einen fachfremden Eigentümer belastet statt entlastet.
+  *Grenze:* Einmal beobachtet (Startauftrag von Claude, Lauf mit ChatGPT, 11.11.). Gegenmittel im Gespräch: Eingrenzung zuerst, eine passende Methode, Befunde zu Themen verdichten und nach Schmerz ordnen (was kostet es heute, was wird besser), nicht nach Anzahl.
 
 ### Nicht belegt (1)
 
 - **arbeitsweise-a23** Astra (ChatGPT) kann Code ausführen und über den GitHub-Connector schreiben.
   *Grenze:* Angabe des Eigentümers im Chat vom 06.11.; im Pilot (Schritt 4) zu prüfen.
 
-## Beantwortete Fragen (32, neueste zuerst)
+## Beantwortete Fragen (33, neueste zuerst)
 
+- **2026-11-11** Soll ich diesen Befund abstrahiert und ohne Kundeninhalte im Merkzettel „Arbeitsweise“ des Labors festhalten?
+  → „ja mach das“ *(Chat zum Kundenauftrag (Claude); Antwort auf die Folgefrage nach Schreibzugang zum Labor.)*
 - **2026-11-08** Soll ich diese Analyse mit den beiden Vorschlägen zusammen mit den Erkenntnissen von vorhin zum Konzeptstand legen, also mit deinem Satz für den Intent, den beiden Keimen und der Beobachtung?
   → „Bitte sichere jetzt deinen aktuellen Stand im Repo, damit andere Chats wissen, was gilt. Eigener Branch und PR, nicht übernehmen. 1. Trag im Merkzettel anschluss/arbeitsweise.md nur im Teil zum Leitfaden (Zeile „Leitfaden“ in der Tabelle der Stränge, dazu bei Bedarf ein kurzer Abschnitt) ein, was gilt und was offen ist. Den Teil zum Prüfstand nicht ändern. 2. Markiere, was durch deinen Stand überholt ist, mit „überholt durch …“, ohne zu löschen. Prüfe dafür ausdrücklich: - research/2026-11-wissensformen/konzept.md, Abschnitt 5 („Leitfäden je Thema“) und Abschnitt 7 - im Merkzettel unter „Entschieden“ den Punkt „Mehrere Leitfäden je Thema“ - decisions/0032 (Name und Gegenstand des Leitfadens) 3. Nenne, was sich am Datenformat des Leitfadens ändern muss (leitfaden/eintraege.json, Build), z. B. Status „Keim“, freie Tags, Relationen. Nur nennen, noch nicht bauen. 4. Neue Antworten von mir im Wortlaut in daten/arbeitsweise.json, ab der nächsten freien Nummer. Erzeugte Übersichten nicht von Hand bauen, das macht die Prüfung. Melde am Ende, welche Prüfungen grün oder rot sind.“ *(Auftrag zur Sicherung; Intent, Keime und Beobachtung damit nicht freigegeben, sie warten auf Ja. Chat zum Verhältnis Leitfaden – Fachpakete (Claude, 08.11.); Absätze zu Leerzeichen zusammengezogen; Konzeptstand: research/2026-11-wissensformen/konzeptstand-2026-11-08.md.)*
 - **2026-11-08** Soll ich das so ablegen?
