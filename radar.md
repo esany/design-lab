@@ -26,6 +26,7 @@ Begründung (Skill `pflege`). Stand des Radars: **2026-11-11**.
 | Was | Warum | Quelle | Stand |
 |---|---|---|---|
 | Observable Plot, D3, Vega-Lite | Profistandard für Datenvisualisierung | — | 2026-10 |
+| Dataviz Inspiration (Yan Holtz) | Zielbild-Bestand: 462 kuratierte Beispiele, je mit Kontext- und Gestaltungsbeschreibung, 46 Diagrammtypen und Technik-Labels (Annotation, Direktbeschriftung, Unsicherheit …); Katalog CC BY 4.0, Bilder nicht frei | [Seite](https://www.dataviz-inspiration.com/) · [Repo, Lizenz](https://github.com/holtzy/dataviz-inspiration/blob/main/LICENSE) | 2026-11-11 |
 | Paged.js | Satz und Print aus Code; am Flyer erprobt: Seitenformat und Beschnitt ja, Textverkettung, Grundlinienraster und CMYK nur mit eigenen Ergänzungen | [Experiment](experiments/2026-10-print-pagedjs/README.md) | 2026-10-28 |
 | Typst | Satz als Code, Daten; CMYK und PDF/X nicht belegt | [typst.app](https://typst.app/blog/2025/automated-generation) | 2026-10 |
 | Scribus | freies Layoutprogramm mit CMYK, PDF/X-4, Python; nächster Vergleich am Flyer | [Wikipedia](https://en.wikipedia.org/wiki/Scribus) | 2026-10-28 |
@@ -41,7 +42,6 @@ Begründung (Skill `pflege`). Stand des Radars: **2026-11-11**.
 
 | Was | Warum | Quelle | Stand |
 |---|---|---|---|
-| Dataviz Inspiration (Yan Holtz) | kuratierte Beispielgalerie, rund 250 Projekte, filterbar nach Diagrammtyp (Typologie von data-to-viz) und Werkzeug; nur als Bildreferenz verlinken, Bilder nicht ins Repo; ordnet nach Einzeldarstellung, nicht nach Gefüge | [dataviz-inspiration.com](https://www.dataviz-inspiration.com/) · [Holtz](https://prodigious-trailblazer-3628.kit.com/posts/12-years-13-dataviz-resources) | 2026-11-11 |
 | ComfyUI + Comfy MCP | steuerbare Bildgenerierung; offizieller MCP (Cloud, Beta) | [ComfyUI Wiki](https://comfyui-wiki.com/en/news/2026-06-30-comfy-mcp-agent-integration) | 2026-10 |
 | TouchDesigner + MCP | Echtzeit, Installation; nicht Open Source | [mcpservers.org](https://mcpservers.org/servers/8beeeaaat/touchdesigner-mcp) | 2026-10 |
 | cables.gl, Three.js | offene Echtzeit-Grafik | — | 2026-10 |

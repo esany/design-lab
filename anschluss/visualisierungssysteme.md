@@ -29,12 +29,13 @@ Die Quellen sind nur auf Ebene von Abstract oder Inhaltsverzeichnis gesehen.
 Grundlage verworfen. Er liegt bewusst nirgends im Labor. Übernommen ist nur eine abstrakte
 Beobachtung (Befund, Abschnitt 6).
 
-**Fundstück Dataviz Inspiration (11.11.):** kuratierte Galerie von Yan Holtz mit rund 250
-Projekten, filterbar nach Diagrammtyp und Werkzeug (belegt: Holtz, Newsletter; Seite selbst nur
-als Metadaten gesehen). Status `beobachten`, Integrationsgrad `referenzieren`: brauchbar als
-schnelle Bildreferenz, aber sie ordnet nach Einzeldarstellung und Form, nicht nach Zweck oder
-Gefüge, also eher Nachbar von „Vermitteln“ als Grundlage dieses Pakets. Bildrechte liegen bei den
-Urhebern (abgeleitet), deshalb nur Link, keine Bilder im Repo.
+**Fundstück Dataviz Inspiration (11.11.):** erst als bloße Galerie unterschätzt, auf Hinweis
+des Eigentümers neu bewertet: ein Zielbild-Bestand für Dataviz und die Fachpakete. Belegt aus dem
+Repo `holtzy/dataviz-inspiration` (Stand 10.11.2026): 462 Einträge von 201 Urhebern, jeder mit
+Kontext- und Gestaltungsbeschreibung, Diagrammtyp, Werkzeug und Technik-Labels. Der Katalog steht
+unter CC BY 4.0, die Bilder nicht. Schlagseite (abgeleitet): ein Geschmack, viel Redaktion und
+Nadieh Bremer, kaum Unsicherheit (9) und Dashboards (9), also wenig zum Gefüge. Radar: Erproben;
+Umfang der Übernahme ist offen beim Eigentümer.
 
 **Offene Fragen an den Eigentümer:**
 1. Eigenes Fachpaket, getrennt von „Vermitteln“ (einzelne Darstellung gegen Gefüge)?
