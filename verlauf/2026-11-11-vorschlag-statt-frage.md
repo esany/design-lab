@@ -6,4 +6,4 @@
 
 **Rückgängig:** PR revertieren.
 
-**Nachtrag, gleicher Chat:** Aussagen a36–a38 (Domäne und Darstellung trennen; nichts Persönliches in teilbare Dokumente; Kontext statt Kürzel) aus drei weiteren Korrekturen des Eigentümers.
+**Nachtrag, gleicher Chat:** Aussagen a36–a39 (Domäne und Darstellung trennen; nichts Persönliches in teilbare Dokumente; Kontext statt Kürzel; Arbeitsmodus vorschlagen) aus drei weiteren Korrekturen des Eigentümers.

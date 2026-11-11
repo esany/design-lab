@@ -377,6 +377,13 @@
       "status": "abgeleitet",
       "seit": "2026-11-11",
       "notiz": "Zweite Beobachtung nach a28 (Wunsch nach Namen statt Nummern, 08.11.), Werkchat 11.11. Gegenmittel: Kontextwissen immer mitgeben, gestuft (Kernsatz sichtbar, Bedeutung in einem Satz, Beleg und Herleitung aufklappbar oder verlinkt), Vorbild: Fokus und Inhaltsblöcke in iA Writer."
+    },
+    {
+      "id": "arbeitsweise-a39",
+      "aussage": "Nach mehreren Korrekturen im selben Werkchat schlug die KI keinen Arbeitsmodus vor, obwohl Leitfaden und Laborregeln ihn vorgeben (neu anfangen nach zwei Korrekturen; Gebrauch, fachliche Entwicklung und Systementwicklung getrennt halten); sie lieferte Prosa statt Planung und Anforderungen und nahm ein genanntes Beispiel (eine fremde App) als Referenz statt des Labors selbst.",
+      "status": "abgeleitet",
+      "seit": "2026-11-11",
+      "notiz": "Einmal beobachtet (Claude, Werkchat 11.11.; privat in esany/werke). Der Leitfaden hat die verlangte Stufung schon selbst (Regel, warum, Hintergrund und Quellen). Gegenmittel: bei Unzufriedenheit zuerst Modus und Lesart nennen, Planung als Struktur, bei Unklarheit fragen."
     }
   ],
   "fragen": [
