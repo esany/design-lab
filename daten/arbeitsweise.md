@@ -60,7 +60,7 @@
   *Beleg:* `evals/neustart-daten/ergebnisse/2026-11-07-gegenlesen-astra.md`, Prüfung der zwei vorgesehenen Aussagen, 4b; Prüfläufe im Vergleich
   *Grenze:* Die Kommentare entstanden vor Abschluss der Prüfungen; ob die Prüflinge die Fehler sehen konnten, ist nicht nachgewiesen.
 
-### Abgeleitet (20)
+### Abgeleitet (23)
 
 - **arbeitsweise-a01** Fortschritt kommt in der Arbeit mit der KI als Text zurück, nicht als etwas zum Ansehen oder Ausprobieren; der Gestalter sieht deshalb nicht, ob Strukturen tragen.
 - **arbeitsweise-a06** Wurzel des Problems: Im Entwurf antwortet das Material, in der Arbeit mit der KI nur Text; der Gestalter ersetzt sein Urteil durch Regeln.
@@ -98,6 +98,12 @@
   *Grenze:* Einmal beobachtet (Claude, 11.11.). Prinzipien 9 und 11; Eigentümer: der Chat sei richtig teuer.
 - **arbeitsweise-a35** Beauftragt, einen Ansatz mit dem fachfremden Eigentümer im Gespräch zu klären, gab die KI Einwände und eine offene Frage nach Werkzeug und Arbeitsweise zurück statt eines eigenen, begründeten Vorschlags; der Eigentümer musste den Vorschlag ausdrücklich einfordern.
   *Grenze:* Einmal beobachtet (Claude, Werkchat 11.11.; privat in esany/werke). Pendel wie a31: nach der Korrektur ‚gebaut vor Klärung‘ (a34) zu weit ins Fragen. Gegenmittel: Klären heißt einen Vorschlag mit Standardwahl vorlegen, Einwände eingearbeitet, Anforderungen abgeglichen; fragen nur, was nur der Eigentümer weiß (a28, k-zweck).
+- **arbeitsweise-a36** Die KI hat Begriffe der Fachdomäne und Begriffe der Darstellung im Werkzeug vermischt: Fragen der Nutzer standen in der Sprache der Software (etwa die Gruppe einer Gruppier-Funktion statt des fachlichen Begriffs); damit ist nicht mehr prüfbar, ob die Darstellung die Domäne trifft.
+  *Grenze:* Einmal beobachtet (Claude, Werkchat 11.11.; privat in esany/werke); vom Eigentümer als ‚tödlich‘ benannt. Gegenmittel: Domäne, Daten und Darstellung getrennt halten (Ebenen nach Munzner, fachpaket-vermitteln) und die Zuordnung ausdrücklich zeigen; Brüche liegen oft genau in der Zuordnung.
+- **arbeitsweise-a37** Die KI plante interne und persönliche Angaben zum Auftragsverhältnis in ein Arbeitsdokument ein, das an den Auftraggeber verteilt werden soll, wenn auch in einem eigenen Reiter.
+  *Grenze:* Einmal beobachtet (Claude, Werkchat 11.11.). Gegenmittel: Persönliches gehört nicht in ein Dokument, das geteilt werden kann; es bleibt im privaten Werk. Namen von Personen nur, wo nötig, sonst Rollen.
+- **arbeitsweise-a38** Die KI verwies mit bloßen Kürzeln und Überschriften (Nummern von Rückmeldungen, Aufgaben, Anforderungen) statt den Inhalt dahinter zu zeigen; der Eigentümer kann so nicht prüfen, was gemeint ist.
+  *Grenze:* Zweite Beobachtung nach a28 (Wunsch nach Namen statt Nummern, 08.11.), Werkchat 11.11. Gegenmittel: Kontextwissen immer mitgeben, gestuft (Kernsatz sichtbar, Bedeutung in einem Satz, Beleg und Herleitung aufklappbar oder verlinkt), Vorbild: Fokus und Inhaltsblöcke in iA Writer.
 
 ### Nicht belegt (1)
 
