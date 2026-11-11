@@ -47,4 +47,5 @@ Hooks; Projektnotiz paleo-type; Radar-Zeile Basic Memory; bei Konflikt startet G
 - `research/2026-11-wissensformen/`: `konzeptstand-2026-11-08.md` gilt; `konzept.md` und
   `fachpaket-ki-werkzeug.md` teils überholt (markiert).
 - Vorfall 05.11.: #127 ohne Freigabe übernommen, am 06.11. zurückgenommen (#129, #130).
+- Zielbild als Werkzeug: Vorschlag 0036.
 </details>
