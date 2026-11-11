@@ -1,13 +1,13 @@
 ---
 thema: Arbeitsweise mit KI · Wissensformen
-stand: Prüfstand abgeschlossen (08.11.); Prüfung baut Übersichten selbst, Verlauf als Einzeldateien, rote Prüfung wird gemeldet; Leitfaden auf Grundlage des Konzeptstands 08.11. im eigenen Chat; KI-Fachpaket wartet auf den Leitfaden.
-naechster_schritt: Leitfaden-Chat: Minimalform und Datenformat des Leitfadens mit dem Eigentümer klären und bauen.
-offen: []
+stand: Leitfaden-Bestandsaufnahme zu #173 liegt in PR #175; automatische Prüfungen grün, Ursprungseinträge unverändert. Die inhaltliche Sichtung durch den Eigentümer steht aus.
+naechster_schritt: Eigentümer sichtet die Tabelle in PR #175; danach Minimalform und Datenformat klären und entscheiden, wie die 24 Einträge aufzuräumen sind.
+offen: [173]
 ---
 
 # Thema: Arbeitsweise mit KI · Wissensformen
 
-**Zuletzt fortgeschrieben:** 08.11.2026 (Claude, gekürzt)
+**Zuletzt fortgeschrieben:** 11.11.2026 (Codex)
 
 **Worum es geht:** Wie arbeitet der Gestalter mit KI so, dass echte Werke und Werkzeuge entstehen
 statt Textberge, und wie bleibt Wissen für jeden Chat erreichbar, ohne dass er alles lesen muss?
@@ -29,7 +29,7 @@ bedeutet (Wunsch des Eigentümers, 07./08.11.; [a:arbeitsweise-a28]).
 | Strang | Stand | Als Nächstes |
 |---|---|---|
 | Prüfstand | abgeschlossen 08.11.; [Ergebnis](../evals/neustart-daten/README.md) | – |
-| Leitfaden | [Konzeptstand 08.11.](../research/2026-11-wissensformen/konzeptstand-2026-11-08.md); Keime in `leitfaden-wachsend.md`; 0032 auf Probe bis 05.12. | Minimalform und Datenformat; Name; ein oder mehrere; Umgang mit den 24 Einträgen |
+| Leitfaden | [Konzeptstand 08.11.](../research/2026-11-wissensformen/konzeptstand-2026-11-08.md); Keime in `leitfaden-wachsend.md`; 0032 auf Probe bis 05.12. [Bestandsaufnahme zu #173 in PR #175](https://github.com/esany/design-lab/pull/175), 24 Einträge, CI grün; Ursprungseinträge unverändert | Eigentümer sichtet die Tabelle; anschließend Minimalform und Datenformat klären und Aufräumen der 24 Einträge entscheiden |
 | KI-Fachpaket | Konzept, teils überholt | erst nach dem Leitfaden |
 
 **Vorschläge, nicht beschlossen** (Konzeptstand): fester Moment am Chatende („Soll das bleiben?“);
