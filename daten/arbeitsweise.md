@@ -59,7 +59,7 @@
   *Beleg:* `evals/neustart-daten/ergebnisse/2026-11-07-gegenlesen-astra.md`, Prüfung der zwei vorgesehenen Aussagen, 4b; Prüfläufe im Vergleich
   *Grenze:* Die Kommentare entstanden vor Abschluss der Prüfungen; ob die Prüflinge die Fehler sehen konnten, ist nicht nachgewiesen.
 
-### Abgeleitet (15)
+### Abgeleitet (16)
 
 - **arbeitsweise-a01** Fortschritt kommt in der Arbeit mit der KI als Text zurück, nicht als etwas zum Ansehen oder Ausprobieren; der Gestalter sieht deshalb nicht, ob Strukturen tragen.
 - **arbeitsweise-a06** Wurzel des Problems: Im Entwurf antwortet das Material, in der Arbeit mit der KI nur Text; der Gestalter ersetzt sein Urteil durch Regeln.
@@ -87,6 +87,8 @@
   *Grenze:* Einmal beobachtet (Claude, 10./11.11.) in einem Kundenauftrag; Inhalte privat in esany/werke. Muster wie die größere Lesart (a28). Gegenfrage, die gefehlt hat: Was ist der Auftrag, wie viel Zeit, was ist nicht relevant?
 - **arbeitsweise-a30** Ein Startauftrag an ein anderes Modell, der Befunde nach Anzahl und Detailfeldern begrenzt statt Fragestellung, Methode, Nutzergruppe und Gewichtung vorzugeben, ergab eine zusammenhanglose Detailliste, die einen fachfremden Eigentümer belastet statt entlastet.
   *Grenze:* Einmal beobachtet (Startauftrag von Claude, Lauf mit ChatGPT, 11.11.). Gegenmittel im Gespräch: Eingrenzung zuerst, eine passende Methode, Befunde zu Themen verdichten und nach Schmerz ordnen (was kostet es heute, was wird besser), nicht nach Anzahl.
+- **arbeitsweise-a31** Nach einer Korrektur wegen Ausweitung schwang die KI in Formalismus um (Zahlenbegrenzung, Prozessdateien, Persona) und verlor den Kern, den der Eigentümer zum Urteilen braucht: Intent, Domänenwissen und Umsetzung im Zusammenhang; das wertvollste Domänenwissen blieb dabei im Chat statt im Werk.
+  *Grenze:* Einmal beobachtet (Claude, Kundenauftrag, 10./11.11.; Audit privat in esany/werke). Folgt auf a29 und a30. Gegenmittel im Werk: Wissensbasis und Prüfinstrument vor jedem Auftrag an ein Modell.
 
 ### Nicht belegt (1)
 
