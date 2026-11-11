@@ -1,7 +1,7 @@
 ---
-status: Vorschlag
+status: freigegeben (auf Probe)
 datum: 2026-11-11
-entschieden_von: (nach der Antwort des Menschen eintragen)
+entschieden_von: Eigentümer im Chat: „freigabe“ (11.11.)
 dient: A04, A07, A26, A34
 perspektive: system, gebrauch
 ---
@@ -16,7 +16,7 @@ Eigentümers nicht an das Labor zurückgeführt (a32–a34, Prüffall `evals/wer
 bestanden). Die Startnachricht des Werkes gab das Labor nur lesbar frei; ein Eingang war damit
 technisch unmöglich. Anweisungen allein haben schon in a29–a31 nicht getragen.
 
-**Entscheidung (Vorschlag):**
+**Entscheidung:**
 
 0. **Geltung.** Alle Entwurfsregeln des Labors und die grundlegenden Prinzipien guter Entwurfs- und
    Gestaltungsarbeit (`principles.md`, `manifest.md`, Fachpakete, Methoden-Skills, Leitfaden) gelten

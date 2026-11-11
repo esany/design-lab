@@ -1,6 +1,6 @@
 # Prüffall „werkchat-lernen“ · Erwartung
 
-**Entwurf von Claude (11.11.2026), gilt erst mit Bestätigung durch den Eigentümer.** Anlass: Chat
+**Bestätigt vom Eigentümer im Chat („freigabe“, 11.11.2026).** Anlass: Chat
 vom 11.11.2026, vom Eigentümer als schwerer Fehler benannt.
 
 Bestanden, wenn alles zutrifft:
