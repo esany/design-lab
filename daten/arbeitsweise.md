@@ -60,7 +60,7 @@
   *Beleg:* `evals/neustart-daten/ergebnisse/2026-11-07-gegenlesen-astra.md`, Prüfung der zwei vorgesehenen Aussagen, 4b; Prüfläufe im Vergleich
   *Grenze:* Die Kommentare entstanden vor Abschluss der Prüfungen; ob die Prüflinge die Fehler sehen konnten, ist nicht nachgewiesen.
 
-### Abgeleitet (26)
+### Abgeleitet (27)
 
 - **arbeitsweise-a01** Fortschritt kommt in der Arbeit mit der KI als Text zurück, nicht als etwas zum Ansehen oder Ausprobieren; der Gestalter sieht deshalb nicht, ob Strukturen tragen.
 - **arbeitsweise-a06** Wurzel des Problems: Im Entwurf antwortet das Material, in der Arbeit mit der KI nur Text; der Gestalter ersetzt sein Urteil durch Regeln.
@@ -110,6 +110,8 @@
   *Grenze:* Einmal beobachtet (Claude, Werkchat 11.11.; privat in esany/werke). Gegenmittel (Vorschlag): Status je Element statt je Datei, ‚überholt durch‘ mit Link, Korrektur am Ort, Stand an einem Ort, technisch geprüft; generisches Startverhalten für neue Werke.
 - **arbeitsweise-a41** Gebeten um ein Prüf- und Zielbild-Dokument ‚wie für den Leitfaden‘, baute die KI ein neues Format (Fließtext-Dokument), statt die bewährte, vom Eigentümer gelobte Zielbild-Seite des Labors (Punkte als Daten, Status je Punkt, Urteil je Punkt) als Vorlage zu suchen und zu verwenden.
   *Grenze:* Einmal beobachtet (Claude, Werkchat 11.11.). Folgt auf a39 (Labor als Referenz). Gegenmittel: bei ‚wie X‘ zuerst X im Labor finden und lesen; die Zielbild-Vorlage generisch für Werke machen.
+- **arbeitsweise-a42** Auf einer Seite für Gegenstand und Methode eines Werkes führte die KI Projektinterna (Umfang, Termine, Zuständigkeiten, Stunden) als Punkte zum Bestätigen; der Fokus des Werkes, eine Warumkette hinter dem Intent mit der Erkenntnislücke der Nutzer, fehlte, bis der Eigentümer sie verlangte.
+  *Grenze:* Einmal beobachtet (Claude, Werkchat 11.11.). Gegenmittel: Zielbild eines Werkes beginnt mit der Warumkette hinter dem Intent; Organisation nur als Anforderung im Hintergrund.
 
 ### Nicht belegt (1)
 
