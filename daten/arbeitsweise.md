@@ -3,9 +3,9 @@
 > Erzeugt von `node tools/build.mjs` aus `daten/arbeitsweise.json` und dem Merkzettel
 > `anschluss/arbeitsweise.md`. Nicht von Hand ändern. Modelle lesen die Daten, nicht diese Seite.
 
-**Stand:** Prüfstand abgeschlossen (08.11.); Leitfaden (Arbeitsname Werkbuch) wird über die Seite „Zielbild Leitfaden“ (leitfaden/zielbild/, PR #167) entworfen, Iteration 6 vom 11.11. mit Teil „Aufträge“; Ergebnisse von #172 (PR #174) und #173 (PR #175) liegen ungeprüft; KI-Fachpaket wartet.
+**Stand:** Prüfstand abgeschlossen (08.11.); Leitfaden (Arbeitsname Werkbuch) wird über die Seite „Zielbild Leitfaden“ (leitfaden/zielbild/) entworfen, Iteration 7 vom 12.11. mit Teil „Begriffe“ und neuem Verständnis von Fachwissen als Wirknetz; Ergebnisse von ChatGPT (#174) und Codex (#175) von Claude geprüft, warten auf Ja des Eigentümers; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
 
-**Nächster Schritt:** Neuer Leitfaden-Chat (Claude): PR #174 und #175 prüfen; Rückmeldung des Eigentümers zu Iteration 6 einarbeiten; Werkbuch startklar, sobald „werdend und gilt“ bestätigt ist; Issues pflegen.
+**Nächster Schritt:** Der Eigentümer prüft Iteration 7, gibt #174/#175 und das Werkbuch im Chat frei und startet den Suchauftrag #189; danach übernimmt Claude #174/#175, baut das Werkbuch und gibt die Recherche, Teil 2, an ChatGPT.
 
 ## Offene Fragen an den Eigentümer (7)
 
@@ -19,7 +19,7 @@
 
 ## Aussagen
 
-### Belegt (14)
+### Belegt (15)
 
 - **arbeitsweise-a02** Im Labor folgte auf einen Vorfall meist eine neue Regel: 30 Entscheidungen in drei Tagen.
   *Beleg:* `research/2026-10-audit-zusammenarbeit/befunde.md`, In Worten, Punkt 4
@@ -59,8 +59,11 @@
 - **arbeitsweise-a27** In keinem der 3 Test-PRs hat der Prüfling ein rot gebliebenes Prüfergebnis ausdrücklich nachgetragen, obwohl jeder mindestens eine rote Prüfung hatte.
   *Beleg:* `evals/neustart-daten/ergebnisse/2026-11-07-gegenlesen-astra.md`, Prüfung der zwei vorgesehenen Aussagen, 4b; Prüfläufe im Vergleich
   *Grenze:* Die Kommentare entstanden vor Abschluss der Prüfungen; ob die Prüflinge die Fehler sehen konnten, ist nicht nachgewiesen.
+- **arbeitsweise-a44** Die Farben der Seite „Zielbild Leitfaden“ wurden ohne Begründung aus allgemeinen Farbwerten übernommen; dadurch trägt Grün zwei Bedeutungen (von dir gesagt, bestätigt) und Rot zwei (geändert, Befund).
+  *Beleg:* `leitfaden/zielbild/vorlage.html`, Stilangaben .chip.bestaetigt, .fest-mark, .punkt.wandel-an, .chip.befund
+  *Grenze:* Vom Eigentümer bemerkt (f65). Vorschlag im Zielbild, Punkt „Farbe zeigt nur, was du tun musst“.
 
-### Abgeleitet (19)
+### Abgeleitet (20)
 
 - **arbeitsweise-a01** Fortschritt kommt in der Arbeit mit der KI als Text zurück, nicht als etwas zum Ansehen oder Ausprobieren; der Gestalter sieht deshalb nicht, ob Strukturen tragen.
 - **arbeitsweise-a06** Wurzel des Problems: Im Entwurf antwortet das Material, in der Arbeit mit der KI nur Text; der Gestalter ersetzt sein Urteil durch Regeln.
@@ -96,14 +99,18 @@
   *Grenze:* Einmal beobachtet (Claude, 11.11.). Vom Eigentümer als schwerer Fehler benannt. Vorschlag zur Abhilfe: decisions/0035.
 - **arbeitsweise-a34** In einer frühen Entwurfsphase erzeugte die KI Dateien, einen Generator und acht Pull Requests, statt im Gespräch Lesart und Format zu klären; das Ergebnis wurde verworfen, die Kosten waren hoch.
   *Grenze:* Einmal beobachtet (Claude, 11.11.). Prinzipien 9 und 11; Eigentümer: der Chat sei richtig teuer.
+- **arbeitsweise-a43** Die KI meldete dem Eigentümer das Ergebnis einer Prüfung mit Zahlen und Kürzeln ohne ihr Bezugsobjekt („24 Einträge“ ohne „der Seite ‚Mit KI arbeiten‘“) und deutete an, er müsse zum Freigeben auf GitHub; er konnte den Bericht nicht nachvollziehen.
+  *Grenze:* Einmal beobachtet (Claude, Leitfaden-Chat, 11./12.11.), Bug #188. Gleiches Muster wie a28 (Struktur statt Bedeutung, Nummern statt Namen).
 
 ### Nicht belegt (1)
 
 - **arbeitsweise-a23** Astra (ChatGPT) kann Code ausführen und über den GitHub-Connector schreiben.
   *Grenze:* Angabe des Eigentümers im Chat vom 06.11.; im Pilot (Schritt 4) zu prüfen.
 
-## Beantwortete Fragen (57, neueste zuerst)
+## Beantwortete Fragen (58, neueste zuerst)
 
+- **2026-11-12** Rückmeldung zur Seite „Zielbild Leitfaden“, Iteration 6
+  → „Rückmeldung Zielbild Leitfaden (Iteration 6):  • „Vermitteln“ ist kein Dach über den Feldern, sondern ein Anwendungskontext unter vielen. Felder und Kontexte sind zwei verschiedene Achsen.   → muss besser: Kontext ist ein metabegriff über allem. Es gibt fachliche Schwerpunkte, die natürlich Schnittstellen haben: Typografie und informationsdesign ( Lesbarkeit in Diagrammen, visuelle hierarchischien im Kontext x)  Jedes gebiet hat grundlagen aus denen es sich speist, das können auch andere Fachgebiete sein, best practise, Methodik…. Da wird es doch meterlange Literatur zu geben. Ais meiner Sicht sind das aber keine Schubladen sondern auch ein dynamisches wirknetz aus vielfältigen Beziehungen.. also ein transdisziplinäres Verständnis von Fachwissen.  Es ist komplex, aber so ist mein modell davon und ich hoffe ich bin nicht der einzige.. ganzheitlich systematisch transdisziplinär.. auch hier als Prinzip.  Wie welches Gebiet gebildet wird und was von wem abhängt, wo die grenzen und wie geclustert wird ist sicher auch stark im Diskurs. Hier brauchen wir auf verschiedenen gebieten sota. Auch für eine entsprechende datenrepräsentation  Der nutzungskontext ist eine andere Dimension und hängt vlt. Am Menschen und seinen Bedürfnissen.. was braucht er in der Situation, was schränkt ihn ein, was wirkt auf ihn, wie muss ein sozio-technisches System oder ein Artefakt darauf reagieren.  Generell brauchen wir auch sota zu modellbildung? Ich weiß es nicht • Ein Eintrag darf werdend sein. Er gilt erst, wenn er vollständig ist; die Prüfung im Build lässt „gilt“ vorher nicht zu.   → passt: Ein eintrag im Leitfaden oder auch jedes andere Konzept, hat verschiedene entwicklungen.. erstmal Ideen sammeln und dann verdichten und fusionieren. Das sollten wir doch schon in sota von entwurfsprinzipien und -methodik haben. Das ist ein Grundprinzip, das auf den Verschiedenen ebenen zur Wirkung kommt. • Die Halbwertszeit bleibt. Offen ist, was sie kostet oder spart.   → passt • Deine lange Fragenliste suchen wir in deinen alten Chats, mit einem Suchprompt.   → passt: Der sichprompt muss als issue auffindbar sein, das die chatkandidaten selbst prüfen können • Aus bestätigten Punkten werden Aufträge. Sie stehen ganz oben auf dieser Seite, und du gibst sie hier frei.   → passt: Achte auf die Semantik deiner Farbgestaltung! Von mir ist grün und neu ist rot, woraus motivierst du diese Farbgestaltung? • Ich melde „startklar“, sobald alles erfüllt ist außer deiner Freigabe, und zwar von selbst.   → passt • Was du bestätigt hast, bleibt bestätigt, bis es sich ändert. Du prüfst nur noch, was neu oder geändert ist.   → passt • Was du brauchst, um damit zu entwerfen: sehen, was ein Modul weiß, woher, was geprüft ist und was fehlt.   → passt • Zwei Achsen statt einer Hierarchie: Felder als Module, Kontexte als eigene Module, Methoden quer dazu.   → passt: Siehe datu andere Feedbacks zum Thema • Abgesichert wird über die Prüfung im Build und über Prüffälle, nicht über Regeltexte.   → passt • Begriffe festlegen: ein Teil „Begriffe“ in diesem Zielbild, den du bestätigst wie die anderen Punkte.   → muss besser: Es ist nicht mehr keim!!! • Bei Übergaben schreibt nur das Modell, das orchestriert, den Merkzettel.   → passt“ *(Leitfaden-Chat (Claude), eingearbeitet in Iteration 7.)*
 - **2026-11-11** Bei Übergaben schreibt nur das orchestrierende Modell den Merkzettel – als Impuls aufnehmen?
   → „Ja gern. Muss noch erwas in diesem Chat abgeschlossen werden?“ *(Leitfaden-Chat (Claude).)*
 - **2026-11-11** Vor dem Schluss: #167 übernehmen? Ersetzte PRs #164, #166, #176 schließen? Rückmeldung zu Iteration 6 jetzt oder im neuen Chat?

@@ -56,6 +56,8 @@ bleibt beim Menschen oder Orchestrator, das Modell führt aus, misst und erfasst
 6. **Tun / Nicht-tun:** z. B. „nichts löschen“, „keine Regeln, Skills, `AGENTS.md`,
    Entscheidungen ändern“. Keine Geschmacks- oder Bedeutungsentscheidung; wo Optionen nötig
    sind, eine Tabelle (Option · Messwert · Folge · Risiko).
+   Immer dabei: „Merkzettel nicht fortschreiben, das macht das orchestrierende Modell“ (Zielbild
+   Leitfaden, bestätigt 12.11.).
 7. **Zielmodell berücksichtigen:** Codex und Work nur in begründeten Fällen, wenn der normale
    Chat (Astra) nicht mehr reicht; der Auftrag nennt den Grund (0025). Werkzeuge nennen (ins Repo schreiben, Browser, Node); fehlt
    eines, sagt das Modell es zuerst. Teure Modelle nicht für Routinen, nie zu Lasten der Qualität.
@@ -108,7 +110,7 @@ Entweder sie bekommt einen Platz in der Reihenfolge, oder sie wird ausdrücklich
 Jedes aktive Thema hat einen Merkzettel `anschluss/<thema>.md` und, wenn möglich, ein führendes
 Issue. Beginnt ein neues Thema: Merkzettel mit Kopf anlegen; die Zeile in `stand.md` wird erzeugt.
 Am Ende der Sitzung nur den eigenen Merkzettel fortschreiben, oben in Worten, Nummern
-eingeklappt darunter. Ist ein Thema abgeschlossen, kommt der Merkzettel nach `anschluss/archiv/`.
+eingeklappt darunter. Bei einer Übergabe schreibt ihn nur das orchestrierende Modell, nicht das ausführende. Ist ein Thema abgeschlossen, kommt der Merkzettel nach `anschluss/archiv/`.
 
 ### E4 · Lebenszyklus (Tokenökonomie)
 - **Überholt** (Ziel erledigt, verworfen oder von einem neuen Stand eingeholt): schließen mit
