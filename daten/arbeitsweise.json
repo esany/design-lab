@@ -349,6 +349,26 @@
       "status": "abgeleitet",
       "seit": "2026-11-11",
       "notiz": "Einmal beobachtet (Claude, 11.11.). Prinzipien 9 und 11; Eigentümer: der Chat sei richtig teuer."
+    },
+    {
+      "id": "arbeitsweise-a43",
+      "aussage": "Die KI meldete dem Eigentümer das Ergebnis einer Prüfung mit Zahlen und Kürzeln ohne ihr Bezugsobjekt („24 Einträge“ ohne „der Seite ‚Mit KI arbeiten‘“) und deutete an, er müsse zum Freigeben auf GitHub; er konnte den Bericht nicht nachvollziehen.",
+      "status": "abgeleitet",
+      "seit": "2026-11-12",
+      "notiz": "Einmal beobachtet (Claude, Leitfaden-Chat, 11./12.11.), Bug #188. Gleiches Muster wie a28 (Struktur statt Bedeutung, Nummern statt Namen)."
+    },
+    {
+      "id": "arbeitsweise-a44",
+      "aussage": "Die Farben der Seite „Zielbild Leitfaden“ wurden ohne Begründung aus allgemeinen Farbwerten übernommen; dadurch trägt Grün zwei Bedeutungen (von dir gesagt, bestätigt) und Rot zwei (geändert, Befund).",
+      "status": "belegt",
+      "seit": "2026-11-12",
+      "quellen": [
+        {
+          "datei": "leitfaden/zielbild/vorlage.html",
+          "stelle": "Stilangaben .chip.bestaetigt, .fest-mark, .punkt.wandel-an, .chip.befund"
+        }
+      ],
+      "notiz": "Vom Eigentümer bemerkt (f65). Vorschlag im Zielbild, Punkt „Farbe zeigt nur, was du tun musst“."
     }
   ],
   "fragen": [
@@ -847,6 +867,14 @@
       "antwort": "Ja gern. Muss noch erwas in diesem Chat abgeschlossen werden?",
       "beantwortet": "2026-11-11",
       "notiz": "Leitfaden-Chat (Claude)."
+    },
+    {
+      "id": "arbeitsweise-f65",
+      "frage": "Rückmeldung zur Seite „Zielbild Leitfaden“, Iteration 6",
+      "gestellt": "2026-11-11",
+      "antwort": "Rückmeldung Zielbild Leitfaden (Iteration 6):\n\n• „Vermitteln“ ist kein Dach über den Feldern, sondern ein Anwendungskontext unter vielen. Felder und Kontexte sind zwei verschiedene Achsen.\n  → muss besser: Kontext ist ein metabegriff über allem. Es gibt fachliche Schwerpunkte, die natürlich Schnittstellen haben: Typografie und informationsdesign ( Lesbarkeit in Diagrammen, visuelle hierarchischien im Kontext x)\n\nJedes gebiet hat grundlagen aus denen es sich speist, das können auch andere Fachgebiete sein, best practise, Methodik…. Da wird es doch meterlange Literatur zu geben. Ais meiner Sicht sind das aber keine Schubladen sondern auch ein dynamisches wirknetz aus vielfältigen Beziehungen.. also ein transdisziplinäres Verständnis von Fachwissen.\n\nEs ist komplex, aber so ist mein modell davon und ich hoffe ich bin nicht der einzige.. ganzheitlich systematisch transdisziplinär.. auch hier als Prinzip.\n\nWie welches Gebiet gebildet wird und was von wem abhängt, wo die grenzen und wie geclustert wird ist sicher auch stark im Diskurs. Hier brauchen wir auf verschiedenen gebieten sota. Auch für eine entsprechende datenrepräsentation\n\nDer nutzungskontext ist eine andere Dimension und hängt vlt. Am Menschen und seinen Bedürfnissen.. was braucht er in der Situation, was schränkt ihn ein, was wirkt auf ihn, wie muss ein sozio-technisches System oder ein Artefakt darauf reagieren.\n\nGenerell brauchen wir auch sota zu modellbildung? Ich weiß es nicht\n• Ein Eintrag darf werdend sein. Er gilt erst, wenn er vollständig ist; die Prüfung im Build lässt „gilt“ vorher nicht zu.\n  → passt: Ein eintrag im Leitfaden oder auch jedes andere Konzept, hat verschiedene entwicklungen.. erstmal Ideen sammeln und dann verdichten und fusionieren. Das sollten wir doch schon in sota von entwurfsprinzipien und -methodik haben. Das ist ein Grundprinzip, das auf den Verschiedenen ebenen zur Wirkung kommt.\n• Die Halbwertszeit bleibt. Offen ist, was sie kostet oder spart.\n  → passt\n• Deine lange Fragenliste suchen wir in deinen alten Chats, mit einem Suchprompt.\n  → passt: Der sichprompt muss als issue auffindbar sein, das die chatkandidaten selbst prüfen können\n• Aus bestätigten Punkten werden Aufträge. Sie stehen ganz oben auf dieser Seite, und du gibst sie hier frei.\n  → passt: Achte auf die Semantik deiner Farbgestaltung! Von mir ist grün und neu ist rot, woraus motivierst du diese Farbgestaltung?\n• Ich melde „startklar“, sobald alles erfüllt ist außer deiner Freigabe, und zwar von selbst.\n  → passt\n• Was du bestätigt hast, bleibt bestätigt, bis es sich ändert. Du prüfst nur noch, was neu oder geändert ist.\n  → passt\n• Was du brauchst, um damit zu entwerfen: sehen, was ein Modul weiß, woher, was geprüft ist und was fehlt.\n  → passt\n• Zwei Achsen statt einer Hierarchie: Felder als Module, Kontexte als eigene Module, Methoden quer dazu.\n  → passt: Siehe datu andere Feedbacks zum Thema\n• Abgesichert wird über die Prüfung im Build und über Prüffälle, nicht über Regeltexte.\n  → passt\n• Begriffe festlegen: ein Teil „Begriffe“ in diesem Zielbild, den du bestätigst wie die anderen Punkte.\n  → muss besser: Es ist nicht mehr keim!!!\n• Bei Übergaben schreibt nur das Modell, das orchestriert, den Merkzettel.\n  → passt",
+      "beantwortet": "2026-11-12",
+      "notiz": "Leitfaden-Chat (Claude), eingearbeitet in Iteration 7."
     }
   ]
 }

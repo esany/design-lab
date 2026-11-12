@@ -1,13 +1,13 @@
 ---
 thema: Arbeitsweise mit KI · Wissensformen
-stand: Prüfstand abgeschlossen (08.11.); Leitfaden (Arbeitsname Werkbuch) wird über die Seite „Zielbild Leitfaden“ (leitfaden/zielbild/, PR #167) entworfen, Iteration 6 vom 11.11. mit Teil „Aufträge“; Ergebnisse von #172 (PR #174) und #173 (PR #175) liegen ungeprüft; KI-Fachpaket wartet.
-naechster_schritt: Neuer Leitfaden-Chat (Claude): PR #174 und #175 prüfen; Rückmeldung des Eigentümers zu Iteration 6 einarbeiten; Werkbuch startklar, sobald „werdend und gilt“ bestätigt ist; Issues pflegen.
-offen: [180]
+stand: Prüfstand abgeschlossen (08.11.); Leitfaden (Arbeitsname Werkbuch) wird über die Seite „Zielbild Leitfaden“ (leitfaden/zielbild/) entworfen, Iteration 7 vom 12.11. mit Teil „Begriffe“ und neuem Verständnis von Fachwissen als Wirknetz; Ergebnisse von ChatGPT (#174) und Codex (#175) von Claude geprüft, warten auf Ja des Eigentümers; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
+naechster_schritt: Der Eigentümer prüft Iteration 7, gibt #174/#175 und das Werkbuch im Chat frei und startet den Suchauftrag #189; danach übernimmt Claude #174/#175, baut das Werkbuch und gibt die Recherche, Teil 2, an ChatGPT.
+offen: [180, 188, 189]
 ---
 
 # Thema: Arbeitsweise mit KI · Wissensformen
 
-**Zuletzt fortgeschrieben:** 11.11.2026 (Claude, Leitfaden-Chat, Abschluss)
+**Zuletzt fortgeschrieben:** 12.11.2026 (Claude, Leitfaden-Chat, Iteration 7)
 
 **Worum es geht:** Wie arbeitet der Gestalter mit KI so, dass echte Werke und Werkzeuge entstehen
 statt Textberge, und wie bleibt Wissen für jeden Chat erreichbar, ohne dass er alles lesen muss?
@@ -25,17 +25,15 @@ bedeutet (Wunsch des Eigentümers, 07./08.11.; [a:arbeitsweise-a28]).
   (0033), Verlaufseinträge sind einzelne Dateien in `verlauf/`, Rot meldet die Prüfung (0034).
 - Leitfaden (Arbeitsname Werkbuch): Stand als Punkte auf der Seite „Zielbild Leitfaden“
   (`leitfaden/zielbild/`, PR #167); bestätigte Punkte sind die Baseline, Aufträge stehen oben.
-  Wortlaut des Eigentümers: `daten/arbeitsweise.json`, f41–f64.
+  Wortlaut des Eigentümers: `daten/arbeitsweise.json`, f41–f65.
 
 | Strang | Stand | Als Nächstes |
 |---|---|---|
 | Prüfstand | abgeschlossen 08.11.; [Ergebnis](../evals/neustart-daten/README.md) | – |
-| Leitfaden | Zielbild Iteration 6 (`leitfaden/zielbild/`, PR #167); ersetzt Konzeptstand 08.11. sowie PR #164 und #166 als Arbeitsstand; 0032 auf Probe bis 05.12. | PR #174/#175 prüfen; Frage 7 (Schnitt von Fachwissen) nachreichen; Werkbuch bauen nach Freigabe; Begriffe festlegen |
+| Leitfaden | Zielbild Iteration 7 (`leitfaden/zielbild/`): Fachwissen als Wirknetz, Teil „Begriffe“; 0032 auf Probe bis 05.12. | #174/#175 nach Ja übernehmen; Werkbuch bauen nach Freigabe; Recherche, Teil 2 (mit Frage 7), sobald „Kontext ist der Oberbegriff“ bestätigt ist |
 | KI-Fachpaket | Konzept, teils überholt | erst nach dem Leitfaden |
 
-**Vorschläge aus dem Konzeptstand 08.11.** (Moment am Chatende, Prüfung auf Dopplungen, Schnittmengen paralleler Richtungen) stehen jetzt im Zielbild.
-
-**Zu beachten:** PR #187 baut den Zielbild-Generator als Werkzeug (0036); nach Übernahme nutzt #167 es statt eigener Vorlage. PR #176 kollidiert mit #167.
+**Zu beachten:** PR #187 baut den Zielbild-Generator als Werkzeug (0036); nach Übernahme nutzt das Zielbild Leitfaden ihn statt eigener Vorlage. Der Farbvorschlag (Iteration 7) betrifft auch ihn. Berichte: jede Zahl mit Bezug, Freigabe im Chat ([a:arbeitsweise-a43]).
 
 **Geparkt:** Radar als Daten und Ansicht (Matrix oder Kreis offen); Freigabe-Prüfung (#132);
 Hooks; Projektnotiz paleo-type; Radar-Zeile Basic Memory; bei Konflikt startet GitHub keine Prüfung.

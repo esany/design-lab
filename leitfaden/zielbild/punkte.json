@@ -1,8 +1,8 @@
 {
   "titel": "Zielbild Leitfaden",
-  "iteration": 6,
-  "stand": "2026-11-11",
-  "rueckmeldung": "11.11.",
+  "iteration": 7,
+  "stand": "2026-11-12",
+  "rueckmeldung": "12.11.",
   "hinweis": "Erzeugt von node tools/build.mjs nach leitfaden/zielbild/index.html. Rückmeldungen des Eigentümers im Wortlaut: daten/arbeitsweise.json.",
   "teile": [
     {
@@ -11,10 +11,10 @@
         {
           "id": "a-werkbuch",
           "s": "auftrag",
-          "stand": "vorbereitet",
+          "stand": "startklar",
           "wer": "Claude",
-          "t": "Werkbuch: Datenformat, Prüfung im Build und eine erste Seite mit fünf bis acht Keimen.",
-          "k": "Keime sind generische Muster mit Quelle, z. B. Galls Gesetz oder „Halte einen aktuellen Stand“. Fertig, wenn: die Seite aus Daten erzeugt wird; der Build Pflichtteile, Status, Relationen und Quellen prüft; „gilt“ nur bei vollständigen Einträgen möglich ist; die Seite in Handybreite geprüft ist.",
+          "t": "Werkbuch: Datenformat, Prüfung im Build und eine erste Seite mit fünf bis acht werdenden Einträgen.",
+          "k": "Die ersten Einträge sind allgemeine Muster mit Quelle, z. B. Galls Gesetz oder „Halte einen aktuellen Stand“. Dient den Anforderungen A04 (Fachwissen als Werkzeug), A08 (nachvollziehbar in Stufen) und A23 (lebendig und aktuell). Fertig, wenn: die Seite aus Daten erzeugt wird; der Build Pflichtteile, Status, Relationen und Quellen prüft; „gilt“ nur bei vollständigen Einträgen möglich ist; die Seite in Handybreite geprüft ist.",
           "stuetzt": [
             "gegenstand",
             "stufen",
@@ -51,10 +51,34 @@
           "s": "auftrag",
           "stand": "läuft",
           "wer": "ChatGPT",
-          "t": "Recherche zu sieben Fragen (Übergabe #172).",
-          "k": "Ergebnis da: Pull Request #174 mit sechs der sieben Fragen; die siebte (Schnitt von Fachwissen) kam nach dem Start dazu und fehlt. Prüfung durch Claude steht aus, bevor du es liest.",
+          "t": "Recherche zu sechs Fragen (Übergabe #172).",
+          "k": "Ergebnis da (#174), von mir geprüft: brauchbar, zwei kleine Korrekturen. Wartet auf dein Ja im Chat; dann übernehme ich. Die siebte Frage zum Schnitt von Fachwissen geht in die Recherche, Teil 2.",
           "stuetzt": [
             "recherchen"
+          ]
+        },
+        {
+          "id": "a-recherche-2",
+          "s": "auftrag",
+          "stand": "vorbereitet",
+          "wer": "ChatGPT",
+          "t": "Recherche, Teil 2: Wie Fachwissen als Netz gebildet, abgegrenzt und dargestellt wird.",
+          "k": "Fragen: 1. Wie werden Gestaltungsgebiete gebildet, abgegrenzt, geclustert, und wie hängen sie voneinander ab (mehrere Gebiete, auch Lehre und Fachgesellschaften)? 2. Wie stellt man ein solches Wirknetz als Daten dar? 3. Wie wird Nutzungskontext beschrieben: Bedürfnisse, Einschränkungen, Wirkungen, Reaktion sozio-technischer Systeme? 4. Stand der Entwurfsmethodik zu Sammeln und Verdichten. 5. Ob es zur Modellbildung selbst einen Stand gibt, der uns hilft. Enthält die siebte Frage aus #172. Dient A04. Startklar, sobald du den Punkt „Kontext ist der Oberbegriff“ bestätigt hast, weil die Fragen darauf beruhen.",
+          "stuetzt": [
+            "wechselwirkung",
+            "transdisziplinaer",
+            "sammeln-verdichten"
+          ]
+        },
+        {
+          "id": "a-suchprompt",
+          "s": "auftrag",
+          "stand": "freigegeben",
+          "wer": "du und ein Chat mit Zugriff auf alte Chats",
+          "t": "Fragenliste in alten Chats finden (Issue #189).",
+          "k": "Dein einziger Handgriff: in einem Chat, der deine alten Chats durchsuchen kann, „Führe Issue #189 im design-lab aus“ schreiben. Der Chat prüft jeden Kandidaten selbst und schreibt das Ergebnis ins Issue.",
+          "stuetzt": [
+            "erweiterung"
           ]
         },
         {
@@ -63,7 +87,7 @@
           "stand": "läuft",
           "wer": "Codex",
           "t": "Implizite Verweise in den 24 alten Einträgen erfassen (Übergabe #173).",
-          "k": "Ergebnis da: Pull Request #175 (Tabelle der 24 Einträge). Prüfung durch Claude steht aus; danach Aufräumen mit deiner Sicht auf die Liste.",
+          "k": "Ergebnis da (#175), von mir geprüft: vollständig und richtig. Wartet auf dein Ja im Chat; dann übernehme ich. Danach Aufräumen mit deiner Sicht auf die Liste.",
           "stuetzt": [
             "recherchen",
             "implizit"
@@ -91,12 +115,20 @@
         {
           "id": "wechselwirkung",
           "s": "bestaetigt",
-          "t": "„Vermitteln“ ist kein Dach über den Feldern, sondern ein Anwendungskontext unter vielen. Felder und Kontexte sind zwei verschiedene Achsen.",
-          "k": "Felder sind Wissen über Mittel, z. B. Typografie, Farbe, Diagrammatik, Informationsvisualisierung, Kartografie. Kontexte sind Wissen über Situation und Zweck, z. B. Vermitteln, Orientieren, Erkunden, Ausstellen. Mein Fehler kam aus dem Plan von Entscheidung 0021: Er mischt Kontexte („Vermitteln“, „Erkennen“) und Felder („Form“) in einer Liste. Das habe ich ungeprüft übernommen.",
-          "g": "Stand der Technik: Munzner trennt in ihrem Modell der Visualisierungsgestaltung die Situation des Anwendungsbereichs von der Abstraktion und von der Darstellung, weil an jeder Ebene anders etwas schiefgehen kann (Nested Model, 2009; What-Why-How). Facettenklassifikation ordnet Wissen nach mehreren unabhängigen Achsen statt in einer Hierarchie (Ranganathan; Rosenfeld/Morville). Gesichtet am 11.11.",
-          "v": "Jedes Feld ist ein eigenes Modul, weil es ein eigenes Thema ist. Wie Fachwissen geschnitten wird, steht im neuen Teil „Fachwissen als Module“.",
-          "f": "Vermitteln kann doch nicht über dem ganzen stehen, das ist aus meiner Sicht fachlich falsch! Das ist anwendungskontext unter vielen für die felder. Du hast nicht sota geprüft",
+          "t": "Kontext ist der Oberbegriff über allem. Darin bilden die fachlichen Schwerpunkte ein Wirknetz mit Schnittstellen, keine Schubladen. Der Nutzungskontext ist eine eigene Dimension, die beim Menschen ansetzt.",
+          "k": "So verstehe ich dein Modell: Schwerpunkte wie Typografie und Informationsdesign überschneiden sich, etwa bei der Lesbarkeit in Diagrammen oder der visuellen Hierarchie in einem bestimmten Kontext. Jeder Schwerpunkt speist sich aus Grundlagen: anderen Fachgebieten, Best Practice, Methodik. Der Nutzungskontext fragt: Was braucht der Mensch in der Situation, was schränkt ihn ein, was wirkt auf ihn, und wie muss ein sozio-technisches System oder ein Artefakt darauf reagieren? Mein Fehler in Iteration 6: Ich habe Felder und Kontexte als zwei gleichrangige Listen behandelt und „Kontext“ nur als Anwendungszweck gelesen.",
+          "g": "Dein ganzer Wortlaut: daten/arbeitsweise.json, f65. Wie Gebiete gebildet, abgegrenzt und geclustert werden, ist im Fachdiskurs offen; das klärt der Auftrag „Recherche, Teil 2“. Bisheriger Bezug: Munzners Modell trennt die Situation des Anwendungsbereichs von Abstraktion und Darstellungsform (Lesestand nicht geprüft).",
+          "v": "„Vermitteln“ ist kein Dach über den Feldern, sondern ein Anwendungskontext unter vielen. Felder und Kontexte sind zwei verschiedene Achsen.",
+          "f": "Kontext ist ein metabegriff über allem. Es gibt fachliche Schwerpunkte, die natürlich Schnittstellen haben … keine Schubladen sondern auch ein dynamisches wirknetz aus vielfältigen Beziehungen … Der nutzungskontext ist eine andere Dimension und hängt vlt. Am Menschen und seinen Bedürfnissen",
           "n": "geändert"
+        },
+        {
+          "id": "transdisziplinaer",
+          "s": "bestaetigt",
+          "n": "neu",
+          "t": "Fachwissen wird ganzheitlich, systematisch und transdisziplinär verstanden, auch als Prinzip.",
+          "f": "ganzheitlich systematisch transdisziplinär.. auch hier als Prinzip.",
+          "k": "In den Prinzipien des Labors (principles.md) steht das bisher nicht ausdrücklich; der Intent spricht vom ganzheitlichen Gestalter. Vorschlag: Ich lege dir einen Satz für die Prinzipien vor, sobald die Recherche, Teil 2, zeigt, wie andere das fassen. Die Prinzipien ändere ich nur mit deinem Ja."
         },
         {
           "id": "ebenen",
@@ -111,6 +143,67 @@
           "t": "Wir trennen, was jetzt nötig ist, um gut am Leitfaden zu arbeiten, von dem, was später kommt.",
           "k": "Jetzt: dieses Zielbild als gemeinsamer Ort, die Recherchen, das Datenformat. Später: weitere Regionen der Entwurfsarbeit, Netz-Ansicht, Pflege der Abhängigkeiten. Ausnahme: Was die Qualität sichert oder ein aktuelles Entwurfsproblem löst, wird vorgezogen.",
           "bestaetigt": "2026-11-11"
+        }
+      ]
+    },
+    {
+      "teil": "Begriffe",
+      "punkte": [
+        {
+          "id": "b-werkbuch",
+          "s": "ableitung",
+          "n": "neu",
+          "t": "Werkbuch: der Leitfaden für Entwurfsarbeit, in dem die KI ein Werkzeug unter mehreren ist.",
+          "k": "Arbeitsname. „Leitfaden“ meint dasselbe; die heutige Seite „Mit KI arbeiten“ ist sein Vorläufer mit 24 Einträgen."
+        },
+        {
+          "id": "b-eintrag",
+          "s": "ableitung",
+          "n": "neu",
+          "t": "Eintrag: ein Stück Wissen im Werkbuch, mit Regel, Warum, Hintergrund und Quellen.",
+          "k": "Ein Eintrag ist „werdend“ oder er „gilt“; später kann er „überholt“ sein."
+        },
+        {
+          "id": "b-werdend",
+          "s": "ableitung",
+          "n": "neu",
+          "t": "Werdend und gilt: werdend heißt gesammelt und unvollständig; gilt heißt verdichtet, vollständig und geprüft.",
+          "k": "Ersetzt „Keim“. Werdend: ein Satz, Tags, Datum. Gilt: dazu Fachbegriff, Warum, Grenzen, geprüfte Quelle."
+        },
+        {
+          "id": "b-zielbild",
+          "s": "ableitung",
+          "n": "neu",
+          "t": "Zielbild: diese Seite. Sie zeigt in Punkten, was ich verstanden habe, und du bestätigst oder korrigierst sie.",
+          "k": "Ein Punkt hat eine Herkunft (von dir, meine Ableitung, Vorschlag, Befund) und einen Prüfstand (neu, geändert, bestätigt)."
+        },
+        {
+          "id": "b-auftrag",
+          "s": "ableitung",
+          "n": "neu",
+          "t": "Auftrag: eine Arbeit, die du freigibst, mit Ziel und „fertig, wenn“. Sie liegt als Issue im Repo und endet in einem Pull Request.",
+          "k": "Ersetzt „Paket“ (11.11.)."
+        },
+        {
+          "id": "b-kontext",
+          "s": "ableitung",
+          "n": "neu",
+          "t": "Kontext: der Oberbegriff über allem. Der Nutzungskontext ist darin die Dimension, die beim Menschen ansetzt.",
+          "k": "Siehe Punkt „Kontext ist der Oberbegriff über allem“. Ersetzt die Lesart „Kontext = Anwendungszweck wie Vermitteln“."
+        },
+        {
+          "id": "b-schwerpunkt",
+          "s": "ableitung",
+          "n": "neu",
+          "t": "Fachlicher Schwerpunkt: ein Gebiet wie Typografie oder Informationsdesign, mit Grundlagen und Schnittstellen zu anderen.",
+          "k": "Bisher „Feld“. Ob „Schwerpunkt“ oder „Gebiet“ das bessere Wort ist, entscheidest du."
+        },
+        {
+          "id": "b-modul",
+          "s": "ableitung",
+          "n": "neu",
+          "t": "Modul: das Fachwissen zu einem Schwerpunkt oder Kontext, so aufbereitet, dass ein Modell es bei der Arbeit lädt.",
+          "k": "Die heutigen „Fachpakete“ sind die Vorläufer; sie werden zu Modulen."
         }
       ]
     },
@@ -156,11 +249,19 @@
         {
           "id": "werdend-gilt",
           "s": "bestaetigt",
-          "n": "neu",
           "t": "Ein Eintrag darf werdend sein. Er gilt erst, wenn er vollständig ist; die Prüfung im Build lässt „gilt“ vorher nicht zu.",
-          "f": "Wir testen das, das Konzept muss sauber und richtige grundlage der entwurfsarbeit sein",
           "k": "Werdend: ein Satz, Tags, Datum. Geltend: zusätzlich Fachbegriff, Warum, Grenzen, geprüfte Quelle. Dieser Punkt stand in Iteration 1 und ist in Iteration 2 versehentlich im Punkt zum Start einer Iteration aufgegangen. Aufgefallen ist es, als der Auftrag „Werkbuch“ seine Grundlagen nachgewiesen hat.",
-          "g": "Du, 08.11. (Antwort im Wortlaut oben); in Iteration 1 bestätigt mit der Frage nach Kriterien, die heute im Punkt „startklar“ stehen."
+          "g": "Du, 08.11. (Antwort im Wortlaut oben); in Iteration 1 bestätigt mit der Frage nach Kriterien, die heute im Punkt „startklar“ stehen.",
+          "bestaetigt": "2026-11-12"
+        },
+        {
+          "id": "sammeln-verdichten",
+          "s": "bestaetigt",
+          "n": "neu",
+          "t": "Jedes Konzept entwickelt sich: erst Ideen sammeln, dann verdichten und zusammenführen. Das ist ein Grundprinzip auf allen Ebenen.",
+          "f": "erstmal Ideen sammeln und dann verdichten und fusionieren. Das sollten wir doch schon in sota von entwurfsprinzipien und -methodik haben.",
+          "k": "Für einen Eintrag heißt das: „werdend“ sammelt, „gilt“ ist verdichtet. Im Labor liegt dazu bisher nur eine Spur: die Recherche zur Entwurfsbewegung vom 30.10. (Dubberly: Wechsel von Öffnen und Schließen, Analyse und Synthese). Aufgearbeitet ist der Stand der Technik nicht; er gehört in die Recherche, Teil 2.",
+          "g": "research/2026-10-entwurfsbewegung/chat-ruecksicherung-2026-10-30.md, Zeile zu Dubberly (Modellbilder gesehen, Text nicht ganz gelesen)."
         },
         {
           "id": "startklar",
@@ -207,7 +308,8 @@
           "id": "halbwertszeit",
           "s": "bestaetigt",
           "t": "Die Halbwertszeit bleibt. Offen ist, was sie kostet oder spart.",
-          "k": "Vielleicht wird es billiger, weil wir vergessen und Ballast abwerfen dürfen. Wie man komplexe Wissensstrukturen mit Abhängigkeiten und wechselnden Relationen pflegt, gehört in eine Recherche."
+          "k": "Vielleicht wird es billiger, weil wir vergessen und Ballast abwerfen dürfen. Wie man komplexe Wissensstrukturen mit Abhängigkeiten und wechselnden Relationen pflegt, gehört in eine Recherche.",
+          "bestaetigt": "2026-11-12"
         },
         {
           "id": "name",
@@ -259,11 +361,9 @@
           "id": "erweiterung",
           "s": "vorschlag",
           "t": "Deine lange Fragenliste suchen wir in deinen alten Chats, mit einem Suchprompt.",
-          "k": "Der Prompt steht im Chat vom 11.11. Was du findest, gibst du mir als Text; ich ordne es ins Zielbild ein. Die Fachpakete, für dich bisher Black Boxes, wandern nach denselben Prinzipien in den Wissensspeicher.",
+          "k": "Der Suchauftrag steht als Issue #189; der Chat, der ihn ausführt, prüft die Kandidaten selbst. Was er findet, ordne ich ins Zielbild ein. Die Fachpakete, für dich bisher Black Boxes, wandern nach denselben Prinzipien in den Wissensspeicher.",
           "g": "Du, 09.11.; Suche im Repo am 09.11.",
-          "v": "Der Leitfaden soll über die Arbeit mit KI hinaus wachsen. Deine lange Fragenliste dazu finde ich im Repo nicht.",
-          "f": "Ok, wir können nochmal suchen ggf. Mit einem suchprompt",
-          "n": "geändert"
+          "bestaetigt": "2026-11-12"
         }
       ]
     },
@@ -315,18 +415,33 @@
         {
           "id": "auftraege",
           "s": "bestaetigt",
-          "n": "neu",
           "t": "Aus bestätigten Punkten werden Aufträge. Sie stehen ganz oben auf dieser Seite, und du gibst sie hier frei.",
-          "f": "Ja gern, lass es uns ausprobieren",
-          "k": "Ein Auftrag ist eine Arbeit, die du freigibst, mit Ziel und „fertig, wenn“. Er liegt als Issue im Repo und endet in einem Pull Request. Du siehst sein Ergebnis am gebauten Ding."
+          "k": "Ein Auftrag ist eine Arbeit, die du freigibst, mit Ziel und „fertig, wenn“. Er liegt als Issue im Repo und endet in einem Pull Request. Du siehst sein Ergebnis am gebauten Ding.",
+          "bestaetigt": "2026-11-12"
+        },
+        {
+          "id": "farben",
+          "s": "befund",
+          "n": "neu",
+          "t": "Die Farben dieser Seite sind nicht aus ihrer Bedeutung begründet.",
+          "f": "Achte auf die Semantik deiner Farbgestaltung! Von mir ist grün und neu ist rot, woraus motivierst du diese Farbgestaltung?",
+          "k": "Ehrliche Antwort: aus gar nichts. Ich habe die allgemeinen Farbwerte der Seite übernommen, „in Ordnung“ (Grün), „Warnung“ (Ocker) und „Akzent“ (Rot). Dadurch heißt Grün zweierlei, „von dir gesagt“ und „bestätigt“, und Rot heißt „geändert“ und „Befund“. Dazu wirkt Rot wie ein Alarm, obwohl Neues nur geprüft werden soll."
+        },
+        {
+          "id": "farben-vorschlag",
+          "s": "vorschlag",
+          "n": "neu",
+          "t": "Farbe zeigt nur, was du tun musst: ein Akzent für „zu prüfen“, alles andere ruhig. Woher ein Punkt kommt, sagt das Wort, nicht die Farbe.",
+          "k": "Herkunft (von dir, meine Ableitung, Vorschlag, Befund) und Prüfstand (neu, geändert, bestätigt) sind zwei verschiedene Merkmale; heute laufen sie über dieselben Farben. Farbton eignet sich nach Bertin zum Unterscheiden und Herausheben, nicht für eine Rangfolge. Also: ein Farbton hebt heraus, was du prüfen sollst; Bestätigtes tritt grau zurück; die Herkunft steht als Wort. Ich baue das erst nach deinem Ja; es betrifft auch den Zielbild-Generator (#187).",
+          "g": "Skill „bertin-semiologie“, Tabelle der visuellen Variablen (Farbton: assoziativ und selektiv, nicht geordnet)."
         },
         {
           "id": "startklar-wann",
           "s": "vorschlag",
-          "n": "neu",
           "t": "Ich melde „startklar“, sobald alles erfüllt ist außer deiner Freigabe, und zwar von selbst.",
           "k": "Bedingungen: Die Punkte, auf denen der Auftrag beruht, hast du bestätigt; er nennt die Anforderung, der er dient; nichts, wovon er abhängt, ist offen; „fertig, wenn“ ist prüfbar; das Modell hat die nötigen Werkzeuge. Zwei Momente: nach jeder Rückmeldung zum Zielbild und wenn eine Recherche zurückkommt. Die Prüfung im Build verweigert „startklar“, solange ein zugrunde liegender Punkt nicht bestätigt ist.",
-          "g": "Skill „issue“, Abschnitt E2 (Freigabe ist nicht Umsetzungsreife)."
+          "g": "Skill „issue“, Abschnitt E2 (Freigabe ist nicht Umsetzungsreife).",
+          "bestaetigt": "2026-11-12"
         }
       ]
     },
@@ -399,10 +514,10 @@
         {
           "id": "bestaetigt-bleibt",
           "s": "vorschlag",
-          "n": "neu",
           "t": "Was du bestätigt hast, bleibt bestätigt, bis es sich ändert. Du prüfst nur noch, was neu oder geändert ist.",
           "k": "Bestätigte Punkte bilden das aktuelle Zielbild, eingeklappt mit Datum. Ändere ich einen Punkt, fällt seine Bestätigung automatisch weg, und er kommt zurück zur Prüfung. Der Build verhindert, dass ein geänderter Punkt als bestätigt gilt.",
-          "g": "Stand der Technik: GitHub und Bitbucket heben die Markierung „gesehen“ einer Datei auf, sobald sie sich ändert, damit man nur Neues prüft; in der Anforderungsarbeit heißt der bestätigte Stand Baseline, Änderungen gehen durch eine Änderungsprüfung (u. a. Jama Software, Wiegers). Gesichtet am 11.11."
+          "g": "Stand der Technik: GitHub und Bitbucket heben die Markierung „gesehen“ einer Datei auf, sobald sie sich ändert, damit man nur Neues prüft; in der Anforderungsarbeit heißt der bestätigte Stand Baseline, Änderungen gehen durch eine Änderungsprüfung (u. a. Jama Software, Wiegers). Gesichtet am 11.11.",
+          "bestaetigt": "2026-11-12"
         }
       ]
     },
@@ -421,16 +536,15 @@
           "id": "m-brauchst-du",
           "s": "vorschlag",
           "t": "Was du brauchst, um damit zu entwerfen: sehen, was ein Modul weiß, woher, was geprüft ist und was fehlt.",
-          "k": "Eine lesende Seite je Modul in derselben Art wie diese, keine Prosa zum Durchlesen. Dein Kanon, also deine Verweise, sichtbar und von dir steuerbar. Du entscheidest Kanon und Spannungen; die Pflege der Inhalte liegt bei mir."
+          "k": "Eine lesende Seite je Modul in derselben Art wie diese, keine Prosa zum Durchlesen. Dein Kanon, also deine Verweise, sichtbar und von dir steuerbar. Du entscheidest Kanon und Spannungen; die Pflege der Inhalte liegt bei mir.",
+          "bestaetigt": "2026-11-12"
         },
         {
           "id": "m-struktur",
           "s": "vorschlag",
           "t": "Zwei Achsen statt einer Hierarchie: Felder als Module, Kontexte als eigene Module, Methoden quer dazu.",
           "k": "Feld-Module: Wissen über ein Mittel, z. B. Informationsvisualisierung oder Typografie. Kontext-Module: Wissen über Situation und Zweck, z. B. Vermitteln: Publikum, Vorwissen, Wahrnehmungssituation. Methoden wie Bertin oder Isotype: eigene Skills, die mehrere Module nutzen. Eine Aufgabe lädt ihren Kontext und die Felder, die sie braucht. Wie Designfachgebiete selbst geschnitten werden, recherchiert ChatGPT als siebte Frage.",
-          "v": "Drei Ebenen: Fachgebiet, Modul, Methode.",
-          "f": "Vermitteln kann doch nicht über dem ganzen stehen, das ist aus meiner Sicht fachlich falsch! Das ist anwendungskontext unter vielen für die felder. Du hast nicht sota geprüft",
-          "n": "geändert"
+          "bestaetigt": "2026-11-12"
         },
         {
           "id": "m-wachsen",
@@ -443,13 +557,14 @@
           "id": "m-absichern",
           "s": "vorschlag",
           "t": "Abgesichert wird über die Prüfung im Build und über Prüffälle, nicht über Regeltexte.",
-          "k": "Der Build prüft je Modul: Beschreibung vorhanden, Kern unter der Grenze, Pflichtteile da, Quellen im Korpus, Prüfdatum gesetzt. Jedes Modul hat mindestens einen Prüffall, der zeigt, ob es eine echte Aufgabe besser macht. Tokensparend, weil nur die Beschreibungen ständig geladen sind."
+          "k": "Der Build prüft je Modul: Beschreibung vorhanden, Kern unter der Grenze, Pflichtteile da, Quellen im Korpus, Prüfdatum gesetzt. Jedes Modul hat mindestens einen Prüffall, der zeigt, ob es eine echte Aufgabe besser macht. Tokensparend, weil nur die Beschreibungen ständig geladen sind.",
+          "bestaetigt": "2026-11-12"
         },
         {
           "id": "m-ausarbeiten",
           "s": "vorschlag",
           "t": "Pilot: Die vier Felder aus „Vermitteln“ werden eigene Module, „Vermitteln“ bleibt als Kontext-Modul.",
-          "k": "Vorher klären wir nur den Schnitt und deinen Kanon. Startklar melde ich, wenn die Recherche zu Wechselwirkungen und Schnitt (Übergabe an ChatGPT) zurück ist.",
+          "k": "Vorher klären wir den Schnitt und deinen Kanon. Mit deinem Modell aus Iteration 6 (Kontext als Oberbegriff, Schwerpunkte als Wirknetz) ist auch dieser Pilot neu zu fassen; ich schlage ihn neu vor, wenn die Recherche, Teil 2, zurück ist. Bis dahin musst du ihn nicht bewerten.",
           "v": "Ausarbeiten an einem Pilot: „Vermitteln“ in Module teilen und an einer echten Aufgabe erproben.",
           "f": "Vermitteln kann doch nicht über dem ganzen stehen, das ist aus meiner Sicht fachlich falsch! Das ist anwendungskontext unter vielen für die felder. Du hast nicht sota geprüft",
           "n": "geändert"
@@ -491,19 +606,21 @@
           "id": "i-begriffe",
           "s": "impuls",
           "prio": "jetzt",
-          "n": "neu",
-          "t": "Begriffe festlegen: ein Teil „Begriffe“ in diesem Zielbild, den du bestätigst wie die anderen Punkte.",
-          "k": "Allein in diesem Chat sind Fachpaket, Modul, Feld, Kontext, Eintrag, Keim, Werkbuch, Leitfaden, Zielbild und Auftrag entstanden oder umgedeutet worden. Jetzt, weil jede weitere Arbeit davon abhängt.",
-          "g": "Dein Hinweis, 11.11.: „Wir müssen auf Begrifflichkeiten achten“."
+          "n": "geändert",
+          "t": "Der Teil „Begriffe“ steht jetzt in diesem Zielbild. „Keim“ ist ersetzt durch „werdend“.",
+          "k": "Meine Lesart: „Keim“ war der Status aus dem Konzept vom 08.11.; seit Iteration 1 heißt er „werdend“. Ich habe trotzdem weiter „Keim“ geschrieben, sogar im Auftrag „Werkbuch“. Genau dafür braucht es den Teil „Begriffe“. Liege ich falsch, sag es kurz.",
+          "g": "Dein Hinweis, 11.11.: „Wir müssen auf Begrifflichkeiten achten“.",
+          "v": "Begriffe festlegen: ein Teil „Begriffe“ in diesem Zielbild, den du bestätigst wie die anderen Punkte.",
+          "f": "Es ist nicht mehr keim!!!"
         },
         {
           "id": "i-merkzettel-zustaendig",
           "s": "impuls",
           "prio": "jetzt",
-          "n": "neu",
           "t": "Bei Übergaben schreibt nur das Modell, das orchestriert, den Merkzettel.",
-          "k": "Codex hat nach #173 den Merkzettel fortgeschrieben (#176), weil AGENTS.md, Schritt 5, das verlangt; zugleich schrieb Claude ihn in #167. Künftig steht in jeder Übergabe unter „Nicht tun“: Merkzettel nicht fortschreiben, das macht das orchestrierende Modell.",
-          "g": "Deine Frage und dein „Ja gern“, 11.11."
+          "k": "Codex hat nach #173 den Merkzettel fortgeschrieben (#176), weil AGENTS.md, Schritt 5, das verlangt; zugleich schrieb Claude ihn in #167. Jetzt steht es im Skill „issue“: Jede Übergabe nennt unter „Nicht tun“, dass nur das orchestrierende Modell den Merkzettel fortschreibt.",
+          "g": "Deine Frage und dein „Ja gern“, 11.11.",
+          "bestaetigt": "2026-11-12"
         },
         {
           "id": "i-issues",
