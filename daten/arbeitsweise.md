@@ -63,7 +63,7 @@
   *Beleg:* `leitfaden/zielbild/vorlage.html`, Stilangaben .chip.bestaetigt, .fest-mark, .punkt.wandel-an, .chip.befund
   *Grenze:* Vom Eigentümer bemerkt (f65). Vorschlag im Zielbild, Punkt „Farbe zeigt nur, was du tun musst“.
 
-### Abgeleitet (28)
+### Abgeleitet (29)
 
 - **arbeitsweise-a01** Fortschritt kommt in der Arbeit mit der KI als Text zurück, nicht als etwas zum Ansehen oder Ausprobieren; der Gestalter sieht deshalb nicht, ob Strukturen tragen.
 - **arbeitsweise-a06** Wurzel des Problems: Im Entwurf antwortet das Material, in der Arbeit mit der KI nur Text; der Gestalter ersetzt sein Urteil durch Regeln.
@@ -117,6 +117,8 @@
   *Grenze:* Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): In Fragen und Befunden jedes Wort festlegen, das in Domäne und Darstellung Verschiedenes meinen kann.
 - **arbeitsweise-a52** Die KI hat die Vermittlung einer Anwendung bewertet, bevor sie dem Eigentümer gezeigt hat, welche Funktionen es überhaupt gibt; ihm fehlte die Grundlage, das Urteil zu prüfen.
   *Grenze:* Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): Erst ein Inventar des Vorhandenen mit Herkunft, dann Wahrnehmbarkeit, dann Nutzen, dann Urteil.
+- **arbeitsweise-a53** Die KI hat eine Skizze im Chat im Standardstil ihres Werkzeugs gezeichnet und eine Handzeichnung mit schiefen Ecken vorgetäuscht, statt die visuelle Sprache des Labors zu übernehmen, die im Zielbild schon vorlag; der Eigentümer nennt das einen Bug.
+  *Grenze:* Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Verwandt mit a44 (Farben ohne Begründung). Gegenmittel (Vorschlag): Jede Darstellung, auch eine schnelle im Chat, nimmt Farben, Schriften und Linien aus system/tokens; Gestaltung dient und tritt zurück; nichts vortäuschen, was das Medium nicht ist.
 
 ### Nicht belegt (1)
 

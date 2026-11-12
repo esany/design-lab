@@ -425,6 +425,13 @@
       "status": "abgeleitet",
       "seit": "2026-11-12",
       "notiz": "Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): Erst ein Inventar des Vorhandenen mit Herkunft, dann Wahrnehmbarkeit, dann Nutzen, dann Urteil."
+    },
+    {
+      "id": "arbeitsweise-a53",
+      "aussage": "Die KI hat eine Skizze im Chat im Standardstil ihres Werkzeugs gezeichnet und eine Handzeichnung mit schiefen Ecken vorgetäuscht, statt die visuelle Sprache des Labors zu übernehmen, die im Zielbild schon vorlag; der Eigentümer nennt das einen Bug.",
+      "status": "abgeleitet",
+      "seit": "2026-11-12",
+      "notiz": "Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Verwandt mit a44 (Farben ohne Begründung). Gegenmittel (Vorschlag): Jede Darstellung, auch eine schnelle im Chat, nimmt Farben, Schriften und Linien aus system/tokens; Gestaltung dient und tritt zurück; nichts vortäuschen, was das Medium nicht ist."
     }
   ],
   "fragen": [
