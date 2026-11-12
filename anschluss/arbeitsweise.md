@@ -1,13 +1,13 @@
 ---
 thema: Arbeitsweise mit KI · Wissensformen
 stand: Prüfstand abgeschlossen (08.11.); Leitfaden (Arbeitsname Werkbuch) wird über die Seite „Zielbild Leitfaden“ (leitfaden/zielbild/) entworfen, Iteration 7 vom 12.11. mit Teil „Begriffe“ und neuem Verständnis von Fachwissen als Wirknetz; Ergebnisse von ChatGPT (#174) und Codex (#175) von Claude geprüft, warten auf Ja des Eigentümers; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
-naechster_schritt: Alarmpunkt 12.11.: Fable prüft in #196 den Weg, Tokens und Delegation und schlägt eine Marschroute vor (Ergebnis in PR #194); bis dahin ruhen Werkbuch, Querschnitt, Recherche Teil 2 und die Übernahme von #174/#175.
-offen: [180, 188, 189, 196]
+naechster_schritt: Schwerer Bug #200 (Modelle verfehlen das Nutzerbild des Eigentümers) analysiert in research/2026-11-anforderungspruefung/; der Eigentümer entscheidet über die Verbindung O1–O4, danach Gegenprüfung durch ChatGPT; bis dahin ruhen Werkbuch, Querschnitt und Recherche Teil 2.
+offen: [180, 188, 189, 196, 200]
 ---
 
 # Thema: Arbeitsweise mit KI · Wissensformen
 
-**Zuletzt fortgeschrieben:** 12.11.2026 (Claude, Leitfaden-Chat, Alarmpunkt)
+**Zuletzt fortgeschrieben:** 12.11.2026 (Claude, Leitfaden-Chat, Bug #200)
 
 **Worum es geht:** Wie arbeitet der Gestalter mit KI so, dass echte Werke und Werkzeuge entstehen
 statt Textberge, und wie bleibt Wissen für jeden Chat erreichbar, ohne dass er alles lesen muss?
