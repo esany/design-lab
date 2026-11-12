@@ -7,7 +7,7 @@ offen: []
 
 # Thema: Visualisierungssysteme · Reporting jenseits des Dashboards
 
-**Zuletzt fortgeschrieben:** 10.11.2026 (Claude, Befund angelegt)
+**Zuletzt fortgeschrieben:** 12.11.2026 (Claude, Verweis auf #178 ergänzt)
 
 ## In Worten
 
@@ -29,6 +29,9 @@ Die Quellen sind nur auf Ebene von Abstract oder Inhaltsverzeichnis gesehen.
 Grundlage verworfen. Er liegt bewusst nirgends im Labor. Übernommen ist nur eine abstrakte
 Beobachtung (Befund, Abschnitt 6).
 
+**Verwandt:** Das Fundstück dataviz-skills (#178) baut auf dem Befund auf und wird in einem
+anderen Chat bearbeitet.
+
 **Offene Fragen an den Eigentümer:**
 1. Eigenes Fachpaket, getrennt von „Vermitteln“ (einzelne Darstellung gegen Gefüge)?
 2. Erprobung an einem selbst gewählten, offenen Datensatz?
@@ -38,6 +41,7 @@ Beobachtung (Befund, Abschnitt 6).
 
 - Branch `lab/visualisierungssysteme`; Quellen in `corpus/recherche.json` (geprüft 2026-11-10).
 - Nachbarn: `.agents/skills/fachpaket-vermitteln/`, #49 (Möglichkeitsraum), Thema Arbeitsweise.
+- #178 Fundstück dataviz-skills (Yan Holtz): ordnet sich in die Leiter des Befunds ein (Ebenen 2 bis 5, v. a. Systemlogik: Farbe, Achsen und verknüpfte Ansichten über Grafiken hinweg); wird in einem anderen Chat bearbeitet. Vor dem Bau des Fachpakets den Stand dort lesen.
 - Lehre aus dem Chat: Zuerst rutschte Claude auf die Ebene von Vermittlung und Rahmen. Der
   Eigentümer will die Sache selbst und volle Ambition; herunterregeln kann man später.
 </details>
