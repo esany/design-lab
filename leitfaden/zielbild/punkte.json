@@ -63,7 +63,7 @@
           "stand": "vorbereitet",
           "wer": "ChatGPT",
           "t": "Recherche, Teil 2: Wie Fachwissen als Netz gebildet, abgegrenzt und dargestellt wird.",
-          "k": "Fragen: 1. Wie werden Gestaltungsgebiete gebildet, abgegrenzt, geclustert, und wie hängen sie voneinander ab (mehrere Gebiete, auch Lehre und Fachgesellschaften)? 2. Wie stellt man ein solches Wirknetz als Daten dar? 3. Wie wird Nutzungskontext beschrieben: Bedürfnisse, Einschränkungen, Wirkungen, Reaktion sozio-technischer Systeme? 4. Stand der Entwurfsmethodik zu Sammeln und Verdichten. 5. Ob es zur Modellbildung selbst einen Stand gibt, der uns hilft. Enthält die siebte Frage aus #172. Dient A04. Startklar, sobald du den Punkt „Kontext ist der Oberbegriff“ bestätigt hast, weil die Fragen darauf beruhen.",
+          "k": "Hält an, nicht starten: Die Fragen überschneiden sich mit anderen Strängen des Labors, die ich beim Formulieren nicht geprüft habe: Entwicklung und Gebrauch (#49, drei Perspektiven), Wissen erschließen (Wissenslandkarte mit acht Feldern) und Visualisierungssysteme (Nachbarfelder und Schnittstellen). Erst ein Querschnitt über das ganze Labor, dann ein gemeinsamer Auftrag.",
           "stuetzt": [
             "wechselwirkung",
             "transdisziplinaer",
@@ -128,7 +128,7 @@
           "n": "neu",
           "t": "Fachwissen wird ganzheitlich, systematisch und transdisziplinär verstanden, auch als Prinzip.",
           "f": "ganzheitlich systematisch transdisziplinär.. auch hier als Prinzip.",
-          "k": "In den Prinzipien des Labors (principles.md) steht das bisher nicht ausdrücklich; der Intent spricht vom ganzheitlichen Gestalter. Vorschlag: Ich lege dir einen Satz für die Prinzipien vor, sobald die Recherche, Teil 2, zeigt, wie andere das fassen. Die Prinzipien ändere ich nur mit deinem Ja."
+          "k": "Korrektur 12.11.: Das ist nicht neu. Der Intent nennt dich „systemischer, ganzheitlicher Gestalter“ und das Leitbild „das System als Organismus“; das Manifest hat den Grundsatz „Ganzheitlich und systematisch“. Neu ist nur das Wort „transdisziplinär“. Meine frühere Aussage, es stehe nirgends, war falsch: Ich habe nur in den Prinzipien gesucht."
         },
         {
           "id": "ebenen",
