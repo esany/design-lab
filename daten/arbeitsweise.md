@@ -63,7 +63,7 @@
   *Beleg:* `leitfaden/zielbild/vorlage.html`, Stilangaben .chip.bestaetigt, .fest-mark, .punkt.wandel-an, .chip.befund
   *Grenze:* Vom Eigentümer bemerkt (f65). Vorschlag im Zielbild, Punkt „Farbe zeigt nur, was du tun musst“.
 
-### Abgeleitet (20)
+### Abgeleitet (23)
 
 - **arbeitsweise-a01** Fortschritt kommt in der Arbeit mit der KI als Text zurück, nicht als etwas zum Ansehen oder Ausprobieren; der Gestalter sieht deshalb nicht, ob Strukturen tragen.
 - **arbeitsweise-a06** Wurzel des Problems: Im Entwurf antwortet das Material, in der Arbeit mit der KI nur Text; der Gestalter ersetzt sein Urteil durch Regeln.
@@ -101,6 +101,12 @@
   *Grenze:* Einmal beobachtet (Claude, 11.11.). Prinzipien 9 und 11; Eigentümer: der Chat sei richtig teuer.
 - **arbeitsweise-a43** Die KI meldete dem Eigentümer das Ergebnis einer Prüfung mit Zahlen und Kürzeln ohne ihr Bezugsobjekt („24 Einträge“ ohne „der Seite ‚Mit KI arbeiten‘“) und deutete an, er müsse zum Freigeben auf GitHub; er konnte den Bericht nicht nachvollziehen.
   *Grenze:* Einmal beobachtet (Claude, Leitfaden-Chat, 11./12.11.), Bug #188. Gleiches Muster wie a28 (Struktur statt Bedeutung, Nummern statt Namen).
+- **arbeitsweise-a45** In einer Warumkette hat die KI Symptom und Ursache vertauscht: Das Erleben der Nutzerin (Ergebnisse halten nicht) stand als letzte Folge am Ende, statt als erstes Warum, von dem die Kette über die Ursachen zur Erkenntnislücke führt.
+  *Grenze:* Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): Eine Warumkette beginnt beim Erleben des Menschen; der Intent antwortet erst auf die Lücke.
+- **arbeitsweise-a46** Die KI hat die Herkunft von Kontextinformationen nur gesammelt in einer aufklappbaren Grundlage genannt, nicht am Satz; der Eigentümer verlangt sie an jeder Kontextinformation, auch als kurzes Zitat.
+  *Grenze:* Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): Fundstelle und Zitat unter 15 Wörtern direkt am Satz.
+- **arbeitsweise-a47** Die KI hat abgeleitete Aussagen nicht deutlich als Hypothese von Belegtem und von Befunden unterschieden; das Etikett „Ableitung“ reichte dem Eigentümer nicht.
+  *Grenze:* Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): „Hypothese (abgeleitet, nicht geprüft)“ im Text; ob das Etikett im Zielbild so heißen soll, ist eine Frage an den Eigentümer.
 
 ### Nicht belegt (1)
 

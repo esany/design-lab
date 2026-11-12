@@ -369,6 +369,27 @@
         }
       ],
       "notiz": "Vom Eigentümer bemerkt (f65). Vorschlag im Zielbild, Punkt „Farbe zeigt nur, was du tun musst“."
+    },
+    {
+      "id": "arbeitsweise-a45",
+      "aussage": "In einer Warumkette hat die KI Symptom und Ursache vertauscht: Das Erleben der Nutzerin (Ergebnisse halten nicht) stand als letzte Folge am Ende, statt als erstes Warum, von dem die Kette über die Ursachen zur Erkenntnislücke führt.",
+      "status": "abgeleitet",
+      "seit": "2026-11-12",
+      "notiz": "Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): Eine Warumkette beginnt beim Erleben des Menschen; der Intent antwortet erst auf die Lücke."
+    },
+    {
+      "id": "arbeitsweise-a46",
+      "aussage": "Die KI hat die Herkunft von Kontextinformationen nur gesammelt in einer aufklappbaren Grundlage genannt, nicht am Satz; der Eigentümer verlangt sie an jeder Kontextinformation, auch als kurzes Zitat.",
+      "status": "abgeleitet",
+      "seit": "2026-11-12",
+      "notiz": "Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): Fundstelle und Zitat unter 15 Wörtern direkt am Satz."
+    },
+    {
+      "id": "arbeitsweise-a47",
+      "aussage": "Die KI hat abgeleitete Aussagen nicht deutlich als Hypothese von Belegtem und von Befunden unterschieden; das Etikett „Ableitung“ reichte dem Eigentümer nicht.",
+      "status": "abgeleitet",
+      "seit": "2026-11-12",
+      "notiz": "Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): „Hypothese (abgeleitet, nicht geprüft)“ im Text; ob das Etikett im Zielbild so heißen soll, ist eine Frage an den Eigentümer."
     }
   ],
   "fragen": [
