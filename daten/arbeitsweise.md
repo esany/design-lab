@@ -63,7 +63,7 @@
   *Beleg:* `leitfaden/zielbild/vorlage.html`, Stilangaben .chip.bestaetigt, .fest-mark, .punkt.wandel-an, .chip.befund
   *Grenze:* Vom Eigentümer bemerkt (f65). Vorschlag im Zielbild, Punkt „Farbe zeigt nur, was du tun musst“.
 
-### Abgeleitet (26)
+### Abgeleitet (28)
 
 - **arbeitsweise-a01** Fortschritt kommt in der Arbeit mit der KI als Text zurück, nicht als etwas zum Ansehen oder Ausprobieren; der Gestalter sieht deshalb nicht, ob Strukturen tragen.
 - **arbeitsweise-a06** Wurzel des Problems: Im Entwurf antwortet das Material, in der Arbeit mit der KI nur Text; der Gestalter ersetzt sein Urteil durch Regeln.
@@ -113,6 +113,10 @@
   *Grenze:* Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): Wirkung systemisch beschreiben, je Frage über alle Ebenen der Vermittlung.
 - **arbeitsweise-a50** Die KI hat Wege zum Austausch zwischen Umgebungen vorgeschlagen, ohne zu sagen, wer was tut und wo der Stand liegt; der Eigentümer verstand den Vorschlag nicht.
   *Grenze:* Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): Bei jeder Arbeitsteilung zuerst Rollen und den einen Ort des Stands nennen.
+- **arbeitsweise-a51** Die KI hat in Fragen an einen Kunden ein mehrdeutiges Wort benutzt („Bild“: Aufnahme oder Diagramm?), obwohl sie zuvor selbst die Trennung von Domäne und Darstellung eingeführt hatte.
+  *Grenze:* Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): In Fragen und Befunden jedes Wort festlegen, das in Domäne und Darstellung Verschiedenes meinen kann.
+- **arbeitsweise-a52** Die KI hat die Vermittlung einer Anwendung bewertet, bevor sie dem Eigentümer gezeigt hat, welche Funktionen es überhaupt gibt; ihm fehlte die Grundlage, das Urteil zu prüfen.
+  *Grenze:* Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): Erst ein Inventar des Vorhandenen mit Herkunft, dann Wahrnehmbarkeit, dann Nutzen, dann Urteil.
 
 ### Nicht belegt (1)
 
