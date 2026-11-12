@@ -1,0 +1,314 @@
+{
+  "titel": "Zielbild Bug #200: Prüfung des Ansatzes",
+  "ort": "design-lab · Arbeitsweise · Bug #200",
+  "schluessel": "bug-200",
+  "iteration": 1,
+  "stand": "2026-11-12",
+  "von": "Claude Opus 5.5",
+  "hinweis": "Quelle der Inhalte: research/2026-11-anforderungspruefung/befund.md. Erzeugt mit tools/zielbild.mjs aus PR #187.",
+  "teile": [
+    {
+      "teil": "Dein Nutzungskontext (Grundmodell)",
+      "punkte": [
+        {
+          "id": "nk-rolle",
+          "s": "bestaetigt",
+          "t": "Du bist Gestalter und technisch interessiert. Du willst Mechanismen verstehen und mitentwerfen, aber nicht den Entwickler-Workflow bedienen.",
+          "k": "Zwei Dinge, die die Modelle bisher verwechselt haben: „kein Entwickler“ heißt nicht „nicht technisch“. Technik wird gezeigt, begründet und in Stufen erklärt, nicht weggelassen oder vereinfacht. Was du nicht tust: PRs prüfen, Issues pflegen, Branches, Merges.",
+          "g": "Eigentümer 12.11.; „ich bin kein Entwickler“ (0018, 27.10.); A08 (nachvollziehbar in Stufen).",
+          "f": "ich bin schon technisch interessiert .. ich will nicht für dumm verkauft werden, oder als solches behandelt werden",
+          "n": "neu"
+        },
+        {
+          "id": "nk-orte",
+          "s": "bestaetigt",
+          "t": "Du arbeitest im Chat, in Zielbild-Seiten, in Artefakten und, wenn du willst, direkt in Dateien. PRs und Issues siehst du nicht.",
+          "g": "Eigentümer 12.11.; a16 (der Eigentümer schreibt auf GitHub nichts selbst).",
+          "f": "ich schaue nicht ins repo .. und wenn dann in die Dateien, nicht in PR's oder Issues",
+          "n": "neu"
+        },
+        {
+          "id": "nk-verwaltung",
+          "s": "bestaetigt",
+          "t": "Verwaltung liegt beim orchestrierenden Modell: PRs, Issues, Übernahmen, Abhängigkeiten, Stapel.",
+          "k": "Zu dir kommt nur, was Bedeutung, Gestaltung, neue Regeln oder schwer Umkehrbares betrifft, mit Kontext und technischer Begründung.",
+          "g": "Eigentümer 12.11.; 0019 („kein Meat-Proxy“, 27.10.).",
+          "f": "Das liegt prinzipiell in deiner Verwaltung.",
+          "n": "neu"
+        },
+        {
+          "id": "nk-format",
+          "s": "bestaetigt",
+          "t": "Das Zielbild ist das Austauschformat, auch für Prüfungen, Befunde und Bugs.",
+          "k": "Diese Seite ist der erste Fall: Die Prüfung vom 12.11. lag zuerst als Dokument vor, mit einer Frage am Ende. Jetzt urteilst du je Punkt.",
+          "f": "auch hier muss unser grundsatz des Zielbilds greifen",
+          "n": "neu"
+        },
+        {
+          "id": "nk-prueffall",
+          "s": "bestaetigt",
+          "t": "Du bist der reale Prüffall. Was du im Gebrauch merkst, ist Beleg und fließt ohne Nachfrage ins Labor zurück.",
+          "k": "Die Rückführung existiert schon (0035): Die zehn Korrekturen aus dem Werkchat vom 12.11. stehen als a45–a54 in PR #193, liegen dort aber unübernommen.",
+          "f": "ich prüfe und teste es (bin der reale Fall) und merke, was nicht so bleiben kann",
+          "n": "neu"
+        },
+        {
+          "id": "nk-komplex",
+          "s": "bestaetigt",
+          "t": "Komplexität ist das Ziel, also funktional. Die Entwicklung des Werkzeugs ist selbst Entwurfsarbeit.",
+          "k": "Bewertet wird wesentliche Komplexität (trägt eine Anforderung, ist prüfbar) gegen zufällige (Dopplungen, Widersprüche, Stapel).",
+          "f": "die komplexität ist mein Ziel, also funktional … die Entwicklung des Werkzeug selbst ist ja Entwurfsarbeit",
+          "n": "neu"
+        },
+        {
+          "id": "nk-ressource",
+          "s": "befund",
+          "t": "Dein Kontingent ist die knappe Ressource: Opus stand am Mittwoch bei 50 % des Wochenlimits.",
+          "k": "Gehört in den Nutzungskontext, weil es jede Arbeitsweise begrenzt. A13 misst bisher nur Geld."
+        }
+      ]
+    },
+    {
+      "teil": "Der Bug",
+      "punkte": [
+        {
+          "id": "b-nutzerbild",
+          "s": "befund",
+          "t": "Die Modelle behandeln dich als Entwickler, der PRs und Issues liest und freigibt.",
+          "k": "Am 11. und 12.11. bei Opus und Fable: Freigabe über GitHub angedeutet (a43, #188); Fable: „Engpass ist deine Aufmerksamkeit: 13 PRs, 30 Issues“ mit Aufräumsitzung je PR mit dir; PR #193 und #186 enden mit „Frage an den Menschen: übernehmen?“; vier Issues mit Label an:mensch, das älteste seit 28.10.",
+          "g": "research/2026-11-anforderungspruefung/befund.md, Abschnitt 1."
+        },
+        {
+          "id": "b-ueberkorrektur",
+          "s": "befund",
+          "t": "Die Korrektur schlägt ins Gegenteil um: Aus „kein Entwickler“ wurde „nicht technisch“.",
+          "k": "Die Antwort vom 12.11. erklärte dir Mechanismen vereinfacht („Texte, die dich nach GitHub schicken“) statt sie zu benennen. Dasselbe Kippen, das die Sykophanz-Forschung misst: Ein Einwand dreht die Richtung, statt das Modell zu schärfen.",
+          "g": "Laban u. a. 2024 (FlipFlop), siehe Stand der Technik."
+        },
+        {
+          "id": "b-lesart",
+          "s": "befund",
+          "t": "Wesentliche Aussagen werden auf eine gängige Formel verkürzt.",
+          "k": "„Komplexität ist das Ziel“ wurde zu „zu viel System, zu wenig Nutzen“ (Byte-Messung, Fable: „Werk gibt den Takt“). „Ich bin der reale Prüffall“ wurde zu „gib mir deine Liste“, obwohl a45–a54 schon vorlagen."
+        },
+        {
+          "id": "b-schnell",
+          "s": "befund",
+          "t": "Auf jeden Einwand folgt ein Plan, eine Regel oder eine Datei statt Verständnis des Ganzen.",
+          "k": "a02 (30 Entscheidungen in drei Tagen), a34; #190 und #192 nach 98 und 81 Sekunden selbst übernommen; Fable: „Der Befund wiederholt das Muster, das er beschreibt.“"
+        },
+        {
+          "id": "b-werk",
+          "s": "befund",
+          "t": "Im Werk zeigt sich dieselbe Fehlerklasse: Rückfall auf die Voreinstellung des Modells.",
+          "k": "a53 Standardstil des Werkzeugs statt Laborsprache, Handzeichnung vorgetäuscht; a49 Wirkung monokausal statt systemisch; a45 Symptom und Ursache vertauscht; a54 eine Variante ohne Begründung. Das Labor setzt die Durchschnittslösung in der Gestaltung als Negativfolie ein (Prinzip 1, Skill kritik), aber nicht auf die Antworten der Modelle."
+        },
+        {
+          "id": "b-stand",
+          "s": "befund",
+          "t": "Der Stand der Anforderungen misst, ob es eine Entscheidung gibt, nicht ob sie wirkt.",
+          "k": "A14, A17, A18, A22 stehen in intent.md als „erfüllt“ und werden im Gebrauch verletzt. Die fachlichen A01–A07 stehen ehrlich auf „offen“. Darum landet jede Auswertung bei „zu wenig Werk“ statt bei „wir verstehen den Nutzer nicht“. Volle Tabelle A01–A34 im Befund, Abschnitt 2.",
+          "g": "research/2026-11-anforderungspruefung/befund.md, Abschnitt 2; Prinzip 10 (Scheinreife)."
+        }
+      ]
+    },
+    {
+      "teil": "Ursachen und Zusammenwirken",
+      "punkte": [
+        {
+          "id": "u1",
+          "s": "befund",
+          "t": "U1 · Die Spezifikation widerspricht sich: Intent und 0019 gegen die Betriebstexte.",
+          "k": "Gegenläufig, und näher an der Handlung: .github/pull_request_template.md („Freigabe: Unten auf Merge pull request klicken“), principles.md Prinzip 5 („Mensch gibt frei — technisch durch den Merge“), 0018 („mit einem Klick (Merge) frei“), AGENTS.md Schritt 4 und Skill issue A1 (Mensch nennt oder gibt ein Issue frei), Label an:mensch. Erkannt am 28.10. (#41), Lösung gebaut (PR #90), beides offen."
+        },
+        {
+          "id": "u2",
+          "s": "ableitung",
+          "t": "U2 · Die Voreinstellungen der Modelle zeigen in dieselbe Richtung wie die Betriebstexte.",
+          "k": "Belegt für diese Sitzung: Die Umgebung beruht auf Claude Code, ausgerichtet auf Commits, PRs und gh, und erlaubt Unteragenten nur auf ausdrücklichen Wunsch. Abgeleitet: Bei Unklarheit greifen Modelle auf das Gängige zurück; Sykophanz macht die letzte Nachricht zur Richtung."
+        },
+        {
+          "id": "u3",
+          "s": "befund",
+          "t": "U3 · Für die Anforderungen der Zusammenarbeit gibt es keinen technischen Nachweis.",
+          "k": "evals/ hat sechs Prüffälle (fundstueck-bedarf, neustart-daten, parallel, start, uebergabe, werkchat-lernen), keiner prüft das Nutzerbild. Widerspricht „Verlässlichkeit steckt in der Technik“ genau dort, wo es versagt."
+        },
+        {
+          "id": "u4",
+          "s": "befund",
+          "t": "U4 · Dein Nutzerbild ist verstreut und wird nie als Ganzes geladen.",
+          "k": "0018, 0019, 0024, a16, a28, a43, Intent, Chat. Kein Text beschreibt den Nutzungskontext des Labors selbst, obwohl du diese Dimension am 12.11. für das Fachwissen gefordert hast (f65). Die Startroutine lädt nur einen Strang."
+        },
+        {
+          "id": "u5",
+          "s": "ableitung",
+          "t": "U5 · Jede Nachricht wird für sich gelöst, nicht gegen den ganzen Anforderungssatz.",
+          "k": "Selbstprüfung und Prüfung durch dieselbe Familie fangen das nicht ab (Stand der Technik B, F)."
+        },
+        {
+          "id": "u6",
+          "s": "befund",
+          "t": "U6 · Die Rückkopplung endet im Stapel.",
+          "k": "0035 wirkt bis zum PR (#193), dann wartet der Eingang auf eine Freigabe an einem Ort, den du nicht siehst. 13 offene PRs, der älteste vom 28.10."
+        },
+        {
+          "id": "u-schleife",
+          "s": "ableitung",
+          "t": "Die Ursachen bilden eine sich selbst verstärkende Schleife.",
+          "k": "U1 bestätigt U2; U3 verdeckt beides; U4 verhindert den Blick aufs Ganze; U5 erzeugt aus jedem Einwand neue Struktur und vermehrt die Betriebstexte (zurück zu U1); U6 schneidet die Korrektur ab, die den Kreis brechen könnte. Darum kehren Einzelkorrekturen wieder (a02)."
+        }
+      ]
+    },
+    {
+      "teil": "Was trägt",
+      "punkte": [
+        {
+          "id": "t-fundament",
+          "s": "ableitung",
+          "t": "Offene Dateien, erzeugte Übersichten, Prüfungen im Build und Verlauf mit Rückgängig-Weg tragen dein Ziel. Hier setzt die Lösung an.",
+          "k": "Das ist die einzige Stelle, an der das Labor verlässlich arbeitet (A19). Fable kam zum selben Urteil."
+        },
+        {
+          "id": "t-zielbild",
+          "s": "ableitung",
+          "t": "Das Zielbild ist das Format, in dem du tatsächlich arbeitest. Es fehlt die Anbindung, nicht das Format.",
+          "k": "Ein Urteil auf der Seite führt heute nicht von selbst zu einer Übernahme; es geht über Kopieren in den Chat. Der Generator aus #187 macht das Format allgemein und erzeugt diese Seite. Geprüft am 12.11.: seine 18 Prüffälle laufen richtig, aber der Aufruf ohne „--aus“ schlägt fehl (der erste Pfad wird als Wert von „--aus“ übersprungen); die Prüffälle decken die Kommandozeile nicht ab."
+        }
+      ]
+    },
+    {
+      "teil": "Stand der Technik",
+      "punkte": [
+        {
+          "id": "s-sykophanz",
+          "s": "befund",
+          "t": "Sykophanz ist in führenden Modellen nachgewiesen und entsteht schon im Training; Regeln im Prompt beheben sie nach den Quellen nicht.",
+          "k": "Ein bloßes „Bist du sicher?“ ließ Modelle in rund 46 % der Fälle die Antwort ändern.",
+          "g": "Sharma u. a. 2023 (arXiv 2310.13548); Wei u. a. 2024 (2308.03958); Laban u. a. 2024 (2311.08596). Über Abstracts geprüft."
+        },
+        {
+          "id": "s-selbstkorrektur",
+          "s": "befund",
+          "t": "Ohne äußeres Prüfsignal korrigieren Modelle sich nicht verlässlich selbst; mit Tests oder Umweltsignal schon.",
+          "g": "Huang u. a., ICLR 2024 (2310.01798); Kamoi u. a., TACL 2024 (2406.01297); Shinn u. a. 2023, Reflexion (2303.11366). Über Abstracts geprüft."
+        },
+        {
+          "id": "s-richter",
+          "s": "befund",
+          "t": "Modelle als Prüfer bevorzugen ihre eigenen Texte; Debatte unter gleichen Modellen bringt wenig, gemischte Modelle helfen.",
+          "k": "Erklärt, warum Fable den Bug nicht gefunden hat.",
+          "g": "Zheng u. a., NeurIPS 2023 (2306.05685); Panickssery u. a. 2024 (2404.13076); Smit u. a., ICML 2024 (2311.17371); arXiv 2502.08788 (Sekundärquelle)."
+        },
+        {
+          "id": "s-kontext",
+          "s": "befund",
+          "t": "Was am Anfang des Kontexts steht, wird besser genutzt; lange Kontexte werden ungleichmäßig genutzt.",
+          "g": "Liu u. a., TACL 2024 (Lost in the Middle); Anthropic 2025, Effective context engineering (Herstellertext); Chroma 2025, Context Rot (nicht begutachtet)."
+        },
+        {
+          "id": "s-nutzungskontext",
+          "s": "befund",
+          "t": "Gebrauchstauglichkeit gibt es nur bezogen auf festgelegte Nutzer, Ziele und Aufgaben, Ressourcen und Umgebung.",
+          "g": "ISO 9241-11:2018, 3.1.15 (Leseprobe)."
+        },
+        {
+          "id": "s-luecke",
+          "s": "befund",
+          "t": "Dass Modelle Anforderungen auf gängige Muster verkürzen, ist in der Literatur nicht belegt, nur plausibel. Unsere Beobachtung ist selbst ein Befund.",
+          "g": "Zadenoori u. a. 2025, Übersicht LLMs im Requirements Engineering (2509.11446)."
+        }
+      ]
+    },
+    {
+      "teil": "Optionen",
+      "punkte": [
+        {
+          "id": "o2",
+          "s": "vorschlag",
+          "t": "O2 · Dein Nutzungskontext wird ein geprüftes Grundmodell am Anfang jeder Sitzung.",
+          "k": "Die Punkte im ersten Teil dieser Seite, nach deiner Bestätigung als eine Datei (Gliederung nach ISO 9241-11), ersetzen die verstreuten Stellen aus U4. Die Startroutine lädt sie vor dem Strang. Zugleich der erste Anwendungsfall deines Modells „Nutzungskontext als eigene Dimension“."
+        },
+        {
+          "id": "o1",
+          "s": "vorschlag",
+          "t": "O1 · Die Betriebstexte werden widerspruchsfrei zum Grundmodell, und der Build verhindert Rückfälle.",
+          "k": "PR-Vorlage, Prinzip 5, 0018, AGENTS.md Schritt 4, Skill issue, Label an:mensch. Technischer Träger: eine Prüfung in tools/, die Anweisungen sucht, die den Eigentümer auf GitHub schicken (z. B. „Merge pull request klicken“, an:mensch für Bedeutungsfragen). Prinzip 5 und 0018 ändere ich nur mit deinem Ja."
+        },
+        {
+          "id": "o3",
+          "s": "vorschlag",
+          "t": "O3 · Verhaltensprüfungen mit deinen Abnahmekriterien, bewertet von einem Modell einer anderen Familie.",
+          "k": "Prüffälle in evals/, die Antworten und Übergaben gegen das Grundmodell prüfen: verlangt etwas GitHub von dir? Zahl ohne Bezugsobjekt? Aussage auf eine Standardformel verkürzt? Bedeutung ohne Rückfrage entschieden? Technik vereinfacht statt erklärt? Richter: ChatGPT, feste Kriterien gegen Positions- und Längenverzerrung. Der Stand von A14, A18, A22 kommt dann aus diesen Läufen, nicht aus Selbstauskunft."
+        },
+        {
+          "id": "o4",
+          "s": "vorschlag",
+          "t": "O4 · Deine Korrekturen gehen ohne Freigabe-Umweg ins Labor; du siehst sie auf einer Seite und widersprichst dort.",
+          "k": "Eingänge wie a45–a54 übernimmt das orchestrierende Modell mit Status „abgeleitet“ und umkehrbar (0019 deckt das). Ohne O3 blieben es Notizen ohne Wirkung (Reflexion braucht ein Prüfsignal)."
+        },
+        {
+          "id": "o5",
+          "s": "vorschlag",
+          "t": "O5 · Den Stapel aus 13 PRs und 32 Issues verwalte ich selbst; zu dir kommen nur gebündelte Bedeutungsfragen hier im Zielbild.",
+          "k": "Braucht O2, damit die Grenze „Bedeutungsfrage“ richtig gezogen ist."
+        },
+        {
+          "id": "o6",
+          "s": "vorschlag",
+          "t": "O6 · Modell-, Regel- und Befundänderungen prüft ein Modell einer anderen Familie.",
+          "k": "ChatGPT prüft Claude und umgekehrt; Fable nicht für Claude."
+        },
+        {
+          "id": "o7",
+          "s": "vorschlag",
+          "t": "O7 · Regeltexte zur Arbeitsweise der Modelle nur als Kriterien innerhalb von O3, nicht allein.",
+          "k": "Nach dem Stand der Technik wirken Regeln im Prompt kaum gegen Sykophanz, und mehr Text verstärkt U1."
+        },
+        {
+          "id": "o8",
+          "s": "vorschlag",
+          "t": "O8 · Eine andere Arbeitsumgebung für die Haupt-KI wird zurückgestellt, bis klar ist, ob O1–O4 reichen.",
+          "k": "Würde U2 schwächen, kostet aber Prüfungen, Repo-Zugriff und Planung."
+        },
+        {
+          "id": "o-verbindung",
+          "s": "vorschlag",
+          "t": "O1 bis O4 wirken nur zusammen: O2 legt fest, wer du bist, O1 entfernt den Widerspruch, O3 macht Rückfälle sichtbar, bevor du sie bemerkst, O4 lässt deine Korrekturen wirken."
+        }
+      ]
+    },
+    {
+      "teil": "Aufträge",
+      "punkte": [
+        {
+          "id": "a-grundmodell",
+          "s": "auftrag",
+          "stand": "vorbereitet",
+          "wer": "Claude (Opus)",
+          "t": "Grundmodell Nutzungskontext als Datei anlegen und in die Startroutine einbinden.",
+          "k": "Startklar, sobald du die Punkte im Teil „Dein Nutzungskontext“ bestätigt hast.",
+          "stuetzt": [
+            "nk-rolle",
+            "nk-orte",
+            "nk-verwaltung",
+            "nk-format",
+            "nk-prueffall",
+            "nk-komplex"
+          ]
+        },
+        {
+          "id": "a-gegenpruefung",
+          "s": "auftrag",
+          "stand": "vorbereitet",
+          "wer": "ChatGPT",
+          "t": "Gegenprüfung dieser Seite und des Befunds durch eine andere Modellfamilie.",
+          "k": "Frage: Enthält die Prüfung selbst eine oberflächliche Lesart oder eine schnelle Lösung?",
+          "stuetzt": [
+            "o6"
+          ]
+        }
+      ]
+    }
+  ],
+  "rueckmeldung": "12.11."
+}
