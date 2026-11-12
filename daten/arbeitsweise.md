@@ -63,7 +63,7 @@
   *Beleg:* `leitfaden/zielbild/vorlage.html`, Stilangaben .chip.bestaetigt, .fest-mark, .punkt.wandel-an, .chip.befund
   *Grenze:* Vom Eigentümer bemerkt (f65). Vorschlag im Zielbild, Punkt „Farbe zeigt nur, was du tun musst“.
 
-### Abgeleitet (29)
+### Abgeleitet (30)
 
 - **arbeitsweise-a01** Fortschritt kommt in der Arbeit mit der KI als Text zurück, nicht als etwas zum Ansehen oder Ausprobieren; der Gestalter sieht deshalb nicht, ob Strukturen tragen.
 - **arbeitsweise-a06** Wurzel des Problems: Im Entwurf antwortet das Material, in der Arbeit mit der KI nur Text; der Gestalter ersetzt sein Urteil durch Regeln.
@@ -119,6 +119,8 @@
   *Grenze:* Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): Erst ein Inventar des Vorhandenen mit Herkunft, dann Wahrnehmbarkeit, dann Nutzen, dann Urteil.
 - **arbeitsweise-a53** Die KI hat eine Skizze im Chat im Standardstil ihres Werkzeugs gezeichnet und eine Handzeichnung mit schiefen Ecken vorgetäuscht, statt die visuelle Sprache des Labors zu übernehmen, die im Zielbild schon vorlag; der Eigentümer nennt das einen Bug.
   *Grenze:* Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Verwandt mit a44 (Farben ohne Begründung). Gegenmittel (Vorschlag): Jede Darstellung, auch eine schnelle im Chat, nimmt Farben, Schriften und Linien aus system/tokens; Gestaltung dient und tritt zurück; nichts vortäuschen, was das Medium nicht ist.
+- **arbeitsweise-a54** Die KI hat eine Gliederung als Skizze ausgegeben, nur eine Variante gezeigt und nicht gesagt, worauf ihr Vorschlag beruht.
+  *Grenze:* Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): Eine erste Skizze prüft eine Entwurfsfrage (z. B. das Ordnungsprinzip) in mehreren echten Varianten; die Begründung jeder Variante und die Kriterien der Wahl sind aufklappbar dabei. Befund: research/2026-11-skizze-varianten/befund.md.
 
 ### Nicht belegt (1)
 
