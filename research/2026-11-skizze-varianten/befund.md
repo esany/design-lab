@@ -46,6 +46,9 @@ Status je Aussage: **belegt** (Fundstelle) · **abgeleitet** (Vorschlag von Clau
 6. **Gegen Fixierung:** Wenn eine KI Varianten erzeugt, müssen sie sich im Prinzip unterscheiden;
    die KI sagt, welche sie selbst für naheliegend hält, damit der Mensch dagegen prüfen kann.
 7. **Darstellung in der visuellen Sprache des Labors** (Tokens), ohne vorgetäuschte Handzeichnung.
+8. **Neutrale Begründung als Übergabe** an KI und Entwicklung: Ihre Herkunft nennt von Anfang an
+   nur externe Primärquellen, unabhängig von Repos und internen Verweisen (Anforderung des
+   Eigentümers, 12.11.), damit sie sich ohne Bereinigung weitergeben lässt.
 
 ## Offen
 
