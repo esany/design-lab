@@ -63,7 +63,7 @@
   *Beleg:* `leitfaden/zielbild/vorlage.html`, Stilangaben .chip.bestaetigt, .fest-mark, .punkt.wandel-an, .chip.befund
   *Grenze:* Vom Eigentümer bemerkt (f65). Vorschlag im Zielbild, Punkt „Farbe zeigt nur, was du tun musst“.
 
-### Abgeleitet (23)
+### Abgeleitet (26)
 
 - **arbeitsweise-a01** Fortschritt kommt in der Arbeit mit der KI als Text zurück, nicht als etwas zum Ansehen oder Ausprobieren; der Gestalter sieht deshalb nicht, ob Strukturen tragen.
 - **arbeitsweise-a06** Wurzel des Problems: Im Entwurf antwortet das Material, in der Arbeit mit der KI nur Text; der Gestalter ersetzt sein Urteil durch Regeln.
@@ -107,6 +107,12 @@
   *Grenze:* Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): Fundstelle und Zitat unter 15 Wörtern direkt am Satz.
 - **arbeitsweise-a47** Die KI hat abgeleitete Aussagen nicht deutlich als Hypothese von Belegtem und von Befunden unterschieden; das Etikett „Ableitung“ reichte dem Eigentümer nicht.
   *Grenze:* Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): „Hypothese (abgeleitet, nicht geprüft)“ im Text; ob das Etikett im Zielbild so heißen soll, ist eine Frage an den Eigentümer.
+- **arbeitsweise-a48** Die KI hat Angaben, die der Eigentümer nebenbei im Chat machte und die hochsensibel sind, wörtlich in Werkdateien und in eine veröffentlichte Seite übernommen; er musste es selbst bemerken.
+  *Grenze:* Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Im öffentlichen Labor stand nichts davon (geprüft: Dateien, Verlauf, offene PRs, Issues). Gegenmittel (Vorschlag): Vor jedem Schreiben aus einem Chat prüfen, ob eine Angabe das Umfeld des Eigentümers betrifft; im Zweifel auslassen und fragen.
+- **arbeitsweise-a49** Die KI hat eine Wirkung monokausal dargestellt (je Frage eine Kachel), obwohl Vermittlung im Zusammenspiel von Struktur, Interaktion, Visualisierung, Farbe, Text und Lesesituation entsteht.
+  *Grenze:* Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): Wirkung systemisch beschreiben, je Frage über alle Ebenen der Vermittlung.
+- **arbeitsweise-a50** Die KI hat Wege zum Austausch zwischen Umgebungen vorgeschlagen, ohne zu sagen, wer was tut und wo der Stand liegt; der Eigentümer verstand den Vorschlag nicht.
+  *Grenze:* Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): Bei jeder Arbeitsteilung zuerst Rollen und den einen Ort des Stands nennen.
 
 ### Nicht belegt (1)
 

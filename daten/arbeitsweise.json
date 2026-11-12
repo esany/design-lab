@@ -390,6 +390,27 @@
       "status": "abgeleitet",
       "seit": "2026-11-12",
       "notiz": "Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): „Hypothese (abgeleitet, nicht geprüft)“ im Text; ob das Etikett im Zielbild so heißen soll, ist eine Frage an den Eigentümer."
+    },
+    {
+      "id": "arbeitsweise-a48",
+      "aussage": "Die KI hat Angaben, die der Eigentümer nebenbei im Chat machte und die hochsensibel sind, wörtlich in Werkdateien und in eine veröffentlichte Seite übernommen; er musste es selbst bemerken.",
+      "status": "abgeleitet",
+      "seit": "2026-11-12",
+      "notiz": "Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Im öffentlichen Labor stand nichts davon (geprüft: Dateien, Verlauf, offene PRs, Issues). Gegenmittel (Vorschlag): Vor jedem Schreiben aus einem Chat prüfen, ob eine Angabe das Umfeld des Eigentümers betrifft; im Zweifel auslassen und fragen."
+    },
+    {
+      "id": "arbeitsweise-a49",
+      "aussage": "Die KI hat eine Wirkung monokausal dargestellt (je Frage eine Kachel), obwohl Vermittlung im Zusammenspiel von Struktur, Interaktion, Visualisierung, Farbe, Text und Lesesituation entsteht.",
+      "status": "abgeleitet",
+      "seit": "2026-11-12",
+      "notiz": "Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): Wirkung systemisch beschreiben, je Frage über alle Ebenen der Vermittlung."
+    },
+    {
+      "id": "arbeitsweise-a50",
+      "aussage": "Die KI hat Wege zum Austausch zwischen Umgebungen vorgeschlagen, ohne zu sagen, wer was tut und wo der Stand liegt; der Eigentümer verstand den Vorschlag nicht.",
+      "status": "abgeleitet",
+      "seit": "2026-11-12",
+      "notiz": "Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): Bei jeder Arbeitsteilung zuerst Rollen und den einen Ort des Stands nennen."
     }
   ],
   "fragen": [
