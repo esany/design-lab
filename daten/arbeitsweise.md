@@ -5,7 +5,7 @@
 
 **Stand:** Prüfstand abgeschlossen (08.11.); Leitfaden (Arbeitsname Werkbuch) wird über die Seite „Zielbild Leitfaden“ (leitfaden/zielbild/) entworfen, Iteration 7 vom 12.11. mit Teil „Begriffe“ und neuem Verständnis von Fachwissen als Wirknetz; Ergebnisse von ChatGPT (#174) und Codex (#175) von Claude geprüft, warten auf Ja des Eigentümers; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
 
-**Nächster Schritt:** Umsetzen vor Neuem (Eigentümer, 13.11.). Claude arbeitet den Stapel wartender Änderungen selbst ab und bringt Betriebstexte in Einklang mit dem Grundmodell in AGENTS.md; ChatGPT prüft gegen (#203). Erst danach Iteration 3 zu Bug #200.
+**Nächster Schritt:** Umsetzen vor Neuem (Eigentümer, 13.11.). Die Gegenprüfung durch ChatGPT (#203) liegt noch nicht vor; der Eigentümer stößt ChatGPT im Chat an (Entscheidung 13.11.). Erst danach baut Claude Iteration 3 zu Bug #200.
 
 ## Offene Fragen an den Eigentümer (7)
 
