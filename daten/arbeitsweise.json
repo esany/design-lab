@@ -487,6 +487,13 @@
       "status": "abgeleitet",
       "seit": "2026-11-13",
       "notiz": "Eigentümer im Chat, 13.11., auf Claudes Vorschlag, Werk-Zielbilder als Claude-Artefakte zu veröffentlichen. Wortlaut: „Artefakte sind schlecht, auch sie kosten indirekt über Limits und liegen nicht transparent für alle, die Pflege ist ungewiss. Wir können ein kostenloses Upgrade von Git testen, Seiten sind dort enthalten“. Gilt für Zielbilder und Laborwissen; Grundmodell „Wo“ nennt Artefakte als Arbeitsort, das ist mit dieser Aussage abzugleichen."
+    },
+    {
+      "id": "arbeitsweise-a60",
+      "aussage": "ChatGPT hat denselben Zugriff auf das private Werke-Repo wie Claude; die Annahme, andere Modelle könnten ein privates Repo womöglich nicht lesen, trifft für ChatGPT nicht zu.",
+      "status": "abgeleitet",
+      "seit": "2026-11-13",
+      "notiz": "Eigentümer im Chat, 13.11., zur Frage, ob das Labor privat werden kann. Für Codex und Gemini nicht geprüft. Entscheidung des Eigentümers am selben Tag: zuerst die privaten Zielbild-Seiten am Werk einrichten und testen, das Labor danach."
     }
   ],
   "fragen": [
