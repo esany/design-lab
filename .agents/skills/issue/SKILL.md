@@ -141,7 +141,7 @@ oder `an:mensch`.
 | Label | heißt | wer setzt |
 |---|---|---|
 | `an:claude` · `an:codex` · `an:chatgpt` · `an:gemini` | freigegeben **und** umsetzungsreif für dieses Modell | Claude (E2) |
-| `an:mensch` | Frage oder Handgriff des Eigentümers | Claude oder das Modell bei der Übergabe |
+| `an:mensch` | Frage oder Handgriff des Eigentümers; Claude bringt sie in den Chat oder ins Zielbild, denn er liest GitHub nicht | Claude oder das Modell bei der Übergabe |
 | `entwurf` | Idee oder Aufgabe, noch nicht umsetzungsreif | alle |
 | `bug` | etwas lief falsch (E7) | alle |
 | `eingriff` | Eigentümer musste korrigieren: falsche Fertigmeldung, selbst verlangte Gegenprobe, gestoppte Erfindung oder erklärte maßgebliche Datei; das betroffene Modell setzt das Label und nennt den Anlass in einem Satz im Issue. | das korrigierte Modell |
@@ -152,7 +152,7 @@ Neue Labels nur bei Bedarf, mit Eintrag in dieser Tabelle. Ungenutzte werden gel
 die neuesten Kommentare, frisch geholt. Was im Text oder im Chat steht, ist älter. Jedes Issue
 fällt in genau eine Gruppe:
 1. `entwurf`: nicht freigegeben.
-2. `an:mensch`: Der Eigentümer entscheidet oder handelt.
+2. `an:mensch`: Der Eigentümer entscheidet oder handelt, nachdem Claude die Frage in den Chat oder ins Zielbild gebracht hat.
 3. `an:<modell>`: freigegeben und zugewiesen; begonnen wird erst auf Auftrag.
 4. ohne `an:`-Label und ohne `entwurf`: Zuständigkeit ungeklärt.
 
