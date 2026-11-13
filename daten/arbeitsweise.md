@@ -63,7 +63,7 @@
   *Beleg:* `leitfaden/zielbild/vorlage.html`, Stilangaben .chip.bestaetigt, .fest-mark, .punkt.wandel-an, .chip.befund
   *Grenze:* Vom Eigentümer bemerkt (f65). Vorschlag im Zielbild, Punkt „Farbe zeigt nur, was du tun musst“.
 
-### Abgeleitet (30)
+### Abgeleitet (31)
 
 - **arbeitsweise-a01** Fortschritt kommt in der Arbeit mit der KI als Text zurück, nicht als etwas zum Ansehen oder Ausprobieren; der Gestalter sieht deshalb nicht, ob Strukturen tragen.
 - **arbeitsweise-a06** Wurzel des Problems: Im Entwurf antwortet das Material, in der Arbeit mit der KI nur Text; der Gestalter ersetzt sein Urteil durch Regeln.
@@ -99,6 +99,8 @@
   *Grenze:* Einmal beobachtet (Claude, 11.11.). Vom Eigentümer als schwerer Fehler benannt. Vorschlag zur Abhilfe: decisions/0035.
 - **arbeitsweise-a34** In einer frühen Entwurfsphase erzeugte die KI Dateien, einen Generator und acht Pull Requests, statt im Gespräch Lesart und Format zu klären; das Ergebnis wurde verworfen, die Kosten waren hoch.
   *Grenze:* Einmal beobachtet (Claude, 11.11.). Prinzipien 9 und 11; Eigentümer: der Chat sei richtig teuer.
+- **arbeitsweise-a35** Beauftragt, einen Ansatz mit dem Eigentümer im Gespräch zu klären, gab die KI Einwände und eine offene Frage nach Werkzeug und Arbeitsweise zurück statt eines eigenen, begründeten Vorschlags; der Eigentümer musste den Vorschlag ausdrücklich einfordern.
+  *Grenze:* Einmal beobachtet (Claude, Werkchat 11.11.; privat in esany/werke). Pendel wie a31: nach der Korrektur ‚gebaut vor Klärung‘ (a34) zu weit ins Fragen. Gegenmittel: Klären heißt einen Vorschlag mit Standardwahl vorlegen, Einwände eingearbeitet, Anforderungen abgeglichen; fragen nur, was nur der Eigentümer weiß (a28, k-zweck). Übernommen 13.11. (Claude) aus #186; „fachfremd“ gestrichen, weil es das falsche Nutzerbild aus Bug #200 wiederholt.
 - **arbeitsweise-a43** Die KI meldete dem Eigentümer das Ergebnis einer Prüfung mit Zahlen und Kürzeln ohne ihr Bezugsobjekt („24 Einträge“ ohne „der Seite ‚Mit KI arbeiten‘“) und deutete an, er müsse zum Freigeben auf GitHub; er konnte den Bericht nicht nachvollziehen.
   *Grenze:* Einmal beobachtet (Claude, Leitfaden-Chat, 11./12.11.), Bug #188. Gleiches Muster wie a28 (Struktur statt Bedeutung, Nummern statt Namen).
 - **arbeitsweise-a45** In einer Warumkette hat die KI Symptom und Ursache vertauscht: Das Erleben der Nutzerin (Ergebnisse halten nicht) stand als letzte Folge am Ende, statt als erstes Warum, von dem die Kette über die Ursachen zur Erkenntnislücke führt.
