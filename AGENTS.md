@@ -21,7 +21,7 @@ Vom Eigentümer am 12.11.2026 Punkt für Punkt bestätigt; „Umsetzen vor Neuem
 1. Repo-Zugang herstellen; falls weder Zugang noch die öffentliche [Übersicht](https://github.com/esany/design-lab/blob/main/stand.md) möglich ist: sagen und aufhören, nicht raten.
 2. `stand.md`, Abschnitt „Themen“ lesen. Bei genanntem Thema dessen Merkzettel in `anschluss/` lesen; ohne Thema die aktiven Themen kurz nennen und fragen, welches gemeint ist.
 3. Stand und nächsten Schritt mit Zuständigkeit in höchstens zwei Sätzen nennen. Ein ausdrücklicher Auftrag im Chat gilt bereits als Auftrag: danach ausführen; ohne Auftrag warten.
-4. Bei einem Issue: Mensch muss es freigeben, Label muss zum Werkzeug passen; fremdes Label und `an:mensch` nicht bearbeiten. Claude verteilt Issues. Details: [Issue-Arbeit](.agents/skills/issue/SKILL.md).
+4. Bei einem Issue: Der Eigentümer gibt es im Chat oder im Zielbild frei, nie auf GitHub; das Label muss zum Werkzeug passen; fremdes Label und `an:mensch` nicht bearbeiten. Claude verteilt Issues. Details: [Issue-Arbeit](.agents/skills/issue/SKILL.md).
 5. Zum Ende den eigenen Themen-Merkzettel fortschreiben; der Kopf erzeugt die Übersicht. Fremde Merkzettel nicht ändern.
 
 ## Immer, ohne Ausnahme
