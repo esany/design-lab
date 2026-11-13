@@ -2,7 +2,7 @@
 thema: Wissen erschließen · Bibliothekar
 stand: Quellen aus #49 gesichert (39 Einträge, #122); Befund und Optionen liegen vor, nichts beschlossen
 naechster_schritt: Der Eigentümer beantwortet vier Fragen (Lesestand, Belegpflicht, Fachpaket, PDFs); danach setzt Claude um.
-offen: [49]
+offen: []
 ---
 
 # Thema: Wissen erschließen · der Bibliothekar
