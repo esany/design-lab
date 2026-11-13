@@ -1,0 +1,14 @@
+{
+ "zweck": "Technik-Labels des Katalogs je Fachpaket oder Methode. Status aller Zuordnungen: abgeleitet (Urteil von Claude, 2026-11-11, nicht vom Eigentümer bestätigt).",
+ "status": "abgeleitet",
+ "pakete": {
+  "fachpaket-vermitteln": ["annotation", "direct labeling", "highlight", "comparison", "uncertainty", "storytelling", "scrollytelling", "small multiples", "legend", "log scale", "minimalist", "flow & arrows"],
+  "bertin-semiologie": ["color palette", "bivariate coloring", "gradient", "texture", "small multiples", "radial", "3d", "log scale"],
+  "farbkontraste-itten": ["color palette", "bivariate coloring", "gradient"],
+  "fachpaket-form": ["typography", "full-page layout"],
+  "isotype": ["icons & pictograms", "small multiples"],
+  "visualisierungssysteme": ["dashboard", "interactive controls", "tooltip", "hover effect", "zoom & pan", "brushing", "animation", "shape morphism", "scrollytelling", "small multiples"]
+ },
+ "ohne_paket": ["climate", "economy", "environment", "infographic", "viral"],
+ "notiz": "visualisierungssysteme ist noch kein Skill (Thema mit Befund, Fachpaket offen). Themen-Labels wie climate beschreiben den Gegenstand, nicht die Gestaltung."
+}

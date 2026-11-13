@@ -1976,5 +1976,22 @@
     "notiz": "Stand der Praxis: Kennzahlen werden statistisch auf Auffälligkeiten geprüft, gerankt und per Sprachmodell als Text zusammengefasst; laut Entwicklerblog ist die direkte Übersetzung von Zahlen in korrekte Texte für Sprachmodelle schwierig, deshalb Zwischenschritt über Vorlagen. Funktion seit Tableau Cloud 2024.1 (help.tableau.com). Blog gesehen.",
     "zugang": "offen",
     "geprueft": "2026-11-10"
+  },
+  {
+    "id": "holtz-dataviz-inspiration",
+    "titel": "Dataviz Inspiration",
+    "autor": "Yan Holtz",
+    "jahr": "2022–2026",
+    "art": "Sammlung",
+    "url": "https://github.com/holtzy/dataviz-inspiration",
+    "lizenz": "CC BY 4.0 (Katalog), MIT (Code), Bilder alle Rechte bei den Urhebern",
+    "felder": [
+      "vermitteln",
+      "form"
+    ],
+    "status": "belegt",
+    "notiz": "Kuratierte Sammlung von 462 Visualisierungen von 201 Urhebern, je mit Kontext- und Gestaltungsbeschreibung, Diagrammtyp und Technik-Labels; Lizenz im Repo gesehen. Im Labor als Zielbild-Bestand übernommen (experiments/2026-11-zielbild-dataviz-inspiration).",
+    "zugang": "offen",
+    "geprueft": "2026-11-11"
   }
 ]

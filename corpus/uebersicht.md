@@ -3,7 +3,7 @@
 > Erzeugt von `node tools/build.mjs` aus `referenzen.json` und `recherche.json`. Nicht von Hand ändern.
 > Schema: [`schema.md`](schema.md).
 
-**149 Quellen** — 27 ausgewählt vom Eigentümer, 122 recherchiert vom Agenten.
+**150 Quellen** — 27 ausgewählt vom Eigentümer, 123 recherchiert vom Agenten.
 Je Feld zuerst die Verweise des Eigentümers (Ausgangspunkte, kein Kanon). Eine Quelle kann in mehreren Feldern stehen.
 
 ## vermitteln
@@ -37,6 +37,7 @@ Je Feld zuerst die Verweise des Eigentümers (Ausgangspunkte, kein Kanon). Eine 
 | `dignazio-klein-2020` | [Data Feminism](https://en.wikipedia.org/wiki/Data_Feminism) | Catherine D'Ignazio, Lauren F. Klein | 2020 | Buch | belegt | Agent | `.agents/skills/fachpaket-vermitteln/SKILL.md`, `research/2026-11-fundstueck-manovich/analyse.md`, `research/2026-11-visualisierungssysteme/befund.md` |
 | `guerra-papers-navigator-2026` | [IEEE VIS 2026 Papers Navigator](https://johnguerra.co/viz/papersNavigator/ieeevis2026/) | John Alexis Guerra Gómez | 2026 | Projekt | belegt | Agent | `anschluss/wissen.md`, `radar.md` |
 | `he-2025-narrative-fm` | [Leveraging Foundation Models for Crafting Narrative Visualization: A Survey](https://arxiv.org/abs/2401.14010) | Yi He, Ke Xu, Shixiong Cao, Yang Shi, Qing Chen, Nan Cao | 2025 | Paper | belegt | Agent | `research/2026-11-visualisierungssysteme/befund.md` |
+| `holtz-dataviz-inspiration` | [Dataviz Inspiration](https://github.com/holtzy/dataviz-inspiration) | Yan Holtz | 2022–2026 | Sammlung | belegt | Agent | `experiments/2026-11-zielbild-dataviz-inspiration/README.md` |
 | `hullman-diakopoulos-2011` | [Visualization Rhetoric: Framing Effects in Narrative Visualization](https://mucollective.northwestern.edu/project/vis-rhetoric) | Jessica Hullman, Nicholas Diakopoulos | 2011 | Paper | belegt | Agent | `research/2026-11-visualisierungssysteme/befund.md` |
 | `kosara-mackinlay-2013` | [Storytelling: The Next Step for Visualization](https://www.tableau.com/research/publications/storytelling-next-step-visualization) | Robert Kosara, Jock Mackinlay | 2013 | Artikel | belegt | Agent | `research/2026-11-visualisierungssysteme/befund.md` |
 | `legge-bigelow-2011` | [Does print size matter for reading? A review of findings from vision science and typography](https://legge.dl8.umn.edu/sites/legge.psych.umn.edu/files/2020-08/Legge%20Bigelow%202011%20Does%20size%20matter%20for%20reading%3F%20A%20review%20of%20findings%20from%20vision%20science%20and%20typography.pdf) | Gordon E. Legge, Charles A. Bigelow | 2011 | Paper | belegt | Agent | `.agents/skills/fachpaket-form/SKILL.md`, `manifest.md` |
@@ -82,6 +83,7 @@ Je Feld zuerst die Verweise des Eigentümers (Ausgangspunkte, kein Kanon). Eine 
 | `generative-gestaltung` | [Generative Gestaltung — Code-Paket p5.js](https://github.com/generative-design/Code-Package-p5.js) | Benedikt Groß, Hartmut Bohnacker, Julia Laub, Claudius Lazzeroni | — | Repo | belegt | Agent | — |
 | `hfg-archiv-ulm` | [HfG-Archiv Ulm](https://hfg-archiv.museumulm.de/en/archival-research-and-service) | Museum Ulm | — | Sammlung | belegt | Agent | — |
 | `hochuli-1987` | [Das Detail in der Typografie](https://en.wikipedia.org/wiki/Jost_Hochuli) | Jost Hochuli | 1987 | Buch | belegt | Agent | `.agents/skills/fachpaket-form/SKILL.md` |
+| `holtz-dataviz-inspiration` | [Dataviz Inspiration](https://github.com/holtzy/dataviz-inspiration) | Yan Holtz | 2022–2026 | Sammlung | belegt | Agent | `experiments/2026-11-zielbild-dataviz-inspiration/README.md` |
 | `hyphen-npm` | [hyphen — Silbentrennung nach TeX-Mustern](https://www.npmjs.com/package/hyphen) | Yevhen Tiurin | 2026 | Werkzeug | belegt | Agent | `.agents/skills/fachpaket-form/SKILL.md` |
 | `legge-bigelow-2011` | [Does print size matter for reading? A review of findings from vision science and typography](https://legge.dl8.umn.edu/sites/legge.psych.umn.edu/files/2020-08/Legge%20Bigelow%202011%20Does%20size%20matter%20for%20reading%3F%20A%20review%20of%20findings%20from%20vision%20science%20and%20typography.pdf) | Gordon E. Legge, Charles A. Bigelow | 2011 | Paper | belegt | Agent | `.agents/skills/fachpaket-form/SKILL.md`, `manifest.md` |
 | `p5js` | [p5.js](https://p5js.org/) | Processing Foundation | 2026 | Werkzeug | belegt | Agent | `.agents/skills/fachpaket-vermitteln/SKILL.md` |
