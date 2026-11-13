@@ -1,7 +1,7 @@
 ---
 thema: Entwicklung und Gebrauch · Möglichkeitsraum
-stand: Eigentümer bestätigte am 13.11. den Zwischenstand und ergänzte die Frage nach KI-Entwicklung und wiederkehrenden Fehlermustern; Abschlussbefund auf Arbeitsbranch
-naechster_schritt: Claude liest Abschlussbefund zu #49 unabhängig gegen; anschließend fachliche Pilotoption mit Eigentümer besprechen.
+stand: Quellen und Lesefunde aus #49 auf main gesichert (#120, von Claude gegengeprüft); Recherche #49 angehalten bis zur Rückmeldung des Eigentümers
+naechster_schritt: Der Eigentümer meldet sich zum Zwischenstand von #49 zurück; danach schreibt Astra Teil 2 (Leitfragen 4 und 5).
 offen: [49]
 ---
 
@@ -24,7 +24,7 @@ Entwerfen baut später darauf auf.
 die richtige Einteilung sind (Leitfrage 5). Danach folgt die Frage, ob das Labor ein
 Dokumentationsverzeichnis braucht.
 
-**Rückmeldung 13.11.:** Der Eigentümer bestätigte die Zusammenfassung des Zwischenstands und beauftragte die Weiterarbeit mit Fokus „Wie schaffen wir eine Entwicklung mit der KI?“ unter Berücksichtigung wiederkehrender Fehlermuster. **Ergebnis:** `research/2026-10-entwurfsbewegung/abschluss-ki-entwicklung.md` auf Arbeitsbranch; unabhängig gegenlesen, noch keine Regel/Skill beschlossen.
+**Offene Frage an den Eigentümer:** Soll es losgehen? Wenn ja: „mach #49“ an Astra.
 
 <details><summary>Für die Modelle: Nummern</summary>
 
