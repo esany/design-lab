@@ -47,7 +47,8 @@ verschiedenen Modellen. Wer erstellt, bewertet sich nicht selbst.
 
 Was umkehrbar ist (Studien, Skizzen, Experimente), darf der Agent frei tun.
 Was den Kern verändert (Prinzipien, Methoden, System), schlägt er vor. Der
-Mensch gibt frei — technisch durch den Merge eines Pull Requests.
+Mensch gibt frei — im Zielbild oder im Chat, nie auf GitHub; den Merge macht das
+orchestrierende Modell (Eigentümer, 13.11.2026: „Ich merge nix, Freigabe im Zielbild“).
 
 ## 6. Übernahme vor Werkzeugwahl klären
 
