@@ -1,7 +1,7 @@
 ---
 thema: Werke und Gestaltung
-stand: neue Experimente erwünscht; nur Detailarbeit an bestehenden ruht; Flyer fertig
-naechster_schritt: Der Eigentümer wählt das nächste Experiment.
+stand: neue Experimente erwünscht (auch als Tests des Systems, Eigentümer 13.11.); Flyer fertig; private Zielbild-Seiten der Werke: Bauskript im Werke-Repo fertig (nutzt den Generator des Labors), Cloudflare-Konto angelegt (Eigentümer, 13.11.)
+naechster_schritt: Am Rechner richtet Claude im Browser mit dem Eigentümer Cloudflare ein (privates Werke-Repo verbinden, Build „bash seiten.sh“, Ausgabe „_site“, Zugang nur für seine E-Mail). Danach wählt der Eigentümer das nächste Experiment.
 offen: [8, 9, 23, 24, 26, 27]
 ---
 
