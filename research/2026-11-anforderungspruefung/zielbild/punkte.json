@@ -165,7 +165,7 @@
           "id": "u1",
           "s": "befund",
           "t": "U1 · Die Spezifikation widerspricht sich: Intent und 0019 gegen die Betriebstexte.",
-          "k": "Gegenläufig, und näher an der Handlung: .github/pull_request_template.md („Freigabe: Unten auf Merge pull request klicken“), principles.md Prinzip 5 („Mensch gibt frei — technisch durch den Merge“), 0018 („mit einem Klick (Merge) frei“), AGENTS.md Schritt 4 und Skill issue A1 (Mensch nennt oder gibt ein Issue frei), Label an:mensch. Erkannt am 28.10. (#41), Lösung gebaut (PR #90), beides offen. Stand 13.11.: teilweise behoben. Die PR-Vorlage schickt dich nicht mehr zum Merge, AGENTS.md hat das Grundmodell, und mit dieser Iteration sagen Startschritt 4 und das Label „an:mensch“, dass du im Chat oder im Zielbild freigibst. Offen: Prinzip 5 und Entscheidung 0018 (Frage unten) und eine Prüfung im Build gegen Rückfälle.",
+          "k": "Gegenläufig, und näher an der Handlung: .github/pull_request_template.md („Freigabe: Unten auf Merge pull request klicken“), principles.md Prinzip 5 („Mensch gibt frei — technisch durch den Merge“), 0018 („mit einem Klick (Merge) frei“), AGENTS.md Schritt 4 und Skill issue A1 (Mensch nennt oder gibt ein Issue frei), Label an:mensch. Erkannt am 28.10. (#41), Lösung gebaut (PR #90), beides offen. Stand 13.11.: teilweise behoben. Die PR-Vorlage schickt dich nicht mehr zum Merge, AGENTS.md hat das Grundmodell, und mit dieser Iteration sagen Startschritt 4 und das Label „an:mensch“, dass du im Chat oder im Zielbild freigibst. Seit deiner Antwort vom 13.11. auch Prinzip 5 und 0018. Offen: eine Prüfung im Build gegen Rückfälle.",
           "n": "ergänzt"
         },
         {
@@ -456,7 +456,7 @@
           "s": "vorschlag",
           "n": "neu",
           "t": "Reihenfolge: zuerst Umsetzen und Abarbeiten (O1, O5), dann wenige Verhaltensprüfungen mit dir als Abnehmer (O3), dann das Grundmodell als verknüpfte Zuordnung an echten Entscheidungen erproben (O2), dann Korrekturen bis zur Wirkung verfolgen (O4). Ponytail als Arbeitsmuster nebenher im Pilot; neue Infrastruktur erst bei nachgewiesener Lücke.",
-          "k": "Das ist die Empfehlung der Gegenprüfung; ich teile sie, weil sie deinem „Umsetzen vor Neuem“ folgt und jede Stufe an Verhalten misst statt an vorhandenem Text. Gegenprobe je Stufe: O1 an einer echten Übergabe, O3 durch deine Stichprobe, O2 an einer echten Entscheidung. Risiko: O3 kann zu einer weiteren Struktur werden, die niemand ausführt; darum zuerst drei bis fünf Fälle, nicht eine Suite.",
+          "k": "Deine Antwort, 13.11.: „Prio 1 Stapel abarbeiten“. Läuft. Das ist die Empfehlung der Gegenprüfung; ich teile sie, weil sie deinem „Umsetzen vor Neuem“ folgt und jede Stufe an Verhalten misst statt an vorhandenem Text. Gegenprobe je Stufe: O1 an einer echten Übergabe, O3 durch deine Stichprobe, O2 an einer echten Entscheidung. Risiko: O3 kann zu einer weiteren Struktur werden, die niemand ausführt; darum zuerst drei bis fünf Fälle, nicht eine Suite.",
           "g": "Gegenprüfung ChatGPT, 13.11.: research/2026-11-anforderungspruefung/gegenpruefung-chatgpt.md, Abschnitt „Reihenfolge und Bewertung“."
         }
       ]
@@ -518,20 +518,20 @@
           "wer": "Claude (Opus)",
           "n": "neu",
           "t": "Betriebstexte widerspruchsfrei machen, Rest von O1.",
-          "k": "Erledigt mit dieser Iteration: Startschritt 4 in AGENTS.md und das Label „an:mensch“ im Skill issue sagen jetzt, dass du im Chat oder im Zielbild freigibst. Als Nächstes: eine Prüfung im Build, die Anweisungen findet, die dich auf GitHub schicken. Danach Gegenprobe an einer echten Übergabe.",
+          "k": "Erledigt mit dieser Iteration: Startschritt 4 in AGENTS.md und das Label „an:mensch“ im Skill issue sagen jetzt, dass du im Chat oder im Zielbild freigibst. Als Nächstes: eine Prüfung im Build, die Anweisungen findet, die dich auf GitHub schicken. Danach Gegenprobe an einer echten Übergabe. Prinzip 5 und 0018 sind seit 13.11. angeglichen.",
           "stuetzt": [
             "o1",
             "nk-orte",
             "nk-verwaltung"
           ],
-          "offen": "Prinzip 5 und Entscheidung 0018 (Frage darunter)."
+          "offen": "Prüfung im Build gegen Rückfälle."
         },
         {
           "id": "f-prinzip5",
           "s": "freigabe",
-          "n": "neu",
           "t": "Prinzip 5 und Entscheidung 0018 so ändern: Du gibst im Chat oder im Zielbild frei; den Merge macht das orchestrierende Modell. Die Autonomie nach Umkehrbarkeit bleibt, Schweres geht weiter als Frage an dich.",
-          "k": "Was sich ändert: zwei Sätze („Mensch gibt frei, technisch durch den Merge“; „mit einem Klick (Merge) frei“). Warum: Sie sind der letzte Rest des Widerspruchs U1 und stehen nahe an der Handlung; jedes Modell, das sie liest, schickt dich wieder auf GitHub. Wenn wir es lassen: Der Widerspruch bleibt, und die Build-Prüfung aus O1 müsste ihre eigenen Grundsätze anmahnen. Empfehlung: ändern. Ist eine Regeländerung, darum deine Entscheidung."
+          "k": "Deine Antwort, 13.11.: „Ich merge nix Freigabe im zielbild“. Umgesetzt am selben Tag in principles.md (Prinzip 5) und decisions/0018.",
+          "bestaetigt": "2026-11-13"
         },
         {
           "id": "a-verhaltenspruefung",

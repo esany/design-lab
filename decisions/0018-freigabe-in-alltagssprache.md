@@ -11,8 +11,9 @@ perspektive: system
 **Entscheidung:** Der Agent legt Entscheidungen nicht als Dateien zum Durchlesen vor,
 sondern fasst sie in höchstens vier Fragen in Alltagssprache zusammen, mit Empfehlung.
 Die Antworten trägt der Agent selbst in `decisions/` ein. Technische Details bleiben im
-Pull Request für alle, die sie sehen wollen. Der Mensch gibt am Ende mit einem Klick
-(Merge) frei.
+Pull Request für alle, die sie sehen wollen. Der Mensch gibt im Zielbild oder im
+Chat frei; den Merge macht das orchestrierende Modell (geändert 13.11.2026, Eigentümer:
+„Ich merge nix, Freigabe im Zielbild“; vorher: „mit einem Klick (Merge) frei“).
 
 **Begründung:** Der Mensch ist Gestalter, nicht Entwickler. Kontrolle heißt
 entscheiden, nicht Code lesen.
