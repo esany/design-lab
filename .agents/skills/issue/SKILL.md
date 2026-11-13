@@ -16,6 +16,8 @@ Alle Punkte müssen stimmen, sonst nicht anfangen:
 1. **Auftrag:** Der Mensch hat das Issue in dieser Sitzung **ausdrücklich** genannt oder
    freigegeben („mach #n“). Ein Label allein ist kein Auftrag. Ein Zitat, eine Frage oder Ärger
    über etwas ist keine Freigabe.
+   **Ausnahme geplante Prüfung (H):** In einem Lauf der geplanten Aufgabe des Eigentümers gilt
+   das Label `an:<ich>` als Auftrag, denn Claude setzt es nur auf Freigegebenes (E2).
 2. **Label:** genau `an:<ich>`. Fremdes Label oder `an:mensch`: nicht anfassen.
 3. **Nicht blockiert:** Alle Issues unter „Blockiert durch“ sind geschlossen. Das gilt für die
    GitHub-Verknüpfung und für das Feld im Text.
@@ -162,6 +164,32 @@ Blockaden stehen getrennt dabei. Pull Requests werden getrennt von Issues gefüh
 Sie zeigen, ob ein Modell oder Werkzeug mit dem Labor zurechtkommt. Sie blockieren keine Arbeit
 und kein Schließen. Eine technische Voraussetzung (die Datei des Prüffalls existiert) ist
 Abhängigkeit, kein Urteil.
+
+## H · Geplante Prüfung (ChatGPT, alle drei Stunden)
+
+Der Eigentümer hat in ChatGPT eine geplante Aufgabe, die das Labor alle drei Stunden auf
+Aufträge prüft (Wunsch des Eigentümers, 13.11.2026). Der Prompt steht unten im Wortlaut; ändert
+er sich, wird er hier geändert und im Zielbild Bug #200 gezeigt, damit der Eigentümer ihn
+einfügen kann. Lehre aus #203: Der erste Lauf suchte das falsche Label und behauptete Prüfungen,
+die er nicht gemacht hatte.
+
+Regeln für den Lauf: nur `an:chatgpt`; je Lauf höchstens ein Issue; nichts übernehmen (mergen),
+keine Regel, Entscheidung, Prinzip oder Merkzettel ändern; Fragen an den Eigentümer nur als
+Kommentar im Issue, Claude bringt sie ins Zielbild. Claude sieht nach jedem Lauf die neuen
+Pull Requests, prüft sie und übernimmt sie.
+
+```text
+Geplante Prüfung des Labors esany/design-lab (GitHub, Zweig main). Arbeite nur mit dem, was du in diesem Lauf selbst liest; behaupte keine Prüfung, die du nicht gemacht hast.
+
+1. Lies frisch: AGENTS.md und .agents/skills/issue/SKILL.md (Abschnitte A, C, D, H).
+2. Suche offene Issues mit genau dem Label an:chatgpt. Andere Labels nicht beachten. Prüfe je Issue frisch: offen; Label noch an:chatgpt; alles unter „Blockiert durch“ geschlossen; noch kein Pull Request oder Zweig mit deinem Ergebnis; die neuesten Kommentare gelesen.
+3. Ist keins bereit: nichts im Repo ändern. Antworte mit einer Zeile: „Keine Aufgabe für ChatGPT“ und die Uhrzeit.
+4. Sonst das älteste bereite Issue, genau eins, nach Abschnitt C bearbeiten: eigener Zweig lab/gpt-<kurz>; Ergebnis in der im Issue genannten Datei; ein Verlaufseintrag verlauf/JJJJ-MM-TT-<kurz>.md mit erster Zeile „# JJJJ-MM-TT · Titel“ und den Zeilen „**Warum:** …“ und „**Rückgängig:** …“; Pull Request mit „Refs #<nummer>“. Nichts mergen. Keine Regel, Entscheidung, kein Prinzip und keinen Merkzettel ändern.
+5. Übergabe als Kommentar im Issue: Ergebnis mit Link · geprüft · nicht geprüft · offen. Trenne: zugewiesen, begonnen, abgegeben.
+6. Kannst du nicht ins Repo schreiben: sag genau das im Kommentar und lege das vollständige Ergebnis mit Zielpfad als einen Block in den Kommentar.
+7. Fragen an den Eigentümer schreibst du in den Issue-Kommentar, nicht an ihn; Claude bringt sie ins Zielbild.
+8. Antworte am Ende in höchstens drei Sätzen Alltagssprache: was du getan hast, mit Namen statt Nummern.
+```
 
 ## Typische Fehler
 
