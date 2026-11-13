@@ -3,9 +3,9 @@
 > Erzeugt von `node tools/build.mjs` aus `daten/arbeitsweise.json` und dem Merkzettel
 > `anschluss/arbeitsweise.md`. Nicht von Hand ändern. Modelle lesen die Daten, nicht diese Seite.
 
-**Stand:** Prüfstand abgeschlossen (08.11.); Leitfaden (Arbeitsname Werkbuch) wird über die Seite „Zielbild Leitfaden“ (leitfaden/zielbild/) entworfen, Iteration 7 vom 12.11. mit Teil „Begriffe“ und neuem Verständnis von Fachwissen als Wirknetz; Ergebnisse von ChatGPT (#174) und Codex (#175) von Claude geprüft, warten auf Ja des Eigentümers; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
+**Stand:** Prüfstand abgeschlossen (08.11.); Leitfaden (Arbeitsname Werkbuch) wird über die Seite „Zielbild Leitfaden“ (leitfaden/zielbild/) entworfen, Iteration 7 vom 12.11. mit Teil „Begriffe“ und neuem Verständnis von Fachwissen als Wirknetz; Recherche (#174) und implizite Verweise (#175) am 13.11. übernommen; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
 
-**Nächster Schritt:** Zielbild Bug #200, Iteration 3 (13.11.) mit der Gegenprüfung von ChatGPT liegt beim Eigentümer; er urteilt vor allem über die Reihenfolge und über Prinzip 5 und 0018. Claude setzt den Rest der widerspruchsfreien Betriebstexte um (Prüfung im Build gegen Rückfälle).
+**Nächster Schritt:** Stapel abarbeiten (Eigentümer, 13.11., Priorität 1). Am 13.11. elf wartende Änderungen übernommen oder als überholt geschlossen; die Fragen, die nur der Eigentümer beantworten kann, stehen im Zielbild Bug #200, Teil „Stapel“. Danach baut Claude die ersten Verhaltensprüfungen (O3).
 
 ## Offene Fragen an den Eigentümer (7)
 

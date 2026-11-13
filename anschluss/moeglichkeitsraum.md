@@ -1,13 +1,13 @@
 ---
 thema: Entwicklung und Gebrauch · Möglichkeitsraum
-stand: Quellen und Lesefunde aus #49 auf main gesichert (#120, von Claude gegengeprüft); Recherche #49 angehalten bis zur Rückmeldung des Eigentümers
-naechster_schritt: Der Eigentümer meldet sich zum Zwischenstand von #49 zurück; danach schreibt Astra Teil 2 (Leitfragen 4 und 5).
-offen: [49]
+stand: Recherche #49 abgeschlossen (13.11.): Zwischenstand vom Eigentümer bestätigt, Leitfragen 4 und 5 beantwortet (research/2026-10-entwurfsbewegung/abschluss-ki-entwicklung.md, ChatGPT, von Claude übernommen).
+naechster_schritt: Keiner offen. Die Empfehlung (erst einen realen Fehlerfall rückwärts verfolgen, dann Eingriffe vergleichen) ist ins Zielbild Bug #200 eingegangen, Punkt „tiefere Ursache“.
+offen: []
 ---
 
 # Thema: Entwicklung und Gebrauch des Systems · Möglichkeitsraum
 
-**Zuletzt fortgeschrieben:** 30.10.2026, Sicherung #120 (Astra), gegengeprüft und übernommen (Claude).
+**Zuletzt fortgeschrieben:** 13.11.2026 (Claude, Abschluss #49 übernommen). Davor 30.10.2026, Sicherung #120 (Astra).
 
 ## In Worten
 
