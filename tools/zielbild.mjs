@@ -112,7 +112,7 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   const args = process.argv.slice(2);
   const check = args.includes("--check");
   const ai = args.indexOf("--aus");
-  const daten = args.find((a, i) => !a.startsWith("--") && i !== ai + 1);
+  const daten = args.find((a, i) => !a.startsWith("--") && (ai < 0 || i !== ai + 1));
   if (!daten) { console.error("Aufruf: node tools/zielbild.mjs <punkte.json> [--aus <seite.html>] [--check]"); process.exit(2); }
   const aus = ai >= 0 ? args[ai + 1] : join(dirname(daten), "index.html");
   let z;

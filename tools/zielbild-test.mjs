@@ -3,6 +3,11 @@
 //   node tools/zielbild-test.mjs
 import { readFileSync } from "node:fs";
 import { pruefen, erzeugen } from "./zielbild.mjs";
+import { spawnSync } from "node:child_process";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const hier = dirname(fileURLToPath(import.meta.url));
 
 const gut = JSON.parse(readFileSync(new URL("./fixtures/zielbild/beispiel.json", import.meta.url), "utf8"));
 const mit = (f) => { const d = structuredClone(gut); f(d); return pruefen(d); };
@@ -27,6 +32,10 @@ const tests = [
   ["Seite ohne offene Platzhalter", () => !/\/\*[A-Z_]+\*\//.test(erzeugen(gut))],
   ["Titel wird maskiert", () => erzeugen({ ...gut, titel: "A <b>" }).includes("<h1>A &lt;b&gt;</h1>")],
   ["Farben aus den Tokens", () => erzeugen(gut).includes("--bg:#f4f2ed") && erzeugen(gut).includes("--accent:#d92d17")],
+  ["Kommandozeile ohne --aus findet die Datendatei", () => {
+    const r = spawnSync(process.execPath, [join(hier, "zielbild.mjs"), join(hier, "fixtures/zielbild/beispiel.json"), "--check"], { encoding: "utf8" });
+    return !/Aufruf:/.test(r.stderr) && /beispiel\.json|index\.html/.test(r.stdout + r.stderr);
+  }],
   ["Daten können kein Skript schließen", () => !erzeugen({ ...gut, teile: [{ teil: "x", punkte: [{ id: "x", s: "offen", t: "</script>" }] }] }).includes("\"</script>")],
 ];
 
