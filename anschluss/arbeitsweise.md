@@ -1,7 +1,7 @@
 ---
 thema: Arbeitsweise mit KI · Wissensformen
 stand: Prüfstand abgeschlossen (08.11.); Leitfaden (Arbeitsname Werkbuch) wird über die Seite „Zielbild Leitfaden“ (leitfaden/zielbild/) entworfen, Iteration 7 vom 12.11. mit Teil „Begriffe“ und neuem Verständnis von Fachwissen als Wirknetz; Recherche (#174) und implizite Verweise (#175) am 13.11. übernommen; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
-naechster_schritt: Stapel abarbeiten (Eigentümer, 13.11., Priorität 1). Am 13.11. elf wartende Änderungen übernommen oder als überholt geschlossen; die Fragen, die nur der Eigentümer beantworten kann, stehen im Zielbild Bug #200, Teil „Stapel“. Danach baut Claude die ersten Verhaltensprüfungen (O3).
+naechster_schritt: Antworten des Eigentümers vom 13.11. umgesetzt (Fundstück-Gehalt, Generator als Werkzeug, alte Entwürfe geschlossen, Prompt für die geplante Prüfung durch ChatGPT). Offen beim Eigentümer: Hauptzweig schützen (Anleitung im Zielbild), geplante Aufgabe in ChatGPT einsetzen, Suche nach der Fragenliste. Claude: Probe der Fundstück-Sichtung an zwei Fällen, dann erste Verhaltensprüfungen, dann die Zielbild-Zentrale.
 offen: [180, 189, 200]
 ---
 
@@ -33,7 +33,7 @@ bedeutet (Wunsch des Eigentümers, 07./08.11.; [a:arbeitsweise-a28]).
 | Leitfaden | Zielbild Iteration 7 (`leitfaden/zielbild/`): Fachwissen als Wirknetz, Teil „Begriffe“; 0032 auf Probe bis 05.12. | Werkbuch bauen nach Freigabe; Recherche, Teil 2 (mit Frage 7), sobald „Kontext ist der Oberbegriff“ bestätigt ist |
 | KI-Fachpaket | Konzept, teils überholt | erst nach dem Leitfaden |
 
-**Zu beachten:** PR #187 baut den Zielbild-Generator als Werkzeug (0036); nach Übernahme nutzt das Zielbild Leitfaden ihn statt eigener Vorlage. Der Farbvorschlag (Iteration 7) betrifft auch ihn. Berichte: jede Zahl mit Bezug, Freigabe im Chat ([a:arbeitsweise-a43]).
+**Zu beachten:** Der Zielbild-Generator ist seit 13.11. Werkzeug des Labors (0036, `tools/zielbild.mjs`); das Zielbild Leitfaden wird noch auf ihn umgestellt. Der Farbvorschlag (Iteration 7) betrifft auch ihn. Berichte: jede Zahl mit Bezug, Freigabe im Chat ([a:arbeitsweise-a43]).
 
 **Geparkt:** Radar als Daten und Ansicht (Matrix oder Kreis offen); Freigabe-Prüfung (#132);
 Hooks; Projektnotiz paleo-type; Radar-Zeile Basic Memory; bei Konflikt startet GitHub keine Prüfung.
@@ -45,4 +45,5 @@ Hooks; Projektnotiz paleo-type; Radar-Zeile Basic Memory; bei Konflikt startet G
 - `research/2026-11-wissensformen/`: `konzeptstand-2026-11-08.md` gilt; `konzept.md` und
   `fachpaket-ki-werkzeug.md` teils überholt (markiert).
 - Vorfall 05.11.: #127 ohne Freigabe übernommen, am 06.11. zurückgenommen (#129, #130).
+- Zielbild als Werkzeug: 0036, gültig seit 13.11.; das Zielbild Leitfaden nutzt noch seine eigene Vorlage.
 </details>
