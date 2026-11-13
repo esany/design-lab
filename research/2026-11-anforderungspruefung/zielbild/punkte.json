@@ -490,19 +490,23 @@
         },
         {
           "id": "st-farbe",
-          "s": "freigabe",
-          "n": "neu",
-          "t": "Farben der Zielbild-Seiten lesbar für alle machen: Grau und Signalrot sind bei kleiner Schrift zu schwach (WCAG AA verlangt 4,5:1).",
-          "k": "Gemessen am 13.11. (axe-core, 390 und 1100 px, hell und dunkel): Grau #71706b auf Papier 4,44:1; Signalrot #d92d17 auf Papier 4,33:1, auf Dunkel 3,77:1; Grün und Ocker bestehen. Bedienflächen sind groß genug. Variante A, im ganzen Labor: Grau #6b6a65 (4,84:1), Signalrot hell #c92a15 (4,91:1), dunkel #f04a33 (4,99:1); der Charakter bleibt, Rot wird minimal tiefer. Variante B, nur Zielbild-Seiten: Farben bleiben, Etiketten größer (ab der kleinsten Token-Größe 0,8125 rem), Rot nur als Rand und Fläche, Text in Grundfarbe. Variante C: beides. Dazu gehört die offene Frage aus dem Zielbild Leitfaden, Iteration 7: Grün und Rot tragen heute je zwei Bedeutungen. Empfehlung: A, weil Lesbarkeit eine Eigenschaft des Systems ist und nicht einer Seite; die Doppelbedeutung im selben Schritt lösen. Gestaltung, darum deine Entscheidung.",
-          "g": "Messung mit axe-core 4 über Playwright; system/tokens/lab.tokens.json; research/2026-11-zielbild-bausteine/befund.md, Lücken; Aussage a44."
+          "s": "offen",
+          "n": "geändert",
+          "t": "Farbe semantisch prüfen: Jede Farbe trägt genau eine Bedeutung, und Signalfarben sind im ganzen Labor als Signal verbunden. Look and Feel vor Barrierefreiheit.",
+          "k": "Meine Fassung vorher hat deine Frage durch eine Kontrastmessung ersetzt (Bug Flickenteppich, Ursache F4). Die Messwerte bleiben als Nebenbefund. Nächster Schritt: Bestandsaufnahme, welche Farbe heute wo was bedeutet, und Varianten für eine eindeutige Zuordnung; als Teil des einen Zielbilds.",
+          "g": "Messung mit axe-core 4 über Playwright; system/tokens/lab.tokens.json; research/2026-11-zielbild-bausteine/befund.md, Lücken; Aussage a44.",
+          "v": "Farben der Zielbild-Seiten lesbar für alle machen: Grau und Signalrot sind bei kleiner Schrift zu schwach (WCAG AA verlangt 4,5:1).",
+          "f": "Barrierefreiheiheit ist gerade nicht prio 1 ! Mir ging es um look feel und eine semantische prüder Farbigkeit. Signalfarben sollten auch als solche konnektiert sein"
         },
         {
           "id": "st-rueckweg",
-          "s": "vorschlag",
-          "n": "neu",
-          "t": "Rückweg von der Seite ins Labor: Heute kopierst du deine Markierungen in den Chat. Das ist der Teil, der laut Befund fehlte, nicht das Format.",
-          "k": "Varianten: A so lassen; der Chat ist dein Ort, und ich trage im selben Schritt ein. B eine Seite als Artefakt mit eigener Datenablage, die ich direkt lese; du klickst, statt zu kopieren, und musst nichts einrichten. C ein Formular auf GitHub; scheidet aus, weil du dort nicht arbeitest. Empfehlung: B, zusammen mit der Zentrale prüfen, weil die Zentrale ohnehin Rückmeldungen über alle Stränge sammeln soll. Unsicher: ob die Datenablage für dich ohne Konto oder Einrichtung läuft; das prüfe ich zuerst.",
-          "g": "research/2026-11-zielbild-bausteine/befund.md, Baustein 6 und Lücken; Punkt „Das Zielbild ist das Format …“."
+          "s": "bestaetigt",
+          "n": "geändert",
+          "t": "Rückmeldung ohne Kopieren: Du markierst auf der Seite, und ich lese es direkt.",
+          "k": "Ich prüfe zuerst, ob das ohne Konto oder Einrichtung für dich läuft. Gehört in das eine Zielbild.",
+          "g": "research/2026-11-zielbild-bausteine/befund.md, Baustein 6 und Lücken; Punkt „Das Zielbild ist das Format …“.",
+          "v": "Rückweg von der Seite ins Labor: Heute kopierst du deine Markierungen in den Chat. Das ist der Teil, der laut Befund fehlte, nicht das Format.",
+          "f": "Ohne Kopie noch besser"
         },
         {
           "id": "st-main",
@@ -523,10 +527,11 @@
         {
           "id": "st-zentrale",
           "s": "bestaetigt",
-          "n": "neu",
-          "t": "Das Zielbild wird die Zentrale: Rückfragen, Stand und Freigaben aller Stränge, transparent und thematisch navigierbar. Dort stimmen wir Prioritäten ab, und du gibst gezielt Rückmeldung, zu einem Punkt oder zu allen offenen.",
-          "f": "Ale Rückfragen zu verschiedenen strängen, status quo und Freigaben können wir dort transparent sichtbar und thematisch navigierbar machen, prios abstimmen und ich kann gezielt und systematisch Feedback geben. Entweder punktuell oder zu allen offenen Punkten",
-          "k": "Heute gibt es zwei Zielbild-Seiten (Leitfaden und Bug #200) und offene Fragen in den Merkzetteln der Themen; sie sind nicht verbunden. Der nächste Schritt wäre eine Übersicht, die der Generator aus allen Zielbildern und Merkzetteln erzeugt, mit Filter nach Thema, Status und Priorität. Ich baue sie, nachdem die ersten Verhaltensprüfungen stehen, es sei denn, du willst sie früher."
+          "n": "geändert",
+          "t": "Ein Zielbild für das ganze Labor, keine Sammlung von Seiten: Stränge, Stand, Fragen und Freigaben sind Dimensionen einer Seite.",
+          "f": "Ich will nicht mehrere zielbildseiten sondern eine!!! Es geht um organische ganzheitliche systemische transdisziplinäre Entwicklung und entwurfsarbeit … Wir brauchen keinen Flickenteppich",
+          "k": "Meine Fassung vorher plante eine Übersicht über mehrere Seiten und hat damit den Flickenteppich fortgesetzt (Bug Flickenteppich, Ursachen F2, F3). Entwurf des einen Zielbilds folgt als Entwurf, nicht als schneller Umbau.",
+          "v": "Das Zielbild wird die Zentrale: Rückfragen, Stand und Freigaben aller Stränge, transparent und thematisch navigierbar. Dort stimmen wir Prioritäten ab, und du gibst gezielt Rückmeldung, zu einem Punkt oder zu allen offenen."
         },
         {
           "id": "st-experimente",

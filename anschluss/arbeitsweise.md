@@ -1,8 +1,8 @@
 ---
 thema: Arbeitsweise mit KI · Wissensformen
 stand: Prüfstand abgeschlossen (08.11.); Leitfaden (Arbeitsname Werkbuch) wird über die Seite „Zielbild Leitfaden“ (leitfaden/zielbild/) entworfen, Iteration 7 vom 12.11. mit Teil „Begriffe“ und neuem Verständnis von Fachwissen als Wirknetz; Recherche (#174) und implizite Verweise (#175) am 13.11. übernommen; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
-naechster_schritt: Antworten des Eigentümers vom 13.11. umgesetzt (Fundstück-Gehalt, Generator als Werkzeug, alte Entwürfe geschlossen, Prompt für die geplante Prüfung durch ChatGPT). Offen beim Eigentümer: Hauptzweig schützen (Anleitung im Zielbild), geplante Aufgabe in ChatGPT einsetzen, Suche nach der Fragenliste. Claude: Probe der Fundstück-Sichtung an zwei Fällen, dann erste Verhaltensprüfungen, dann die Zielbild-Zentrale.
-offen: [180, 189, 200]
+naechster_schritt: Bug Flickenteppich (#216, 13.11.): Ursachen analysiert, Gegenprüfung durch ChatGPT (#217). Der Eigentümer will ein Zielbild statt mehrerer Seiten; Claude bestätigt im Chat das Verständnis und entwirft es dann als Entwurf, ohne schnellen Umbau. Bis dahin keine neuen Seiten, Werkzeuge oder Dateien neben Bestehendem.
+offen: [180, 189, 200, 216, 217]
 ---
 
 # Thema: Arbeitsweise mit KI · Wissensformen

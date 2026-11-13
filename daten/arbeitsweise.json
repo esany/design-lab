@@ -453,6 +453,33 @@
       "status": "abgeleitet",
       "seit": "2026-11-13",
       "notiz": "Eigentümer im Chat, 13.11. Einmal beobachtet (Claude); gleiche Klasse wie b-stand im Zielbild Bug #200 (Vorhandensein statt Wirkung, Prinzip 10 Scheinreife). Gegenmittel (Vorschlag, Kandidat für die Verhaltensprüfungen O3): „fertig“ nur mit Abgleich gegen den Zweck aus Befund und Entscheidung; offene Teile in derselben Meldung nennen."
+    },
+    {
+      "id": "arbeitsweise-a56",
+      "aussage": "Die KI gab dem Eigentümer dreimal den Link zu einer Zielbild-Seite, die nie veröffentlicht war; sie hatte weder geprüft, ob die Website die Seite enthält, noch gesagt, dass sie die Website aus ihrer Umgebung nicht abrufen kann.",
+      "status": "belegt",
+      "seit": "2026-11-13",
+      "quellen": [
+        {
+          "datei": ".github/workflows/website.yml",
+          "stelle": "Schritt „Seite zusammenstellen“ kopiert nur index.html, assets, studies, leitfaden"
+        }
+      ],
+      "notiz": "Eigentümer im Chat, 13.11. Analyse: research/2026-11-anforderungspruefung/bug-flickenteppich.md. Ursache F1."
+    },
+    {
+      "id": "arbeitsweise-a57",
+      "aussage": "Die KI hat Zielbild-Seiten vermehrt (eine je Thema, dazu eine geplante „Zentrale“) und die Vielzahl im Build festgeschrieben, obwohl der Eigentümer ein Zielbild für die organische, ganzheitliche Entwicklung will; er nennt das einen Flickenteppich-Bug.",
+      "status": "abgeleitet",
+      "seit": "2026-11-13",
+      "notiz": "Eigentümer im Chat, 13.11. Analyse: research/2026-11-anforderungspruefung/bug-flickenteppich.md. Wortlaut: „Ich will nicht mehrere Zielbildseiten sondern eine!!! … Wir brauchen keinen Flickenteppich“. Ursachen F2, F3."
+    },
+    {
+      "id": "arbeitsweise-a58",
+      "aussage": "Auf die Frage nach Look and Feel und einer semantischen Prüfung der Farbigkeit legte die KI eine Kontrastmessung nach WCAG vor; gemeint war, dass jede Farbe eine Bedeutung trägt und Signalfarben im ganzen System als Signal verbunden sind.",
+      "status": "abgeleitet",
+      "seit": "2026-11-13",
+      "notiz": "Eigentümer im Chat, 13.11. Analyse: research/2026-11-anforderungspruefung/bug-flickenteppich.md. Wortlaut: „Barrierefreiheit ist gerade nicht Prio 1! Mir ging es um Look and Feel und eine semantische Prüfung der Farbigkeit. Signalfarben sollten auch als solche konnektiert sein“. Ursache F4."
     }
   ],
   "fragen": [

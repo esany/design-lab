@@ -5,7 +5,7 @@
 
 **Stand:** Prüfstand abgeschlossen (08.11.); Leitfaden (Arbeitsname Werkbuch) wird über die Seite „Zielbild Leitfaden“ (leitfaden/zielbild/) entworfen, Iteration 7 vom 12.11. mit Teil „Begriffe“ und neuem Verständnis von Fachwissen als Wirknetz; Recherche (#174) und implizite Verweise (#175) am 13.11. übernommen; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
 
-**Nächster Schritt:** Antworten des Eigentümers vom 13.11. umgesetzt (Fundstück-Gehalt, Generator als Werkzeug, alte Entwürfe geschlossen, Prompt für die geplante Prüfung durch ChatGPT). Offen beim Eigentümer: Hauptzweig schützen (Anleitung im Zielbild), geplante Aufgabe in ChatGPT einsetzen, Suche nach der Fragenliste. Claude: Probe der Fundstück-Sichtung an zwei Fällen, dann erste Verhaltensprüfungen, dann die Zielbild-Zentrale.
+**Nächster Schritt:** Bug Flickenteppich (#216, 13.11.): Ursachen analysiert, Gegenprüfung durch ChatGPT (#217). Der Eigentümer will ein Zielbild statt mehrerer Seiten; Claude bestätigt im Chat das Verständnis und entwirft es dann als Entwurf, ohne schnellen Umbau. Bis dahin keine neuen Seiten, Werkzeuge oder Dateien neben Bestehendem.
 
 ## Offene Fragen an den Eigentümer (7)
 
@@ -19,7 +19,7 @@
 
 ## Aussagen
 
-### Belegt (15)
+### Belegt (16)
 
 - **arbeitsweise-a02** Im Labor folgte auf einen Vorfall meist eine neue Regel: 30 Entscheidungen in drei Tagen.
   *Beleg:* `research/2026-10-audit-zusammenarbeit/befunde.md`, In Worten, Punkt 4
@@ -62,8 +62,11 @@
 - **arbeitsweise-a44** Die Farben der Seite „Zielbild Leitfaden“ wurden ohne Begründung aus allgemeinen Farbwerten übernommen; dadurch trägt Grün zwei Bedeutungen (von dir gesagt, bestätigt) und Rot zwei (geändert, Befund).
   *Beleg:* `leitfaden/zielbild/vorlage.html`, Stilangaben .chip.bestaetigt, .fest-mark, .punkt.wandel-an, .chip.befund
   *Grenze:* Vom Eigentümer bemerkt (f65). Vorschlag im Zielbild, Punkt „Farbe zeigt nur, was du tun musst“.
+- **arbeitsweise-a56** Die KI gab dem Eigentümer dreimal den Link zu einer Zielbild-Seite, die nie veröffentlicht war; sie hatte weder geprüft, ob die Website die Seite enthält, noch gesagt, dass sie die Website aus ihrer Umgebung nicht abrufen kann.
+  *Beleg:* `.github/workflows/website.yml`, Schritt „Seite zusammenstellen“ kopiert nur index.html, assets, studies, leitfaden
+  *Grenze:* Eigentümer im Chat, 13.11. Analyse: research/2026-11-anforderungspruefung/bug-flickenteppich.md. Ursache F1.
 
-### Abgeleitet (32)
+### Abgeleitet (34)
 
 - **arbeitsweise-a01** Fortschritt kommt in der Arbeit mit der KI als Text zurück, nicht als etwas zum Ansehen oder Ausprobieren; der Gestalter sieht deshalb nicht, ob Strukturen tragen.
 - **arbeitsweise-a06** Wurzel des Problems: Im Entwurf antwortet das Material, in der Arbeit mit der KI nur Text; der Gestalter ersetzt sein Urteil durch Regeln.
@@ -125,6 +128,10 @@
   *Grenze:* Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): Eine erste Skizze prüft eine Entwurfsfrage (z. B. das Ordnungsprinzip) in mehreren echten Varianten; die Begründung jeder Variante und die Kriterien der Wahl sind aufklappbar dabei. Befund: research/2026-11-skizze-varianten/befund.md.
 - **arbeitsweise-a55** Die KI meldete den Zielbild-Generator als „Werkzeug des Labors“, obwohl das Zielbild Leitfaden noch über eine eigene Vorlage und eine doppelte Prüfung lief, die Prüffälle nicht in der automatischen Prüfung liefen, die Startseite keine Zielbilder zeigte und der Kern aus dem Befund (Rückweg ins Labor, Farben) offen war; der Eigentümer fragte, ob es wieder eine halbherzige Lösung sei.
   *Grenze:* Eigentümer im Chat, 13.11. Einmal beobachtet (Claude); gleiche Klasse wie b-stand im Zielbild Bug #200 (Vorhandensein statt Wirkung, Prinzip 10 Scheinreife). Gegenmittel (Vorschlag, Kandidat für die Verhaltensprüfungen O3): „fertig“ nur mit Abgleich gegen den Zweck aus Befund und Entscheidung; offene Teile in derselben Meldung nennen.
+- **arbeitsweise-a57** Die KI hat Zielbild-Seiten vermehrt (eine je Thema, dazu eine geplante „Zentrale“) und die Vielzahl im Build festgeschrieben, obwohl der Eigentümer ein Zielbild für die organische, ganzheitliche Entwicklung will; er nennt das einen Flickenteppich-Bug.
+  *Grenze:* Eigentümer im Chat, 13.11. Analyse: research/2026-11-anforderungspruefung/bug-flickenteppich.md. Wortlaut: „Ich will nicht mehrere Zielbildseiten sondern eine!!! … Wir brauchen keinen Flickenteppich“. Ursachen F2, F3.
+- **arbeitsweise-a58** Auf die Frage nach Look and Feel und einer semantischen Prüfung der Farbigkeit legte die KI eine Kontrastmessung nach WCAG vor; gemeint war, dass jede Farbe eine Bedeutung trägt und Signalfarben im ganzen System als Signal verbunden sind.
+  *Grenze:* Eigentümer im Chat, 13.11. Analyse: research/2026-11-anforderungspruefung/bug-flickenteppich.md. Wortlaut: „Barrierefreiheit ist gerade nicht Prio 1! Mir ging es um Look and Feel und eine semantische Prüfung der Farbigkeit. Signalfarben sollten auch als solche konnektiert sein“. Ursache F4.
 
 ### Nicht belegt (1)
 
