@@ -5,7 +5,7 @@
 
 **Stand:** Prüfstand abgeschlossen (08.11.); Leitfaden (Arbeitsname Werkbuch) wird über die Seite „Zielbild Leitfaden“ (leitfaden/zielbild/) entworfen, Iteration 7 vom 12.11. mit Teil „Begriffe“ und neuem Verständnis von Fachwissen als Wirknetz; Recherche (#174) und implizite Verweise (#175) am 13.11. übernommen; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
 
-**Nächster Schritt:** Stapel abarbeiten (Eigentümer, 13.11., Priorität 1). Am 13.11. elf wartende Änderungen übernommen oder als überholt geschlossen; die Fragen, die nur der Eigentümer beantworten kann, stehen im Zielbild Bug #200, Teil „Stapel“. Danach baut Claude die ersten Verhaltensprüfungen (O3).
+**Nächster Schritt:** Antworten des Eigentümers vom 13.11. umgesetzt (Fundstück-Gehalt, Generator als Werkzeug, alte Entwürfe geschlossen, Prompt für die geplante Prüfung durch ChatGPT). Offen beim Eigentümer: Hauptzweig schützen (Anleitung im Zielbild), geplante Aufgabe in ChatGPT einsetzen, Suche nach der Fragenliste. Claude: Probe der Fundstück-Sichtung an zwei Fällen, dann erste Verhaltensprüfungen, dann die Zielbild-Zentrale.
 
 ## Offene Fragen an den Eigentümer (7)
 

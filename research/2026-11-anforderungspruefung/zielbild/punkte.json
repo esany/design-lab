@@ -475,34 +475,75 @@
         {
           "id": "st-fundstueck",
           "s": "freigabe",
-          "n": "neu",
           "t": "Die Fundstück-Sichtung fragt künftig auch, welches Fachwissen ein Fundstück trägt (Theorie und Praxis, auf welcher Gestaltungsebene, mit welcher Belegstärke), auch wenn es gar kein Werkzeug ist.",
-          "k": "Was sich ändert: eine kurze Zusatzfrage im bestehenden Skill, kein zweiter Ablauf; erprobt an zwei Fällen, einem Text oder einer Person und einem Werkzeug. Warum: Der Fall dataviz-skills zeigt, dass die Sichtung heute Lizenz und Technik sauber prüft und das Gestaltungswissen darin übersieht. Wenn wir es lassen: Fachwissen wird weiter zufällig übersehen. Der volle Fundstück-Modus (Vorschlag 0031, seit 29.10.) bleibt zurückgestellt, bis sich zeigt, ob die Zusatzfrage reicht. Empfehlung: ja.",
-          "g": "research/2026-11-fundstueck-passung/befund.md (ChatGPT, 13.11.), Optionen und Abschnitt 5; von Claude gegengelesen."
+          "k": "Deine Antwort, 13.11.: „ja, unbedingt, Fundstück im Sinne aller (fachlicher und methodischer Fragen) und hier gibt es ja wieder alle Wechselwirkungen und Ebenen, die auch wieder auf die Entwicklung des Systems selbst einzahlen“. Umgesetzt am selben Tag: neuer Schritt 3 im Skill fundstueck (Gehalt in Theorie und Praxis, Ebene, Feld, Belegstärke, Zusammenspiel mit Vorhandenem, Rückwirkung auf das Labor). Als Nächstes die Probe an zwei Fällen, einem Text oder einer Person und einem Werkzeug.",
+          "g": "research/2026-11-fundstueck-passung/befund.md (ChatGPT, 13.11.), Optionen und Abschnitt 5; von Claude gegengelesen.",
+          "bestaetigt": "2026-11-13"
         },
         {
           "id": "st-generator",
           "s": "freigabe",
-          "n": "neu",
           "t": "Der Zielbild-Generator wird ein Werkzeug des Labors: Jede Zielbild-Seite, auch in Werken, entsteht aus ihren Punkten mit demselben Werkzeug und denselben Farben.",
-          "k": "Diese Seite entsteht schon damit, aber aus einem Zweig, der nicht übernommen ist. Der Fehler beim Aufruf ohne Zielangabe ist am 13.11. behoben und hat einen Prüffall. Wenn wir es lassen: Jede Seite bringt ihre eigene Vorlage mit, Farben und Prüfungen laufen auseinander. Neues Werkzeug mit eigener Entscheidung (0036), darum dein Urteil. Empfehlung: ja.",
-          "g": "Pull Request #187; research/2026-11-zielbild-bausteine/befund.md; decisions/0036 (Vorschlag)."
+          "k": "Deine Antwort, 13.11.: „Unbedingt!“ Umgesetzt: Der Generator ist seit 13.11. Werkzeug des Labors (Entscheidung 0036, tools/zielbild.mjs). Dein weiterer Gedanke dazu steht als eigener Punkt „Zentrale“ darunter.",
+          "g": "Pull Request #187; research/2026-11-zielbild-bausteine/befund.md; decisions/0036 (Vorschlag).",
+          "bestaetigt": "2026-11-13"
         },
         {
           "id": "st-main",
           "s": "freigabe",
           "n": "neu",
           "t": "Der Hauptzweig wird technisch geschützt: Änderungen nur über eine Übernahme mit grünen Prüfungen, kein Überschreiben, kein Löschen.",
-          "k": "Warum: Heute hält nur der Text der Regeln die Modelle davon ab, direkt auf den Hauptzweig zu schreiben; für ChatGPT, Codex und Gemini gibt es keine technische Sperre (belegt, Prüfung vom 28.10.). Ich kann den Schutz nicht einstellen: Meine Arbeitsumgebung sperrt Schreibzugriffe auf die Einstellungen (getestet 29.10.). Wege: ein Auftrag an ein anderes Modell mit GitHub-Zugang (ob es das darf, ist nicht geprüft), oder einmal du in den GitHub-Einstellungen, mit fertiger Anleitung. Sicherheit, darum deine Entscheidung. Empfehlung: ja, zuerst über ein anderes Modell.",
-          "g": "Aufgabe #40 (Audit Astra, 28.10.; Versuch Claude, 29.10.)."
+          "k": "Deine Antwort, 13.11.: „da brauche ich deine Anleitung“. Am Rechner im Browser, einmal, etwa fünf Minuten: (1) github.com/esany/design-lab öffnen → Settings → links „Rules“ → „Rulesets“ → „New ruleset“ → „New branch ruleset“. (2) Name: „main schützen“; Enforcement status: „Active“. (3) Bypass list → „Add bypass“ → „Repository admin“ (Always allow). So sperrst du dich nie selbst aus. (4) Target branches → „Add target“ → „Include default branch“. (5) Rules: „Restrict deletions“ und „Block force pushes“ angehakt lassen; „Require a pull request before merging“ anhaken, Required approvals auf 0; „Require status checks to pass“ anhaken, über „Add checks“ diese vier hinzufügen: „Tokens, Studien, Index“, „Interne Links“, „Stand gegen GitHub“, „Eingriffe und Lesekosten“. „Require branches to be up to date“ nicht anhaken. (6) Unten „Create“. Danach schreib mir „eingerichtet“; ich prüfe die Regel und mache eine Probe-Übernahme. Was sich für dich ändert: nichts. Warum: Heute hält nur Regeltext die Modelle davon ab, direkt auf den Hauptzweig zu schreiben (belegt, Prüfung vom 28.10.); ich selbst kann die Einstellung nicht setzen (getestet 29.10.). Alternative: Ich führe es in deinem Chrome aus, während du zusiehst, wenn die Erweiterung Claude in Chrome läuft.",
+          "g": "Aufgabe #40 (Audit Astra, 28.10.; Versuch Claude, 29.10.). Namen der Prüfungen aus .github/workflows/pruefen.yml."
         },
         {
           "id": "st-arbeitsweise-alt",
           "s": "freigabe",
-          "n": "neu",
           "t": "Fünf Entwürfe zur Arbeitsweise vom 28.10. gehen in Bug #200 auf und werden geschlossen: Modellprofile, Regeln prüfen, Kommunikation und Delegation, Tokenökonomie, Assistenz im Entwicklungs- und Entwurfsprozess.",
-          "k": "Sie stammen aus dem Plan vom 28.10. und fragen nach dem, was jetzt die Verhaltensprüfungen (O3), das Register der Fehlermuster und der Punkt „Kontingent“ abdecken. Ihr Text bleibt lesbar; nichts wird gelöscht. Wenn wir sie offen lassen: Sie stehen neben dem Zielbild und werden zu einer zweiten Liste. Empfehlung: schließen. Weil sie Vorhaben sind, die einmal mit dir besprochen wurden, frage ich vorher.",
-          "g": "Aufgaben #57–#61 (Label entwurf, seit 28.10.)."
+          "k": "Deine Antwort, 13.11.: „ja“. Geschlossen am selben Tag; der Text bleibt in den Aufgaben lesbar.",
+          "g": "Aufgaben #57–#61 (Label entwurf, seit 28.10.).",
+          "bestaetigt": "2026-11-13"
+        },
+        {
+          "id": "st-zentrale",
+          "s": "bestaetigt",
+          "n": "neu",
+          "t": "Das Zielbild wird die Zentrale: Rückfragen, Stand und Freigaben aller Stränge, transparent und thematisch navigierbar. Dort stimmen wir Prioritäten ab, und du gibst gezielt Rückmeldung, zu einem Punkt oder zu allen offenen.",
+          "f": "Ale Rückfragen zu verschiedenen strängen, status quo und Freigaben können wir dort transparent sichtbar und thematisch navigierbar machen, prios abstimmen und ich kann gezielt und systematisch Feedback geben. Entweder punktuell oder zu allen offenen Punkten",
+          "k": "Heute gibt es zwei Zielbild-Seiten (Leitfaden und Bug #200) und offene Fragen in den Merkzetteln der Themen; sie sind nicht verbunden. Der nächste Schritt wäre eine Übersicht, die der Generator aus allen Zielbildern und Merkzetteln erzeugt, mit Filter nach Thema, Status und Priorität. Ich baue sie, nachdem die ersten Verhaltensprüfungen stehen, es sei denn, du willst sie früher."
+        },
+        {
+          "id": "st-experimente",
+          "s": "bestaetigt",
+          "n": "neu",
+          "t": "Experimente sind eine gute Methode, das System zu testen.",
+          "f": "experimente sind eine gute Methode der Tests denke ich",
+          "k": "Meine Lesart, zwei Seiten: Echte Werke und Experimente prüfen, ob das Labor im Gebrauch hält (Intent, 08.11.: „Experimente prüfen, wie gut es arbeitet“). Und: Auch die Verhaltensprüfungen und der Vergleich zur tieferen Ursache sind Experimente mit Gegenprobe. Ich halte beides; sag, wenn du nur eins meintest. Folge: Die sechs wartenden Experiment-Ideen im Thema Werke werden zugleich Prüffeld für die Verhaltensprüfungen."
+        },
+        {
+          "id": "st-fragenliste",
+          "s": "auftrag",
+          "stand": "freigegeben",
+          "wer": "Du, in einem Chat, der deine alten Chats durchsuchen kann (Claude mit Chatsuche oder ChatGPT mit Verlauf)",
+          "stuetzt": [
+            "nk-orte"
+          ],
+          "n": "neu",
+          "t": "Deine lange Fragenliste aus den alten Leitfaden-Chats suchen.",
+          "k": "Prompt zum Einfügen: „Führe Issue #189 im Labor esany/design-lab aus (github.com/esany/design-lab/issues/189). Lies zuerst AGENTS.md.“ Der vollständige Suchauftrag steht im Issue; der Chat prüft die Kandidaten selbst und legt das Ergebnis im Issue ab. Du musst nichts lesen."
+        },
+        {
+          "id": "st-chatgpt-plan",
+          "s": "auftrag",
+          "stand": "freigegeben",
+          "wer": "Du richtest es einmal in ChatGPT ein; danach läuft es allein",
+          "stuetzt": [
+            "o6"
+          ],
+          "n": "neu",
+          "t": "ChatGPT prüft das Labor alle drei Stunden auf Aufträge, mit angepasstem Prompt.",
+          "k": "Einrichten: In ChatGPT die bestehende geplante Aufgabe öffnen (oder neu anlegen), Wiederholung alle 3 Stunden, GitHub-Verbindung zu esany/design-lab, und diesen Text als Anweisung einsetzen: „Geplante Prüfung des Labors esany/design-lab (GitHub, Zweig main). Arbeite nur mit dem, was du in diesem Lauf selbst liest; behaupte keine Prüfung, die du nicht gemacht hast. 1. Lies frisch: AGENTS.md und .agents/skills/issue/SKILL.md (Abschnitte A, C, D, H). 2. Suche offene Issues mit genau dem Label an:chatgpt. Andere Labels nicht beachten. Prüfe je Issue frisch: offen; Label noch an:chatgpt; alles unter „Blockiert durch“ geschlossen; noch kein Pull Request oder Zweig mit deinem Ergebnis; die neuesten Kommentare gelesen. 3. Ist keins bereit: nichts im Repo ändern. Antworte mit einer Zeile: „Keine Aufgabe für ChatGPT“ und die Uhrzeit. 4. Sonst das älteste bereite Issue, genau eins, nach Abschnitt C bearbeiten: eigener Zweig lab/gpt-<kurz>; Ergebnis in der im Issue genannten Datei; ein Verlaufseintrag verlauf/JJJJ-MM-TT-<kurz>.md mit erster Zeile „# JJJJ-MM-TT · Titel“ und den Zeilen „**Warum:** …“ und „**Rückgängig:** …“; Pull Request mit „Refs #<nummer>“. Nichts mergen. Keine Regel, Entscheidung, kein Prinzip und keinen Merkzettel ändern. 5. Übergabe als Kommentar im Issue: Ergebnis mit Link · geprüft · nicht geprüft · offen. Trenne: zugewiesen, begonnen, abgegeben. 6. Kannst du nicht ins Repo schreiben: sag genau das im Kommentar und lege das vollständige Ergebnis mit Zielpfad als einen Block in den Kommentar. 7. Fragen an den Eigentümer schreibst du in den Issue-Kommentar, nicht an ihn; Claude bringt sie ins Zielbild. 8. Antworte am Ende in höchstens drei Sätzen Alltagssprache: was du getan hast, mit Namen statt Nummern.“ Was neu ist gegenüber dem ersten Lauf: nur das Label an:chatgpt, höchstens ein Auftrag je Lauf, keine behaupteten Prüfungen, Verlaufseintrag im geforderten Format, nichts übernehmen. Die Notiz dazu steht im Labor im Skill issue, Abschnitt H; ändert sich der Prompt, dann dort und hier.",
+          "g": ".agents/skills/issue/SKILL.md, Abschnitt H; Rückmeldung von ChatGPT zu #203 (13.11.)."
         }
       ]
     },

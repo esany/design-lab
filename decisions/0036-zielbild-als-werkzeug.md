@@ -1,7 +1,7 @@
 ---
-status: Vorschlag
+status: gültig
 datum: 2026-11-11
-entschieden_von: (nach der Antwort des Menschen eintragen)
+entschieden_von: Eigentümer, Zielbild Bug #200, 13.11.2026 („Unbedingt! Alle Rückfragen zu verschiedenen Strängen, Status quo und Freigaben können wir dort transparent sichtbar und thematisch navigierbar machen“)
 dient: A08, A14, A19, A25, A32
 perspektive: system, gebrauch
 ---
