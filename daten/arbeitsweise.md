@@ -66,7 +66,7 @@
   *Beleg:* `.github/workflows/website.yml`, Schritt „Seite zusammenstellen“ kopiert nur index.html, assets, studies, leitfaden
   *Grenze:* Eigentümer im Chat, 13.11. Analyse: research/2026-11-anforderungspruefung/bug-flickenteppich.md. Ursache F1.
 
-### Abgeleitet (35)
+### Abgeleitet (36)
 
 - **arbeitsweise-a01** Fortschritt kommt in der Arbeit mit der KI als Text zurück, nicht als etwas zum Ansehen oder Ausprobieren; der Gestalter sieht deshalb nicht, ob Strukturen tragen.
 - **arbeitsweise-a06** Wurzel des Problems: Im Entwurf antwortet das Material, in der Arbeit mit der KI nur Text; der Gestalter ersetzt sein Urteil durch Regeln.
@@ -134,6 +134,8 @@
   *Grenze:* Eigentümer im Chat, 13.11. Analyse: research/2026-11-anforderungspruefung/bug-flickenteppich.md. Wortlaut: „Barrierefreiheit ist gerade nicht Prio 1! Mir ging es um Look and Feel und eine semantische Prüfung der Farbigkeit. Signalfarben sollten auch als solche konnektiert sein“. Ursache F4.
 - **arbeitsweise-a59** Artefakte sind für Zielbilder ungeeignet: Sie kosten indirekt über die Nutzungslimits, liegen nicht transparent für alle, und ihre Pflege ist ungewiss. Zielbilder gehören als Daten ins Repo und als Seite auf GitHub; für private Werke prüft der Eigentümer ein kostenloses Upgrade von GitHub, das Seiten enthält.
   *Grenze:* Eigentümer im Chat, 13.11., auf Claudes Vorschlag, Werk-Zielbilder als Claude-Artefakte zu veröffentlichen. Wortlaut: „Artefakte sind schlecht, auch sie kosten indirekt über Limits und liegen nicht transparent für alle, die Pflege ist ungewiss. Wir können ein kostenloses Upgrade von Git testen, Seiten sind dort enthalten“. Gilt für Zielbilder und Laborwissen; Grundmodell „Wo“ nennt Artefakte als Arbeitsort, das ist mit dieser Aussage abzugleichen.
+- **arbeitsweise-a60** ChatGPT hat denselben Zugriff auf das private Werke-Repo wie Claude; die Annahme, andere Modelle könnten ein privates Repo womöglich nicht lesen, trifft für ChatGPT nicht zu.
+  *Grenze:* Eigentümer im Chat, 13.11., zur Frage, ob das Labor privat werden kann. Für Codex und Gemini nicht geprüft. Entscheidung des Eigentümers am selben Tag: zuerst die privaten Zielbild-Seiten am Werk einrichten und testen, das Labor danach.
 
 ### Nicht belegt (1)
 
