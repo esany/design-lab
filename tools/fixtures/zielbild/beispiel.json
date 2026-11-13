@@ -1,0 +1,76 @@
+{
+  "titel": "Zielbild Beispielwerk",
+  "ort": "werke · Beispielwerk",
+  "schluessel": "zielbild-beispiel",
+  "iteration": 2,
+  "stand": "2026-11-11",
+  "rueckmeldung": "10.11.",
+  "hinweis": "Erfundenes Beispiel für Prüffälle und Vorschau des Generators; kein echtes Werk.",
+  "teile": [
+    {
+      "teil": "Aufträge",
+      "punkte": [
+        {
+          "id": "a-quellen",
+          "s": "auftrag",
+          "stand": "startklar",
+          "wer": "Claude",
+          "t": "Drei Vorbilder für Plakate im Freien sammeln, je mit Quelle.",
+          "k": "Fertig, wenn: drei Vorbilder mit Fundstelle und je einem Satz, was daran trägt.",
+          "stuetzt": ["fokus"]
+        },
+        {
+          "id": "a-entwurf",
+          "s": "auftrag",
+          "stand": "vorbereitet",
+          "wer": "Claude",
+          "t": "Zwei Entwürfe in A2, lesbar aus fünf Metern.",
+          "k": "Fertig, wenn: zwei Entwürfe als PDF und als Ansicht in Originalgröße vorliegen.",
+          "stuetzt": ["fokus", "abstand"],
+          "offen": "Startet erst, wenn der Abstand bestätigt ist."
+        }
+      ]
+    },
+    {
+      "teil": "Worum es geht",
+      "punkte": [
+        {
+          "id": "fokus",
+          "s": "bestaetigt",
+          "t": "Ein Plakat für ein Fest im Freien, das im Vorbeigehen gelesen wird.",
+          "bestaetigt": "2026-11-10"
+        },
+        {
+          "id": "abstand",
+          "s": "vorschlag",
+          "n": "geändert",
+          "t": "Lesbar aus fünf Metern, Kernbotschaft in drei Sekunden.",
+          "v": "Lesbar aus drei Metern.",
+          "f": "Eher fünf Meter, die Leute gehen auf der anderen Straßenseite.",
+          "k": "Die nötige Schriftgröße folgt aus Abstand und Sehwinkel; ausgerechnet wird sie erst im Entwurf.",
+          "g": "Manifest des Labors, Abschnitt „Wahrnehmungssituation“."
+        },
+        {
+          "id": "farbe",
+          "s": "ableitung",
+          "n": "neu",
+          "t": "Hoher Kontrast, weil das Plakat auch in der Dämmerung hängt.",
+          "g": "abgeleitet aus dem Ort; nicht gemessen."
+        },
+        {
+          "id": "druck",
+          "s": "offen",
+          "t": "Wird im Digitaldruck oder im Siebdruck gedruckt?",
+          "k": "Siebdruck erlaubt Sonderfarben, braucht aber mehr Vorlauf."
+        },
+        {
+          "id": "papier",
+          "s": "impuls",
+          "prio": "später",
+          "t": "Recyclingpapier prüfen.",
+          "k": "Eingang aus dem Gespräch; ändert Farbwirkung und Preis."
+        }
+      ]
+    }
+  ]
+}
