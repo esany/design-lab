@@ -484,9 +484,25 @@
           "id": "st-generator",
           "s": "freigabe",
           "t": "Der Zielbild-Generator wird ein Werkzeug des Labors: Jede Zielbild-Seite, auch in Werken, entsteht aus ihren Punkten mit demselben Werkzeug und denselben Farben.",
-          "k": "Deine Antwort, 13.11.: „Unbedingt!“ Umgesetzt: Der Generator ist seit 13.11. Werkzeug des Labors (Entscheidung 0036, tools/zielbild.mjs). Dein weiterer Gedanke dazu steht als eigener Punkt „Zentrale“ darunter.",
+          "k": "Deine Antwort, 13.11.: „Unbedingt!“ Korrigiert: Ich hatte den Generator danach zu früh als fertig gemeldet; du hast nachgefragt. Jetzt nachgezogen: Der Build erzeugt jedes Zielbild im Labor mit diesem einen Werkzeug, auch den Leitfaden (eigene Vorlage archiviert, doppelte Prüfung entfernt); die automatische Prüfung startet die 19 Prüffälle und meldet, wenn eine Seite nicht aktuell ist; die Startseite listet alle Zielbilder. Offen und deine Entscheidung: Farben und Kontrast, Rückweg ins Labor (zwei Punkte darunter). Nicht geprüft: Einsatz in einem Werk.",
           "g": "Pull Request #187; research/2026-11-zielbild-bausteine/befund.md; decisions/0036 (Vorschlag).",
-          "bestaetigt": "2026-11-13"
+          "n": "ergänzt"
+        },
+        {
+          "id": "st-farbe",
+          "s": "freigabe",
+          "n": "neu",
+          "t": "Farben der Zielbild-Seiten lesbar für alle machen: Grau und Signalrot sind bei kleiner Schrift zu schwach (WCAG AA verlangt 4,5:1).",
+          "k": "Gemessen am 13.11. (axe-core, 390 und 1100 px, hell und dunkel): Grau #71706b auf Papier 4,44:1; Signalrot #d92d17 auf Papier 4,33:1, auf Dunkel 3,77:1; Grün und Ocker bestehen. Bedienflächen sind groß genug. Variante A, im ganzen Labor: Grau #6b6a65 (4,84:1), Signalrot hell #c92a15 (4,91:1), dunkel #f04a33 (4,99:1); der Charakter bleibt, Rot wird minimal tiefer. Variante B, nur Zielbild-Seiten: Farben bleiben, Etiketten größer (ab der kleinsten Token-Größe 0,8125 rem), Rot nur als Rand und Fläche, Text in Grundfarbe. Variante C: beides. Dazu gehört die offene Frage aus dem Zielbild Leitfaden, Iteration 7: Grün und Rot tragen heute je zwei Bedeutungen. Empfehlung: A, weil Lesbarkeit eine Eigenschaft des Systems ist und nicht einer Seite; die Doppelbedeutung im selben Schritt lösen. Gestaltung, darum deine Entscheidung.",
+          "g": "Messung mit axe-core 4 über Playwright; system/tokens/lab.tokens.json; research/2026-11-zielbild-bausteine/befund.md, Lücken; Aussage a44."
+        },
+        {
+          "id": "st-rueckweg",
+          "s": "vorschlag",
+          "n": "neu",
+          "t": "Rückweg von der Seite ins Labor: Heute kopierst du deine Markierungen in den Chat. Das ist der Teil, der laut Befund fehlte, nicht das Format.",
+          "k": "Varianten: A so lassen; der Chat ist dein Ort, und ich trage im selben Schritt ein. B eine Seite als Artefakt mit eigener Datenablage, die ich direkt lese; du klickst, statt zu kopieren, und musst nichts einrichten. C ein Formular auf GitHub; scheidet aus, weil du dort nicht arbeitest. Empfehlung: B, zusammen mit der Zentrale prüfen, weil die Zentrale ohnehin Rückmeldungen über alle Stränge sammeln soll. Unsicher: ob die Datenablage für dich ohne Konto oder Einrichtung läuft; das prüfe ich zuerst.",
+          "g": "research/2026-11-zielbild-bausteine/befund.md, Baustein 6 und Lücken; Punkt „Das Zielbild ist das Format …“."
         },
         {
           "id": "st-main",

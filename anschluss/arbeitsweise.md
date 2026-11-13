@@ -33,7 +33,7 @@ bedeutet (Wunsch des Eigentümers, 07./08.11.; [a:arbeitsweise-a28]).
 | Leitfaden | Zielbild Iteration 7 (`leitfaden/zielbild/`): Fachwissen als Wirknetz, Teil „Begriffe“; 0032 auf Probe bis 05.12. | Werkbuch bauen nach Freigabe; Recherche, Teil 2 (mit Frage 7), sobald „Kontext ist der Oberbegriff“ bestätigt ist |
 | KI-Fachpaket | Konzept, teils überholt | erst nach dem Leitfaden |
 
-**Zu beachten:** Der Zielbild-Generator ist seit 13.11. Werkzeug des Labors (0036, `tools/zielbild.mjs`); das Zielbild Leitfaden wird noch auf ihn umgestellt. Der Farbvorschlag (Iteration 7) betrifft auch ihn. Berichte: jede Zahl mit Bezug, Freigabe im Chat ([a:arbeitsweise-a43]).
+**Zu beachten:** Der Zielbild-Generator ist seit 13.11. Werkzeug des Labors (0036, `tools/zielbild.mjs`); der Build erzeugt damit alle Zielbilder, auch den Leitfaden (13.11.); offen sind Kontrast und Rückweg (Fragen im Zielbild Bug #200). Der Farbvorschlag (Iteration 7) betrifft auch ihn. Berichte: jede Zahl mit Bezug, Freigabe im Chat ([a:arbeitsweise-a43]).
 
 **Geparkt:** Radar als Daten und Ansicht (Matrix oder Kreis offen); Freigabe-Prüfung (#132);
 Hooks; Projektnotiz paleo-type; Radar-Zeile Basic Memory; bei Konflikt startet GitHub keine Prüfung.
@@ -45,5 +45,5 @@ Hooks; Projektnotiz paleo-type; Radar-Zeile Basic Memory; bei Konflikt startet G
 - `research/2026-11-wissensformen/`: `konzeptstand-2026-11-08.md` gilt; `konzept.md` und
   `fachpaket-ki-werkzeug.md` teils überholt (markiert).
 - Vorfall 05.11.: #127 ohne Freigabe übernommen, am 06.11. zurückgenommen (#129, #130).
-- Zielbild als Werkzeug: 0036, gültig seit 13.11.; das Zielbild Leitfaden nutzt noch seine eigene Vorlage.
+- Zielbild als Werkzeug: 0036, gültig und eingebunden seit 13.11.
 </details>

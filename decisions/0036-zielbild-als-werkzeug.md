@@ -15,7 +15,7 @@ Hand nachgebaut, mit eigener Kopie der Vorlage und eigenem Build. Der Eigentüme
 gebeten, den Generator allgemein zu machen und die Gestaltungsprinzipien der Seite als Bausteine
 abzulegen.
 
-**Entscheidung (Vorschlag):** Es gibt ein Werkzeug `tools/zielbild.mjs` mit einer neutralen
+**Entscheidung:** Es gibt ein Werkzeug `tools/zielbild.mjs` mit einer neutralen
 Vorlage `tools/zielbild/vorlage.html`. Es prüft die Daten eines Zielbilds und erzeugt die Seite;
 Farben und Schriften kommen aus den Tokens des Labors. Werke nutzen es aus einem Klon des Labors,
 ohne eigene Kopie der Vorlage. Die acht Bausteine stehen im
@@ -29,8 +29,13 @@ oder Server, widerspricht A14 und A15).
 
 **Folgen:** Leichter: ein Ort für Vorlage und Prüfung; ein Werk braucht nur Daten. PR #167 kann
 seine eigene Vorlage und den Abschnitt in `tools/build.mjs` durch das Werkzeug ersetzen. Schwerer:
-Ein Werk hängt von einem Klon des Labors ab; Änderungen an der Vorlage wirken auf alle Werke. Die
-Prüffälle `tools/zielbild-test.mjs` laufen noch nicht in der automatischen Prüfung; dazu wäre
-`.github/workflows/pruefen.yml` zu ergänzen (Rückfrage).
+Ein Werk hängt von einem Klon des Labors ab; Änderungen an der Vorlage wirken auf alle Werke. 
+
+**Umsetzung (13.11.2026):** `tools/build.mjs` erzeugt jede Datei `…/zielbild/punkte.json` im Labor
+mit diesem Werkzeug und prüft, ob die Seite aktuell ist; die eigene Vorlage und Prüfung des
+Zielbilds Leitfaden sind abgelöst (Vorlage archiviert). Die Prüffälle laufen in der automatischen
+Prüfung. Die Startseite listet alle Zielbilder. Offen: Kontrast nach WCAG AA (Grau und Signalrot
+bei kleiner Schrift), Doppelbedeutung der Farben, Rückweg von der Seite ins Labor; das sind
+Gestaltungsfragen an den Eigentümer im Zielbild Bug #200.
 
 **Rückgängig:** PR revertieren; Werke behalten ihre zuletzt erzeugte Seite.

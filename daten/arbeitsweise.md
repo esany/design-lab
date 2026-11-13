@@ -63,7 +63,7 @@
   *Beleg:* `leitfaden/zielbild/vorlage.html`, Stilangaben .chip.bestaetigt, .fest-mark, .punkt.wandel-an, .chip.befund
   *Grenze:* Vom Eigentümer bemerkt (f65). Vorschlag im Zielbild, Punkt „Farbe zeigt nur, was du tun musst“.
 
-### Abgeleitet (31)
+### Abgeleitet (32)
 
 - **arbeitsweise-a01** Fortschritt kommt in der Arbeit mit der KI als Text zurück, nicht als etwas zum Ansehen oder Ausprobieren; der Gestalter sieht deshalb nicht, ob Strukturen tragen.
 - **arbeitsweise-a06** Wurzel des Problems: Im Entwurf antwortet das Material, in der Arbeit mit der KI nur Text; der Gestalter ersetzt sein Urteil durch Regeln.
@@ -123,6 +123,8 @@
   *Grenze:* Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Verwandt mit a44 (Farben ohne Begründung). Gegenmittel (Vorschlag): Jede Darstellung, auch eine schnelle im Chat, nimmt Farben, Schriften und Linien aus system/tokens; Gestaltung dient und tritt zurück; nichts vortäuschen, was das Medium nicht ist.
 - **arbeitsweise-a54** Die KI hat eine Gliederung als Skizze ausgegeben, nur eine Variante gezeigt und nicht gesagt, worauf ihr Vorschlag beruht.
   *Grenze:* Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): Eine erste Skizze prüft eine Entwurfsfrage (z. B. das Ordnungsprinzip) in mehreren echten Varianten; die Begründung jeder Variante und die Kriterien der Wahl sind aufklappbar dabei. Befund: research/2026-11-skizze-varianten/befund.md.
+- **arbeitsweise-a55** Die KI meldete den Zielbild-Generator als „Werkzeug des Labors“, obwohl das Zielbild Leitfaden noch über eine eigene Vorlage und eine doppelte Prüfung lief, die Prüffälle nicht in der automatischen Prüfung liefen, die Startseite keine Zielbilder zeigte und der Kern aus dem Befund (Rückweg ins Labor, Farben) offen war; der Eigentümer fragte, ob es wieder eine halbherzige Lösung sei.
+  *Grenze:* Eigentümer im Chat, 13.11. Einmal beobachtet (Claude); gleiche Klasse wie b-stand im Zielbild Bug #200 (Vorhandensein statt Wirkung, Prinzip 10 Scheinreife). Gegenmittel (Vorschlag, Kandidat für die Verhaltensprüfungen O3): „fertig“ nur mit Abgleich gegen den Zweck aus Befund und Entscheidung; offene Teile in derselben Meldung nennen.
 
 ### Nicht belegt (1)
 
