@@ -1,4 +1,4 @@
-# Gegenprüfung des Fundstück-Ablaufs
+# 2026-11-13 · Gegenprüfung des Fundstück-Ablaufs
 
 **Was:** Neuer Befund `research/2026-11-fundstueck-passung/befund.md` zu Issue #179, ohne Änderung am Skill oder an Entscheidungen.
 
