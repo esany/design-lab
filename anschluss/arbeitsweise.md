@@ -1,13 +1,13 @@
 ---
 thema: Arbeitsweise mit KI · Wissensformen
-stand: Prüfstand abgeschlossen (08.11.); Leitfaden (Arbeitsname Werkbuch) wird über die Seite „Zielbild Leitfaden“ (leitfaden/zielbild/) entworfen, Iteration 7 vom 12.11. mit Teil „Begriffe“ und neuem Verständnis von Fachwissen als Wirknetz; Ergebnisse von ChatGPT (#174) und Codex (#175) von Claude geprüft, warten auf Ja des Eigentümers; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
-naechster_schritt: Zielbild Bug #200, Iteration 3 (13.11.) mit der Gegenprüfung von ChatGPT liegt beim Eigentümer; er urteilt vor allem über die Reihenfolge und über Prinzip 5 und 0018. Claude setzt den Rest der widerspruchsfreien Betriebstexte um (Prüfung im Build gegen Rückfälle).
-offen: [180, 188, 189, 196, 200]
+stand: Prüfstand abgeschlossen (08.11.); Leitfaden (Arbeitsname Werkbuch) wird über die Seite „Zielbild Leitfaden“ (leitfaden/zielbild/) entworfen, Iteration 7 vom 12.11. mit Teil „Begriffe“ und neuem Verständnis von Fachwissen als Wirknetz; Recherche (#174) und implizite Verweise (#175) am 13.11. übernommen; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
+naechster_schritt: Stapel abarbeiten (Eigentümer, 13.11., Priorität 1). Am 13.11. elf wartende Änderungen übernommen oder als überholt geschlossen; die Fragen, die nur der Eigentümer beantworten kann, stehen im Zielbild Bug #200, Teil „Stapel“. Danach baut Claude die ersten Verhaltensprüfungen (O3).
+offen: [180, 189, 200]
 ---
 
 # Thema: Arbeitsweise mit KI · Wissensformen
 
-**Zuletzt fortgeschrieben:** 13.11.2026 (Claude; Grundmodell in AGENTS.md, zehn Werkchat-Eingänge und Befund Skizze übernommen; Zielbild Bug #200, Iteration 3 mit der Gegenprüfung von ChatGPT)
+**Zuletzt fortgeschrieben:** 13.11.2026 (Claude; Grundmodell in AGENTS.md, zehn Werkchat-Eingänge und Befund Skizze übernommen; Zielbild Bug #200, Iteration 3 mit der Gegenprüfung von ChatGPT; Stapel abgearbeitet)
 
 **Worum es geht:** Wie arbeitet der Gestalter mit KI so, dass echte Werke und Werkzeuge entstehen
 statt Textberge, und wie bleibt Wissen für jeden Chat erreichbar, ohne dass er alles lesen muss?
@@ -30,7 +30,7 @@ bedeutet (Wunsch des Eigentümers, 07./08.11.; [a:arbeitsweise-a28]).
 | Strang | Stand | Als Nächstes |
 |---|---|---|
 | Prüfstand | abgeschlossen 08.11.; [Ergebnis](../evals/neustart-daten/README.md) | – |
-| Leitfaden | Zielbild Iteration 7 (`leitfaden/zielbild/`): Fachwissen als Wirknetz, Teil „Begriffe“; 0032 auf Probe bis 05.12. | #174/#175 nach Ja übernehmen; Werkbuch bauen nach Freigabe; Recherche, Teil 2 (mit Frage 7), sobald „Kontext ist der Oberbegriff“ bestätigt ist |
+| Leitfaden | Zielbild Iteration 7 (`leitfaden/zielbild/`): Fachwissen als Wirknetz, Teil „Begriffe“; 0032 auf Probe bis 05.12. | Werkbuch bauen nach Freigabe; Recherche, Teil 2 (mit Frage 7), sobald „Kontext ist der Oberbegriff“ bestätigt ist |
 | KI-Fachpaket | Konzept, teils überholt | erst nach dem Leitfaden |
 
 **Zu beachten:** PR #187 baut den Zielbild-Generator als Werkzeug (0036); nach Übernahme nutzt das Zielbild Leitfaden ihn statt eigener Vorlage. Der Farbvorschlag (Iteration 7) betrifft auch ihn. Berichte: jede Zahl mit Bezug, Freigabe im Chat ([a:arbeitsweise-a43]).

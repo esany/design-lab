@@ -8,7 +8,7 @@ Werkzeuge und Entwicklungen, die das Labor beobachtet. Vier Ringe:
 - **Halten** — bewusst nicht (mehr) nutzen
 
 Jeder Eintrag: was es ist · warum relevant · Quelle · Stand. Änderungen nur mit
-Begründung (Skill `pflege`). Stand des Radars: **2026-11-09**.
+Begründung (Skill `pflege`). Stand des Radars: **2026-11-11**.
 
 ## Einsetzen
 
@@ -26,6 +26,7 @@ Begründung (Skill `pflege`). Stand des Radars: **2026-11-09**.
 | Was | Warum | Quelle | Stand |
 |---|---|---|---|
 | Observable Plot, D3, Vega-Lite | Profistandard für Datenvisualisierung | — | 2026-10 |
+| Dataviz Inspiration (Yan Holtz) | Zielbild-Bestand: 462 kuratierte Beispiele, je mit Kontext- und Gestaltungsbeschreibung, 46 Diagrammtypen und Technik-Labels (Annotation, Direktbeschriftung, Unsicherheit …); Katalog CC BY 4.0, Bilder nicht frei; als [Zielbild-Pilot](experiments/2026-11-zielbild-dataviz-inspiration/README.md) übernommen | [Seite](https://www.dataviz-inspiration.com/) · [Repo, Lizenz](https://github.com/holtzy/dataviz-inspiration/blob/main/LICENSE) | 2026-11-11 |
 | Paged.js | Satz und Print aus Code; am Flyer erprobt: Seitenformat und Beschnitt ja, Textverkettung, Grundlinienraster und CMYK nur mit eigenen Ergänzungen | [Experiment](experiments/2026-10-print-pagedjs/README.md) | 2026-10-28 |
 | Typst | Satz als Code, Daten; CMYK und PDF/X nicht belegt | [typst.app](https://typst.app/blog/2025/automated-generation) | 2026-10 |
 | Scribus | freies Layoutprogramm mit CMYK, PDF/X-4, Python; nächster Vergleich am Flyer | [Wikipedia](https://en.wikipedia.org/wiki/Scribus) | 2026-10-28 |

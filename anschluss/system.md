@@ -1,7 +1,7 @@
 ---
 thema: Das System in Ordnung bringen
 stand: Umbau läuft – Stand als Datenquelle (#103), schlanker Kern (U3, #108), Audit paleo-type (#112) und Messen und warnen (#116) übernommen; Neustart-Test #110 geprüft, vier Fälle nicht getestet
-naechster_schritt: Astra bringt #110 auf den Stand von main; der Eigentümer entscheidet, wie die Startfälle frisch laufen (#109); Claude prüft nach Astras Gegenlesen #100 und spezifiziert U4.
+naechster_schritt: Der Eigentümer entscheidet, wie die Startfälle frisch laufen (#109); Claude prüft nach Astras Gegenlesen #100 und spezifiziert U4.
 offen: [40, 56, 62, 100, 109]
 ---
 
@@ -25,4 +25,4 @@ Längengrenzen warnen nur noch; `tools/messwerte.mjs` misst im CI Start-Lesekost
 
 ## Neustart-Test U3 · #110 geprüft (30.10.2026)
 
-Astras Protokoll stimmt (Zeichenzahlen, Labels, Zitat nachgeprüft). Alle vier Startfälle sind **nicht getestet**, weil der Chat Projektkontext hatte; drei Zusatznachrichten nur beschrieben, die „radar.md“-Antwort ohne Quelle/`fundstueck` unvollständig. PR #110 hat Konflikte mit `main`. [Prüfung](https://github.com/esany/design-lab/pull/110#issuecomment-6512047766). **Offen beim Eigentümer:** echte frische Sitzungen für die Startfälle.
+Astras Protokoll stimmt (Zeichenzahlen, Labels, Zitat nachgeprüft). Alle vier Startfälle sind **nicht getestet**, weil der Chat Projektkontext hatte; drei Zusatznachrichten nur beschrieben, die „radar.md“-Antwort ohne Quelle/`fundstueck` unvollständig. Protokoll am 13.11. von Claude übernommen: [`evals/start/ergebnisse/2026-10-30-astra.md`](../evals/start/ergebnisse/2026-10-30-astra.md). [Prüfung](https://github.com/esany/design-lab/pull/110#issuecomment-6512047766). **Offen beim Eigentümer:** echte frische Sitzungen für die Startfälle.

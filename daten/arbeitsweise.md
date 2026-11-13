@@ -3,9 +3,9 @@
 > Erzeugt von `node tools/build.mjs` aus `daten/arbeitsweise.json` und dem Merkzettel
 > `anschluss/arbeitsweise.md`. Nicht von Hand ändern. Modelle lesen die Daten, nicht diese Seite.
 
-**Stand:** Prüfstand abgeschlossen (08.11.); Leitfaden (Arbeitsname Werkbuch) wird über die Seite „Zielbild Leitfaden“ (leitfaden/zielbild/) entworfen, Iteration 7 vom 12.11. mit Teil „Begriffe“ und neuem Verständnis von Fachwissen als Wirknetz; Ergebnisse von ChatGPT (#174) und Codex (#175) von Claude geprüft, warten auf Ja des Eigentümers; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
+**Stand:** Prüfstand abgeschlossen (08.11.); Leitfaden (Arbeitsname Werkbuch) wird über die Seite „Zielbild Leitfaden“ (leitfaden/zielbild/) entworfen, Iteration 7 vom 12.11. mit Teil „Begriffe“ und neuem Verständnis von Fachwissen als Wirknetz; Recherche (#174) und implizite Verweise (#175) am 13.11. übernommen; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
 
-**Nächster Schritt:** Zielbild Bug #200, Iteration 3 (13.11.) mit der Gegenprüfung von ChatGPT liegt beim Eigentümer; er urteilt vor allem über die Reihenfolge und über Prinzip 5 und 0018. Claude setzt den Rest der widerspruchsfreien Betriebstexte um (Prüfung im Build gegen Rückfälle).
+**Nächster Schritt:** Stapel abarbeiten (Eigentümer, 13.11., Priorität 1). Am 13.11. elf wartende Änderungen übernommen oder als überholt geschlossen; die Fragen, die nur der Eigentümer beantworten kann, stehen im Zielbild Bug #200, Teil „Stapel“. Danach baut Claude die ersten Verhaltensprüfungen (O3).
 
 ## Offene Fragen an den Eigentümer (7)
 
@@ -63,7 +63,7 @@
   *Beleg:* `leitfaden/zielbild/vorlage.html`, Stilangaben .chip.bestaetigt, .fest-mark, .punkt.wandel-an, .chip.befund
   *Grenze:* Vom Eigentümer bemerkt (f65). Vorschlag im Zielbild, Punkt „Farbe zeigt nur, was du tun musst“.
 
-### Abgeleitet (30)
+### Abgeleitet (31)
 
 - **arbeitsweise-a01** Fortschritt kommt in der Arbeit mit der KI als Text zurück, nicht als etwas zum Ansehen oder Ausprobieren; der Gestalter sieht deshalb nicht, ob Strukturen tragen.
 - **arbeitsweise-a06** Wurzel des Problems: Im Entwurf antwortet das Material, in der Arbeit mit der KI nur Text; der Gestalter ersetzt sein Urteil durch Regeln.
@@ -99,6 +99,8 @@
   *Grenze:* Einmal beobachtet (Claude, 11.11.). Vom Eigentümer als schwerer Fehler benannt. Vorschlag zur Abhilfe: decisions/0035.
 - **arbeitsweise-a34** In einer frühen Entwurfsphase erzeugte die KI Dateien, einen Generator und acht Pull Requests, statt im Gespräch Lesart und Format zu klären; das Ergebnis wurde verworfen, die Kosten waren hoch.
   *Grenze:* Einmal beobachtet (Claude, 11.11.). Prinzipien 9 und 11; Eigentümer: der Chat sei richtig teuer.
+- **arbeitsweise-a35** Beauftragt, einen Ansatz mit dem Eigentümer im Gespräch zu klären, gab die KI Einwände und eine offene Frage nach Werkzeug und Arbeitsweise zurück statt eines eigenen, begründeten Vorschlags; der Eigentümer musste den Vorschlag ausdrücklich einfordern.
+  *Grenze:* Einmal beobachtet (Claude, Werkchat 11.11.; privat in esany/werke). Pendel wie a31: nach der Korrektur ‚gebaut vor Klärung‘ (a34) zu weit ins Fragen. Gegenmittel: Klären heißt einen Vorschlag mit Standardwahl vorlegen, Einwände eingearbeitet, Anforderungen abgeglichen; fragen nur, was nur der Eigentümer weiß (a28, k-zweck). Übernommen 13.11. (Claude) aus #186; „fachfremd“ gestrichen, weil es das falsche Nutzerbild aus Bug #200 wiederholt.
 - **arbeitsweise-a43** Die KI meldete dem Eigentümer das Ergebnis einer Prüfung mit Zahlen und Kürzeln ohne ihr Bezugsobjekt („24 Einträge“ ohne „der Seite ‚Mit KI arbeiten‘“) und deutete an, er müsse zum Freigeben auf GitHub; er konnte den Bericht nicht nachvollziehen.
   *Grenze:* Einmal beobachtet (Claude, Leitfaden-Chat, 11./12.11.), Bug #188. Gleiches Muster wie a28 (Struktur statt Bedeutung, Nummern statt Namen).
 - **arbeitsweise-a45** In einer Warumkette hat die KI Symptom und Ursache vertauscht: Das Erleben der Nutzerin (Ergebnisse halten nicht) stand als letzte Folge am Ende, statt als erstes Warum, von dem die Kette über die Ursachen zur Erkenntnislücke führt.

@@ -234,9 +234,9 @@
           "s": "ableitung",
           "t": "Offen, zwei Lesarten: Dem Labor fehlt ein ausdrückliches, prüfbares Modell von Akteuren, Zielen, Anforderungen, Mechanismen und Belegen. Oder: Die Bausteine gibt es schon, es fehlt ihre Ausführung und die Messung ihrer Wirkung.",
           "n": "geändert",
-          "k": "Für die erste Lesart: Widersprüche fallen nicht auf (U1), der Stand misst Vorhandensein statt Wirkung (U3), der Stapel hat keine Ordnung (U6). Für die zweite (Gegenprüfung): Intent, verknuepfung.md, Entscheidungen, Prüffälle und jetzt das Grundmodell liegen vor; ein Zielmodell erklärt weder Sykophanz noch Werkzeugfehler noch zu flache Recherche. Beide können zugleich stimmen. Entscheiden würde ein Vergleich: dieselbe Auftragsreihe einmal mit heutiger Startroutine, einmal mit verknüpftem Modell und Prüfung; gezählt werden Fehler, Korrekturen, Aufwand. Bis dahin keine Ursachenbehauptung.",
+          "k": "Für die erste Lesart: Widersprüche fallen nicht auf (U1), der Stand misst Vorhandensein statt Wirkung (U3), der Stapel hat keine Ordnung (U6). Für die zweite (Gegenprüfung): Intent, verknuepfung.md, Entscheidungen, Prüffälle und jetzt das Grundmodell liegen vor; ein Zielmodell erklärt weder Sykophanz noch Werkzeugfehler noch zu flache Recherche. Beide können zugleich stimmen. Entscheiden würde ein Vergleich: dieselbe Auftragsreihe einmal mit heutiger Startroutine, einmal mit verknüpftem Modell und Prüfung; gezählt werden Fehler, Korrekturen, Aufwand. Bis dahin keine Ursachenbehauptung. Ein zweiter, unabhängiger Bericht kommt zum selben Schluss (Abschluss der Recherche zur Entwurfsbewegung, ChatGPT, 13.11.): erst einen realen Fehlerfall Schritt für Schritt rückwärts verfolgen, dann konkurrierende Eingriffe mit Gegenprobe vergleichen; neue Regeln erst, wenn ein Eingriff nachweislich wirkt.",
           "v": "Hypothese: U1 bis U6 sind Erscheinungen einer tieferen Ursache: Das Labor hat kein ausdrückliches, prüfbares Modell von Akteuren, Zielen, Anforderungen, Mechanismen und Belegen, gegen das Modelle arbeiten.",
-          "g": "Gegenprüfung ChatGPT, 13.11.: research/2026-11-anforderungspruefung/gegenpruefung-chatgpt.md, Teil 1."
+          "g": "Gegenprüfung ChatGPT, 13.11.: research/2026-11-anforderungspruefung/gegenpruefung-chatgpt.md, Teil 1. · research/2026-10-entwurfsbewegung/abschluss-ki-entwicklung.md, Selbstgegenprüfung, Schritte 1–4."
         },
         {
           "id": "u-schleife",
@@ -406,8 +406,8 @@
           "id": "o5",
           "s": "vorschlag",
           "t": "O5 · Den Stapel aus 13 PRs und 32 Issues verwalte ich selbst; zu dir kommen nur gebündelte Bedeutungsfragen hier im Zielbild.",
-          "k": "Braucht O2, damit die Grenze „Bedeutungsfrage“ richtig gezogen ist.",
-          "bestaetigt": "2026-11-12"
+          "k": "Braucht O2, damit die Grenze „Bedeutungsfrage“ richtig gezogen ist. Stand 13.11.: läuft, siehe Teil „Stapel“.",
+          "n": "ergänzt"
         },
         {
           "id": "o5-kalibrierung",
@@ -458,6 +458,51 @@
           "t": "Reihenfolge: zuerst Umsetzen und Abarbeiten (O1, O5), dann wenige Verhaltensprüfungen mit dir als Abnehmer (O3), dann das Grundmodell als verknüpfte Zuordnung an echten Entscheidungen erproben (O2), dann Korrekturen bis zur Wirkung verfolgen (O4). Ponytail als Arbeitsmuster nebenher im Pilot; neue Infrastruktur erst bei nachgewiesener Lücke.",
           "k": "Deine Antwort, 13.11.: „Prio 1 Stapel abarbeiten“. Läuft. Das ist die Empfehlung der Gegenprüfung; ich teile sie, weil sie deinem „Umsetzen vor Neuem“ folgt und jede Stufe an Verhalten misst statt an vorhandenem Text. Gegenprobe je Stufe: O1 an einer echten Übergabe, O3 durch deine Stichprobe, O2 an einer echten Entscheidung. Risiko: O3 kann zu einer weiteren Struktur werden, die niemand ausführt; darum zuerst drei bis fünf Fälle, nicht eine Suite.",
           "g": "Gegenprüfung ChatGPT, 13.11.: research/2026-11-anforderungspruefung/gegenpruefung-chatgpt.md, Abschnitt „Reihenfolge und Bewertung“."
+        }
+      ]
+    },
+    {
+      "teil": "Stapel am 13.11.",
+      "punkte": [
+        {
+          "id": "st-stand",
+          "s": "befund",
+          "n": "neu",
+          "t": "Von 12 wartenden Änderungen ist eine übrig; von 34 offenen Aufgaben sind 24 übrig.",
+          "k": "Übernommen: Abschluss der Recherche zur Entwurfsbewegung, Gegenprüfung des Fundstück-Ablaufs, Recherche zum Leitfaden und seine impliziten Verweise, Fundstück Manovich, Zielbild-Pilot Dataviz Inspiration, Eingang „Klären heißt vorschlagen“ (dabei „fachfremd“ gestrichen, weil es das falsche Nutzerbild wiederholt), Protokoll des Neustart-Tests, Review am Alarmpunkt als historischer Befund. Als überholt geschlossen: der Entwurf „Freigabe sichtbar machen“ (vom Grundmodell ersetzt) und die alte Fassung der Möglichkeitsraum-Recherche (seit 30.10. gesichert). Geschlossen, weil erledigt oder doppelt: zehn Aufgaben. Übrig ist der Zielbild-Generator; er wartet auf dein Urteil unten.",
+          "g": "Gezählt am 13.11. über die GitHub-Schnittstelle; Verlauf: verlauf/2026-11-13-stapel.md."
+        },
+        {
+          "id": "st-fundstueck",
+          "s": "freigabe",
+          "n": "neu",
+          "t": "Die Fundstück-Sichtung fragt künftig auch, welches Fachwissen ein Fundstück trägt (Theorie und Praxis, auf welcher Gestaltungsebene, mit welcher Belegstärke), auch wenn es gar kein Werkzeug ist.",
+          "k": "Was sich ändert: eine kurze Zusatzfrage im bestehenden Skill, kein zweiter Ablauf; erprobt an zwei Fällen, einem Text oder einer Person und einem Werkzeug. Warum: Der Fall dataviz-skills zeigt, dass die Sichtung heute Lizenz und Technik sauber prüft und das Gestaltungswissen darin übersieht. Wenn wir es lassen: Fachwissen wird weiter zufällig übersehen. Der volle Fundstück-Modus (Vorschlag 0031, seit 29.10.) bleibt zurückgestellt, bis sich zeigt, ob die Zusatzfrage reicht. Empfehlung: ja.",
+          "g": "research/2026-11-fundstueck-passung/befund.md (ChatGPT, 13.11.), Optionen und Abschnitt 5; von Claude gegengelesen."
+        },
+        {
+          "id": "st-generator",
+          "s": "freigabe",
+          "n": "neu",
+          "t": "Der Zielbild-Generator wird ein Werkzeug des Labors: Jede Zielbild-Seite, auch in Werken, entsteht aus ihren Punkten mit demselben Werkzeug und denselben Farben.",
+          "k": "Diese Seite entsteht schon damit, aber aus einem Zweig, der nicht übernommen ist. Der Fehler beim Aufruf ohne Zielangabe ist am 13.11. behoben und hat einen Prüffall. Wenn wir es lassen: Jede Seite bringt ihre eigene Vorlage mit, Farben und Prüfungen laufen auseinander. Neues Werkzeug mit eigener Entscheidung (0036), darum dein Urteil. Empfehlung: ja.",
+          "g": "Pull Request #187; research/2026-11-zielbild-bausteine/befund.md; decisions/0036 (Vorschlag)."
+        },
+        {
+          "id": "st-main",
+          "s": "freigabe",
+          "n": "neu",
+          "t": "Der Hauptzweig wird technisch geschützt: Änderungen nur über eine Übernahme mit grünen Prüfungen, kein Überschreiben, kein Löschen.",
+          "k": "Warum: Heute hält nur der Text der Regeln die Modelle davon ab, direkt auf den Hauptzweig zu schreiben; für ChatGPT, Codex und Gemini gibt es keine technische Sperre (belegt, Prüfung vom 28.10.). Ich kann den Schutz nicht einstellen: Meine Arbeitsumgebung sperrt Schreibzugriffe auf die Einstellungen (getestet 29.10.). Wege: ein Auftrag an ein anderes Modell mit GitHub-Zugang (ob es das darf, ist nicht geprüft), oder einmal du in den GitHub-Einstellungen, mit fertiger Anleitung. Sicherheit, darum deine Entscheidung. Empfehlung: ja, zuerst über ein anderes Modell.",
+          "g": "Aufgabe #40 (Audit Astra, 28.10.; Versuch Claude, 29.10.)."
+        },
+        {
+          "id": "st-arbeitsweise-alt",
+          "s": "freigabe",
+          "n": "neu",
+          "t": "Fünf Entwürfe zur Arbeitsweise vom 28.10. gehen in Bug #200 auf und werden geschlossen: Modellprofile, Regeln prüfen, Kommunikation und Delegation, Tokenökonomie, Assistenz im Entwicklungs- und Entwurfsprozess.",
+          "k": "Sie stammen aus dem Plan vom 28.10. und fragen nach dem, was jetzt die Verhaltensprüfungen (O3), das Register der Fehlermuster und der Punkt „Kontingent“ abdecken. Ihr Text bleibt lesbar; nichts wird gelöscht. Wenn wir sie offen lassen: Sie stehen neben dem Zielbild und werden zu einer zweiten Liste. Empfehlung: schließen. Weil sie Vorhaben sind, die einmal mit dir besprochen wurden, frage ich vorher.",
+          "g": "Aufgaben #57–#61 (Label entwurf, seit 28.10.)."
         }
       ]
     },

@@ -351,6 +351,13 @@
       "notiz": "Einmal beobachtet (Claude, 11.11.). Prinzipien 9 und 11; Eigentümer: der Chat sei richtig teuer."
     },
     {
+      "id": "arbeitsweise-a35",
+      "aussage": "Beauftragt, einen Ansatz mit dem Eigentümer im Gespräch zu klären, gab die KI Einwände und eine offene Frage nach Werkzeug und Arbeitsweise zurück statt eines eigenen, begründeten Vorschlags; der Eigentümer musste den Vorschlag ausdrücklich einfordern.",
+      "status": "abgeleitet",
+      "seit": "2026-11-11",
+      "notiz": "Einmal beobachtet (Claude, Werkchat 11.11.; privat in esany/werke). Pendel wie a31: nach der Korrektur ‚gebaut vor Klärung‘ (a34) zu weit ins Fragen. Gegenmittel: Klären heißt einen Vorschlag mit Standardwahl vorlegen, Einwände eingearbeitet, Anforderungen abgeglichen; fragen nur, was nur der Eigentümer weiß (a28, k-zweck). Übernommen 13.11. (Claude) aus #186; „fachfremd“ gestrichen, weil es das falsche Nutzerbild aus Bug #200 wiederholt."
+    },
+    {
       "id": "arbeitsweise-a43",
       "aussage": "Die KI meldete dem Eigentümer das Ergebnis einer Prüfung mit Zahlen und Kürzeln ohne ihr Bezugsobjekt („24 Einträge“ ohne „der Seite ‚Mit KI arbeiten‘“) und deutete an, er müsse zum Freigeben auf GitHub; er konnte den Bericht nicht nachvollziehen.",
       "status": "abgeleitet",
