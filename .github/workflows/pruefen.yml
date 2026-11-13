@@ -76,6 +76,8 @@ jobs:
         run: node tools/gitter-test.mjs
       - name: Prüffälle Datensätze
         run: node tools/daten-test.mjs
+      - name: Prüffälle Zielbild-Generator
+        run: node tools/zielbild-test.mjs
 
   messwerte:
     name: Eingriffe und Lesekosten

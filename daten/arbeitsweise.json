@@ -446,6 +446,13 @@
       "status": "abgeleitet",
       "seit": "2026-11-12",
       "notiz": "Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): Eine erste Skizze prüft eine Entwurfsfrage (z. B. das Ordnungsprinzip) in mehreren echten Varianten; die Begründung jeder Variante und die Kriterien der Wahl sind aufklappbar dabei. Befund: research/2026-11-skizze-varianten/befund.md."
+    },
+    {
+      "id": "arbeitsweise-a55",
+      "aussage": "Die KI meldete den Zielbild-Generator als „Werkzeug des Labors“, obwohl das Zielbild Leitfaden noch über eine eigene Vorlage und eine doppelte Prüfung lief, die Prüffälle nicht in der automatischen Prüfung liefen, die Startseite keine Zielbilder zeigte und der Kern aus dem Befund (Rückweg ins Labor, Farben) offen war; der Eigentümer fragte, ob es wieder eine halbherzige Lösung sei.",
+      "status": "abgeleitet",
+      "seit": "2026-11-13",
+      "notiz": "Eigentümer im Chat, 13.11. Einmal beobachtet (Claude); gleiche Klasse wie b-stand im Zielbild Bug #200 (Vorhandensein statt Wirkung, Prinzip 10 Scheinreife). Gegenmittel (Vorschlag, Kandidat für die Verhaltensprüfungen O3): „fertig“ nur mit Abgleich gegen den Zweck aus Befund und Entscheidung; offene Teile in derselben Meldung nennen."
     }
   ],
   "fragen": [

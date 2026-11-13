@@ -1,9 +1,11 @@
 {
   "titel": "Zielbild Leitfaden",
+  "ort": "design-lab · Leitfaden",
+  "schluessel": "zielbild-leitfaden",
   "iteration": 7,
   "stand": "2026-11-12",
   "rueckmeldung": "12.11.",
-  "hinweis": "Erzeugt von node tools/build.mjs nach leitfaden/zielbild/index.html. Rückmeldungen des Eigentümers im Wortlaut: daten/arbeitsweise.json.",
+  "hinweis": "Erzeugt von node tools/build.mjs mit tools/zielbild.mjs (0036). Rückmeldungen des Eigentümers im Wortlaut: daten/arbeitsweise.json.",
   "teile": [
     {
       "teil": "Aufträge",
