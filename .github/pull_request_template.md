@@ -18,5 +18,4 @@
 
 ---
 
-**Freigabe:** Unten auf **Merge pull request** klicken. Nicht einverstanden?
-Kommentar schreiben — der Agent arbeitet nach.
+**Übernahme (0019, Grundmodell in `AGENTS.md`):** Das orchestrierende Modell übernimmt selbst, wenn die Änderung im freigegebenen Rahmen liegt und alle Prüfungen grün sind. Der Eigentümer liest hier nicht mit: Bedeutung, Gestaltung, neue Regeln und schwer Umkehrbares gehen als Frage in den Chat oder ins Zielbild, nicht in diesen Pull Request.

@@ -1,13 +1,13 @@
 ---
 thema: Arbeitsweise mit KI · Wissensformen
 stand: Prüfstand abgeschlossen (08.11.); Leitfaden (Arbeitsname Werkbuch) wird über die Seite „Zielbild Leitfaden“ (leitfaden/zielbild/) entworfen, Iteration 7 vom 12.11. mit Teil „Begriffe“ und neuem Verständnis von Fachwissen als Wirknetz; Ergebnisse von ChatGPT (#174) und Codex (#175) von Claude geprüft, warten auf Ja des Eigentümers; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
-naechster_schritt: Neuer Chat. Zielbild Bug #200 ist in Iteration 2 (research/2026-11-anforderungspruefung/zielbild/); ChatGPT prüft gegen und recherchiert (#203). Danach baut Claude Iteration 3 aus dem Ergebnis; Werkbuch, Querschnitt und Recherche Teil 2 ruhen bis dahin.
+naechster_schritt: Umsetzen vor Neuem (Eigentümer, 13.11.). Claude arbeitet den Stapel wartender Änderungen selbst ab und bringt Betriebstexte in Einklang mit dem Grundmodell in AGENTS.md; ChatGPT prüft gegen (#203). Erst danach Iteration 3 zu Bug #200.
 offen: [180, 188, 189, 196, 200, 203]
 ---
 
 # Thema: Arbeitsweise mit KI · Wissensformen
 
-**Zuletzt fortgeschrieben:** 12.11.2026 (Claude, Leitfaden-Chat, Ende; Bug #200 Iteration 2)
+**Zuletzt fortgeschrieben:** 13.11.2026 (Claude; Grundmodell in AGENTS.md, zehn Werkchat-Eingänge und Befund Skizze übernommen)
 
 **Worum es geht:** Wie arbeitet der Gestalter mit KI so, dass echte Werke und Werkzeuge entstehen
 statt Textberge, und wie bleibt Wissen für jeden Chat erreichbar, ohne dass er alles lesen muss?
