@@ -63,7 +63,7 @@
   *Beleg:* `leitfaden/zielbild/vorlage.html`, Stilangaben .chip.bestaetigt, .fest-mark, .punkt.wandel-an, .chip.befund
   *Grenze:* Vom Eigentümer bemerkt (f65). Vorschlag im Zielbild, Punkt „Farbe zeigt nur, was du tun musst“.
 
-### Abgeleitet (20)
+### Abgeleitet (30)
 
 - **arbeitsweise-a01** Fortschritt kommt in der Arbeit mit der KI als Text zurück, nicht als etwas zum Ansehen oder Ausprobieren; der Gestalter sieht deshalb nicht, ob Strukturen tragen.
 - **arbeitsweise-a06** Wurzel des Problems: Im Entwurf antwortet das Material, in der Arbeit mit der KI nur Text; der Gestalter ersetzt sein Urteil durch Regeln.
@@ -101,6 +101,26 @@
   *Grenze:* Einmal beobachtet (Claude, 11.11.). Prinzipien 9 und 11; Eigentümer: der Chat sei richtig teuer.
 - **arbeitsweise-a43** Die KI meldete dem Eigentümer das Ergebnis einer Prüfung mit Zahlen und Kürzeln ohne ihr Bezugsobjekt („24 Einträge“ ohne „der Seite ‚Mit KI arbeiten‘“) und deutete an, er müsse zum Freigeben auf GitHub; er konnte den Bericht nicht nachvollziehen.
   *Grenze:* Einmal beobachtet (Claude, Leitfaden-Chat, 11./12.11.), Bug #188. Gleiches Muster wie a28 (Struktur statt Bedeutung, Nummern statt Namen).
+- **arbeitsweise-a45** In einer Warumkette hat die KI Symptom und Ursache vertauscht: Das Erleben der Nutzerin (Ergebnisse halten nicht) stand als letzte Folge am Ende, statt als erstes Warum, von dem die Kette über die Ursachen zur Erkenntnislücke führt.
+  *Grenze:* Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): Eine Warumkette beginnt beim Erleben des Menschen; der Intent antwortet erst auf die Lücke.
+- **arbeitsweise-a46** Die KI hat die Herkunft von Kontextinformationen nur gesammelt in einer aufklappbaren Grundlage genannt, nicht am Satz; der Eigentümer verlangt sie an jeder Kontextinformation, auch als kurzes Zitat.
+  *Grenze:* Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): Fundstelle und Zitat unter 15 Wörtern direkt am Satz.
+- **arbeitsweise-a47** Die KI hat abgeleitete Aussagen nicht deutlich als Hypothese von Belegtem und von Befunden unterschieden; das Etikett „Ableitung“ reichte dem Eigentümer nicht.
+  *Grenze:* Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): „Hypothese (abgeleitet, nicht geprüft)“ im Text; ob das Etikett im Zielbild so heißen soll, ist eine Frage an den Eigentümer.
+- **arbeitsweise-a48** Die KI hat Angaben, die der Eigentümer nebenbei im Chat machte und die hochsensibel sind, wörtlich in Werkdateien und in eine veröffentlichte Seite übernommen; er musste es selbst bemerken.
+  *Grenze:* Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Im öffentlichen Labor stand nichts davon (geprüft: Dateien, Verlauf, offene PRs, Issues). Gegenmittel (Vorschlag): Vor jedem Schreiben aus einem Chat prüfen, ob eine Angabe das Umfeld des Eigentümers betrifft; im Zweifel auslassen und fragen.
+- **arbeitsweise-a49** Die KI hat eine Wirkung monokausal dargestellt (je Frage eine Kachel), obwohl Vermittlung im Zusammenspiel von Struktur, Interaktion, Visualisierung, Farbe, Text und Lesesituation entsteht.
+  *Grenze:* Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): Wirkung systemisch beschreiben, je Frage über alle Ebenen der Vermittlung.
+- **arbeitsweise-a50** Die KI hat Wege zum Austausch zwischen Umgebungen vorgeschlagen, ohne zu sagen, wer was tut und wo der Stand liegt; der Eigentümer verstand den Vorschlag nicht.
+  *Grenze:* Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): Bei jeder Arbeitsteilung zuerst Rollen und den einen Ort des Stands nennen.
+- **arbeitsweise-a51** Die KI hat in Fragen an einen Kunden ein mehrdeutiges Wort benutzt („Bild“: Aufnahme oder Diagramm?), obwohl sie zuvor selbst die Trennung von Domäne und Darstellung eingeführt hatte.
+  *Grenze:* Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): In Fragen und Befunden jedes Wort festlegen, das in Domäne und Darstellung Verschiedenes meinen kann.
+- **arbeitsweise-a52** Die KI hat die Vermittlung einer Anwendung bewertet, bevor sie dem Eigentümer gezeigt hat, welche Funktionen es überhaupt gibt; ihm fehlte die Grundlage, das Urteil zu prüfen.
+  *Grenze:* Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): Erst ein Inventar des Vorhandenen mit Herkunft, dann Wahrnehmbarkeit, dann Nutzen, dann Urteil.
+- **arbeitsweise-a53** Die KI hat eine Skizze im Chat im Standardstil ihres Werkzeugs gezeichnet und eine Handzeichnung mit schiefen Ecken vorgetäuscht, statt die visuelle Sprache des Labors zu übernehmen, die im Zielbild schon vorlag; der Eigentümer nennt das einen Bug.
+  *Grenze:* Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Verwandt mit a44 (Farben ohne Begründung). Gegenmittel (Vorschlag): Jede Darstellung, auch eine schnelle im Chat, nimmt Farben, Schriften und Linien aus system/tokens; Gestaltung dient und tritt zurück; nichts vortäuschen, was das Medium nicht ist.
+- **arbeitsweise-a54** Die KI hat eine Gliederung als Skizze ausgegeben, nur eine Variante gezeigt und nicht gesagt, worauf ihr Vorschlag beruht.
+  *Grenze:* Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): Eine erste Skizze prüft eine Entwurfsfrage (z. B. das Ordnungsprinzip) in mehreren echten Varianten; die Begründung jeder Variante und die Kriterien der Wahl sind aufklappbar dabei. Befund: research/2026-11-skizze-varianten/befund.md.
 
 ### Nicht belegt (1)
 

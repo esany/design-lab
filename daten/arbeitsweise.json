@@ -369,6 +369,76 @@
         }
       ],
       "notiz": "Vom Eigentümer bemerkt (f65). Vorschlag im Zielbild, Punkt „Farbe zeigt nur, was du tun musst“."
+    },
+    {
+      "id": "arbeitsweise-a45",
+      "aussage": "In einer Warumkette hat die KI Symptom und Ursache vertauscht: Das Erleben der Nutzerin (Ergebnisse halten nicht) stand als letzte Folge am Ende, statt als erstes Warum, von dem die Kette über die Ursachen zur Erkenntnislücke führt.",
+      "status": "abgeleitet",
+      "seit": "2026-11-12",
+      "notiz": "Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): Eine Warumkette beginnt beim Erleben des Menschen; der Intent antwortet erst auf die Lücke."
+    },
+    {
+      "id": "arbeitsweise-a46",
+      "aussage": "Die KI hat die Herkunft von Kontextinformationen nur gesammelt in einer aufklappbaren Grundlage genannt, nicht am Satz; der Eigentümer verlangt sie an jeder Kontextinformation, auch als kurzes Zitat.",
+      "status": "abgeleitet",
+      "seit": "2026-11-12",
+      "notiz": "Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): Fundstelle und Zitat unter 15 Wörtern direkt am Satz."
+    },
+    {
+      "id": "arbeitsweise-a47",
+      "aussage": "Die KI hat abgeleitete Aussagen nicht deutlich als Hypothese von Belegtem und von Befunden unterschieden; das Etikett „Ableitung“ reichte dem Eigentümer nicht.",
+      "status": "abgeleitet",
+      "seit": "2026-11-12",
+      "notiz": "Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): „Hypothese (abgeleitet, nicht geprüft)“ im Text; ob das Etikett im Zielbild so heißen soll, ist eine Frage an den Eigentümer."
+    },
+    {
+      "id": "arbeitsweise-a48",
+      "aussage": "Die KI hat Angaben, die der Eigentümer nebenbei im Chat machte und die hochsensibel sind, wörtlich in Werkdateien und in eine veröffentlichte Seite übernommen; er musste es selbst bemerken.",
+      "status": "abgeleitet",
+      "seit": "2026-11-12",
+      "notiz": "Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Im öffentlichen Labor stand nichts davon (geprüft: Dateien, Verlauf, offene PRs, Issues). Gegenmittel (Vorschlag): Vor jedem Schreiben aus einem Chat prüfen, ob eine Angabe das Umfeld des Eigentümers betrifft; im Zweifel auslassen und fragen."
+    },
+    {
+      "id": "arbeitsweise-a49",
+      "aussage": "Die KI hat eine Wirkung monokausal dargestellt (je Frage eine Kachel), obwohl Vermittlung im Zusammenspiel von Struktur, Interaktion, Visualisierung, Farbe, Text und Lesesituation entsteht.",
+      "status": "abgeleitet",
+      "seit": "2026-11-12",
+      "notiz": "Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): Wirkung systemisch beschreiben, je Frage über alle Ebenen der Vermittlung."
+    },
+    {
+      "id": "arbeitsweise-a50",
+      "aussage": "Die KI hat Wege zum Austausch zwischen Umgebungen vorgeschlagen, ohne zu sagen, wer was tut und wo der Stand liegt; der Eigentümer verstand den Vorschlag nicht.",
+      "status": "abgeleitet",
+      "seit": "2026-11-12",
+      "notiz": "Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): Bei jeder Arbeitsteilung zuerst Rollen und den einen Ort des Stands nennen."
+    },
+    {
+      "id": "arbeitsweise-a51",
+      "aussage": "Die KI hat in Fragen an einen Kunden ein mehrdeutiges Wort benutzt („Bild“: Aufnahme oder Diagramm?), obwohl sie zuvor selbst die Trennung von Domäne und Darstellung eingeführt hatte.",
+      "status": "abgeleitet",
+      "seit": "2026-11-12",
+      "notiz": "Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): In Fragen und Befunden jedes Wort festlegen, das in Domäne und Darstellung Verschiedenes meinen kann."
+    },
+    {
+      "id": "arbeitsweise-a52",
+      "aussage": "Die KI hat die Vermittlung einer Anwendung bewertet, bevor sie dem Eigentümer gezeigt hat, welche Funktionen es überhaupt gibt; ihm fehlte die Grundlage, das Urteil zu prüfen.",
+      "status": "abgeleitet",
+      "seit": "2026-11-12",
+      "notiz": "Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): Erst ein Inventar des Vorhandenen mit Herkunft, dann Wahrnehmbarkeit, dann Nutzen, dann Urteil."
+    },
+    {
+      "id": "arbeitsweise-a53",
+      "aussage": "Die KI hat eine Skizze im Chat im Standardstil ihres Werkzeugs gezeichnet und eine Handzeichnung mit schiefen Ecken vorgetäuscht, statt die visuelle Sprache des Labors zu übernehmen, die im Zielbild schon vorlag; der Eigentümer nennt das einen Bug.",
+      "status": "abgeleitet",
+      "seit": "2026-11-12",
+      "notiz": "Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Verwandt mit a44 (Farben ohne Begründung). Gegenmittel (Vorschlag): Jede Darstellung, auch eine schnelle im Chat, nimmt Farben, Schriften und Linien aus system/tokens; Gestaltung dient und tritt zurück; nichts vortäuschen, was das Medium nicht ist."
+    },
+    {
+      "id": "arbeitsweise-a54",
+      "aussage": "Die KI hat eine Gliederung als Skizze ausgegeben, nur eine Variante gezeigt und nicht gesagt, worauf ihr Vorschlag beruht.",
+      "status": "abgeleitet",
+      "seit": "2026-11-12",
+      "notiz": "Eigentümer im Werkchat (privates Werk), 12.11.; Wortlaut nur im Werk. Einmal beobachtet (Claude). Gegenmittel (Vorschlag): Eine erste Skizze prüft eine Entwurfsfrage (z. B. das Ordnungsprinzip) in mehreren echten Varianten; die Begründung jeder Variante und die Kriterien der Wahl sind aufklappbar dabei. Befund: research/2026-11-skizze-varianten/befund.md."
     }
   ],
   "fragen": [
