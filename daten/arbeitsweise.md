@@ -5,7 +5,7 @@
 
 **Stand:** Prüfstand abgeschlossen (08.11.); Leitfaden (Arbeitsname Werkbuch) wird über die Seite „Zielbild Leitfaden“ (leitfaden/zielbild/) entworfen, Iteration 7 vom 12.11. mit Teil „Begriffe“ und neuem Verständnis von Fachwissen als Wirknetz; Recherche (#174) und implizite Verweise (#175) am 13.11. übernommen; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
 
-**Nächster Schritt:** Bug Flickenteppich (#216, 13.11.): Ursachen analysiert, Gegenprüfung durch ChatGPT (#217). Der Eigentümer will ein Zielbild statt mehrerer Seiten; Claude bestätigt im Chat das Verständnis und entwirft es dann als Entwurf, ohne schnellen Umbau. Bis dahin keine neuen Seiten, Werkzeuge oder Dateien neben Bestehendem.
+**Nächster Schritt:** Entwurf „ein Zielbild für das Labor“ liegt beim Eigentümer (research/2026-11-zielbild-bausteine/entwurf-ein-zielbild.md, drei Fragen: Aufbau, Farbe, Rückweg). Nach seinem Urteil Gegenprüfung durch ChatGPT, dann Bau. Parallel: Cloudflare für Werke am Rechner (Merkzettel Werke).
 
 ## Offene Fragen an den Eigentümer (7)
 
