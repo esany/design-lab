@@ -736,6 +736,19 @@
         }
       ],
       "notiz": "Korrektur des Eigentümers im Werk-Chat 14.11.: „es geht doch aber nicht um das Labor“. Werkinhalte bleiben im Werke-Repo. Prüffall evals/werkchat-lernen, Punkt 5. Klarstellung der Regel: Frage arbeitsweise-f70."
+    },
+    {
+      "id": "arbeitsweise-a79",
+      "aussage": "Der Eigentümer sieht in einzelnen Fehlern eines Werk-Chats Symptome schwerwiegender Fehler im System und verlangt eine ganzheitliche, systemische Ursachenprüfung statt einer Einzelkorrektur. Belegt sind vier Ursachen, die über F1 bis F5 hinausgehen: mehrere Schreiber ohne Takt, Tatsachen als Wortlaut an vielen Orten, ein mehrdeutiges „Zielbild“ und eine Kopplung von Labor und Werk ohne Vertrag. Dazu kommt eine Prüfkette, die nach einem Bot-Commit sperrt.",
+      "status": "belegt",
+      "seit": "2026-11-14",
+      "quellen": [
+        {
+          "datei": "research/2026-11-anforderungspruefung/bug-flickenteppich.md",
+          "stelle": "Wiederauftreten am 14.11. im Werk-Chat"
+        }
+      ],
+      "notiz": "Eigentümer im Werk-Chat 14.11.: „das sind Symptome von schwerwiegenden Fehlern - prüfe deren Ursache und behebe sie. Bzw. mach ihre Behebung möglich. Analysiere ganzheitlich und systemisch.“ Gehört zu #216 und #200."
     }
   ],
   "fragen": [
