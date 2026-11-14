@@ -680,6 +680,19 @@
         }
       ],
       "notiz": "Abgeleitet aus der zweiten, gleichlautenden Rückmeldung im Chat vom 14.11.; Abgleich Prinzipien, Grundmodell, Mechanismen in research/2026-11-zielbild-bausteine/einordnung-und-ueberarbeitung.md."
+    },
+    {
+      "id": "arbeitsweise-a75",
+      "aussage": "Der Eigentümer will in jeder Antwort, die das Zielbild betrifft, direkt den Link zum Zielbild bekommen.",
+      "status": "belegt",
+      "seit": "2026-11-14",
+      "quellen": [
+        {
+          "datei": "AGENTS.md",
+          "stelle": "Grundmodell, Was zu ihm geht"
+        }
+      ],
+      "notiz": "Eigentümer im Chat 14.11.: „kannst du mir immer direkt einen Link zum Zielbild hier mitgeben?“ Im selben Schritt in AGENTS.md eingetragen."
     }
   ],
   "fragen": [
