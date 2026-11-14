@@ -1,7 +1,7 @@
 ---
 thema: Interaktion und Struktur · UX, Interaktionsgestaltung, Informationsarchitektur
 stand: Feld beschlossen (0037), Regelformat in drei Schichten (0038), Quellenpflege (0039); Fundstück OpenDesign je Bestandteil eingeordnet; Bug zur Unterschätzung behoben, Prüffall fundstueck-wert angelegt
-naechster_schritt: Claude prüft und übernimmt die Lieferungen von ChatGPT (Gegenlesen #256, Recherche Arbeitsoberfläche und Feld #257, Wissensnetz #259) im geplanten Orchestrierungslauf; danach Überarbeitung des Zielbilds (Einordnung, Schritt 1). Der Eigentümer wählt das nächste Experiment (Schritt 4).
+naechster_schritt: Die Lieferungen von ChatGPT sind übernommen (Gegenlesen #256, Recherche #257, Wissensnetz #259, Abgleich #284; 14.11.); als Nächstes Überarbeitung des Zielbilds (Einordnung, Schritt 1). Der Eigentümer wählt das nächste Experiment (Schritt 4).
 offen: []
 ---
 
@@ -35,5 +35,5 @@ Durchschnitt.
 - Verwandt: `research/2026-11-arbeitsoberflaeche/analyse.md` (gleiche Lücke), Befund Fundstück-Passung
 - Lehre: vor jeder Bewertung Issues, auch geschlossene, durchsuchen
 - Lehre (a68): vor jedem Vorschlag zur Reihenfolge die Einordnung lesen (`research/2026-11-zielbild-bausteine/einordnung-und-ueberarbeitung.md`, Nachtrag 14.11.) und Neues dort einsortieren
-- Offene PRs von ChatGPT zur Übernahme: #256, #257, #259
+- Übernommen am 14.11.: #256, #257, #259, #284
 </details>
