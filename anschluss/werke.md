@@ -7,7 +7,9 @@ offen: [8, 9, 23, 24, 26, 27]
 
 # Thema: Werke und Gestaltung
 
-**Zuletzt fortgeschrieben:** 14.11.2026 (Claude, Cloudflare eingerichtet; nächstes Experiment nachgeführt nach Rückmeldung zum Zielbild)
+**Zuletzt fortgeschrieben:** 14.11.2026 (Claude, Rückmeldung Zielbild Pixel Patrol als Bugs)
+
+**Zielbild Review Pixel Patrol, Iteration 6 (14.11.):** Die Rückmeldung des Eigentümers ging als drei Bugs ans Labor: unklare Schaltflächen bei offenen Fragen (#280), visuelle Sprache ohne Entwurfslogik und Warndreieck (#281), keine Informationsarchitektur, System- und Werkfragen vermischt (#282). Das Werk wartet auf die Ergebnisse und wendet sie nur an; danach Iteration 7.
 
 **Private Zielbild-Seiten (14.11.):** Cloudflare Pages, Projekt aus `esany/werke`, Build
 `bash seiten.sh`, Ausgabe `_site`. Zwei Zugangsregeln in Cloudflare Zero Trust: Hauptadresse
