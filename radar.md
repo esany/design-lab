@@ -42,6 +42,7 @@ Begründung (Skill `pflege`). Stand des Radars: **2026-11-14**.
 
 | Was | Warum | Quelle | Stand |
 |---|---|---|---|
+| OpenDesign (Powerformer, Inc.) | Katalog von 296 Design-Skills aus 84 Repos mit Lizenz je Karte: erste Suchstelle vor dem Bau (A10); Arbeitsmuster Mittelmaß als Linter mit ausgewiesener Prüfgrenze. App nicht installieren: Telemetrie standardmäßig an, Cloud-Guthaben; Regelwerke kaum belegt. [Befund](research/2026-11-fundstueck-open-design/befund.md) | [Katalog](https://open-design.ai/de/skills/) · [Repo](https://github.com/nexu-io/open-design) | 2026-11-14 |
 | ComfyUI + Comfy MCP | steuerbare Bildgenerierung; offizieller MCP (Cloud, Beta) | [ComfyUI Wiki](https://comfyui-wiki.com/en/news/2026-06-30-comfy-mcp-agent-integration) | 2026-10 |
 | TouchDesigner + MCP | Echtzeit, Installation; nicht Open Source | [mcpservers.org](https://mcpservers.org/servers/8beeeaaat/touchdesigner-mcp) | 2026-10 |
 | cables.gl, Three.js | offene Echtzeit-Grafik | — | 2026-10 |
