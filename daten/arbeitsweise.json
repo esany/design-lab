@@ -546,6 +546,19 @@
         }
       ],
       "notiz": "Eigentümer im Chat, 14.11.2026: „Was ich dir mitgegeben habe sind anforderungen, das ist nichts, was ich hier mit dir nur wieder im ChatZwiegespräch temporär besprechen will - sondern echte PAIN. Dein Graph ist ein Anfang. Perspektivisch könnte das auch ein schönes Expriment werden um genau solche Technischen und komplexität in der Arbeitsteilung sichtbar zu machen, Welche UI Pattern und überhaupt erstmal Anforderungen sind an eine solches HMI (?) zu stellen. Vorerst können wir mit der Analyse starten und sammeln, bzw. iterativ Anforderungen erheben und überarbeiten. Ein Landkarte ist Skizze B für mch nicht. Du hast bereits begonnene Fachpakete zu Diagrammatik etc. da brauche ich keine Banalen oder vorschnellen unvaliden Zuschreibungen Skizze C finde ich auch gut. Aus meiner Sicht braucht es unterschiedliche Perspektiven auf den Entwurfsprozess und den Systemzustand. Transparenz ermöglicht erst die Arbeitsteilung und das Vertrauen. Und dann gern auch noch progressiv Disclosure. Was gibt es denn sonst noch für geeigente UI / UX Pattern gerade für AI assistierende Interfaces .. das wäre doch ein schöner sota Auftrag und auch eine wichtige Erweiterung der Fachpakete .. haben wir überhaupt schon eines zu Interaktionsgestaltung? Was haben wir überhaupt, und brauchen wir hier mehr Modellverständnis, oder wächst das alles bottom up als organisches Konstrukt und verknüpft sich dynamisch neu .. Auf welchen Regeln ? (Sota Recherche nötig.) Einen großen Überblick also nach dem Muster der aktuellen Seite mit filterbaren Tags braucht es auch noch .. Ich habe individuelle Sichten, mit priorisierten oder limitierten Aufgaben Aber auch das große Ganze, in dem ich Explorieren kann.“"
+    },
+    {
+      "id": "arbeitsweise-a65",
+      "aussage": "Reihenfolge der Arbeitsoberfläche: Einstieg ist, welchen Input der Eigentümer in welcher Priorität liefern muss, je mit dem, worauf die Entscheidung einzahlt und was danach da ist; Ziel ist, die Systementwicklung des Labors so schnell wie möglich voranzubringen. Dann: woran gerade gearbeitet wird und wie die Stränge zusammenhängen. Am Schluss: das große Ganze explorativ prüfen.",
+      "status": "belegt",
+      "seit": "2026-11-14",
+      "quellen": [
+        {
+          "datei": "research/2026-11-arbeitsoberflaeche/analyse.md",
+          "stelle": "Abschnitt 3, Spannung 1"
+        }
+      ],
+      "notiz": "Eigentümer im Chat, 14.11.: „einstieg ist, was muss ich in welcher prio als input liefern? Ziel Systementwicklung am Labor schnell wie möglich voranbringen (prüfen, auf was zahlt die Entscheidung ein, was haben wir danach)- dann woran arbeiten wir gerade, wie hängen die Stänge zu samen (relation) .. am schluß eher Explorativ das große ganze prüfen“"
     }
   ],
   "fragen": [

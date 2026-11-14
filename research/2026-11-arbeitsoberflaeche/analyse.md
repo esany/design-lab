@@ -41,7 +41,7 @@ Schreibweise der Anforderungen: ein Satz, Herkunft, Status (von dir gesagt · ab
 
 **Schon gültig und hierher gehörig (belegt, Zielbild):** ein Zielbild für das Labor (`st-zentrale`, `ez-aufbau`), Farbe als Bedeutung (`st-farbe`), Rückmeldung ohne Kopieren (`st-rueckweg`), aus dem Leitfaden Erklären in Stufen (`stufen-anzeige`), Handy zuerst (`handy-zuerst`), Navigieren mit Tags (`tags-navigieren`), Status und Wandel sichtbar (`status-sichtbar`, `wandel-sichtbar`).
 
-**Spannungen, die du entscheidest (abgeleitet):** begrenzte Sicht gegen großes Ganzes (beides, aber was ist der Einstieg?); Transparenz gegen „nicht machen müssen“ (wie viel Einblick, ohne dass Prüfen zur Arbeit wird?).
+**Spannungen (abgeleitet):** begrenzte Sicht gegen großes Ganzes, **entschieden 14.11.** (`ao-reihenfolge`, a65): Einstieg ist dein Input nach Priorität, mit Einzahlung und Ergebnis; dann laufende Arbeit und Relationen; am Schluss das Ganze zum Erkunden. Offen: Transparenz gegen „nicht machen müssen“ (`ao-tiefe`).
 
 ## 4 · Was das Labor schon hat (Querschnitt)
 

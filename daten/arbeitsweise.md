@@ -17,7 +17,7 @@
 
 ## Aussagen
 
-### Belegt (20)
+### Belegt (21)
 
 - **arbeitsweise-a02** Im Labor folgte auf einen Vorfall meist eine neue Regel: 30 Entscheidungen in drei Tagen.
   *Beleg:* `research/2026-10-audit-zusammenarbeit/befunde.md`, In Worten, Punkt 4
@@ -75,6 +75,9 @@
 - **arbeitsweise-a64** Rückmeldungen des Eigentümers zur Arbeitsoberfläche sind Anforderungen, keine Gesprächsthemen: Sie werden im Labor erhoben, festgehalten und iterativ überarbeitet. Skizze B ist keine Landkarte; Zusammenhänge darzustellen verlangt die Methoden der vorhandenen Fachpakete statt vorschneller, ungeprüfter Zuschreibungen. Gebraucht werden mehrere Perspektiven auf Entwurfsprozess und Systemzustand, individuelle Sichten mit priorisierten oder begrenzten Aufgaben und ein großer, mit Tags filterbarer Überblick zum Erkunden; Transparenz ermöglicht Arbeitsteilung und Vertrauen.
   *Beleg:* `research/2026-11-zielbild-bausteine/einordnung-und-ueberarbeitung.md`, Abschnitt 5 (Skizzen) und Urteil
   *Grenze:* Eigentümer im Chat, 14.11.2026: „Was ich dir mitgegeben habe sind anforderungen, das ist nichts, was ich hier mit dir nur wieder im ChatZwiegespräch temporär besprechen will - sondern echte PAIN. Dein Graph ist ein Anfang. Perspektivisch könnte das auch ein schönes Expriment werden um genau solche Technischen und komplexität in der Arbeitsteilung sichtbar zu machen, Welche UI Pattern und überhaupt erstmal Anforderungen sind an eine solches HMI (?) zu stellen. Vorerst können wir mit der Analyse starten und sammeln, bzw. iterativ Anforderungen erheben und überarbeiten. Ein Landkarte ist Skizze B für mch nicht. Du hast bereits begonnene Fachpakete zu Diagrammatik etc. da brauche ich keine Banalen oder vorschnellen unvaliden Zuschreibungen Skizze C finde ich auch gut. Aus meiner Sicht braucht es unterschiedliche Perspektiven auf den Entwurfsprozess und den Systemzustand. Transparenz ermöglicht erst die Arbeitsteilung und das Vertrauen. Und dann gern auch noch progressiv Disclosure. Was gibt es denn sonst noch für geeigente UI / UX Pattern gerade für AI assistierende Interfaces .. das wäre doch ein schöner sota Auftrag und auch eine wichtige Erweiterung der Fachpakete .. haben wir überhaupt schon eines zu Interaktionsgestaltung? Was haben wir überhaupt, und brauchen wir hier mehr Modellverständnis, oder wächst das alles bottom up als organisches Konstrukt und verknüpft sich dynamisch neu .. Auf welchen Regeln ? (Sota Recherche nötig.) Einen großen Überblick also nach dem Muster der aktuellen Seite mit filterbaren Tags braucht es auch noch .. Ich habe individuelle Sichten, mit priorisierten oder limitierten Aufgaben Aber auch das große Ganze, in dem ich Explorieren kann.“
+- **arbeitsweise-a65** Reihenfolge der Arbeitsoberfläche: Einstieg ist, welchen Input der Eigentümer in welcher Priorität liefern muss, je mit dem, worauf die Entscheidung einzahlt und was danach da ist; Ziel ist, die Systementwicklung des Labors so schnell wie möglich voranzubringen. Dann: woran gerade gearbeitet wird und wie die Stränge zusammenhängen. Am Schluss: das große Ganze explorativ prüfen.
+  *Beleg:* `research/2026-11-arbeitsoberflaeche/analyse.md`, Abschnitt 3, Spannung 1
+  *Grenze:* Eigentümer im Chat, 14.11.: „einstieg ist, was muss ich in welcher prio als input liefern? Ziel Systementwicklung am Labor schnell wie möglich voranbringen (prüfen, auf was zahlt die Entscheidung ein, was haben wir danach)- dann woran arbeiten wir gerade, wie hängen die Stänge zu samen (relation) .. am schluß eher Explorativ das große ganze prüfen“
 
 ### Abgeleitet (36)
 
