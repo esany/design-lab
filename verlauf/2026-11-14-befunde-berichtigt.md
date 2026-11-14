@@ -5,3 +5,5 @@
 **Geändert:** `research/2026-10-audit-zusammenarbeit/befunde.md` enthält präzisierte Geltungsgrenzen und Belege. Keine Maßnahmen oder Regeln beschlossen.
 
 **Rückgängig:** Den PR-Commit zur Berichtigung revertieren; die vorherige Fassung bleibt im Git-Verlauf.
+
+**Ergänzt bei der Übernahme (Claude, 14.11.):** Gruppe C in `karten.md` an die berichtigte Fassung angeglichen.
