@@ -5,7 +5,7 @@
 
 **Stand:** Das eine Zielbild des Labors ist übernommen und veröffentlicht (zielbild/, 14.11.): sieben Stränge, Schnittstellen, drei Ansichten, Farbe als Rollen; Leitfaden und Bug #200 darin aufgegangen und archiviert. Beide Gegenprüfungen durch ChatGPT übernommen (#224, #232). Leitfaden Iteration 7; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
 
-**Nächster Schritt:** ChatGPT prüft die vier Verhaltensprüfungen gegen und recherchiert „Gestaltung beschreiben als Übersetzung“ (Semiologie). Danach startet Claude die ersten Läufe in frischen Sitzungen (freigegeben 14.11.) und legt dem Eigentümer eine Stichprobe ins Zielbild. Claude baut die Zielbild-Überarbeitung nach dem Urteil vom 14.11. (Skizze C gut, B keine Landkarte).
+**Nächster Schritt:** Nächste Claude-Sitzung: die fünf abgegebenen Ergebnisse von ChatGPT prüfen und übernehmen (PR #256, #257, #259, #267, #269), dann erste Läufe der Verhaltensprüfungen (#271), Pilot Mittelmaß (#247), Plugins (#248), Werkbuch, Betriebstexte. ChatGPT arbeitet ab: Neustart-Test (#109), Fundstück dataviz-skills (#178), Befunde berichtigen (#56), Issue-Pflege vorbereiten (#273), Abgleich Anforderungen gegen Recherchen (#274); danach Iteration 2 der Arbeitsoberfläche.
 
 ## Offene Fragen an den Eigentümer (5)
 

@@ -223,7 +223,7 @@
           "wer": "Claude",
           "n": "neu",
           "t": "Anforderungen an die Arbeitsoberfläche erheben und in Iterationen überarbeiten; die Überarbeitung des Zielbilds folgt daraus.",
-          "k": "Iteration 1: deine Aussagen vom 13. und 14.11. gesammelt, eigene Ableitungen getrennt markiert. Iteration 2 nach den beiden Recherchen.",
+          "k": "Iteration 1 abgeschlossen (14.11.). Für Iteration 2 gleicht ChatGPT die Anforderungen mit den Recherchen ab (#274); danach verdichte ich und zeige dir Varianten.",
           "stuetzt": [
             "ao-anforderung",
             "ao-einfacher",
@@ -1117,7 +1117,7 @@
           "stand": "freigegeben",
           "wer": "Claude",
           "t": "Issues pflegen: liegende Issues schließen, teilen oder neu zuschneiden, je mit einem Satz Begründung.",
-          "k": "Freigegeben, noch nicht begonnen. Ergebnis als Liste auf dieser Seite.",
+          "k": "Freigegeben, noch nicht begonnen. Ergebnis als Liste auf dieser Seite. 14.11.: ChatGPT bereitet je offenem Issue einen Vorschlag vor (#273); ich setze ihn um.",
           "stuetzt": [
             "issues"
           ]
