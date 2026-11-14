@@ -565,6 +565,19 @@
           "t": "ChatGPT prüft das Labor alle drei Stunden auf Aufträge, mit angepasstem Prompt.",
           "k": "Einrichten: In ChatGPT die bestehende geplante Aufgabe öffnen (oder neu anlegen), Wiederholung alle 3 Stunden, GitHub-Verbindung zu esany/design-lab, und diesen Text als Anweisung einsetzen: „Geplante Prüfung des Labors esany/design-lab (GitHub, Zweig main). Arbeite nur mit dem, was du in diesem Lauf selbst liest; behaupte keine Prüfung, die du nicht gemacht hast. 1. Lies frisch: AGENTS.md und .agents/skills/issue/SKILL.md (Abschnitte A, C, D, H). 2. Suche offene Issues mit genau dem Label an:chatgpt. Andere Labels nicht beachten. Prüfe je Issue frisch: offen; Label noch an:chatgpt; alles unter „Blockiert durch“ geschlossen; noch kein Pull Request oder Zweig mit deinem Ergebnis; die neuesten Kommentare gelesen. 3. Ist keins bereit: nichts im Repo ändern. Antworte mit einer Zeile: „Keine Aufgabe für ChatGPT“ und die Uhrzeit. 4. Sonst das älteste bereite Issue, genau eins, nach Abschnitt C bearbeiten: eigener Zweig lab/gpt-<kurz>; Ergebnis in der im Issue genannten Datei; ein Verlaufseintrag verlauf/JJJJ-MM-TT-<kurz>.md mit erster Zeile „# JJJJ-MM-TT · Titel“ und den Zeilen „**Warum:** …“ und „**Rückgängig:** …“; Pull Request mit „Refs #<nummer>“. Nichts mergen. Keine Regel, Entscheidung, kein Prinzip und keinen Merkzettel ändern. 5. Übergabe als Kommentar im Issue: Ergebnis mit Link · geprüft · nicht geprüft · offen. Trenne: zugewiesen, begonnen, abgegeben. 6. Kannst du nicht ins Repo schreiben: sag genau das im Kommentar und lege das vollständige Ergebnis mit Zielpfad als einen Block in den Kommentar. 7. Fragen an den Eigentümer schreibst du in den Issue-Kommentar, nicht an ihn; Claude bringt sie ins Zielbild. 8. Antworte am Ende in höchstens drei Sätzen Alltagssprache: was du getan hast, mit Namen statt Nummern.“ Was neu ist gegenüber dem ersten Lauf: nur das Label an:chatgpt, höchstens ein Auftrag je Lauf, keine behaupteten Prüfungen, Verlaufseintrag im geforderten Format, nichts übernehmen. Die Notiz dazu steht im Labor im Skill issue, Abschnitt H; ändert sich der Prompt, dann dort und hier.",
           "g": ".agents/skills/issue/SKILL.md, Abschnitt H; Rückmeldung von ChatGPT zu #203 (13.11.)."
+        },
+        {
+          "id": "st-cloudflare",
+          "s": "auftrag",
+          "stand": "startklar",
+          "wer": "Du am Rechner mit Claude im Browser",
+          "stuetzt": [
+            "nk-orte"
+          ],
+          "n": "neu",
+          "t": "Private Zielbild-Seiten der Werke bei Cloudflare einrichten.",
+          "k": "Du musst dir nichts merken: Schreib in einem Chat am Rechner (Claude-Desktop-App oder Chrome mit der Claude-Erweiterung) einfach „Cloudflare einrichten“. Der Chat findet den Auftrag über den Merkzettel Werke. Im Werke-Repo ist alles vorbereitet; offen sind zwei Schritte im Browser: das private Repo verbinden und die Sperre auf deine E-Mail-Adresse setzen.",
+          "g": "anschluss/werke.md; Chat 13.11."
         }
       ]
     },
