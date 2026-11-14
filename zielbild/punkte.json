@@ -1351,16 +1351,16 @@
         {
           "id": "a-recherche-2",
           "s": "auftrag",
-          "stand": "freigegeben",
+          "stand": "fertig",
           "wer": "ChatGPT",
           "t": "Recherche, Teil 2: Wie Fachwissen als Netz gebildet, abgegrenzt und dargestellt wird, und ob es aus einem Modell oder von unten wächst, nach welchen Regeln (#238).",
-          "k": "Der Halt ist aufgehoben: Den Querschnitt über Leitfaden, Wissen erschließen und Visualisierungssysteme enthält die Analyse zur Arbeitsoberfläche, Abschnitt 4. Deine Frage vom 14.11. ist eingearbeitet.",
+          "k": "Ergebnis übernommen am 14.11. (research/2026-11-leitfaden-sota/recherche-wissensnetz.md): Fachwissen wächst gemischt, aus Sammeln und nachträglichem Ordnen; eine Verbindung gilt nur mit Quelle und Status. Die bestätigten vier Relationsarten bleiben; die sieben Typen aus der Literatur stehen dort nur als Vergleich.",
           "stuetzt": [
             "wechselwirkung",
             "transdisziplinaer",
             "sammeln-verdichten"
           ],
-          "n": "ergänzt",
+          "n": "geändert",
           "f": "brauchen wir hier mehr Modellverständnis, oder wächst das alles bottom up als organisches Konstrukt und verknüpft sich dynamisch neu .. Auf welchen Regeln ? (Sota Recherche nötig.)",
           "v": "Recherche, Teil 2: Wie Fachwissen als Netz gebildet, abgegrenzt und dargestellt wird.",
           "auch": [
