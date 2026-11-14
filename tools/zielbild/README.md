@@ -88,3 +88,13 @@ statt Inhalt. Grenze: Die Prüfung erkennt Nummern, nicht ob der Kontext genügt
 dran oder Auftrag nicht fertig), muss auf GitHub offen sein. Kontext und Herkunft dürfen auf Abgeschlossenes
 verweisen. Grenze: Antworten, die nur in einem anderen Punkt stehen, findet keine Prüfung; dafür gilt beim
 Fortschreiben, jede Frage gegen die bestätigten Punkte zu lesen.
+
+## Rückmeldung senden (private Fassung, 14.11.)
+
+Die öffentliche Seite bleibt beim Kopieren. Eine zweite Fassung mit „Rückmeldung senden“ entsteht nur für
+die privaten Seiten bei Cloudflare (Repo `esany/werke`, `seiten.sh`, Zugang nur für den Eigentümer):
+`node tools/zielbild.mjs <punkte.json> --senden /api/rueckmeldung --ablage <ordner>` für Werke,
+`ZIELBILD_PRIVAT=<datei> ZIELBILD_SENDEN=/api/rueckmeldung node tools/build.mjs` für das Labor. Der Dienst
+(`esany/werke`, `functions/api/rueckmeldung.js`) legt die Rückmeldung als Datei auf einem Zweig
+`lab/rueckmeldung-*` ab (Labor: `zielbild/rueckmeldungen/`) und öffnet einen Pull Request; der geplante
+Orchestrierungslauf arbeitet sie ein (Schritt 2a). Herkunft: Entwurf „ein Zielbild“, Abschnitt 3, Variante A.
