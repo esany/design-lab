@@ -455,7 +455,7 @@ const LABOR_ZIELBILD = "zielbild/punkte.json";
       if (p.t) errors.push(`${ZB}: Punkt „${p.id}“ hat „frage“ und eigenen Satz „t“; der Wortlaut steht nur in daten/${thema}.json`);
       p.t = f.frage;
       const gestellt = f.gestellt.split("-").reverse().join(".");
-      p.k = `Gestellt am ${gestellt}${f.notiz ? `; ${f.notiz}` : ""}.`;
+      p.k = [`Gestellt am ${gestellt}${f.notiz ? `; ${f.notiz}` : ""}.`, p.k].filter(Boolean).join(" ");
       p.g = `daten/${thema}.json, ${f.id}.`;
       if (f.antwort) { p.s = "bestaetigt"; p.bestaetigt = f.beantwortet; delete p.n; p.g += ` Deine Antwort: „${f.antwort}“`; }
     }

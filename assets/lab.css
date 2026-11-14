@@ -35,7 +35,7 @@ figure { margin: 0; }
 }
 .mark {
   width: var(--lab-space-8); aspect-ratio: 1;
-  background: var(--lab-signal); /* Marke: ausdrückliche Ausnahme, Frage an den Eigentümer (14.11.) */
+  background: var(--lab-fg); /* Grundfarbe seit 14.11.: Rot heißt nur „du bist dran“. Frage im Zielbild, Punkt „Marke“. */
   transform: rotate(-8deg);
   margin-top: var(--lab-space-1);
 }

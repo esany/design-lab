@@ -24,6 +24,8 @@ const DATUM = /^\d{4}-\d{2}-\d{2}$/;
 
 /** Wer ist dran? „du“ heißt: der Eigentümer soll jetzt entscheiden, freigeben oder antworten.
  *  Ein ausdrückliches Feld „dran“ gilt vor der Ableitung; "" heißt: niemand, bewusst ruhend.
+ *  „startklar“ heißt im Labor: alles erfüllt außer seiner Freigabe (Zielbild-Punkte „startklar-wann“
+ *  und „auftraege“, bestätigt 11./12.11.). Darum ist er dran, auch wenn danach ein Modell ausführt.
  *  Eine Korrektur („muss besser“) macht nicht den Eigentümer zuständig, sondern das Modell. */
 export function dran(p) {
   if (typeof p.dran === "string") return /^du$/i.test(p.dran.trim()) ? "du" : p.dran.trim();
@@ -84,6 +86,10 @@ export function pruefen(z, name = "punkte.json") {
         }
       }
       if (p.stuetzt !== undefined && !Array.isArray(p.stuetzt)) err.push(`${w}: „stuetzt“ muss eine Liste sein`);
+      if (p.stuetzt_warum !== undefined) {
+        if (typeof p.stuetzt_warum !== "object" || Array.isArray(p.stuetzt_warum)) err.push(`${w}: „stuetzt_warum“ muss je Verbindung einen Satz nennen`);
+        else for (const k of Object.keys(p.stuetzt_warum)) if (!(p.stuetzt ?? []).includes(k)) err.push(`${w}: Begründung für „${k}“, aber keine Verbindung dorthin`);
+      }
       if (p.s === "auftrag") {
         if (!STAND.includes(p.stand)) err.push(`${w}: Auftrag mit Stand „${p.stand}“ (erlaubt: ${STAND.join(", ")})`);
         if (!p.wer) err.push(`${w}: Auftrag ohne „wer“`);

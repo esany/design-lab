@@ -12,9 +12,7 @@ export const ROLLEN = {
 };
 
 /** Ausdrückliche Ausnahmen mit Grund. Jede ist eine offene Frage an den Eigentümer, keine Regel. */
-export const AUSNAHMEN = [
-  { datei: "assets/lab.css", selektor: ".mark", rolle: "signal", grund: "Marke im Kopf der Startseite; Frage an den Eigentümer vom 14.11." },
-];
+export const AUSNAHMEN = [];
 
 /** Farbwerte der Rollen dürfen nicht als Zahl in Stilangaben stehen, nur über die Rolle. */
 export const ROHWERTE = ["#d92d17", "#2f6b3a", "#7fbf8a", "#8a5a00", "#e0b060"];

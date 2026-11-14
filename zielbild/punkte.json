@@ -543,7 +543,7 @@
           "s": "bestaetigt",
           "t": "Farbe semantisch prüfen: Jede Farbe trägt genau eine Bedeutung, und Signalfarben sind im ganzen Labor als Signal verbunden. Look and Feel vor Barrierefreiheit.",
           "k": "Am 14.11. bestätigt, Fassung mit Ocker: Signalrot heißt nur „du bist dran“, Grün „von dir bestätigt“, Ocker „Vorschlag oder Hypothese“. Befund, Änderung und Zahlen stehen in der Grundfarbe. Die Farben sind in den Tokens als Rollen benannt, und der Build meldet eine andere Verwendung.",
-          "g": "Messung mit axe-core 4 über Playwright; system/tokens/lab.tokens.json; research/2026-11-zielbild-bausteine/befund.md, Lücken; Aussage a44. Deine Rückmeldung 13.11.: „Barrierefreiheiheit ist gerade nicht prio 1 ! Mir ging es um look feel und eine semantische prüder Farbigkeit. Signalfarben sollten auch als solche konnektiert sein“ Urteil 14.11.: „passt“ (research/2026-11-zielbild-bausteine/entwurf-ein-zielbild.md, Abschnitt 6).",
+          "g": "Messung mit axe-core 4 über Playwright; system/tokens/lab.tokens.json; research/2026-11-zielbild-bausteine/befund.md, Lücken; Aussage a44. Deine Rückmeldung 13.11.: „Barrierefreiheiheit ist gerade nicht prio 1 ! Mir ging es um look feel und eine semantische prüder Farbigkeit. Signalfarben sollten auch als solche konnektiert sein“ Urteil 14.11.: „passt“ (research/2026-11-zielbild-bausteine/entwurf-ein-zielbild.md, Abschnitt 6). Fassung vorher: „Farben der Zielbild-Seiten lesbar für alle machen: Grau und Signalrot sind bei kleiner Schrift zu schwach (WCAG AA verlangt 4,5:1).“",
           "bestaetigt": "2026-11-14",
           "auch": [
             "system",
@@ -551,7 +551,10 @@
           ],
           "stuetzt": [
             "farben"
-          ]
+          ],
+          "stuetzt_warum": {
+            "farben": "Belegt: Der Befund „Farben nicht aus ihrer Bedeutung begründet“ (Leitfaden, Iteration 7) ist dieselbe Beobachtung, aus der die Frage entstand (Bug Flickenteppich, Ursache F4)."
+          }
         },
         {
           "id": "st-rueckweg",
@@ -592,7 +595,7 @@
             "system",
             "leitfaden"
           ],
-          "g": "Deine Rückmeldung 13.11.: „Ich will nicht mehrere zielbildseiten sondern eine!!! Es geht um organische ganzheitliche systemische transdisziplinäre Entwicklung und entwurfsarbeit … Wir brauchen keinen Flickenteppich“ Am 14.11. bestätigt: „ja, es wird auch Schnittstellenthemen geben“."
+          "g": "Deine Rückmeldung 13.11.: „Ich will nicht mehrere zielbildseiten sondern eine!!! Es geht um organische ganzheitliche systemische transdisziplinäre Entwicklung und entwurfsarbeit … Wir brauchen keinen Flickenteppich“ Am 14.11. bestätigt: „ja, es wird auch Schnittstellenthemen geben“. Fassung vorher: „Das Zielbild wird die Zentrale: Rückfragen, Stand und Freigaben aller Stränge, transparent und thematisch navigierbar. Dort stimmen wir Prioritäten ab, und du gibst gezielt Rückmeldung, zu einem Punkt oder zu allen offenen.“"
         },
         {
           "id": "st-experimente",
@@ -781,27 +784,29 @@
         {
           "id": "ez-bau",
           "s": "auftrag",
-          "stand": "läuft",
+          "stand": "fertig",
           "wer": "Claude",
           "t": "Das eine Zielbild bauen: diese Seite, veröffentlicht auf der Website, mit Farbe als Bedeutung.",
-          "k": "Fertig, wenn: beide alten Seiten hier aufgegangen und archiviert sind, die Website die Seite veröffentlicht, die Prüfung tote Links und ein zweites Labor-Zielbild meldet und die Seite auf Handy und Rechner angesehen ist.",
+          "k": "Übernommen am 14.11. nach der Gegenprüfung des Baus; die Website veröffentlicht die Seite nach der Übernahme.",
           "offen": "Rückweg ohne Kopie; Studien nutzen noch die alte Akzentfarbe.",
           "stuetzt": [
             "ez-aufbau",
             "st-farbe",
-            "ez-gegenpruefung"
+            "ez-gegenpruefung",
+            "ez-bau-pruefen"
           ]
         },
         {
           "id": "ez-bau-pruefen",
           "s": "auftrag",
-          "stand": "vorbereitet",
+          "stand": "fertig",
           "wer": "ChatGPT",
           "t": "Gegenprüfung des Baus vor der Übernahme: Daten, Ansichten, Farbe, Veröffentlichung (#230).",
-          "k": "Prüft am echten Beispiel, ob ein Urteil an einer Stelle überall gleich erscheint, ob „Du bist dran“ nur deine Entscheidungen zeigt und ob die Farben ihre Bedeutung halten.",
+          "k": "Ergebnis (PR #232): Datenumzug und Ansichten tragen; nachzubessern waren Zuständigkeit, Geschichte zusammengelegter Punkte, Begründung neuer Verbindungen, Grün nur bei Bestätigtem, die rote Marke und die alte Bug-Adresse. Alles eingearbeitet; den Startklar-Befund habe ich begründet nicht übernommen.",
           "stuetzt": [
-            "ez-bau"
-          ]
+            "ez-gegenpruefung"
+          ],
+          "g": "research/2026-11-zielbild-bausteine/gegenpruefung-bau.md"
         }
       ]
     },
@@ -840,7 +845,9 @@
           "id": "f-codex-ort",
           "frage": "arbeitsweise-f17",
           "s": "offen",
-          "n": "neu"
+          "n": "neu",
+          "dran": "",
+          "k": "Ruht: #141 ist abgeschlossen, und ohne deine Erinnerung bleibt der Ort „unbekannt“ (so am 07.11. vereinbart)."
         },
         {
           "id": "f-minimalform",
@@ -849,7 +856,9 @@
           "n": "neu",
           "auch": [
             "leitfaden"
-          ]
+          ],
+          "dran": "",
+          "k": "Abgeleitet: Durch die bestätigten Punkte „Freie Tags“ und „Relationen“ (11.11.) und den Auftrag „Werkbuch“ ist die Frage im Leitfaden aufgegangen. Ich lege sie dir nicht mehr vor."
         },
         {
           "id": "f-werkchat-schreiben",
@@ -936,11 +945,13 @@
           "t": "Fragenliste in alten Chats finden (Issue #189).",
           "k": "Dein einziger Handgriff: in einem Chat, der deine alten Chats durchsuchen kann, „Führe Issue #189 im design-lab aus“ schreiben. Der Chat prüft jeden Kandidaten selbst und schreibt das Ergebnis ins Issue.",
           "stuetzt": [
-            "erweiterung"
+            "erweiterung",
+            "nk-orte"
           ],
           "auch": [
             "arbeitsweise"
-          ]
+          ],
+          "g": "Zusammengelegt am 14.11. mit dem gleichen Auftrag aus Bug #200 („Deine lange Fragenliste aus den alten Leitfaden-Chats suchen.“): Prompt zum Einfügen: „Führe Issue #189 im Labor esany/design-lab aus (github.com/esany/design-lab/issues/189). Lies zuerst AGENTS.md.“ Der vollständige Suchauftrag steht im Issue; der Chat prüft die Kandidaten selbst und legt das Ergebnis im Issue ab. Du musst nichts lesen."
         },
         {
           "id": "a-verweise",
@@ -1424,7 +1435,10 @@
           "bestaetigt": "2026-11-11",
           "stuetzt": [
             "st-fundstueck"
-          ]
+          ],
+          "stuetzt_warum": {
+            "st-fundstueck": "Belegt: Beispiel im Entwurf „ein Zielbild“, Abschnitt 2: Die Fundstück-Sichtung („Fachwissen erfassen“) stützt den Leitfaden („Fachwissen als Module“)."
+          }
         },
         {
           "id": "m-absichern",
@@ -1486,7 +1500,8 @@
           "k": "Meine Lesart: „Keim“ war der Status aus dem Konzept vom 08.11.; seit Iteration 1 heißt er „werdend“. Ich habe trotzdem weiter „Keim“ geschrieben, sogar im Auftrag „Werkbuch“. Genau dafür braucht es den Teil „Begriffe“. Liege ich falsch, sag es kurz.",
           "g": "Dein Hinweis, 11.11.: „Wir müssen auf Begrifflichkeiten achten“.",
           "v": "Begriffe festlegen: ein Teil „Begriffe“ in diesem Zielbild, den du bestätigst wie die anderen Punkte.",
-          "f": "Es ist nicht mehr keim!!!"
+          "f": "Es ist nicht mehr keim!!!",
+          "dran": ""
         },
         {
           "id": "i-merkzettel-zustaendig",
@@ -1565,7 +1580,10 @@
           "g": "stand.md, Offene Fragen; research/2026-10-audit-zusammenarbeit/auftraege.md.",
           "stuetzt": [
             "st-main"
-          ]
+          ],
+          "stuetzt_warum": {
+            "st-main": "Belegt: In der Übersicht standen beide als eine Frage („Hauptzweig schützen, Regelpause und Reihenfolge der Regelprüfung“)."
+          }
         },
         {
           "id": "sy-probe",
@@ -1591,11 +1609,11 @@
         {
           "id": "sy-anforderungen",
           "s": "vorschlag",
-          "dran": "du",
+          "dran": "",
           "prio": "später",
           "n": "neu",
           "t": "Fünf Anforderungen (A02, A03, A09, A29, A30) haben weder Entscheidung noch Skill.",
-          "k": "Empfehlung: erst nach dem Umbau (U4) zuordnen.",
+          "k": "Empfehlung: erst nach dem Umbau (U4) zuordnen. Bis dahin musst du nichts tun; ich lege es nach U4 wieder vor.",
           "g": "stand.md, Offene Fragen (Pflege 11/2026); verknuepfung.md."
         },
         {
@@ -1605,6 +1623,20 @@
           "t": "Wie laufen die Startfälle frisch, ohne Projektkontext (#109)?",
           "k": "Alle vier Startfälle sind nicht getestet, weil der Prüf-Chat Projektkontext hatte.",
           "g": "anschluss/system.md, nächster Schritt; evals/start/."
+        },
+        {
+          "id": "sy-marke",
+          "s": "offen",
+          "n": "neu",
+          "auch": [
+            "arbeitsweise"
+          ],
+          "t": "Soll die Marke im Kopf der Startseite wieder rot sein, als einzige Ausnahme von „Rot heißt: du bist dran“?",
+          "k": "Seit 14.11. steht sie in der Grundfarbe, weil Rot nach deinem Urteil nur noch heißt, dass du dran bist. Rot wäre sie das Erkennungszeichen des Labors, schwächt aber das Signal; in der Grundfarbe bleibt das Signal eindeutig. Meine Empfehlung: Grundfarbe lassen.",
+          "g": "Gegenprüfung des Baus (ChatGPT, 14.11.), Probe 4: Die rote Marke war eine stille Ausnahme; das ist eine Gestaltungsfrage an dich.",
+          "stuetzt": [
+            "st-farbe"
+          ]
         }
       ]
     },
@@ -1625,7 +1657,10 @@
           "g": "anschluss/arbeitsweise.md, Abschnitt „Gilt“; Skill fundstueck.",
           "stuetzt": [
             "st-fundstueck"
-          ]
+          ],
+          "stuetzt_warum": {
+            "st-fundstueck": "Belegt: Der Merkzettel führt die Frage unter derselben Fundstück-Regel; die Sichtung fragt auch, welches Fachwissen es trägt."
+          }
         },
         {
           "id": "fs-modus",
@@ -1662,7 +1697,11 @@
           "stuetzt": [
             "st-cloudflare",
             "st-experimente"
-          ]
+          ],
+          "stuetzt_warum": {
+            "st-cloudflare": "Belegt: Merkzettel Werke: erst Cloudflare einrichten, „danach wählt der Eigentümer das nächste Experiment“.",
+            "st-experimente": "Belegt: Deine Aussage vom 13.11., Experimente testen auch das System (Merkzettel Werke, Stand)."
+          }
         },
         {
           "id": "w-sicherung",
@@ -1736,7 +1775,10 @@
           "g": "anschluss/visualisierungssysteme.md, Frage 1.",
           "stuetzt": [
             "m-ausarbeiten"
-          ]
+          ],
+          "stuetzt_warum": {
+            "m-ausarbeiten": "Abgeleitet, Hypothese: Ein eigenes Paket für Visualisierungssysteme würde den Pilot berühren, der die Felder aus „Vermitteln“ als eigene Module schneidet."
+          }
         },
         {
           "id": "vi-datensatz",

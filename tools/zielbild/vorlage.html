@@ -58,6 +58,8 @@ a{color:inherit;text-underline-offset:.2em}
 .bezug .w.fest{color:var(--bestaetigt)}
 .bezug .w.dran{color:var(--signal)}
 .bezug .s{font:.6875rem var(--mono);color:var(--muted)}
+.bezug .warum{display:block;font-size:.8125rem;color:var(--muted);margin-top:2px}
+.bezug .warum.ableitung{color:var(--offen)}
 details{margin-top:8px}
 summary{cursor:pointer;font-weight:700;font-size:.875rem;width:fit-content}
 summary:hover{text-decoration:underline}
@@ -115,6 +117,7 @@ textarea.zeigen,textarea.immer{display:block}
 <script>
 const LABEL={bestaetigt:"von dir gesagt",ableitung:"meine Ableitung",vorschlag:"Vorschlag",befund:"Befund",offen:"Frage an dich",freigabe:"Freigabe",impuls:"Eingang",auftrag:"Auftrag"};
 const ROLLE={bestaetigt:"bestaetigt",ableitung:"ableitung",vorschlag:"vorschlag",befund:"befund"};
+const rolle=p=>p.s==="bestaetigt"&&!fest(p)?"":ROLLE[p.s]||"";
 const ARTEN=[["alle","alle"],["bestaetigt","von dir"],["ableitung","Ableitung"],["vorschlag","Vorschlag"],["befund","Befund"],["auftrag","Aufträge"],["impuls","Eingang"],["frage","Fragen und Freigaben"]];
 const PRIOS=["jetzt","später","parken"];
 const D=/*DATEN*/;
@@ -138,16 +141,16 @@ const strangName=id=>STRANG[id]?STRANG[id].name:id;
 function strangChips(p){if(D.einStrang)return"";return `<span class="chip strang">${esc(strangName(p.heim))}</span>`+(p.auch||[]).map(a=>`<span class="chip strang" title="Schnittstelle: derselbe Punkt, auch in diesem Strang">auch ${esc(strangName(a))}</span>`).join("");}
 function wort(p){if(p.s==="auftrag")return fest(p)?"bestätigt":p.stand;if(duDran(p))return"du dran";if(fest(p))return"bestätigt";return LABEL[p.s];}
 function wortKlasse(p){return duDran(p)?"dran":fest(p)?"fest":""}
-function bezugListe(ids,titel){if(!ids||!ids.length)return"";return `<details${titel==="Beruht auf"&&ids.some(i=>ALLE[i]&&!fest(ALLE[i]))?" open":""}><summary>${titel} (${ids.length})</summary><ul class="bezug">${ids.map(i=>{const q=ALLE[i];if(!q)return `<li><span class="w">unbekannt</span><span>${esc(i)}</span></li>`;return `<li><span class="w ${wortKlasse(q)}">${esc(wort(q))}</span><span><a href="#" data-ziel="${esc(q.id)}">${esc(q.t)}</a>${!D.einStrang?` <span class="s">${esc(strangName(q.heim))}</span>`:""}</span></li>`}).join("")}</ul></details>`;}
+function bezugListe(ids,titel,warum){if(!ids||!ids.length)return"";return `<details${titel==="Beruht auf"&&ids.some(i=>ALLE[i]&&!fest(ALLE[i]))?" open":""}><summary>${titel} (${ids.length})</summary><ul class="bezug">${ids.map(i=>{const q=ALLE[i];if(!q)return `<li><span class="w">unbekannt</span><span>${esc(i)}</span></li>`;return `<li><span class="w ${wortKlasse(q)}">${esc(wort(q))}</span><span><a href="#" data-ziel="${esc(q.id)}">${esc(q.t)}</a>${!D.einStrang?` <span class="s">${esc(strangName(q.heim))}</span>`:""}${warum&&warum[i]?`<span class="${/^abgeleitet/i.test(warum[i])?"warum ableitung":"warum"}">${esc(warum[i])}</span>`:""}</span></li>`}).join("")}</ul></details>`;}
 function knoepfe(p){const u=urteil[p.id]||{};const a=p.s==="auftrag",selbst=a&&p.stand!=="startklar";const l1=selbst?"erledigt":a||p.s==="freigabe"?"freigeben":p.s==="impuls"?"einverstanden":p.s==="offen"?"beantwortet":"passt";const l2=selbst?"Frage dazu":a||p.s==="freigabe"||p.s==="impuls"?"anders":p.s==="offen"?"Antwort":"muss besser";
  const prio=duDran(p)?`<div class="prio"><span>Priorität${p.prio?` (Vorschlag: ${esc(p.prio)})`:""}:</span>${PRIOS.map(v=>`<button data-id="${esc(p.id)}" data-p="${v}" class="${u.p===v?"an":""}" aria-pressed="${u.p===v}">${v}</button>`).join("")}</div>`:"";
  return `<div class="urteil"><button data-id="${esc(p.id)}" data-v="passt" class="${u.v==="passt"?"an":""}" aria-pressed="${u.v==="passt"}">${l1}</button><button data-id="${esc(p.id)}" data-v="besser" class="${u.v==="besser"?"an":""}" aria-pressed="${u.v==="besser"}">${l2}</button></div>${prio}<textarea data-id="${esc(p.id)}" aria-label="Notiz" class="${u.v||u.n?"zeigen":""}" placeholder="Was genau? (optional)">${esc(u.n||"")}</textarea>`;}
 function karte(p,mitId){
  const idAttr=mitId?` id="p-${esc(p.id)}"`:"";const dd=p.bestaetigt?p.bestaetigt.slice(8,10)+"."+p.bestaetigt.slice(5,7)+".":"";
- const rel=bezugListe(p.stuetzt,"Beruht auf")+bezugListe(TRAEGT[p.id],"Trägt");
- if(fest(p)&&!duDran(p)){return `<article class="punkt fest"${idAttr}><span class="chip ${ROLLE[p.s]||""}">${esc(LABEL[p.s])}</span><span class="fest-mark">bestätigt ${dd}</span>${strangChips(p)}<h3>${esc(p.t)}</h3>${p.k||p.g||rel?`<details><summary>Mehr</summary>${p.k?`<p>${esc(p.k)}</p>`:""}${p.g?`<p>${esc(p.g)}</p>`:""}${rel}</details>`:""}</article>`;}
+ const rel=bezugListe(p.stuetzt,"Beruht auf",p.stuetzt_warum)+bezugListe(TRAEGT[p.id],"Trägt",Object.fromEntries((TRAEGT[p.id]||[]).map(i=>[i,(ALLE[i].stuetzt_warum||{})[p.id]]).filter(([,w])=>w)));
+ if(fest(p)&&!duDran(p)){return `<article class="punkt fest"${idAttr}><span class="chip ${rolle(p)}">${esc(LABEL[p.s])}</span><span class="fest-mark">bestätigt ${dd}</span>${strangChips(p)}<h3>${esc(p.t)}</h3>${p.k||p.g||rel?`<details><summary>Mehr</summary>${p.k?`<p>${esc(p.k)}</p>`:""}${p.g?`<p>${esc(p.g)}</p>`:""}${rel}</details>`:""}</article>`;}
  const kl=["punkt",duDran(p)?"dran":p.n?"wandel":""].filter(Boolean).join(" ");
- const status=p.s==="auftrag"?`<span class="chip">Auftrag · ${esc(p.stand)} · ${esc(p.wer)}</span>`:`<span class="chip ${ROLLE[p.s]||""}">${esc(LABEL[p.s])}</span>`;
+ const status=p.s==="auftrag"?`<span class="chip">Auftrag · ${p.stand==="startklar"?"wartet auf deine Freigabe":esc(p.stand)} · ${esc(p.wer)}</span>`:`<span class="chip ${rolle(p)}">${esc(LABEL[p.s])}</span>`;
  const dranChip=duDran(p)?`<span class="chip dran">du bist dran</span>`:p.dran&&p.s!=="auftrag"?`<span class="chip">dran: ${esc(p.dran)}</span>`:"";
  const marke=p.n?`<span class="marke">${p.n==="ergänzt"?"ergänzt":p.v?"geändert":"neu"}</span>`:"";
  const wandel=p.f?`<dl class="wandel-dl">${p.v===p.t?"":`<dt>vorher</dt><dd class="vorher">${p.v?esc(p.v):"nicht da"}</dd>`}<dt>du</dt><dd class="du"><q>${esc(p.f)}</q></dd></dl>`:"";

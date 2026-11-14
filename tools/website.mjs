@@ -13,10 +13,26 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 /** Was veröffentlicht wird. Eine Liste, damit Workflow und Prüfung nicht auseinanderlaufen. */
 export const INHALT = ["index.html", "assets", "studies", "leitfaden", "zielbild"];
 
-/** Sucht relative Verweise (href, src) in einer HTML-Seite. */
+/** Archivierte Zielbilder im Labor: An ihrer alten Adresse steht eine erzeugte Hinweisseite, die mit
+ *  veröffentlicht wird, damit früher genannte Adressen auf das eine Zielbild führen (Gegenprüfung des Baus, Probe 5). */
+export function archivSeiten(dir = root, rel = "") {
+  const funde = [];
+  for (const n of readdirSync(dir)) {
+    if (n.startsWith(".") || n === "node_modules" || n === "_site" || n === "fixtures") continue;
+    const voll = join(dir, n), r = rel ? `${rel}/${n}` : n;
+    if (statSync(voll).isDirectory()) funde.push(...archivSeiten(voll, r));
+    else if (n === "punkte.json" && dirname(r).split("/").pop() === "zielbild") {
+      try { if (JSON.parse(readFileSync(voll, "utf8")).archiviert) funde.push(`${dirname(r)}/index.html`); } catch {}
+    }
+  }
+  return funde;
+}
+
+/** Sucht relative Verweise (href, src, Weiterleitung) in einer HTML-Seite. */
 export function verweise(html) {
   const ohneSkript = html.replace(/<script[\s\S]*?<\/script>/g, "");
-  return [...ohneSkript.matchAll(/\s(?:href|src)="([^"]+)"/g)].map((m) => m[1])
+  const weiter = [...ohneSkript.matchAll(/http-equiv="refresh"\s+content="\d+;\s*url=([^"]+)"/gi)].map((m) => m[1]);
+  return [...[...ohneSkript.matchAll(/\s(?:href|src)="([^"]+)"/g)].map((m) => m[1]), ...weiter]
     .filter((u) => !/^(?:[a-z][a-z0-9+.-]*:|\/\/|#)/i.test(u));
 }
 
@@ -48,7 +64,10 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
     if (!existsSync(join(root, x))) { console.error(`✗ ${x} fehlt, wird aber veröffentlicht`); process.exit(1); }
     cpSync(join(root, x), join(ziel, x), { recursive: true });
   }
+  const archiv = archivSeiten();
+  for (const a of archiv) { mkdirSync(dirname(join(ziel, a)), { recursive: true }); cpSync(join(root, a), join(ziel, a)); }
   const fehler = pruefePaket(ziel);
+  for (const a of archiv) if (!existsSync(join(ziel, a))) fehler.push(`${a}: alte Zielbild-Adresse fehlt im Paket`);
   if (fehler.length) { console.error(`✗ ${fehler.length} tote(r) Link(s):\n  - ${fehler.join("\n  - ")}`); process.exit(1); }
-  console.log(`✓ Website zusammengestellt in ${relative(root, ziel) || ziel}: ${INHALT.join(", ")}; alle Links führen auf veröffentlichte Seiten (nicht geprüft: die ausgelieferte Seite im Netz)`);
+  console.log(`✓ Website zusammengestellt in ${relative(root, ziel) || ziel}: ${INHALT.join(", ")}; ${archiv.length} alte Zielbild-Adressen leiten weiter; alle Links führen auf veröffentlichte Seiten (nicht geprüft: die ausgelieferte Seite im Netz)`);
 }

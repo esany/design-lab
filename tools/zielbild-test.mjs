@@ -4,7 +4,7 @@
 import { readFileSync } from "node:fs";
 import { pruefen, erzeugen, dran } from "./zielbild.mjs";
 import { pruefeFarbrollen, stileAusHtml } from "./farbrollen.mjs";
-import { verweise } from "./website.mjs";
+import { verweise, archivSeiten } from "./website.mjs";
 import { spawnSync } from "node:child_process";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -43,7 +43,7 @@ const tests = [
   ["Verbindung auf Unbekanntes, auch ohne Auftrag", () => hat(mit((d) => { punkt(d, "farbe").stuetzt = ["gibt-es-nicht"]; }), "unbekanntem Punkt")],
   ["Verbindung auf sich selbst", () => hat(mit((d) => { punkt(d, "farbe").stuetzt = ["farbe"]; }), "auf sich selbst")],
   // Wer dran ist: nur echte Entscheidungen des Eigentümers (Gegenprüfung #217, Abschnitt 4 B)
-  ["dran: startklarer Auftrag ist deiner", () => dran({ s: "auftrag", stand: "startklar", wer: "Claude" }) === "du"],
+  ["dran: startklar heißt, deine Freigabe fehlt (auch wenn ein Modell ausführt)", () => dran({ s: "auftrag", stand: "startklar", wer: "Claude" }) === "du"],
   ["dran: laufender Auftrag gehört dem Ausführenden", () => dran({ s: "auftrag", stand: "läuft", wer: "Codex" }) === "Codex"],
   ["dran: Auftrag an dich", () => dran({ s: "auftrag", stand: "freigegeben", wer: "Du am Rechner" }) === "du"],
   ["dran: offene Frage ist deine", () => dran({ s: "offen" }) === "du"],
@@ -59,6 +59,10 @@ const tests = [
   ["Kommentar zählt nicht", () => pruefeFarbrollen("/* var(--signal) */.x{color:var(--fg)}", "x.css").length === 0],
   ["Vorlage hält die Farbrollen", () => pruefeFarbrollen(stileAusHtml(readFileSync(join(hier, "zielbild/vorlage.html"), "utf8")), "vorlage").length === 0],
   // Website: tote Links (tools/website.mjs)
+  ["Links: Weiterleitung zählt als Link", () => JSON.stringify(verweise('<meta http-equiv="refresh" content="0; url=../../zielbild/">')) === '["../../zielbild/"]'],
+  ["Alte Zielbild-Adressen werden mit veröffentlicht", () => { const a = archivSeiten(); return a.includes("leitfaden/zielbild/index.html") && a.includes("research/2026-11-anforderungspruefung/zielbild/index.html"); }],
+  ["Grün nur für Bestätigtes", () => /const rolle=p=>p\.s==="bestaetigt"&&!fest\(p\)\?"":/.test(readFileSync(join(hier, "zielbild/vorlage.html"), "utf8"))],
+  ["Begründung nur für bestehende Verbindung", () => hat(mit((d) => { punkt(d, "farbe").stuetzt_warum = { fokus: "x" }; }), "keine Verbindung dorthin")],
   ["Links: extern, Anker und Skript zählen nicht", () => JSON.stringify(verweise('<a href="x/">a</a><a href="https://b">b</a><a href="#c">c</a><script>"<a href=\\"d\\">"</script>')) === '["x/"]'],
   ["Kommandozeile ohne --aus findet die Datendatei", () => {
     const r = spawnSync(process.execPath, [join(hier, "zielbild.mjs"), join(hier, "fixtures/zielbild/beispiel.json"), "--check"], { encoding: "utf8" });
