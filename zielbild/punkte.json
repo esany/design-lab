@@ -1995,6 +1995,42 @@
       ]
     },
     {
+      "teil": "Voraussetzungen für Fachpakete",
+      "strang": "leitfaden",
+      "punkte": [
+        {
+          "id": "vf-verstaendnis",
+          "s": "offen",
+          "n": "neu",
+          "prio": "jetzt",
+          "auch": [
+            "visualisierung"
+          ],
+          "t": "Stimmt meine Lesart deines Verständnisses von Visualisierung? Siehe Chat vom 14.11.",
+          "g": "research/2026-11-voraussetzungen-fachwissen/analyse.md, V3."
+        },
+        {
+          "id": "vf-pixelpatrol",
+          "s": "offen",
+          "n": "neu",
+          "prio": "jetzt",
+          "auch": [
+            "werke"
+          ],
+          "t": "Was ist PixelPatrol, wo liegt es, und darf es im öffentlichen Labor genannt werden?",
+          "g": "research/2026-11-voraussetzungen-fachwissen/analyse.md, V6."
+        },
+        {
+          "id": "vf-reihenfolge",
+          "s": "offen",
+          "n": "neu",
+          "prio": "jetzt",
+          "t": "Reihenfolge: erst Modell für Fachwissen und Bestandskarte (gemeinsam für Leitfaden und Fachpakete), dann ein Rechercheprogramm über die Felder, dann die Pakete?",
+          "g": "research/2026-11-voraussetzungen-fachwissen/analyse.md, Abschnitt 3."
+        }
+      ]
+    },
+    {
       "teil": "Stand der Werke",
       "strang": "werke",
       "punkte": [
@@ -2091,47 +2127,51 @@
       "punkte": [
         {
           "id": "vi-paket",
-          "s": "offen",
-          "n": "neu",
+          "s": "bestaetigt",
+          "n": "geändert",
           "auch": [
             "leitfaden"
           ],
-          "t": "Ein eigenes Fachpaket, getrennt von „Vermitteln“ (einzelne Darstellung gegen Gefüge)?",
-          "g": "anschluss/visualisierungssysteme.md, Frage 1.",
+          "t": "Visualisierungssysteme bekommen ein eigenes Fachpaket mit Schnittstellen zu „Vermitteln“ und zu Interaktion und Struktur.",
+          "g": "research/2026-11-voraussetzungen-fachwissen/analyse.md",
           "stuetzt": [
             "m-ausarbeiten"
           ],
           "stuetzt_warum": {
             "m-ausarbeiten": "Abgeleitet, Hypothese: Ein eigenes Paket für Visualisierungssysteme würde den Pilot berühren, der die Felder aus „Vermitteln“ als eigene Module schneidet."
           },
-          "prio": "später"
+          "prio": "später",
+          "f": "Eigenes Paket mit Schnittstellen (Auswahl im Chat, 14.11.)"
         },
         {
           "id": "vi-datensatz",
-          "s": "offen",
-          "n": "neu",
-          "t": "Erprobung an einem selbst gewählten, offenen Datensatz?",
-          "g": "anschluss/visualisierungssysteme.md, Frage 2.",
-          "prio": "später"
+          "s": "bestaetigt",
+          "n": "geändert",
+          "t": "Erprobt wird am Labor selbst und am aktuellen Projekt PixelPatrol.",
+          "g": "research/2026-11-voraussetzungen-fachwissen/analyse.md",
+          "prio": "später",
+          "f": "1 und auch am aktuellen Projekt PixelPatrol"
         },
         {
           "id": "vi-quellen",
-          "s": "offen",
-          "n": "neu",
+          "s": "bestaetigt",
+          "n": "geändert",
           "auch": [
             "wissen"
           ],
-          "t": "Welche Quellen liest ein Modell zuerst ganz? Vorschlag: Bertin, Segel/Heer, Bach et al.",
-          "g": "anschluss/visualisierungssysteme.md, Frage 3.",
-          "prio": "später"
+          "t": "Einzelne Quellen sind Bruchstücke. Vor dem Lesen kommen die Voraussetzungen: ein Modell für Fachwissen, eine Bestandskarte, ein transdisziplinäres Rechercheprogramm.",
+          "g": "research/2026-11-voraussetzungen-fachwissen/analyse.md",
+          "prio": "später",
+          "f": "die bisherigen Quellen sind doch nur Bruchstücke des themas .. denke daran, Fachpakete und Leitaden zusammenzudenken .. prüfe selbst, was sind die Vorraussetzungen, das diese arbeit sinnvoll starten kann"
         },
         {
           "id": "vi-prueffragen",
-          "s": "offen",
-          "n": "neu",
-          "t": "Sollen die vier Zielbild-Prüffragen aus dem Pilot in „fachpaket-vermitteln“ aufgenommen werden?",
-          "g": "anschluss/visualisierungssysteme.md, Frage 4; experiments/2026-11-zielbild-dataviz-inspiration/.",
-          "prio": "später"
+          "s": "bestaetigt",
+          "n": "geändert",
+          "t": "Die vier Prüffragen aus dem Pilot werden nicht übernommen: Sie zielen auf Einzelgrafiken, nicht auf das Verständnis von Visualisierung im Labor.",
+          "g": "research/2026-11-voraussetzungen-fachwissen/analyse.md",
+          "prio": "später",
+          "f": "weiß gerade nicht, was dahinter steckt .. ich erkenne keine Anforderung oder mein Verständnis von Dataviz .. ich rede nicht über Excel Plots"
         }
       ]
     }
