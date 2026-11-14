@@ -25,7 +25,7 @@ Fachwissen muss nicht entweder aus einem fertigen Schema stammen oder ungeordnet
 | W4 | [W3C, OWL 2 Primer (2012)](https://www.w3.org/TR/owl2-primer/), Abstract und Einführung; formale Ontologiesprache, kein Praxisbeleg für Laborpassung. |
 | W5 | [W3C, SHACL (2017)](https://www.w3.org/TR/shacl/), Abstract und Validierungsprinzip; Normtext in Auszügen. [SHACL 1.2 Overview](https://w3c.github.io/data-shapes/shacl12-overview/) ist am 14.11.2026 nur ein **Editor's Draft** (13.11.2026), kein bereits gültiger 1.2-Standard. |
 | W6 | [Vander Wal, Folksonomy, Definition (2007)](https://vanderwal.net/folksonomy.html), Selbstbeschreibung und historische Notiz; Konzeptquelle, keine Wirkungsstudie. |
-| W7 | [Niklas-Luhmann-Archiv, Zettelkasten](https://niklas-luhmann-archiv.de/nachlass/zettelkasten), Archiverschließung; [„Kommunikation mit Zettelkästen“](https://ckrybus.com/static/papers/luhmann1981.pdf) online als Text zugänglich, hier Einleitung gelesen. Kein Nachweis allgemeiner Überlegenheit. |
+| W7 | [Niklas-Luhmann-Archiv, Zettelkasten](https://niklas-luhmann-archiv.de/nachlass/zettelkasten), Archiverschließung; „Kommunikation mit Zettelkästen“ (Luhmann 1981), hier Einleitung gelesen; Verweis auf die Archivseite statt auf eine Kopie auf einer Fremdseite (Berichtigung Claude, 14.11.). Kein Nachweis allgemeiner Überlegenheit. |
 | W8 | [Alexander et al., A Pattern Language (1977)](https://content.www.wellcomecollection.org/works/grc5zequ), Bibliothekskatalog und Zusammenfassung, nicht das vollständige Buch; [Dawes/Ostwald, 2018](https://doi.org/10.1177/2399808318761396), Abstract zur Graphstruktur. |
 | W9 | [Zhang/Adar/Hullman, NetHOPs, TVCG 2022](https://pubmed.ncbi.nlm.nih.gov/34587012/), Abstract zur Unsicherheit probabilistischer Netze. |
 | W10 | [interner Vorbefund #172](../2026-11-leitfaden-sota/befund.md), §3; schon vorhandene Erkenntnisse zu Wissensabruf/Struktur, nicht neu recherchiert. |
@@ -111,9 +111,11 @@ Fachwissen muss nicht entweder aus einem fertigen Schema stammen oder ungeordnet
 
 **Abgeleiteter minimaler Kantensatz für eine Diskussion, nicht Implementierung:** `quelle-von`, `begründet`, `widerspricht`, `Teil-von`, `beeinflusst`, `verwandt-mit`, `geprüft-durch`. Jede Instanz trägt `Subjekt, Prädikat, Objekt, Status, Quelle, Geltungsbereich, Version`. **Nicht belegt:** dass genau diese sieben Typen vollständig oder hinreichend sind. Keine neue JSON-Struktur, keine Regel hier festgelegt.
 
+**Bezug zum Zielbild (Ergänzung Claude, 14.11.):** Bestätigt sind seit 11.11. vier Relationsarten zum Anfang: umfasst, ergänzt, in Spannung mit, verwandt (Zielbild, Punkt „relationen“, `zielbild/punkte.json`). Die sieben Typen oben sind nur ein Vergleich aus der Literatur, kein Gegenvorschlag; ob eine Art dazukommt, entscheidet der Eigentümer, wenn ein reales Werk sie braucht. **Abgeleitet.**
+
 ## 6 · Nicht noch einmal #172
 
-**Belegt intern:** #172 §3 recherchierte bereits Formen von Gedächtnis, wissensbezogene Agentenprozesse und strukturiertes Wissen; seine Quellen und Entscheidungen werden **nicht** als neue Literatur ausgegeben. Hier liegt der zusätzliche Fokus auf **Gültigkeit einer konkreten Kante**, Wechsel zwischen freien und kontrollierten Begriffen, Lebenszyklus/Verfall, Grenzen der Netzzeichnung und der Unterscheidung **SHACL-Strukturprüfung vs. Quellenprüfung**. Die Brücke zum Befund Visualisierungssysteme §6 bleibt als abgeleitete Übertragung gekennzeichnet.
+**Belegt intern:** #172 §3 („Dynamische Wissensstrukturen pflegen“: Digital Garden, Evergreen Notes, Herkunft nach PROV-O) ist schon recherchiert, §1 behandelt Wissen im Speicher und seine Wirkung (Berichtigung Claude, 14.11.); seine Quellen und Entscheidungen werden **nicht** als neue Literatur ausgegeben. Hier liegt der zusätzliche Fokus auf **Gültigkeit einer konkreten Kante**, Wechsel zwischen freien und kontrollierten Begriffen, Lebenszyklus/Verfall, Grenzen der Netzzeichnung und der Unterscheidung **SHACL-Strukturprüfung vs. Quellenprüfung**. Die Brücke zum Befund Visualisierungssysteme §6 bleibt als abgeleitete Übertragung gekennzeichnet.
 
 ## Ergebnis · geprüft / nicht geprüft · offen
 
