@@ -796,15 +796,15 @@
         {
           "id": "st-cloudflare",
           "s": "auftrag",
-          "stand": "startklar",
+          "stand": "fertig",
           "wer": "Du am Rechner mit Claude im Browser",
           "stuetzt": [
             "nk-orte"
           ],
           "n": "neu",
           "t": "Private Zielbild-Seiten der Werke bei Cloudflare einrichten.",
-          "k": "Du musst dir nichts merken: Schreib in einem Chat am Rechner (Claude-Desktop-App oder Chrome mit der Claude-Erweiterung) einfach „Cloudflare einrichten“. Der Chat findet den Auftrag über den Merkzettel Werke. Im Werke-Repo ist alles vorbereitet; offen sind zwei Schritte im Browser: das private Repo verbinden und die Sperre auf deine E-Mail-Adresse setzen.",
-          "g": "anschluss/werke.md; Chat 13.11.",
+          "k": "Eingerichtet am 14.11.: Das private Werke-Repo ist mit Cloudflare verbunden; jede Änderung dort baut die Seiten neu. Hauptadresse und Vorschau-Adressen sind gesperrt, Zugang nur mit deiner E-Mail-Adresse (Anmeldung über einen Code per E-Mail). Die Adresse steht im README des Werke-Repos.",
+          "g": "anschluss/werke.md; Chat 13.11.; eingerichtet im Chat 14.11.",
           "auch": [
             "werke"
           ],
@@ -1879,7 +1879,7 @@
           "id": "w-stand",
           "s": "befund",
           "n": "neu",
-          "t": "Der Flyer ist fertig. Die privaten Zielbild-Seiten der Werke haben ihr Bauskript; das Cloudflare-Konto ist angelegt.",
+          "t": "Der Flyer ist fertig. Die privaten Zielbild-Seiten der Werke stehen bei Cloudflare, nur für dich zugänglich (14.11.).",
           "g": "anschluss/werke.md, Kopf (Stand 13.11.). Inhalte der Werke liegen nur im privaten Repo esany/werke."
         },
         {
@@ -1888,7 +1888,7 @@
           "prio": "später",
           "n": "neu",
           "t": "Welches Experiment kommt als Nächstes?",
-          "k": "Erst nach der Einrichtung bei Cloudflare. Experimente testen auch das System.",
+          "k": "Cloudflare ist eingerichtet (14.11.); jetzt bist du dran. Experimente testen auch das System.",
           "g": "anschluss/werke.md, nächster Schritt.",
           "stuetzt": [
             "st-cloudflare",
