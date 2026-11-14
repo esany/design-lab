@@ -120,3 +120,91 @@ Soll das Labor einen kleinen Pilot machen: drei bis fünf Mittelmaß-Muster aus 
 Form (z. B. falsche Anführungszeichen, Versalien ohne Sperrung, Zeilen über 80 Zeichen) als
 automatische Prüfung für Studien und Flyer, mit ausgewiesener Grenze, was die Prüfung nicht
 sieht? Empfehlung: ja, als Experiment; es wäre eine neue Prüfung, daher die Frage.
+
+## 8 · Vertiefung: Aufbau der Skills, Entwurf und Methode, UI/UX und Informationsarchitektur
+
+Auftrag des Eigentümers (Chat, 14.11.): Was müssen wir noch festlegen, was haben die anderen
+als neuen Durchschnitt, was haben wir gar nicht, wie sind die Skills aufgebaut und arbeiten sie
+effizient, Prosa oder Regeln, nur Umsetzung oder auch Entwurf und Methode, UI/UX,
+Informationsarchitektur. Gesichtet: alle 169 `SKILL.md` im Repo OpenDesign (Stand 13.11.) und
+die 111 `SKILL.md` der Hauptquelle für UX im Katalog, `Owl-Listener/designer-skills` (MIT,
+Stand 05.09.2026). Ausgezählt mit einem Skript, Stichproben gelesen.
+
+### 8.1 · Wie die Skills aufgebaut sind (belegt, Zählung)
+
+| | OpenDesign | designer-skills (UX) | Labor |
+|---|---|---|---|
+| Anzahl | 169 | 111 | 14 |
+| Länge (Median, Zeichen) | 1516 | 2092 | 2900 (Fachpakete 14 000–15 000) |
+| Inhalt liegt … | bei 144 von 169 nur ein Verweis auf das Ursprungs-Repo („Katalogeintrag“) | im Skill selbst | im Skill selbst |
+| Quellen | 148 mit URL, fast nur das Ursprungs-Repo | 1 mit URL, 4 mit Autor oder Jahr | Pflicht, Belegstatus je Aussage |
+| maschinenlesbarer Kopf | `od:` mit Modus, Eingaben, Ausgaben, Vorschau, Fähigkeiten, `craft.requires` | `name`, `description` mit „Use when … For X use Y“, Linter | `dient: A..`, vom Build geprüft |
+| Aufteilung | Regelwerke je Abschnitt zuschaltbar | ein Skill = eine Methode | Fachpaket als ein Block; nur `laborarbeit` teilt in Referenzen |
+
+**Effizienz (abgeleitet):** OpenDesign ist billig beim Laden, weil der Katalogeintrag kurz ist
+und nur verlangte Regelwerke geladen werden; das eigentliche Wissen fehlt dann aber oder kommt
+ungeprüft von außen. designer-skills ist knapp und klar abgegrenzt; die Beschreibung nennt den
+Nachbar-Skill, das hilft dem Modell bei der Wahl. Das Labor lädt seine Fachpakete ganz (rund
+14 000 Zeichen), auch wenn nur ein Abschnitt gebraucht wird.
+
+### 8.2 · Der neue Durchschnitt (abgeleitet, mit Belegen)
+
+1. **Entwurf als Parameterwahl.** Der Skill `design-brief` zerlegt jedes Briefing in acht
+   Dimensionen (Palette, Schrift, Layout, Stimmung, Dichte …), *abgeleitet aus 71
+   Marken-Design-Systemen*. Entwurf wird damit zur Auswahl aus dem, was es schon gibt: Mittelmaß
+   durch Konstruktion. *belegt (Datei), Deutung abgeleitet*
+2. **Regeln ohne Situation.** Pixelwerte ohne Medium, Abstand, Publikum (vgl. A28).
+3. **Expertenrolle statt Beleg.** designer-skills beginnt mit „You are an expert in …“ und gibt
+   Faustregeln als Tatsachen. Beispiel: `information-architecture` fordert, jedes Element in
+   „unter 3 Klicks“ erreichbar zu machen. Diese Drei-Klick-Regel gilt seit Porter (UIE, 2003)
+   als widerlegt: Abbruch und Zufriedenheit hängen nicht an der Zahl der Klicks
+   ([NN/g](https://www.nngroup.com/articles/3-click-rule/), [Porter](https://articles.centercentre.com/three_click_rule/)). *belegt*
+4. **Umsetzung vor Entwurf.** Die Modi bei OpenDesign: 45 Prototyp, 36 Design-System, 28 Bild,
+   17 Video, 9 Folien. Entwurfsfragen (Wozu, für wen, welche Haltung) kommen kaum vor.
+5. **Brauchbar und besser als Durchschnitt:** die Trennung von Beleg und Deutung in
+   `empathy-map` und `affinity-diagram`; „Heuristic Evaluation“ gibt Expertenurteil nicht als
+   Nutzerforschung aus; die Prüfgrenze beim Linter (Abschnitt 3).
+
+### 8.3 · Was das Labor nicht hat (belegt, Bestand 14.11.)
+
+- **Interaktion, UX, Informationsarchitektur:** kein Fachpaket (so auch
+  [Arbeitsoberfläche, Abschnitt 4](../2026-11-arbeitsoberflaeche/analyse.md)); im Intent steht
+  unter A01 nur „HMI“, UX und Informationsarchitektur fehlen als Feld. Der Skill `kritik` nennt
+  Heuristiken und WCAG nur in einem Satz.
+- **Methoden der Nutzerforschung** (Interview, Kartensortierung, Tree-Test, Journey,
+  Service Blueprint): keine. Im Claude-Konto des Eigentümers sind dafür fremde Plugins
+  installiert (u. a. `design-skills`, `design`, `ux-agent-skills`); das Labor kennt und
+  bewertet sie nicht. Herkunft nicht geprüft.
+- **Vertrag im Skill-Kopf:** Eingaben, Ergebnis, Vorschau, benötigte Regelwerke.
+- **Maschinelle Prüfung** von Mittelmaß-Mustern.
+
+### 8.4 · Prosa oder Regeln: drei Schichten (Vorschlag, nicht beschlossen)
+
+Weder reine Prosa (Labor) noch kontextlose Regeln (OpenDesign) reichen. Vorschlag:
+
+1. **Kanon als Prosa mit Quelle**, wie heute im Fachpaket: Begründung, Spannung, Grenze.
+2. **Abgeleitete Regel**, prüfbar, mit drei Pflichtangaben: Quelle im Kanon, Geltungsbereich
+   (Medium, Abstand, Publikum, A28) und Prüfgrenze (was die Prüfung nicht sieht). Ohne
+   Geltungsbereich keine Regel. Diese Angaben unterscheiden das Labor vom neuen Durchschnitt.
+3. **Frisch gezogen je Auftrag:** Stand der Technik und fremde Skills werden zur Aufgabe aus
+   Radar und Katalogen geholt, mit Datum und Belegstatus, und verfallen. Sie werden nicht
+   dauerhaft in den Kanon kopiert.
+
+Effizienz: Fachpakete nach Abschnitten teilen und im Skill-Kopf angeben, welche Abschnitte ein
+Auftrag braucht (wie `craft.requires`, analog zu `dient:`).
+
+### 8.5 · Entwurf und Methode
+
+Es geht um beides. Umsetzung ist bei den anderen gut abgedeckt und am wenigsten Lücke; die
+Lücke des Feldes liegt bei Entwurfsfragen und Methode mit Beleg. Für das Labor heißt das: von
+außen Umsetzungsmuster und Methodenlisten abbauen (Steinbruch), Entwurfshaltung, Situation und
+Beleg selbst tragen (Negativfolie). *abgeleitet*
+
+### 8.6 · Fragen an den Eigentümer
+
+1. Sollen UX, Interaktionsgestaltung und Informationsarchitektur ein eigenes Feld in A01
+   werden, mit einem Fachpaket aus der geplanten Recherche R1 (Arbeitsoberfläche) und
+   designer-skills als Steinbruch? Empfehlung: ja, ein gemeinsames Fachpaket „Interaktion und
+   Struktur“; das Labor selbst ist der erste Prüffall.
+2. Gelten die drei Schichten (8.4) als Regelformat für Fachpakete, zuerst erprobt am Fachpaket
+   Form mit dem Mittelmaß-Pilot? Empfehlung: ja, als Experiment.
