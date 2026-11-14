@@ -1,13 +1,13 @@
 ---
 thema: Arbeitsweise mit KI · Wissensformen
 stand: Das eine Zielbild des Labors ist übernommen und veröffentlicht (zielbild/, 14.11.): sieben Stränge, Schnittstellen, drei Ansichten, Farbe als Rollen; Leitfaden und Bug #200 darin aufgegangen und archiviert. Beide Gegenprüfungen durch ChatGPT übernommen (#224, #232). Leitfaden Iteration 7; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
-naechster_schritt: Nächste Claude-Sitzung: die drei Bugs zum Zielbild (Schaltflächen #280, visuelle Sprache #281, Informationsarchitektur #282) zuerst als Grundlage für alle Zielbilder; die fünf abgegebenen Ergebnisse von ChatGPT prüfen und übernehmen (PR #256, #257, #259, #267, #269), dann erste Läufe der Verhaltensprüfungen (#271), Pilot Mittelmaß (#247), Plugins (#248), Werkbuch, Betriebstexte. Neustart-Test (#109) als geplante frische Sitzung am 14.11. abends; ChatGPT arbeitet ab: Fundstück dataviz-skills (#178), Issue-Pflege vorbereiten (#273), Abgleich Anforderungen gegen Recherchen (#274); danach Iteration 2 der Arbeitsoberfläche.
-offen: [180, 189, 200, 216, 237, 238, 262, 263, 271, 273, 274, 280, 281, 282]
+naechster_schritt: Der Eigentümer wählt die Variante für den Arbeitsplatz (Zielbild, Punkt „Welche Variante soll der Arbeitsplatz bekommen“; B empfohlen). Danach baut Claude sie in den Generator, dann den Körper der Zielbild-Seite (Bugs zu Schaltflächen, Zeichen, Gliederung) und das Fachpaket Interaktion und Struktur aus der übernommenen Recherche. Weiter offen: Ergebnisse von ChatGPT prüfen (PR #256, #259, #267, #269), Verhaltensprüfungen (#271).
+offen: [180, 189, 200, 216, 238, 262, 263, 271, 273, 274, 280, 281, 282]
 ---
 
 # Thema: Arbeitsweise mit KI · Wissensformen
 
-**Zuletzt fortgeschrieben:** 14.11.2026 (Claude; Rückmeldung zu Iteration 1 des Zielbilds eingearbeitet: veraltete Fragen zurückgezogen, Prüfung auf Kontext und Aktualität, Orchestrierungslauf pflegt das Zielbild; Abgleich Prinzipien, Grundmodell und Mechanismen vorgelegt, Punkt „Prinzipien und Grundmodell nicht abgeglichen“)
+**Zuletzt fortgeschrieben:** 14.11.2026 (Claude; Zielbild nicht mehr öffentlich, Senden aus dem privaten Arbeitsplatz, Iteration 2 des Rahmens mit drei Varianten, Recherche Interaktion und Struktur übernommen)
 
 **Worum es geht:** Wie arbeitet der Gestalter mit KI so, dass echte Werke und Werkzeuge entstehen
 statt Textberge, und wie bleibt Wissen für jeden Chat erreichbar, ohne dass er alles lesen muss?

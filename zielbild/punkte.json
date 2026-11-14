@@ -205,11 +205,11 @@
         {
           "id": "ao-recherche-muster",
           "s": "auftrag",
-          "stand": "freigegeben",
+          "stand": "fertig",
           "wer": "ChatGPT",
-          "n": "neu",
+          "n": "geändert",
           "t": "Stand der Technik: Muster für KI-assistierende Oberflächen und sichtbare Arbeitsteilung zwischen Mensch und Modellen (#237).",
-          "k": "Ergebnis wird Grundlage eines Fachpakets Interaktionsgestaltung, das es im Labor noch nicht gibt. Baut auf dem Befund zum Leitfaden (#172) und dem Befund Visualisierungssysteme auf, statt neu anzufangen.",
+          "k": "Abgeschlossen und übernommen am 14.11.: research/2026-11-arbeitsoberflaeche/recherche-muster.md. Sie ist die Grundlage für den Rahmen des Arbeitsplatzes (Iteration 2) und für das Fachpaket Interaktion und Struktur.",
           "g": "Freigabe: dein Satz „das wäre doch ein schöner sota Auftrag … (Sota Recherche nötig.)“, 14.11.",
           "stuetzt": [
             "ao-perspektiven",
@@ -219,13 +219,28 @@
           ]
         },
         {
+          "id": "ao-rahmen",
+          "s": "vorschlag",
+          "dran": "du",
+          "n": "neu",
+          "prio": "jetzt",
+          "t": "Welche Variante soll der Arbeitsplatz bekommen: A (eine Liste nach Dringlichkeit), B (erst deine Entscheidungen, dann Laufendes, dann die Zielbilder; empfohlen) oder C (getrennt nach Labor und Werken)?",
+          "k": "Was das ist: der Rahmen um alle Zielbilder, also Einstieg, Kopf und Navigation; Labor und Werke werden darin gleich behandelt. Ansehen, am besten am Handy: https://werk-entwurf-arbeitsplatz.werke-zielbilder-e7q.pages.dev/entwurf/ (privat, mit deiner E-Mail). Eine unabhängige Prüfung empfiehlt B mit dem Umschalter aus C; das ist eingearbeitet. Alle drei nutzen echte Daten und haben denselben festen Kopf mit Rückweg und Link zu den Daten im Repo. Warum jetzt: Du hast die bisherige Übersicht als Bruch mit den Entwurfsgrundsätzen verworfen. Was aus deiner Antwort folgt: Ich baue die gewählte Variante in den Generator, damit sie in allen Zielbildern gilt, und gehe dann an den Körper der Seite (Schaltflächen, Zeichen, Gliederung).",
+          "g": "research/2026-11-arbeitsoberflaeche/analyse.md, Abschnitt „Iteration 2“; research/2026-11-arbeitsoberflaeche/recherche-muster.md; daten/arbeitsweise.json, arbeitsweise-a76 und arbeitsweise-a77.",
+          "stuetzt": [
+            "ao-reihenfolge",
+            "ao-einfacher",
+            "ao-situationen"
+          ]
+        },
+        {
           "id": "ao-analyse",
           "s": "auftrag",
           "stand": "läuft",
           "wer": "Claude",
-          "n": "neu",
+          "n": "geändert",
           "t": "Anforderungen an die Arbeitsoberfläche erheben und in Iterationen überarbeiten; die Überarbeitung des Zielbilds folgt daraus.",
-          "k": "Iteration 1 abgeschlossen (14.11.). Für Iteration 2 gleicht ChatGPT die Anforderungen mit den Recherchen ab (#274); danach verdichte ich und zeige dir Varianten.",
+          "k": "Iteration 2 für den Rahmen liegt vor (14.11.): Befund am Bestand, sieben Anforderungen, drei Varianten mit echten Daten (research/2026-11-arbeitsoberflaeche/analyse.md, Abschnitt „Iteration 2“). Der Körper der Zielbild-Seite folgt mit den drei Bugs zu Schaltflächen, Zeichen und Gliederung.",
           "stuetzt": [
             "ao-anforderung",
             "ao-einfacher",
@@ -1980,11 +1995,11 @@
         {
           "id": "od-a-recherche",
           "s": "auftrag",
-          "stand": "freigegeben",
+          "stand": "fertig",
           "wer": "ChatGPT",
-          "n": "neu",
+          "n": "geändert",
           "t": "Die eine Recherche für das Feld Interaktion und Struktur (Issue #237, erweitert).",
-          "k": "Freigegeben durch 0037. Danach baut Claude das Fachpaket nach 0038.",
+          "k": "Abgeschlossen und übernommen am 14.11. (research/2026-11-arbeitsoberflaeche/recherche-muster.md). Als Nächstes baut Claude daraus das Fachpaket nach 0038; zuerst angewendet am Rahmen des Arbeitsplatzes.",
           "stuetzt": [
             "od-feld",
             "od-regeln"
