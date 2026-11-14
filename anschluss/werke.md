@@ -1,7 +1,7 @@
 ---
 thema: Werke und Gestaltung
 stand: neue Experimente erwünscht (auch als Tests des Systems, Eigentümer 13.11.); Flyer fertig; private Zielbild-Seiten der Werke laufen bei Cloudflare (14.11.): Werke-Repo verbunden, jede Änderung baut neu, Haupt- und Vorschau-Adressen nur mit seiner E-Mail zugänglich; Adresse im README des Werke-Repos
-naechster_schritt: Der Eigentümer öffnet die Seiten einmal selbst (Anmeldung per Code an seine E-Mail) und wählt das nächste Experiment.
+naechster_schritt: Der Eigentümer wählt das nächste Experiment.
 offen: [8, 9, 23, 24, 26, 27]
 ---
 
@@ -13,7 +13,7 @@ offen: [8, 9, 23, 24, 26, 27]
 `bash seiten.sh`, Ausgabe `_site`. Zwei Zugangsregeln in Cloudflare Zero Trust: Hauptadresse
 „Nur Eigentümer“ (seine E-Mail), Vorschau-Adressen „Allow Members“ (nur Kontomitglieder, also er).
 Anmeldung über Einmal-Code per E-Mail. Die GitHub-App von Cloudflare sieht derzeit alle Repos des
-Kontos; auf `werke` allein einschränken wäre sauberer (GitHub → Settings → Applications).
+Kontos; auf `werke` allein einschränken wäre sauberer (GitHub → Settings → Applications); Eigentümer 14.11.: „mache erstmal nicht“. Anmeldung vom Eigentümer getestet: „läuft“ (14.11.).
 
 ## In Worten
 
