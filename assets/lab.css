@@ -1,7 +1,8 @@
 /* design-lab — Grundgestaltung. Werte ausschließlich aus assets/tokens.css.
-   Farbe trägt Bedeutung (Eigentümer, 14.11.2026): --lab-signal nur „du bist dran“, --lab-bestaetigt
-   nur „von dir bestätigt“, --lab-offen nur „Vorschlag oder Hypothese“. Alles andere in Grundfarben
-   und Form. Die Prüfung im Build (tools/farbrollen.mjs) meldet jede andere Verwendung. */
+   Farbe trägt Bedeutung im Kontext (Eigentümer, 14.11.2026): An Einträgen heißt --lab-signal „du bist
+   dran“, --lab-bestaetigt „von dir bestätigt“, --lab-offen „Vorschlag oder Hypothese“. Die Marke im
+   Kopf (--lab-marke) ist Erkennungszeichen: gleicher Ton wie das Signal, andere Funktion, getrennt durch
+   Form, Ort und Menge. Die Prüfung im Build (tools/farbrollen.mjs) meldet Rollen am falschen Ort. */
 
 *, *::before, *::after { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
@@ -35,7 +36,7 @@ figure { margin: 0; }
 }
 .mark {
   width: var(--lab-space-8); aspect-ratio: 1;
-  background: var(--lab-fg); /* Grundfarbe seit 14.11.: Rot heißt nur „du bist dran“. Frage im Zielbild, Punkt „Marke“. */
+  background: var(--lab-marke);
   transform: rotate(-8deg);
   margin-top: var(--lab-space-1);
 }
