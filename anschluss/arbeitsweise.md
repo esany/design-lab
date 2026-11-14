@@ -1,7 +1,7 @@
 ---
 thema: Arbeitsweise mit KI · Wissensformen
 stand: Das eine Zielbild des Labors ist übernommen und veröffentlicht (zielbild/, 14.11.): sieben Stränge, Schnittstellen, drei Ansichten, Farbe als Rollen; Leitfaden und Bug #200 darin aufgegangen und archiviert. Beide Gegenprüfungen durch ChatGPT übernommen (#224, #232). Leitfaden Iteration 7; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
-naechster_schritt: Der Eigentümer bestätigt Situationen, Kernlücke und Richtung der Arbeitsfläche (Zielbild, Punkt zu Situationen und Richtung; Herleitung research/2026-11-arbeitsoberflaeche/entwurf.md). Danach legt Claude den Inhalt der drei Ansichten fest und baut in der Reihenfolge der Voraussetzungen im Zielbild (Datenmodell, „Du bist dran“, „Stand“ und „Alles“, Körper der Punkte); parallel ist das Fachpaket Interaktion und Struktur startbereit. Weiter offen: Ergebnisse von ChatGPT prüfen (PR #256, #259, #267, #269), Verhaltensprüfungen (#271).
+naechster_schritt: Der Eigentümer bestätigt Situationen, Kernlücke und Richtung der Arbeitsfläche (Zielbild, Punkt zu Situationen und Richtung; Herleitung research/2026-11-arbeitsoberflaeche/entwurf.md). Danach legt Claude den Inhalt der drei Ansichten fest und baut in der Reihenfolge der Voraussetzungen im Zielbild (Datenmodell, „Du bist dran“, „Stand“ und „Alles“, Körper der Punkte); parallel ist das Fachpaket Interaktion und Struktur startbereit. Weiter offen: Verhaltensprüfungen (#271, Gegenprüfung übernommen 14.11.), Einordnung der Recherche Gestaltung beschreiben (#262); ChatGPT bessert Issue-Pflege (#278) und Dataviz-Sichtung (#277) nach.
 offen: [180, 189, 200, 216, 238, 262, 263, 271, 273, 274, 280, 281, 282]
 ---
 
