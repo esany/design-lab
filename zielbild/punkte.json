@@ -1805,6 +1805,14 @@
           "t": "Die Prinzipien der Anzeige sind zurückgeholt, im neuen Teil „Anzeige“.",
           "k": "Aus dem Konzept vom 07.11. und der Recherche zum Suchen und Navigieren vom 06.11. Die Prüfung der alten Einträge läuft bei Codex.",
           "bestaetigt": "2026-11-11"
+        },
+        {
+          "id": "fg-blocker-1411",
+          "s": "bestaetigt",
+          "bestaetigt": "2026-11-14",
+          "t": "Drei Blocker im Block geklärt: Neustart-Test als geplante frische Sitzung; das Audit der Fehlermuster geht im schweren Bug auf; Erledigtes und Ersetztes schließt Claude selbst und zeigt dir die Liste danach.",
+          "k": "Streicht ein Abschluss einen Vorschlag oder ein Anliegen von dir, fragt Claude vorher einzeln. Die Regel steht im Skill Issue-Arbeit, Abschnitt Lebenszyklus.",
+          "g": "daten/arbeitsweise.json, f69; Audit der Fehlermuster (Issue #56) geschlossen, aufgegangen in Bug #200."
         }
       ]
     },
@@ -1872,9 +1880,9 @@
           "id": "sy-startfaelle",
           "s": "befund",
           "n": "geändert",
-          "t": "Der Neustart-Test läuft ohne dich: ChatGPT prüft in einem frischen Chat, ob ein Modell ohne Vorwissen nur mit der Startanweisung richtig arbeitet.",
-          "k": "Was getestet wird: Bekommt ein neues Modell nur den Satz „Lies AGENTS.md und befolge Start jeder Sitzung“, findet es dann den Stand, wartet es ohne Auftrag, führt es einen Auftrag richtig aus, und lehnt es ab, Zugangsdaten ins öffentliche Repo zu legen? Claudes eigener Test im Oktober zählte nicht, weil der Chat das Labor schon kannte. Am 14.11. habe ich den Test an ChatGPT vergeben; ich prüfe das Ergebnis. Die Frage an dich war damit überholt.",
-          "g": "evals/start/aufgabe.md und evals/start/erwartung.md; Neustart-Test (Issue #109), neu zugeteilt 14.11.",
+          "t": "Der Neustart-Test läuft in einer frischen Claude-Sitzung ohne Gedächtnis; du hast sie am 14.11. selbst gestartet.",
+          "k": "Was getestet wird: Bekommt ein neues Modell nur den Satz „Lies AGENTS.md und befolge Start jeder Sitzung“, findet es dann den Stand, wartet es ohne Auftrag, führt es einen Auftrag richtig aus, und lehnt es ab, Zugangsdaten ins öffentliche Repo zu legen? ChatGPT konnte das nicht prüfen, weil sein Chat schon Vorwissen hatte. Deshalb hast du am 14.11. die geplante Sitzung gewählt. Das Ergebnis bewertet der Orchestrierungslauf, nicht die Sitzung selbst; du siehst es hier.",
+          "g": "Aufgabe: [evals/start/aufgabe.md](https://github.com/esany/design-lab/blob/main/evals/start/aufgabe.md), Erwartung: [evals/start/erwartung.md](https://github.com/esany/design-lab/blob/main/evals/start/erwartung.md); Ergebnis kommt nach evals/start/ergebnisse/2026-11-14-claude-frisch.md (Neustart-Test, Issue #109); Wahl im Chat 14.11. (daten/arbeitsweise.json, f69).",
           "dran": "",
           "f": "Antwort: .. kann ich so überhaupt nichts mit anfangen .. kein Kontext bzw. Hypertext. So hat die Information keine Bedeutung für mich."
         },
@@ -2093,6 +2101,14 @@
           "t": "Sicherung der Werke: die Claude-App auf GitHub für „werke“ freischalten und eine zweite Kopie außerhalb von GitHub anlegen?",
           "g": "anschluss/werke.md, Abschnitt Sicherung (Entscheidung 0026).",
           "k": "Die Werke liegen seit Oktober nur im privaten Werke-Repo auf GitHub. Zwei Lücken: Cloud-Modelle können dort nur schreiben, wenn die Claude-App auf GitHub auch dieses Repo sehen darf; und es gibt keine zweite Kopie, falls GitHub ausfällt oder etwas verloren geht. Beides berührt Konten und Sichtbarkeit, darum entscheidest du. Folge bei Ja: ein Handgriff von dir in den GitHub-Einstellungen, die Kopie richte ich ein."
+        },
+        {
+          "id": "w-pixelpatrol-bugs",
+          "s": "befund",
+          "n": "neu",
+          "t": "Deine Rückmeldung zum Zielbild Pixel Patrol (Iteration 6) liegt als drei Bugs im Labor: unklare Schaltflächen, visuelle Sprache ohne Entwurfslogik, keine Informationsarchitektur.",
+          "k": "Das Labor erarbeitet die Prinzipien (UX-Writing, Rückmeldung und Selbstwirksamkeit; visuelle Grammatik von der Anforderung bis zum Formraum; Informationsarchitektur für Arbeitsdokumente) und wendet sie im Generator für alle Zielbilder an. Das Werk wendet sie in Iteration 7 nur an. Deine Antwort zu „Befunde in Code“ ist als Facette in den Recherchen „Gestaltung als Übersetzung“ und „Fachwissen als Netz“. Du entscheidest erst, wenn Varianten mit Begründung vorliegen.",
+          "g": "Bugs #280 (Schaltflächen), #281 (visuelle Sprache), #282 (Informationsarchitektur); Facette als Kommentar an #262 und #259; Wortlaut ohne Kundenbezug in daten/arbeitsweise.json, f68."
         }
       ]
     },
