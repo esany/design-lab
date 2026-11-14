@@ -1,13 +1,19 @@
 ---
 thema: Werke und Gestaltung
-stand: neue Experimente erwünscht (auch als Tests des Systems, Eigentümer 13.11.); Flyer fertig; private Zielbild-Seiten der Werke: Bauskript im Werke-Repo fertig (nutzt den Generator des Labors), Cloudflare-Konto angelegt (Eigentümer, 13.11.)
-naechster_schritt: Am Rechner richtet Claude im Browser mit dem Eigentümer Cloudflare ein (privates Werke-Repo verbinden, Build „bash seiten.sh“, Ausgabe „_site“, Zugang nur für seine E-Mail). Danach wählt der Eigentümer das nächste Experiment.
+stand: neue Experimente erwünscht (auch als Tests des Systems, Eigentümer 13.11.); Flyer fertig; private Zielbild-Seiten der Werke laufen bei Cloudflare (14.11.): Werke-Repo verbunden, jede Änderung baut neu, Haupt- und Vorschau-Adressen nur mit seiner E-Mail zugänglich; Adresse im README des Werke-Repos
+naechster_schritt: Der Eigentümer öffnet die Seiten einmal selbst (Anmeldung per Code an seine E-Mail) und wählt das nächste Experiment.
 offen: [8, 9, 23, 24, 26, 27]
 ---
 
 # Thema: Werke und Gestaltung
 
-**Zuletzt fortgeschrieben:** 28.10.2026 (Claude, beim Anlegen der Merkzettel)
+**Zuletzt fortgeschrieben:** 14.11.2026 (Claude, Cloudflare eingerichtet)
+
+**Private Zielbild-Seiten (14.11.):** Cloudflare Pages, Projekt aus `esany/werke`, Build
+`bash seiten.sh`, Ausgabe `_site`. Zwei Zugangsregeln in Cloudflare Zero Trust: Hauptadresse
+„Nur Eigentümer“ (seine E-Mail), Vorschau-Adressen „Allow Members“ (nur Kontomitglieder, also er).
+Anmeldung über Einmal-Code per E-Mail. Die GitHub-App von Cloudflare sieht derzeit alle Repos des
+Kontos; auf `werke` allein einschränken wäre sauberer (GitHub → Settings → Applications).
 
 ## In Worten
 
