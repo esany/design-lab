@@ -165,6 +165,12 @@ Sie zeigen, ob ein Modell oder Werkzeug mit dem Labor zurechtkommt. Sie blockier
 und kein Schließen. Eine technische Voraussetzung (die Datei des Prüffalls existiert) ist
 Abhängigkeit, kein Urteil.
 
+## G2 · Startprompts für den Eigentümer
+
+Jeder Prompt, den ein Modell dem Eigentümer für einen anderen Chat gibt, reicht für sich allein:
+Er nennt das Labor als GitHub-Repo `esany/design-lab` (Zweig `main`), das Thema und den Auftrag.
+Er setzt weder ein Projekt noch angehängte Dateien noch einen verbundenen Computer voraus (a61).
+
 ## H · Geplante Prüfung (ChatGPT, alle drei Stunden)
 
 Der Eigentümer hat in ChatGPT eine geplante Aufgabe, die das Labor alle drei Stunden auf

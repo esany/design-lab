@@ -494,6 +494,19 @@
       "status": "abgeleitet",
       "seit": "2026-11-13",
       "notiz": "Eigentümer im Chat, 13.11., zur Frage, ob das Labor privat werden kann. Für Codex und Gemini nicht geprüft. Entscheidung des Eigentümers am selben Tag: zuerst die privaten Zielbild-Seiten am Werk einrichten und testen, das Labor danach."
+    },
+    {
+      "id": "arbeitsweise-a61",
+      "aussage": "Der Startprompt, den die KI dem Eigentümer für einen frischen Chat gab, nannte das Labor nicht als GitHub-Repo; der neue Chat suchte AGENTS.md auf dem Computer und in Anhängen und kam nicht weiter. Ein Startprompt muss für sich allein reichen: Repo esany/design-lab auf GitHub, Zweig main, ausdrücklich genannt.",
+      "status": "belegt",
+      "seit": "2026-11-14",
+      "quellen": [
+        {
+          "datei": "anschluss/arbeitsweise.md",
+          "stelle": "Startprompt im Chat vom 14.11. ohne Repo-Namen; Antwort des neuen Chats vom Eigentümer im Wortlaut weitergegeben"
+        }
+      ],
+      "notiz": "Eigentümer im Chat, 14.11.: „Was für eine Scheiße“. Gleiche Klasse wie a56 und F1 aus #216: Übergabe nicht vom Ort des Eigentümers aus gedacht. Ob der neue Chat im Projekt „Design“ lag (dessen Anweisung nennt das Repo), ist nicht geprüft."
     }
   ],
   "fragen": [
