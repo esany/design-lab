@@ -719,6 +719,23 @@
         }
       ],
       "notiz": "Eigentümer im Chat 14.11.: „Blödsinn. du hälst dich wiedermal nicht an Grundprinzipien des Labors im Arbeitsmodus. Das Zielbild sollte einfach gar nicht zentral auf der öffentlichen Seite abrufbar sein. … bricht mit allen Gestalterischen und Entwurfsgrundsätzen … auch das ist ein Entwurfsgegenstand. … Sie sind funktional doch genau gleich, aber werden hier komplett verschieden behandelt.“ Auftrag: Seitenstruktur und Gestaltung überarbeiten, als Test der Regeln; UX von Kopf und Navigation prüfen; fehlende Fachkompetenz benennen."
+    },
+    {
+      "id": "arbeitsweise-a78",
+      "aussage": "In einem Werk-Chat nannte das Modell den Link zum Zielbild des Labors statt zum Zielbild des Werks. Ursache: Die Link-Regel aus a75 steht in AGENTS.md mit der festen Adresse des Labor-Zielbilds, ohne zu unterscheiden, welches Zielbild eine Antwort betrifft; das Modell wandte sie mechanisch an. Gemeint ist immer das Zielbild, um das es geht.",
+      "status": "belegt",
+      "seit": "2026-11-14",
+      "quellen": [
+        {
+          "datei": "AGENTS.md",
+          "stelle": "Grundmodell, Was zu ihm geht"
+        },
+        {
+          "datei": "daten/arbeitsweise.json",
+          "stelle": "Aussage arbeitsweise-a75"
+        }
+      ],
+      "notiz": "Korrektur des Eigentümers im Werk-Chat 14.11.: „es geht doch aber nicht um das Labor“. Werkinhalte bleiben im Werke-Repo. Prüffall evals/werkchat-lernen, Punkt 5. Klarstellung der Regel: Frage arbeitsweise-f70."
     }
   ],
   "fragen": [
@@ -1261,6 +1278,12 @@
       "antwort": "Neustart-Test: „Geplante Sitzung“. Audit der Fehlermuster: „In den Bug aufgehen“. Überholte Aufträge: „Ja, Liste danach“.",
       "beantwortet": "2026-11-14",
       "notiz": "Chat (Claude), Auswahlfragen. Folgen: geplante Sitzung für #109; #56 geschlossen, aufgegangen in #200; Regel in Skill issue E4 (Claude schließt Erledigtes und Ersetztes selbst, zeigt die Liste danach; Streichungen aus Vorschlägen des Eigentümers weiter einzeln)."
+    },
+    {
+      "id": "arbeitsweise-f70",
+      "frage": "Klarstellung der Link-Regel in AGENTS.md: „Jede Antwort, die ein Zielbild betrifft, nennt den Link zu genau diesem Zielbild auf seinem Arbeitsplatz: für das Labor https://werke-zielbilder-e7q.pages.dev/labor/, für ein Werk dessen Seite dort (werke/<ordner>/).“ So übernehmen?",
+      "gestellt": "2026-11-14",
+      "notiz": "Aus Aussage arbeitsweise-a78; neue Regel, darum Frage an den Eigentümer."
     }
   ]
 }
