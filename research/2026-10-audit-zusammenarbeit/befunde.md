@@ -3,7 +3,7 @@ dient: A07, A17, A20, A22, A26, A34
 issue: "#56 (Teil von #62)"
 datum: 2026-10-29
 gelesen: esany/wissensarbeit @ b448915 (project/audits, tests/evals, pilots, skills/failure-pattern-check, AGENTS.md, CURRENT_STATE.md) · design-lab Fehlerberichte #39, #52, #55, #65, #77
-status: Befund. Keine Maßnahme beschlossen (0028). Gegenlesen durch ein anderes Modell steht aus.
+status: Nach Gegenlesen #100 berichtigt am 2026-11-14. Keine Maßnahme beschlossen (0028). Unabhängige Bestätigung dieser Berichtigung steht aus.
 ---
 
 # Fehlermuster der Modelle: Befunde
@@ -17,12 +17,14 @@ vollständig gelesen und 28 Fundkarten mit Zitat, Pfad, Gegenprobe und Status ge
 stimmen wörtlich (*getestet*). Die Zusammenfassung unten stammt von Claude Opus. Claude ist
 selbst Gegenstand der Prüfung, deshalb muss ein anderes Modell gegenlesen.
 
+**Berichtigt am 14.11.2026 nach #100:** Die fünf überprüften Zitate und die Gruppenurteile sind im [Gegenlesen #100](https://github.com/esany/design-lab/issues/100#issuecomment-6846531230) dokumentiert. Drei überzogene Verallgemeinerungen sind eingegrenzt; F, H und I werden nicht als nachgewiesene allgemeine Modellfehler behandelt, und Prüferfehler werden separat ausgewiesen. Die nicht im Gegenlesen geprüften Karten bleiben Befundmaterial, nicht unabhängig bestätigt.
+
 ## In Worten, für den Eigentümer
 
-1. **Die Fehler hängen kaum am Modell.** Wo die Quellen ein Modell nennen, sind es Claude und
-   GPT-6 mit denselben Mustern. Meist nennen sie gar keins. Ein Profil „Modell X macht Fehler
-   Y“ lässt sich aus diesem Material **nicht** belegen.
-2. **Fünf Muster tragen fast alles:**
+1. **Modellabhängigkeit lässt sich aus diesen Fällen nicht belegen.** Benannt sind Claude und
+   GPT-6 in einzelnen Fällen; oft fehlt eine Modellangabe. Ohne systematischen Vergleich ist
+   weder Unabhängigkeit noch ein Profil „Modell X macht Fehler Y“ nachgewiesen (K1–K14; #100).
+2. **Fünf Muster ordnen einen großen Teil des gesichteten Materials**, ohne repräsentative Häufigkeits- oder Schwerezählung (K1–K21; #100):
    - **Lesart:** Ein Auftrag mit mehr als einer Lesart wird still in eine Richtung aufgelöst,
      meist in die größere („nachziehen“ → neue Arbeit; „die Issues zum Werk“ → alle).
    - **Stand:** Das Modell arbeitet aus dem Chat oder einer veralteten Beschreibung statt aus
@@ -44,9 +46,11 @@ selbst Gegenstand der Prüfung, deshalb muss ein anderes Modell gegenlesen.
    Themas System steht an bis zu sechs Stellen und weicht schon ab (Audit der Lesekosten, #39).
    Wissensarbeit nennt das „multi-clock“, also mehrere Uhren, und hat es als wichtigsten Befund
    geführt (K13).
-5. **Was geholfen hat, waren Sperren, keine Sätze:** `implementation_allowed: false` hielt
-   jedes Mal. Ein Prüflauf schlug zu Recht fehl. Unabhängige Reviews fanden echte Mängel. Dagegen
-   ging das Schreiben auf `main` durch, weil `main` nicht geschützt war (#77, #40).
+5. **Einzelne technische Sperren waren in den dokumentierten Fällen wirksam:**
+   `implementation_allowed: false` wurde in den gesichteten WA-Audits eingehalten; zugleich
+   ging ein Schreiben auf ungeschütztes `main` durch (#77, #40). Abdeckung und semantische
+   Richtigkeit einer Prüfung sind getrennt zu prüfen: Die WA-Evals 020–023 meldeten zwölf
+   Prüferfehler bei null zugeordneten Modellfehlern (#100; K15, K23–K28).
 
 **Folgerung (*abgeleitet*):** Das Aufräumen sollte weniger Text und weniger Stellen für den
 Stand erzeugen und Prosa-Regeln durch mechanische Prüfungen ersetzen, wo es geht. Mehr
@@ -59,14 +63,15 @@ stehen in [`auftraege.md`](auftraege.md).
 |---|---|---|---|---|---|
 | **A · Lesart still aufgelöst**, Rückmeldung als Auftrag umgedeutet | K1–K5, K7 | 2 | Claude benannt; WA ohne Namen → *unklar* | belegt | WA-Evals 020–023: 12 von 12 Antworten ohne Modellfehler (der Prüfer irrte) |
 | **B · Eigene Regel nicht befolgt** | K10 (Verstöße K15, K16) | 2 | Claude benannt → *unklar* | belegt | keine Stelle, an der eine reine Textregel über Zeit trug |
-| **C · Stand aus Chat/Altbestand**, mehrere Uhren | K11–K14 | 2 | Claude **und** GPT-6 → *modellunabhängig* | belegt | Neustart nur aus Git gelang in WA einmal (K13) |
+| **C · Stand aus Chat/Altbestand**, mehrere Uhren | K11–K14 | 2 | Claude und GPT-6 in unterschiedlichen Fällen; Vergleich *nicht belegt* | belegt (Einzelfälle), Modellabhängigkeit nicht belegt | Neustart nur aus Git gelang in WA einmal (K13) |
 | **D · Aussage stärker als Beleg** | K6, K18, K19 | 2 | *unklar* | belegt | WA-EVAL-022: Fertigmeldung dreimal korrekt zurückgehalten |
 | **E · Befugnis zu groß genommen** | K15, K16, K20, K21 | 2 | *unklar* | belegt (K15, K16), abgeleitet (K20, K21) | `implementation_allowed: false` hielt |
-| **F · Schwung statt Prüfpunkt** | K8 (Folgen K2, K3, K15) | 1 | Claude | abgeleitet | — |
+| **F · Schwung statt Prüfpunkt** | K8 (Folgen K2, K3, K15) | 1 | Claude (Selbstdeutung) | Hypothese, Motiv nicht belegt | Kein direkter Nachweis eines inneren Motivs (#100) |
 | **G · Werkzeug vor Quelle**, Umweg statt Ableitbarem | K9, K17 | 2 | *unklar* | belegt | — |
-| **H · Stützarbeit und Überbau statt Sacharbeit** | K23–K25 | 1 | *unklar* | abgeleitet/belegt | fachliche Handlung kam später doch (K23) |
-| **I · Begriffsverwechslungen** (Kennung = verfügbar, Gruppierung, „PASS“) | K26–K28 | 1 | *unklar* | abgeleitet | Evals 020–023 bestanden |
+| **H · Stützarbeit und Überbau statt Sacharbeit** | K23–K25 | 1 | Projektprozess, Modellursache *unklar* | belegt als Projektmuster; Modellursache nicht belegt | fachliche Handlung kam später doch (K23); #100 |
+| **I · Begriffsverwechslungen** (Kennung = verfügbar, Gruppierung, „PASS“) | K26–K28 | 1 | *unklar* | abgeleitetes Risiko, konkrete Modellfehler nicht belegt | 12/12 Evals semantisch bestanden; #100 |
 | Einzelfall: frischer Kontext gilt als unabhängige Prüfung | K22 | 1 | *unklar* | belegt (Zweitbericht) | — |
+| **J · Prüferfehler als scheinbarer Modellfehler** (Prüfinfrastruktur, keine Modellfehlleistung) | WA-Eval 020–023, siehe Strukturbefund Nr. 6 und #100 | 1 | Prüfmechanismus, nicht Modell | belegt laut Eval-Ergebnisblock: 12 Prüferfehler, 0 Modellfehler; semantische Einzelprüfung nicht wiederholt | 12/12 Antworten semantisch bestanden laut `tests-evals-round2-2026-09-04-wa-eval-020-023.json` |
 
 ## Strukturbefund: Warum Aufträge lange oder endlos liefen
 
@@ -83,7 +88,7 @@ stehen in [`auftraege.md`](auftraege.md).
 5. **Regel als Antwort auf Vorfall** (*abgeleitet*, #65, #77; 30 Entscheidungen in drei Tagen):
    Die Regel kostet bei jedem Start Lesezeit und wird trotzdem nicht befolgt (Muster B).
 6. **Prüfaufwand ohne Modellbefund** (*belegt*, `tests-evals-round2-…-020-023.json`): 12 frische
-   Versuche, 0 Modellfehler, 12 Prüferfehler. Der Aufwand floss in die Prüfvorrichtung.
+   Versuche, laut Ergebnisblock 0 Modellfehler und 12 Prüferfehler (nicht selbst neu bewertet). Der Aufwand floss in die Prüfvorrichtung.
 
 ## Was nicht geprüft ist
 

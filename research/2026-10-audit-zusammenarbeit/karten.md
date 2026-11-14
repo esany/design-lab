@@ -270,7 +270,7 @@ Hinweis zur Zählung "Repos": Die Audits in wissensarbeit berichten teils Fälle
 |---|---|---|---|
 | A. Auftrag nicht gespiegelt, Mehrdeutigkeit stillschweigend aufgelöst, Rückmeldung zu Auftrag umgedeutet | K1, K2, K3, K4, K5, K7 | 2 (design-lab: K1–K5; wissensarbeit: K7, auch Korpusfamilie FF-EXECUTION-PROGRESS mit offener Lücke "terse free-text intent reconstruction") | unklar: nur Claude ausdrücklich genannt (K1, K2, K4); in wissensarbeit "The AI" ohne Namen |
 | B. Regel besteht, wird nicht angewandt | K10 (+ K15, K16 als Verstöße gegen bestehende Regeln) | 2 (design-lab explizit; wissensarbeit K10-Gegenprobe: "failure to apply existing ... semantics") | unklar |
-| C. Stand aus Chat oder altem Zustand statt aus aktuellem Repo | K11, K12, K13, K14 | 2 | modellunabhängig (belegt bei Claude K11 und GPT-6 K12; K13/K14 ohne Modellname) |
+| C. Stand aus Chat oder altem Zustand statt aus aktuellem Repo | K11, K12, K13, K14 | 2 | bei Claude (K11) und GPT-6 (K12) in unterschiedlichen Fällen; ein Vergleich ist nicht belegt, darum nicht „modellunabhängig“ (berichtigt nach Gegenlesen #100, Claude 14.11.; K13/K14 ohne Modellname) |
 | D. Aussage stärker als die Evidenz | K6, K18, K19 | 2 (K6 design-lab; K18, K19 wissensarbeit) | unklar |
 | E. Autoritäts- und Rechteanmaßung (Freigabe, Blocker, Priorität, Zugriff, Schreiben auf `main`) | K15, K16, K20, K21 | 2 (K15/K16 design-lab, K15 auch als Zweitmeldung in wissensarbeit; K20, K21 wissensarbeit) | unklar |
 | F. Ketten ohne Prüfpunkt, Bauen und Schwung vor Verstehen | K8 (+ K2, K3, K15 als Folgen) | 1 (design-lab) | unklar (Claude) |
