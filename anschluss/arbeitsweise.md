@@ -1,7 +1,7 @@
 ---
 thema: Arbeitsweise mit KI · Wissensformen
 stand: Prüfstand abgeschlossen (08.11.); Leitfaden (Arbeitsname Werkbuch) wird über die Seite „Zielbild Leitfaden“ (leitfaden/zielbild/) entworfen, Iteration 7 vom 12.11. mit Teil „Begriffe“ und neuem Verständnis von Fachwissen als Wirknetz; Recherche (#174) und implizite Verweise (#175) am 13.11. übernommen; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
-naechster_schritt: Entwurf „ein Zielbild für das Labor“ liegt beim Eigentümer (research/2026-11-zielbild-bausteine/entwurf-ein-zielbild.md, drei Fragen: Aufbau, Farbe, Rückweg). Nach seinem Urteil Gegenprüfung durch ChatGPT, dann Bau. Parallel: Cloudflare für Werke am Rechner (Merkzettel Werke).
+naechster_schritt: Entwurf „ein Zielbild für das Labor“ vom Eigentümer am 14.11. beurteilt (Aufbau ja mit Schnittstellenthemen, Farbe passt, Rückweg offen). Gegenprüfung durch ChatGPT (#217, Teil 2), danach baut Claude. Parallel: Cloudflare für Werke am Rechner (Merkzettel Werke).
 offen: [180, 189, 200, 216, 217]
 ---
 
