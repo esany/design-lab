@@ -663,6 +663,23 @@
         }
       ],
       "notiz": "Eigentümer: „Hier ist eine sehr schlechte erweiterung gelaufen. … sind die überhaupt aktuell und werden ebenfalls kontinuierlich gepflegt. Beruht die Infrastruktur über haupt auf diesen Regeln, oder ist sie überhaupt nicht kompatibel. Wer prüft das, wer pflegt das?“ Antwort im Chat 14.11. und in research/2026-11-zielbild-bausteine/einordnung-und-ueberarbeitung.md, Nachtrag „Rückmeldung zu Iteration 1“."
+    },
+    {
+      "id": "arbeitsweise-a74",
+      "aussage": "Der Eigentümer schickte dieselbe Rückmeldung zu Iteration 1 erneut, weil die veröffentlichte Seite des Zielbilds die Berichtigungen nicht zeigte: Sie lagen in einem offenen Pull Request, die Seite wird nur aus main gebaut. Berichtigungen an Punkten für ihn werden darum im selben Schritt übernommen, sobald die Prüfungen grün sind.",
+      "status": "belegt",
+      "seit": "2026-11-14",
+      "quellen": [
+        {
+          "datei": ".github/workflows/website.yml",
+          "stelle": "Auslöser push auf main"
+        },
+        {
+          "datei": "daten/arbeitsweise.json",
+          "stelle": "Frage arbeitsweise-f67"
+        }
+      ],
+      "notiz": "Abgeleitet aus der zweiten, gleichlautenden Rückmeldung im Chat vom 14.11.; Abgleich Prinzipien, Grundmodell, Mechanismen in research/2026-11-zielbild-bausteine/einordnung-und-ueberarbeitung.md."
     }
   ],
   "fragen": [

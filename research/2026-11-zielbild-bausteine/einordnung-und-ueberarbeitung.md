@@ -153,6 +153,26 @@ Dateien, Entscheidungen und Issues sind Links; „Stand gegen GitHub“ meldet P
 vorlegen; der geplante Orchestrierungslauf zieht das Zielbild selbst nach und liest jede Frage gegen Bestätigtes.
 
 **Grenzen (nicht geprüft):** Ob Kontext *genügt*, erkennt keine Prüfung; dafür ist der Prüffall zum Zahlbezug da,
-erster Lauf steht an. Eine Antwort, die nur in einem anderen Punkt steht, findet keine Prüfung. Ob `principles.md`
-und die Regeln auf Probe zum Grundmodell passen, hat seit Oktober niemand geprüft; das ist jetzt der Punkt
-„Sieben Grundregeln auf Probe“, Auswertung mit den Verhaltensprüfungen.
+erster Lauf steht an. Eine Antwort, die nur in einem anderen Punkt steht, findet keine Prüfung.
+
+**Sichtbarkeit (belegt):** Die Seite des Zielbilds wird nur aus `main` gebaut (`.github/workflows/website.yml`,
+Auslöser Push auf `main`). Berichtigungen in einem offenen Pull Request sieht der Eigentümer nicht; er las darum
+erneut Iteration 1 und schickte dieselbe Rückmeldung zweimal. Folge: Berichtigungen an Punkten für ihn werden im
+selben Schritt übernommen, sobald die Prüfungen grün sind (0019), nicht erst im nächsten Orchestrierungslauf.
+
+### Abgleich Prinzipien, Grundmodell, Mechanismen (14.11., abgeleitet aus dem Repo)
+
+Frage des Eigentümers: „Sind die überhaupt aktuell und werden kontinuierlich gepflegt? Beruht die Infrastruktur
+überhaupt auf diesen Regeln? Wer prüft das, wer pflegt das?“
+
+| Frage | Befund | Fundstelle |
+|---|---|---|
+| Aktuell? | Prinzipien vom 27./28.10.; nur Prinzip 5 am 13.11. nachgeführt. Das Grundmodell (12./13.11.) steht nur in `AGENTS.md`; „Umsetzen vor Neuem“, „erst verorten“, „Namen statt Nummern“ fehlen in `principles.md`. | Commit-Verlauf von `principles.md` (GitHub, 14.11.) |
+| Trägt die Infrastruktur sie? | Mechanisch gesichert ist Form: Links, erzeugte Übersichten, Farbrollen (0036), Issue-Stände, seit 14.11. Kontext an Punkten. Prinzipien 0, 1, 9, 10, 11 haben keinen Mechanismus; die vier Verhaltensprüfungen dafür haben kein Ergebnis (`evals/verhalten-*/ergebnisse/` leer). Prinzip 7 verlangt regelmäßige Prüfung in `evals/`; der Neustart-Test hat zwei Läufe vom Oktober, beide mit Vorwissen. | `.github/workflows/pruefen.yml`; `evals/` |
+| Widerspruch zur Praxis | Prinzip 8 („Regel erst nach dreimal“) gegen 39 Entscheidungen seit 27.10.; Prinzip 9 („Werk vor System“) gegen eine Übersicht mit einem von sieben Themen als Werkarbeit. | `decisions/`; `stand.md`, Themen |
+| Wer prüft, wer pflegt? | Niemand ausdrücklich. Die Pflege prüft den Stand im Intent (Schritt 3), nicht die Prinzipien; die sieben Regeln auf Probe haben kein Auswertungsdatum. | `.agents/skills/pflege/SKILL.md` |
+
+**Vorschlag (Kern, darum Frage an den Eigentümer, Punkt `sy-probe` im Zielbild):** erst die vier
+Verhaltensprüfungen laufen lassen; dann Grundmodell und Prinzipien in einem Entwurf zusammenführen, an jedem
+Prinzip vermerkt, welcher Mechanismus es trägt oder dass keiner es trägt; Abgleich als Pflicht des orchestrierenden
+Modells bei jeder Änderung an Prinzipien oder Grundmodell und monatlich in der Pflege.

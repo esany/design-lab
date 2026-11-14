@@ -7,7 +7,7 @@ offen: [180, 189, 200, 216, 237, 238, 262, 263, 271, 273, 274]
 
 # Thema: Arbeitsweise mit KI · Wissensformen
 
-**Zuletzt fortgeschrieben:** 14.11.2026 (Claude; Rückmeldung zu Iteration 1 des Zielbilds eingearbeitet: veraltete Fragen zurückgezogen, Prüfung auf Kontext und Aktualität, Orchestrierungslauf pflegt das Zielbild)
+**Zuletzt fortgeschrieben:** 14.11.2026 (Claude; Rückmeldung zu Iteration 1 des Zielbilds eingearbeitet: veraltete Fragen zurückgezogen, Prüfung auf Kontext und Aktualität, Orchestrierungslauf pflegt das Zielbild; Abgleich Prinzipien, Grundmodell und Mechanismen vorgelegt, Punkt „Prinzipien und Grundmodell nicht abgeglichen“)
 
 **Worum es geht:** Wie arbeitet der Gestalter mit KI so, dass echte Werke und Werkzeuge entstehen
 statt Textberge, und wie bleibt Wissen für jeden Chat erreichbar, ohne dass er alles lesen muss?

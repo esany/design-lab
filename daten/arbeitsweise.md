@@ -17,7 +17,7 @@
 
 ## Aussagen
 
-### Belegt (29)
+### Belegt (30)
 
 - **arbeitsweise-a02** Im Labor folgte auf einen Vorfall meist eine neue Regel: 30 Entscheidungen in drei Tagen.
   *Beleg:* `research/2026-10-audit-zusammenarbeit/befunde.md`, In Worten, Punkt 4
@@ -102,6 +102,9 @@
 - **arbeitsweise-a73** Bei der Erweiterung des Zielbilds wurden zentrale Grundlagen und Prinzipien missachtet, vergessen oder neu gewichtet: ein fundamentaler Fehler der Entwurfs- und Systementwicklung. Der Eigentümer fragt, ob die Prinzipien aktuell sind und gepflegt werden, ob die Infrastruktur auf ihnen beruht und wer das prüft und pflegt.
   *Beleg:* `daten/arbeitsweise.json`, Frage arbeitsweise-f67
   *Grenze:* Eigentümer: „Hier ist eine sehr schlechte erweiterung gelaufen. … sind die überhaupt aktuell und werden ebenfalls kontinuierlich gepflegt. Beruht die Infrastruktur über haupt auf diesen Regeln, oder ist sie überhaupt nicht kompatibel. Wer prüft das, wer pflegt das?“ Antwort im Chat 14.11. und in research/2026-11-zielbild-bausteine/einordnung-und-ueberarbeitung.md, Nachtrag „Rückmeldung zu Iteration 1“.
+- **arbeitsweise-a74** Der Eigentümer schickte dieselbe Rückmeldung zu Iteration 1 erneut, weil die veröffentlichte Seite des Zielbilds die Berichtigungen nicht zeigte: Sie lagen in einem offenen Pull Request, die Seite wird nur aus main gebaut. Berichtigungen an Punkten für ihn werden darum im selben Schritt übernommen, sobald die Prüfungen grün sind.
+  *Beleg:* `.github/workflows/website.yml`, Auslöser push auf main; `daten/arbeitsweise.json`, Frage arbeitsweise-f67
+  *Grenze:* Abgeleitet aus der zweiten, gleichlautenden Rückmeldung im Chat vom 14.11.; Abgleich Prinzipien, Grundmodell, Mechanismen in research/2026-11-zielbild-bausteine/einordnung-und-ueberarbeitung.md.
 
 ### Abgeleitet (36)
 
