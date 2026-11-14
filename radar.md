@@ -8,13 +8,13 @@ Werkzeuge und Entwicklungen, die das Labor beobachtet. Vier Ringe:
 - **Halten** — bewusst nicht (mehr) nutzen
 
 Jeder Eintrag: was es ist · warum relevant · Quelle · Stand. Änderungen nur mit
-Begründung (Skill `pflege`). Stand des Radars: **2026-11-11**.
+Begründung (Skill `pflege`). Stand des Radars: **2026-11-14**.
 
 ## Einsetzen
 
 | Was | Warum | Quelle | Stand |
 |---|---|---|---|
-| Git + Pull Requests als Freigabe | Mensch gibt per Merge frei; vollständige Historie | — | 2026-10 |
+| Git + Pull Requests als Übergabe | vollständige Historie; der Eigentümer gibt im Zielbild oder im Chat frei, das orchestrierende Modell übernimmt (Prinzip 5, geändert 13.11.) | — | 2026-11 |
 | `AGENTS.md` | gemeinsame Anweisung für Claude, Codex, Gemini; Linux-Foundation-Projekt (AAIF) | [linuxiac](https://linuxiac.com/model-context-protocol-joins-linux-foundation-in-major-ai-shift/) | 2026-10 |
 | `SKILL.md` (Agent Skills) | Methoden als portable Skills, 30+ Werkzeuge | [noqta](https://www.noqta.tn/en/news/skill-md-open-standard-30-ai-coding-tools-adoption-2026) | 2026-10 |
 | DTCG-Tokens (2025.10) | stabiles, offenes Token-Format | [W3C DTCG](https://www.w3.org/community/design-tokens/2025/10/28/design-tokens-specification-reaches-first-stable-version/) | 2026-10 |
