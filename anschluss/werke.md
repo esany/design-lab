@@ -1,13 +1,13 @@
 ---
 thema: Werke und Gestaltung
 stand: neue Experimente erwünscht (auch als Tests des Systems, Eigentümer 13.11.); Flyer fertig; private Zielbild-Seiten der Werke laufen bei Cloudflare (14.11.): Werke-Repo verbunden, jede Änderung baut neu, Haupt- und Vorschau-Adressen nur mit seiner E-Mail zugänglich; Adresse im README des Werke-Repos
-naechster_schritt: Der Eigentümer wählt das nächste Experiment.
+naechster_schritt: Claude beginnt das nächste Experiment, Raster als Programm, zugleich Pilot der Entwicklungsabläufe aus agent-skills (gewählt mit der Bestätigung vom 14.11.; Lesart im Zielbild zur Prüfung).
 offen: [8, 9, 23, 24, 26, 27]
 ---
 
 # Thema: Werke und Gestaltung
 
-**Zuletzt fortgeschrieben:** 14.11.2026 (Claude, Cloudflare eingerichtet)
+**Zuletzt fortgeschrieben:** 14.11.2026 (Claude, Cloudflare eingerichtet; nächstes Experiment nachgeführt nach Rückmeldung zum Zielbild)
 
 **Private Zielbild-Seiten (14.11.):** Cloudflare Pages, Projekt aus `esany/werke`, Build
 `bash seiten.sh`, Ausgabe `_site`. Zwei Zugangsregeln in Cloudflare Zero Trust: Hauptadresse

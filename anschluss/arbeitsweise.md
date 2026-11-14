@@ -7,7 +7,7 @@ offen: [180, 189, 200, 216, 237, 238, 262, 263, 271, 273, 274]
 
 # Thema: Arbeitsweise mit KI · Wissensformen
 
-**Zuletzt fortgeschrieben:** 14.11.2026 (Claude; Hauptzweig geschützt, Anforderungen an die Arbeitsoberfläche Iteration 1 abgeschlossen, fünf Aufträge an ChatGPT verteilt, Chat geschlossen)
+**Zuletzt fortgeschrieben:** 14.11.2026 (Claude; Rückmeldung zu Iteration 1 des Zielbilds eingearbeitet: veraltete Fragen zurückgezogen, Prüfung auf Kontext und Aktualität, Orchestrierungslauf pflegt das Zielbild)
 
 **Worum es geht:** Wie arbeitet der Gestalter mit KI so, dass echte Werke und Werkzeuge entstehen
 statt Textberge, und wie bleibt Wissen für jeden Chat erreichbar, ohne dass er alles lesen muss?
@@ -33,7 +33,7 @@ bedeutet (Wunsch des Eigentümers, 07./08.11.; [a:arbeitsweise-a28]).
 | Leitfaden | Zielbild, Strang Leitfaden, Iteration 7: Fachwissen als Wirknetz, Teil „Begriffe“; 0032 auf Probe bis 05.12. | Werkbuch bauen nach Freigabe; Recherche, Teil 2 (mit Frage 7), sobald „Kontext ist der Oberbegriff“ bestätigt ist |
 | KI-Fachpaket | Konzept, teils überholt | erst nach dem Leitfaden |
 
-**Zu beachten:** Der Build lässt nur ein Labor-Zielbild zu und meldet Farbrollen in falscher Bedeutung (0036, präzisiert 14.11.); `tools/website.mjs` findet tote Links. Offen: Rückweg ohne Kopie (nach dem Werk-Test), Studien nutzen noch die alte Akzentfarbe, Marke im Kopf der Startseite. Berichte: jede Zahl mit Bezug, Freigabe im Chat ([a:arbeitsweise-a43]).
+**Zu beachten:** Was zum Eigentümer geht, prüft der Build auf Kontext und nackte Nummern, „Stand gegen GitHub“ auf Aktualität; der geplante Orchestrierungslauf zieht das Zielbild nach (14.11., Analyse im Nachtrag der Einordnung). Der Build lässt nur ein Labor-Zielbild zu und meldet Farbrollen in falscher Bedeutung (0036, präzisiert 14.11.); `tools/website.mjs` findet tote Links. Offen: Rückweg ohne Kopie (nach dem Werk-Test), Studien nutzen noch die alte Akzentfarbe, Marke im Kopf der Startseite. Berichte: jede Zahl mit Bezug, Freigabe im Chat ([a:arbeitsweise-a43]).
 
 **Geparkt:** Radar als Daten und Ansicht (Matrix, Eigentümer 14.11.; Ringe als Spalten, Felder als Zeilen); Freigabe-Prüfung (#132);
 Hooks; Projektnotiz paleo-type; Radar-Zeile Basic Memory; bei Konflikt startet GitHub keine Prüfung.

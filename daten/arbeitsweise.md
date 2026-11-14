@@ -10,14 +10,14 @@
 ## Offene Fragen an den Eigentümer (5)
 
 - **arbeitsweise-f02** Gemeinsame Issue-Prüfung zuerst im Labor bauen? *(gestellt 2026-11-05)*
-- **arbeitsweise-f03** Befund zu paleo-type auf #408 notieren (dort gilt Pause)? *(gestellt 2026-11-05)*
+- **arbeitsweise-f03** Einen Befund aus dem Labor in der Ursachenanalyse von paleo-type notieren, obwohl dort eine Pause gilt? *(gestellt 2026-11-05)*
 - **arbeitsweise-f04** Dürfen Fremde im öffentlichen Labor Issues anlegen? *(gestellt 2026-11-05)*
 - **arbeitsweise-f17** Lief Codex für #141 im Reiter „Codex“ der ChatGPT-App (Cloud) oder in einem normalen Chat? *(gestellt 2026-11-07)*
 - **arbeitsweise-f26** Minimalform für den Leitfaden: Einträge mit freien Tags und drei Arten von Relationen, eine erzeugte Ansicht als Netz und Verlauf, erste Keime generisch – soll ich so anfangen? *(gestellt 2026-11-06)*
 
 ## Aussagen
 
-### Belegt (26)
+### Belegt (29)
 
 - **arbeitsweise-a02** Im Labor folgte auf einen Vorfall meist eine neue Regel: 30 Entscheidungen in drei Tagen.
   *Beleg:* `research/2026-10-audit-zusammenarbeit/befunde.md`, In Worten, Punkt 4
@@ -93,6 +93,15 @@
 - **arbeitsweise-a70** Geräteunabhängig arbeiten: so gut wie möglich auf jedem Gerät, bei allem vom Handy aus gedacht. Situationen (kurz entscheiden, ausführlich erkunden) sind nicht an Geräte gebunden.
   *Beleg:* `zielbild/punkte.json`, Punkt ao-situationen
   *Grenze:* Eigentümer im Chat, 14.11., beim Bestätigen der drei Ableitungen: „ja - mit einer Anmerkung .. bei allem Handy first .. ich will so gut wie möglich geräteunabhängig arbeiten können.“
+- **arbeitsweise-a71** Das Zielbild legte Fragen vor, die durch spätere Änderungen im Repo längst erledigt oder beantwortet waren (Regelpause, Neustart-Test, ruhende Entwürfe, nächstes Experiment, PixelPatrol). Ein Zielbild, das dem Stand nicht folgt, ist ein schwerer Bug.
+  *Beleg:* `daten/arbeitsweise.json`, Frage arbeitsweise-f67
+  *Grenze:* Eigentümer: „das Zielbild wird auch bei repoänderungen nicht mit aktualisiert oder bekommt veraltete Daten - schwerer Bug“; zu PixelPatrol: „Das ist bereits hinreichend geklärt . Ich werte das als schweren Bug! Anallysieren und beheben.“
+- **arbeitsweise-a72** Zahlen, Nummern und Verweise ohne Inhalt haben für den Eigentümer keine Bedeutung. Ein Punkt muss für sich verständlich sein und aktive Verweise (Hypertext) tragen; ein inaktiver Verweis ins Repo oder auf einen Chat ist keine Assistenz.
+  *Beleg:* `daten/arbeitsweise.json`, Frage arbeitsweise-f67
+  *Grenze:* Eigentümer: „kein Kontext bzw. Hypertext. So hat die Information keine Bedeutung für mich.“ und „Ein inaktiver Verweis ins repo ist keine Assistenz für mich .. das ist in diesem Punkt der einzige Kontext und bricht mit unseren REgeln.“
+- **arbeitsweise-a73** Bei der Erweiterung des Zielbilds wurden zentrale Grundlagen und Prinzipien missachtet, vergessen oder neu gewichtet: ein fundamentaler Fehler der Entwurfs- und Systementwicklung. Der Eigentümer fragt, ob die Prinzipien aktuell sind und gepflegt werden, ob die Infrastruktur auf ihnen beruht und wer das prüft und pflegt.
+  *Beleg:* `daten/arbeitsweise.json`, Frage arbeitsweise-f67
+  *Grenze:* Eigentümer: „Hier ist eine sehr schlechte erweiterung gelaufen. … sind die überhaupt aktuell und werden ebenfalls kontinuierlich gepflegt. Beruht die Infrastruktur über haupt auf diesen Regeln, oder ist sie überhaupt nicht kompatibel. Wer prüft das, wer pflegt das?“ Antwort im Chat 14.11. und in research/2026-11-zielbild-bausteine/einordnung-und-ueberarbeitung.md, Nachtrag „Rückmeldung zu Iteration 1“.
 
 ### Abgeleitet (36)
 
@@ -170,8 +179,10 @@
 - **arbeitsweise-a23** Astra (ChatGPT) kann Code ausführen und über den GitHub-Connector schreiben.
   *Grenze:* Angabe des Eigentümers im Chat vom 06.11.; im Pilot (Schritt 4) zu prüfen.
 
-## Beantwortete Fragen (61, neueste zuerst)
+## Beantwortete Fragen (62, neueste zuerst)
 
+- **2026-11-14** Rückmeldung zur Seite „Zielbild des Labors“, Iteration 1
+  → „Rückmeldung Zielbild des Labors (Iteration 1):  • [Arbeitsweise mit KI] Private Zielbild-Seiten der Werke bei Cloudflare einrichten.   → erledigt (Priorität: jetzt) • [Arbeitsweise mit KI] Gemeinsame Issue-Prüfung zuerst im Labor bauen?   → Priorität (Priorität: später) • [Leitfaden] Fragenliste in alten Chats finden (Issue #189).   → Priorität (Priorität: später) • [System und Pflege] Regelpause und Reihenfolge der Regelprüfung festlegen.   → Antwort: .. das Zielbild wird auch bei repoänderungen nicht mit aktualisiert oder bekommt veraltete Daten - schwerer Bug • [System und Pflege] Sieben Regeln auf Probe haben kein Auswertungsdatum (0003, 0004, 0007, 0013, 0016, 0018, 0024).   → muss besser: Bug .. hier nur zahlen ohne Semantik und Kontext .. was soll ich da verstehen. Hier ist eine sehr schlechte erweiterung gelaufen. Zentrale Grundlagen und Prinzipien wurden bei der Iteration bisachtet oder vergessen bzw. neu gewichtet. Fundamentaler Fehler von Entwurfs- und Systementwicklung - wiederspricht all meinen (unseren)  Prinzipien und Grundsätzen - sind die überhaupt aktuell und werden ebenfalls kontinuierlich gepflegt.    Beruht die Infrastruktur über haupt auf diesen Regeln, oder ist sie überhaupt nicht kompatibel. Wer prüft das, wer pflegt das? • [System und Pflege] Zwölf Issues mit Label „entwurf“ und PR #90 ruhen seit 28./29.10.   → muss besser: kann ich so überhaupt nichts mit anfangen .. kein Kontext bzw. Hypertext So hat die Information keine Bedeutung für mich. • [System und Pflege] Wie laufen die Startfälle frisch, ohne Projektkontext (#109)?   → Antwort: .. kann ich so überhaupt nichts mit anfangen .. kein Kontext bzw. Hypertext So hat die Information keine Bedeutung für mich. • [Leitfaden] Stimmt meine Lesart deines Verständnisses von Visualisierung? Siehe Chat vom 14.11.   → Antwort: .. Ein inaktiver Verweis ins repo ist keine Assistenz für mich .. das ist in diesem Punkt der einzige Kontext und bricht mit unseren REgeln. • [Leitfaden] Was ist PixelPatrol, wo liegt es, und darf es im öffentlichen Labor genannt werden?   → Antwort: Das ist bereits hinreichend geklärt . Ich werte das als schweren Bug! Anallysieren und beheben. • [Werke] Welches Experiment kommt als Nächstes?   → Antwort: veraltet - bug“ *(Chat (Claude), eingearbeitet in Iteration 2 am 14.11.; Analyse in research/2026-11-zielbild-bausteine/einordnung-und-ueberarbeitung.md, Nachtrag „Rückmeldung zu Iteration 1“.)*
 - **2026-11-14** Radar als Matrix (Empfehlung) oder Kreis?
   → „Matrix“ *(Merkzettel, gestellt im Chat; beantwortet im Chat, 14.11.)*
 - **2026-11-12** Rückmeldung zur Seite „Zielbild Bug #200: Prüfung des Ansatzes“, Iteration 1

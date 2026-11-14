@@ -124,3 +124,35 @@ sie werden darin einsortiert. Vorher hatte ich sie daneben gestellt, ohne diesen
 **Stand von Schritt 2:** am 14.11. erledigt in einem anderen Chat (Cloudflare für die Werke eingerichtet, `anschluss/werke.md`; Hauptzweig mit Pflichtprüfungen geschützt, `verlauf/2026-11-14-anleitung-hauptzweig.md`).
 
 **Was als Nächstes dich braucht:** Schritt 4, die Wahl des nächsten Experiments (Vorschlag: Raster als Programm, mit dem Pilot der Osmani-Abläufe). Alles andere läuft ohne dich.
+
+## Nachtrag 14.11. (Claude, Orchestrator): Rückmeldung zu Iteration 1 des Zielbilds
+
+**Herkunft:** Rückmeldung des Eigentümers, Wortlaut in `daten/arbeitsweise.json`, Frage f67; Eingänge a71 bis a73.
+
+**Befund (belegt, Stand GitHub und Repo 14.11.):** Von neun Punkten, zu denen er etwas sagte, waren fünf überholt
+oder schon beantwortet, als er sie las: Regelpause (aufgegangen 13.11.), Neustart-Test (an ChatGPT vergeben 14.11.),
+ruhende Entwürfe (fünf Übergaben und ein Pull Request längst geschlossen), PixelPatrol (im selben Zielbild
+beantwortet), nächstes Experiment (mit der Bestätigung zu agent-skills gewählt, Pilot an Raster als Programm).
+Drei weitere trugen nur Nummern oder einen Chat-Verweis statt Inhalt.
+
+**Ursachen (abgeleitet, im Zusammenspiel):**
+1. *Umsetzen vor Neuem verletzt.* Diese Einordnung (Abschnitt 4) hatte die Punkte schon richtig sortiert: vier
+   davon „übernehme ich“, zwei zusammengelegt. Umgesetzt wurde das in `zielbild/punkte.json` nicht; stattdessen kamen
+   neue Teile dazu (Fundstück OpenDesign, Voraussetzungen für Fachpakete). Neues stand neben Bestätigtem.
+2. *Kopie statt Bezug.* Die Punkte aus „Pflege und Umbau“ waren Abschriften der Pflegeliste vom Oktober. Nichts
+   hielt sie am Stand: Der Build prüft Form, „Stand gegen GitHub“ prüfte nur die Merkzettel, und der geplante
+   Orchestrierungslauf schrieb Fragen in Merkzettel „damit der nächste Chat sie ins Zielbild bringt“, also niemand.
+3. *Regeln ohne Mechanismus.* Das Grundmodell verlangt Kontext, Namen statt Nummern und jede Zahl mit Bezug; der
+   Prüffall `verhalten-zahlbezug` dazu war vorbereitet, nie gelaufen. Am Ort, wo es zählt, prüfte niemand.
+4. *Kein Gegenlesen gegen Bestätigtes.* Fragen aus Analysen (PixelPatrol) wurden übernommen, ohne sie gegen die
+   bestätigten Punkte zu lesen; die Verbindungen („Beruht auf“) gab es, sie wurden nicht benutzt.
+
+**Behoben (in diesem Schritt):** die neun Punkte und alle weiteren, bei denen er dran ist und Kontext fehlte;
+der Generator verlangt bei solchen Punkten Kontext und meldet nackte Nummern und Chat-Verweise; Verweise auf
+Dateien, Entscheidungen und Issues sind Links; „Stand gegen GitHub“ meldet Punkte, die Geschlossenes als offen
+vorlegen; der geplante Orchestrierungslauf zieht das Zielbild selbst nach und liest jede Frage gegen Bestätigtes.
+
+**Grenzen (nicht geprüft):** Ob Kontext *genügt*, erkennt keine Prüfung; dafür ist der Prüffall zum Zahlbezug da,
+erster Lauf steht an. Eine Antwort, die nur in einem anderen Punkt steht, findet keine Prüfung. Ob `principles.md`
+und die Regeln auf Probe zum Grundmodell passen, hat seit Oktober niemand geprüft; das ist jetzt der Punkt
+„Sieben Grundregeln auf Probe“, Auswertung mit den Verhaltensprüfungen.
