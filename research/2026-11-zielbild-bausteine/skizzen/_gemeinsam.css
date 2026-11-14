@@ -1,0 +1,22 @@
+/* Skizzen zur Überarbeitung des Zielbilds (14.11.2026). Nur Rollenfarben: Rot = du bist dran. */
+*{box-sizing:border-box}
+body{margin:0;background:var(--lab-bg);color:var(--lab-fg);font:1rem/1.5 var(--lab-font-sans)}
+main{max-width:38rem;margin:0 auto;padding:20px 16px 96px}
+.meta{font:.75rem/1.4 var(--lab-font-mono);color:var(--lab-muted);margin:0}
+h1{font-size:1.75rem;line-height:1.1;margin:6px 0 12px;letter-spacing:-.01em}
+h2{font-size:1.0625rem;margin:28px 0 8px;padding-top:12px;border-top:2px solid var(--lab-fg)}
+p{margin:0 0 8px}
+.lage p{font-size:1.0625rem;line-height:1.45}
+.dran{border-left:4px solid var(--lab-signal);padding:2px 0 2px 12px;margin:14px 0}
+.dran h3{margin:0;font-size:1.0625rem;line-height:1.3}
+.dran p{color:var(--lab-fg);font-size:.9375rem;margin:4px 0 0}
+.folge{color:var(--lab-muted)!important}
+.knopf{display:inline-block;font:.875rem var(--lab-font-sans);border:1px solid var(--lab-line);border-radius:8px;padding:7px 12px;margin:8px 6px 0 0;background:none;color:var(--lab-fg)}
+.knopf.voll{background:var(--lab-fg);color:var(--lab-bg);border-color:var(--lab-fg)}
+.zeile{display:grid;grid-template-columns:4.5rem 1fr;gap:8px;padding:7px 0;border-bottom:1px solid var(--lab-line);font-size:.9375rem;line-height:1.35}
+.zeile b{font:700 .6875rem/1.8 var(--lab-font-mono);color:var(--lab-muted);text-transform:uppercase;letter-spacing:.03em}
+.weiter{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid var(--lab-line);text-decoration:none;color:inherit;font-weight:700}
+.weiter span{font:400 .8125rem var(--lab-font-mono);color:var(--lab-muted)}
+.leiste{position:sticky;bottom:0;background:var(--lab-bg);border-top:1px solid var(--lab-line);padding:10px 16px;display:flex;justify-content:space-between;align-items:center}
+.leiste span{font:.8125rem var(--lab-font-mono);color:var(--lab-muted)}
+.skizze{font:.6875rem var(--lab-font-mono);color:var(--lab-muted);border:1px dashed var(--lab-line);padding:4px 8px;display:inline-block;margin-bottom:10px}

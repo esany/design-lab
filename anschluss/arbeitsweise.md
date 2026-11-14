@@ -1,7 +1,7 @@
 ---
 thema: Arbeitsweise mit KI · Wissensformen
 stand: Das eine Zielbild des Labors ist übernommen und veröffentlicht (zielbild/, 14.11.): sieben Stränge, Schnittstellen, drei Ansichten, Farbe als Rollen; Leitfaden und Bug #200 darin aufgegangen und archiviert. Beide Gegenprüfungen durch ChatGPT übernommen (#224, #232). Leitfaden Iteration 7; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
-naechster_schritt: Der Eigentümer arbeitet im Zielbild ab „Du bist dran“ (25 Punkte, darunter die Frage nach der Marke); Claude trägt seine Rückmeldungen ein. Rückweg ohne Kopie nach dem Werk-Test bei Cloudflare wieder vorlegen.
+naechster_schritt: Der Eigentümer urteilt über Einordnung und drei Skizzen für das überarbeitete Zielbild (research/2026-11-zielbild-bausteine/einordnung-und-ueberarbeitung.md); danach baut Claude die Überarbeitung, ChatGPT prüft gegen mit der Frage „Wird es für den Eigentümer einfacher?“.
 offen: [180, 189, 200, 216]
 ---
 
