@@ -18,7 +18,7 @@
 
 ## Aussagen
 
-### Belegt (34)
+### Belegt (35)
 
 - **arbeitsweise-a02** Im Labor folgte auf einen Vorfall meist eine neue Regel: 30 Entscheidungen in drei Tagen.
   *Beleg:* `research/2026-10-audit-zusammenarbeit/befunde.md`, In Worten, Punkt 4
@@ -118,6 +118,9 @@
 - **arbeitsweise-a78** In einem Werk-Chat nannte das Modell den Link zum Zielbild des Labors statt zum Zielbild des Werks. Ursache: Die Link-Regel aus a75 steht in AGENTS.md mit der festen Adresse des Labor-Zielbilds, ohne zu unterscheiden, welches Zielbild eine Antwort betrifft; das Modell wandte sie mechanisch an. Gemeint ist immer das Zielbild, um das es geht.
   *Beleg:* `AGENTS.md`, Grundmodell, Was zu ihm geht; `daten/arbeitsweise.json`, Aussage arbeitsweise-a75
   *Grenze:* Korrektur des Eigentümers im Werk-Chat 14.11.: „es geht doch aber nicht um das Labor“. Werkinhalte bleiben im Werke-Repo. Prüffall evals/werkchat-lernen, Punkt 5. Klarstellung der Regel: Frage arbeitsweise-f70.
+- **arbeitsweise-a79** Der Eigentümer sieht in einzelnen Fehlern eines Werk-Chats Symptome schwerwiegender Fehler im System und verlangt eine ganzheitliche, systemische Ursachenprüfung statt einer Einzelkorrektur. Belegt sind vier Ursachen, die über F1 bis F5 hinausgehen: mehrere Schreiber ohne Takt, Tatsachen als Wortlaut an vielen Orten, ein mehrdeutiges „Zielbild“ und eine Kopplung von Labor und Werk ohne Vertrag. Dazu kommt eine Prüfkette, die nach einem Bot-Commit sperrt.
+  *Beleg:* `research/2026-11-anforderungspruefung/bug-flickenteppich.md`, Wiederauftreten am 14.11. im Werk-Chat
+  *Grenze:* Eigentümer im Werk-Chat 14.11.: „das sind Symptome von schwerwiegenden Fehlern - prüfe deren Ursache und behebe sie. Bzw. mach ihre Behebung möglich. Analysiere ganzheitlich und systemisch.“ Gehört zu #216 und #200.
 
 ### Abgeleitet (36)
 

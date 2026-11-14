@@ -20,7 +20,7 @@ Die Website wird nach jeder Übernahme aktualisiert: https://esany.github.io/des
 
 ## Offene Fragen
 
-Alle Fragen an den Eigentümer stehen seit 14.11. im [Zielbild des Labors](https://esany.github.io/design-lab/zielbild/), Ansicht „Du bist dran“ (Daten: [zielbild/punkte.json](zielbild/punkte.json)). Die Liste, die hier bis 13.11. stand, ist dort mit Herkunft „stand.md“ übernommen. Neue Fragen bitte dort eintragen, nicht hier.
+Alle Fragen an den Eigentümer stehen seit 14.11. im [Zielbild des Labors](https://werke-zielbilder-e7q.pages.dev/labor/) (privat, nur mit seiner E-Mail), Ansicht „Du bist dran“ (Daten: [zielbild/punkte.json](zielbild/punkte.json)). Die Liste, die hier bis 13.11. stand, ist dort mit Herkunft „stand.md“ übernommen. Neue Fragen bitte dort eintragen, nicht hier.
 
 ## Läuft ohne Sie
 
