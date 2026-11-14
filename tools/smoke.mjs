@@ -12,7 +12,7 @@ const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const out = process.argv[2] ?? join(root, ".smoke");
 mkdirSync(out, { recursive: true });
 
-const pages = [["start", join(root, "index.html")]];
+const pages = [["start", join(root, "index.html")], ["zielbild", join(root, "zielbild/index.html")]];
 for (const slug of readdirSync(join(root, "studies"))) {
   const f = join(root, "studies", slug, "index.html");
   if (existsSync(f)) pages.push([slug, f]);

@@ -6,6 +6,7 @@
   "stand": "2026-11-13",
   "von": "Claude Opus 5.5",
   "hinweis": "Quellen: research/2026-11-anforderungspruefung/befund.md (Claude, 12.11.) und gegenpruefung-chatgpt.md (ChatGPT, 13.11.). Erzeugt mit tools/zielbild.mjs aus PR #187.",
+  "archiviert": { "am": "2026-11-14", "nach": "zielbild/punkte.json", "strang": "arbeitsweise", "grund": "Das Labor hat ein Zielbild (Entwurf ein Zielbild, Urteil 14.11.). Diese Datei bleibt als Herkunft; geändert wird nur noch dort." },
   "teile": [
     {
       "teil": "Dein Nutzungskontext (Grundmodell)",

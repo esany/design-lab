@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 // Zielbild: Punkte als Daten → eine Seite zum Prüfen, Urteilen und Zurückmelden.
-// Für jedes Werk und das Labor selbst. Beschreibung der Daten und der Bausteine:
+// Das Labor hat genau ein Zielbild (zielbild/punkte.json, Stränge als Dimension); jedes Werk baut
+// seines mit demselben Werkzeug in seinem eigenen Repo. Beschreibung der Daten und der Bausteine:
 // tools/zielbild/README.md; Herleitung: research/2026-11-zielbild-bausteine/befund.md.
 //
 //   node tools/zielbild.mjs <punkte.json> [--aus <seite.html>] [--check]
@@ -21,6 +22,20 @@ export const AENDERUNG = ["neu", "geändert", "ergänzt"];
 export const PRIO = ["jetzt", "später", "parken"];
 const DATUM = /^\d{4}-\d{2}-\d{2}$/;
 
+/** Wer ist dran? „du“ heißt: der Eigentümer soll jetzt entscheiden, freigeben oder antworten.
+ *  Ein ausdrückliches Feld „dran“ gilt vor der Ableitung; "" heißt: niemand, bewusst ruhend.
+ *  Eine Korrektur („muss besser“) macht nicht den Eigentümer zuständig, sondern das Modell. */
+export function dran(p) {
+  if (typeof p.dran === "string") return /^du$/i.test(p.dran.trim()) ? "du" : p.dran.trim();
+  if (p.s === "auftrag") {
+    if (p.stand === "startklar") return "du";
+    if (p.stand === "fertig") return "";
+    return /^du\b/i.test(p.wer ?? "") ? "du" : (p.wer ?? "");
+  }
+  if (["offen", "freigabe", "impuls"].includes(p.s) && !(p.bestaetigt && !p.n)) return "du";
+  return "";
+}
+
 /** Prüft die Daten eines Zielbilds. Gibt eine Liste von Fehlern in Alltagssprache zurück. */
 export function pruefen(z, name = "punkte.json") {
   const err = [];
@@ -30,9 +45,22 @@ export function pruefen(z, name = "punkte.json") {
   if (!Number.isInteger(z.iteration) || z.iteration < 1) err.push(`${name}: „iteration“ muss eine ganze Zahl ab 1 sein`);
   if (!DATUM.test(z.stand ?? "")) err.push(`${name}: „stand“ muss ein Datum JJJJ-MM-TT sein`);
   if (!Array.isArray(z.teile) || !z.teile.length) { err.push(`${name}: „teile“ fehlt oder ist leer`); return err; }
+  const strangIds = new Set();
+  if (z.straenge !== undefined) {
+    if (!Array.isArray(z.straenge) || !z.straenge.length) err.push(`${name}: „straenge“ ist leer`);
+    for (const st of z.straenge ?? []) {
+      if (!/^[a-z0-9-]+$/.test(st.id ?? "")) err.push(`${name}: Strang „${st.id ?? "?"}“: Kennung nur klein-mit-bindestrich`);
+      if (strangIds.has(st.id)) err.push(`${name}: Strang „${st.id}“ doppelt`);
+      strangIds.add(st.id);
+      if (!st.name) err.push(`${name}: Strang „${st.id}“ ohne „name“`);
+      if (!Number.isInteger(st.iteration) || st.iteration < 1) err.push(`${name}: Strang „${st.id}“: „iteration“ muss eine ganze Zahl ab 1 sein`);
+    }
+  }
   const ids = new Set();
   for (const teil of z.teile) {
     if (!teil.teil) err.push(`${name}: ein Teil ohne Überschrift „teil“`);
+    if (strangIds.size && !strangIds.has(teil.strang)) err.push(`${name}: Teil „${teil.teil}“ ohne gültigen Strang (erlaubt: ${[...strangIds].join(", ")})`);
+    if (!strangIds.size && teil.strang) err.push(`${name}: Teil „${teil.teil}“ nennt einen Strang, aber der Kopf hat keine „straenge“`);
     for (const p of teil.punkte ?? []) {
       const w = `${name}: Punkt „${p.id ?? "?"}“`;
       if (!/^[a-z0-9-]+$/.test(p.id ?? "")) err.push(`${w}: Kennung fehlt oder ist nicht klein-mit-bindestrich`);
@@ -46,6 +74,16 @@ export function pruefen(z, name = "punkte.json") {
       if (p.s === "impuls" && !p.prio) err.push(`${w}: Impuls ohne Vorschlag zur Priorität`);
       if (p.bestaetigt && !DATUM.test(p.bestaetigt)) err.push(`${w}: „bestaetigt“ muss ein Datum JJJJ-MM-TT sein`);
       if (p.bestaetigt && p.n) err.push(`${w}: geändert („n“) und zugleich bestätigt; eine Änderung hebt die Bestätigung auf`);
+      if (p.dran !== undefined && typeof p.dran !== "string") err.push(`${w}: „dran“ muss ein Text sein („du“, ein Name oder leer)`);
+      if (p.auch !== undefined) {
+        if (!strangIds.size) err.push(`${w}: „auch“ (Schnittstelle) braucht „straenge“ im Kopf`);
+        else if (!Array.isArray(p.auch) || !p.auch.length) err.push(`${w}: „auch“ muss eine Liste von Strängen sein`);
+        else for (const a of p.auch) {
+          if (!strangIds.has(a)) err.push(`${w}: Schnittstelle zu unbekanntem Strang „${a}“`);
+          if (a === teil.strang) err.push(`${w}: Schnittstelle zum eigenen Strang „${a}“`);
+        }
+      }
+      if (p.stuetzt !== undefined && !Array.isArray(p.stuetzt)) err.push(`${w}: „stuetzt“ muss eine Liste sein`);
       if (p.s === "auftrag") {
         if (!STAND.includes(p.stand)) err.push(`${w}: Auftrag mit Stand „${p.stand}“ (erlaubt: ${STAND.join(", ")})`);
         if (!p.wer) err.push(`${w}: Auftrag ohne „wer“`);
@@ -54,15 +92,16 @@ export function pruefen(z, name = "punkte.json") {
     }
   }
   const alle = new Map(z.teile.flatMap((t) => t.punkte ?? []).map((p) => [p.id, p]));
-  for (const p of alle.values()) if (p.s === "auftrag") for (const i of p.stuetzt ?? []) {
+  for (const p of alle.values()) for (const i of Array.isArray(p.stuetzt) ? p.stuetzt : []) {
     const q = alle.get(i);
-    if (!q) err.push(`${name}: Auftrag „${p.id}“ beruht auf unbekanntem Punkt „${i}“`);
-    else if (p.stand === "startklar" && !(q.bestaetigt && !q.n)) err.push(`${name}: Auftrag „${p.id}“ ist „startklar“, aber Punkt „${i}“ ist nicht bestätigt`);
+    if (!q) err.push(`${name}: Punkt „${p.id}“ beruht auf unbekanntem Punkt „${i}“`);
+    else if (i === p.id) err.push(`${name}: Punkt „${p.id}“ beruht auf sich selbst`);
+    else if (p.s === "auftrag" && p.stand === "startklar" && !(q.bestaetigt && !q.n)) err.push(`${name}: Auftrag „${p.id}“ ist „startklar“, aber Punkt „${i}“ ist nicht bestätigt`);
   }
   return err;
 }
 
-/** CSS-Variablen der Seite aus den Tokens des Labors (DTCG), hell und dunkel. */
+/** CSS-Variablen der Seite aus den Tokens des Labors (DTCG), hell und dunkel. Farben nur als Rollen. */
 export function tokenCss(tokens) {
   const wert = (pfad) => {
     let t = pfad.split(".").reduce((o, k) => o?.[k], tokens);
@@ -75,10 +114,9 @@ export function tokenCss(tokens) {
     if (typeof v === "object" && "value" in v) return `${v.value}${v.unit}`;
     return String(v);
   };
-  // ok und warn gibt es (noch) nicht als Token; Lücke, siehe Befund.
-  const vars = (th, ok, warn) => `--bg:${wert(`theme.${th}.bg`)};--fg:${wert(`theme.${th}.fg`)};--muted:${wert(`theme.${th}.muted`)};--line:${wert(`theme.${th}.line`)};--accent:${wert(`theme.${th}.accent`)};--ok:${ok};--warn:${warn}`;
-  return `:root{${vars("light", "#2f6b3a", "#8a5a00")};--sans:${wert("font.sans")};--mono:${wert("font.mono")};color-scheme:light dark}\n` +
-    `@media (prefers-color-scheme:dark){:root{${vars("dark", "#7fbf8a", "#e0b060")}}}`;
+  const vars = (th) => ["bg", "fg", "muted", "line", "signal", "bestaetigt", "offen"].map((r) => `--${r}:${wert(`theme.${th}.${r}`)}`).join(";");
+  return `:root{${vars("light")};--sans:${wert("font.sans")};--mono:${wert("font.mono")};color-scheme:light dark}\n` +
+    `@media (prefers-color-scheme:dark){:root{${vars("dark")}}}`;
 }
 
 const html = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
@@ -89,9 +127,13 @@ export function erzeugen(z, { vorlage, tokens, quelle = "punkte.json" } = {}) {
   vorlage ??= readFileSync(join(hier, "zielbild/vorlage.html"), "utf8");
   tokens ??= JSON.parse(readFileSync(join(LABOR, "system/tokens/lab.tokens.json"), "utf8"));
   const [j, m, d] = [z.stand.slice(0, 4), z.stand.slice(5, 7), z.stand.slice(8, 10)];
+  // Ohne Stränge (z. B. ein Werk) ist das ganze Zielbild ein Strang; die Seite blendet die Strang-Wahl aus.
+  const straenge = z.straenge ?? [{ id: "_", name: z.titel, iteration: z.iteration, rueckmeldung: z.rueckmeldung }];
+  const teile = z.teile.map((t) => ({ ...t, strang: t.strang ?? "_", punkte: (t.punkte ?? []).map((p) => ({ ...p, dran: dran(p) })) }));
+  const daten = { straenge, teile, einStrang: !z.straenge };
   const ersetzt = vorlage
     .replace("/*TOKENS*/", tokenCss(tokens))
-    .replace("/*DATEN*/", JSON.stringify(z.teile).replace(/</g, "\\u003c"))
+    .replace("/*DATEN*/", JSON.stringify(daten).replace(/</g, "\\u003c"))
     .replaceAll("/*TITEL_JS*/", js(z.titel))
     .replaceAll("/*TITEL*/", html(z.titel))
     .replaceAll("/*ORT*/", html(z.ort))

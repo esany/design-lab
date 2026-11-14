@@ -6,6 +6,7 @@
   "stand": "2026-11-12",
   "rueckmeldung": "12.11.",
   "hinweis": "Erzeugt von node tools/build.mjs mit tools/zielbild.mjs (0036). Rückmeldungen des Eigentümers im Wortlaut: daten/arbeitsweise.json.",
+  "archiviert": { "am": "2026-11-14", "nach": "zielbild/punkte.json", "strang": "leitfaden", "grund": "Das Labor hat ein Zielbild (Entwurf ein Zielbild, Urteil 14.11.). Diese Datei bleibt als Herkunft; geändert wird nur noch dort." },
   "teile": [
     {
       "teil": "Aufträge",

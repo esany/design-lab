@@ -26,10 +26,9 @@ jobs:
         with:
           node-version: 22
       - run: node tools/build.mjs --check
-      - name: Seite zusammenstellen
-        run: |
-          mkdir -p _site
-          cp -r index.html assets studies leitfaden _site/
+      - name: Seite zusammenstellen und tote Links prüfen
+        # Was veröffentlicht wird, steht nur in tools/website.mjs (INHALT); die Prüfung im PR nutzt dieselbe Liste.
+        run: node tools/website.mjs _site
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

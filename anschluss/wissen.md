@@ -33,12 +33,7 @@ sind paleo-type (Lesestand je Quelle, Hochstufung erst nach Lektüre) und Wissen
 (Fehlerfamilien). Anlass waren die Funde zu #49 und ein Fehler darin: Eine richtige
 Quellenangabe wurde als falsch „berichtigt“.
 
-**Offene Fragen an den Eigentümer:**
-1. Sollen Quellen künftig ihren Lesestand tragen (gelesen, nur Abstract, nur Referat)?
-2. Soll der bestehende Skill `belegpflicht` dafür geschärft werden, statt einen neuen anzulegen?
-3. Sollen die fünf Bücher der Grundstock eines Fachpakets „Entwerfen“ werden, wenn die ersten
-   Kapitel gelesen sind?
-4. Wo liegen die fünf PDFs, damit ein zweites Modell die Kapitel selbst lesen kann?
+**Offene Fragen an den Eigentümer:** seit 14.11. im [Zielbild des Labors](../zielbild/punkte.json), Strang „Wissen erschließen“, Wortlaut unverändert.
 
 **Muster (nichts beschlossen):** Korpus als Bedeutungskarte erkunden, nach
 `[k:guerra-papers-navigator-2026]`.

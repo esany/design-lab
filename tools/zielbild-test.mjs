@@ -2,7 +2,9 @@
 // Prüffälle für tools/zielbild.mjs: je Regel ein richtiger und ein falscher Fall.
 //   node tools/zielbild-test.mjs
 import { readFileSync } from "node:fs";
-import { pruefen, erzeugen } from "./zielbild.mjs";
+import { pruefen, erzeugen, dran } from "./zielbild.mjs";
+import { pruefeFarbrollen, stileAusHtml } from "./farbrollen.mjs";
+import { verweise } from "./website.mjs";
 import { spawnSync } from "node:child_process";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -31,7 +33,33 @@ const tests = [
   ["startklar auf Unbestätigtem", () => hat(mit((d) => { punkt(d, "a-entwurf").stand = "startklar"; }), "nicht bestätigt")],
   ["Seite ohne offene Platzhalter", () => !/\/\*[A-Z_]+\*\//.test(erzeugen(gut))],
   ["Titel wird maskiert", () => erzeugen({ ...gut, titel: "A <b>" }).includes("<h1>A &lt;b&gt;</h1>")],
-  ["Farben aus den Tokens", () => erzeugen(gut).includes("--bg:#f4f2ed") && erzeugen(gut).includes("--accent:#d92d17")],
+  ["Farben als Rollen aus den Tokens", () => { const h = erzeugen(gut); return h.includes("--bg:#f4f2ed") && h.includes("--signal:#d92d17") && h.includes("--bestaetigt:#2f6b3a") && h.includes("--offen:#8a5a00") && !h.includes("--accent"); }],
+  // Stränge, Schnittstellen, Verbindungen (Entwurf „ein Zielbild“, Abschnitt 2)
+  ["Teil ohne gültigen Strang", () => hat(mit((d) => { d.straenge = [{ id: "a", name: "A", iteration: 1 }]; }), "ohne gültigen Strang")],
+  ["Strang ohne Iteration", () => hat(mit((d) => { d.straenge = [{ id: "a", name: "A" }]; d.teile.forEach((t) => (t.strang = "a")); }), "„iteration“ muss")],
+  ["mit Strängen gültig", () => mit((d) => { d.straenge = [{ id: "a", name: "A", iteration: 1 }, { id: "b", name: "B", iteration: 2 }]; d.teile.forEach((t) => (t.strang = "a")); punkt(d, "farbe").auch = ["b"]; }).length === 0],
+  ["Schnittstelle zu unbekanntem Strang", () => hat(mit((d) => { d.straenge = [{ id: "a", name: "A", iteration: 1 }]; d.teile.forEach((t) => (t.strang = "a")); punkt(d, "farbe").auch = ["x"]; }), "unbekanntem Strang")],
+  ["Schnittstelle ohne Stränge im Kopf", () => hat(mit((d) => { punkt(d, "farbe").auch = ["x"]; }), "braucht „straenge“")],
+  ["Verbindung auf Unbekanntes, auch ohne Auftrag", () => hat(mit((d) => { punkt(d, "farbe").stuetzt = ["gibt-es-nicht"]; }), "unbekanntem Punkt")],
+  ["Verbindung auf sich selbst", () => hat(mit((d) => { punkt(d, "farbe").stuetzt = ["farbe"]; }), "auf sich selbst")],
+  // Wer dran ist: nur echte Entscheidungen des Eigentümers (Gegenprüfung #217, Abschnitt 4 B)
+  ["dran: startklarer Auftrag ist deiner", () => dran({ s: "auftrag", stand: "startklar", wer: "Claude" }) === "du"],
+  ["dran: laufender Auftrag gehört dem Ausführenden", () => dran({ s: "auftrag", stand: "läuft", wer: "Codex" }) === "Codex"],
+  ["dran: Auftrag an dich", () => dran({ s: "auftrag", stand: "freigegeben", wer: "Du am Rechner" }) === "du"],
+  ["dran: offene Frage ist deine", () => dran({ s: "offen" }) === "du"],
+  ["dran: beantwortete Frage ist niemandes", () => dran({ s: "offen", bestaetigt: "2026-11-14" }) === ""],
+  ["dran: Korrektur macht dich nicht zuständig", () => dran({ s: "vorschlag", n: "geändert", f: "muss besser" }) === ""],
+  ["dran: ausdrücklich niemand", () => dran({ s: "offen", dran: "" }) === ""],
+  // Farbe als Bedeutung (tools/farbrollen.mjs)
+  ["Farbrolle am passenden Selektor", () => pruefeFarbrollen(".punkt.dran{border-color:var(--signal)}", "x.css").length === 0],
+  ["Signalrot für etwas anderes", () => pruefeFarbrollen(".befund{color:var(--signal)}", "x.css").some((e) => e.includes("„signal“"))],
+  ["Grün für etwas anderes", () => pruefeFarbrollen("a:hover{color:var(--lab-bestaetigt)}", "x.css").length === 1],
+  ["alte Akzentfarbe gemeldet", () => pruefeFarbrollen("a{color:var(--lab-accent)}", "x.css").some((e) => e.includes("alte Akzentfarbe"))],
+  ["Farbwert direkt gemeldet", () => pruefeFarbrollen(".x{color:#D92D17}", "x.css").some((e) => e.includes("direkt"))],
+  ["Kommentar zählt nicht", () => pruefeFarbrollen("/* var(--signal) */.x{color:var(--fg)}", "x.css").length === 0],
+  ["Vorlage hält die Farbrollen", () => pruefeFarbrollen(stileAusHtml(readFileSync(join(hier, "zielbild/vorlage.html"), "utf8")), "vorlage").length === 0],
+  // Website: tote Links (tools/website.mjs)
+  ["Links: extern, Anker und Skript zählen nicht", () => JSON.stringify(verweise('<a href="x/">a</a><a href="https://b">b</a><a href="#c">c</a><script>"<a href=\\"d\\">"</script>')) === '["x/"]'],
   ["Kommandozeile ohne --aus findet die Datendatei", () => {
     const r = spawnSync(process.execPath, [join(hier, "zielbild.mjs"), join(hier, "fixtures/zielbild/beispiel.json"), "--check"], { encoding: "utf8" });
     return !/Aufruf:/.test(r.stderr) && /beispiel\.json|index\.html/.test(r.stdout + r.stderr);

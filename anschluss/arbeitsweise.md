@@ -1,13 +1,13 @@
 ---
 thema: Arbeitsweise mit KI · Wissensformen
-stand: Prüfstand abgeschlossen (08.11.); Leitfaden (Arbeitsname Werkbuch) wird über die Seite „Zielbild Leitfaden“ (leitfaden/zielbild/) entworfen, Iteration 7 vom 12.11. mit Teil „Begriffe“ und neuem Verständnis von Fachwissen als Wirknetz; Recherche (#174) und implizite Verweise (#175) am 13.11. übernommen; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
-naechster_schritt: Claude baut das eine Zielbild des Labors nach dem beurteilten Entwurf (research/2026-11-zielbild-bausteine/entwurf-ein-zielbild.md; Aufbau mit Schnittstellenthemen, Farbe mit Ocker); Übernahme erst nach der Gegenprüfung durch ChatGPT (#217). Dabei Folgerungen 2 und 3 aus #216: Website veröffentlicht das Zielbild, die Prüfung lässt nur ein Labor-Zielbild zu und findet tote Links. Cloudflare (Werke) blockiert das nicht.
+stand: Das eine Zielbild des Labors ist gebaut (zielbild/, 14.11.), mit sieben Strängen, Schnittstellen und drei Ansichten; die Seiten Leitfaden und Bug #200 sind darin aufgegangen und archiviert, Farbe als Rollen, Website und Prüfung auf tote Links. Gegenprüfung von Analyse und Entwurf liegt vor (#224). Leitfaden Iteration 7; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
+naechster_schritt: ChatGPT prüft den Bau gegen (Punkt „Gegenprüfung des Baus“ im Zielbild); danach übernimmt Claude ihn. Der Eigentümer beginnt im Zielbild bei „Du bist dran“, sobald es veröffentlicht ist.
 offen: [180, 189, 200, 216, 217]
 ---
 
 # Thema: Arbeitsweise mit KI · Wissensformen
 
-**Zuletzt fortgeschrieben:** 13.11.2026 (Claude; Grundmodell in AGENTS.md, zehn Werkchat-Eingänge und Befund Skizze übernommen; Zielbild Bug #200, Iteration 3 mit der Gegenprüfung von ChatGPT; Stapel abgearbeitet)
+**Zuletzt fortgeschrieben:** 14.11.2026 (Claude; das eine Zielbild gebaut, Gegenprüfung #224 eingelöst)
 
 **Worum es geht:** Wie arbeitet der Gestalter mit KI so, dass echte Werke und Werkzeuge entstehen
 statt Textberge, und wie bleibt Wissen für jeden Chat erreichbar, ohne dass er alles lesen muss?
@@ -23,17 +23,17 @@ bedeutet (Wunsch des Eigentümers, 07./08.11.; [a:arbeitsweise-a28]).
 - Das Labor ist selbst Entwurfsgegenstand; Experimente prüfen, wie gut es arbeitet (Intent, 08.11.).
 - Die einzige Wahrheit liegt in Git, Übersichten werden erzeugt. Die Prüfung baut sie selbst
   (0033), Verlaufseinträge sind einzelne Dateien in `verlauf/`, Rot meldet die Prüfung (0034).
-- Leitfaden (Arbeitsname Werkbuch): Stand als Punkte auf der Seite „Zielbild Leitfaden“
-  (`leitfaden/zielbild/`, PR #167); bestätigte Punkte sind die Baseline, Aufträge stehen oben.
+- Ein Zielbild für das Labor (`zielbild/punkte.json`, 14.11.): Leitfaden, Arbeitsweise und die
+  übrigen Stränge sind Dimensionen darin; bestätigte Punkte sind die Baseline. Alte Seiten archiviert.
   Wortlaut des Eigentümers: `daten/arbeitsweise.json`, f41–f65.
 
 | Strang | Stand | Als Nächstes |
 |---|---|---|
 | Prüfstand | abgeschlossen 08.11.; [Ergebnis](../evals/neustart-daten/README.md) | – |
-| Leitfaden | Zielbild Iteration 7 (`leitfaden/zielbild/`): Fachwissen als Wirknetz, Teil „Begriffe“; 0032 auf Probe bis 05.12. | Werkbuch bauen nach Freigabe; Recherche, Teil 2 (mit Frage 7), sobald „Kontext ist der Oberbegriff“ bestätigt ist |
+| Leitfaden | Zielbild, Strang Leitfaden, Iteration 7: Fachwissen als Wirknetz, Teil „Begriffe“; 0032 auf Probe bis 05.12. | Werkbuch bauen nach Freigabe; Recherche, Teil 2 (mit Frage 7), sobald „Kontext ist der Oberbegriff“ bestätigt ist |
 | KI-Fachpaket | Konzept, teils überholt | erst nach dem Leitfaden |
 
-**Zu beachten:** Der Zielbild-Generator ist seit 13.11. Werkzeug des Labors (0036, `tools/zielbild.mjs`); der Build erzeugt damit alle Zielbilder, auch den Leitfaden (13.11.); offen sind Kontrast und Rückweg (Fragen im Zielbild Bug #200). Der Farbvorschlag (Iteration 7) betrifft auch ihn. Berichte: jede Zahl mit Bezug, Freigabe im Chat ([a:arbeitsweise-a43]).
+**Zu beachten:** Der Build lässt nur ein Labor-Zielbild zu und meldet Farbrollen in falscher Bedeutung (0036, präzisiert 14.11.); `tools/website.mjs` findet tote Links. Offen: Rückweg ohne Kopie (nach dem Werk-Test), Studien nutzen noch die alte Akzentfarbe, Marke im Kopf der Startseite. Berichte: jede Zahl mit Bezug, Freigabe im Chat ([a:arbeitsweise-a43]).
 
 **Geparkt:** Radar als Daten und Ansicht (Matrix, Eigentümer 14.11.; Ringe als Spalten, Felder als Zeilen); Freigabe-Prüfung (#132);
 Hooks; Projektnotiz paleo-type; Radar-Zeile Basic Memory; bei Konflikt startet GitHub keine Prüfung.

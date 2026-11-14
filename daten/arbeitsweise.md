@@ -3,9 +3,9 @@
 > Erzeugt von `node tools/build.mjs` aus `daten/arbeitsweise.json` und dem Merkzettel
 > `anschluss/arbeitsweise.md`. Nicht von Hand ändern. Modelle lesen die Daten, nicht diese Seite.
 
-**Stand:** Prüfstand abgeschlossen (08.11.); Leitfaden (Arbeitsname Werkbuch) wird über die Seite „Zielbild Leitfaden“ (leitfaden/zielbild/) entworfen, Iteration 7 vom 12.11. mit Teil „Begriffe“ und neuem Verständnis von Fachwissen als Wirknetz; Recherche (#174) und implizite Verweise (#175) am 13.11. übernommen; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
+**Stand:** Das eine Zielbild des Labors ist gebaut (zielbild/, 14.11.), mit sieben Strängen, Schnittstellen und drei Ansichten; die Seiten Leitfaden und Bug #200 sind darin aufgegangen und archiviert, Farbe als Rollen, Website und Prüfung auf tote Links. Gegenprüfung von Analyse und Entwurf liegt vor (#224). Leitfaden Iteration 7; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
 
-**Nächster Schritt:** Claude baut das eine Zielbild des Labors nach dem beurteilten Entwurf (research/2026-11-zielbild-bausteine/entwurf-ein-zielbild.md; Aufbau mit Schnittstellenthemen, Farbe mit Ocker); Übernahme erst nach der Gegenprüfung durch ChatGPT (#217). Dabei Folgerungen 2 und 3 aus #216: Website veröffentlicht das Zielbild, die Prüfung lässt nur ein Labor-Zielbild zu und findet tote Links. Cloudflare (Werke) blockiert das nicht.
+**Nächster Schritt:** ChatGPT prüft den Bau gegen (Punkt „Gegenprüfung des Baus“ im Zielbild); danach übernimmt Claude ihn. Der Eigentümer beginnt im Zielbild bei „Du bist dran“, sobald es veröffentlicht ist.
 
 ## Offene Fragen an den Eigentümer (6)
 

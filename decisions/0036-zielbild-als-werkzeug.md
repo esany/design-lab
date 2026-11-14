@@ -38,4 +38,13 @@ Prüfung. Die Startseite listet alle Zielbilder. Offen: Kontrast nach WCAG AA (G
 bei kleiner Schrift), Doppelbedeutung der Farben, Rückweg von der Seite ins Labor; das sind
 Gestaltungsfragen an den Eigentümer im Zielbild Bug #200.
 
+**Präzisiert (14.11.2026, Urteil des Eigentümers zum [Entwurf ein Zielbild](../research/2026-11-zielbild-bausteine/entwurf-ein-zielbild.md)):**
+„Für jedes Werk“ gilt für das Werkzeug, nicht für Seiten im Labor. Das Labor hat genau ein Zielbild,
+`zielbild/punkte.json`, mit Strängen als Dimension, Schnittstellenthemen und drei Ansichten. Der Build
+meldet jedes weitere `…/zielbild/punkte.json` im Labor als Fehler, außer es ist archiviert; die
+Website veröffentlicht das Zielbild, und die Prüfung findet Links auf Seiten, die nicht veröffentlicht
+werden (`tools/website.mjs`). Farben sind Rollen in den Tokens (signal, bestaetigt, offen) mit je einer
+Bedeutung; `tools/farbrollen.mjs` meldet eine andere Verwendung. Werke bauen ihr Zielbild mit demselben
+Werkzeug in `esany/werke`. Herkunft: Bug Flickenteppich (#216), Gegenprüfung #217.
+
 **Rückgängig:** PR revertieren; Werke behalten ihre zuletzt erzeugte Seite.
