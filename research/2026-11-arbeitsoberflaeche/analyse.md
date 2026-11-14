@@ -96,8 +96,10 @@ Schreibweise der Anforderungen: ein Satz, Herkunft, Status (von dir gesagt · ab
 
 **Varianten (gezeigt, nicht entschieden; Vorschau privat bei Cloudflare, Zweig `werk/entwurf-arbeitsplatz`, mit echten Daten):**
 - **A · Eine Liste nach Dringlichkeit.** Zeile gleicher Form je Zielbild; Kopf mit Pfad „Arbeitsplatz / Labor“. Stärke: ein Muster. Schwäche: Entscheidungen bleiben in ihren Zielbildern.
-- **B · Erst dein Eingang, dann die Zielbilder.** Alle Entscheidungen aus allen Zielbildern nach Priorität, je mit Herkunft und Sprung an den Punkt; darunter die Zielbilder. Stärke: folgt `ao-reihenfolge` am genauesten. Schwäche: Punkte ohne Priorität sammeln sich.
+- **B · Erst dein Eingang, dann Laufendes, dann die Zielbilder.** Alle Entscheidungen aus allen Zielbildern nach Priorität, je mit Herkunft und Sprung an den Punkt, Geparktes ohne Rot; dann, was bei anderen läuft; dann die Zielbilder zum Erkunden. Kopf: Pfad zurück plus Umschalter zwischen Zielbildern. Stärke: setzt `ao-reihenfolge` in allen drei Stufen um. Schwäche: Punkte ohne Priorität sammeln sich.
 - **C · Getrennt nach Labor und Werken,** Kopf als Umschalter. Stärke: trennt System- und Werkarbeit sichtbar (Bug „Systementwicklung und Gestaltungsfragen vermischt“). Schwäche: zwei Orte; der Weg zur Übersicht liegt hinter der Marke.
+
+**Unabhängige Prüfung (14.11., eigener Prüflauf ohne Kenntnis des Entwurfsprozesses, Skill `kritik`):** empfiehlt B als Gerüst mit dem Umschalter aus C. Eingearbeitet: Geparktes ohne Rot, „Jetzt“ typografisch stärker, Herkunft verlinkt, Stufen „Läuft“ und „Erkunden“ ergänzt, Senden auch im Labor-Entwurf. Offen, weil Körper der Seite: Rot an Punkten, bei denen in Wahrheit andere dran sind (ein Zustand „wartet auf andere“ fehlt); der Bereich über dem ersten Punkt belegt am Handy rund 600 von 844 Pixeln; ein Punkt ist nicht in einem Blick zu entscheiden (Gegenstand, Grund, Alternative, Folge fehlen als Struktur, R1 §8); kleine Code-Schrift-Beschriftungen, Kontrast von Grau und Zielgrößen nicht gemessen.
 
 Gemeinsam in allen dreien: Kopf, Kontextzeile in Grundschrift, Legende auf Abruf, wischbare Strang-Zeile am Handy, Sprung an Punkte. Die Marke ist im Zielbild schwarz, weil Rot dort nur „du bist dran“ heißt (0036).
 
