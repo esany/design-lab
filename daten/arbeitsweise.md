@@ -17,7 +17,7 @@
 
 ## Aussagen
 
-### Belegt (17)
+### Belegt (18)
 
 - **arbeitsweise-a02** Im Labor folgte auf einen Vorfall meist eine neue Regel: 30 Entscheidungen in drei Tagen.
   *Beleg:* `research/2026-10-audit-zusammenarbeit/befunde.md`, In Worten, Punkt 4
@@ -66,6 +66,9 @@
 - **arbeitsweise-a61** Der Startprompt, den die KI dem Eigentümer für einen frischen Chat gab, nannte das Labor nicht als GitHub-Repo; der neue Chat suchte AGENTS.md auf dem Computer und in Anhängen und kam nicht weiter. Ein Startprompt muss für sich allein reichen: Repo esany/design-lab auf GitHub, Zweig main, ausdrücklich genannt.
   *Beleg:* `anschluss/arbeitsweise.md`, Startprompt im Chat vom 14.11. ohne Repo-Namen; Antwort des neuen Chats vom Eigentümer im Wortlaut weitergegeben
   *Grenze:* Eigentümer im Chat, 14.11.: „Was für eine Scheiße“. Gleiche Klasse wie a56 und F1 aus #216: Übergabe nicht vom Ort des Eigentümers aus gedacht. Ob der neue Chat im Projekt „Design“ lag (dessen Anweisung nennt das Repo), ist nicht geprüft.
+- **arbeitsweise-a62** Claude hob nach dem Bau des Zielbilds im Chat eine Nebenfrage (Farbe der Marke) als die eine Frage an den Eigentümer hervor, und im Zielbild hatte keiner seiner 25 Punkte eine vorgeschlagene Priorität, obwohl die Ansicht „nach Priorität geordnet“ verspricht. Eine Frage an ihn braucht ihren Rang im Ganzen; ohne Vorschlag zur Priorität ist „Du bist dran“ eine ungeordnete Liste.
+  *Beleg:* `zielbild/punkte.json`, Punkt sy-marke; vor dem 14.11. abends trug kein Punkt mit „dran: du“ außer zwei ein Feld prio
+  *Grenze:* Eigentümer im Chat, 14.11.: „Das ist doch wohl nicht prio 1!“ Gleiche Fehlerklasse wie b-lesart: Nebensache statt Rang im Ganzen.
 
 ### Abgeleitet (36)
 

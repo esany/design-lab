@@ -575,7 +575,8 @@
           "g": "Aufgabe #40 (Audit Astra, 28.10.; Versuch Claude, 29.10.). Namen der Prüfungen aus .github/workflows/pruefen.yml.",
           "auch": [
             "system"
-          ]
+          ],
+          "prio": "jetzt"
         },
         {
           "id": "st-arbeitsweise-alt",
@@ -634,7 +635,8 @@
           "g": "anschluss/werke.md; Chat 13.11.",
           "auch": [
             "werke"
-          ]
+          ],
+          "prio": "jetzt"
         }
       ]
     },
@@ -821,7 +823,8 @@
           "n": "neu",
           "auch": [
             "system"
-          ]
+          ],
+          "prio": "später"
         },
         {
           "id": "f-paleo-408",
@@ -830,7 +833,8 @@
           "n": "neu",
           "auch": [
             "system"
-          ]
+          ],
+          "prio": "parken"
         },
         {
           "id": "f-fremde-issues",
@@ -839,7 +843,8 @@
           "n": "neu",
           "auch": [
             "system"
-          ]
+          ],
+          "prio": "parken"
         },
         {
           "id": "f-codex-ort",
@@ -900,7 +905,8 @@
             "tags-navigieren"
           ],
           "offen": "Die 24 alten Einträge ziehen erst um, wenn die Liste von Codex da ist; die Pflege hängt an der Recherche bei ChatGPT.",
-          "zurueck": "Eigener Branch und Pull Request; die Seite „Mit KI arbeiten“ bleibt unberührt."
+          "zurueck": "Eigener Branch und Pull Request; die Seite „Mit KI arbeiten“ bleibt unberührt.",
+          "prio": "jetzt"
         },
         {
           "id": "a-issues",
@@ -951,7 +957,8 @@
           "auch": [
             "arbeitsweise"
           ],
-          "g": "Zusammengelegt am 14.11. mit dem gleichen Auftrag aus Bug #200 („Deine lange Fragenliste aus den alten Leitfaden-Chats suchen.“): Prompt zum Einfügen: „Führe Issue #189 im Labor esany/design-lab aus (github.com/esany/design-lab/issues/189). Lies zuerst AGENTS.md.“ Der vollständige Suchauftrag steht im Issue; der Chat prüft die Kandidaten selbst und legt das Ergebnis im Issue ab. Du musst nichts lesen."
+          "g": "Zusammengelegt am 14.11. mit dem gleichen Auftrag aus Bug #200 („Deine lange Fragenliste aus den alten Leitfaden-Chats suchen.“): Prompt zum Einfügen: „Führe Issue #189 im Labor esany/design-lab aus (github.com/esany/design-lab/issues/189). Lies zuerst AGENTS.md.“ Der vollständige Suchauftrag steht im Issue; der Chat prüft die Kandidaten selbst und legt das Ergebnis im Issue ab. Du musst nichts lesen.",
+          "prio": "später"
         },
         {
           "id": "a-verweise",
@@ -1583,7 +1590,8 @@
           ],
           "stuetzt_warum": {
             "st-main": "Belegt: In der Übersicht standen beide als eine Frage („Hauptzweig schützen, Regelpause und Reihenfolge der Regelprüfung“)."
-          }
+          },
+          "prio": "später"
         },
         {
           "id": "sy-probe",
@@ -1592,7 +1600,8 @@
           "n": "neu",
           "t": "Sieben Regeln auf Probe haben kein Auswertungsdatum (0003, 0004, 0007, 0013, 0016, 0018, 0024).",
           "k": "Empfehlung: gemeinsam mit dem Experiment Labor-Aufbau am 24.11. auswerten.",
-          "g": "stand.md, Offene Fragen (Pflege 11/2026)."
+          "g": "stand.md, Offene Fragen (Pflege 11/2026).",
+          "prio": "später"
         },
         {
           "id": "sy-entwurf-issues",
@@ -1604,7 +1613,8 @@
           ],
           "t": "Zwölf Issues mit Label „entwurf“ und PR #90 ruhen seit 28./29.10.",
           "k": "Empfehlung: in einer Sitzung mit Claude je freigeben, zurückstellen oder schließen. Betrifft #8, #9, #23, #24, #26, #27, #57–#61, #84.",
-          "g": "stand.md, Offene Fragen (Pflege 11/2026)."
+          "g": "stand.md, Offene Fragen (Pflege 11/2026).",
+          "prio": "später"
         },
         {
           "id": "sy-anforderungen",
@@ -1622,7 +1632,8 @@
           "n": "neu",
           "t": "Wie laufen die Startfälle frisch, ohne Projektkontext (#109)?",
           "k": "Alle vier Startfälle sind nicht getestet, weil der Prüf-Chat Projektkontext hatte.",
-          "g": "anschluss/system.md, nächster Schritt; evals/start/."
+          "g": "anschluss/system.md, nächster Schritt; evals/start/.",
+          "prio": "später"
         },
         {
           "id": "sy-marke",
@@ -1633,10 +1644,11 @@
           ],
           "t": "Soll die Marke im Kopf der Startseite wieder rot sein, als einzige Ausnahme von „Rot heißt: du bist dran“?",
           "k": "Seit 14.11. steht sie in der Grundfarbe, weil Rot nach deinem Urteil nur noch heißt, dass du dran bist. Rot wäre sie das Erkennungszeichen des Labors, schwächt aber das Signal; in der Grundfarbe bleibt das Signal eindeutig. Meine Empfehlung: Grundfarbe lassen.",
-          "g": "Gegenprüfung des Baus (ChatGPT, 14.11.), Probe 4: Die rote Marke war eine stille Ausnahme; das ist eine Gestaltungsfrage an dich.",
+          "g": "Gegenprüfung des Baus (ChatGPT, 14.11.), Probe 4: Die rote Marke war eine stille Ausnahme; das ist eine Gestaltungsfrage an dich. Deine Rückmeldung 14.11., nachdem ich sie im Chat als die eine Frage hervorgehoben hatte: „Das ist doch wohl nicht prio 1!“ Darum geparkt.",
           "stuetzt": [
             "st-farbe"
-          ]
+          ],
+          "prio": "parken"
         }
       ]
     },
@@ -1660,7 +1672,8 @@
           ],
           "stuetzt_warum": {
             "st-fundstueck": "Belegt: Der Merkzettel führt die Frage unter derselben Fundstück-Regel; die Sichtung fragt auch, welches Fachwissen es trägt."
-          }
+          },
+          "prio": "später"
         },
         {
           "id": "fs-modus",
@@ -1671,7 +1684,8 @@
           ],
           "t": "Vorschlag 0031, Fundstücke als eigener Modus, wartet seit 29.10. auf deine Antwort.",
           "k": "Empfehlung aus der Pflege: annehmen oder ablehnen, damit #98 weiterkann.",
-          "g": "stand.md, Offene Fragen (Pflege 11/2026); decisions/0031."
+          "g": "stand.md, Offene Fragen (Pflege 11/2026); decisions/0031.",
+          "prio": "später"
         }
       ]
     },
@@ -1722,7 +1736,8 @@
           "s": "offen",
           "n": "neu",
           "t": "Sollen Quellen künftig ihren Lesestand tragen (gelesen, nur Abstract, nur Referat)?",
-          "g": "anschluss/wissen.md, Frage 1."
+          "g": "anschluss/wissen.md, Frage 1.",
+          "prio": "später"
         },
         {
           "id": "wi-belegpflicht",
@@ -1732,7 +1747,8 @@
           "g": "anschluss/wissen.md, Frage 2.",
           "stuetzt": [
             "wi-lesestand"
-          ]
+          ],
+          "prio": "später"
         },
         {
           "id": "wi-entwerfen",
@@ -1742,21 +1758,24 @@
             "leitfaden"
           ],
           "t": "Sollen die fünf Bücher der Grundstock eines Fachpakets „Entwerfen“ werden, wenn die ersten Kapitel gelesen sind?",
-          "g": "anschluss/wissen.md, Frage 3."
+          "g": "anschluss/wissen.md, Frage 3.",
+          "prio": "später"
         },
         {
           "id": "wi-pdfs",
           "s": "offen",
           "n": "neu",
           "t": "Wo liegen die fünf PDFs, damit ein zweites Modell die Kapitel selbst lesen kann?",
-          "g": "anschluss/wissen.md, Frage 4. PDFs kommen nicht ins öffentliche Repo."
+          "g": "anschluss/wissen.md, Frage 4. PDFs kommen nicht ins öffentliche Repo.",
+          "prio": "später"
         },
         {
           "id": "wi-pinterest",
           "s": "offen",
           "n": "neu",
           "t": "Welche Pinterest-Boards je Feld, oder welche Beschreibung, verbindet die Sammlung?",
-          "g": "stand.md, Offene Fragen; Korpus-Eintrag pinterest-el0631."
+          "g": "stand.md, Offene Fragen; Korpus-Eintrag pinterest-el0631.",
+          "prio": "parken"
         }
       ]
     },
@@ -1778,14 +1797,16 @@
           ],
           "stuetzt_warum": {
             "m-ausarbeiten": "Abgeleitet, Hypothese: Ein eigenes Paket für Visualisierungssysteme würde den Pilot berühren, der die Felder aus „Vermitteln“ als eigene Module schneidet."
-          }
+          },
+          "prio": "später"
         },
         {
           "id": "vi-datensatz",
           "s": "offen",
           "n": "neu",
           "t": "Erprobung an einem selbst gewählten, offenen Datensatz?",
-          "g": "anschluss/visualisierungssysteme.md, Frage 2."
+          "g": "anschluss/visualisierungssysteme.md, Frage 2.",
+          "prio": "später"
         },
         {
           "id": "vi-quellen",
@@ -1795,14 +1816,16 @@
             "wissen"
           ],
           "t": "Welche Quellen liest ein Modell zuerst ganz? Vorschlag: Bertin, Segel/Heer, Bach et al.",
-          "g": "anschluss/visualisierungssysteme.md, Frage 3."
+          "g": "anschluss/visualisierungssysteme.md, Frage 3.",
+          "prio": "später"
         },
         {
           "id": "vi-prueffragen",
           "s": "offen",
           "n": "neu",
           "t": "Sollen die vier Zielbild-Prüffragen aus dem Pilot in „fachpaket-vermitteln“ aufgenommen werden?",
-          "g": "anschluss/visualisierungssysteme.md, Frage 4; experiments/2026-11-zielbild-dataviz-inspiration/."
+          "g": "anschluss/visualisierungssysteme.md, Frage 4; experiments/2026-11-zielbild-dataviz-inspiration/.",
+          "prio": "später"
         }
       ]
     }
