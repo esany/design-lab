@@ -1161,6 +1161,22 @@
           ]
         },
         {
+          "id": "a-recherche-gestaltung-beschreiben",
+          "s": "auftrag",
+          "stand": "vorbereitet",
+          "prio": "jetzt",
+          "wer": "ChatGPT recherchiert den Stand der Technik, Claude ordnet ins Labor ein",
+          "n": "neu",
+          "t": "Recherche: Wie lässt sich Gestaltung beschreiben und in ihren Kontext stellen, sodass Mensch und Maschine darüber zusammenarbeiten können, und welche Impulse gibt die Semiologie dafür?",
+          "f": "eine wichtige gerade im kontext der zusammenarbeit mit der Maschine zu untersuchende Fragestellung ist die beschreibung und kontextualisierung von Gestaltung und wie weit die Semiologie hier wichtige Impulse geben kann. Das sind nur meine Ideen, das wird sicher weitaus reflektierter und differenzierter transdisziplinär untersucht worden sein. Das wäre aus meiner Sicht noch ein prüfenswerter Fachkandidat, für sota",
+          "k": "Anlass: die rote Marke (14.11.). Ich habe eine Farbregel ohne Kontext angewendet; eine Beschreibung von Gestaltung, die Funktion, Ort und Wirkung trägt, hätte das verhindert. Im Labor gibt es Teile davon, verstreut: Bertin (Zeichensystem der Grafik), Bildanalyse nach Panofsky, Itten, Kritik. Leitfragen (Vorschlag, abgeleitet): (1) Welche Ansätze beschreiben Gestaltung als Zeichen im Kontext? Zu prüfen u. a. Semiotik nach Peirce, Barthes, Eco; visuelle Semiotik (Groupe µ); Sozialsemiotik und Multimodalität (Kress/van Leeuwen); Produktsemantik (Krippendorff); Gestaltungsrhetorik (Bonsiepe); Bildwissenschaft. (2) Was davon ist für Maschinen beschreibbar und prüfbar, was nicht? Stand der Technik: wie Bild-Sprach-Modelle Gestaltung beschreiben und wo sie scheitern; Beschreibungssprachen für Gestaltung (Tokens, Ontologien, Kritik-Datensätze). (3) Wo reicht Semiologie nicht, und welche Disziplinen ergänzen sie (Wahrnehmung, Gestalt, Praxiswissen)? Ergebnis: ein Befund mit Belegstatus und eine Empfehlung, ob daraus ein Fachpaket wird oder ob es bestehende Pakete verbindet. Die Namen oben sind Suchstellen, keine geprüfte Auswahl.",
+          "g": "Dein Impuls im Chat, 14.11.; Eingang a67 (rote Marke).",
+          "stuetzt": [
+            "wechselwirkung",
+            "transdisziplinaer"
+          ]
+        },
+        {
           "id": "a-suchprompt",
           "s": "auftrag",
           "stand": "freigegeben",
