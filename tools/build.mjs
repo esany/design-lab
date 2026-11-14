@@ -463,9 +463,6 @@ const LABOR_ZIELBILD = "zielbild/punkte.json";
     const fehler = zielbildPruefen(z, ZB);
     if (fehler.length) { errors.push(...fehler); continue; }
     outputs.set(`${ordner}/index.html`, zielbildErzeugen(z, { quelle: ZB }));
-    // Private Fassung mit „Senden“ (nur für die Seiten bei Cloudflare, esany/werke, seiten.sh):
-    // ZIELBILD_PRIVAT=<datei> ZIELBILD_SENDEN=<adresse> node tools/build.mjs. Nicht Teil der Prüfung.
-    if (process.env.ZIELBILD_PRIVAT) writeFileSync(process.env.ZIELBILD_PRIVAT, zielbildErzeugen(z, { quelle: ZB, senden: process.env.ZIELBILD_SENDEN ?? "", ablage: "zielbild/rueckmeldungen" }));
     const punkte = z.teile.flatMap((t) => t.punkte);
     const du = punkte.filter((p) => zielbildDran(p) === "du").length;
     eintrag = `        <li><a href="${esc(ordner)}/">${esc(z.titel)}</a> <span class="meta">${du} ${du === 1 ? "Punkt wartet" : "Punkte warten"} auf dich · ${punkte.length} Punkte in ${z.straenge.length} Strängen · Stand ${esc(z.stand.split("-").reverse().join("."))}</span></li>`;
