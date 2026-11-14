@@ -107,7 +107,7 @@ Gefahr: Auch diese Einordnung ist wieder ein langer Text. Gegenmittel: Sie ist a
 ## Nachtrag 14.11. (Claude, Orchestrator): Eingänge aus dem Chat zum Fundstück OpenDesign
 
 Am 14.11. kamen im Chat neue Entscheidungen und Aufträge dazu. Sie ändern die Reihenfolge oben nicht,
-sie werden darin einsortiert. Vorher hatte ich sie daneben gestellt, ohne diesen Plan zu lesen (a67).
+sie werden darin einsortiert. Vorher hatte ich sie daneben gestellt, ohne diesen Plan zu lesen (a68).
 
 | Eingang | gehört zu Schritt | Folge |
 |---|---|---|

@@ -84,7 +84,7 @@
 - **arbeitsweise-a67** Claude hat die Regel „jede Farbe trägt eine Bedeutung“ ohne Kontext angewendet und die rote Marke im Kopf entfernt; Farbwirkung entsteht aber im Zusammenspiel von Farbe, Form, Ort und Menge, und Rot hat als Marke eine andere Funktion als als Signal. Muster: Regel statt Gestaltungsurteil.
   *Beleg:* `zielbild/punkte.json`, Punkt sy-marke
   *Grenze:* Eigentümer im Chat, 14.11.: „17 wieder rot .. rot hat hier eine andere Funktion .. Bitte sei ein reflektierter Gestaltungsassistent und kein bornierter kleinkarierter Regelhüter .. vlt. brauchst du hier erstmal ein Grundverständnis von Farbgestaltung“. Gehört zu Bug #200 (Lesart auf eine Formel verkürzt). Gegenmittel (Vorschlag): Vor Farbentscheidungen den Skill farbkontraste-itten und das Fachpaket Form heranziehen; Regeln zur Farbe als Kriterien mit Kontext schreiben, nicht als Verbot.
-- **arbeitsweise-a67** Die KI hat als Orchestrator eigene Vorschläge zur Reihenfolge und neue Aufträge erzeugt, ohne den am selben Tag bestätigten Plan (Einordnung über alle Stränge) zu lesen; der Eigentümer nennt das Aktionismus.
+- **arbeitsweise-a68** Die KI hat als Orchestrator eigene Vorschläge zur Reihenfolge und neue Aufträge erzeugt, ohne den am selben Tag bestätigten Plan (Einordnung über alle Stränge) zu lesen; der Eigentümer nennt das Aktionismus.
   *Beleg:* `research/2026-11-zielbild-bausteine/einordnung-und-ueberarbeitung.md`, Nachtrag 14.11.
   *Grenze:* Eigentümer im Chat, 14.11.: „ist das auch wieder nur Aktionismus, um irgend eine Lösung vorzuschlagen .. wir haben doch bereits einen Plan oder? Bist du noch der Orchestrator, oder jemand der gar keine ahnung hat“. Gegenmittel: Vor jedem Vorschlag zur Reihenfolge die Einordnung lesen und Neues dort einsortieren.
 
