@@ -1,6 +1,6 @@
 # Entwurf: ein Zielbild für das Labor
 
-**13.11.2026 · Claude (Opus 5.5) · Entwurf zur Prüfung durch den Eigentümer, nichts umgesetzt · Folgt aus Bug Flickenteppich (#216) · Dient A01, A14, A18, A22, A33**
+**13.11.2026 · Claude (Opus 5.5) · Entwurf, vom Eigentümer am 14.11. beurteilt (Abschnitt 6), nichts umgesetzt · Folgt aus Bug Flickenteppich (#216) · Dient A01, A14, A18, A22, A33**
 
 **Herkunft:**
 - Eigentümer, 13.11.: „Ich will nicht mehrere Zielbildseiten sondern eine … organische, ganzheitliche, systemische, transdisziplinäre Entwicklung und Entwurfsarbeit … kein Flickenteppich“.
@@ -24,6 +24,8 @@ Das Zielbild ist eine Seite, aus einem Datensatz erzeugt. Es zeigt das Labor als
 - Werke: nur der Stand, ohne Inhalte
 
 Ein Strang ist ein Filter. Die Grenze zwischen Strängen ist durchlässig.
+
+**Schnittstellenthemen.** Manche Themen gehören zu mehreren Strängen zugleich (Eigentümer, 14.11.: „es wird auch Schnittstellenthemen geben“). Beispiele: die Farbsemantik betrifft Leitfaden, System und Zielbild, und Fundstücke speisen Leitfaden und Arbeitsweise. Ein Punkt kann darum mehrere Stränge tragen. Er erscheint in jedem davon mit demselben Stand und derselben Rückmeldung und ist als Schnittstelle markiert, statt in jedem Strang eine eigene Kopie zu haben. Abgeleitet, Lesart offen: ob Schnittstellen auch ein eigener Filter sein sollen.
 
 **Verbindungen sichtbar.** Punkte verweisen heute schon aufeinander („stützt“). Neu gelten diese Verweise auch über Stränge hinweg. Beim Punkt steht, was er trägt und was ihn trägt, auch in anderen Strängen. Zum Beispiel stützt die Fundstück-Sichtung („Fachwissen erfassen“) den Leitfaden („Fachwissen als Module“). So wird die Wechselwirkung lesbar, die eine Themen-Seite verdeckt.
 
@@ -77,11 +79,11 @@ Das Signal ist verwässert. Wer Rot sieht, weiß nicht, ob er handeln muss.
 - Der Generator bleibt das eine Werkzeug. Der Build lässt nur ein Labor-Zielbild zu (Folgerung 3 aus #216); Werke bauen ihres mit demselben Werkzeug in ihrem Repo.
 - Die Website veröffentlicht das Zielbild. Die Prüfung stellt sicher, dass jede verlinkte Seite in der Website steht (Folgerung 2 aus #216).
 
-## 6 · Was du entscheidest
+## 6 · Urteil des Eigentümers (14.11.2026)
 
-1. Stimmt der Aufbau: Stränge als Dimension, Verbindungen über Stränge, drei Ansichten?
-2. Farbe: Vorschlag mit Ocker oder Variante ohne?
-3. Rückweg: A nach dem Werk-Test?
+1. Aufbau: „ja, es wird auch Schnittstellenthemen geben“. Eingearbeitet in Abschnitt 2.
+2. Farbe: „passt“. Gilt: der Vorschlag mit Ocker.
+3. Rückweg: „mal schauen“. Offen; bis dahin Variante B (Kopieren). Wieder vorlegen nach dem Werk-Test bei Cloudflare.
 
 ## Gegenprobe
 
