@@ -36,6 +36,11 @@ Der Vorschlag unten bleibt im Wortlaut stehen. Gültig ist er mit diesen Antwort
    Funktion fehlt, z. B. lokale Ordner, Branches löschen, lange Läufe). Ohne Grund geht er an
    Astra oder Claude. Die Tabelle „Zuschnitt“ unten ist entsprechend nur Vermutung.
 
+5. **Radar und Pflege an ChatGPT (Eigentümer, 14.11.2026, im Chat):** „Radar und Pflege können
+   wir nicht delegieren? An GPT?“ und „Ja!“. Claude legt die Aufträge an und übernimmt die
+   Ergebnisse (Skill `pflege`); die eigenen geplanten Claude-Aufgaben dafür sind pausiert, nicht
+   gelöscht, bis ChatGPTs Lauf sich bewährt.
+
 **Freigegeben (28.10.):** Claude ist Orchestrator. Es schreibt die Issues und gibt ihnen Labels; andere Modelle arbeiten nur an Issues mit ihrem Label. Der Rest bleibt Vorschlag (#31).
 
 ## Grundsatz
