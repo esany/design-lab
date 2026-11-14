@@ -4,11 +4,13 @@
 // seines mit demselben Werkzeug in seinem eigenen Repo. Beschreibung der Daten und der Bausteine:
 // tools/zielbild/README.md; Herleitung: research/2026-11-zielbild-bausteine/befund.md.
 //
-//   node tools/zielbild.mjs <punkte.json> [--aus <seite.html>] [--check]
+//   node tools/zielbild.mjs <punkte.json> [--aus <seite.html>] [--check] [--senden <adresse> --ablage <ordner>]
+// --senden: Adresse des Dienstes, der die Rückmeldung als Datei ins Repo legt (nur private Fassung bei
+// Cloudflare, Zugang nur für den Eigentümer); --ablage: Ordner dafür im Ziel-Repo. Ohne --senden nur Kopieren.
 //
 // Ohne --aus entsteht index.html neben punkte.json. --check erzeugt nichts und meldet nur,
 // ob Daten gültig und die Seite aktuell ist. Keine Abhängigkeiten außer Node ≥ 18.
-import { readFileSync, writeFileSync, existsSync } from "node:fs";
+import { readFileSync, writeFileSync, existsSync, readdirSync, statSync } from "node:fs";
 import { basename, dirname, join, relative, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -36,6 +38,47 @@ export function dran(p) {
   }
   if (["offen", "freigabe", "impuls"].includes(p.s) && !(p.bestaetigt && !p.n)) return "du";
   return "";
+}
+
+/** Nummern und Kürzel, die eine Aussage tragen statt eines Namens: Issue/PR (#12), Entscheidung (0031),
+ *  Kürzel mit Ziffer (A02, O3, U4, V6, a63, f02). In Klammern dürfen sie als Beleg hinter dem Namen stehen. */
+const NACKT = /#\d+|\b0\d{3}\b|\b[A-Za-z]{1,2}\d{1,3}\b/g;
+const ohneKlammern = (s) => { let alt; s = String(s ?? ""); do { alt = s; s = s.replace(/\([^()]*\)/g, ""); } while (s !== alt); return s; };
+export const nackteNummern = (s) => [...new Set(ohneKlammern(s).match(NACKT) ?? [])];
+
+/** Was zum Eigentümer geht, muss für sich verständlich sein (Grundmodell in AGENTS.md: „mit Kontext, in
+ *  Namen statt Nummern, jede Zahl mit ihrem Bezug“; Prüffall evals/verhalten-zahlbezug). Gilt nur für
+ *  Punkte, bei denen er dran ist: Herkunft unter „Worauf das beruht“ darf Nummern tragen. */
+export function fuerDich(p) {
+  if (dran(p) !== "du") return [];
+  const e = [];
+  if (!String(p.k ?? "").trim()) e.push("du bist dran, aber der Kontext „k“ fehlt (was ist das, warum jetzt, was folgt aus deiner Antwort)");
+  for (const [feld, text] of [["t", p.t], ["k", p.k]]) {
+    const n = nackteNummern(text);
+    if (n.length) e.push(`„${feld}“ nennt ${n.join(", ")} ohne Namen; Nummern nur in Klammern hinter dem Namen`);
+    if (/\bsiehe\s+(den\s+)?chat\b/i.test(text ?? "")) e.push(`„${feld}“ verweist auf einen Chat, statt den Inhalt zu nennen`);
+  }
+  return e;
+}
+
+/** Issues und Pull Requests, die ein Punkt als laufend vorlegt: bei Punkten, bei denen der Eigentümer dran
+ *  ist, und bei Aufträgen, die nicht fertig sind; nur im Satz „t“, der den Gegenstand nennt. Kontext und
+ *  Herkunft dürfen auf Abgeschlossenes verweisen, auf dem etwas aufbaut. */
+export function laufendeNummern(z) {
+  const raus = new Map();
+  for (const p of (z.teile ?? []).flatMap((t) => t.punkte ?? []))
+    if (dran(p) === "du" || (p.s === "auftrag" && p.stand !== "fertig"))
+      for (const m of String(p.t ?? "").matchAll(/#(\d+)\b/g)) raus.set(Number(m[1]), [...(raus.get(Number(m[1])) ?? []), p.id]);
+  return raus;
+}
+
+/** Ein Punkt darf nichts als offen vorlegen, was auf GitHub schon geschlossen ist (Eigentümer 14.11.:
+ *  „das Zielbild wird auch bei repoänderungen nicht mit aktualisiert … schwerer Bug“). staende: Nummer → Zustand. */
+export function pruefeAktualitaet(z, staende, name = "zielbild/punkte.json") {
+  const err = [];
+  for (const [n, ids] of laufendeNummern(z)) if (staende[n] && staende[n] !== "open")
+    err.push(`${name}: ${[...new Set(ids)].map((i) => `„${i}“`).join(", ")} ${ids.length > 1 ? "legen" : "legt"} #${n} als offen vor, aber es ist auf GitHub ${staende[n] === "merged" ? "übernommen" : "geschlossen"}: Punkt nachziehen`);
+  return err;
 }
 
 /** Prüft die Daten eines Zielbilds. Gibt eine Liste von Fehlern in Alltagssprache zurück. */
@@ -90,6 +133,7 @@ export function pruefen(z, name = "punkte.json") {
         if (typeof p.stuetzt_warum !== "object" || Array.isArray(p.stuetzt_warum)) err.push(`${w}: „stuetzt_warum“ muss je Verbindung einen Satz nennen`);
         else for (const k of Object.keys(p.stuetzt_warum)) if (!(p.stuetzt ?? []).includes(k)) err.push(`${w}: Begründung für „${k}“, aber keine Verbindung dorthin`);
       }
+      if (p.braucht !== undefined && (!Array.isArray(p.braucht) || !p.braucht.length)) err.push(`${w}: „braucht“ (Voraussetzungen) muss eine nicht leere Liste von Punkten sein`);
       if (p.s === "auftrag") {
         if (!STAND.includes(p.stand)) err.push(`${w}: Auftrag mit Stand „${p.stand}“ (erlaubt: ${STAND.join(", ")})`);
         if (!p.wer) err.push(`${w}: Auftrag ohne „wer“`);
@@ -97,6 +141,8 @@ export function pruefen(z, name = "punkte.json") {
       }
     }
   }
+  if (z.repo !== undefined && !/^[\w.-]+\/[\w.-]+$/.test(z.repo)) err.push(`${name}: „repo“ muss „besitzer/name“ sein`);
+  for (const p of z.teile.flatMap((t) => t.punkte ?? [])) for (const e of fuerDich(p)) err.push(`${name}: Punkt „${p.id}“: ${e}`);
   const alle = new Map(z.teile.flatMap((t) => t.punkte ?? []).map((p) => [p.id, p]));
   for (const p of alle.values()) for (const i of Array.isArray(p.stuetzt) ? p.stuetzt : []) {
     const q = alle.get(i);
@@ -104,7 +150,32 @@ export function pruefen(z, name = "punkte.json") {
     else if (i === p.id) err.push(`${name}: Punkt „${p.id}“ beruht auf sich selbst`);
     else if (p.s === "auftrag" && p.stand === "startklar" && !(q.bestaetigt && !q.n)) err.push(`${name}: Auftrag „${p.id}“ ist „startklar“, aber Punkt „${i}“ ist nicht bestätigt`);
   }
+  // Voraussetzungen (Eigentümer 14.11.: „klare Voraussetzungen bzw. Abhängigkeiten und Blocker für Aufträge
+  // … als Teil der Infrastruktur“): „braucht“ nennt Punkte, die erledigt sein müssen. Ein Auftrag, der läuft
+  // oder startklar ist, und eine Frage an den Eigentümer dürfen nicht an Unerledigtem hängen; Kreise sind Fehler.
+  for (const p of alle.values()) for (const i of Array.isArray(p.braucht) ? p.braucht : []) {
+    const q = alle.get(i);
+    if (!q) { err.push(`${name}: Punkt „${p.id}“ braucht unbekannten Punkt „${i}“`); continue; }
+    if (i === p.id) { err.push(`${name}: Punkt „${p.id}“ braucht sich selbst`); continue; }
+    if (erledigt(q)) continue;
+    if (p.s === "auftrag" && ["startklar", "läuft"].includes(p.stand)) err.push(`${name}: Auftrag „${p.id}“ ist „${p.stand}“, aber seine Voraussetzung „${i}“ ist nicht erledigt: blockiert`);
+    if (dran(p) === "du") err.push(`${name}: Punkt „${p.id}“ legt dir eine Frage vor, die an „${i}“ hängt (nicht erledigt); erst fragen, wenn sie entscheidbar ist`);
+  }
+  const besucht = new Map();
+  const kreis = (id, pfad) => {
+    if (besucht.get(id) === 2) return null;
+    if (besucht.get(id) === 1) return [...pfad, id];
+    besucht.set(id, 1);
+    for (const i of alle.get(id)?.braucht ?? []) { const k = alle.has(i) && kreis(i, [...pfad, id]); if (k) return k; }
+    besucht.set(id, 2); return null;
+  };
+  for (const id of alle.keys()) { const k = kreis(id, []); if (k) { err.push(`${name}: Voraussetzungen im Kreis: ${k.join(" → ")}`); break; } }
   return err;
+}
+
+/** Erledigt im Sinn von „braucht“: von dir bestätigt, als Befund abgeschlossen oder ein fertiger Auftrag. */
+export function erledigt(p) {
+  return (!!p.bestaetigt && !p.n) || p.s === "bestaetigt" || p.s === "befund" || (p.s === "auftrag" && p.stand === "fertig");
 }
 
 /** CSS-Variablen der Seite aus den Tokens des Labors (DTCG), hell und dunkel. Farben nur als Rollen. */
@@ -128,19 +199,44 @@ export function tokenCss(tokens) {
 const html = (s) => String(s).replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[c]);
 const js = (s) => JSON.stringify(String(s)).slice(1, -1).replace(/</g, "\\u003c");
 
+/** Aktive Verweise eines Punkts (Grundmodell: Herkunft an jeder Aussage, als Hypertext; Eigentümer 14.11.:
+ *  „Ein inaktiver Verweis ins repo ist keine Assistenz“). Nur mit „repo“ im Kopf, nur auf Dateien, die es im
+ *  Labor gibt: Pfade, Entscheidungen (0031) und Issues oder Pull Requests (#12). Ergebnis: [Text, Adresse]. */
+export function verweise(p, repo, wurzel = LABOR) {
+  const basis = `https://github.com/${repo}`, raus = new Map();
+  const dec = existsSync(join(wurzel, "decisions")) ? readdirSync(join(wurzel, "decisions")) : [];
+  const text = [p.t, p.k, p.g].filter(Boolean).join(" \n ");
+  for (const m of text.matchAll(/(?<![\w\/:.@-])((?:[a-z0-9_.-]+\/)+[A-Za-z0-9_.-]*|[A-Za-z0-9_-]+\.(?:md|json|mjs|html))/g)) {
+    const pfad = m[1].replace(/[.,;:]+$/, "");
+    const ziel = pfad.replace(/\/$/, "");
+    const d = /^decisions\/(\d{4})$/.exec(ziel) && dec.find((f) => f.startsWith(ziel.slice(10) + "-"));
+    const echt = d ? `decisions/${d}` : ziel;
+    if (!echt || !existsSync(join(wurzel, echt))) continue;
+    raus.set(pfad, `${basis}/${statSync(join(wurzel, echt)).isDirectory() ? "tree" : "blob"}/main/${echt}`);
+  }
+  for (const m of text.matchAll(/(?<![\w\/-])(0\d{3})(?![\w-])/g)) {
+    const f = dec.find((x) => x.startsWith(m[1] + "-"));
+    if (f && !raus.has(m[1])) raus.set(m[1], `${basis}/blob/main/decisions/${f}`);
+  }
+  for (const m of text.matchAll(/#(\d+)\b/g)) raus.set(`#${m[1]}`, `${basis}/issues/${m[1]}`);
+  return [...raus].sort((a, b) => b[0].length - a[0].length);
+}
+
 /** Erzeugt die Seite. quelle: Pfad der Daten, nur für den Kopfkommentar. */
-export function erzeugen(z, { vorlage, tokens, quelle = "punkte.json" } = {}) {
+export function erzeugen(z, { vorlage, tokens, quelle = "punkte.json", senden = "", ablage = "" } = {}) {
   vorlage ??= readFileSync(join(hier, "zielbild/vorlage.html"), "utf8");
   tokens ??= JSON.parse(readFileSync(join(LABOR, "system/tokens/lab.tokens.json"), "utf8"));
   const [j, m, d] = [z.stand.slice(0, 4), z.stand.slice(5, 7), z.stand.slice(8, 10)];
   // Ohne Stränge (z. B. ein Werk) ist das ganze Zielbild ein Strang; die Seite blendet die Strang-Wahl aus.
   const straenge = z.straenge ?? [{ id: "_", name: z.titel, iteration: z.iteration, rueckmeldung: z.rueckmeldung }];
-  const teile = z.teile.map((t) => ({ ...t, strang: t.strang ?? "_", punkte: (t.punkte ?? []).map((p) => ({ ...p, dran: dran(p) })) }));
+  const teile = z.teile.map((t) => ({ ...t, strang: t.strang ?? "_", punkte: (t.punkte ?? []).map((p) => ({ ...p, dran: dran(p), ...(z.repo ? { vw: verweise(p, z.repo) } : {}) })) }));
   const daten = { straenge, teile, einStrang: !z.straenge };
   const ersetzt = vorlage
     .replace("/*TOKENS*/", tokenCss(tokens))
     .replace("/*DATEN*/", JSON.stringify(daten).replace(/</g, "\\u003c"))
     .replaceAll("/*TITEL_JS*/", js(z.titel))
+    .replaceAll("/*SENDEN*/", js(senden))
+    .replaceAll("/*ABLAGE*/", js(ablage))
     .replaceAll("/*TITEL*/", html(z.titel))
     .replaceAll("/*ORT*/", html(z.ort))
     .replaceAll("/*VON*/", html(z.von ?? "Claude"))
@@ -160,7 +256,9 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   const args = process.argv.slice(2);
   const check = args.includes("--check");
   const ai = args.indexOf("--aus");
-  const daten = args.find((a, i) => !a.startsWith("--") && (ai < 0 || i !== ai + 1));
+  const wert = (n) => { const i = args.indexOf(n); return i >= 0 ? args[i + 1] : ""; };
+  const mitWert = new Set(["--aus", "--senden", "--ablage"].map((n) => args.indexOf(n)).filter((i) => i >= 0).map((i) => i + 1));
+  const daten = args.find((a, i) => !a.startsWith("--") && !mitWert.has(i));
   if (!daten) { console.error("Aufruf: node tools/zielbild.mjs <punkte.json> [--aus <seite.html>] [--check]"); process.exit(2); }
   const aus = ai >= 0 ? args[ai + 1] : join(dirname(daten), "index.html");
   let z;
@@ -168,7 +266,7 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   const fehler = pruefen(z, daten);
   if (fehler.length) { console.error(fehler.join("\n")); process.exit(1); }
   const rel = relative(dirname(aus), daten);
-  const seite = erzeugen(z, { quelle: rel && !rel.startsWith("..") ? rel : basename(daten) });
+  const seite = erzeugen(z, { quelle: rel && !rel.startsWith("..") ? rel : basename(daten), senden: wert("--senden"), ablage: wert("--ablage") });
   const punkte = z.teile.reduce((n, t) => n + (t.punkte?.length ?? 0), 0);
   if (check) {
     const aktuell = existsSync(aus) && readFileSync(aus, "utf8") === seite;

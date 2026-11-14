@@ -103,3 +103,76 @@ Skizze B ist keine Landkarte; die Fachpakete zur Diagrammatik gibt es, vorschnel
 ## Gegenprobe
 
 Gefahr: Auch diese Einordnung ist wieder ein langer Text. Gegenmittel: Sie ist als Inhalt für die Seite gedacht (Variante A oben, B darunter), nicht als Dokument zum Lesen. Diese Datei ist die Herkunft für Modelle und Entwickler.
+
+## Nachtrag 14.11. (Claude, Orchestrator): Eingänge aus dem Chat zum Fundstück OpenDesign
+
+Am 14.11. kamen im Chat neue Entscheidungen und Aufträge dazu. Sie ändern die Reihenfolge oben nicht,
+sie werden darin einsortiert. Vorher hatte ich sie daneben gestellt, ohne diesen Plan zu lesen (a68).
+
+| Eingang | gehört zu Schritt | Folge |
+|---|---|---|
+| Recherche Arbeitsoberfläche (#237), erweitert um das Feld Interaktion und Struktur (0037) | 1 (Zielbild, Iteration 2 kommt mit den Recherchen) | Eine Recherche, zwei Lieferungen: erst Fragen 1–5 für das Zielbild, dann Fragen 6–8 für das Fachpaket. So verzögert die Erweiterung das Zielbild nicht. |
+| Recherche Wissensnetz (#238) | 1 und 6 | unverändert |
+| Gegenlesen Fundstück-Wert (#246) | 3 (Hintergrund) | ChatGPT, ohne dich |
+| Prüfung der Plugins im Konto (#248, 0039) | 3 (Hintergrund) | Claude, ohne dich |
+| Werkbuch, freigegeben 14.11. | 4 | wie geplant |
+| agent-skills (Osmani) als eigene Skills, entschieden 14.11. | 4 (Pilot an Raster als Programm) | wie geplant; die Wahl des Experiments bleibt deine |
+| Pilot Mittelmaß-Prüfung (#247, 0038) | nach 4 | fachliche Erweiterung; kommt nach Werkbuch und Experiment |
+| Visualisierungssysteme (4 Antworten), Voraussetzungen für Fachpakete, Lesart Visualisierung, PixelPatrol | 6 (gebündelt) | Die Analyse der Voraussetzungen ist Inhalt für „Fachpakete neu schneiden“, kein eigener Plan |
+| Prüftiefe in Stufen (a66) | 1 | geht in die Überarbeitung des Zielbilds ein |
+
+**Stand von Schritt 2:** am 14.11. erledigt in einem anderen Chat (Cloudflare für die Werke eingerichtet, `anschluss/werke.md`; Hauptzweig mit Pflichtprüfungen geschützt, `verlauf/2026-11-14-anleitung-hauptzweig.md`).
+
+**Was als Nächstes dich braucht:** Schritt 4, die Wahl des nächsten Experiments (Vorschlag: Raster als Programm, mit dem Pilot der Osmani-Abläufe). Alles andere läuft ohne dich.
+
+## Nachtrag 14.11. (Claude, Orchestrator): Rückmeldung zu Iteration 1 des Zielbilds
+
+**Herkunft:** Rückmeldung des Eigentümers, Wortlaut in `daten/arbeitsweise.json`, Frage f67; Eingänge a71 bis a73.
+
+**Befund (belegt, Stand GitHub und Repo 14.11.):** Von neun Punkten, zu denen er etwas sagte, waren fünf überholt
+oder schon beantwortet, als er sie las: Regelpause (aufgegangen 13.11.), Neustart-Test (an ChatGPT vergeben 14.11.),
+ruhende Entwürfe (fünf Übergaben und ein Pull Request längst geschlossen), PixelPatrol (im selben Zielbild
+beantwortet), nächstes Experiment (mit der Bestätigung zu agent-skills gewählt, Pilot an Raster als Programm).
+Drei weitere trugen nur Nummern oder einen Chat-Verweis statt Inhalt.
+
+**Ursachen (abgeleitet, im Zusammenspiel):**
+1. *Umsetzen vor Neuem verletzt.* Diese Einordnung (Abschnitt 4) hatte die Punkte schon richtig sortiert: vier
+   davon „übernehme ich“, zwei zusammengelegt. Umgesetzt wurde das in `zielbild/punkte.json` nicht; stattdessen kamen
+   neue Teile dazu (Fundstück OpenDesign, Voraussetzungen für Fachpakete). Neues stand neben Bestätigtem.
+2. *Kopie statt Bezug.* Die Punkte aus „Pflege und Umbau“ waren Abschriften der Pflegeliste vom Oktober. Nichts
+   hielt sie am Stand: Der Build prüft Form, „Stand gegen GitHub“ prüfte nur die Merkzettel, und der geplante
+   Orchestrierungslauf schrieb Fragen in Merkzettel „damit der nächste Chat sie ins Zielbild bringt“, also niemand.
+3. *Regeln ohne Mechanismus.* Das Grundmodell verlangt Kontext, Namen statt Nummern und jede Zahl mit Bezug; der
+   Prüffall `verhalten-zahlbezug` dazu war vorbereitet, nie gelaufen. Am Ort, wo es zählt, prüfte niemand.
+4. *Kein Gegenlesen gegen Bestätigtes.* Fragen aus Analysen (PixelPatrol) wurden übernommen, ohne sie gegen die
+   bestätigten Punkte zu lesen; die Verbindungen („Beruht auf“) gab es, sie wurden nicht benutzt.
+
+**Behoben (in diesem Schritt):** die neun Punkte und alle weiteren, bei denen er dran ist und Kontext fehlte;
+der Generator verlangt bei solchen Punkten Kontext und meldet nackte Nummern und Chat-Verweise; Verweise auf
+Dateien, Entscheidungen und Issues sind Links; „Stand gegen GitHub“ meldet Punkte, die Geschlossenes als offen
+vorlegen; der geplante Orchestrierungslauf zieht das Zielbild selbst nach und liest jede Frage gegen Bestätigtes.
+
+**Grenzen (nicht geprüft):** Ob Kontext *genügt*, erkennt keine Prüfung; dafür ist der Prüffall zum Zahlbezug da,
+erster Lauf steht an. Eine Antwort, die nur in einem anderen Punkt steht, findet keine Prüfung.
+
+**Sichtbarkeit (belegt):** Die Seite des Zielbilds wird nur aus `main` gebaut (`.github/workflows/website.yml`,
+Auslöser Push auf `main`). Berichtigungen in einem offenen Pull Request sieht der Eigentümer nicht; er las darum
+erneut Iteration 1 und schickte dieselbe Rückmeldung zweimal. Folge: Berichtigungen an Punkten für ihn werden im
+selben Schritt übernommen, sobald die Prüfungen grün sind (0019), nicht erst im nächsten Orchestrierungslauf.
+
+### Abgleich Prinzipien, Grundmodell, Mechanismen (14.11., abgeleitet aus dem Repo)
+
+Frage des Eigentümers: „Sind die überhaupt aktuell und werden kontinuierlich gepflegt? Beruht die Infrastruktur
+überhaupt auf diesen Regeln? Wer prüft das, wer pflegt das?“
+
+| Frage | Befund | Fundstelle |
+|---|---|---|
+| Aktuell? | Prinzipien vom 27./28.10.; nur Prinzip 5 am 13.11. nachgeführt. Das Grundmodell (12./13.11.) steht nur in `AGENTS.md`; „Umsetzen vor Neuem“, „erst verorten“, „Namen statt Nummern“ fehlen in `principles.md`. | Commit-Verlauf von `principles.md` (GitHub, 14.11.) |
+| Trägt die Infrastruktur sie? | Mechanisch gesichert ist Form: Links, erzeugte Übersichten, Farbrollen (0036), Issue-Stände, seit 14.11. Kontext an Punkten. Prinzipien 0, 1, 9, 10, 11 haben keinen Mechanismus; die vier Verhaltensprüfungen dafür haben kein Ergebnis (`evals/verhalten-*/ergebnisse/` leer). Prinzip 7 verlangt regelmäßige Prüfung in `evals/`; der Neustart-Test hat zwei Läufe vom Oktober, beide mit Vorwissen. | `.github/workflows/pruefen.yml`; `evals/` |
+| Widerspruch zur Praxis | Prinzip 8 („Regel erst nach dreimal“) gegen 39 Entscheidungen seit 27.10.; Prinzip 9 („Werk vor System“) gegen eine Übersicht mit einem von sieben Themen als Werkarbeit. | `decisions/`; `stand.md`, Themen |
+| Wer prüft, wer pflegt? | Niemand ausdrücklich. Die Pflege prüft den Stand im Intent (Schritt 3), nicht die Prinzipien; die sieben Regeln auf Probe haben kein Auswertungsdatum. | `.agents/skills/pflege/SKILL.md` |
+
+**Vorschlag (Kern, darum Frage an den Eigentümer, Punkt `sy-probe` im Zielbild):** erst die vier
+Verhaltensprüfungen laufen lassen; dann Grundmodell und Prinzipien in einem Entwurf zusammenführen, an jedem
+Prinzip vermerkt, welcher Mechanismus es trägt oder dass keiner es trägt; Abgleich als Pflicht des orchestrierenden
+Modells bei jeder Änderung an Prinzipien oder Grundmodell und monatlich in der Pflege.

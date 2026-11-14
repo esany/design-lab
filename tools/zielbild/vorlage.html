@@ -85,6 +85,8 @@ textarea.zeigen,textarea.immer{display:block}
 .leer{color:var(--muted);font-size:.9375rem;margin:8px 0 0}
 .leiste{position:sticky;bottom:0;background:var(--bg);border-top:1px solid var(--line);padding:12px 16px;display:flex;gap:12px;align-items:center;justify-content:space-between;max-width:38rem;margin:0 auto}
 .leiste button{font:.9375rem var(--sans);background:var(--fg);color:var(--bg);border:0;border-radius:8px;padding:10px 16px;cursor:pointer}
+.leiste .knoepfe{display:flex;gap:8px}
+.leiste #kopieren:not(:only-child){background:transparent;color:var(--fg);border:1px solid var(--line)}
 .leiste .stand{font:.8125rem var(--mono);color:var(--muted)}
 .ausgabe{display:none;margin-top:16px;white-space:pre-wrap;font:.875rem/1.5 var(--mono);border:1px solid var(--line);border-radius:8px;padding:12px}
 .ausgabe.zeigen{display:block}
@@ -111,9 +113,9 @@ textarea.zeigen,textarea.immer{display:block}
 <div class="filter" id="art" role="group" aria-label="Art" hidden></div>
 <div id="inhalt"></div>
 <pre class="ausgabe" id="ausgabe"></pre>
-<p class="hinweis">Deine Markierungen bleiben nur in diesem Browser; was zählt, ist die kopierte Rückmeldung im Chat. Ein Sammelurteil gilt nicht als „passt“ für Punkte, die du nicht einzeln markiert hast.</p>
+<p class="hinweis">Deine Markierungen bleiben nur in diesem Browser; was zählt, ist die gesendete oder in den Chat kopierte Rückmeldung. Ein Sammelurteil gilt nicht als „passt“ für Punkte, die du nicht einzeln markiert hast.</p>
 </main>
-<div class="leiste"><span class="stand" id="stand">0 markiert</span><button id="kopieren">Rückmeldung kopieren</button></div>
+<div class="leiste"><span class="stand" id="stand">0 markiert</span><span class="knoepfe"><button id="senden" hidden>Rückmeldung senden</button><button id="kopieren">Rückmeldung kopieren</button></span></div>
 <script>
 const LABEL={bestaetigt:"von dir gesagt",ableitung:"meine Ableitung",vorschlag:"Vorschlag",befund:"Befund",offen:"Frage an dich",freigabe:"Freigabe",impuls:"Eingang",auftrag:"Auftrag"};
 const ROLLE={bestaetigt:"bestaetigt",ableitung:"ableitung",vorschlag:"vorschlag",befund:"befund"};
@@ -125,10 +127,12 @@ const KEY="/*SCHLUESSEL*/-v/*ITERATION*/";
 let urteil={};try{urteil=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){}
 const speichern=()=>{try{localStorage.setItem(KEY,JSON.stringify(urteil))}catch(e){}};
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"})[c]);
+/* Herkunft als Hypertext: Verweise (p.vw, vom Generator gegen das Repo geprüft) werden zu Links. */
+const vt=(s,p)=>{const v=p&&p.vw;let h=esc(s);if(!v||!v.length)return h;const m=new Map(v.map(([t,u])=>[esc(t),u]));const re=new RegExp([...m.keys()].map(t=>t.replace(/[.*+?^${}()|[\]\\\/]/g,"\\$&")).join("|"),"g");return h.replace(re,t=>`<a href="${esc(m.get(t))}" target="_blank" rel="noopener">${t}</a>`);};
 const STRANG=Object.fromEntries(D.straenge.map(s=>[s.id,s]));
 const PUNKTE=D.teile.flatMap(t=>t.punkte.map(p=>({...p,teil:t.teil,heim:t.strang,straenge:[t.strang,...(p.auch||[])]})));
 const ALLE=Object.fromEntries(PUNKTE.map(p=>[p.id,p]));
-const TRAEGT={};PUNKTE.forEach(p=>(p.stuetzt||[]).forEach(i=>(TRAEGT[i]=TRAEGT[i]||[]).push(p.id)));
+const TRAEGT={};PUNKTE.forEach(p=>(p.stuetzt||[]).forEach(i=>(TRAEGT[i]=TRAEGT[i]||[]).push(p.id)));const GIBTFREI={};PUNKTE.forEach(p=>(p.braucht||[]).forEach(i=>(GIBTFREI[i]=GIBTFREI[i]||[]).push(p.id)));
 const fest=p=>!!(p.bestaetigt&&!p.n);
 const duDran=p=>p.dran==="du";
 const pruefen=p=>!duDran(p)&&!!p.n&&p.s!=="auftrag";
@@ -147,15 +151,15 @@ function knoepfe(p){const u=urteil[p.id]||{};const a=p.s==="auftrag",selbst=a&&p
  return `<div class="urteil"><button data-id="${esc(p.id)}" data-v="passt" class="${u.v==="passt"?"an":""}" aria-pressed="${u.v==="passt"}">${l1}</button><button data-id="${esc(p.id)}" data-v="besser" class="${u.v==="besser"?"an":""}" aria-pressed="${u.v==="besser"}">${l2}</button></div>${prio}<textarea data-id="${esc(p.id)}" aria-label="Notiz" class="${u.v||u.n?"zeigen":""}" placeholder="Was genau? (optional)">${esc(u.n||"")}</textarea>`;}
 function karte(p,mitId){
  const idAttr=mitId?` id="p-${esc(p.id)}"`:"";const dd=p.bestaetigt?p.bestaetigt.slice(8,10)+"."+p.bestaetigt.slice(5,7)+".":"";
- const rel=bezugListe(p.stuetzt,"Beruht auf",p.stuetzt_warum)+bezugListe(TRAEGT[p.id],"Trägt",Object.fromEntries((TRAEGT[p.id]||[]).map(i=>[i,(ALLE[i].stuetzt_warum||{})[p.id]]).filter(([,w])=>w)));
- if(fest(p)&&!duDran(p)){return `<article class="punkt fest"${idAttr}><span class="chip ${rolle(p)}">${esc(LABEL[p.s])}</span><span class="fest-mark">bestätigt ${dd}</span>${strangChips(p)}<h3>${esc(p.t)}</h3>${p.k||p.g||rel?`<details><summary>Mehr</summary>${p.k?`<p>${esc(p.k)}</p>`:""}${p.g?`<p>${esc(p.g)}</p>`:""}${rel}</details>`:""}</article>`;}
+ const rel=bezugListe(p.braucht,"Braucht vorher")+bezugListe(GIBTFREI[p.id],"Gibt frei")+bezugListe(p.stuetzt,"Beruht auf",p.stuetzt_warum)+bezugListe(TRAEGT[p.id],"Trägt",Object.fromEntries((TRAEGT[p.id]||[]).map(i=>[i,(ALLE[i].stuetzt_warum||{})[p.id]]).filter(([,w])=>w)));
+ if(fest(p)&&!duDran(p)){return `<article class="punkt fest"${idAttr}><span class="chip ${rolle(p)}">${esc(LABEL[p.s])}</span><span class="fest-mark">bestätigt ${dd}</span>${strangChips(p)}<h3>${esc(p.t)}</h3>${p.k||p.g||rel?`<details><summary>Mehr</summary>${p.k?`<p>${vt(p.k,p)}</p>`:""}${p.g?`<p>${vt(p.g,p)}</p>`:""}${rel}</details>`:""}</article>`;}
  const kl=["punkt",duDran(p)?"dran":p.n?"wandel":""].filter(Boolean).join(" ");
  const status=p.s==="auftrag"?`<span class="chip">Auftrag · ${p.stand==="startklar"?"wartet auf deine Freigabe":esc(p.stand)} · ${esc(p.wer)}</span>`:`<span class="chip ${rolle(p)}">${esc(LABEL[p.s])}</span>`;
  const dranChip=duDran(p)?`<span class="chip dran">du bist dran</span>`:p.dran&&p.s!=="auftrag"?`<span class="chip">dran: ${esc(p.dran)}</span>`:"";
  const marke=p.n?`<span class="marke">${p.n==="ergänzt"?"ergänzt":p.v?"geändert":"neu"}</span>`:"";
  const wandel=p.f?`<dl class="wandel-dl">${p.v===p.t?"":`<dt>vorher</dt><dd class="vorher">${p.v?esc(p.v):"nicht da"}</dd>`}<dt>du</dt><dd class="du"><q>${esc(p.f)}</q></dd></dl>`:"";
  const zeigeUrteil=p.s!=="auftrag"||p.stand==="startklar"||duDran(p);
- return `<article class="${kl}"${idAttr}>${dranChip}${status}${marke}${strangChips(p)}<h3>${esc(p.t)}</h3>${wandel}${p.k?`<p>${esc(p.k)}</p>`:""}${p.offen?`<p class="hinweis">Bewusst offen: ${esc(p.offen)}</p>`:""}${p.zurueck?`<p class="hinweis">Rückgängig: ${esc(p.zurueck)}</p>`:""}${p.g?`<details><summary>Worauf das beruht</summary><p>${esc(p.g)}</p></details>`:""}${rel}${zeigeUrteil?knoepfe(p):""}</article>`;}
+ return `<article class="${kl}"${idAttr}>${dranChip}${status}${marke}${strangChips(p)}<h3>${esc(p.t)}</h3>${wandel}${p.k?`<p>${vt(p.k,p)}</p>`:""}${p.offen?`<p class="hinweis">Bewusst offen: ${esc(p.offen)}</p>`:""}${p.zurueck?`<p class="hinweis">Rückgängig: ${esc(p.zurueck)}</p>`:""}${p.g?`<details><summary>Worauf das beruht</summary><p>${vt(p.g,p)}</p></details>`:""}${rel}${zeigeUrteil?knoepfe(p):""}</article>`;}
 function kurz(p){const kl=duDran(p)?"dran":fest(p)?"fest":["vorschlag","ableitung"].includes(p.s)?"vorschlag":"";const wer=p.s==="auftrag"?`${p.wer} · ${p.stand}`:p.dran&&!duDran(p)?`dran: ${p.dran}`:"";return `<li class="${kl}"><span><a href="#" data-ziel="${esc(p.id)}">${esc(p.t)}</a>${wer?`<span class="wer">${esc(wer)}</span>`:""}</span></li>`;}
 function ansichtDu(){
  const ent=PUNKTE.filter(p=>duDran(p)&&imStrang(p)).sort((a,b)=>prioRang(a)-prioRang(b)||strangOrd[a.heim]-strangOrd[b.heim]);
@@ -209,17 +213,37 @@ inhalt.addEventListener("click",e=>{
  const ta=b.closest(".punkt").querySelector("textarea");ta.classList.add("zeigen");if(u.v==="besser")ta.focus();zaehlen();
 });
 inhalt.addEventListener("input",e=>{const t=e.target;if(t.tagName!=="TEXTAREA")return;const u=urteil[t.dataset.id]||{};u.n=t.value;urteil[t.dataset.id]=u;speichern();zaehlen();});
-document.getElementById("kopieren").addEventListener("click",async()=>{
+function rueckmeldung(){
  const zeilen=[];const alle=(urteil._alle||{}).n;if(alle&&alle.trim())zeilen.push(`Zu allen offenen Punkten: ${alle.trim()}`);
  PUNKTE.forEach(p=>{const u=urteil[p.id];if(!u||!(u.v||u.n||u.p))return;
   const w=p.s==="auftrag"&&p.stand!=="startklar"?(u.v==="passt"?"erledigt":u.v==="besser"?"Frage dazu":"Notiz"):p.s==="auftrag"||p.s==="freigabe"?(u.v==="passt"?"freigegeben":u.v==="besser"?"anders":"Notiz"):p.s==="impuls"?(u.v==="passt"?"einverstanden":u.v==="besser"?"anders":"Notiz"):p.s==="offen"?(u.v==="passt"?"beantwortet":"Antwort"):(u.v==="passt"?"passt":u.v==="besser"?"muss besser":"Notiz");
   zeilen.push(`• ${D.einStrang?"":"["+strangName(p.heim)+"] "}${p.t}\n  → ${u.v||u.n?w:"Priorität"}${u.n?": "+u.n.trim():""}${u.p?` (Priorität: ${u.p})`:""}`)});
- const text=zeilen.length?"Rückmeldung /*TITEL_JS*/ (Iteration /*ITERATION*/):\n\n"+zeilen.join("\n"):"Noch nichts markiert.";
+ return zeilen.length?"Rückmeldung /*TITEL_JS*/ (Iteration /*ITERATION*/):\n\n"+zeilen.join("\n"):"";
+}
+document.getElementById("kopieren").addEventListener("click",async()=>{
+ const text=rueckmeldung()||"Noch nichts markiert.";
  const out=document.getElementById("ausgabe");out.textContent=text;out.classList.add("zeigen");
  const btn=document.getElementById("kopieren");
  try{await navigator.clipboard.writeText(text);btn.textContent="Kopiert";}catch(e){btn.textContent="Text oben markieren";}
  setTimeout(()=>btn.textContent="Rückmeldung kopieren",2500);
 });
+// Senden: nur in der privaten Fassung bei Cloudflare (Zugang nur für den Eigentümer). Der Dienst legt die
+// Rückmeldung als Datei im Repo ab; das orchestrierende Modell arbeitet sie ein.
+const SENDEN="/*SENDEN*/",ABLAGE="/*ABLAGE*/";
+if(SENDEN){const btn=document.getElementById("senden");btn.hidden=false;
+ btn.addEventListener("click",async()=>{
+  const text=rueckmeldung();const out=document.getElementById("ausgabe");
+  if(!text){out.textContent="Noch nichts markiert.";out.classList.add("zeigen");return;}
+  btn.disabled=true;btn.textContent="Sendet …";
+  try{const r=await fetch(SENDEN,{method:"POST",headers:{"content-type":"application/json"},credentials:"same-origin",
+    body:JSON.stringify({ort:"/*ORT*/",schluessel:"/*SCHLUESSEL*/",titel:"/*TITEL_JS*/",iteration:/*ITERATION*/,ablage:ABLAGE,text})});
+   const a=await r.json().catch(()=>({}));
+   if(!r.ok)throw new Error(a.fehler||`Antwort ${r.status}`);
+   out.textContent=`Gesendet. Deine Rückmeldung liegt als Datei ${a.datei} im Repo; das orchestrierende Modell arbeitet sie ein. Deine Markierungen bleiben hier stehen.\n\n${text}`;
+   btn.textContent="Gesendet";
+  }catch(e){out.textContent=`Nicht gesendet: ${e.message}. Kopieren geht weiter wie bisher.\n\n${text}`;btn.textContent="Rückmeldung senden";}
+  out.classList.add("zeigen");btn.disabled=false;
+ });}
 lesenHash();render();
 </script>
 </body>

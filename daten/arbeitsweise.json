@@ -585,6 +585,217 @@
         }
       ],
       "notiz": "Eigentümer im Chat, 14.11.: „17 wieder rot .. rot hat hier eine andere Funktion .. Bitte sei ein reflektierter Gestaltungsassistent und kein bornierter kleinkarierter Regelhüter .. vlt. brauchst du hier erstmal ein Grundverständnis von Farbgestaltung“. Gehört zu Bug #200 (Lesart auf eine Formel verkürzt). Gegenmittel (Vorschlag): Vor Farbentscheidungen den Skill farbkontraste-itten und das Fachpaket Form heranziehen; Regeln zur Farbe als Kriterien mit Kontext schreiben, nicht als Verbot."
+    },
+    {
+      "id": "arbeitsweise-a68",
+      "aussage": "Die KI hat als Orchestrator eigene Vorschläge zur Reihenfolge und neue Aufträge erzeugt, ohne den am selben Tag bestätigten Plan (Einordnung über alle Stränge) zu lesen; der Eigentümer nennt das Aktionismus.",
+      "status": "belegt",
+      "seit": "2026-11-14",
+      "quellen": [
+        {
+          "datei": "research/2026-11-zielbild-bausteine/einordnung-und-ueberarbeitung.md",
+          "stelle": "Nachtrag 14.11."
+        }
+      ],
+      "notiz": "Eigentümer im Chat, 14.11.: „ist das auch wieder nur Aktionismus, um irgend eine Lösung vorzuschlagen .. wir haben doch bereits einen Plan oder? Bist du noch der Orchestrator, oder jemand der gar keine ahnung hat“. Gegenmittel: Vor jedem Vorschlag zur Reihenfolge die Einordnung lesen und Neues dort einsortieren."
+    },
+    {
+      "id": "arbeitsweise-a69",
+      "aussage": "Claude machte aus dem Qualitätsanspruch „für einen menschlichen Entwickler verstehbar und pflegbar“ einen vierten Akteur der Arbeitsoberfläche, den es nicht gibt. Ein Anspruch an das System ist keine Person; Ableitungen über Akteure brauchen einen belegten Akteur.",
+      "status": "belegt",
+      "seit": "2026-11-14",
+      "quellen": [
+        {
+          "datei": "zielbild/punkte.json",
+          "stelle": "Punkt ao-akteure, Fassung vorher"
+        }
+      ],
+      "notiz": "Eigentümer im Chat, 14.11.: „wer soll der menschliche Entwickler sein?“"
+    },
+    {
+      "id": "arbeitsweise-a70",
+      "aussage": "Geräteunabhängig arbeiten: so gut wie möglich auf jedem Gerät, bei allem vom Handy aus gedacht. Situationen (kurz entscheiden, ausführlich erkunden) sind nicht an Geräte gebunden.",
+      "status": "belegt",
+      "seit": "2026-11-14",
+      "quellen": [
+        {
+          "datei": "zielbild/punkte.json",
+          "stelle": "Punkt ao-situationen"
+        }
+      ],
+      "notiz": "Eigentümer im Chat, 14.11., beim Bestätigen der drei Ableitungen: „ja - mit einer Anmerkung .. bei allem Handy first .. ich will so gut wie möglich geräteunabhängig arbeiten können.“"
+    },
+    {
+      "id": "arbeitsweise-a71",
+      "aussage": "Das Zielbild legte Fragen vor, die durch spätere Änderungen im Repo längst erledigt oder beantwortet waren (Regelpause, Neustart-Test, ruhende Entwürfe, nächstes Experiment, PixelPatrol). Ein Zielbild, das dem Stand nicht folgt, ist ein schwerer Bug.",
+      "status": "belegt",
+      "seit": "2026-11-14",
+      "quellen": [
+        {
+          "datei": "daten/arbeitsweise.json",
+          "stelle": "Frage arbeitsweise-f67"
+        }
+      ],
+      "notiz": "Eigentümer: „das Zielbild wird auch bei repoänderungen nicht mit aktualisiert oder bekommt veraltete Daten - schwerer Bug“; zu PixelPatrol: „Das ist bereits hinreichend geklärt . Ich werte das als schweren Bug! Anallysieren und beheben.“"
+    },
+    {
+      "id": "arbeitsweise-a72",
+      "aussage": "Zahlen, Nummern und Verweise ohne Inhalt haben für den Eigentümer keine Bedeutung. Ein Punkt muss für sich verständlich sein und aktive Verweise (Hypertext) tragen; ein inaktiver Verweis ins Repo oder auf einen Chat ist keine Assistenz.",
+      "status": "belegt",
+      "seit": "2026-11-14",
+      "quellen": [
+        {
+          "datei": "daten/arbeitsweise.json",
+          "stelle": "Frage arbeitsweise-f67"
+        }
+      ],
+      "notiz": "Eigentümer: „kein Kontext bzw. Hypertext. So hat die Information keine Bedeutung für mich.“ und „Ein inaktiver Verweis ins repo ist keine Assistenz für mich .. das ist in diesem Punkt der einzige Kontext und bricht mit unseren REgeln.“"
+    },
+    {
+      "id": "arbeitsweise-a73",
+      "aussage": "Bei der Erweiterung des Zielbilds wurden zentrale Grundlagen und Prinzipien missachtet, vergessen oder neu gewichtet: ein fundamentaler Fehler der Entwurfs- und Systementwicklung. Der Eigentümer fragt, ob die Prinzipien aktuell sind und gepflegt werden, ob die Infrastruktur auf ihnen beruht und wer das prüft und pflegt.",
+      "status": "belegt",
+      "seit": "2026-11-14",
+      "quellen": [
+        {
+          "datei": "daten/arbeitsweise.json",
+          "stelle": "Frage arbeitsweise-f67"
+        }
+      ],
+      "notiz": "Eigentümer: „Hier ist eine sehr schlechte erweiterung gelaufen. … sind die überhaupt aktuell und werden ebenfalls kontinuierlich gepflegt. Beruht die Infrastruktur über haupt auf diesen Regeln, oder ist sie überhaupt nicht kompatibel. Wer prüft das, wer pflegt das?“ Antwort im Chat 14.11. und in research/2026-11-zielbild-bausteine/einordnung-und-ueberarbeitung.md, Nachtrag „Rückmeldung zu Iteration 1“."
+    },
+    {
+      "id": "arbeitsweise-a74",
+      "aussage": "Der Eigentümer schickte dieselbe Rückmeldung zu Iteration 1 erneut, weil die veröffentlichte Seite des Zielbilds die Berichtigungen nicht zeigte: Sie lagen in einem offenen Pull Request, die Seite wird nur aus main gebaut. Berichtigungen an Punkten für ihn werden darum im selben Schritt übernommen, sobald die Prüfungen grün sind.",
+      "status": "belegt",
+      "seit": "2026-11-14",
+      "quellen": [
+        {
+          "datei": ".github/workflows/website.yml",
+          "stelle": "Auslöser push auf main"
+        },
+        {
+          "datei": "daten/arbeitsweise.json",
+          "stelle": "Frage arbeitsweise-f67"
+        }
+      ],
+      "notiz": "Abgeleitet aus der zweiten, gleichlautenden Rückmeldung im Chat vom 14.11.; Abgleich Prinzipien, Grundmodell, Mechanismen in research/2026-11-zielbild-bausteine/einordnung-und-ueberarbeitung.md."
+    },
+    {
+      "id": "arbeitsweise-a75",
+      "aussage": "Der Eigentümer will in jeder Antwort, die das Zielbild betrifft, direkt den Link zum Zielbild bekommen.",
+      "status": "belegt",
+      "seit": "2026-11-14",
+      "quellen": [
+        {
+          "datei": "AGENTS.md",
+          "stelle": "Grundmodell, Was zu ihm geht"
+        }
+      ],
+      "notiz": "Eigentümer im Chat 14.11.: „kannst du mir immer direkt einen Link zum Zielbild hier mitgeben?“ Im selben Schritt in AGENTS.md eingetragen."
+    },
+    {
+      "id": "arbeitsweise-a76",
+      "aussage": "Drei Orte mit Tabelle und Wegebeschreibung sind kein mentales Modell, das ihn unterstützt. Er will einen Einstieg: die Übersicht des Labors mit einem Link zu seinem geschützten Arbeitsplatz bei Cloudflare.",
+      "status": "belegt",
+      "seit": "2026-11-14",
+      "quellen": [
+        {
+          "datei": "tools/build.mjs",
+          "stelle": "Eintrag „Bearbeiten und senden“ auf der Startseite"
+        }
+      ],
+      "notiz": "Eigentümer im Chat 14.11.: „was soll das denn für ein mentales Modell sein .. geschweige denn mich unterstützen. Können wir nicht einen Link zum Cloudshare Zielbild in der Design-Lab Übersicht Seite erstellen?“ Umgesetzt im selben Schritt; die Adresse ist damit öffentlich, der Inhalt bleibt hinter Cloudflare Access."
+    },
+    {
+      "id": "arbeitsweise-a77",
+      "aussage": "Das Zielbild gehört nicht zentral auf die öffentliche Seite. Die private Übersicht bei Cloudflare ist selbst Entwurfsgegenstand: Struktur, Informationsarchitektur, Kopf und Navigation müssen nach den Entwurfsgrundsätzen des Labors gestaltet sein; gleich funktionierende Zielbilder (Labor, Werke) gehören gleich behandelt. Änderungen am Zielbild als zentralem Baustein müssen generisch nachgezogen werden.",
+      "status": "belegt",
+      "seit": "2026-11-14",
+      "quellen": [
+        {
+          "datei": "verlauf/2026-11-14-zielbild-nicht-oeffentlich.md",
+          "stelle": "Warum"
+        }
+      ],
+      "notiz": "Eigentümer im Chat 14.11.: „Blödsinn. du hälst dich wiedermal nicht an Grundprinzipien des Labors im Arbeitsmodus. Das Zielbild sollte einfach gar nicht zentral auf der öffentlichen Seite abrufbar sein. … bricht mit allen Gestalterischen und Entwurfsgrundsätzen … auch das ist ein Entwurfsgegenstand. … Sie sind funktional doch genau gleich, aber werden hier komplett verschieden behandelt.“ Auftrag: Seitenstruktur und Gestaltung überarbeiten, als Test der Regeln; UX von Kopf und Navigation prüfen; fehlende Fachkompetenz benennen."
+    },
+    {
+      "id": "arbeitsweise-a78",
+      "aussage": "In einem Werk-Chat nannte das Modell den Link zum Zielbild des Labors statt zum Zielbild des Werks. Ursache: Die Link-Regel aus a75 steht in AGENTS.md mit der festen Adresse des Labor-Zielbilds, ohne zu unterscheiden, welches Zielbild eine Antwort betrifft; das Modell wandte sie mechanisch an. Gemeint ist immer das Zielbild, um das es geht.",
+      "status": "belegt",
+      "seit": "2026-11-14",
+      "quellen": [
+        {
+          "datei": "AGENTS.md",
+          "stelle": "Grundmodell, Was zu ihm geht"
+        },
+        {
+          "datei": "daten/arbeitsweise.json",
+          "stelle": "Aussage arbeitsweise-a75"
+        }
+      ],
+      "notiz": "Korrektur des Eigentümers im Werk-Chat 14.11.: „es geht doch aber nicht um das Labor“. Werkinhalte bleiben im Werke-Repo. Prüffall evals/werkchat-lernen, Punkt 5. Klarstellung der Regel: Frage arbeitsweise-f70."
+    },
+    {
+      "id": "arbeitsweise-a79",
+      "aussage": "Der Eigentümer sieht in einzelnen Fehlern eines Werk-Chats Symptome schwerwiegender Fehler im System und verlangt eine ganzheitliche, systemische Ursachenprüfung statt einer Einzelkorrektur. Belegt sind vier Ursachen, die über F1 bis F5 hinausgehen: mehrere Schreiber ohne Takt, Tatsachen als Wortlaut an vielen Orten, ein mehrdeutiges „Zielbild“ und eine Kopplung von Labor und Werk ohne Vertrag. Dazu kommt eine Prüfkette, die nach einem Bot-Commit sperrt.",
+      "status": "belegt",
+      "seit": "2026-11-14",
+      "quellen": [
+        {
+          "datei": "research/2026-11-anforderungspruefung/bug-flickenteppich.md",
+          "stelle": "Wiederauftreten am 14.11. im Werk-Chat"
+        }
+      ],
+      "notiz": "Eigentümer im Werk-Chat 14.11.: „das sind Symptome von schwerwiegenden Fehlern - prüfe deren Ursache und behebe sie. Bzw. mach ihre Behebung möglich. Analysiere ganzheitlich und systemisch.“ Gehört zu #216 und #200."
+    },
+    {
+      "id": "arbeitsweise-a81",
+      "aussage": "Varianten für Seiten sind fragmentarisch, solange sie nicht vom Eigentümer ausgehen: von seinen Situationen, Aufgaben, seinem Wissen und seiner Erkenntnislücke, seinen Zielen, Bedürfnissen und Anforderungen und deren Zusammenhang. Erst daraus folgen Ansichtsarchitektur, Aufgabenpfade und visuelle Abbildung; vorher wird nichts umgebaut.",
+      "status": "belegt",
+      "seit": "2026-11-14",
+      "quellen": [
+        {
+          "datei": "research/2026-11-arbeitsoberflaeche/entwurf.md",
+          "stelle": "Herkunft"
+        }
+      ],
+      "notiz": "Eigentümer im Chat 14.11.: „ich weiß nicht a-C ist schon wieder fragmentatisch. Du sollst von mir und meiner Erkenntnislücke ausgehen. … Kurz mach doch einfach mal Entwurfsarbeit … Bevor wir hier nicht weiter kommen, müssen wir die Seite nicht umbauen.“"
+    },
+    {
+      "id": "arbeitsweise-a82",
+      "aussage": "Voraussetzungen, Abhängigkeiten und Blocker von Aufträgen müssen vorab festgelegt und Teil der Infrastruktur sein; sonst entstehen viele Extrarunden. Die Einordnung von Aufgaben liegt beim orchestrierenden Modell.",
+      "status": "belegt",
+      "seit": "2026-11-14",
+      "quellen": [
+        {
+          "datei": "tools/zielbild.mjs",
+          "stelle": "Prüfung „braucht“"
+        },
+        {
+          "datei": ".agents/skills/issue/SKILL.md",
+          "stelle": "Abschnitt B, Blockiert durch"
+        }
+      ],
+      "notiz": "Eigentümer im Chat 14.11.: „Wie sollte klare Vorraussetzungen bzw. Abhängigkeiten und Blocker für Aufträge bereits definiert haben. und diese als Teil der Infrastruktur übernommen haben. Sonst machen wir unglaublich viele Extra runden. BEi dir liegt die Orchestrierung die Einordnung von Aufgaben.“"
+    },
+    {
+      "id": "arbeitsweise-a83",
+      "aussage": "Das Zielbild des Labors bildet den aktuellen Konzeptstand nicht ab, darum kann der Eigentümer ihn dort nicht prüfen. Neue Analyse- und Entwurfsarbeit berücksichtigt bestehende Ausarbeitungen zu Nutzerforschung und Analyse nicht systemisch und nicht über Relationen; er wertet das als Versagen der Fachpakete und des Orchestrators.",
+      "status": "belegt",
+      "seit": "2026-11-14",
+      "quellen": [
+        {
+          "datei": "research/2026-11-arbeitsoberflaeche/entwurf.md",
+          "stelle": "Abschnitt 0"
+        },
+        {
+          "datei": "zielbild/punkte.json",
+          "stelle": "u4, nk-laden"
+        }
+      ],
+      "notiz": "Eigentümer im Chat 14.11.: „auf der anderen Seite bildet das Labor Zielbild auch nicht unseren aktuellen Konzeptstand ab - diesen kann ich damit nicht prüfen. Du berücksichtigst ihn bestimmt gerade auch nicht systemisch und prüfst auf Relationen. Auch hier gibt es ja zentrale Ausarbeitungen hinsichtlicher des User Researches und der Analyse. Das ist wieder ein versagen der Fachpakete bzw. des Orchestriers“"
     }
   ],
   "fragen": [
@@ -600,11 +811,11 @@
       "id": "arbeitsweise-f02",
       "frage": "Gemeinsame Issue-Prüfung zuerst im Labor bauen?",
       "gestellt": "2026-11-05",
-      "notiz": "Merkzettel, gestellt im Chat"
+      "notiz": "Merkzettel, gestellt im Chat; Priorität „später“ (Rückmeldung 14.11.), Verwaltung bei Claude"
     },
     {
       "id": "arbeitsweise-f03",
-      "frage": "Befund zu paleo-type auf #408 notieren (dort gilt Pause)?",
+      "frage": "Einen Befund aus dem Labor in der Ursachenanalyse von paleo-type notieren, obwohl dort eine Pause gilt?",
       "gestellt": "2026-11-05",
       "notiz": "Merkzettel, gestellt im Chat"
     },
@@ -1103,6 +1314,70 @@
       "antwort": "Rückmeldung Zielbild Bug #200: Prüfung des Ansatzes (Iteration 1):\n\n• Du bist Gestalter und technisch interessiert. Du willst Mechanismen verstehen und mitentwerfen, aber nicht den Entwickler-Workflow bedienen.\n  → muss besser: Es kann so bleiben wie es ist, aber ich bin eben nicht jemand, der irgendwelche Tehnische Verwaltung macht oder in diesen Strukturen denkt. Das heißt nicht, das das system nicht nach diesen Prinzipien handelt. Das System muss menschen verstehbar und auch pflegbar bleiben. Keine Komplexität, wo sie nicht nötig ist. Keine Ahnung (Idee regeln nach poytail-skill)\n\nDas eine ist eine Frage, wie wir zusammenarbeiten, und wer ich bin, das andere,welche Anforderungen natürlich dennoch herrschen sollen. Bisher habe ich wenig Erfahrungswissen in der Implementierung. Muss dieses Gap, so weit wie möglich aber kontinuierlich schließen, um KI basierte Workflows auch bedienen zu können.\n• Du arbeitest im Chat, in Zielbild-Seiten, in Artefakten und, wenn du willst, direkt in Dateien. PRs und Issues siehst du nicht.\n  → passt: So, wie wir es als optimum beschlossen haben. Das kann sich auch ändern.\n• Verwaltung liegt beim orchestrierenden Modell: PRs, Issues, Übernahmen, Abhängigkeiten, Stapel.\n  → passt: wo wie in Grundsätzen und Erweiterungen definiert\n• Das Zielbild ist das Austauschformat, auch für Prüfungen, Befunde und Bugs.\n  → passt: Auch mit allen Neuerungen und aktuellem Drift\n• Du bist der reale Prüffall. Was du im Gebrauch merkst, ist Beleg und fließt ohne Nachfrage ins Labor zurück.\n  → passt: Genau, ich lege Prios fest und gebe Input zu Änderungen, die ich für notwendig erachte, auch das haben wir bereits im Zielbild definiert\n• Komplexität ist das Ziel, also funktional. Die Entwicklung des Werkzeugs ist selbst Entwurfsarbeit.\n  → muss besser: Komplexität ist nicht das Ziel. Entwurfsarbeit verstehe ich als große systemisch ganzheitlich organische transdisziplinäre Herausforderung. Wenn wir Klare Strukturen und Lösungen finden, die das Abbilden und keinerlei Einbußen in der Qualität hervorrufen, finde ich es auch ok, Aber das nie auf Kosten von Qualität oder funktionalität gehen. Du kannst aber gern vorschläge für iterative Entwicklung geben. Aber eben nicht den kleinsten, einfach Nenner vorschlagen, der nur auf Kosten von Qualität und am Ende immer auch auf Kosten von Ressourchen und Frust geht\n• Dein Kontingent ist die knappe Ressource: Opus stand am Mittwoch bei 50 % des Wochenlimits.\n  → passt: es geht darum bewußt tokensparend zu arbeiten, ohne mit der Qualität zu geizen. Wenn man Aufgaben delegieren, oder den Chat sinnvoll strukturieren und optimieren kann, in dem man sauber abschließt und neu startet, merkt, wenn Kontextüberläuft, etc. du weißt das alles besser.\n• Die Modelle behandeln dich als Entwickler, der PRs und Issues liest und freigibt.\n  → passt: Wir haben eine klare Arbeitsteilung ausgemacht. DAs steht nicht zur Diskussion, die bisherige struktur auch die schönen abkürzungen und Arbeitserleichterungen, die wir uns stück für stück gebaut haben, finde ich gut. Es geht auch um XAI .. ich will keine Black Box, die irgendwas macht. Und ich will auch, das ein menschlicher Entwickler am System weiterarbeiten oder es bewerten kann. Keinen Vibe Code Schrott. Das ist auch mein Verständnis von Nachhaltig\n• Die Korrektur schlägt ins Gegenteil um: Aus „kein Entwickler“ wurde „nicht technisch“.\n  → passt: Das ist ein schwerer Fehler. Das ist viel zu schwarz-weiß gedacht. Und dieses Muster ist ein unglaublich große Fehlerquelle mit viel Potential im ganzen System. Das System ist dialogisch, keine einfachen Wahrheiten.\n\nDie KI Fehlermuster müssen wir direkt adressieren und prüfen. Je nach Modell und Reifegrad verändern die sich ja wahrscheinlich auch - das heißt, das müßte ebenfalls ein kontinuierliches Pflegeticket sein, was das Repo auf einem frischen Modellstand hält. Au weia, das wird alles so kompliziert.\n• Wesentliche Aussagen werden auf eine gängige Formel verkürzt.\n  → passt: Ja, das ist sehr schlimm. Lieber Nachfragen .. Unischerheit sichbar machen .. keine Ahnung, was ist hier SOTA?\n• Auf jeden Einwand folgt ein Plan, eine Regel oder eine Datei statt Verständnis des Ganzen.\n  → passt: Wie kommen wir da raus .. ich glaube wir haben ja gerade auch einen Fokus auf einem Strang. Wir dürfen das System nicht aus den Augen verlieren. Aber auch zwischenschritte identifizieren, die schon umgesetzt werden können, die auf das große ganze einzahlen .. dynamsicher und modularer arbeiten? In Teilprobleme und Teilziele zerlegen. Keine Ahnung, du bist der Entwickler .. ich wünsche mir meine Idealwerkzeug, das umzusetzen, ist deine Expertise .. Analysiere, Prüfe auf Sota\n• Im Werk zeigt sich dieselbe Fehlerklasse: Rückfall auf die Voreinstellung des Modells.\n  → passt: Auch her braucht es rückkopplung. Haben wir schon oft drüber geredet ..\n• Der Stand der Anforderungen misst, ob es eine Entscheidung gibt, nicht ob sie wirkt.\n  → passt: Altes Muster..Obwohl wir qualitativ auf einer ganz anderen Stufe als zuvor arbeiten, ich denke, wir sind hier einen großen Schritt weiter gekommen.\n• U1 · Die Spezifikation widerspricht sich: Intent und 0019 gegen die Betriebstexte.\n  → passt: Aber genau das ist ja auch eine Kernherausforderung einer jeden Entwurfsarbeit. Wie können wir Zielkonflikte oder Wiedersprüche adressieren, ohne einen Wettbewerb darauf zu machen? Das ist jetzt nur eine spontane Assoziation und ein Muster das ich darin wahrnehme, das kann auch andere Ursachen haben.\n• U2 · Die Voreinstellungen der Modelle zeigen in dieselbe Richtung wie die Betriebstexte.\n  → passt: kann ich nicht bewerten\n• U3 · Für die Anforderungen der Zusammenarbeit gibt es keinen technischen Nachweis.\n  → muss besser: hast du eine Ahnung? SOTA?\n• U4 · Dein Nutzerbild ist verstreut und wird nie als Ganzes geladen.\n  → muss besser: SOTA! Das kann man doch wohl struturell lösen. Capabilities? Keine Ahnung irgendwelche Methoden aus Req-Engenieering als Entwicklungsmotor? In der echten IT-WElt funktioniert es doch auch, was fehlt denn hier?\n• U5 · Jede Nachricht wird für sich gelöst, nicht gegen den ganzen Anforderungssatz.\n  → muss besser: Das ist denke ich ein zentrales Problem, es wiederspricht den Grundsätzen. Aber wie kann man das absichern? Was sind die Herausforderungen, was ist Sota?\n\nWIe löst du überhaupt solchen (techn.) Entwurfsfragen/ -probleme hast du da irgendeine Methodik? Ich will dir ja nichts vorgeben, aber du bist die KI, ich hätte jetzt. gedacht, du kriegst das gut hin.\n• U6 · Die Rückkopplung endet im Stapel.\n  → passt: Der Stappel wird immer wachsen, aber wie kriegen wir den Stapel auch abgearbeitet .. du bist doch Orchestrator, wieso kriegst du hier auch keine Priorisierung hin. Zielbild und Anforderungen, Bedürfnisse, Schmerz und Mehrwerte sind doch große Anker .. fehlt hier ein Modell, was auf was einzahlt, Eine gewichtung, User Story Map keine Ahnung? Was fehlt dir, was brauchst du? SOTA. Das sind auch alles wieder Entwurfsfragen im sinne des Gestalterischen Arbeitens und damit des Design Labs .. aber du hast vielleicht eine andere Perspektive darauf\n• Die Ursachen bilden eine sich selbst verstärkende Schleife.\n  → passt: kleine Fehler, macht die KI zu Lavinen .. Wo ist unsere Alarmanlage für Bugs\n• Offene Dateien, erzeugte Übersichten, Prüfungen im Build und Verlauf mit Rückgängig-Weg tragen dein Ziel. Hier setzt die Lösung an.\n  → passt\n• Das Zielbild ist das Format, in dem du tatsächlich arbeitest. Es fehlt die Anbindung, nicht das Format.\n  → passt: Es fühlt sich besser an, ein Format was taugt, du musst nur auch deinen Job machen.\n• Sykophanz ist in führenden Modellen nachgewiesen und entsteht schon im Training; Regeln im Prompt beheben sie nach den Quellen nicht.\n  → passt: Adressieren - kann ich aber nicht bewerten\n• Ohne äußeres Prüfsignal korrigieren Modelle sich nicht verlässlich selbst; mit Tests oder Umweltsignal schon.\n  → passt: Adressieren - kann ich aber nicht bewerten\nDann lass dich doch konsequenter von Chatgbt reviewen. Ich habe da bisher einen geplante Aufgabe alle 3h zur Prüfung auf Jobs abgelegt. Wir können auch noch einen weiteren Job auf Gegenprüfung stellen\n• Modelle als Prüfer bevorzugen ihre eigenen Texte; Debatte unter gleichen Modellen bringt wenig, gemischte Modelle helfen.\n  → passt: Adressieren - kann ich aber nicht bewerten\nDann lass dich doch konsequenter von Chatgbt reviewen. Ich habe da bisher einen geplante Aufgabe alle 3h zur Prüfung auf Jobs abgelegt. Wir können auch noch einen weiteren Job auf Gegenprüfung stellen\n• Was am Anfang des Kontexts steht, wird besser genutzt; lange Kontexte werden ungleichmäßig genutzt.\n  → passt: Dann steuer gegen das Muster, wie können wir vermeiden überhaupt so viel Kontext zu erzeugen, das er in verrottungs Phänomene erzeugt.\n• Gebrauchstauglichkeit gibt es nur bezogen auf festgelegte Nutzer, Ziele und Aufgaben, Ressourcen und Umgebung.\n  → muss besser: Wie meinst du das? Es gibt doch sicher auch erweiterungen für die KI .. Außerdem hast du das doch dennoch. Ich bin dein Kunde, diese Rolle nehme ich ein. Und ein bisschen Konzepter und Gestalter .. aber eher strategisch. Du bist der Umsetzer\n• Dass Modelle Anforderungen auf gängige Muster verkürzen, ist in der Literatur nicht belegt, nur plausibel. Unsere Beobachtung ist selbst ein Befund.\n  → passt: Oder liegen die Ursachen tiefer? Ist es nur ein Phänomen, eines anderen Problems\n• O2 · Dein Nutzungskontext wird ein geprüftes Grundmodell am Anfang jeder Sitzung.\n  → muss besser: Was meinst du damit jetzt genau? Nutzungskontext hat hier wieder viele Relationen, Dimensionen und Perspektiven\n• O1 · Die Betriebstexte werden widerspruchsfrei zum Grundmodell, und der Build verhindert Rückfälle.\n  → passt: klingt gut\n• O3 · Verhaltensprüfungen mit deinen Abnahmekriterien, bewertet von einem Modell einer anderen Familie.\n  → passt: Ich kann ja (was ich bewerten kann) als Kunde auch Abnehmen. Du musst nur Akzeptanzkriterien aufstellen .. keine Ahnung..\n• O4 · Deine Korrekturen gehen ohne Freigabe-Umweg ins Labor; du siehst sie auf einer Seite und widersprichst dort.\n  → passt\n• O5 · Den Stapel aus 13 PRs und 32 Issues verwalte ich selbst; zu dir kommen nur gebündelte Bedeutungsfragen hier im Zielbild.\n  → passt: Frag nach Unsicherheit. Analysiere auch, wie oft du sicher warst und ich dich doch korrigiert habe und wenn ja wie stark. Über dieses Format, kann man doch sicher Qualitative Verbesserungen messbar machen.\n• O6 · Modell-, Regel- und Befundänderungen prüft ein Modell einer anderen Familie.\n  → passt: Das gilt dann aber auch für neue Projekte die man mit dem Design Lab startet .. das wird dann zur Blaupause bzw. vererbt das eigene Verhalten, da wo es nötig ist\nMuss nochmal differenziert werden\n• O7 · Regeltexte zur Arbeitsweise der Modelle nur als Kriterien innerhalb von O3, nicht allein.\n  → passt: wie kommen regeln in die funktionale Umsetzung .. welche strukturen braucht es\n• O8 · Eine andere Arbeitsumgebung für die Haupt-KI wird zurückgestellt, bis klar ist, ob O1–O4 reichen.\n  → passt\n• O1 bis O4 wirken nur zusammen: O2 legt fest, wer du bist, O1 entfernt den Widerspruch, O3 macht Rückfälle sichtbar, bevor du sie bemerkst, O4 lässt deine Korrekturen wirken.\n  → passt",
       "beantwortet": "2026-11-12",
       "notiz": "Leitfaden-Chat (Claude), eingearbeitet in Iteration 2."
+    },
+    {
+      "id": "arbeitsweise-f67",
+      "frage": "Rückmeldung zur Seite „Zielbild des Labors“, Iteration 1",
+      "gestellt": "2026-11-14",
+      "antwort": "Rückmeldung Zielbild des Labors (Iteration 1):\n\n• [Arbeitsweise mit KI] Private Zielbild-Seiten der Werke bei Cloudflare einrichten.\n  → erledigt (Priorität: jetzt)\n• [Arbeitsweise mit KI] Gemeinsame Issue-Prüfung zuerst im Labor bauen?\n  → Priorität (Priorität: später)\n• [Leitfaden] Fragenliste in alten Chats finden (Issue #189).\n  → Priorität (Priorität: später)\n• [System und Pflege] Regelpause und Reihenfolge der Regelprüfung festlegen.\n  → Antwort: .. das Zielbild wird auch bei repoänderungen nicht mit aktualisiert oder bekommt veraltete Daten - schwerer Bug\n• [System und Pflege] Sieben Regeln auf Probe haben kein Auswertungsdatum (0003, 0004, 0007, 0013, 0016, 0018, 0024).\n  → muss besser: Bug .. hier nur zahlen ohne Semantik und Kontext .. was soll ich da verstehen.\nHier ist eine sehr schlechte erweiterung gelaufen. Zentrale Grundlagen und Prinzipien wurden bei der Iteration bisachtet oder vergessen bzw. neu gewichtet. Fundamentaler Fehler von Entwurfs- und Systementwicklung - wiederspricht all meinen (unseren)  Prinzipien und Grundsätzen - sind die überhaupt aktuell und werden ebenfalls kontinuierlich gepflegt. \n\n\nBeruht die Infrastruktur über haupt auf diesen Regeln, oder ist sie überhaupt nicht kompatibel. Wer prüft das, wer pflegt das?\n• [System und Pflege] Zwölf Issues mit Label „entwurf“ und PR #90 ruhen seit 28./29.10.\n  → muss besser: kann ich so überhaupt nichts mit anfangen .. kein Kontext bzw. Hypertext\nSo hat die Information keine Bedeutung für mich.\n• [System und Pflege] Wie laufen die Startfälle frisch, ohne Projektkontext (#109)?\n  → Antwort: .. kann ich so überhaupt nichts mit anfangen .. kein Kontext bzw. Hypertext\nSo hat die Information keine Bedeutung für mich.\n• [Leitfaden] Stimmt meine Lesart deines Verständnisses von Visualisierung? Siehe Chat vom 14.11.\n  → Antwort: .. Ein inaktiver Verweis ins repo ist keine Assistenz für mich .. das ist in diesem Punkt der einzige Kontext und bricht mit unseren REgeln.\n• [Leitfaden] Was ist PixelPatrol, wo liegt es, und darf es im öffentlichen Labor genannt werden?\n  → Antwort: Das ist bereits hinreichend geklärt . Ich werte das als schweren Bug! Anallysieren und beheben.\n• [Werke] Welches Experiment kommt als Nächstes?\n  → Antwort: veraltet - bug",
+      "beantwortet": "2026-11-14",
+      "notiz": "Chat (Claude), eingearbeitet in Iteration 2 am 14.11.; Analyse in research/2026-11-zielbild-bausteine/einordnung-und-ueberarbeitung.md, Nachtrag „Rückmeldung zu Iteration 1“."
+    },
+    {
+      "id": "arbeitsweise-f68",
+      "frage": "Rückmeldung zur Seite „Zielbild Review Pixel Patrol“, Iteration 6 (Werk, privat)",
+      "gestellt": "2026-11-13",
+      "antwort": "Fünf Rückmeldungen: Schaltflächen bei offenen Fragen unklar („Mir ist nicht klar, was ich machen soll“), Prüfauftrag UX-Writing, Informationsarchitektur, Selbstwirksamkeit und Rückmeldung; visuelle Sprache ohne ausgewiesene Entwurfslogik, das flächige Warndreieck bricht die Bildsprache; keine Informationsarchitektur, Systementwicklung und Gestaltungsfragen vermischt; Arbeitsdokumente gelten die gleichen Prinzipien wie jedes Werk, anderer Nutzungskontext; Befunde in Code ist auch eine Frage der Übersetzung und der Datenstrukturen, die Wissen halten. Wortlaut in den Issues #280–#282 und im Kommentar an #262.",
+      "beantwortet": "2026-11-14",
+      "notiz": "Chat (Claude), 14.11.: als drei Bugs an das Labor (#280 Schaltflächen, #281 visuelle Sprache, #282 Informationsarchitektur) und als Facette an die Recherchen #262 und #259. Der Wortlaut mit Kundenbezug steht privat im Werk (esany/werke, koordination.md R22)."
+    },
+    {
+      "id": "arbeitsweise-f69",
+      "frage": "Drei Blocker im Block geklärt: Neustart-Test, Audit der Fehlermuster, Schließen überholter Aufträge",
+      "gestellt": "2026-11-14",
+      "antwort": "Neustart-Test: „Geplante Sitzung“. Audit der Fehlermuster: „In den Bug aufgehen“. Überholte Aufträge: „Ja, Liste danach“.",
+      "beantwortet": "2026-11-14",
+      "notiz": "Chat (Claude), Auswahlfragen. Folgen: geplante Sitzung für #109; #56 geschlossen, aufgegangen in #200; Regel in Skill issue E4 (Claude schließt Erledigtes und Ersetztes selbst, zeigt die Liste danach; Streichungen aus Vorschlägen des Eigentümers weiter einzeln)."
+    },
+    {
+      "id": "arbeitsweise-f70",
+      "frage": "Klarstellung der Link-Regel in AGENTS.md: „Jede Antwort, die ein Zielbild betrifft, nennt den Link zu genau diesem Zielbild auf seinem Arbeitsplatz: für das Labor https://werke-zielbilder-e7q.pages.dev/labor/, für ein Werk dessen Seite dort (werke/<ordner>/).“ So übernehmen?",
+      "gestellt": "2026-11-14",
+      "notiz": "Aus Aussage arbeitsweise-a78; neue Regel, darum Frage an den Eigentümer.",
+      "antwort": "Nicht gewählt (Mehrfachauswahl am 14.11. im Werk-Chat; gewählt war nur „Bugs, die ein Werk blockieren, haben Vorrang“). Offen, ob das Nein heißt oder später.",
+      "beantwortet": "2026-11-14"
+    },
+    {
+      "id": "arbeitsweise-f71",
+      "frage": "Mehrere Sitzungen schreiben gleichzeitig ins Labor. Wie soll das künftig laufen?",
+      "gestellt": "2026-11-14",
+      "antwort": "„Eine Sitzung zur Zeit“: Nur eine Sitzung übernimmt ins Labor, alle anderen liefern zu und geben ab.",
+      "beantwortet": "2026-11-14",
+      "notiz": "Werk-Chat (Claude), Auswahlfragen. Ursache F6 in bug-flickenteppich.md. Offen: welche Sitzung die eine ist und wie das technisch gesichert wird (Text allein hält kein Verhalten, F2)."
+    },
+    {
+      "id": "arbeitsweise-f72",
+      "frage": "Sollen Adressen und Pfade, die zum Eigentümer gehen, an genau einem Ort stehen, mit einer Prüfung auf abweichende und tote Adressen?",
+      "gestellt": "2026-11-14",
+      "antwort": "„Ja, an einem Ort“.",
+      "beantwortet": "2026-11-14",
+      "notiz": "Werk-Chat (Claude), Auswahlfragen. Ursache F7."
+    },
+    {
+      "id": "arbeitsweise-f73",
+      "frage": "Was soll zwischen Labor und Werk gelten (Vorrang blockierender Bugs, feste Fassung, Link-Regel, ein Startweg)?",
+      "gestellt": "2026-11-14",
+      "antwort": "Gewählt: „Bugs, die ein Werk blockieren, haben Vorrang“. Nicht gewählt: feste Fassung des Generators, Klarstellung der Link-Regel, ein Startweg je Werk.",
+      "beantwortet": "2026-11-14",
+      "notiz": "Werk-Chat (Claude), Auswahlfragen. Ursachen F8, F9. Betrifft zuerst die drei Bugs zum Zielbild (Schaltflächen, visuelle Sprache, Informationsarchitektur)."
+    },
+    {
+      "id": "arbeitsweise-f74",
+      "frage": "Darf Claude eine Lösung für die Sperre nach dem Bot-Commit vorbereiten (betrifft Schlüssel oder Schutzregeln)?",
+      "gestellt": "2026-11-14",
+      "antwort": "„Ja, vorbereiten“: Vorschlag vorlegen, Einbau erst nach seiner Entscheidung.",
+      "beantwortet": "2026-11-14",
+      "notiz": "Werk-Chat (Claude), Auswahlfragen. Erscheinung „Übernahme gesperrt nach dem Bot-Commit“ in bug-flickenteppich.md."
     }
   ]
 }
