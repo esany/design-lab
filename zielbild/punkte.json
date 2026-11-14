@@ -91,6 +91,20 @@
           "g": "research/2026-11-arbeitsoberflaeche/analyse.md; daten/arbeitsweise.json, a64."
         },
         {
+          "id": "ao-reihenfolge",
+          "s": "bestaetigt",
+          "n": "neu",
+          "t": "Reihenfolge: zuerst, welchen Input du in welcher Priorität liefern musst, je mit dem, worauf die Entscheidung einzahlt und was danach da ist. Dann, woran wir gerade arbeiten und wie die Stränge zusammenhängen. Am Schluss das große Ganze zum Erkunden.",
+          "k": "Ziel der Priorität: die Systementwicklung des Labors so schnell wie möglich voranbringen. Damit ist die Spannung „begrenzte Sicht gegen großes Ganzes“ entschieden.",
+          "f": "einstieg ist, was muss ich in welcher prio als input liefern? Ziel Systementwicklung am Labor schnell wie möglich voranbringen (prüfen, auf was zahlt die Entscheidung ein, was haben wir danach)- dann woran arbeiten wir gerade, wie hängen die Stänge zu samen (relation) .. am schluß eher Explorativ das große ganze prüfen",
+          "g": "daten/arbeitsweise.json, a65.",
+          "stuetzt": [
+            "ao-sichten",
+            "ao-ganzes",
+            "ao-perspektiven"
+          ]
+        },
+        {
           "id": "ao-sichten",
           "s": "bestaetigt",
           "n": "neu",
@@ -158,33 +172,39 @@
           "s": "ableitung",
           "n": "neu",
           "t": "Vier Akteure brauchen die Oberfläche verschieden: du als Product Owner und Gestalter, ich als Orchestrator, ausführende Modelle (ChatGPT, Codex), ein menschlicher Entwickler, der das System pflegt.",
-          "k": "Abgeleitet aus dem Grundmodell in AGENTS.md (Wer, Wo, keine Black Box). Ob Modelle und Entwickler dieselbe Oberfläche brauchen oder die Dateien genügen, ist offen.",
-          "g": "research/2026-11-arbeitsoberflaeche/analyse.md; daten/arbeitsweise.json, a64."
+          "k": "Abgeleitet aus dem Grundmodell in AGENTS.md (Wer, Wo, keine Black Box). Ob Modelle und Entwickler dieselbe Oberfläche brauchen oder die Dateien genügen, ist offen. Bitte bestätigen oder korrigieren: Das schließt Iteration 1 der Anforderungen ab.",
+          "g": "research/2026-11-arbeitsoberflaeche/analyse.md; daten/arbeitsweise.json, a64.",
+          "dran": "du",
+          "prio": "jetzt"
         },
         {
           "id": "ao-situationen",
           "s": "ableitung",
           "n": "neu",
           "t": "Zwei Nutzungssituationen: kurz am Handy entscheiden; am Rechner erkunden, vergleichen und mich prüfen.",
-          "k": "Abgeleitet aus „Handy zuerst“ (Leitfaden) und deinem Wunsch, im großen Ganzen zu explorieren.",
+          "k": "Abgeleitet aus „Handy zuerst“ (Leitfaden) und deinem Wunsch, im großen Ganzen zu explorieren. Bitte bestätigen oder korrigieren: Das schließt Iteration 1 der Anforderungen ab.",
           "g": "research/2026-11-arbeitsoberflaeche/analyse.md; daten/arbeitsweise.json, a64.",
           "stuetzt": [
             "handy-zuerst"
-          ]
+          ],
+          "dran": "du",
+          "prio": "jetzt"
         },
         {
           "id": "ao-rechenschaft",
           "s": "ableitung",
           "n": "neu",
           "t": "Rechenschaft: Für jeden Schritt eines Modells ist sichtbar, wer was warum getan hat, mit welchem Ergebnis und welcher Prüfung.",
-          "k": "Abgeleitet aus „du musst dich verantworten“. Heute liegt das verstreut in Verlauf, Pull Requests und Issues, die du nicht siehst.",
+          "k": "Abgeleitet aus „du musst dich verantworten“. Heute liegt das verstreut in Verlauf, Pull Requests und Issues, die du nicht siehst. Bitte bestätigen oder korrigieren: Das schließt Iteration 1 der Anforderungen ab.",
           "g": "research/2026-11-arbeitsoberflaeche/analyse.md; daten/arbeitsweise.json, a64.",
           "stuetzt": [
             "ao-transparenz"
           ],
           "stuetzt_warum": {
             "ao-transparenz": "Belegt: dein Satz zu Prüfen, Bewerten und Verantworten."
-          }
+          },
+          "dran": "du",
+          "prio": "jetzt"
         },
         {
           "id": "ao-recherche-muster",
@@ -214,6 +234,19 @@
             "ao-anforderung",
             "ao-einfacher",
             "ao-ganzheitlich"
+          ]
+        },
+        {
+          "id": "ao-tiefe",
+          "s": "offen",
+          "n": "neu",
+          "prio": "jetzt",
+          "t": "Wie tief willst du mich prüfen: Stichproben mit Begründung, oder jeden Schritt mit Ergebnis und Gegenprüfung?",
+          "k": "Zahlt ein auf: die Sicht „woran wir arbeiten“ und die Rechenschaft. Danach haben wir: das Maß, wie viel Einblick du bekommst, ohne dass Prüfen zur Arbeit wird.",
+          "g": "research/2026-11-arbeitsoberflaeche/analyse.md, Abschnitt 3, Spannung 2.",
+          "stuetzt": [
+            "ao-transparenz",
+            "ao-rechenschaft"
           ]
         }
       ]
@@ -1061,7 +1094,7 @@
           "stand": "startklar",
           "wer": "Claude",
           "t": "Werkbuch: Datenformat, Prüfung im Build und eine erste Seite mit fünf bis acht werdenden Einträgen.",
-          "k": "Die ersten Einträge sind allgemeine Muster mit Quelle, z. B. Galls Gesetz oder „Halte einen aktuellen Stand“. Dient den Anforderungen A04 (Fachwissen als Werkzeug), A08 (nachvollziehbar in Stufen) und A23 (lebendig und aktuell). Fertig, wenn: die Seite aus Daten erzeugt wird; der Build Pflichtteile, Status, Relationen und Quellen prüft; „gilt“ nur bei vollständigen Einträgen möglich ist; die Seite in Handybreite geprüft ist.",
+          "k": "Die ersten Einträge sind allgemeine Muster mit Quelle, z. B. Galls Gesetz oder „Halte einen aktuellen Stand“. Dient den Anforderungen A04 (Fachwissen als Werkzeug), A08 (nachvollziehbar in Stufen) und A23 (lebendig und aktuell). Fertig, wenn: die Seite aus Daten erzeugt wird; der Build Pflichtteile, Status, Relationen und Quellen prüft; „gilt“ nur bei vollständigen Einträgen möglich ist; die Seite in Handybreite geprüft ist. Priorität „später“ nach deinem Ziel vom 14.11.: zuerst die Systementwicklung; das Werkbuch ist fachliche Erweiterung.",
           "stuetzt": [
             "gegenstand",
             "stufen",
@@ -1081,7 +1114,7 @@
           ],
           "offen": "Die 24 alten Einträge ziehen erst um, wenn die Liste von Codex da ist; die Pflege hängt an der Recherche bei ChatGPT.",
           "zurueck": "Eigener Branch und Pull Request; die Seite „Mit KI arbeiten“ bleibt unberührt.",
-          "prio": "jetzt"
+          "prio": "später"
         },
         {
           "id": "a-issues",
