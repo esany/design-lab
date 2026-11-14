@@ -11,7 +11,8 @@ import { readFileSync, writeFileSync, readdirSync, existsSync, statSync } from "
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { leseKopf, aktualisiereStand, pruefeLaenge, pruefeVerlaufseintrag } from "./gitter.mjs";
-import { pruefen as zielbildPruefen, erzeugen as zielbildErzeugen } from "./zielbild.mjs";
+import { pruefen as zielbildPruefen, erzeugen as zielbildErzeugen, dran as zielbildDran } from "./zielbild.mjs";
+import { pruefeFarbrollen, stileAusHtml } from "./farbrollen.mjs";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const check = process.argv.includes("--check");
@@ -402,30 +403,77 @@ outputs.set("verknuepfung.md", `# Verknüpfung — Anforderungen und Mechanismen
 ${[...reqs].map(([a, r]) => { const l = byReq.get(a); return `| ${a} | ${cell(r.titel)} | ${r.stand} | ${l.filter((x) => x.art === "Entscheidung").map(link).join(", ") || "—"} | ${l.filter((x) => x.art === "Skill").map(link).join(", ") || "—"} |`; }).join("\n")}
 `);
 
-// ---------- Zielbilder: Punkte als Daten, Seite erzeugt (0036, tools/zielbild.mjs) ----------
-// Jede Datei <ordner>/zielbild/punkte.json im Labor → <ordner>/zielbild/index.html. Eine Prüfung,
-// eine Vorlage für alle Zielbilder; Werke nutzen dasselbe Werkzeug aus einem Klon des Labors.
+// ---------- Das Zielbild des Labors (0036, tools/zielbild.mjs; Entwurf „ein Zielbild“, 14.11.) ----------
+// Das Labor hat genau ein Zielbild: zielbild/punkte.json, Stränge als Dimension. Jede andere Datei
+// …/zielbild/punkte.json im Labor ist ein Fehler, außer sie ist archiviert („archiviert“ im Kopf);
+// dann entsteht an ihrem Ort nur ein Hinweis auf das eine Zielbild. Werke bauen ihres in esany/werke.
+const LABOR_ZIELBILD = "zielbild/punkte.json";
 {
   const funde = [];
   (function suche(dir, rel) {
     for (const n of readdirSync(dir)) {
-      if (n.startsWith(".") || n === "node_modules" || n === "fixtures") continue;
+      if (n.startsWith(".") || n === "node_modules" || n === "fixtures" || n === "_site") continue;
       const voll = join(dir, n), r = rel ? `${rel}/${n}` : n;
       if (statSync(voll).isDirectory()) suche(voll, r);
-      else if (n === "punkte.json" && dirname(r).endsWith("zielbild")) funde.push(r);
+      else if (n === "punkte.json" && dirname(r).split("/").pop() === "zielbild") funde.push(r);
     }
   })(root, "");
-  const eintraege = [];
+  if (!funde.includes(LABOR_ZIELBILD)) errors.push(`${LABOR_ZIELBILD} fehlt: das Labor braucht sein eines Zielbild`);
+  let eintrag = "";
   for (const ZB of funde.sort()) {
-    try {
-      const z = JSON.parse(readFileSync(join(root, ZB), "utf8"));
-      const fehler = zielbildPruefen(z, ZB);
-      if (fehler.length) { errors.push(...fehler); continue; }
-      outputs.set(`${dirname(ZB)}/index.html`, zielbildErzeugen(z, { quelle: ZB }));
-      eintraege.push(`        <li><a href="${esc(dirname(ZB))}/">${esc(z.titel)}</a> <span class="meta">Iteration ${z.iteration} · Stand ${esc(z.stand.split("-").reverse().join("."))}</span></li>`);
-    } catch (e) { errors.push(`${ZB}: ${e.message}`); }
+    let z;
+    try { z = JSON.parse(readFileSync(join(root, ZB), "utf8")); } catch (e) { errors.push(`${ZB}: ${e.message}`); continue; }
+    const ordner = dirname(ZB);
+    if (ZB !== LABOR_ZIELBILD) {
+      if (!z.archiviert) { errors.push(`${ZB}: zweites Zielbild im Labor. Das Labor hat eines (${LABOR_ZIELBILD}); Neues gehört dort als Strang oder Teil hinein, ein Werk baut seines in esany/werke.`); continue; }
+      // Ohne Anker: Die Linkprüfung (lychee, --include-fragments) kennt nur Anker im HTML, nicht die Ansichten der Seite.
+      const ziel = "../".repeat(ordner.split("/").length) + "zielbild/";
+      outputs.set(`${ordner}/index.html`, `<!DOCTYPE html>
+<html lang="de">
+<head>
+<!-- Erzeugt von tools/build.mjs: ${esc(ZB)} ist archiviert. Nicht von Hand ändern. -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>${esc(z.titel)} – archiviert</title>
+<meta http-equiv="refresh" content="0; url=${esc(ziel)}">
+<link rel="stylesheet" href="${"../".repeat(ordner.split("/").length)}assets/tokens.css">
+<style>body{margin:0 auto;max-width:38rem;padding:24px 16px;font:1rem/1.5 var(--lab-font-sans);background:var(--lab-bg);color:var(--lab-fg)}</style>
+</head>
+<body>
+<p>„${esc(z.titel)}“ ist seit ${esc(z.archiviert.am.split("-").reverse().join("."))} Teil des <a href="${esc(ziel)}">Zielbilds des Labors</a>. Die Punkte stehen dort mit denselben Kennungen; die Daten dieser Seite bleiben als Herkunft in ${esc(ZB)}.</p>
+</body>
+</html>
+`);
+      continue;
+    }
+    // Verweise auf Fragen an den Eigentümer (daten/<thema>.json): Wortlaut und Antwort nur dort.
+    for (const t of z.teile ?? []) for (const p of t.punkte ?? []) {
+      if (!p.frage) continue;
+      const thema = String(p.frage).replace(/-f\d+$/, "");
+      const f = datenErgebnis.daten.get(thema)?.fragen?.find((x) => x.id === p.frage);
+      if (!f) { errors.push(`${ZB}: Punkt „${p.id}“ verweist auf unbekannte Frage „${p.frage}“`); continue; }
+      if (p.t) errors.push(`${ZB}: Punkt „${p.id}“ hat „frage“ und eigenen Satz „t“; der Wortlaut steht nur in daten/${thema}.json`);
+      p.t = f.frage;
+      const gestellt = f.gestellt.split("-").reverse().join(".");
+      p.k = [`Gestellt am ${gestellt}${f.notiz ? `; ${f.notiz}` : ""}.`, p.k].filter(Boolean).join(" ");
+      p.g = `daten/${thema}.json, ${f.id}.`;
+      if (f.antwort) { p.s = "bestaetigt"; p.bestaetigt = f.beantwortet; delete p.n; p.g += ` Deine Antwort: „${f.antwort}“`; }
+    }
+    if (!Array.isArray(z.straenge)) errors.push(`${ZB}: das Zielbild des Labors braucht „straenge“`);
+    const fehler = zielbildPruefen(z, ZB);
+    if (fehler.length) { errors.push(...fehler); continue; }
+    outputs.set(`${ordner}/index.html`, zielbildErzeugen(z, { quelle: ZB }));
+    const punkte = z.teile.flatMap((t) => t.punkte);
+    const du = punkte.filter((p) => zielbildDran(p) === "du").length;
+    eintrag = `        <li><a href="${esc(ordner)}/">${esc(z.titel)}</a> <span class="meta">${du} ${du === 1 ? "Punkt wartet" : "Punkte warten"} auf dich · ${punkte.length} Punkte in ${z.straenge.length} Strängen · Stand ${esc(z.stand.split("-").reverse().join("."))}</span></li>`;
   }
-  if (outputs.has("index.html")) outputs.set("index.html", outputs.get("index.html").replace("<!--ZIELBILDER-->", eintraege.join("\n") || "        <li>Noch keine Zielbilder.</li>"));
+  if (outputs.has("index.html")) outputs.set("index.html", outputs.get("index.html").replace("<!--ZIELBILDER-->", eintrag || "        <li>Noch kein Zielbild.</li>"));
+}
+
+// ---------- Farbe als Bedeutung: jede Farbrolle trägt genau eine Bedeutung (tools/farbrollen.mjs) ----------
+for (const datei of ["assets/lab.css", "tools/zielbild/vorlage.html", "tools/index.template.html"]) {
+  const text = readFileSync(join(root, datei), "utf8");
+  errors.push(...pruefeFarbrollen(datei.endsWith(".css") ? text : stileAusHtml(text), datei));
 }
 
 // ---------- Stand aus den Merkzetteln ----------

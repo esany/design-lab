@@ -6,132 +6,221 @@
 <title>/*TITEL*/ – was /*VON*/ verstanden hat</title>
 <style>
 /*TOKENS*/
+/* Farbe trägt Bedeutung: --signal nur „du bist dran“, --bestaetigt nur „von dir bestätigt“,
+   --offen nur „Vorschlag oder Hypothese“. Befund, Änderung und Zahlen in Grundfarbe und Form.
+   Geprüft von tools/farbrollen.mjs. */
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--fg);font:1rem/1.5 var(--sans)}
-main{max-width:38rem;margin:0 auto;padding:24px 16px 96px}
+main{max-width:38rem;margin:0 auto;padding:24px 16px 112px}
 h1{font-size:2rem;line-height:1.1;margin:0 0 8px;letter-spacing:-.01em}
+h2{font-size:1.25rem;margin:40px 0 0;padding-top:16px;border-top:2px solid var(--fg)}
+h3{font-size:1.125rem;line-height:1.3;margin:8px 0 0}
+h4{font:700 .875rem/1.4 var(--sans);margin:24px 0 0}
+h2 .klein{display:block;margin-top:4px}
+a{color:inherit;text-underline-offset:.2em}
+:focus-visible{outline:2px solid var(--fg);outline-offset:2px}
 .lede{margin:0 0 8px}
-.meta{font:.8125rem/1.4 var(--mono);color:var(--muted);margin:0}
+.meta,.klein{font:.8125rem/1.4 var(--mono);color:var(--muted);margin:0}
+.bilanz{font:.8125rem/1.5 var(--mono);margin:12px 0 0}
 .legende{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0;padding:0;list-style:none}
-.chip{font:.75rem/1 var(--mono);padding:5px 8px;border:1px solid var(--line);border-radius:999px;white-space:nowrap}
-.chip.bestaetigt{border-color:var(--ok);color:var(--ok)}
-.chip.ableitung{border-color:var(--muted);color:var(--muted)}
-.chip.vorschlag{border-color:var(--warn);color:var(--warn)}
-.punkt.wandel-an{border-left:3px solid var(--accent);padding-left:14px}
-.punkt.wandel-an[data-n="ergänzt"]{border-left:2px solid var(--muted)}
-.aend{font:.75rem/1 var(--mono);color:var(--accent);margin-left:6px}
-.aend.erg{color:var(--muted)}
-.stuetzt{list-style:none;padding:0;margin:6px 0 0;font-size:.875rem}
-.stuetzt li{padding:3px 0;display:grid;grid-template-columns:5.5rem 1fr}
-.stuetzt span{font:.6875rem/1.9 var(--mono)}
-.stuetzt .st{font:inherit!important;color:inherit!important}
-.stuetzt .ja span{color:var(--ok)}
-.stuetzt .nein span{color:var(--accent)}
-.fest-mark{font:.75rem/1 var(--mono);color:var(--ok);margin-left:6px}
-.punkt.fest h3{font-weight:400;font-size:1rem}
-.punkt.fest{padding:12px 0}
-.wandel{display:grid;grid-template-columns:3.75rem 1fr;gap:6px 12px;margin:12px 0 4px}
-.wandel dt{font:.75rem/1.55 var(--mono);color:var(--muted);padding-top:2px}
-.wandel dd{margin:0;font-size:.9375rem;line-height:1.45}
-.wandel .vorher{color:var(--muted)}
-.wandel .du{border-left:1px solid var(--fg);padding-left:10px}
-.wandel .du q{quotes:"„" "“"}
-.bilanz{font:.8125rem/1.4 var(--mono);color:var(--accent);margin:12px 0 0}
-.chip.befund{border-color:var(--accent);color:var(--accent)}
-.filter{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0}
+.chip{display:inline-block;max-width:100%;font:.75rem/1.3 var(--mono);padding:3px 8px;border:1px solid var(--line);border-radius:12px;margin:0 4px 4px 0;color:var(--muted)}
+.chip.bestaetigt{border-color:var(--bestaetigt);color:var(--bestaetigt)}
+.chip.vorschlag,.chip.ableitung{border-color:var(--offen);color:var(--offen)}
+.chip.befund{border-color:var(--fg);color:var(--fg)}
+.chip.dran{border-color:var(--signal);background:var(--signal);color:#fff}
+.chip.strang{border-style:dashed}
+.marke{font:.75rem/1 var(--mono);margin:0 6px 0 2px;color:var(--fg)}
+.fest-mark{font:.75rem/1 var(--mono);color:var(--bestaetigt);margin:0 6px 0 2px}
+.ansichten{display:flex;gap:0;margin:24px 0 0;border-bottom:1px solid var(--fg)}
+.ansichten button{font:700 .9375rem var(--sans);background:none;color:var(--muted);border:0;border-bottom:3px solid transparent;padding:10px 12px 8px;cursor:pointer;margin-bottom:-1px}
+.ansichten button[aria-selected=true]{color:var(--fg);border-bottom-color:var(--fg)}
+.ansichten .zahl-dran{display:inline-block;min-width:1.5em;margin-left:6px;padding:1px 6px;border-radius:999px;background:var(--signal);color:#fff;font:.75rem/1.4 var(--mono)}
+.filter{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 0}
 .filter button{font:.8125rem var(--sans);background:none;color:var(--fg);border:1px solid var(--line);border-radius:999px;padding:6px 12px;cursor:pointer}
 .filter button[aria-pressed=true]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
-h2{font-size:1.25rem;margin:40px 0 0;padding-top:16px;border-top:2px solid var(--fg)}
+.filter-titel{font:.75rem/1 var(--mono);color:var(--muted);width:100%;margin:8px 0 -2px}
 .punkt{padding:16px 0;border-bottom:1px solid var(--line)}
-.punkt h3{font-size:1.125rem;line-height:1.3;margin:8px 0 0;font-weight:700}
 .punkt p{margin:6px 0 0}
+.punkt.wandel{border-left:2px solid var(--fg);padding-left:14px}
+.punkt.dran{border-left:4px solid var(--signal);padding-left:12px}
+.punkt.fest h3{font-weight:400;font-size:1rem}
+.punkt.fest{padding:12px 0}
+.punkt.ziel{background:color-mix(in srgb,var(--fg) 6%,transparent)}
+.wandel-dl{display:grid;grid-template-columns:3.75rem 1fr;gap:6px 12px;margin:12px 0 4px}
+.wandel-dl dt{font:.75rem/1.55 var(--mono);color:var(--muted);padding-top:2px}
+.wandel-dl dd{margin:0;font-size:.9375rem;line-height:1.45}
+.wandel-dl .vorher{color:var(--muted)}
+.wandel-dl .du{border-left:1px solid var(--fg);padding-left:10px}
+.wandel-dl .du q{quotes:"„" "“"}
+.bezug{list-style:none;padding:0;margin:6px 0 0;font-size:.875rem}
+.bezug li{padding:3px 0;display:grid;grid-template-columns:5.5rem 1fr;gap:8px}
+.bezug .w{font:.6875rem/1.9 var(--mono);color:var(--muted)}
+.bezug .w.fest{color:var(--bestaetigt)}
+.bezug .w.dran{color:var(--signal)}
+.bezug .s{font:.6875rem var(--mono);color:var(--muted)}
+.bezug .warum{display:block;font-size:.8125rem;color:var(--muted);margin-top:2px}
+.bezug .warum.ableitung{color:var(--offen)}
 details{margin-top:8px}
 summary{cursor:pointer;font-weight:700;font-size:.875rem;width:fit-content}
-summary:hover{color:var(--accent)}
+summary:hover{text-decoration:underline}
 details p{color:var(--muted);font-size:.9375rem}
 .urteil{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap;align-items:center}
 .urteil button{font:.875rem var(--sans);background:none;color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:8px 14px;cursor:pointer;min-height:40px}
-.urteil button.an[data-v=passt]{background:var(--ok);border-color:var(--ok);color:var(--bg)}
-.urteil button.an[data-v=besser]{background:var(--accent);border-color:var(--accent);color:#fff}
+.urteil button.an[data-v=passt]{background:var(--bestaetigt);border-color:var(--bestaetigt);color:var(--bg)}
+.urteil button.an[data-v=besser]{background:var(--fg);border-color:var(--fg);color:var(--bg)}
+.prio{display:flex;gap:6px;align-items:center;margin-top:8px;flex-wrap:wrap}
+.prio span{font:.75rem var(--mono);color:var(--muted)}
+.prio button{font:.75rem var(--mono);background:none;color:var(--fg);border:1px solid var(--line);border-radius:999px;padding:4px 10px;cursor:pointer;min-height:32px}
+.prio button.an{background:var(--fg);color:var(--bg);border-color:var(--fg)}
 textarea{width:100%;margin-top:8px;font:.9375rem var(--sans);color:var(--fg);background:transparent;border:1px solid var(--line);border-radius:8px;padding:8px;min-height:64px;display:none}
-textarea.zeigen{display:block}
+textarea.zeigen,textarea.immer{display:block}
+.kurz{list-style:none;padding:0;margin:8px 0 0}
+.kurz li{padding:6px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1rem 1fr;gap:8px;font-size:.9375rem;line-height:1.4}
+.kurz li::before{content:"";width:8px;height:8px;margin-top:6px;border:1px solid var(--muted);border-radius:50%}
+.kurz li.dran::before{background:var(--signal);border-color:var(--signal)}
+.kurz li.fest::before{background:var(--bestaetigt);border-color:var(--bestaetigt)}
+.kurz li.vorschlag::before{background:var(--offen);border-color:var(--offen)}
+.kurz .wer{font:.75rem var(--mono);color:var(--muted);display:block}
+.kopf-strang{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.leer{color:var(--muted);font-size:.9375rem;margin:8px 0 0}
 .leiste{position:sticky;bottom:0;background:var(--bg);border-top:1px solid var(--line);padding:12px 16px;display:flex;gap:12px;align-items:center;justify-content:space-between;max-width:38rem;margin:0 auto}
 .leiste button{font:.9375rem var(--sans);background:var(--fg);color:var(--bg);border:0;border-radius:8px;padding:10px 16px;cursor:pointer}
 .leiste .stand{font:.8125rem var(--mono);color:var(--muted)}
 .ausgabe{display:none;margin-top:16px;white-space:pre-wrap;font:.875rem/1.5 var(--mono);border:1px solid var(--line);border-radius:8px;padding:12px}
 .ausgabe.zeigen{display:block}
 .hinweis{font-size:.8125rem;color:var(--muted)}
+[hidden]{display:none!important}
 </style>
 </head>
 <body>
 <main>
 <p class="meta">/*ORT*/ · Zielbild, Iteration&nbsp;/*ITERATION*/ · Stand /*STAND*/</p>
 <h1>/*TITEL*/</h1>
-<p class="lede">Die Seite zeigt zuerst, was du prüfen sollst: neu, geändert oder noch nicht bestätigt. Rot am Rand heißt geändert, darunter steht, was vorher galt und was du gesagt hast. Bestätigtes steht im aktuellen Zielbild, bis es sich ändert.</p>
-<ul class="legende" aria-label="Legende">
-<li class="chip bestaetigt">von dir gesagt</li>
-<li class="chip ableitung">meine Ableitung</li>
-<li class="chip vorschlag">Vorschlag, du entscheidest</li>
-<li class="chip befund">Befund, Lösung offen</li>
+<p class="lede">Eine Seite für alles, was gilt, läuft und offen ist. Du beginnst bei „Du bist dran“. Ein Punkt erscheint überall mit demselben Stand; dein Urteil an einer Stelle gilt für alle.</p>
+<ul class="legende" aria-label="Was die Farben heißen">
+<li class="chip dran">du bist dran</li>
+<li class="chip bestaetigt">von dir bestätigt</li>
+<li class="chip vorschlag">Vorschlag oder Hypothese</li>
+<li class="chip befund">Befund</li>
 </ul>
 <p class="bilanz" id="bilanz"></p>
-<div class="filter" role="group" aria-label="Filter">
-<button aria-pressed="false" data-f="pruefen">zur Prüfung</button><button aria-pressed="false" data-f="zielbild">aktuelles Zielbild</button><button aria-pressed="true" data-f="alle">alle</button>
-<button aria-pressed="false" data-f="bestaetigt">von dir</button>
-<button aria-pressed="false" data-f="ableitung">Ableitung</button>
-<button aria-pressed="false" data-f="vorschlag">Vorschlag</button>
-<button aria-pressed="false" data-f="befund">Befund</button>
-<button aria-pressed="false" data-f="auftrag">Aufträge</button><button aria-pressed="false" data-f="impuls">Eingang</button><button aria-pressed="false" data-f="freigabe">Freigabe</button>
+<div class="ansichten" role="tablist" aria-label="Ansicht">
+<button role="tab" data-a="du" aria-selected="true">Du bist dran<span class="zahl-dran" id="zahl-dran"></span></button><button role="tab" data-a="stand" aria-selected="false">Stand</button><button role="tab" data-a="alles" aria-selected="false">Alles</button>
 </div>
+<div class="filter" id="straenge" role="group" aria-label="Strang"></div>
+<div class="filter" id="art" role="group" aria-label="Art" hidden></div>
 <div id="inhalt"></div>
 <pre class="ausgabe" id="ausgabe"></pre>
-<p class="hinweis">Diese Seite ist ein Prototyp. Deine Markierungen bleiben nur in diesem Browser; was zählt, ist die kopierte Rückmeldung im Chat.</p>
+<p class="hinweis">Deine Markierungen bleiben nur in diesem Browser; was zählt, ist die kopierte Rückmeldung im Chat. Ein Sammelurteil gilt nicht als „passt“ für Punkte, die du nicht einzeln markiert hast.</p>
 </main>
 <div class="leiste"><span class="stand" id="stand">0 markiert</span><button id="kopieren">Rückmeldung kopieren</button></div>
 <script>
-const LABEL={bestaetigt:"von dir gesagt",ableitung:"meine Ableitung",vorschlag:"Vorschlag, du entscheidest",befund:"Befund, Lösung offen",offen:"offen, du entscheidest",freigabe:"wartet auf Freigabe",impuls:"Impuls"};
-const DATEN=/*DATEN*/;
+const LABEL={bestaetigt:"von dir gesagt",ableitung:"meine Ableitung",vorschlag:"Vorschlag",befund:"Befund",offen:"Frage an dich",freigabe:"Freigabe",impuls:"Eingang",auftrag:"Auftrag"};
+const ROLLE={bestaetigt:"bestaetigt",ableitung:"ableitung",vorschlag:"vorschlag",befund:"befund"};
+const rolle=p=>p.s==="bestaetigt"&&!fest(p)?"":ROLLE[p.s]||"";
+const ARTEN=[["alle","alle"],["bestaetigt","von dir"],["ableitung","Ableitung"],["vorschlag","Vorschlag"],["befund","Befund"],["auftrag","Aufträge"],["impuls","Eingang"],["frage","Fragen und Freigaben"]];
+const PRIOS=["jetzt","später","parken"];
+const D=/*DATEN*/;
 const KEY="/*SCHLUESSEL*/-v/*ITERATION*/";
 let urteil={};try{urteil=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){}
 const speichern=()=>{try{localStorage.setItem(KEY,JSON.stringify(urteil))}catch(e){}};
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"})[c]);
-const ALLE=Object.fromEntries(DATEN.flatMap(t=>t.punkte).map(p=>[p.id,p]));
+const STRANG=Object.fromEntries(D.straenge.map(s=>[s.id,s]));
+const PUNKTE=D.teile.flatMap(t=>t.punkte.map(p=>({...p,teil:t.teil,heim:t.strang,straenge:[t.strang,...(p.auch||[])]})));
+const ALLE=Object.fromEntries(PUNKTE.map(p=>[p.id,p]));
+const TRAEGT={};PUNKTE.forEach(p=>(p.stuetzt||[]).forEach(i=>(TRAEGT[i]=TRAEGT[i]||[]).push(p.id)));
+const fest=p=>!!(p.bestaetigt&&!p.n);
+const duDran=p=>p.dran==="du";
+const pruefen=p=>!duDran(p)&&!!p.n&&p.s!=="auftrag";
+const prioRang=p=>{const v=(urteil[p.id]||{}).p||p.prio;return v==="jetzt"?0:!v?1:v==="später"?2:3};
+const strangOrd=Object.fromEntries(D.straenge.map((s,i)=>[s.id,i]));
+let zustand={a:"du",strang:"",art:"alle"};
+function lesenHash(){const h=new URLSearchParams(location.hash.slice(1).replace(/^(du|stand|alles)(&|$)/,"a=$1$2"));if(["du","stand","alles"].includes(h.get("a")))zustand.a=h.get("a");if(h.get("strang")&&STRANG[h.get("strang")])zustand.strang=h.get("strang");}
+const imStrang=p=>!zustand.strang||p.straenge.includes(zustand.strang);
+const strangName=id=>STRANG[id]?STRANG[id].name:id;
+function strangChips(p){if(D.einStrang)return"";return `<span class="chip strang">${esc(strangName(p.heim))}</span>`+(p.auch||[]).map(a=>`<span class="chip strang" title="Schnittstelle: derselbe Punkt, auch in diesem Strang">auch ${esc(strangName(a))}</span>`).join("");}
+function wort(p){if(p.s==="auftrag")return fest(p)?"bestätigt":p.stand;if(duDran(p))return"du dran";if(fest(p))return"bestätigt";return LABEL[p.s];}
+function wortKlasse(p){return duDran(p)?"dran":fest(p)?"fest":""}
+function bezugListe(ids,titel,warum){if(!ids||!ids.length)return"";return `<details${titel==="Beruht auf"&&ids.some(i=>ALLE[i]&&!fest(ALLE[i]))?" open":""}><summary>${titel} (${ids.length})</summary><ul class="bezug">${ids.map(i=>{const q=ALLE[i];if(!q)return `<li><span class="w">unbekannt</span><span>${esc(i)}</span></li>`;return `<li><span class="w ${wortKlasse(q)}">${esc(wort(q))}</span><span><a href="#" data-ziel="${esc(q.id)}">${esc(q.t)}</a>${!D.einStrang?` <span class="s">${esc(strangName(q.heim))}</span>`:""}${warum&&warum[i]?`<span class="${/^abgeleitet/i.test(warum[i])?"warum ableitung":"warum"}">${esc(warum[i])}</span>`:""}</span></li>`}).join("")}</ul></details>`;}
+function knoepfe(p){const u=urteil[p.id]||{};const a=p.s==="auftrag",selbst=a&&p.stand!=="startklar";const l1=selbst?"erledigt":a||p.s==="freigabe"?"freigeben":p.s==="impuls"?"einverstanden":p.s==="offen"?"beantwortet":"passt";const l2=selbst?"Frage dazu":a||p.s==="freigabe"||p.s==="impuls"?"anders":p.s==="offen"?"Antwort":"muss besser";
+ const prio=duDran(p)?`<div class="prio"><span>Priorität${p.prio?` (Vorschlag: ${esc(p.prio)})`:""}:</span>${PRIOS.map(v=>`<button data-id="${esc(p.id)}" data-p="${v}" class="${u.p===v?"an":""}" aria-pressed="${u.p===v}">${v}</button>`).join("")}</div>`:"";
+ return `<div class="urteil"><button data-id="${esc(p.id)}" data-v="passt" class="${u.v==="passt"?"an":""}" aria-pressed="${u.v==="passt"}">${l1}</button><button data-id="${esc(p.id)}" data-v="besser" class="${u.v==="besser"?"an":""}" aria-pressed="${u.v==="besser"}">${l2}</button></div>${prio}<textarea data-id="${esc(p.id)}" aria-label="Notiz" class="${u.v||u.n?"zeigen":""}" placeholder="Was genau? (optional)">${esc(u.n||"")}</textarea>`;}
+function karte(p,mitId){
+ const idAttr=mitId?` id="p-${esc(p.id)}"`:"";const dd=p.bestaetigt?p.bestaetigt.slice(8,10)+"."+p.bestaetigt.slice(5,7)+".":"";
+ const rel=bezugListe(p.stuetzt,"Beruht auf",p.stuetzt_warum)+bezugListe(TRAEGT[p.id],"Trägt",Object.fromEntries((TRAEGT[p.id]||[]).map(i=>[i,(ALLE[i].stuetzt_warum||{})[p.id]]).filter(([,w])=>w)));
+ if(fest(p)&&!duDran(p)){return `<article class="punkt fest"${idAttr}><span class="chip ${rolle(p)}">${esc(LABEL[p.s])}</span><span class="fest-mark">bestätigt ${dd}</span>${strangChips(p)}<h3>${esc(p.t)}</h3>${p.k||p.g||rel?`<details><summary>Mehr</summary>${p.k?`<p>${esc(p.k)}</p>`:""}${p.g?`<p>${esc(p.g)}</p>`:""}${rel}</details>`:""}</article>`;}
+ const kl=["punkt",duDran(p)?"dran":p.n?"wandel":""].filter(Boolean).join(" ");
+ const status=p.s==="auftrag"?`<span class="chip">Auftrag · ${p.stand==="startklar"?"wartet auf deine Freigabe":esc(p.stand)} · ${esc(p.wer)}</span>`:`<span class="chip ${rolle(p)}">${esc(LABEL[p.s])}</span>`;
+ const dranChip=duDran(p)?`<span class="chip dran">du bist dran</span>`:p.dran&&p.s!=="auftrag"?`<span class="chip">dran: ${esc(p.dran)}</span>`:"";
+ const marke=p.n?`<span class="marke">${p.n==="ergänzt"?"ergänzt":p.v?"geändert":"neu"}</span>`:"";
+ const wandel=p.f?`<dl class="wandel-dl">${p.v===p.t?"":`<dt>vorher</dt><dd class="vorher">${p.v?esc(p.v):"nicht da"}</dd>`}<dt>du</dt><dd class="du"><q>${esc(p.f)}</q></dd></dl>`:"";
+ const zeigeUrteil=p.s!=="auftrag"||p.stand==="startklar"||duDran(p);
+ return `<article class="${kl}"${idAttr}>${dranChip}${status}${marke}${strangChips(p)}<h3>${esc(p.t)}</h3>${wandel}${p.k?`<p>${esc(p.k)}</p>`:""}${p.offen?`<p class="hinweis">Bewusst offen: ${esc(p.offen)}</p>`:""}${p.zurueck?`<p class="hinweis">Rückgängig: ${esc(p.zurueck)}</p>`:""}${p.g?`<details><summary>Worauf das beruht</summary><p>${esc(p.g)}</p></details>`:""}${rel}${zeigeUrteil?knoepfe(p):""}</article>`;}
+function kurz(p){const kl=duDran(p)?"dran":fest(p)?"fest":["vorschlag","ableitung"].includes(p.s)?"vorschlag":"";const wer=p.s==="auftrag"?`${p.wer} · ${p.stand}`:p.dran&&!duDran(p)?`dran: ${p.dran}`:"";return `<li class="${kl}"><span><a href="#" data-ziel="${esc(p.id)}">${esc(p.t)}</a>${wer?`<span class="wer">${esc(wer)}</span>`:""}</span></li>`;}
+function ansichtDu(){
+ const ent=PUNKTE.filter(p=>duDran(p)&&imStrang(p)).sort((a,b)=>prioRang(a)-prioRang(b)||strangOrd[a.heim]-strangOrd[b.heim]);
+ const pr=PUNKTE.filter(p=>pruefen(p)&&imStrang(p));
+ const gruppen=D.straenge.map(s=>[s,pr.filter(p=>p.heim===s.id)]).filter(([,l])=>l.length);
+ const sammel=(urteil._alle||{}).n||"";
+ return `<h2>Entscheiden <span class="klein">${ent.length} ${ent.length===1?"Punkt":"Punkte"}, geordnet nach Priorität</span></h2>${ent.length?`<label class="klein" for="sammel">Zu allen offenen Punkten auf einmal (optional)</label><textarea id="sammel" class="immer" data-id="_alle" placeholder="z. B. Reihenfolge, was warten kann, was dich gerade beschäftigt">${esc(sammel)}</textarea>`:""}${ent.map(p=>karte(p,false)).join("")||`<p class="leer">Gerade nichts für dich.</p>`}
+ <h2>Prüfen, wenn du magst <span class="klein">${pr.length} seit deiner Rückmeldung geändert oder neu</span></h2>${gruppen.map(([s,l])=>`${D.einStrang?"":`<h4>${esc(s.name)} · Iteration ${s.iteration}${s.rueckmeldung?` · deine Rückmeldung ${esc(s.rueckmeldung)}`:""}</h4>`}${l.map(p=>karte(p,false)).join("")}`).join("")||`<p class="leer">Nichts geändert.</p>`}`;}
+function ansichtStand(){
+ return D.straenge.filter(s=>!zustand.strang||zustand.strang===s.id).map(s=>{
+  const L=PUNKTE.filter(p=>p.straenge.includes(s.id));
+  const du=L.filter(duDran),lauf=L.filter(p=>p.s==="auftrag"&&!duDran(p)&&p.stand!=="fertig"&&p.dran),
+   gilt=L.filter(p=>fest(p)&&!duDran(p)),fertig=L.filter(p=>p.s==="auftrag"&&p.stand==="fertig"),
+   offen=L.filter(p=>!duDran(p)&&!fest(p)&&p.s!=="auftrag"),schnitt=L.filter(p=>p.auch&&p.auch.length||p.heim!==s.id),
+   quer=L.filter(p=>[...(p.stuetzt||[]),...(TRAEGT[p.id]||[])].some(i=>ALLE[i]&&!ALLE[i].straenge.includes(s.id)));
+  const sek=(t,l,zu)=>l.length?`<h4>${t} (${l.length})</h4>${zu?`<details><summary>zeigen</summary><ul class="kurz">${l.map(kurz).join("")}</ul></details>`:`<ul class="kurz">${l.map(kurz).join("")}</ul>`}`:"";
+  return `<section><div class="kopf-strang"><h2>${esc(s.name)}</h2></div><p class="meta">Iteration ${s.iteration}${s.rueckmeldung?` · deine letzte Rückmeldung ${esc(s.rueckmeldung)}`:""} · ${du.length} für dich · ${lauf.length} ${lauf.length===1?"Auftrag läuft":"Aufträge laufen"} · ${gilt.length} bestätigt</p>${sek("Du bist dran",du)}${sek("Läuft",lauf)}${sek("Offen gedacht, nicht entschieden",offen,true)}${D.einStrang?"":sek("Hängt mit anderen Strängen zusammen",[...new Set([...schnitt,...quer])],true)}${sek("Gilt, von dir bestätigt",gilt,true)}${sek("Erledigt",fertig,true)}</section>`}).join("");}
+function passtArt(p){const a=zustand.art;return a==="alle"||(a==="frage"?["offen","freigabe"].includes(p.s):p.s===a)}
+function ansichtAlles(){
+ const S=D.straenge.filter(s=>!zustand.strang||zustand.strang===s.id);
+ return S.map(s=>{const teile=D.teile.filter(t=>t.strang===s.id).map(t=>[t.teil,PUNKTE.filter(p=>p.teil===t.teil&&p.heim===s.id&&passtArt(p))]).filter(([,l])=>l.length);
+  const fremd=zustand.strang?PUNKTE.filter(p=>p.heim!==s.id&&p.straenge.includes(s.id)&&passtArt(p)):[];
+  if(!teile.length&&!fremd.length)return"";
+  return `<section>${D.einStrang?"":`<h2>${esc(s.name)} <span class="klein">Iteration ${s.iteration}</span></h2>`}${teile.map(([t,l])=>`<h4>${esc(t)}</h4>${l.map(p=>karte(p,true)).join("")}`).join("")}${fremd.length?`<h4>Schnittstellen aus anderen Strängen</h4>${fremd.map(p=>karte(p,true)).join("")}`:""}</section>`}).join("")||`<p class="leer">Keine Punkte für diese Auswahl.</p>`;}
+function filterLeisten(){
+ const st=document.getElementById("straenge");st.hidden=D.einStrang;
+ st.innerHTML=`<span class="filter-titel">Strang</span><button data-strang="" aria-pressed="${!zustand.strang}">alle</button>`+D.straenge.map(s=>`<button data-strang="${esc(s.id)}" aria-pressed="${zustand.strang===s.id}">${esc(s.name)}</button>`).join("");
+ const ar=document.getElementById("art");ar.hidden=zustand.a!=="alles";
+ ar.innerHTML=`<span class="filter-titel">Art</span>`+ARTEN.map(([k,l])=>`<button data-art="${k}" aria-pressed="${zustand.art===k}">${l}</button>`).join("");}
 function render(){
- const h=DATEN.map(t=>`<section data-teil><h2>${esc(t.teil)}</h2>${t.punkte.map(p=>{
-  const u=urteil[p.id]||{};
-  if(p.s==="auftrag"){const L=(p.stuetzt||[]).map(i=>{const q=ALLE[i];const ok=q&&q.bestaetigt&&!q.n;return `<li class="${ok?"ja":"nein"}"><span>${ok?"bestätigt":"offen"}</span><span class="st">${esc(q?q.t:i)}</span></li>`}).join("");const sk=p.stand==="startklar";return `<article class="punkt auftrag${sk?" wandel-an":""}" data-s="auftrag" id="${p.id}"><span class="chip vorschlag">Auftrag · ${esc(p.stand)} · ${esc(p.wer)}</span><h3>${esc(p.t)}</h3>${p.k?`<p>${esc(p.k)}</p>`:""}${L?`<details${sk||p.stand==="vorbereitet"?" open":""}><summary>Beruht auf</summary><ul class="stuetzt">${L}</ul></details>`:""}${p.offen?`<p class="hinweis">Bewusst offen: ${esc(p.offen)}</p>`:""}${p.zurueck?`<p class="hinweis">Rückgängig: ${esc(p.zurueck)}</p>`:""}${sk?`<div class="urteil"><button data-id="${p.id}" data-v="passt" class="${u.v==="passt"?"an":""}" aria-pressed="${u.v==="passt"}">freigeben</button><button data-id="${p.id}" data-v="besser" class="${u.v==="besser"?"an":""}" aria-pressed="${u.v==="besser"}">anders</button></div><textarea data-id="${p.id}" aria-label="Notiz" class="${u.v||u.n?"zeigen":""}" placeholder="Was genau? (optional)">${esc(u.n||"")}</textarea>`:""}</article>`}
-  if(p.bestaetigt&&!p.n){const dd=p.bestaetigt.slice(8,10)+"."+p.bestaetigt.slice(5,7)+".";return `<article class="punkt fest" data-s="${p.s}" data-z="1" id="${p.id}"><span class="chip ${p.s==="offen"||p.s==="freigabe"||p.s==="impuls"?"vorschlag":p.s}">${LABEL[p.s]}</span><span class="fest-mark">bestätigt ${dd}</span><h3>${esc(p.t)}</h3>${p.k||p.g?`<details><summary>Mehr</summary>${p.k?`<p>${esc(p.k)}</p>`:""}${p.g?`<p>${esc(p.g)}</p>`:""}</details>`:""}</article>`}
-  return `<article class="punkt${p.n?" wandel-an":""}" data-s="${p.s}"${p.n?` data-n="${p.n}"`:""} id="${p.id}"><span class="chip ${p.s==="offen"||p.s==="freigabe"||p.s==="impuls"?"vorschlag":p.s}">${LABEL[p.s]}${p.prio?" · Vorschlag: "+p.prio:""}</span>${p.n?`<span class="aend${p.n==="ergänzt"?" erg":""}">${p.n==="ergänzt"?"ergänzt":p.v?"geändert":"neu"}</span>`:""}<h3>${esc(p.t)}</h3>${p.f?`<dl class="wandel">${p.v===p.t?"":`<dt>vorher</dt><dd class="vorher">${p.v?esc(p.v):"nicht da"}</dd>`}<dt>du</dt><dd class="du"><q>${esc(p.f)}</q></dd></dl>`:""}${p.k?`<p>${esc(p.k)}</p>`:""}${p.g?`<details><summary>Worauf das beruht</summary><p>${esc(p.g)}</p></details>`:""}<div class="urteil"><button data-id="${p.id}" data-v="passt" class="${u.v==="passt"?"an":""}" aria-pressed="${u.v==="passt"}">${p.s==="freigabe"?"freigeben":p.s==="impuls"?"einverstanden":p.s==="offen"?"beantwortet":"passt"}</button><button data-id="${p.id}" data-v="besser" class="${u.v==="besser"?"an":""}" aria-pressed="${u.v==="besser"}">${p.s==="freigabe"||p.s==="impuls"?"anders":p.s==="offen"?"Antwort":"muss besser"}</button></div><textarea data-id="${p.id}" aria-label="Notiz" class="${u.v||u.n?"zeigen":""}" placeholder="Was genau? (optional)">${esc(u.n||"")}</textarea></article>`}).join("")}</section>`).join("");
- document.getElementById("inhalt").innerHTML=h;const alle=DATEN.flatMap(t=>t.punkte),fest=alle.filter(p=>p.bestaetigt&&!p.n).length,auf=alle.filter(p=>p.s==="auftrag").length,ne=alle.filter(p=>p.n&&!p.v).length,ge=alle.filter(p=>p.n&&p.v).length;document.getElementById("bilanz").textContent=`Nach deiner Rückmeldung vom /*RUECKMELDUNG*/: ${auf} Aufträge, ${alle.length-fest-auf} Punkte zur Prüfung (${ge} geändert oder ergänzt, ${ne} neu), ${fest} im aktuellen Zielbild bestätigt.`;zaehlen();
-}
-function zaehlen(){const n=Object.values(urteil).filter(u=>u.v||u.n).length;document.getElementById("stand").textContent=n+" markiert";}
-document.getElementById("inhalt").addEventListener("click",e=>{
+ document.querySelectorAll(".ansichten button").forEach(b=>b.setAttribute("aria-selected",b.dataset.a===zustand.a));
+ filterLeisten();
+ document.getElementById("inhalt").innerHTML=zustand.a==="du"?ansichtDu():zustand.a==="stand"?ansichtStand():ansichtAlles();
+ const du=PUNKTE.filter(duDran).length,pr=PUNKTE.filter(pruefen).length,lauf=PUNKTE.filter(p=>p.s==="auftrag"&&!duDran(p)&&p.stand!=="fertig"&&p.dran).length,f=PUNKTE.filter(p=>fest(p)&&!duDran(p)).length;
+ document.getElementById("zahl-dran").textContent=du;
+ document.getElementById("bilanz").textContent=`${PUNKTE.length} Punkte${D.einStrang?"":` in ${D.straenge.length} Strängen`}: ${du} für dich zu entscheiden, ${pr} seit deiner Rückmeldung geändert oder neu, ${lauf} Aufträge bei anderen, ${f} von dir bestätigt.`;
+ zaehlen();}
+function zaehlen(){const n=Object.entries(urteil).filter(([k,u])=>k!=="_alle"&&(u.v||u.n||u.p)).length+((urteil._alle||{}).n?1:0);document.getElementById("stand").textContent=n+" markiert";}
+function zeige(id){zustand={a:"alles",strang:"",art:"alle"};history.replaceState(null,"","#alles");render();const el=document.getElementById("p-"+id);if(!el)return;document.querySelectorAll(".punkt.ziel").forEach(x=>x.classList.remove("ziel"));el.classList.add("ziel");el.scrollIntoView({block:"start"});el.querySelectorAll("details").forEach(d=>d.open=true);}
+document.querySelector(".ansichten").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;zustand.a=b.dataset.a;history.replaceState(null,"","#"+zustand.a+(zustand.strang?"&strang="+zustand.strang:""));render();});
+document.getElementById("straenge").addEventListener("click",e=>{const b=e.target.closest("button[data-strang]");if(!b)return;zustand.strang=b.dataset.strang;history.replaceState(null,"","#"+zustand.a+(zustand.strang?"&strang="+zustand.strang:""));render();});
+document.getElementById("art").addEventListener("click",e=>{const b=e.target.closest("button[data-art]");if(!b)return;zustand.art=b.dataset.art;render();});
+const inhalt=document.getElementById("inhalt");
+inhalt.addEventListener("click",e=>{
+ const z=e.target.closest("a[data-ziel]");if(z){e.preventDefault();zeige(z.dataset.ziel);return;}
  const b=e.target.closest("button[data-id]");if(!b)return;
- const id=b.dataset.id,v=b.dataset.v,u=urteil[id]||{};
- u.v=u.v===v?"":v;urteil[id]=u;speichern();
+ const id=b.dataset.id,u=urteil[id]||{};
+ if(b.dataset.p){u.p=u.p===b.dataset.p?"":b.dataset.p;urteil[id]=u;speichern();b.parentElement.querySelectorAll("button").forEach(x=>{const on=x.dataset.p===u.p;x.classList.toggle("an",on);x.setAttribute("aria-pressed",on)});zaehlen();return;}
+ const v=b.dataset.v;u.v=u.v===v?"":v;urteil[id]=u;speichern();
  b.parentElement.querySelectorAll("button").forEach(x=>{const on=x.dataset.v===u.v;x.classList.toggle("an",on);x.setAttribute("aria-pressed",on)});
  const ta=b.closest(".punkt").querySelector("textarea");ta.classList.add("zeigen");if(u.v==="besser")ta.focus();zaehlen();
 });
-document.getElementById("inhalt").addEventListener("input",e=>{const t=e.target;if(t.tagName!=="TEXTAREA")return;const u=urteil[t.dataset.id]||{};u.n=t.value;urteil[t.dataset.id]=u;speichern();zaehlen();});
-document.querySelector(".filter").addEventListener("click",e=>{
- const b=e.target.closest("button");if(!b)return;
- document.querySelectorAll(".filter button").forEach(x=>x.setAttribute("aria-pressed",x===b));
- const f=b.dataset.f;
- document.querySelectorAll(".punkt").forEach(p=>p.hidden=!(f==="alle"||(f==="pruefen"&&!p.dataset.z)||(f==="zielbild"&&p.dataset.z)||(f!=="pruefen"&&f!=="zielbild"&&p.dataset.s===f)));
- document.querySelectorAll("section[data-teil]").forEach(s=>s.hidden=![...s.querySelectorAll(".punkt")].some(p=>!p.hidden));
-});
+inhalt.addEventListener("input",e=>{const t=e.target;if(t.tagName!=="TEXTAREA")return;const u=urteil[t.dataset.id]||{};u.n=t.value;urteil[t.dataset.id]=u;speichern();zaehlen();});
 document.getElementById("kopieren").addEventListener("click",async()=>{
- const zeilen=[];DATEN.forEach(t=>t.punkte.forEach(p=>{const u=urteil[p.id];if(!u||!(u.v||u.n))return;
-  const w=p.s==="auftrag"?(u.v==="passt"?"freigegeben":u.v==="besser"?"anders":"Notiz"):p.s==="freigabe"?(u.v==="passt"?"freigegeben":u.v==="besser"?"nicht so":"Notiz"):p.s==="offen"?(u.v==="passt"?"beantwortet":"Antwort"):(u.v==="passt"?"passt":u.v==="besser"?"muss besser":"Notiz");
-  zeilen.push(`• ${p.t}\n  → ${w}${u.n?": "+u.n.trim():""}`)}));
+ const zeilen=[];const alle=(urteil._alle||{}).n;if(alle&&alle.trim())zeilen.push(`Zu allen offenen Punkten: ${alle.trim()}`);
+ PUNKTE.forEach(p=>{const u=urteil[p.id];if(!u||!(u.v||u.n||u.p))return;
+  const w=p.s==="auftrag"&&p.stand!=="startklar"?(u.v==="passt"?"erledigt":u.v==="besser"?"Frage dazu":"Notiz"):p.s==="auftrag"||p.s==="freigabe"?(u.v==="passt"?"freigegeben":u.v==="besser"?"anders":"Notiz"):p.s==="impuls"?(u.v==="passt"?"einverstanden":u.v==="besser"?"anders":"Notiz"):p.s==="offen"?(u.v==="passt"?"beantwortet":"Antwort"):(u.v==="passt"?"passt":u.v==="besser"?"muss besser":"Notiz");
+  zeilen.push(`• ${D.einStrang?"":"["+strangName(p.heim)+"] "}${p.t}\n  → ${u.v||u.n?w:"Priorität"}${u.n?": "+u.n.trim():""}${u.p?` (Priorität: ${u.p})`:""}`)});
  const text=zeilen.length?"Rückmeldung /*TITEL_JS*/ (Iteration /*ITERATION*/):\n\n"+zeilen.join("\n"):"Noch nichts markiert.";
  const out=document.getElementById("ausgabe");out.textContent=text;out.classList.add("zeigen");
  const btn=document.getElementById("kopieren");
  try{await navigator.clipboard.writeText(text);btn.textContent="Kopiert";}catch(e){btn.textContent="Text oben markieren";}
  setTimeout(()=>btn.textContent="Rückmeldung kopieren",2500);
 });
-render();
-document.querySelector('.filter button[data-f="pruefen"]').click();
+lesenHash();render();
 </script>
 </body>
 </html>

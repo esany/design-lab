@@ -40,11 +40,7 @@ den Fachpaketen und ein Pilot mit zehn Favoriten in
 und nennt eine Spannung (Klimastreifen gegen „Herkunft sichtbar“). Für dieses Thema ist der
 Bestand Nachbar: kaum Dashboards (9) und Unsicherheit (9).
 
-**Offene Fragen an den Eigentümer:**
-1. Eigenes Fachpaket, getrennt von „Vermitteln“ (einzelne Darstellung gegen Gefüge)?
-2. Erprobung an einem selbst gewählten, offenen Datensatz?
-3. Welche Quellen liest ein Modell zuerst ganz? Vorschlag: Bertin, Segel/Heer, Bach et al.
-4. Sollen die vier Zielbild-Prüffragen aus dem Pilot in `fachpaket-vermitteln` aufgenommen werden?
+**Offene Fragen an den Eigentümer:** seit 14.11. im [Zielbild des Labors](../zielbild/punkte.json), Strang „Visualisierungssysteme“, Wortlaut unverändert.
 
 <details><summary>Für die Modelle: Nummern</summary>
 

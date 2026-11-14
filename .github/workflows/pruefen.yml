@@ -78,6 +78,8 @@ jobs:
         run: node tools/daten-test.mjs
       - name: Prüffälle Zielbild-Generator
         run: node tools/zielbild-test.mjs
+      - name: Website vollständig, keine toten Links
+        run: node tools/website.mjs _site
 
   messwerte:
     name: Eingriffe und Lesekosten

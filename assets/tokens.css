@@ -9,6 +9,10 @@
   --lab-color-chalk: #e8e6e0;
   --lab-color-ash: #a09e99;
   --lab-color-slate: #363533;
+  --lab-color-green: #2f6b3a;
+  --lab-color-moss: #7fbf8a;
+  --lab-color-ochre: #8a5a00;
+  --lab-color-straw: #e0b060;
   --lab-font-sans: "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
   --lab-font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
   --lab-space-1: 8px;
@@ -29,6 +33,9 @@
   --lab-muted: #71706b;
   --lab-line: #cfccc5;
   --lab-accent: #d92d17;
+  --lab-signal: #d92d17;
+  --lab-bestaetigt: #2f6b3a;
+  --lab-offen: #8a5a00;
   color-scheme: light dark;
 }
 @media (prefers-color-scheme: dark) {
@@ -38,6 +45,9 @@
     --lab-muted: #a09e99;
     --lab-line: #363533;
     --lab-accent: #d92d17;
+    --lab-signal: #d92d17;
+    --lab-bestaetigt: #7fbf8a;
+    --lab-offen: #e0b060;
   }
 }
 :root[data-theme="dark"] {
@@ -46,4 +56,7 @@
   --lab-muted: #a09e99;
   --lab-line: #363533;
   --lab-accent: #d92d17;
+  --lab-signal: #d92d17;
+  --lab-bestaetigt: #7fbf8a;
+  --lab-offen: #e0b060;
 }
