@@ -47,6 +47,178 @@
   ],
   "teile": [
     {
+      "teil": "Anforderungen an die Arbeitsoberfläche",
+      "strang": "arbeitsweise",
+      "punkte": [
+        {
+          "id": "ao-anforderung",
+          "s": "bestaetigt",
+          "n": "neu",
+          "t": "Was du zur Arbeitsoberfläche sagst, sind Anforderungen. Ich halte sie im Labor fest und überarbeite sie in Iterationen, statt sie im Chat zu besprechen.",
+          "f": "Was ich dir mitgegeben habe sind anforderungen, das ist nichts, was ich hier mit dir nur wieder im ChatZwiegespräch temporär besprechen will - sondern echte PAIN.",
+          "g": "research/2026-11-arbeitsoberflaeche/analyse.md; daten/arbeitsweise.json, a64."
+        },
+        {
+          "id": "ao-einfacher",
+          "s": "bestaetigt",
+          "n": "neu",
+          "t": "Die Oberfläche beantwortet zuerst: Was muss ich wissen, was brauche ich, was nicht. Sie macht dir weniger Arbeit, nicht mehr.",
+          "f": "Was muss ich wissen, was brauche ich, was nicht.. es ist für mich komplizierter statt übersichtlicher geworden.",
+          "g": "daten/arbeitsweise.json, a63."
+        },
+        {
+          "id": "ao-ganzheitlich",
+          "s": "bestaetigt",
+          "n": "neu",
+          "t": "Die Oberfläche wird als Ganzes entworfen und überarbeitet; neue Anforderungen werden eingearbeitet, nicht angehängt.",
+          "f": "Auch zeigt es wieder tendenzen Dinge mit neuen Anforderungen anzuklatschen, statt das systematisch und ganzheitlich zu betrachten und zu überarbeiten",
+          "g": "daten/arbeitsweise.json, a63."
+        },
+        {
+          "id": "ao-perspektiven",
+          "s": "bestaetigt",
+          "n": "neu",
+          "t": "Es gibt unterschiedliche Perspektiven: auf den Entwurfsprozess und auf den Zustand des Systems.",
+          "f": "Aus meiner Sicht braucht es unterschiedliche Perspektiven auf den Entwurfsprozess und den Systemzustand.",
+          "g": "research/2026-11-arbeitsoberflaeche/analyse.md; daten/arbeitsweise.json, a64."
+        },
+        {
+          "id": "ao-transparenz",
+          "s": "bestaetigt",
+          "n": "neu",
+          "t": "Transparenz ermöglicht Arbeitsteilung und Vertrauen: Du orchestrierst nicht selbst, kannst mich aber prüfen und bewerten. Du bist Product Owner, ich verantworte die Orchestrierung.",
+          "f": "Ich will das nicht machen müssen, ich brauche aber dein Feedback bzw. Transparenz, um dich zu prüfen und bewerten zu können. Die Orchestrierung liegt bei dir ich bin aber po(?) und du musst dich verantworten. … Transparenz ermöglicht erst die Arbeitsteilung und das Vertrauen.",
+          "g": "research/2026-11-arbeitsoberflaeche/analyse.md; daten/arbeitsweise.json, a64."
+        },
+        {
+          "id": "ao-sichten",
+          "s": "bestaetigt",
+          "n": "neu",
+          "t": "Individuelle Sichten mit priorisierten oder begrenzten Aufgaben.",
+          "f": "Ich habe individuelle Sichten, mit priorisierten oder limitierten Aufgaben",
+          "g": "research/2026-11-arbeitsoberflaeche/analyse.md; daten/arbeitsweise.json, a64."
+        },
+        {
+          "id": "ao-ganzes",
+          "s": "bestaetigt",
+          "n": "neu",
+          "t": "Dazu das große Ganze zum Erkunden: ein Überblick nach dem Muster der heutigen Seite, mit filterbaren Tags.",
+          "f": "Einen großen Überblick also nach dem Muster der aktuellen Seite mit filterbaren Tags braucht es auch noch .. Aber auch das große Ganze, in dem ich Explorieren kann.",
+          "g": "research/2026-11-arbeitsoberflaeche/analyse.md; daten/arbeitsweise.json, a64.",
+          "stuetzt": [
+            "tags-navigieren"
+          ]
+        },
+        {
+          "id": "ao-progressiv",
+          "s": "bestaetigt",
+          "n": "neu",
+          "t": "Progressive Offenlegung: erst das Wesentliche, die Tiefe auf Abruf.",
+          "f": "Und dann gern auch noch progressiv Disclosure.",
+          "g": "research/2026-11-arbeitsoberflaeche/analyse.md; daten/arbeitsweise.json, a64.",
+          "k": "Verwandt mit „Erklären in Stufen“, das du für den Leitfaden bestätigt hast.",
+          "stuetzt": [
+            "stufen-anzeige"
+          ]
+        },
+        {
+          "id": "ao-einzeln",
+          "s": "bestaetigt",
+          "n": "neu",
+          "t": "Eins nach dem anderen (Skizze C) ist ein guter Modus, um zu entscheiden.",
+          "f": "Skizze C finde ich auch gut.",
+          "g": "research/2026-11-arbeitsoberflaeche/analyse.md; daten/arbeitsweise.json, a64."
+        },
+        {
+          "id": "ao-methodisch",
+          "s": "bestaetigt",
+          "n": "neu",
+          "t": "Zusammenhänge werden nur mit den Methoden der Fachpakete dargestellt und ihre Zuschreibungen geprüft; keine Landkarte aus dem Bauch.",
+          "f": "Ein Landkarte ist Skizze B für mch nicht. Du hast bereits begonnene Fachpakete zu Diagrammatik etc. da brauche ich keine Banalen oder vorschnellen unvaliden Zuschreibungen",
+          "g": "research/2026-11-arbeitsoberflaeche/analyse.md; daten/arbeitsweise.json, a64.",
+          "k": "Betrifft Fachpaket Vermitteln, Bertin, Isotype und den Befund Visualisierungssysteme (Gefüge statt Dashboard).",
+          "auch": [
+            "visualisierung"
+          ]
+        },
+        {
+          "id": "ao-experiment",
+          "s": "bestaetigt",
+          "n": "neu",
+          "t": "Perspektivisch ein Experiment: technische Komplexität und Arbeitsteilung sichtbar machen und klären, welche Anforderungen und Muster eine solche Mensch-Maschine-Schnittstelle braucht.",
+          "f": "Perspektivisch könnte das auch ein schönes Expriment werden um genau solche Technischen und komplexität in der Arbeitsteilung sichtbar zu machen, Welche UI Pattern und überhaupt erstmal Anforderungen sind an eine solches HMI (?) zu stellen.",
+          "g": "research/2026-11-arbeitsoberflaeche/analyse.md; daten/arbeitsweise.json, a64.",
+          "auch": [
+            "visualisierung",
+            "werke"
+          ]
+        },
+        {
+          "id": "ao-akteure",
+          "s": "ableitung",
+          "n": "neu",
+          "t": "Vier Akteure brauchen die Oberfläche verschieden: du als Product Owner und Gestalter, ich als Orchestrator, ausführende Modelle (ChatGPT, Codex), ein menschlicher Entwickler, der das System pflegt.",
+          "k": "Abgeleitet aus dem Grundmodell in AGENTS.md (Wer, Wo, keine Black Box). Ob Modelle und Entwickler dieselbe Oberfläche brauchen oder die Dateien genügen, ist offen.",
+          "g": "research/2026-11-arbeitsoberflaeche/analyse.md; daten/arbeitsweise.json, a64."
+        },
+        {
+          "id": "ao-situationen",
+          "s": "ableitung",
+          "n": "neu",
+          "t": "Zwei Nutzungssituationen: kurz am Handy entscheiden; am Rechner erkunden, vergleichen und mich prüfen.",
+          "k": "Abgeleitet aus „Handy zuerst“ (Leitfaden) und deinem Wunsch, im großen Ganzen zu explorieren.",
+          "g": "research/2026-11-arbeitsoberflaeche/analyse.md; daten/arbeitsweise.json, a64.",
+          "stuetzt": [
+            "handy-zuerst"
+          ]
+        },
+        {
+          "id": "ao-rechenschaft",
+          "s": "ableitung",
+          "n": "neu",
+          "t": "Rechenschaft: Für jeden Schritt eines Modells ist sichtbar, wer was warum getan hat, mit welchem Ergebnis und welcher Prüfung.",
+          "k": "Abgeleitet aus „du musst dich verantworten“. Heute liegt das verstreut in Verlauf, Pull Requests und Issues, die du nicht siehst.",
+          "g": "research/2026-11-arbeitsoberflaeche/analyse.md; daten/arbeitsweise.json, a64.",
+          "stuetzt": [
+            "ao-transparenz"
+          ],
+          "stuetzt_warum": {
+            "ao-transparenz": "Belegt: dein Satz zu Prüfen, Bewerten und Verantworten."
+          }
+        },
+        {
+          "id": "ao-recherche-muster",
+          "s": "auftrag",
+          "stand": "freigegeben",
+          "wer": "ChatGPT",
+          "n": "neu",
+          "t": "Stand der Technik: Muster für KI-assistierende Oberflächen und sichtbare Arbeitsteilung zwischen Mensch und Modellen (#237).",
+          "k": "Ergebnis wird Grundlage eines Fachpakets Interaktionsgestaltung, das es im Labor noch nicht gibt. Baut auf dem Befund zum Leitfaden (#172) und dem Befund Visualisierungssysteme auf, statt neu anzufangen.",
+          "g": "Freigabe: dein Satz „das wäre doch ein schöner sota Auftrag … (Sota Recherche nötig.)“, 14.11.",
+          "stuetzt": [
+            "ao-perspektiven",
+            "ao-progressiv",
+            "ao-transparenz",
+            "ao-experiment"
+          ]
+        },
+        {
+          "id": "ao-analyse",
+          "s": "auftrag",
+          "stand": "läuft",
+          "wer": "Claude",
+          "n": "neu",
+          "t": "Anforderungen an die Arbeitsoberfläche erheben und in Iterationen überarbeiten; die Überarbeitung des Zielbilds folgt daraus.",
+          "k": "Iteration 1: deine Aussagen vom 13. und 14.11. gesammelt, eigene Ableitungen getrennt markiert. Iteration 2 nach den beiden Recherchen.",
+          "stuetzt": [
+            "ao-anforderung",
+            "ao-einfacher",
+            "ao-ganzheitlich"
+          ]
+        }
+      ]
+    },
+    {
       "teil": "Dein Nutzungskontext (Grundmodell)",
       "strang": "arbeitsweise",
       "punkte": [
@@ -761,14 +933,17 @@
           "id": "ez-rueckweg",
           "s": "vorschlag",
           "dran": "",
-          "n": "neu",
+          "n": "ergänzt",
           "t": "Rückmeldung ohne Kopie über einen kleinen Dienst bei Cloudflare; bis dahin kopierst du in den Chat.",
-          "k": "Dein Urteil 14.11.: „mal schauen“. Ich lege es nach dem Werk-Test bei Cloudflare wieder vor; bis dahin musst du nichts tun.",
+          "k": "Dein Urteil 14.11. war „mal schauen“; am selben Abend: „kopieren muss ich Immer noch“. Darum steht der Rückweg jetzt bei den Anforderungen an die Arbeitsoberfläche und hängt an der Einrichtung bei Cloudflare.",
           "g": "entwurf-ein-zielbild.md, Abschnitte 3 und 6.",
           "stuetzt": [
             "st-rueckweg",
-            "st-cloudflare"
-          ]
+            "st-cloudflare",
+            "ao-einfacher"
+          ],
+          "f": "kopieren muss ich Immer noch..",
+          "v": "Rückmeldung ohne Kopie über einen kleinen Dienst bei Cloudflare; bis dahin kopierst du in den Chat."
         },
         {
           "id": "ez-gegenpruefung",
@@ -933,14 +1108,21 @@
         {
           "id": "a-recherche-2",
           "s": "auftrag",
-          "stand": "vorbereitet",
+          "stand": "freigegeben",
           "wer": "ChatGPT",
-          "t": "Recherche, Teil 2: Wie Fachwissen als Netz gebildet, abgegrenzt und dargestellt wird.",
-          "k": "Hält an, nicht starten: Die Fragen überschneiden sich mit anderen Strängen des Labors, die ich beim Formulieren nicht geprüft habe: Entwicklung und Gebrauch (#49, drei Perspektiven), Wissen erschließen (Wissenslandkarte mit acht Feldern) und Visualisierungssysteme (Nachbarfelder und Schnittstellen). Erst ein Querschnitt über das ganze Labor, dann ein gemeinsamer Auftrag.",
+          "t": "Recherche, Teil 2: Wie Fachwissen als Netz gebildet, abgegrenzt und dargestellt wird, und ob es aus einem Modell oder von unten wächst, nach welchen Regeln (#238).",
+          "k": "Der Halt ist aufgehoben: Den Querschnitt über Leitfaden, Wissen erschließen und Visualisierungssysteme enthält die Analyse zur Arbeitsoberfläche, Abschnitt 4. Deine Frage vom 14.11. ist eingearbeitet.",
           "stuetzt": [
             "wechselwirkung",
             "transdisziplinaer",
             "sammeln-verdichten"
+          ],
+          "n": "ergänzt",
+          "f": "brauchen wir hier mehr Modellverständnis, oder wächst das alles bottom up als organisches Konstrukt und verknüpft sich dynamisch neu .. Auf welchen Regeln ? (Sota Recherche nötig.)",
+          "v": "Recherche, Teil 2: Wie Fachwissen als Netz gebildet, abgegrenzt und dargestellt wird.",
+          "auch": [
+            "wissen",
+            "visualisierung"
           ]
         },
         {

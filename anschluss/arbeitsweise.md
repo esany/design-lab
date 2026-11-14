@@ -1,8 +1,8 @@
 ---
 thema: Arbeitsweise mit KI · Wissensformen
 stand: Das eine Zielbild des Labors ist übernommen und veröffentlicht (zielbild/, 14.11.): sieben Stränge, Schnittstellen, drei Ansichten, Farbe als Rollen; Leitfaden und Bug #200 darin aufgegangen und archiviert. Beide Gegenprüfungen durch ChatGPT übernommen (#224, #232). Leitfaden Iteration 7; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
-naechster_schritt: Der Eigentümer urteilt über Einordnung und drei Skizzen für das überarbeitete Zielbild (research/2026-11-zielbild-bausteine/einordnung-und-ueberarbeitung.md); danach baut Claude die Überarbeitung, ChatGPT prüft gegen mit der Frage „Wird es für den Eigentümer einfacher?“.
-offen: [180, 189, 200, 216]
+naechster_schritt: Claude erhebt die Anforderungen an die Arbeitsoberfläche (Iteration 1 steht im Zielbild, research/2026-11-arbeitsoberflaeche/analyse.md); ChatGPT recherchiert Muster für KI-assistierende Oberflächen (#237) und wie Fachwissen wächst (#238); danach Iteration 2 und Entwurf. Unabhängig davon: Sitzung am Rechner (Cloudflare, Hauptzweig) beendet das Kopieren.
+offen: [180, 189, 200, 216, 237, 238]
 ---
 
 # Thema: Arbeitsweise mit KI · Wissensformen
