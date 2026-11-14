@@ -18,7 +18,7 @@
 
 ## Aussagen
 
-### Belegt (16)
+### Belegt (17)
 
 - **arbeitsweise-a02** Im Labor folgte auf einen Vorfall meist eine neue Regel: 30 Entscheidungen in drei Tagen.
   *Beleg:* `research/2026-10-audit-zusammenarbeit/befunde.md`, In Worten, Punkt 4
@@ -64,6 +64,9 @@
 - **arbeitsweise-a56** Die KI gab dem Eigentümer dreimal den Link zu einer Zielbild-Seite, die nie veröffentlicht war; sie hatte weder geprüft, ob die Website die Seite enthält, noch gesagt, dass sie die Website aus ihrer Umgebung nicht abrufen kann.
   *Beleg:* `.github/workflows/website.yml`, Schritt „Seite zusammenstellen“ kopiert nur index.html, assets, studies, leitfaden
   *Grenze:* Eigentümer im Chat, 13.11. Analyse: research/2026-11-anforderungspruefung/bug-flickenteppich.md. Ursache F1.
+- **arbeitsweise-a61** Der Startprompt, den die KI dem Eigentümer für einen frischen Chat gab, nannte das Labor nicht als GitHub-Repo; der neue Chat suchte AGENTS.md auf dem Computer und in Anhängen und kam nicht weiter. Ein Startprompt muss für sich allein reichen: Repo esany/design-lab auf GitHub, Zweig main, ausdrücklich genannt.
+  *Beleg:* `anschluss/arbeitsweise.md`, Startprompt im Chat vom 14.11. ohne Repo-Namen; Antwort des neuen Chats vom Eigentümer im Wortlaut weitergegeben
+  *Grenze:* Eigentümer im Chat, 14.11.: „Was für eine Scheiße“. Gleiche Klasse wie a56 und F1 aus #216: Übergabe nicht vom Ort des Eigentümers aus gedacht. Ob der neue Chat im Projekt „Design“ lag (dessen Anweisung nennt das Repo), ist nicht geprüft.
 
 ### Abgeleitet (36)
 
