@@ -779,6 +779,23 @@
         }
       ],
       "notiz": "Eigentümer im Chat 14.11.: „Wie sollte klare Vorraussetzungen bzw. Abhängigkeiten und Blocker für Aufträge bereits definiert haben. und diese als Teil der Infrastruktur übernommen haben. Sonst machen wir unglaublich viele Extra runden. BEi dir liegt die Orchestrierung die Einordnung von Aufgaben.“"
+    },
+    {
+      "id": "arbeitsweise-a83",
+      "aussage": "Das Zielbild des Labors bildet den aktuellen Konzeptstand nicht ab, darum kann der Eigentümer ihn dort nicht prüfen. Neue Analyse- und Entwurfsarbeit berücksichtigt bestehende Ausarbeitungen zu Nutzerforschung und Analyse nicht systemisch und nicht über Relationen; er wertet das als Versagen der Fachpakete und des Orchestrators.",
+      "status": "belegt",
+      "seit": "2026-11-14",
+      "quellen": [
+        {
+          "datei": "research/2026-11-arbeitsoberflaeche/entwurf.md",
+          "stelle": "Abschnitt 0"
+        },
+        {
+          "datei": "zielbild/punkte.json",
+          "stelle": "u4, nk-laden"
+        }
+      ],
+      "notiz": "Eigentümer im Chat 14.11.: „auf der anderen Seite bildet das Labor Zielbild auch nicht unseren aktuellen Konzeptstand ab - diesen kann ich damit nicht prüfen. Du berücksichtigst ihn bestimmt gerade auch nicht systemisch und prüfst auf Relationen. Auch hier gibt es ja zentrale Ausarbeitungen hinsichtlicher des User Researches und der Analyse. Das ist wieder ein versagen der Fachpakete bzw. des Orchestriers“"
     }
   ],
   "fragen": [

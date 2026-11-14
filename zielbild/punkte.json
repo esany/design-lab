@@ -240,7 +240,7 @@
           "wer": "Claude",
           "n": "neu",
           "t": "Entwurfsgrundlage für den Arbeitsplatz: von dir und deiner Erkenntnislücke über Situationen, Aufgaben, Informationen und Anforderungen bis zu Ansichten, Aufgabenpfaden und visueller Abbildung.",
-          "k": "Fertig am 14.11.: research/2026-11-arbeitsoberflaeche/entwurf.md. Nichts ist gebaut; zuerst brauche ich deine Antworten auf vier Fragen (nächster Punkt).",
+          "k": "Fertig am 14.11.: research/2026-11-arbeitsoberflaeche/entwurf.md. Die Datei ist die Herleitung; was gilt oder entschieden wird, steht hier im Zielbild: Erkenntnislücke und Situationen im Teil „Dein Nutzungskontext“, Arbeitsfläche, „Stand“ und Senden hier.",
           "stuetzt": [
             "ao-reihenfolge",
             "ao-einfacher",
@@ -249,21 +249,55 @@
           ]
         },
         {
-          "id": "ao-nutzermodell",
+          "id": "ao-flaeche",
           "s": "vorschlag",
           "dran": "du",
           "n": "neu",
           "prio": "jetzt",
-          "t": "Stimmen die fünf Situationen und die Kernlücke, trägt die Richtung „eine Arbeitsfläche über alle Zielbilder, Labor und Werke als Bereiche“, soll „Stand“ in drei Teilen gefüllt werden, und willst du sofort je Antwort senden oder gesammelt am Ende?",
-          "k": "Die Situationen: zwischendurch entscheiden, nachsehen ob es angekommen ist, im Werk gestalterisch urteilen, prüfen ob das System trägt, das Ganze erkunden. Die Kernlücke: „Wo steht die Arbeit, gemessen an meiner Absicht, und wo braucht sie jetzt mein Urteil?“ Die Richtung: keine Übersicht über Seiten mehr, sondern eine Fläche mit deinen drei bestätigten Ansichten „Du bist dran“, „Stand“ und „Alles“; Labor und Werke sind Bereiche, die du eingrenzen kannst. „Stand“ zeigt, was aus deinen Worten wurde, was läuft und blockiert ist und wie die Stränge zusammenhängen. Herleitung mit Herkunft je Schritt: research/2026-11-arbeitsoberflaeche/entwurf.md, Abschnitte 1, 2, 6 und 9; unabhängig gegengeprüft. Warum jetzt: Die Situationen kann nur bestätigen, wer sie erlebt. Was folgt: Ich lege den Inhalt der Ansichten fest und baue in der Reihenfolge der Voraussetzungen.",
-          "g": "research/2026-11-arbeitsoberflaeche/entwurf.md; daten/arbeitsweise.json, a01 bis a78.",
+          "t": "Statt einer Übersicht über Zielbild-Seiten: eine Arbeitsfläche über alle Zielbilder, Labor und jedes Werk als Bereich, den du eingrenzen kannst. Trägt diese Richtung?",
+          "k": "Begründung: ein Zielbild für das Ganze (bestätigt), gleiche Funktion gleiche Form, und deine Kritik, dass Labor und Werke verschieden behandelt wurden. Innerhalb des Labors bleiben Stränge eine zweite Dimension; Werke haben keine Stränge. Werk-Inhalte bleiben privat. Folge deiner Antwort: Datenmodell über Labor und Werke an einem privaten Ort.",
+          "g": "research/2026-11-arbeitsoberflaeche/entwurf.md, Abschnitt 6, Folgerung 1.",
           "braucht": [
             "ao-entwurf"
           ],
           "stuetzt": [
-            "ao-entwurf",
-            "ao-situationen",
-            "ao-reihenfolge"
+            "st-zentrale",
+            "ez-aufbau",
+            "o2"
+          ]
+        },
+        {
+          "id": "ao-stand-teile",
+          "s": "vorschlag",
+          "dran": "du",
+          "n": "neu",
+          "prio": "jetzt",
+          "t": "Deine Ansicht „Stand“ in drei Teilen: was aus deinen Worten wurde seit deinem letzten Blick; was läuft und woran es hängt; wie Stränge und Bereiche zusammenhängen. So füllen?",
+          "k": "Die drei Ansichten „Du bist dran“, „Stand“, „Alles“ und ihre Reihenfolge hast du bestätigt; sie bleiben. Neu ist nur, womit „Stand“ gefüllt wird. Der erste Teil antwortet auf dein doppeltes Senden (du sahst nicht, ob es angekommen war), der zweite auf Transparenz statt Orchestrieren, der dritte auf die zweite Stufe deiner Reihenfolge. „Gut statt fertig“: nie Fortschritt in Prozent, sondern was geprüft ist und was offen.",
+          "g": "research/2026-11-arbeitsoberflaeche/entwurf.md, Abschnitt 6; daten/arbeitsweise.json, a74.",
+          "braucht": [
+            "ao-entwurf"
+          ],
+          "stuetzt": [
+            "ez-aufbau",
+            "ao-reihenfolge",
+            "ao-transparenz"
+          ]
+        },
+        {
+          "id": "ao-senden",
+          "s": "vorschlag",
+          "dran": "du",
+          "n": "neu",
+          "prio": "später",
+          "t": "Wenn du in „Du bist dran“ entscheidest: jede Antwort sofort senden oder alle gesammelt am Ende?",
+          "k": "Sofort: jede Entscheidung wirkt gleich, du siehst sofort, was danach passiert, aber jede wird ein eigener Eingang. Gesammelt: ein Eingang mit Zusammenfassung, aber nichts wirkt, bis du sendest. Empfehlung: sofort, weil Rückmeldung und Selbstwirksamkeit dein offener Bug zu den Schaltflächen sind.",
+          "g": "research/2026-11-arbeitsoberflaeche/entwurf.md, Abschnitt 7, Pfad P1.",
+          "braucht": [
+            "ao-entwurf"
+          ],
+          "stuetzt": [
+            "st-rueckweg"
           ]
         },
         {
@@ -273,9 +307,12 @@
           "wer": "Claude",
           "n": "neu",
           "t": "Den Inhalt der drei bestätigten Ansichten festlegen: Teile, Reihenfolge, Leerzustände, Rahmen.",
-          "k": "Wartet auf deine Antwort zu Situationen und Richtung.",
+          "k": "Wartet auf deine Antworten zu Erkenntnislücke, Situationen, Arbeitsfläche und „Stand“.",
           "braucht": [
-            "ao-nutzermodell"
+            "nk-situationen",
+            "nk-kernluecke",
+            "ao-flaeche",
+            "ao-stand-teile"
           ],
           "stuetzt": [
             "ao-entwurf"
@@ -290,7 +327,7 @@
           "t": "Ein Datensatz über das Labor und alle Werke an einem privaten Ort, mit Voraussetzungen, Priorität und dem Datum deiner letzten Rückmeldung.",
           "k": "Grundlage für „worauf es einzahlt“, „seit deinem letzten Blick“ und Labor und Werke als Bereiche. Werk-Inhalte bleiben privat.",
           "braucht": [
-            "ao-nutzermodell"
+            "ao-flaeche"
           ],
           "stuetzt": [
             "ao-entwurf"
@@ -323,7 +360,8 @@
           "braucht": [
             "ao-ansichten",
             "ao-datenmodell",
-            "ao-fachpaket"
+            "ao-fachpaket",
+            "ao-senden"
           ],
           "stuetzt": [
             "ao-entwurf"
@@ -442,6 +480,57 @@
           "t": "Dein Kontingent ist die knappe Ressource: Opus stand am Mittwoch bei 50 % des Wochenlimits.",
           "k": "Gehört in den Nutzungskontext, weil es jede Arbeitsweise begrenzt. A13 misst bisher nur Geld.",
           "bestaetigt": "2026-11-12"
+        },
+        {
+          "id": "nk-kernluecke",
+          "s": "vorschlag",
+          "dran": "du",
+          "n": "neu",
+          "prio": "jetzt",
+          "t": "Deine Erkenntnislücke, in einem Satz: „Wo steht die Arbeit, gemessen an meiner Absicht, und wo braucht sie jetzt mein Urteil?“",
+          "k": "Was du weißt: deine Absicht, Maßstäbe, deine Domäne, deine Werke, was du gesagt hast. Was du strukturell nicht weißt, weil es außerhalb deines Blicks geschieht: was seit deinem letzten Blick passiert ist, was davon dich braucht, worauf eine Entscheidung einzahlt, ob angekommen ist, was du gesagt hast, ob die Modelle deine Prinzipien einhalten, wie belastbar eine Aussage ist, was blockiert ist. Folge deiner Antwort: Jede Ansicht muss diese Frage beantworten helfen; was nichts dazu beiträgt, kommt nicht nach vorn. Herleitung: research/2026-11-arbeitsoberflaeche/entwurf.md, Abschnitt 1.",
+          "g": "research/2026-11-arbeitsoberflaeche/entwurf.md, Abschnitt 1; daten/arbeitsweise.json, a28, a43, a62, a63, a71 bis a74.",
+          "braucht": [
+            "ao-entwurf"
+          ],
+          "stuetzt": [
+            "nk-rolle",
+            "ao-einfacher",
+            "u4"
+          ]
+        },
+        {
+          "id": "nk-situationen",
+          "s": "vorschlag",
+          "dran": "du",
+          "n": "neu",
+          "prio": "jetzt",
+          "t": "Fünf Situationen, in denen du hinschaust: zwischendurch entscheiden; nachsehen, ob angekommen ist, was du gesagt hast; im Werk gestalterisch urteilen; prüfen, ob das System trägt; das Ganze erkunden. Stimmen sie, fehlt eine?",
+          "k": "Hypothesen aus deinen Aussagen, nicht an dir beobachtet. Je Situation stehen Auslöser, deine Frage im Kopf und die Zeit im Entwurf (Abschnitt 2), dazu die Aufgaben und Informationen, die du darin brauchst (Abschnitt 3). Neue Wünsche gibst du im Chat; die Oberfläche zeigt nur, wo sie gelandet sind. Folge deiner Antwort: Die Situationen füllen deine drei bestätigten Ansichten.",
+          "g": "research/2026-11-arbeitsoberflaeche/entwurf.md, Abschnitte 2 und 3; Punkte „Geräteunabhängig“ (Situationen statt Geräte) und „Prüftiefe in Stufen“.",
+          "braucht": [
+            "ao-entwurf"
+          ],
+          "stuetzt": [
+            "ao-situationen",
+            "ao-tiefe",
+            "nk-prueffall"
+          ]
+        },
+        {
+          "id": "nk-laden",
+          "s": "vorschlag",
+          "dran": "du",
+          "n": "neu",
+          "prio": "jetzt",
+          "t": "Damit dein Nutzerbild nicht wieder verstreut wird: Vor jeder Analyse- oder Entwurfsarbeit lädt das Modell diesen Teil und alle Punkte, die daran hängen; und die Prüfung meldet jede neue Analyse oder jeden Entwurf, der im Zielbild keinen Ort hat.",
+          "k": "Warum: Am 14.11. ist derselbe Fehler wie am 12.11. passiert (Ursache „Dein Nutzerbild ist verstreut“): Ein Entwurf entstand neben dem Grundmodell statt darin, und dein Konzeptstand war im Zielbild nicht prüfbar. Eine Regel allein hat nicht gehalten; darum zwei Mechanismen: die Startanweisung nennt den Teil als Pflichtlektüre für Entwurfsarbeit, und der Build prüft den Ort. Folge deiner Antwort: Das ist eine neue Regel, darum fragt sie dich; ich baue sie nach deinem Ja.",
+          "g": "Ursachen „Dein Nutzerbild ist verstreut“ und „Es fehlt ein Zielmodell“ auf dieser Seite; research/2026-11-arbeitsoberflaeche/entwurf.md, Abschnitt „Bezug zum Bestand“.",
+          "stuetzt": [
+            "u4",
+            "nk-format",
+            "o2"
+          ]
         }
       ]
     },
@@ -561,7 +650,7 @@
           "id": "u4",
           "s": "befund",
           "t": "U4 · Dein Nutzerbild ist verstreut und wird nie als Ganzes geladen. Das ist strukturell lösbar, wie in der übrigen IT-Welt auch.",
-          "k": "Stand 13.11.: teilweise behoben. AGENTS.md bündelt Rollen, Orte und Grenzen am Start; ob das bei allen Modellen ankommt, ist ungetestet. Stand der Technik: Zielmodelle aus dem Requirements Engineering verknüpfen Akteure, Ziele, Verfeinerungen und Hindernisse (KAOS, van Lamsweerde 2001); Widersprüche werden dort als Hindernisse erfasst statt durch neue Regeln. i* eignet sich für Abhängigkeiten zwischen Akteuren. Dass eines davon hier besser trägt, ist nicht belegt.",
+          "k": "Stand 13.11.: teilweise behoben. AGENTS.md bündelt Rollen, Orte und Grenzen am Start; ob das bei allen Modellen ankommt, ist ungetestet. Stand der Technik: Zielmodelle aus dem Requirements Engineering verknüpfen Akteure, Ziele, Verfeinerungen und Hindernisse (KAOS, van Lamsweerde 2001); Widersprüche werden dort als Hindernisse erfasst statt durch neue Regeln. i* eignet sich für Abhängigkeiten zwischen Akteuren. Dass eines davon hier besser trägt, ist nicht belegt. Wieder aufgetreten am 14.11.: Ich habe für den Arbeitsplatz ein eigenes Nutzermodell in einer Datei angelegt, ohne diesen Teil, die Befunde dieser Seite (fehlendes Zielmodell, was worauf einzahlt) und den Vorschlag „keine zweite, konkurrierende Quelle“ zu laden. Du hast es bemerkt, nicht die Prüfung. Behoben: Erkenntnislücke und Situationen stehen jetzt im Teil „Dein Nutzungskontext“, die Datei ist nur Herleitung.",
           "v": "U4 · Dein Nutzerbild ist verstreut und wird nie als Ganzes geladen.",
           "n": "geändert",
           "f": "SOTA! Das kann man doch wohl struturell lösen. Capabilities? Keine Ahnung irgendwelche Methoden aus Req-Engenieering als Entwicklungsmotor?",
