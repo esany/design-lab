@@ -121,5 +121,6 @@ sie werden darin einsortiert. Vorher hatte ich sie daneben gestellt, ohne diesen
 | Visualisierungssysteme (4 Antworten), Voraussetzungen für Fachpakete, Lesart Visualisierung, PixelPatrol | 6 (gebündelt) | Die Analyse der Voraussetzungen ist Inhalt für „Fachpakete neu schneiden“, kein eigener Plan |
 | Prüftiefe in Stufen (a66) | 1 | geht in die Überarbeitung des Zielbilds ein |
 
-**Was als Nächstes dich braucht:** Schritt 2, die Sitzung am Rechner (Cloudflare und Hauptzweig, etwa
-20 Minuten). Alles davor läuft ohne dich.
+**Stand von Schritt 2:** am 14.11. erledigt in einem anderen Chat (Cloudflare für die Werke eingerichtet, `anschluss/werke.md`; Hauptzweig mit Pflichtprüfungen geschützt, `verlauf/2026-11-14-anleitung-hauptzweig.md`).
+
+**Was als Nächstes dich braucht:** Schritt 4, die Wahl des nächsten Experiments (Vorschlag: Raster als Programm, mit dem Pilot der Osmani-Abläufe). Alles andere läuft ohne dich.
