@@ -1995,11 +1995,11 @@
         {
           "id": "od-a-recherche",
           "s": "auftrag",
-          "stand": "freigegeben",
+          "stand": "fertig",
           "wer": "ChatGPT",
-          "n": "neu",
+          "n": "geändert",
           "t": "Die eine Recherche für das Feld Interaktion und Struktur (Issue #237, erweitert).",
-          "k": "Freigegeben durch 0037. Danach baut Claude das Fachpaket nach 0038.",
+          "k": "Abgeschlossen und übernommen am 14.11. (research/2026-11-arbeitsoberflaeche/recherche-muster.md). Als Nächstes baut Claude daraus das Fachpaket nach 0038; zuerst angewendet am Rahmen des Arbeitsplatzes.",
           "stuetzt": [
             "od-feld",
             "od-regeln"
