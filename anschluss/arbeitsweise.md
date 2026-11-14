@@ -35,7 +35,7 @@ bedeutet (Wunsch des Eigentümers, 07./08.11.; [a:arbeitsweise-a28]).
 
 **Zu beachten:** Der Zielbild-Generator ist seit 13.11. Werkzeug des Labors (0036, `tools/zielbild.mjs`); der Build erzeugt damit alle Zielbilder, auch den Leitfaden (13.11.); offen sind Kontrast und Rückweg (Fragen im Zielbild Bug #200). Der Farbvorschlag (Iteration 7) betrifft auch ihn. Berichte: jede Zahl mit Bezug, Freigabe im Chat ([a:arbeitsweise-a43]).
 
-**Geparkt:** Radar als Daten und Ansicht (Matrix oder Kreis offen); Freigabe-Prüfung (#132);
+**Geparkt:** Radar als Daten und Ansicht (Matrix, Eigentümer 14.11.; Ringe als Spalten, Felder als Zeilen); Freigabe-Prüfung (#132);
 Hooks; Projektnotiz paleo-type; Radar-Zeile Basic Memory; bei Konflikt startet GitHub keine Prüfung.
 
 **Offene Fragen und Aussagen:** nur in `daten/arbeitsweise.json`, lesbar in `daten/arbeitsweise.md`.
