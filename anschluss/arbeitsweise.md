@@ -1,8 +1,8 @@
 ---
 thema: Arbeitsweise mit KI · Wissensformen
-stand: Das eine Zielbild des Labors ist gebaut (zielbild/, 14.11.), mit sieben Strängen, Schnittstellen und drei Ansichten; die Seiten Leitfaden und Bug #200 sind darin aufgegangen und archiviert, Farbe als Rollen, Website und Prüfung auf tote Links. Gegenprüfung von Analyse und Entwurf liegt vor (#224). Leitfaden Iteration 7; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
-naechster_schritt: ChatGPT prüft den Bau gegen (Punkt „Gegenprüfung des Baus“ im Zielbild); danach übernimmt Claude ihn. Der Eigentümer beginnt im Zielbild bei „Du bist dran“, sobald es veröffentlicht ist.
-offen: [180, 189, 200, 216, 230]
+stand: Das eine Zielbild des Labors ist übernommen und veröffentlicht (zielbild/, 14.11.): sieben Stränge, Schnittstellen, drei Ansichten, Farbe als Rollen; Leitfaden und Bug #200 darin aufgegangen und archiviert. Beide Gegenprüfungen durch ChatGPT übernommen (#224, #232). Leitfaden Iteration 7; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
+naechster_schritt: Der Eigentümer arbeitet im Zielbild ab „Du bist dran“ (25 Punkte, darunter die Frage nach der Marke); Claude trägt seine Rückmeldungen ein. Rückweg ohne Kopie nach dem Werk-Test bei Cloudflare wieder vorlegen.
+offen: [180, 189, 200, 216]
 ---
 
 # Thema: Arbeitsweise mit KI · Wissensformen
