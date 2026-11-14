@@ -67,6 +67,23 @@ als Beispiel für eine Regel mit Begründung. *abgeleitet*
 Mittelmaß-Muster (Idee: welche Muster sind maschinell prüfbar); späteres Fachpaket Animation
 (Katalog als Ausgangsliste). Kein Korpus-Eintrag: keine belastbare Fachquelle.
 
+## 3a · Doppelrolle: Steinbruch und Negativfolie
+
+Lesart des Eigentümers (Chat, 14.11.): „Skill-Quelle und Tagebau bzw. Negativvorlage?“ Beides gilt
+zugleich, und die beiden Seiten stützen sich gegenseitig:
+
+- **Steinbruch:** Abgebaut werden nur Ablaufprinzipien nach D-033 (Katalog als Suchstelle,
+  Mittelmaß als Prüfung, Regelbedarf im Skill-Kopf). Fremde Skills, Skripte und Linter-Code
+  werden nicht übernommen, und die Lizenz jeder Karte wird selbst nachgeprüft.
+- **Negativfolie:** OpenDesign zeigt gut dokumentiert, wie KI-Gestaltung im Jahr 2026
+  durchschnittlich aussieht. Das ist die Negativfolie, die der Skill `kritik` braucht (A06).
+  Die Liste gegen Mittelmaß beschreibt die *alten* Erkennungszeichen von KI-Gestaltung. Die
+  Regelwerke selbst (Skala 1,2, Body 15–18 px, Marken-DESIGN.md) beschreiben das *neue*
+  Mittelmaß: Wer alle Erkennungszeichen vermeidet, landet beim nächsten Standard.
+  *abgeleitet, nicht an Werken geprüft*
+- **Zusammenspiel:** Eine Prüfung, die das Labor von dort übernimmt, fängt nur das Erwartbare
+  ab. Für bewusste Abweichung sorgt sie nicht; dafür bleiben Kritik und Mensch zuständig.
+
 ## 4 · Vergleich je Fähigkeit
 
 | Fähigkeit | Bisheriger Weg im Labor | Fundstück | Mehrwert | Risiko |
@@ -93,7 +110,7 @@ Mittelmaß-Muster (Idee: welche Muster sind maschinell prüfbar); späteres Fach
 
 - **Integrationsgrad:** `referenzieren` (Katalog als Suchstelle vor dem Bau) ·
   `Erkenntnis übernehmen` (Mittelmaß als Prüfung mit ausgewiesener Prüfgrenze; Regelbedarf
-  im Skill-Kopf).
+  im Skill-Kopf) · Negativfolie für `kritik` (Abschnitt 3a).
 - **Nicht:** App installieren, Skills oder Linter-Code übernehmen, Design-Systeme nutzen.
 - **Status:** `beobachten`. Radar-Ring „Beobachten“.
 
