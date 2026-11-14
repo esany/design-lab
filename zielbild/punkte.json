@@ -2,7 +2,7 @@
   "titel": "Zielbild des Labors",
   "ort": "design-lab",
   "schluessel": "labor",
-  "iteration": 1,
+  "iteration": 2,
   "stand": "2026-11-14",
   "von": "Claude",
   "hinweis": "Das eine Zielbild des Labors (Entwurf research/2026-11-zielbild-bausteine/entwurf-ein-zielbild.md, Urteil 14.11.). Am 14.11. aus leitfaden/zielbild/punkte.json (Iteration 7) und research/2026-11-anforderungspruefung/zielbild/punkte.json (Iteration 3) zusammengeführt; beide bleiben archiviert. Kennung a-recherche aus Bug #200 heißt hier a-recherche-sota; st-fragenliste ist derselbe Auftrag wie a-suchprompt und steht nur dort. Punkte mit „frage“ ziehen Wortlaut und Antwort aus daten/arbeitsweise.json. Wortlaut des Eigentümers: daten/arbeitsweise.json.",
@@ -10,19 +10,20 @@
     {
       "id": "arbeitsweise",
       "name": "Arbeitsweise mit KI",
-      "iteration": 4,
+      "iteration": 5,
       "rueckmeldung": "14.11."
     },
     {
       "id": "leitfaden",
       "name": "Leitfaden",
-      "iteration": 7,
-      "rueckmeldung": "12.11."
+      "iteration": 8,
+      "rueckmeldung": "14.11."
     },
     {
       "id": "system",
       "name": "System und Pflege",
-      "iteration": 1
+      "iteration": 2,
+      "rueckmeldung": "14.11."
     },
     {
       "id": "fundstuecke",
@@ -32,7 +33,8 @@
     {
       "id": "werke",
       "name": "Werke",
-      "iteration": 1
+      "iteration": 2,
+      "rueckmeldung": "14.11."
     },
     {
       "id": "wissen",
@@ -828,14 +830,14 @@
           "stuetzt": [
             "nk-orte"
           ],
-          "n": "neu",
           "t": "Private Zielbild-Seiten der Werke bei Cloudflare einrichten.",
           "k": "Eingerichtet am 14.11.: Das private Werke-Repo ist mit Cloudflare verbunden; jede Änderung dort baut die Seiten neu. Hauptadresse und Vorschau-Adressen sind gesperrt, Zugang nur mit deiner E-Mail-Adresse (Anmeldung über einen Code per E-Mail). Die Adresse steht im README des Werke-Repos.",
           "g": "anschluss/werke.md; Chat 13.11.; eingerichtet im Chat 14.11.",
           "auch": [
             "werke"
           ],
-          "prio": "jetzt"
+          "prio": "jetzt",
+          "bestaetigt": "2026-11-14"
         }
       ]
     },
@@ -1022,11 +1024,14 @@
           "id": "f-issue-pruefung",
           "frage": "arbeitsweise-f02",
           "s": "offen",
-          "n": "neu",
+          "n": "geändert",
           "auch": [
             "system"
           ],
-          "prio": "später"
+          "prio": "später",
+          "dran": "Claude",
+          "f": "Priorität: später",
+          "k": "Nach meiner Lesart war gemeint: die Ergebnisse aller Modelle an einer Stelle im Labor prüfen, statt je Modell getrennt (der Merkzettel vom 05.11. nennt nur die Frage). Seit 14.11. tun das die geplanten Läufe: Claude prüft zweimal täglich, ChatGPT alle drei Stunden. Das ist Verwaltung und liegt bei mir; du hast die Priorität auf „später“ gesetzt, darum lege ich es dir nicht mehr als Frage vor."
         },
         {
           "id": "f-paleo-408",
@@ -1036,7 +1041,8 @@
           "auch": [
             "system"
           ],
-          "prio": "parken"
+          "prio": "parken",
+          "k": "In paleo-type gilt eine Pause (dort Issue 399). Gefragt war, ob ich einen Befund aus dem Labor trotzdem in der dortigen Ursachenanalyse notieren darf (dort Issue 408). Du hast die Frage geparkt."
         },
         {
           "id": "f-fremde-issues",
@@ -1175,7 +1181,7 @@
           "stand": "freigegeben",
           "wer": "du und ein Chat mit Zugriff auf alte Chats",
           "t": "Fragenliste in alten Chats finden (Issue #189).",
-          "k": "Dein einziger Handgriff: in einem Chat, der deine alten Chats durchsuchen kann, „Führe Issue #189 im design-lab aus“ schreiben. Der Chat prüft jeden Kandidaten selbst und schreibt das Ergebnis ins Issue.",
+          "k": "Dein einziger Handgriff, wenn du so weit bist: in einem Chat, der deine alten Chats durchsuchen kann, den Prompt unter „Worauf das beruht“ einfügen. Der Chat sucht deine lange Fragenliste zur Erweiterung des Leitfadens, prüft jeden Fund selbst und legt das Ergebnis im Labor ab (Suchauftrag, Issue #189). Lesen musst du nichts.",
           "stuetzt": [
             "erweiterung",
             "nk-orte"
@@ -1184,7 +1190,9 @@
             "arbeitsweise"
           ],
           "g": "Zusammengelegt am 14.11. mit dem gleichen Auftrag aus Bug #200 („Deine lange Fragenliste aus den alten Leitfaden-Chats suchen.“): Prompt zum Einfügen: „Führe Issue #189 im Labor esany/design-lab aus (github.com/esany/design-lab/issues/189). Lies zuerst AGENTS.md.“ Der vollständige Suchauftrag steht im Issue; der Chat prüft die Kandidaten selbst und legt das Ergebnis im Issue ab. Du musst nichts lesen.",
-          "prio": "später"
+          "prio": "später",
+          "n": "geändert",
+          "f": "Priorität: später"
         },
         {
           "id": "a-verweise",
@@ -1806,41 +1814,49 @@
       "punkte": [
         {
           "id": "sy-regelpruefung",
-          "s": "offen",
-          "n": "neu",
+          "s": "befund",
+          "n": "geändert",
           "t": "Regelpause und Reihenfolge der Regelprüfung festlegen.",
-          "k": "Der Schutz des Hauptzweigs steht als eigene Freigabe im Strang Arbeitsweise.",
-          "g": "stand.md, Offene Fragen; research/2026-10-audit-zusammenarbeit/auftraege.md.",
+          "k": "Die Frage war überholt und hätte dir nicht mehr vorgelegt werden dürfen. Der Hauptzweig ist seit 14.11. geschützt: Übernommen wird nur mit grünen Pflichtprüfungen. Die „Regelpause“ hieß: bis die Regeln geprüft sind, keine neuen Regeln aus einzelnen Vorfällen. Die Regelprüfung ist am 13.11. auf deine Antwort „ja“ im Bug „Modelle verfehlen deine Anforderungen“ aufgegangen und läuft dort als Verhaltensprüfungen weiter; deren erste Läufe stehen bei mir an. Warum die Frage stehen blieb: Ich hatte sie aus der Pflegeliste vom Oktober kopiert und nicht gegen den späteren Stand geprüft.",
+          "g": "research/2026-10-audit-zusammenarbeit/auftraege.md, Fragen 1 bis 3; Regelprüfung (Issue #58), geschlossen 13.11.; verlauf/2026-11-14-anleitung-hauptzweig.md.",
           "stuetzt": [
             "st-main"
           ],
           "stuetzt_warum": {
             "st-main": "Belegt: In der Übersicht standen beide als eine Frage („Hauptzweig schützen, Regelpause und Reihenfolge der Regelprüfung“)."
           },
-          "prio": "später"
+          "dran": "",
+          "f": ".. das Zielbild wird auch bei repoänderungen nicht mit aktualisiert oder bekommt veraltete Daten - schwerer Bug"
         },
         {
           "id": "sy-probe",
           "s": "vorschlag",
           "dran": "du",
-          "n": "neu",
-          "t": "Sieben Regeln auf Probe haben kein Auswertungsdatum (0003, 0004, 0007, 0013, 0016, 0018, 0024).",
-          "k": "Empfehlung: gemeinsam mit dem Experiment Labor-Aufbau am 24.11. auswerten.",
-          "g": "stand.md, Offene Fragen (Pflege 11/2026).",
-          "prio": "später"
+          "n": "geändert",
+          "t": "Prinzipien, Grundmodell und die Regeln auf Probe sind nicht miteinander abgeglichen, und für den Abgleich ist niemand zuständig.",
+          "k": "Antwort auf deine Fragen (Abgleich am Repo, 14.11., abgeleitet). Aktuell? Die Prinzipien stammen vom 27. und 28.10.; seither wurde nur Prinzip 5 nachgeführt (Freigabe im Zielbild, 13.11.). Das Grundmodell vom 12. und 13.11. steht nur in der Startanweisung: „Umsetzen vor Neuem“, „erst verorten, dann antworten“ und „Namen statt Nummern, jede Zahl mit Bezug“ fehlen in den Prinzipien. Beruht die Infrastruktur darauf? Nur zum Teil. Die automatischen Prüfungen sichern Form: Links, erzeugte Übersichten, Farbrollen, Issue-Stände und seit heute Kontext an Punkten für dich. Für das Inhaltliche (Gestaltung dient, Werk vor System, Stoppen statt simulieren, Vertrauen statt Scheinreife) gibt es keinen Mechanismus; die vier Verhaltensprüfungen dafür sind angelegt, keine ist gelaufen. Zwei Prinzipien widerspricht die Praxis offen: „Eine Regel entsteht erst, wenn etwas dreimal getan wurde“ (Prinzip 8) gegen 39 Entscheidungen seit dem 27.10.; „Werk vor System“ (Prinzip 9) gegen eine Übersicht, in der eines von sieben Themen Werkarbeit ist. Wer prüft, wer pflegt? Niemand ausdrücklich. Die monatliche Pflege prüft den Stand im Intent, nicht die Prinzipien. Die sieben Regeln auf Probe (was ein Modell allein ändern darf; eine Anweisung für alle Modelle; Belegpflicht; Vorlagen; Erklärbarkeit in Stufen; Freigabe in Alltagssprache; kein Wissen nur im Chat) haben kein Auswertungsdatum. Vorschlag: Zuerst laufen die vier Verhaltensprüfungen, weil sie zeigen, wo es real bricht. Dann führe ich Grundmodell und Prinzipien in einem Entwurf zusammen und schreibe an jedes Prinzip, welcher Mechanismus es trägt oder dass keiner es trägt. Zuständig für den Abgleich wird das orchestrierende Modell: bei jeder Änderung an Prinzipien oder Grundmodell und monatlich in der Pflege. Deine Entscheidung: Sollen Prinzipien und Grundmodell ein Text werden, und soll der Abgleich so zugeordnet werden?",
+          "g": "Entscheidungen 0003, 0004, 0007, 0013, 0016, 0018, 0024 in decisions/, je Status „freigegeben (auf Probe)“; Pflegebericht 11/2026; Verhaltensprüfungen in evals/ (verhalten-zahlbezug, verhalten-einwand, verhalten-github, verhalten-gestaltungsurteil). Abgleich: research/2026-11-zielbild-bausteine/einordnung-und-ueberarbeitung.md, Nachtrag „Rückmeldung zu Iteration 1“, Abschnitt „Abgleich Prinzipien, Grundmodell, Mechanismen“; principles.md; AGENTS.md, Grundmodell; .agents/skills/pflege/SKILL.md, Schritt 3.",
+          "prio": "jetzt",
+          "f": "muss besser: Bug .. hier nur zahlen ohne Semantik und Kontext .. was soll ich da verstehen. … sind die überhaupt aktuell und werden ebenfalls kontinuierlich gepflegt. Beruht die Infrastruktur überhaupt auf diesen Regeln, oder ist sie überhaupt nicht kompatibel. Wer prüft das, wer pflegt das?",
+          "stuetzt": [
+            "a-verhaltenspruefung"
+          ]
         },
         {
           "id": "sy-entwurf-issues",
-          "s": "vorschlag",
-          "dran": "du",
-          "n": "neu",
+          "s": "befund",
+          "dran": "",
+          "n": "geändert",
           "auch": [
             "werke"
           ],
-          "t": "Zwölf Issues mit Label „entwurf“ und PR #90 ruhen seit 28./29.10.",
-          "k": "Empfehlung: in einer Sitzung mit Claude je freigeben, zurückstellen oder schließen. Betrifft #8, #9, #23, #24, #26, #27, #57–#61, #84.",
-          "g": "stand.md, Offene Fragen (Pflege 11/2026).",
-          "prio": "später"
+          "t": "Die ruhenden Entwürfe vom Oktober sind sortiert: fünf Übergaben und ein Pull Request sind längst abgeschlossen, sechs Werk-Ideen warten auf dich beim nächsten Experiment.",
+          "k": "Abgeschlossen (Stand GitHub 14.11.): die Übergaben zu Modellprofilen, Regelprüfung, Kommunikation und Delegation, Tokenökonomie und Assistenz im Entwurfsprozess sowie die Angleichung der Freigabehinweise. Die Zählung „zwölf“ stammte aus der Pflege vom Oktober und war veraltet. Die sechs Werk-Ideen stehen jetzt beim Punkt zum nächsten Experiment. Übrig ist eine Systemfrage (braucht das Labor ein eigenes Verzeichnis für Dokumentation?); das ist Verwaltung, ich kläre sie selbst.",
+          "g": "GitHub, Stand 14.11.: geschlossen #57, #58, #59, #60, #61 und PR #90; offen #8, #9, #23, #24, #26, #27 (Werk-Ideen) und #84 (Dokumentation). Pflegebericht 11/2026.",
+          "f": "muss besser: kann ich so überhaupt nichts mit anfangen .. kein Kontext bzw. Hypertext. So hat die Information keine Bedeutung für mich.",
+          "stuetzt": [
+            "w-naechstes"
+          ]
         },
         {
           "id": "sy-anforderungen",
@@ -1854,12 +1870,13 @@
         },
         {
           "id": "sy-startfaelle",
-          "s": "offen",
-          "n": "neu",
-          "t": "Wie laufen die Startfälle frisch, ohne Projektkontext (#109)?",
-          "k": "Alle vier Startfälle sind nicht getestet, weil der Prüf-Chat Projektkontext hatte.",
-          "g": "anschluss/system.md, nächster Schritt; evals/start/.",
-          "prio": "später"
+          "s": "befund",
+          "n": "geändert",
+          "t": "Der Neustart-Test läuft ohne dich: ChatGPT prüft in einem frischen Chat, ob ein Modell ohne Vorwissen nur mit der Startanweisung richtig arbeitet.",
+          "k": "Was getestet wird: Bekommt ein neues Modell nur den Satz „Lies AGENTS.md und befolge Start jeder Sitzung“, findet es dann den Stand, wartet es ohne Auftrag, führt es einen Auftrag richtig aus, und lehnt es ab, Zugangsdaten ins öffentliche Repo zu legen? Claudes eigener Test im Oktober zählte nicht, weil der Chat das Labor schon kannte. Am 14.11. habe ich den Test an ChatGPT vergeben; ich prüfe das Ergebnis. Die Frage an dich war damit überholt.",
+          "g": "evals/start/aufgabe.md und evals/start/erwartung.md; Neustart-Test (Issue #109), neu zugeteilt 14.11.",
+          "dran": "",
+          "f": "Antwort: .. kann ich so überhaupt nichts mit anfangen .. kein Kontext bzw. Hypertext. So hat die Information keine Bedeutung für mich."
         },
         {
           "id": "sy-marke",
@@ -2010,24 +2027,31 @@
         {
           "id": "vf-verstaendnis",
           "s": "offen",
-          "n": "neu",
+          "n": "geändert",
           "prio": "später",
           "auch": [
             "visualisierung"
           ],
-          "t": "Stimmt meine Lesart deines Verständnisses von Visualisierung? Siehe Chat vom 14.11.",
-          "g": "research/2026-11-voraussetzungen-fachwissen/analyse.md, V3."
+          "t": "Meine Lesart: Visualisierung heißt für dich ganzheitliche, organische Systeme, die dem Erkenntnisgewinn des Menschen dienen, nicht die einzelne Grafik. Stimmt das?",
+          "g": "research/2026-11-visualisierungssysteme/befund.md, Abschnitt „In Worten“; research/2026-11-voraussetzungen-fachwissen/analyse.md, Voraussetzung V3; daten/arbeitsweise.json, Eingang a49.",
+          "f": "Antwort: .. Ein inaktiver Verweis ins repo ist keine Assistenz für mich .. das ist in diesem Punkt der einzige Kontext und bricht mit unseren Regeln.",
+          "k": "Zusammengesetzt aus deinen gesicherten Aussagen: „ganzheitliche organische systemische Visualisierungssysteme, die dem Erkenntnisgewinn des Menschen dienen (menschenzentrierte Technikgestaltung)“ (09.11.); Aufgabe ist vor allem Kommunikation, „nur bedingt die Analyse“ (09.11.); Wirkung entsteht im Zusammenspiel von Struktur, Interaktion, Visualisierung, Farbe, Text und Lesesituation, nicht durch eine Ursache (12.11.); „ich rede nicht über Excel Plots“ (14.11.); Fachpakete und Leitfaden zusammendenken (14.11.). Folge deiner Antwort: Die Lesart wird Anforderung für das Fachpaket Visualisierungssysteme und Maßstab für dessen Prüffragen; die vier Prüffragen aus dem Pilot zu Einzelgrafiken werden daran neu gemessen. Der Chat vom 14.11., auf den ich vorher verwiesen hatte, ist im Labor nicht gesichert; das verstieß gegen „kein Wissen nur im Chat“."
         },
         {
           "id": "vf-pixelpatrol",
-          "s": "offen",
-          "n": "neu",
-          "prio": "später",
+          "s": "befund",
+          "n": "geändert",
           "auch": [
             "werke"
           ],
-          "t": "Was ist PixelPatrol, wo liegt es, und darf es im öffentlichen Labor genannt werden?",
-          "g": "research/2026-11-voraussetzungen-fachwissen/analyse.md, V6."
+          "t": "Die Frage nach PixelPatrol ist zurückgezogen: Du hattest sie im selben Zielbild schon beantwortet.",
+          "g": "research/2026-11-voraussetzungen-fachwissen/analyse.md, V6.",
+          "dran": "",
+          "f": "Antwort: Das ist bereits hinreichend geklärt . Ich werte das als schweren Bug! Anallysieren und beheben.",
+          "k": "Am 14.11. hast du bestätigt: Erprobt wird am Labor selbst „und auch am aktuellen Projekt PixelPatrol“. Damit ist geklärt, was das Labor braucht: Es ist dein aktuelles Projekt, ein Prüffall für die Fachpakete, und du nennst es selbst im öffentlichen Labor. Ursache des Fehlers: Ich habe die Frage aus meiner Analyse der Voraussetzungen übernommen, ohne sie gegen die bestätigten Punkte desselben Zielbilds zu prüfen. Was ich sonst über das Projekt brauche, suche ich zuerst selbst, wenn ein Fachpaket daran erprobt wird.",
+          "stuetzt": [
+            "vi-datensatz"
+          ]
         }
       ]
     },
@@ -2044,20 +2068,22 @@
         },
         {
           "id": "w-naechstes",
-          "s": "offen",
+          "s": "ableitung",
           "prio": "später",
-          "n": "neu",
-          "t": "Welches Experiment kommt als Nächstes?",
-          "k": "Cloudflare ist eingerichtet (14.11.); jetzt bist du dran. Experimente testen auch das System.",
-          "g": "anschluss/werke.md, nächster Schritt.",
+          "n": "geändert",
+          "t": "Das nächste Experiment ist „Raster als Programm“, zugleich der Pilot für die Entwicklungsabläufe aus dem Fundstück agent-skills.",
+          "k": "Abgeleitet aus deiner Bestätigung vom 14.11.: agent-skills wird in eigene Labor-Skills übernommen, „mit einem Pilot an Raster als Programm“. Ich lese „veraltet“ so, dass die Wahl damit getroffen ist; meinst du ein anderes Experiment, sag es. Raster als Programm heißt: Das Raster des Flyers wird als Regel geschrieben, und alles folgt ihm. Umsetzung bei mir. Die anderen Werk-Ideen warten: Werkzeug-Starter „Vermitteln“ mit erstem Werk; generative Gestaltung als Referenzbibliothek; den Entwurfsprozess sichtbar machen (Werkbank, Laborbuch, Vergleich, Entscheidungen); die Labor-Website zeigt Stand, Manifest, Fachpakete und Experimente; Fachpaket „Form“, Abschnitt Raster und Layout.",
+          "g": "Punkt agent-skills im Strang Fundstücke (bestätigt 14.11.); anschluss/werke.md, „Wartet auf die Wiederaufnahme“; Issues #24 (Raster als Programm) und #180 (Pilot), Werk-Ideen #8, #9, #23, #26, #27.",
           "stuetzt": [
-            "st-cloudflare",
+            "fs-osmani",
             "st-experimente"
           ],
           "stuetzt_warum": {
-            "st-cloudflare": "Belegt: Merkzettel Werke: erst Cloudflare einrichten, „danach wählt der Eigentümer das nächste Experiment“.",
-            "st-experimente": "Belegt: Deine Aussage vom 13.11., Experimente testen auch das System (Merkzettel Werke, Stand)."
-          }
+            "fs-osmani": "Belegt: Deine Bestätigung vom 14.11. nennt den Pilot an Raster als Programm.",
+            "st-experimente": "Belegt: Deine Aussage vom 13.11., Experimente testen auch das System."
+          },
+          "dran": "",
+          "f": "Antwort: veraltet - bug"
         },
         {
           "id": "w-sicherung",
@@ -2065,7 +2091,8 @@
           "prio": "später",
           "n": "neu",
           "t": "Sicherung der Werke: die Claude-App auf GitHub für „werke“ freischalten und eine zweite Kopie außerhalb von GitHub anlegen?",
-          "g": "anschluss/werke.md, Abschnitt Sicherung (Entscheidung 0026)."
+          "g": "anschluss/werke.md, Abschnitt Sicherung (Entscheidung 0026).",
+          "k": "Die Werke liegen seit Oktober nur im privaten Werke-Repo auf GitHub. Zwei Lücken: Cloud-Modelle können dort nur schreiben, wenn die Claude-App auf GitHub auch dieses Repo sehen darf; und es gibt keine zweite Kopie, falls GitHub ausfällt oder etwas verloren geht. Beides berührt Konten und Sichtbarkeit, darum entscheidest du. Folge bei Ja: ein Handgriff von dir in den GitHub-Einstellungen, die Kopie richte ich ein."
         }
       ]
     },
@@ -2079,7 +2106,8 @@
           "n": "neu",
           "t": "Sollen Quellen künftig ihren Lesestand tragen (gelesen, nur Abstract, nur Referat)?",
           "g": "anschluss/wissen.md, Frage 1.",
-          "prio": "später"
+          "prio": "später",
+          "k": "Heute steht bei vielen Quellen „belegt“, auch wenn nur das Abstract gelesen ist; von den 123 Quellen der Recherchen sind die meisten nur so gesehen. Mit einem Lesestand je Quelle sähe jedes Modell, wie tief eine Aussage geprüft ist, und „belegt“ gäbe es erst nach Lektüre. Folge bei Ja: ein Feld im Quellenverzeichnis, das der Build prüft. Dahinter steht dein Satz vom 30.10.: „Ich will nur nachfragen können und die KI hat dann die Provenienz und kann mit mir diskutieren.“"
         },
         {
           "id": "wi-belegpflicht",
@@ -2090,7 +2118,8 @@
           "stuetzt": [
             "wi-lesestand"
           ],
-          "prio": "später"
+          "prio": "später",
+          "k": "Der Skill „belegpflicht“ verlangt schon Zitat mit Fundstelle und Status. Schärfen hieße: Lesestand je Quelle, Hochstufung erst nach Lektüre, zwei Durchgänge (erst Wortlaut, dann ob er die Aussage deckt). Ein neuer Skill stellte eine zweite Schicht daneben. Meine Empfehlung: schärfen."
         },
         {
           "id": "wi-entwerfen",
@@ -2101,7 +2130,8 @@
           ],
           "t": "Sollen die fünf Bücher der Grundstock eines Fachpakets „Entwerfen“ werden, wenn die ersten Kapitel gelesen sind?",
           "g": "anschluss/wissen.md, Frage 3.",
-          "prio": "später"
+          "prio": "später",
+          "k": "Die fünf Bücher, die du am 30.10. bereitgestellt hast: Grabbe (Hrsg.), Designforschung und KI (2025); Held, Offenes Design DDR (2026); Grabbe und Held (Hrsg.), Designforschung und Designwissenschaft (2024); Schmitz, Häußling, Mareis, Groninger (Hrsg.), Manifestationen im Entwurf (2016); Dubberly, How Do You Design? Gelesen sind bisher nur Inhaltsverzeichnisse und Einleitungen. Meine Empfehlung: das Fachpaket erst, wenn mindestens zwei Kapitel im Original gelesen und von einem zweiten Modell gegengelesen sind."
         },
         {
           "id": "wi-pdfs",
@@ -2109,7 +2139,8 @@
           "n": "neu",
           "t": "Wo liegen die fünf PDFs, damit ein zweites Modell die Kapitel selbst lesen kann?",
           "g": "anschluss/wissen.md, Frage 4. PDFs kommen nicht ins öffentliche Repo.",
-          "prio": "später"
+          "prio": "später",
+          "k": "Die fünf Bücher aus der Frage davor lagen als PDF nur in einem ChatGPT-Chat vom 30.10.; ins öffentliche Labor dürfen sie nicht. Ohne Zugang kann kein zweites Modell eine Buchstelle prüfen, darum gilt alles dazu als „nicht geprüft“. Gesucht ist ein privater Ort, den du bestimmst."
         },
         {
           "id": "wi-pinterest",
@@ -2176,5 +2207,6 @@
         }
       ]
     }
-  ]
+  ],
+  "repo": "esany/design-lab"
 }

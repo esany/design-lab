@@ -2,7 +2,7 @@
 // Prüffälle für tools/zielbild.mjs: je Regel ein richtiger und ein falscher Fall.
 //   node tools/zielbild-test.mjs
 import { readFileSync } from "node:fs";
-import { pruefen, erzeugen, dran } from "./zielbild.mjs";
+import { pruefen, erzeugen, dran, verweise as punktVerweise, pruefeAktualitaet, nackteNummern } from "./zielbild.mjs";
 import { pruefeFarbrollen, stileAusHtml } from "./farbrollen.mjs";
 import { verweise, archivSeiten } from "./website.mjs";
 import { spawnSync } from "node:child_process";
@@ -64,6 +64,17 @@ const tests = [
   ["Grün nur für Bestätigtes", () => /const rolle=p=>p\.s==="bestaetigt"&&!fest\(p\)\?"":/.test(readFileSync(join(hier, "zielbild/vorlage.html"), "utf8"))],
   ["Begründung nur für bestehende Verbindung", () => hat(mit((d) => { punkt(d, "farbe").stuetzt_warum = { fokus: "x" }; }), "keine Verbindung dorthin")],
   ["Links: extern, Anker und Skript zählen nicht", () => JSON.stringify(verweise('<a href="x/">a</a><a href="https://b">b</a><a href="#c">c</a><script>"<a href=\\"d\\">"</script>')) === '["x/"]'],
+  // Was zum Eigentümer geht, ist für sich verständlich (Grundmodell; Rückmeldung zum Zielbild 14.11.)
+  ["für dich: ohne Kontext gemeldet", () => hat(mit((d) => { delete punkt(d, "druck").k; }), "Kontext „k“ fehlt")],
+  ["für dich: nackte Nummer im Satz gemeldet", () => hat(mit((d) => { punkt(d, "druck").t = "#109 offen: wie drucken?"; }), "#109 ohne Namen")],
+  ["für dich: Nummer in Klammern hinter dem Namen erlaubt", () => mit((d) => { punkt(d, "druck").t = "Neustart-Test (#109): wie drucken?"; }).length === 0],
+  ["für dich: Kürzel und Entscheidungsnummer gemeldet", () => JSON.stringify(nackteNummern("O3 läuft, 0031 gilt, A02 fehlt")) === '["O3","0031","A02"]'],
+  ["für dich: Verweis auf einen Chat statt Inhalt gemeldet", () => hat(mit((d) => { punkt(d, "druck").k = "Siehe Chat vom 14.11."; }), "verweist auf einen Chat")],
+  ["für dich: Herkunft und Ruhendes dürfen Nummern tragen", () => mit((d) => { punkt(d, "druck").g = "#12, 0031"; punkt(d, "farbe").t = "#12 erledigt"; }).length === 0],
+  ["Verweise: Datei, Entscheidung und Issue werden Links", () => { const v = Object.fromEntries(punktVerweise({ g: "stand.md, 0031 und #5; gibt/es/nicht.md" }, "o/r")); return v["stand.md"] === "https://github.com/o/r/blob/main/stand.md" && /decisions\/0031-/.test(v["0031"]) && v["#5"] === "https://github.com/o/r/issues/5" && !("gibt/es/nicht.md" in v); }],
+  ["Verweise: Seite verlinkt nur mit „repo“ im Kopf", () => !erzeugen({ ...gut }).includes('"vw"') && erzeugen({ ...gut, repo: "o/r" }).includes('"vw"')],
+  ["Aktualität: geschlossenes Issue im Satz gemeldet", () => pruefeAktualitaet({ teile: [{ punkte: [{ id: "x", s: "offen", t: "Neustart-Test (#5)?", k: "k" }] }] }, { 5: "closed" }).length === 1],
+  ["Aktualität: offenes Issue und fertiger Auftrag still", () => pruefeAktualitaet({ teile: [{ punkte: [{ id: "x", s: "offen", t: "Test (#5)?", k: "k" }, { id: "y", s: "auftrag", stand: "fertig", wer: "C", t: "Test (#6)" }] }] }, { 5: "open", 6: "closed" }).length === 0],
   ["Kommandozeile ohne --aus findet die Datendatei", () => {
     const r = spawnSync(process.execPath, [join(hier, "zielbild.mjs"), join(hier, "fixtures/zielbild/beispiel.json"), "--check"], { encoding: "utf8" });
     return !/Aufruf:/.test(r.stderr) && /beispiel\.json|index\.html/.test(r.stdout + r.stderr);

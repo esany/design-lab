@@ -125,6 +125,8 @@ const KEY="/*SCHLUESSEL*/-v/*ITERATION*/";
 let urteil={};try{urteil=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){}
 const speichern=()=>{try{localStorage.setItem(KEY,JSON.stringify(urteil))}catch(e){}};
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"})[c]);
+/* Herkunft als Hypertext: Verweise (p.vw, vom Generator gegen das Repo geprüft) werden zu Links. */
+const vt=(s,p)=>{const v=p&&p.vw;let h=esc(s);if(!v||!v.length)return h;const m=new Map(v.map(([t,u])=>[esc(t),u]));const re=new RegExp([...m.keys()].map(t=>t.replace(/[.*+?^${}()|[\]\\\/]/g,"\\$&")).join("|"),"g");return h.replace(re,t=>`<a href="${esc(m.get(t))}" target="_blank" rel="noopener">${t}</a>`);};
 const STRANG=Object.fromEntries(D.straenge.map(s=>[s.id,s]));
 const PUNKTE=D.teile.flatMap(t=>t.punkte.map(p=>({...p,teil:t.teil,heim:t.strang,straenge:[t.strang,...(p.auch||[])]})));
 const ALLE=Object.fromEntries(PUNKTE.map(p=>[p.id,p]));
@@ -148,14 +150,14 @@ function knoepfe(p){const u=urteil[p.id]||{};const a=p.s==="auftrag",selbst=a&&p
 function karte(p,mitId){
  const idAttr=mitId?` id="p-${esc(p.id)}"`:"";const dd=p.bestaetigt?p.bestaetigt.slice(8,10)+"."+p.bestaetigt.slice(5,7)+".":"";
  const rel=bezugListe(p.stuetzt,"Beruht auf",p.stuetzt_warum)+bezugListe(TRAEGT[p.id],"Trägt",Object.fromEntries((TRAEGT[p.id]||[]).map(i=>[i,(ALLE[i].stuetzt_warum||{})[p.id]]).filter(([,w])=>w)));
- if(fest(p)&&!duDran(p)){return `<article class="punkt fest"${idAttr}><span class="chip ${rolle(p)}">${esc(LABEL[p.s])}</span><span class="fest-mark">bestätigt ${dd}</span>${strangChips(p)}<h3>${esc(p.t)}</h3>${p.k||p.g||rel?`<details><summary>Mehr</summary>${p.k?`<p>${esc(p.k)}</p>`:""}${p.g?`<p>${esc(p.g)}</p>`:""}${rel}</details>`:""}</article>`;}
+ if(fest(p)&&!duDran(p)){return `<article class="punkt fest"${idAttr}><span class="chip ${rolle(p)}">${esc(LABEL[p.s])}</span><span class="fest-mark">bestätigt ${dd}</span>${strangChips(p)}<h3>${esc(p.t)}</h3>${p.k||p.g||rel?`<details><summary>Mehr</summary>${p.k?`<p>${vt(p.k,p)}</p>`:""}${p.g?`<p>${vt(p.g,p)}</p>`:""}${rel}</details>`:""}</article>`;}
  const kl=["punkt",duDran(p)?"dran":p.n?"wandel":""].filter(Boolean).join(" ");
  const status=p.s==="auftrag"?`<span class="chip">Auftrag · ${p.stand==="startklar"?"wartet auf deine Freigabe":esc(p.stand)} · ${esc(p.wer)}</span>`:`<span class="chip ${rolle(p)}">${esc(LABEL[p.s])}</span>`;
  const dranChip=duDran(p)?`<span class="chip dran">du bist dran</span>`:p.dran&&p.s!=="auftrag"?`<span class="chip">dran: ${esc(p.dran)}</span>`:"";
  const marke=p.n?`<span class="marke">${p.n==="ergänzt"?"ergänzt":p.v?"geändert":"neu"}</span>`:"";
  const wandel=p.f?`<dl class="wandel-dl">${p.v===p.t?"":`<dt>vorher</dt><dd class="vorher">${p.v?esc(p.v):"nicht da"}</dd>`}<dt>du</dt><dd class="du"><q>${esc(p.f)}</q></dd></dl>`:"";
  const zeigeUrteil=p.s!=="auftrag"||p.stand==="startklar"||duDran(p);
- return `<article class="${kl}"${idAttr}>${dranChip}${status}${marke}${strangChips(p)}<h3>${esc(p.t)}</h3>${wandel}${p.k?`<p>${esc(p.k)}</p>`:""}${p.offen?`<p class="hinweis">Bewusst offen: ${esc(p.offen)}</p>`:""}${p.zurueck?`<p class="hinweis">Rückgängig: ${esc(p.zurueck)}</p>`:""}${p.g?`<details><summary>Worauf das beruht</summary><p>${esc(p.g)}</p></details>`:""}${rel}${zeigeUrteil?knoepfe(p):""}</article>`;}
+ return `<article class="${kl}"${idAttr}>${dranChip}${status}${marke}${strangChips(p)}<h3>${esc(p.t)}</h3>${wandel}${p.k?`<p>${vt(p.k,p)}</p>`:""}${p.offen?`<p class="hinweis">Bewusst offen: ${esc(p.offen)}</p>`:""}${p.zurueck?`<p class="hinweis">Rückgängig: ${esc(p.zurueck)}</p>`:""}${p.g?`<details><summary>Worauf das beruht</summary><p>${vt(p.g,p)}</p></details>`:""}${rel}${zeigeUrteil?knoepfe(p):""}</article>`;}
 function kurz(p){const kl=duDran(p)?"dran":fest(p)?"fest":["vorschlag","ableitung"].includes(p.s)?"vorschlag":"";const wer=p.s==="auftrag"?`${p.wer} · ${p.stand}`:p.dran&&!duDran(p)?`dran: ${p.dran}`:"";return `<li class="${kl}"><span><a href="#" data-ziel="${esc(p.id)}">${esc(p.t)}</a>${wer?`<span class="wer">${esc(wer)}</span>`:""}</span></li>`;}
 function ansichtDu(){
  const ent=PUNKTE.filter(p=>duDran(p)&&imStrang(p)).sort((a,b)=>prioRang(a)-prioRang(b)||strangOrd[a.heim]-strangOrd[b.heim]);
