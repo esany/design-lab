@@ -33,6 +33,7 @@ Kopf:
 | `rueckmeldung` | nein | Datum der letzten Rückmeldung, frei, z. B. „11.11.“ |
 | `von` | nein | wer verstanden hat; Vorgabe „Claude“ |
 | `hinweis` | nein | Notiz für die Pflege, wird nicht angezeigt |
+| `repo` | nein | `besitzer/name` des Repos, in dem die Daten liegen (im Labor `esany/design-lab`). Dann werden Pfade, Entscheidungen und Issue-Nummern in Erläuterung und Grundlage zu Links, aber nur auf Dateien, die es gibt. |
 | `straenge` | nein | Liste von Strängen: `id`, `name`, `iteration` (je Strang), `rueckmeldung`. Das Labor-Zielbild braucht sie; ohne sie ist die ganze Seite ein Strang (Werke). |
 | `teile` | ja | Liste von Teilen: `teil` (Überschrift), `strang` (mit `straenge` Pflicht) und `punkte` |
 | `archiviert` | nein | nur im Labor: `am`, `nach`, `strang`, `grund`. Der Build erzeugt dann statt der Seite einen Hinweis auf das eine Zielbild. |
@@ -76,3 +77,32 @@ Pflichtfelder, Kennungen (eindeutig über alle Stränge), erlaubte Werte, `v` un
 Bestätigung bei Änderung, Stränge und Schnittstellen nur zu bekannten Strängen, Verbindungen nur zu
 bekannten Punkten, Aufträge mit `wer`, `stuetzt` und gültigem Stand, „startklar“ nur auf Bestätigtem. Farben und
 Schriften kommen aus `system/tokens/lab.tokens.json`; Text aus den Daten wird maskiert.
+
+Bei Punkten, bei denen der Eigentümer dran ist, zusätzlich das Grundmodell aus `AGENTS.md` („mit Kontext, in
+Namen statt Nummern, jede Zahl mit ihrem Bezug“; Rückmeldung 14.11.): Der Kontext `k` ist Pflicht; Satz und
+Kontext nennen Issue-, Entscheidungs- und Kürzelnummern nur in Klammern hinter dem Namen; kein „siehe Chat“
+statt Inhalt. Grenze: Die Prüfung erkennt Nummern, nicht ob der Kontext genügt; das prüft der Prüffall
+`evals/verhalten-zahlbezug`.
+
+„Stand gegen GitHub“ (`tools/stand-github.mjs`) prüft außerdem: Was ein Punkt im Satz als offen vorlegt (bei dir
+dran oder Auftrag nicht fertig), muss auf GitHub offen sein. Kontext und Herkunft dürfen auf Abgeschlossenes
+verweisen. Grenze: Antworten, die nur in einem anderen Punkt stehen, findet keine Prüfung; dafür gilt beim
+Fortschreiben, jede Frage gegen die bestätigten Punkte zu lesen.
+
+## Rückmeldung senden (private Fassung, 14.11.)
+
+Es gibt eine Seite des Labor-Zielbilds, in zwei Zugängen. Öffentlich (GitHub Pages): lesen und kopieren.
+Privat bei Cloudflare (`/labor/`, Repo `esany/werke`, Zugang nur für den Eigentümer): dieselbe Seite, bei
+jedem Aufruf frisch von der öffentlichen geholt (`functions/labor/index.js`); dort ist nur „Rückmeldung senden“
+eingeschaltet (Zeile `const SENDEN="",ABLAGE="";` in der Vorlage, nicht umbenennen). Keine zweite Kopie, kein
+zweiter Stand. Werk-Zielbilder baut `seiten.sh` mit `--senden /api/rueckmeldung --ablage <ordner>`. Der Dienst
+(`functions/api/rueckmeldung.js`) legt die Rückmeldung als Datei auf einem Zweig `lab/rueckmeldung-*` ab
+(Labor: `zielbild/rueckmeldungen/`) und öffnet einen Pull Request; der geplante Orchestrierungslauf arbeitet
+sie ein (Schritt 2a). Herkunft: Entwurf „ein Zielbild“, Abschnitt 3, Variante A.
+
+## Voraussetzungen: `braucht` (14.11.)
+
+`braucht` nennt Punkte, die erledigt sein müssen (von dir bestätigt, Befund oder fertiger Auftrag). Die
+Prüfung meldet: unbekannte Punkte, Kreise, Aufträge „startklar“ oder „läuft“ an Unerledigtem und Fragen an
+den Eigentümer, die an Unerledigtem hängen. Die Seite zeigt je Punkt „Braucht vorher“ und „Gibt frei“.
+`stuetzt` bleibt die Begründung („beruht auf“), keine Voraussetzung.

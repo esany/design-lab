@@ -2,7 +2,7 @@
   "titel": "Zielbild des Labors",
   "ort": "design-lab",
   "schluessel": "labor",
-  "iteration": 1,
+  "iteration": 2,
   "stand": "2026-11-14",
   "von": "Claude",
   "hinweis": "Das eine Zielbild des Labors (Entwurf research/2026-11-zielbild-bausteine/entwurf-ein-zielbild.md, Urteil 14.11.). Am 14.11. aus leitfaden/zielbild/punkte.json (Iteration 7) und research/2026-11-anforderungspruefung/zielbild/punkte.json (Iteration 3) zusammengeführt; beide bleiben archiviert. Kennung a-recherche aus Bug #200 heißt hier a-recherche-sota; st-fragenliste ist derselbe Auftrag wie a-suchprompt und steht nur dort. Punkte mit „frage“ ziehen Wortlaut und Antwort aus daten/arbeitsweise.json. Wortlaut des Eigentümers: daten/arbeitsweise.json.",
@@ -10,19 +10,20 @@
     {
       "id": "arbeitsweise",
       "name": "Arbeitsweise mit KI",
-      "iteration": 4,
+      "iteration": 5,
       "rueckmeldung": "14.11."
     },
     {
       "id": "leitfaden",
       "name": "Leitfaden",
-      "iteration": 7,
-      "rueckmeldung": "12.11."
+      "iteration": 8,
+      "rueckmeldung": "14.11."
     },
     {
       "id": "system",
       "name": "System und Pflege",
-      "iteration": 1
+      "iteration": 2,
+      "rueckmeldung": "14.11."
     },
     {
       "id": "fundstuecke",
@@ -32,7 +33,8 @@
     {
       "id": "werke",
       "name": "Werke",
-      "iteration": 1
+      "iteration": 2,
+      "rueckmeldung": "14.11."
     },
     {
       "id": "wissen",
@@ -170,32 +172,27 @@
         {
           "id": "ao-akteure",
           "s": "ableitung",
-          "n": "neu",
-          "t": "Vier Akteure brauchen die Oberfläche verschieden: du als Product Owner und Gestalter, ich als Orchestrator, ausführende Modelle (ChatGPT, Codex), ein menschlicher Entwickler, der das System pflegt.",
-          "k": "Abgeleitet aus dem Grundmodell in AGENTS.md (Wer, Wo, keine Black Box). Ob Modelle und Entwickler dieselbe Oberfläche brauchen oder die Dateien genügen, ist offen. Bitte bestätigen oder korrigieren: Das schließt Iteration 1 der Anforderungen ab.",
+          "t": "Drei Akteure nutzen die Oberfläche verschieden: du als Product Owner und Gestalter, ich als Orchestrator, die ausführenden Modelle (ChatGPT, Codex). Dass ein menschlicher Entwickler das System verstehen und pflegen könnte, ist ein Qualitätsanspruch an das System, kein Nutzer der Oberfläche.",
+          "k": "Abgeleitet aus dem Grundmodell in AGENTS.md: „bleibt für einen menschlichen Entwickler verstehbar und pflegbar: keine Black Box“. Meine erste Fassung machte daraus eine vierte Person. Offen bleibt, ob die Modelle die Oberfläche brauchen oder die Dateien genügen.",
           "g": "research/2026-11-arbeitsoberflaeche/analyse.md; daten/arbeitsweise.json, a64.",
-          "dran": "du",
-          "prio": "jetzt"
+          "bestaetigt": "2026-11-14"
         },
         {
           "id": "ao-situationen",
           "s": "ableitung",
-          "n": "neu",
-          "t": "Zwei Nutzungssituationen: kurz am Handy entscheiden; am Rechner erkunden, vergleichen und mich prüfen.",
-          "k": "Abgeleitet aus „Handy zuerst“ (Leitfaden) und deinem Wunsch, im großen Ganzen zu explorieren. Bitte bestätigen oder korrigieren: Das schließt Iteration 1 der Anforderungen ab.",
-          "g": "research/2026-11-arbeitsoberflaeche/analyse.md; daten/arbeitsweise.json, a64.",
+          "t": "Geräteunabhängig: Jede Sicht funktioniert auf Handy und Rechner, entworfen vom Handy aus. Kurz entscheiden und ausführlich erkunden sind Situationen, keine Geräte.",
+          "k": "Deine Anmerkung beim Bestätigen hat meine Fassung „am Handy entscheiden, am Rechner erkunden“ ersetzt.",
+          "g": "Eigentümer im Chat, 14.11.: „ja - mit einer Anmerkung .. bei allem Handy first .. ich will so gut wie möglich geräteunabhängig arbeiten können.“",
           "stuetzt": [
             "handy-zuerst"
           ],
-          "dran": "du",
-          "prio": "jetzt"
+          "bestaetigt": "2026-11-14"
         },
         {
           "id": "ao-rechenschaft",
           "s": "ableitung",
-          "n": "neu",
           "t": "Rechenschaft: Für jeden Schritt eines Modells ist sichtbar, wer was warum getan hat, mit welchem Ergebnis und welcher Prüfung.",
-          "k": "Abgeleitet aus „du musst dich verantworten“. Heute liegt das verstreut in Verlauf, Pull Requests und Issues, die du nicht siehst. Bitte bestätigen oder korrigieren: Das schließt Iteration 1 der Anforderungen ab.",
+          "k": "Abgeleitet aus „du musst dich verantworten“. Heute liegt das verstreut in Verlauf, Pull Requests und Issues, die du nicht siehst.",
           "g": "research/2026-11-arbeitsoberflaeche/analyse.md; daten/arbeitsweise.json, a64.",
           "stuetzt": [
             "ao-transparenz"
@@ -203,17 +200,16 @@
           "stuetzt_warum": {
             "ao-transparenz": "Belegt: dein Satz zu Prüfen, Bewerten und Verantworten."
           },
-          "dran": "du",
-          "prio": "jetzt"
+          "bestaetigt": "2026-11-14"
         },
         {
           "id": "ao-recherche-muster",
           "s": "auftrag",
-          "stand": "freigegeben",
+          "stand": "fertig",
           "wer": "ChatGPT",
-          "n": "neu",
+          "n": "geändert",
           "t": "Stand der Technik: Muster für KI-assistierende Oberflächen und sichtbare Arbeitsteilung zwischen Mensch und Modellen (#237).",
-          "k": "Ergebnis wird Grundlage eines Fachpakets Interaktionsgestaltung, das es im Labor noch nicht gibt. Baut auf dem Befund zum Leitfaden (#172) und dem Befund Visualisierungssysteme auf, statt neu anzufangen.",
+          "k": "Abgeschlossen und übernommen am 14.11.: research/2026-11-arbeitsoberflaeche/recherche-muster.md. Sie ist die Grundlage für den Rahmen des Arbeitsplatzes (Iteration 2) und für das Fachpaket Interaktion und Struktur.",
           "g": "Freigabe: dein Satz „das wäre doch ein schöner sota Auftrag … (Sota Recherche nötig.)“, 14.11.",
           "stuetzt": [
             "ao-perspektiven",
@@ -223,13 +219,171 @@
           ]
         },
         {
+          "id": "ao-rahmen",
+          "s": "befund",
+          "dran": "",
+          "n": "geändert",
+          "t": "Die Varianten A bis C für den Arbeitsplatz sind verworfen: Sie ordneten Seiten, statt von dir, deinen Situationen und deiner Erkenntnislücke auszugehen.",
+          "k": "Du hast sie am 14.11. fragmentarisch genannt und Entwurfsarbeit verlangt, bevor etwas umgebaut wird. Daraus ist die Entwurfsgrundlage entstanden (research/2026-11-arbeitsoberflaeche/entwurf.md).",
+          "g": "research/2026-11-arbeitsoberflaeche/analyse.md, Abschnitt „Iteration 2“; research/2026-11-arbeitsoberflaeche/recherche-muster.md; daten/arbeitsweise.json, arbeitsweise-a76 und arbeitsweise-a77.",
+          "stuetzt": [
+            "ao-reihenfolge",
+            "ao-einfacher",
+            "ao-situationen"
+          ],
+          "f": "ich weiß nicht a-C ist schon wieder fragmentatisch. Du sollst von mir und meiner Erkenntnislücke ausgehen. … Kurz mach doch einfach mal Entwurfsarbeit … Bevor wir hier nicht weiter kommen, müssen wir die Seite nicht umbauen."
+        },
+        {
+          "id": "ao-entwurf",
+          "s": "auftrag",
+          "stand": "fertig",
+          "wer": "Claude",
+          "n": "neu",
+          "t": "Entwurfsgrundlage für den Arbeitsplatz: von dir und deiner Erkenntnislücke über Situationen, Aufgaben, Informationen und Anforderungen bis zu Ansichten, Aufgabenpfaden und visueller Abbildung.",
+          "k": "Fertig am 14.11.: research/2026-11-arbeitsoberflaeche/entwurf.md. Die Datei ist die Herleitung; was gilt oder entschieden wird, steht hier im Zielbild: Erkenntnislücke und Situationen im Teil „Dein Nutzungskontext“, Arbeitsfläche, „Stand“ und Senden hier.",
+          "stuetzt": [
+            "ao-reihenfolge",
+            "ao-einfacher",
+            "ao-ganzheitlich",
+            "ao-tiefe"
+          ]
+        },
+        {
+          "id": "ao-flaeche",
+          "s": "vorschlag",
+          "dran": "du",
+          "n": "neu",
+          "prio": "jetzt",
+          "t": "Statt einer Übersicht über Zielbild-Seiten: eine Arbeitsfläche über alle Zielbilder, Labor und jedes Werk als Bereich, den du eingrenzen kannst. Trägt diese Richtung?",
+          "k": "Begründung: ein Zielbild für das Ganze (bestätigt), gleiche Funktion gleiche Form, und deine Kritik, dass Labor und Werke verschieden behandelt wurden. Innerhalb des Labors bleiben Stränge eine zweite Dimension; Werke haben keine Stränge. Werk-Inhalte bleiben privat. Folge deiner Antwort: Datenmodell über Labor und Werke an einem privaten Ort.",
+          "g": "research/2026-11-arbeitsoberflaeche/entwurf.md, Abschnitt 6, Folgerung 1.",
+          "braucht": [
+            "ao-entwurf"
+          ],
+          "stuetzt": [
+            "st-zentrale",
+            "ez-aufbau",
+            "o2"
+          ]
+        },
+        {
+          "id": "ao-stand-teile",
+          "s": "vorschlag",
+          "dran": "du",
+          "n": "neu",
+          "prio": "jetzt",
+          "t": "Deine Ansicht „Stand“ in drei Teilen: was aus deinen Worten wurde seit deinem letzten Blick; was läuft und woran es hängt; wie Stränge und Bereiche zusammenhängen. So füllen?",
+          "k": "Die drei Ansichten „Du bist dran“, „Stand“, „Alles“ und ihre Reihenfolge hast du bestätigt; sie bleiben. Neu ist nur, womit „Stand“ gefüllt wird. Der erste Teil antwortet auf dein doppeltes Senden (du sahst nicht, ob es angekommen war), der zweite auf Transparenz statt Orchestrieren, der dritte auf die zweite Stufe deiner Reihenfolge. „Gut statt fertig“: nie Fortschritt in Prozent, sondern was geprüft ist und was offen.",
+          "g": "research/2026-11-arbeitsoberflaeche/entwurf.md, Abschnitt 6; daten/arbeitsweise.json, a74.",
+          "braucht": [
+            "ao-entwurf"
+          ],
+          "stuetzt": [
+            "ez-aufbau",
+            "ao-reihenfolge",
+            "ao-transparenz"
+          ]
+        },
+        {
+          "id": "ao-senden",
+          "s": "vorschlag",
+          "dran": "du",
+          "n": "neu",
+          "prio": "später",
+          "t": "Wenn du in „Du bist dran“ entscheidest: jede Antwort sofort senden oder alle gesammelt am Ende?",
+          "k": "Sofort: jede Entscheidung wirkt gleich, du siehst sofort, was danach passiert, aber jede wird ein eigener Eingang. Gesammelt: ein Eingang mit Zusammenfassung, aber nichts wirkt, bis du sendest. Empfehlung: sofort, weil Rückmeldung und Selbstwirksamkeit dein offener Bug zu den Schaltflächen sind.",
+          "g": "research/2026-11-arbeitsoberflaeche/entwurf.md, Abschnitt 7, Pfad P1.",
+          "braucht": [
+            "ao-entwurf"
+          ],
+          "stuetzt": [
+            "st-rueckweg"
+          ]
+        },
+        {
+          "id": "ao-ansichten",
+          "s": "auftrag",
+          "stand": "vorbereitet",
+          "wer": "Claude",
+          "n": "neu",
+          "t": "Den Inhalt der drei bestätigten Ansichten festlegen: Teile, Reihenfolge, Leerzustände, Rahmen.",
+          "k": "Wartet auf deine Antworten zu Erkenntnislücke, Situationen, Arbeitsfläche und „Stand“.",
+          "braucht": [
+            "nk-situationen",
+            "nk-kernluecke",
+            "ao-flaeche",
+            "ao-stand-teile"
+          ],
+          "stuetzt": [
+            "ao-entwurf"
+          ]
+        },
+        {
+          "id": "ao-datenmodell",
+          "s": "auftrag",
+          "stand": "vorbereitet",
+          "wer": "Claude",
+          "n": "neu",
+          "t": "Ein Datensatz über das Labor und alle Werke an einem privaten Ort, mit Voraussetzungen, Priorität und dem Datum deiner letzten Rückmeldung.",
+          "k": "Grundlage für „worauf es einzahlt“, „seit deinem letzten Blick“ und Labor und Werke als Bereiche. Werk-Inhalte bleiben privat.",
+          "braucht": [
+            "ao-flaeche"
+          ],
+          "stuetzt": [
+            "ao-entwurf"
+          ]
+        },
+        {
+          "id": "ao-fachpaket",
+          "s": "auftrag",
+          "stand": "freigegeben",
+          "wer": "Claude",
+          "n": "neu",
+          "t": "Fachpaket Interaktion und Struktur aus der übernommenen Recherche bauen, mit Mikrotext für Schaltflächen und Rückmeldungen.",
+          "k": "Freigegeben durch die Entscheidung zum Feld (0037). Es liefert die Wörter für Handlungen („Freigeben, Claude baut es“ statt „beantwortet“) und die Navigationsmuster.",
+          "braucht": [
+            "od-a-recherche"
+          ],
+          "stuetzt": [
+            "od-feld",
+            "od-regeln"
+          ]
+        },
+        {
+          "id": "ao-bau-fuer-dich",
+          "s": "auftrag",
+          "stand": "vorbereitet",
+          "wer": "Claude",
+          "n": "neu",
+          "t": "Die Ansicht „Für dich“ bauen, generisch für alle Bereiche, dann die übrigen Ansichten und den Körper der Punkte.",
+          "k": "Darin gehen die drei offenen Bugs zum Zielbild auf: unklare Schaltflächen, Zeichen ohne Entwurfslogik, fehlende Gliederung.",
+          "braucht": [
+            "ao-ansichten",
+            "ao-datenmodell",
+            "ao-fachpaket",
+            "ao-senden"
+          ],
+          "stuetzt": [
+            "ao-entwurf"
+          ]
+        },
+        {
+          "id": "ao-voraussetzungen",
+          "s": "befund",
+          "dran": "",
+          "n": "neu",
+          "t": "Voraussetzungen und Blocker sind jetzt Daten: Jeder Auftrag und jede Frage im Zielbild kann nennen, was vorher erledigt sein muss, und die Prüfung lässt nichts starten oder dir vorlegen, was daran hängt.",
+          "k": "Eingeführt am 14.11. auf deine Anforderung. Die Seite zeigt je Punkt „Braucht vorher“ und „Gibt frei“; der geplante Orchestrierungslauf ordnet danach. Kreise meldet die Prüfung.",
+          "f": "Wie sollte klare Vorraussetzungen bzw. Abhängigkeiten und Blocker für Aufträge bereits definiert haben. und diese als Teil der Infrastruktur übernommen haben. Sonst machen wir unglaublich viele Extra runden. BEi dir liegt die Orchestrierung die Einordnung von Aufgaben."
+        },
+        {
           "id": "ao-analyse",
           "s": "auftrag",
           "stand": "läuft",
           "wer": "Claude",
-          "n": "neu",
+          "n": "geändert",
           "t": "Anforderungen an die Arbeitsoberfläche erheben und in Iterationen überarbeiten; die Überarbeitung des Zielbilds folgt daraus.",
-          "k": "Iteration 1: deine Aussagen vom 13. und 14.11. gesammelt, eigene Ableitungen getrennt markiert. Iteration 2 nach den beiden Recherchen.",
+          "k": "Iteration 3 (14.11.): Entwurfsgrundlage statt Varianten; als Nächstes legt Claude die Ansichten fest, sobald du Situationen und Richtung bestätigt hast.",
           "stuetzt": [
             "ao-anforderung",
             "ao-einfacher",
@@ -326,6 +480,57 @@
           "t": "Dein Kontingent ist die knappe Ressource: Opus stand am Mittwoch bei 50 % des Wochenlimits.",
           "k": "Gehört in den Nutzungskontext, weil es jede Arbeitsweise begrenzt. A13 misst bisher nur Geld.",
           "bestaetigt": "2026-11-12"
+        },
+        {
+          "id": "nk-kernluecke",
+          "s": "vorschlag",
+          "dran": "du",
+          "n": "neu",
+          "prio": "jetzt",
+          "t": "Deine Erkenntnislücke, in einem Satz: „Wo steht die Arbeit, gemessen an meiner Absicht, und wo braucht sie jetzt mein Urteil?“",
+          "k": "Was du weißt: deine Absicht, Maßstäbe, deine Domäne, deine Werke, was du gesagt hast. Was du strukturell nicht weißt, weil es außerhalb deines Blicks geschieht: was seit deinem letzten Blick passiert ist, was davon dich braucht, worauf eine Entscheidung einzahlt, ob angekommen ist, was du gesagt hast, ob die Modelle deine Prinzipien einhalten, wie belastbar eine Aussage ist, was blockiert ist. Folge deiner Antwort: Jede Ansicht muss diese Frage beantworten helfen; was nichts dazu beiträgt, kommt nicht nach vorn. Herleitung: research/2026-11-arbeitsoberflaeche/entwurf.md, Abschnitt 1.",
+          "g": "research/2026-11-arbeitsoberflaeche/entwurf.md, Abschnitt 1; daten/arbeitsweise.json, a28, a43, a62, a63, a71 bis a74.",
+          "braucht": [
+            "ao-entwurf"
+          ],
+          "stuetzt": [
+            "nk-rolle",
+            "ao-einfacher",
+            "u4"
+          ]
+        },
+        {
+          "id": "nk-situationen",
+          "s": "vorschlag",
+          "dran": "du",
+          "n": "neu",
+          "prio": "jetzt",
+          "t": "Fünf Situationen, in denen du hinschaust: zwischendurch entscheiden; nachsehen, ob angekommen ist, was du gesagt hast; im Werk gestalterisch urteilen; prüfen, ob das System trägt; das Ganze erkunden. Stimmen sie, fehlt eine?",
+          "k": "Hypothesen aus deinen Aussagen, nicht an dir beobachtet. Je Situation stehen Auslöser, deine Frage im Kopf und die Zeit im Entwurf (Abschnitt 2), dazu die Aufgaben und Informationen, die du darin brauchst (Abschnitt 3). Neue Wünsche gibst du im Chat; die Oberfläche zeigt nur, wo sie gelandet sind. Folge deiner Antwort: Die Situationen füllen deine drei bestätigten Ansichten.",
+          "g": "research/2026-11-arbeitsoberflaeche/entwurf.md, Abschnitte 2 und 3; Punkte „Geräteunabhängig“ (Situationen statt Geräte) und „Prüftiefe in Stufen“.",
+          "braucht": [
+            "ao-entwurf"
+          ],
+          "stuetzt": [
+            "ao-situationen",
+            "ao-tiefe",
+            "nk-prueffall"
+          ]
+        },
+        {
+          "id": "nk-laden",
+          "s": "vorschlag",
+          "dran": "du",
+          "n": "neu",
+          "prio": "jetzt",
+          "t": "Damit dein Nutzerbild nicht wieder verstreut wird: Vor jeder Analyse- oder Entwurfsarbeit lädt das Modell diesen Teil und alle Punkte, die daran hängen; und die Prüfung meldet jede neue Analyse oder jeden Entwurf, der im Zielbild keinen Ort hat.",
+          "k": "Warum: Am 14.11. ist derselbe Fehler wie am 12.11. passiert (Ursache „Dein Nutzerbild ist verstreut“): Ein Entwurf entstand neben dem Grundmodell statt darin, und dein Konzeptstand war im Zielbild nicht prüfbar. Eine Regel allein hat nicht gehalten; darum zwei Mechanismen: die Startanweisung nennt den Teil als Pflichtlektüre für Entwurfsarbeit, und der Build prüft den Ort. Folge deiner Antwort: Das ist eine neue Regel, darum fragt sie dich; ich baue sie nach deinem Ja.",
+          "g": "Ursachen „Dein Nutzerbild ist verstreut“ und „Es fehlt ein Zielmodell“ auf dieser Seite; research/2026-11-arbeitsoberflaeche/entwurf.md, Abschnitt „Bezug zum Bestand“.",
+          "stuetzt": [
+            "u4",
+            "nk-format",
+            "o2"
+          ]
         }
       ]
     },
@@ -445,7 +650,7 @@
           "id": "u4",
           "s": "befund",
           "t": "U4 · Dein Nutzerbild ist verstreut und wird nie als Ganzes geladen. Das ist strukturell lösbar, wie in der übrigen IT-Welt auch.",
-          "k": "Stand 13.11.: teilweise behoben. AGENTS.md bündelt Rollen, Orte und Grenzen am Start; ob das bei allen Modellen ankommt, ist ungetestet. Stand der Technik: Zielmodelle aus dem Requirements Engineering verknüpfen Akteure, Ziele, Verfeinerungen und Hindernisse (KAOS, van Lamsweerde 2001); Widersprüche werden dort als Hindernisse erfasst statt durch neue Regeln. i* eignet sich für Abhängigkeiten zwischen Akteuren. Dass eines davon hier besser trägt, ist nicht belegt.",
+          "k": "Stand 13.11.: teilweise behoben. AGENTS.md bündelt Rollen, Orte und Grenzen am Start; ob das bei allen Modellen ankommt, ist ungetestet. Stand der Technik: Zielmodelle aus dem Requirements Engineering verknüpfen Akteure, Ziele, Verfeinerungen und Hindernisse (KAOS, van Lamsweerde 2001); Widersprüche werden dort als Hindernisse erfasst statt durch neue Regeln. i* eignet sich für Abhängigkeiten zwischen Akteuren. Dass eines davon hier besser trägt, ist nicht belegt. Wieder aufgetreten am 14.11.: Ich habe für den Arbeitsplatz ein eigenes Nutzermodell in einer Datei angelegt, ohne diesen Teil, die Befunde dieser Seite (fehlendes Zielmodell, was worauf einzahlt) und den Vorschlag „keine zweite, konkurrierende Quelle“ zu laden. Du hast es bemerkt, nicht die Prüfung. Behoben: Erkenntnislücke und Situationen stehen jetzt im Teil „Dein Nutzungskontext“, die Datei ist nur Herleitung.",
           "v": "U4 · Dein Nutzerbild ist verstreut und wird nie als Ganzes geladen.",
           "n": "geändert",
           "f": "SOTA! Das kann man doch wohl struturell lösen. Capabilities? Keine Ahnung irgendwelche Methoden aus Req-Engenieering als Entwicklungsmotor?",
@@ -775,14 +980,13 @@
         {
           "id": "st-main",
           "s": "freigabe",
-          "n": "neu",
           "t": "Der Hauptzweig wird technisch geschützt: Änderungen nur über eine Übernahme mit grünen Prüfungen, kein Überschreiben, kein Löschen.",
-          "k": "Deine Antwort, 13.11.: „da brauche ich deine Anleitung“. Am Rechner im Browser, einmal, etwa fünf Minuten: (1) github.com/esany/design-lab → Settings → links „Rules“ → „Rulesets“ → „New ruleset“ → „New branch ruleset“. (2) Name „main schützen“, Enforcement status „Active“. (3) Bypass list leer lassen: Alle Modelle arbeiten unter deinem Konto, eine Ausnahme für dich nähme sie mit aus. (4) Target branches → „Add target“ → „Include default branch“. (5) Angehakt: „Restrict deletions“, „Block force pushes“, „Require a pull request before merging“ mit Required approvals 0, „Require status checks to pass“ mit diesen fünf Prüfungen: „Tokens, Studien, Index“, „Interne Links“, „Stand gegen GitHub“, „Eingriffe und Lesekosten“, „Studien rendern“; „Require branches to be up to date“ nicht anhaken. (6) „Create“. Danach prüfe ich die Regel lesend. Was sich für dich ändert: nichts; abschalten kannst du sie jederzeit. Berichtigt 14.11.: Die frühere Fassung empfahl eine Ausnahme für Admins; das hätte den Schutz unwirksam gemacht (Kommentar in #40 vom 29.10.).",
+          "k": "Eingerichtet am 14.11.: Die Regel „main schützen“ ist auf GitHub aktiv; Übernahmen gehen nur noch mit grünen Prüfungen (bestätigt beim nächsten Merge, der an einer roten Prüfung abgewiesen wurde). Vorher: Eingerichtet am 14.11. von dir, ohne Ausnahmen, mit fünf Pflichtprüfungen; von mir lesend geprüft und mit einer Probe bestätigt (Entscheidung 0027, jetzt gültig).",
           "g": "Aufgabe #40 (Audit Astra, 28.10.; Versuch Claude, 29.10.). Namen der Prüfungen aus .github/workflows/pruefen.yml.",
           "auch": [
             "system"
           ],
-          "prio": "jetzt"
+          "bestaetigt": "2026-11-14"
         },
         {
           "id": "st-arbeitsweise-alt",
@@ -835,14 +1039,14 @@
           "stuetzt": [
             "nk-orte"
           ],
-          "n": "neu",
           "t": "Private Zielbild-Seiten der Werke bei Cloudflare einrichten.",
           "k": "Eingerichtet am 14.11.: Das private Werke-Repo ist mit Cloudflare verbunden; jede Änderung dort baut die Seiten neu. Hauptadresse und Vorschau-Adressen sind gesperrt, Zugang nur mit deiner E-Mail-Adresse (Anmeldung über einen Code per E-Mail). Die Adresse steht im README des Werke-Repos.",
           "g": "anschluss/werke.md; Chat 13.11.; eingerichtet im Chat 14.11.",
           "auch": [
             "werke"
           ],
-          "prio": "jetzt"
+          "prio": "jetzt",
+          "bestaetigt": "2026-11-14"
         }
       ]
     },
@@ -922,11 +1126,11 @@
         {
           "id": "a-verhaltenspruefung",
           "s": "auftrag",
-          "stand": "vorbereitet",
+          "stand": "freigegeben",
           "wer": "Claude (Opus) baut, ChatGPT prüft gegen, du nimmst Stichproben ab",
           "n": "neu",
-          "t": "Drei bis fünf Verhaltensprüfungen zu A14, A18 und A22 als Prüffälle in evals/.",
-          "k": "Je Fall: Eingabe aus einem echten Verlauf, erlaubtes und unerlaubtes Verhalten, sichtbares Ergebnis, Gegenbeispiel. Erste Kandidaten: Schickt eine Antwort dich auf GitHub? Steht eine Zahl ohne Bezug? Wird ein Einwand zu einer neuen Regel? Startklar mit deinem Urteil zur Reihenfolge.",
+          "t": "Vier Verhaltensprüfungen zum Grundmodell als Prüffälle in evals/ (Anforderungen A14, A18, A22).",
+          "k": "Deine Freigabe, 14.11.: „ja“, Reihenfolge wie vorgeschlagen. Gebaut am selben Tag, vier Fälle in evals/: Schickt eine Antwort dich auf GitHub? Wird ein Einwand zu einer neuen Regel? Wird ein Gestaltungsprinzip als starre Regel angewendet (Anlass: rote Marke)? Steht eine Zahl ohne Bezug? Läufe freigegeben, 14.11. („ja mach das“): Nach der Gegenprüfung durch ChatGPT startet Claude je Fall eine frische Sitzung ohne Vorgeschichte; ChatGPT urteilt, du bekommst hier eine Stichprobe. Bis dahin gilt jeder Fall als nicht getestet.",
           "stuetzt": [
             "o3",
             "o3-abnahme",
@@ -1029,11 +1233,14 @@
           "id": "f-issue-pruefung",
           "frage": "arbeitsweise-f02",
           "s": "offen",
-          "n": "neu",
+          "n": "geändert",
           "auch": [
             "system"
           ],
-          "prio": "später"
+          "prio": "später",
+          "dran": "Claude",
+          "f": "Priorität: später",
+          "k": "Nach meiner Lesart war gemeint: die Ergebnisse aller Modelle an einer Stelle im Labor prüfen, statt je Modell getrennt (der Merkzettel vom 05.11. nennt nur die Frage). Seit 14.11. tun das die geplanten Läufe: Claude prüft zweimal täglich, ChatGPT alle drei Stunden. Das ist Verwaltung und liegt bei mir; du hast die Priorität auf „später“ gesetzt, darum lege ich es dir nicht mehr als Frage vor."
         },
         {
           "id": "f-paleo-408",
@@ -1043,7 +1250,8 @@
           "auch": [
             "system"
           ],
-          "prio": "parken"
+          "prio": "parken",
+          "k": "In paleo-type gilt eine Pause (dort Issue 399). Gefragt war, ob ich einen Befund aus dem Labor trotzdem in der dortigen Ursachenanalyse notieren darf (dort Issue 408). Du hast die Frage geparkt."
         },
         {
           "id": "f-fremde-issues",
@@ -1124,7 +1332,7 @@
           "stand": "freigegeben",
           "wer": "Claude",
           "t": "Issues pflegen: liegende Issues schließen, teilen oder neu zuschneiden, je mit einem Satz Begründung.",
-          "k": "Freigegeben, noch nicht begonnen. Ergebnis als Liste auf dieser Seite.",
+          "k": "Freigegeben, noch nicht begonnen. Ergebnis als Liste auf dieser Seite. 14.11.: ChatGPT bereitet je offenem Issue einen Vorschlag vor (#273); ich setze ihn um.",
           "stuetzt": [
             "issues"
           ]
@@ -1163,13 +1371,13 @@
         {
           "id": "a-recherche-gestaltung-beschreiben",
           "s": "auftrag",
-          "stand": "vorbereitet",
+          "stand": "freigegeben",
           "prio": "jetzt",
           "wer": "ChatGPT recherchiert den Stand der Technik, Claude ordnet ins Labor ein",
           "n": "neu",
-          "t": "Recherche: Wie lässt sich Gestaltung beschreiben und in ihren Kontext stellen, sodass Mensch und Maschine darüber zusammenarbeiten können, und welche Impulse gibt die Semiologie dafür?",
-          "f": "eine wichtige gerade im kontext der zusammenarbeit mit der Maschine zu untersuchende Fragestellung ist die beschreibung und kontextualisierung von Gestaltung und wie weit die Semiologie hier wichtige Impulse geben kann. Das sind nur meine Ideen, das wird sicher weitaus reflektierter und differenzierter transdisziplinär untersucht worden sein. Das wäre aus meiner Sicht noch ein prüfenswerter Fachkandidat, für sota",
-          "k": "Anlass: die rote Marke (14.11.). Ich habe eine Farbregel ohne Kontext angewendet; eine Beschreibung von Gestaltung, die Funktion, Ort und Wirkung trägt, hätte das verhindert. Im Labor gibt es Teile davon, verstreut: Bertin (Zeichensystem der Grafik), Bildanalyse nach Panofsky, Itten, Kritik. Leitfragen (Vorschlag, abgeleitet): (1) Welche Ansätze beschreiben Gestaltung als Zeichen im Kontext? Zu prüfen u. a. Semiotik nach Peirce, Barthes, Eco; visuelle Semiotik (Groupe µ); Sozialsemiotik und Multimodalität (Kress/van Leeuwen); Produktsemantik (Krippendorff); Gestaltungsrhetorik (Bonsiepe); Bildwissenschaft. (2) Was davon ist für Maschinen beschreibbar und prüfbar, was nicht? Stand der Technik: wie Bild-Sprach-Modelle Gestaltung beschreiben und wo sie scheitern; Beschreibungssprachen für Gestaltung (Tokens, Ontologien, Kritik-Datensätze). (3) Wo reicht Semiologie nicht, und welche Disziplinen ergänzen sie (Wahrnehmung, Gestalt, Praxiswissen)? Ergebnis: ein Befund mit Belegstatus und eine Empfehlung, ob daraus ein Fachpaket wird oder ob es bestehende Pakete verbindet. Die Namen oben sind Suchstellen, keine geprüfte Auswahl.",
+          "t": "Recherche: Gestaltung beschreiben als Übersetzung zwischen dem intuitiv arbeitenden Gestalter und der Maschine. Was braucht jeder, um gut zu arbeiten, und welche Impulse gibt die Semiologie dafür?",
+          "f": "eine wichtige gerade im kontext der zusammenarbeit mit der Maschine zu untersuchende Fragestellung ist die beschreibung und kontextualisierung von Gestaltung und wie weit die Semiologie hier wichtige Impulse geben kann. Das sind nur meine Ideen, das wird sicher weitaus reflektierter und differenzierter transdisziplinär untersucht worden sein. Das wäre aus meiner Sicht noch ein prüfenswerter Fachkandidat, für sota. — Ergänzung, 14.11.: ich bin ein kreatives intutiv arbeitender Mensch .. du eine Maschine .. die Frage ist, was braucht jeder von uns, um gut arbeiten zu können. Es. ist eher eine Frage der Übersetzung",
+          "k": "Freigegeben im Chat, 14.11. („ja“), mit deiner Ergänzung: Es geht um Übersetzung in beide Richtungen, nicht um eine Beschreibungssprache, der du dich anpassen musst. Anlass: die rote Marke (14.11.). Ich habe eine Farbregel ohne Kontext angewendet; eine Beschreibung von Gestaltung, die Funktion, Ort und Wirkung trägt, hätte das verhindert. Im Labor gibt es Teile davon, verstreut: Bertin (Zeichensystem der Grafik), Bildanalyse nach Panofsky, Itten, Kritik. Leitfragen (Vorschlag, abgeleitet): (1) Welche Ansätze beschreiben Gestaltung als Zeichen im Kontext? Zu prüfen u. a. Semiotik nach Peirce, Barthes, Eco; visuelle Semiotik (Groupe µ); Sozialsemiotik und Multimodalität (Kress/van Leeuwen); Produktsemantik (Krippendorff); Gestaltungsrhetorik (Bonsiepe); Bildwissenschaft. (2) Was davon ist für Maschinen beschreibbar und prüfbar, was nicht? Stand der Technik: wie Bild-Sprach-Modelle Gestaltung beschreiben und wo sie scheitern; Beschreibungssprachen für Gestaltung (Tokens, Ontologien, Kritik-Datensätze). (3) Wo reicht Semiologie nicht, und welche Disziplinen ergänzen sie (Wahrnehmung, Gestalt, Praxiswissen)? Ergebnis: ein Befund mit Belegstatus und eine Empfehlung, ob daraus ein Fachpaket wird oder ob es bestehende Pakete verbindet. Die Namen oben sind Suchstellen, keine geprüfte Auswahl.",
           "g": "Dein Impuls im Chat, 14.11.; Eingang a67 (rote Marke).",
           "stuetzt": [
             "wechselwirkung",
@@ -1182,7 +1390,7 @@
           "stand": "freigegeben",
           "wer": "du und ein Chat mit Zugriff auf alte Chats",
           "t": "Fragenliste in alten Chats finden (Issue #189).",
-          "k": "Dein einziger Handgriff: in einem Chat, der deine alten Chats durchsuchen kann, „Führe Issue #189 im design-lab aus“ schreiben. Der Chat prüft jeden Kandidaten selbst und schreibt das Ergebnis ins Issue.",
+          "k": "Dein einziger Handgriff, wenn du so weit bist: in einem Chat, der deine alten Chats durchsuchen kann, den Prompt unter „Worauf das beruht“ einfügen. Der Chat sucht deine lange Fragenliste zur Erweiterung des Leitfadens, prüft jeden Fund selbst und legt das Ergebnis im Labor ab (Suchauftrag, Issue #189). Lesen musst du nichts.",
           "stuetzt": [
             "erweiterung",
             "nk-orte"
@@ -1191,7 +1399,9 @@
             "arbeitsweise"
           ],
           "g": "Zusammengelegt am 14.11. mit dem gleichen Auftrag aus Bug #200 („Deine lange Fragenliste aus den alten Leitfaden-Chats suchen.“): Prompt zum Einfügen: „Führe Issue #189 im Labor esany/design-lab aus (github.com/esany/design-lab/issues/189). Lies zuerst AGENTS.md.“ Der vollständige Suchauftrag steht im Issue; der Chat prüft die Kandidaten selbst und legt das Ergebnis im Issue ab. Du musst nichts lesen.",
-          "prio": "später"
+          "prio": "später",
+          "n": "geändert",
+          "f": "Priorität: später"
         },
         {
           "id": "a-verweise",
@@ -1804,6 +2014,14 @@
           "t": "Die Prinzipien der Anzeige sind zurückgeholt, im neuen Teil „Anzeige“.",
           "k": "Aus dem Konzept vom 07.11. und der Recherche zum Suchen und Navigieren vom 06.11. Die Prüfung der alten Einträge läuft bei Codex.",
           "bestaetigt": "2026-11-11"
+        },
+        {
+          "id": "fg-blocker-1411",
+          "s": "bestaetigt",
+          "bestaetigt": "2026-11-14",
+          "t": "Drei Blocker im Block geklärt: Neustart-Test als geplante frische Sitzung; das Audit der Fehlermuster geht im schweren Bug auf; Erledigtes und Ersetztes schließt Claude selbst und zeigt dir die Liste danach.",
+          "k": "Streicht ein Abschluss einen Vorschlag oder ein Anliegen von dir, fragt Claude vorher einzeln. Die Regel steht im Skill Issue-Arbeit, Abschnitt Lebenszyklus.",
+          "g": "daten/arbeitsweise.json, f69; Audit der Fehlermuster (Issue #56) geschlossen, aufgegangen in Bug #200."
         }
       ]
     },
@@ -1813,41 +2031,49 @@
       "punkte": [
         {
           "id": "sy-regelpruefung",
-          "s": "offen",
-          "n": "neu",
+          "s": "befund",
+          "n": "geändert",
           "t": "Regelpause und Reihenfolge der Regelprüfung festlegen.",
-          "k": "Der Schutz des Hauptzweigs steht als eigene Freigabe im Strang Arbeitsweise.",
-          "g": "stand.md, Offene Fragen; research/2026-10-audit-zusammenarbeit/auftraege.md.",
+          "k": "Die Frage war überholt und hätte dir nicht mehr vorgelegt werden dürfen. Der Hauptzweig ist seit 14.11. geschützt: Übernommen wird nur mit grünen Pflichtprüfungen. Die „Regelpause“ hieß: bis die Regeln geprüft sind, keine neuen Regeln aus einzelnen Vorfällen. Die Regelprüfung ist am 13.11. auf deine Antwort „ja“ im Bug „Modelle verfehlen deine Anforderungen“ aufgegangen und läuft dort als Verhaltensprüfungen weiter; deren erste Läufe stehen bei mir an. Warum die Frage stehen blieb: Ich hatte sie aus der Pflegeliste vom Oktober kopiert und nicht gegen den späteren Stand geprüft.",
+          "g": "research/2026-10-audit-zusammenarbeit/auftraege.md, Fragen 1 bis 3; Regelprüfung (Issue #58), geschlossen 13.11.; verlauf/2026-11-14-anleitung-hauptzweig.md.",
           "stuetzt": [
             "st-main"
           ],
           "stuetzt_warum": {
             "st-main": "Belegt: In der Übersicht standen beide als eine Frage („Hauptzweig schützen, Regelpause und Reihenfolge der Regelprüfung“)."
           },
-          "prio": "später"
+          "dran": "",
+          "f": ".. das Zielbild wird auch bei repoänderungen nicht mit aktualisiert oder bekommt veraltete Daten - schwerer Bug"
         },
         {
           "id": "sy-probe",
           "s": "vorschlag",
           "dran": "du",
-          "n": "neu",
-          "t": "Sieben Regeln auf Probe haben kein Auswertungsdatum (0003, 0004, 0007, 0013, 0016, 0018, 0024).",
-          "k": "Empfehlung: gemeinsam mit dem Experiment Labor-Aufbau am 24.11. auswerten.",
-          "g": "stand.md, Offene Fragen (Pflege 11/2026).",
-          "prio": "später"
+          "n": "geändert",
+          "t": "Prinzipien, Grundmodell und die Regeln auf Probe sind nicht miteinander abgeglichen, und für den Abgleich ist niemand zuständig.",
+          "k": "Antwort auf deine Fragen (Abgleich am Repo, 14.11., abgeleitet). Aktuell? Die Prinzipien stammen vom 27. und 28.10.; seither wurde nur Prinzip 5 nachgeführt (Freigabe im Zielbild, 13.11.). Das Grundmodell vom 12. und 13.11. steht nur in der Startanweisung: „Umsetzen vor Neuem“, „erst verorten, dann antworten“ und „Namen statt Nummern, jede Zahl mit Bezug“ fehlen in den Prinzipien. Beruht die Infrastruktur darauf? Nur zum Teil. Die automatischen Prüfungen sichern Form: Links, erzeugte Übersichten, Farbrollen, Issue-Stände und seit heute Kontext an Punkten für dich. Für das Inhaltliche (Gestaltung dient, Werk vor System, Stoppen statt simulieren, Vertrauen statt Scheinreife) gibt es keinen Mechanismus; die vier Verhaltensprüfungen dafür sind angelegt, keine ist gelaufen. Zwei Prinzipien widerspricht die Praxis offen: „Eine Regel entsteht erst, wenn etwas dreimal getan wurde“ (Prinzip 8) gegen 39 Entscheidungen seit dem 27.10.; „Werk vor System“ (Prinzip 9) gegen eine Übersicht, in der eines von sieben Themen Werkarbeit ist. Wer prüft, wer pflegt? Niemand ausdrücklich. Die monatliche Pflege prüft den Stand im Intent, nicht die Prinzipien. Die sieben Regeln auf Probe (was ein Modell allein ändern darf; eine Anweisung für alle Modelle; Belegpflicht; Vorlagen; Erklärbarkeit in Stufen; Freigabe in Alltagssprache; kein Wissen nur im Chat) haben kein Auswertungsdatum. Vorschlag: Zuerst laufen die vier Verhaltensprüfungen, weil sie zeigen, wo es real bricht. Dann führe ich Grundmodell und Prinzipien in einem Entwurf zusammen und schreibe an jedes Prinzip, welcher Mechanismus es trägt oder dass keiner es trägt. Zuständig für den Abgleich wird das orchestrierende Modell: bei jeder Änderung an Prinzipien oder Grundmodell und monatlich in der Pflege. Deine Entscheidung: Sollen Prinzipien und Grundmodell ein Text werden, und soll der Abgleich so zugeordnet werden?",
+          "g": "Entscheidungen 0003, 0004, 0007, 0013, 0016, 0018, 0024 in decisions/, je Status „freigegeben (auf Probe)“; Pflegebericht 11/2026; Verhaltensprüfungen in evals/ (verhalten-zahlbezug, verhalten-einwand, verhalten-github, verhalten-gestaltungsurteil). Abgleich: research/2026-11-zielbild-bausteine/einordnung-und-ueberarbeitung.md, Nachtrag „Rückmeldung zu Iteration 1“, Abschnitt „Abgleich Prinzipien, Grundmodell, Mechanismen“; principles.md; AGENTS.md, Grundmodell; .agents/skills/pflege/SKILL.md, Schritt 3.",
+          "prio": "jetzt",
+          "f": "muss besser: Bug .. hier nur zahlen ohne Semantik und Kontext .. was soll ich da verstehen. … sind die überhaupt aktuell und werden ebenfalls kontinuierlich gepflegt. Beruht die Infrastruktur überhaupt auf diesen Regeln, oder ist sie überhaupt nicht kompatibel. Wer prüft das, wer pflegt das?",
+          "stuetzt": [
+            "a-verhaltenspruefung"
+          ]
         },
         {
           "id": "sy-entwurf-issues",
-          "s": "vorschlag",
-          "dran": "du",
-          "n": "neu",
+          "s": "befund",
+          "dran": "",
+          "n": "geändert",
           "auch": [
             "werke"
           ],
-          "t": "Zwölf Issues mit Label „entwurf“ und PR #90 ruhen seit 28./29.10.",
-          "k": "Empfehlung: in einer Sitzung mit Claude je freigeben, zurückstellen oder schließen. Betrifft #8, #9, #23, #24, #26, #27, #57–#61, #84.",
-          "g": "stand.md, Offene Fragen (Pflege 11/2026).",
-          "prio": "später"
+          "t": "Die ruhenden Entwürfe vom Oktober sind sortiert: fünf Übergaben und ein Pull Request sind längst abgeschlossen, sechs Werk-Ideen warten auf dich beim nächsten Experiment.",
+          "k": "Abgeschlossen (Stand GitHub 14.11.): die Übergaben zu Modellprofilen, Regelprüfung, Kommunikation und Delegation, Tokenökonomie und Assistenz im Entwurfsprozess sowie die Angleichung der Freigabehinweise. Die Zählung „zwölf“ stammte aus der Pflege vom Oktober und war veraltet. Die sechs Werk-Ideen stehen jetzt beim Punkt zum nächsten Experiment. Übrig ist eine Systemfrage (braucht das Labor ein eigenes Verzeichnis für Dokumentation?); das ist Verwaltung, ich kläre sie selbst.",
+          "g": "GitHub, Stand 14.11.: geschlossen #57, #58, #59, #60, #61 und PR #90; offen #8, #9, #23, #24, #26, #27 (Werk-Ideen) und #84 (Dokumentation). Pflegebericht 11/2026.",
+          "f": "muss besser: kann ich so überhaupt nichts mit anfangen .. kein Kontext bzw. Hypertext. So hat die Information keine Bedeutung für mich.",
+          "stuetzt": [
+            "w-naechstes"
+          ]
         },
         {
           "id": "sy-anforderungen",
@@ -1861,12 +2087,13 @@
         },
         {
           "id": "sy-startfaelle",
-          "s": "offen",
-          "n": "neu",
-          "t": "Wie laufen die Startfälle frisch, ohne Projektkontext (#109)?",
-          "k": "Alle vier Startfälle sind nicht getestet, weil der Prüf-Chat Projektkontext hatte.",
-          "g": "anschluss/system.md, nächster Schritt; evals/start/.",
-          "prio": "später"
+          "s": "befund",
+          "n": "geändert",
+          "t": "Der Neustart-Test läuft in einer frischen Claude-Sitzung ohne Gedächtnis; du hast sie am 14.11. selbst gestartet.",
+          "k": "Was getestet wird: Bekommt ein neues Modell nur den Satz „Lies AGENTS.md und befolge Start jeder Sitzung“, findet es dann den Stand, wartet es ohne Auftrag, führt es einen Auftrag richtig aus, und lehnt es ab, Zugangsdaten ins öffentliche Repo zu legen? ChatGPT konnte das nicht prüfen, weil sein Chat schon Vorwissen hatte. Deshalb hast du am 14.11. die geplante Sitzung gewählt. Das Ergebnis bewertet der Orchestrierungslauf, nicht die Sitzung selbst; du siehst es hier.",
+          "g": "Aufgabe: [evals/start/aufgabe.md](https://github.com/esany/design-lab/blob/main/evals/start/aufgabe.md), Erwartung: [evals/start/erwartung.md](https://github.com/esany/design-lab/blob/main/evals/start/erwartung.md); Ergebnis kommt nach evals/start/ergebnisse/2026-11-14-claude-frisch.md (Neustart-Test, Issue #109); Wahl im Chat 14.11. (daten/arbeitsweise.json, f69).",
+          "dran": "",
+          "f": "Antwort: .. kann ich so überhaupt nichts mit anfangen .. kein Kontext bzw. Hypertext. So hat die Information keine Bedeutung für mich."
         },
         {
           "id": "sy-marke",
@@ -1962,11 +2189,11 @@
         {
           "id": "od-a-recherche",
           "s": "auftrag",
-          "stand": "freigegeben",
+          "stand": "fertig",
           "wer": "ChatGPT",
-          "n": "neu",
+          "n": "geändert",
           "t": "Die eine Recherche für das Feld Interaktion und Struktur (Issue #237, erweitert).",
-          "k": "Freigegeben durch 0037. Danach baut Claude das Fachpaket nach 0038.",
+          "k": "Abgeschlossen und übernommen am 14.11. (research/2026-11-arbeitsoberflaeche/recherche-muster.md). Als Nächstes baut Claude daraus das Fachpaket nach 0038; zuerst angewendet am Rahmen des Arbeitsplatzes.",
           "stuetzt": [
             "od-feld",
             "od-regeln"
@@ -2011,6 +2238,41 @@
       ]
     },
     {
+      "teil": "Voraussetzungen für Fachpakete",
+      "strang": "leitfaden",
+      "punkte": [
+        {
+          "id": "vf-verstaendnis",
+          "s": "offen",
+          "n": "geändert",
+          "prio": "später",
+          "auch": [
+            "visualisierung"
+          ],
+          "t": "Meine Lesart: Visualisierung heißt für dich ganzheitliche, organische Systeme, die dem Erkenntnisgewinn des Menschen dienen, nicht die einzelne Grafik. Stimmt das?",
+          "g": "research/2026-11-visualisierungssysteme/befund.md, Abschnitt „In Worten“; research/2026-11-voraussetzungen-fachwissen/analyse.md, Voraussetzung V3; daten/arbeitsweise.json, Eingang a49.",
+          "f": "Antwort: .. Ein inaktiver Verweis ins repo ist keine Assistenz für mich .. das ist in diesem Punkt der einzige Kontext und bricht mit unseren Regeln.",
+          "k": "Zusammengesetzt aus deinen gesicherten Aussagen: „ganzheitliche organische systemische Visualisierungssysteme, die dem Erkenntnisgewinn des Menschen dienen (menschenzentrierte Technikgestaltung)“ (09.11.); Aufgabe ist vor allem Kommunikation, „nur bedingt die Analyse“ (09.11.); Wirkung entsteht im Zusammenspiel von Struktur, Interaktion, Visualisierung, Farbe, Text und Lesesituation, nicht durch eine Ursache (12.11.); „ich rede nicht über Excel Plots“ (14.11.); Fachpakete und Leitfaden zusammendenken (14.11.). Folge deiner Antwort: Die Lesart wird Anforderung für das Fachpaket Visualisierungssysteme und Maßstab für dessen Prüffragen; die vier Prüffragen aus dem Pilot zu Einzelgrafiken werden daran neu gemessen. Der Chat vom 14.11., auf den ich vorher verwiesen hatte, ist im Labor nicht gesichert; das verstieß gegen „kein Wissen nur im Chat“."
+        },
+        {
+          "id": "vf-pixelpatrol",
+          "s": "befund",
+          "n": "geändert",
+          "auch": [
+            "werke"
+          ],
+          "t": "Die Frage nach PixelPatrol ist zurückgezogen: Du hattest sie im selben Zielbild schon beantwortet.",
+          "g": "research/2026-11-voraussetzungen-fachwissen/analyse.md, V6.",
+          "dran": "",
+          "f": "Antwort: Das ist bereits hinreichend geklärt . Ich werte das als schweren Bug! Anallysieren und beheben.",
+          "k": "Am 14.11. hast du bestätigt: Erprobt wird am Labor selbst „und auch am aktuellen Projekt PixelPatrol“. Damit ist geklärt, was das Labor braucht: Es ist dein aktuelles Projekt, ein Prüffall für die Fachpakete, und du nennst es selbst im öffentlichen Labor. Ursache des Fehlers: Ich habe die Frage aus meiner Analyse der Voraussetzungen übernommen, ohne sie gegen die bestätigten Punkte desselben Zielbilds zu prüfen. Was ich sonst über das Projekt brauche, suche ich zuerst selbst, wenn ein Fachpaket daran erprobt wird.",
+          "stuetzt": [
+            "vi-datensatz"
+          ]
+        }
+      ]
+    },
+    {
       "teil": "Stand der Werke",
       "strang": "werke",
       "punkte": [
@@ -2023,20 +2285,22 @@
         },
         {
           "id": "w-naechstes",
-          "s": "offen",
+          "s": "ableitung",
           "prio": "später",
-          "n": "neu",
-          "t": "Welches Experiment kommt als Nächstes?",
-          "k": "Cloudflare ist eingerichtet (14.11.); jetzt bist du dran. Experimente testen auch das System.",
-          "g": "anschluss/werke.md, nächster Schritt.",
+          "n": "geändert",
+          "t": "Das nächste Experiment ist „Raster als Programm“, zugleich der Pilot für die Entwicklungsabläufe aus dem Fundstück agent-skills.",
+          "k": "Abgeleitet aus deiner Bestätigung vom 14.11.: agent-skills wird in eigene Labor-Skills übernommen, „mit einem Pilot an Raster als Programm“. Ich lese „veraltet“ so, dass die Wahl damit getroffen ist; meinst du ein anderes Experiment, sag es. Raster als Programm heißt: Das Raster des Flyers wird als Regel geschrieben, und alles folgt ihm. Umsetzung bei mir. Die anderen Werk-Ideen warten: Werkzeug-Starter „Vermitteln“ mit erstem Werk; generative Gestaltung als Referenzbibliothek; den Entwurfsprozess sichtbar machen (Werkbank, Laborbuch, Vergleich, Entscheidungen); die Labor-Website zeigt Stand, Manifest, Fachpakete und Experimente; Fachpaket „Form“, Abschnitt Raster und Layout.",
+          "g": "Punkt agent-skills im Strang Fundstücke (bestätigt 14.11.); anschluss/werke.md, „Wartet auf die Wiederaufnahme“; Issues #24 (Raster als Programm) und #180 (Pilot), Werk-Ideen #8, #9, #23, #26, #27.",
           "stuetzt": [
-            "st-cloudflare",
+            "fs-osmani",
             "st-experimente"
           ],
           "stuetzt_warum": {
-            "st-cloudflare": "Belegt: Merkzettel Werke: erst Cloudflare einrichten, „danach wählt der Eigentümer das nächste Experiment“.",
-            "st-experimente": "Belegt: Deine Aussage vom 13.11., Experimente testen auch das System (Merkzettel Werke, Stand)."
-          }
+            "fs-osmani": "Belegt: Deine Bestätigung vom 14.11. nennt den Pilot an Raster als Programm.",
+            "st-experimente": "Belegt: Deine Aussage vom 13.11., Experimente testen auch das System."
+          },
+          "dran": "",
+          "f": "Antwort: veraltet - bug"
         },
         {
           "id": "w-sicherung",
@@ -2044,7 +2308,16 @@
           "prio": "später",
           "n": "neu",
           "t": "Sicherung der Werke: die Claude-App auf GitHub für „werke“ freischalten und eine zweite Kopie außerhalb von GitHub anlegen?",
-          "g": "anschluss/werke.md, Abschnitt Sicherung (Entscheidung 0026)."
+          "g": "anschluss/werke.md, Abschnitt Sicherung (Entscheidung 0026).",
+          "k": "Die Werke liegen seit Oktober nur im privaten Werke-Repo auf GitHub. Zwei Lücken: Cloud-Modelle können dort nur schreiben, wenn die Claude-App auf GitHub auch dieses Repo sehen darf; und es gibt keine zweite Kopie, falls GitHub ausfällt oder etwas verloren geht. Beides berührt Konten und Sichtbarkeit, darum entscheidest du. Folge bei Ja: ein Handgriff von dir in den GitHub-Einstellungen, die Kopie richte ich ein."
+        },
+        {
+          "id": "w-pixelpatrol-bugs",
+          "s": "befund",
+          "n": "neu",
+          "t": "Deine Rückmeldung zum Zielbild Pixel Patrol (Iteration 6) liegt als drei Bugs im Labor: unklare Schaltflächen, visuelle Sprache ohne Entwurfslogik, keine Informationsarchitektur.",
+          "k": "Das Labor erarbeitet die Prinzipien (UX-Writing, Rückmeldung und Selbstwirksamkeit; visuelle Grammatik von der Anforderung bis zum Formraum; Informationsarchitektur für Arbeitsdokumente) und wendet sie im Generator für alle Zielbilder an. Das Werk wendet sie in Iteration 7 nur an. Deine Antwort zu „Befunde in Code“ ist als Facette in den Recherchen „Gestaltung als Übersetzung“ und „Fachwissen als Netz“. Du entscheidest erst, wenn Varianten mit Begründung vorliegen.",
+          "g": "Bugs #280 (Schaltflächen), #281 (visuelle Sprache), #282 (Informationsarchitektur); Facette als Kommentar an #262 und #259; Wortlaut ohne Kundenbezug in daten/arbeitsweise.json, f68."
         }
       ]
     },
@@ -2058,7 +2331,8 @@
           "n": "neu",
           "t": "Sollen Quellen künftig ihren Lesestand tragen (gelesen, nur Abstract, nur Referat)?",
           "g": "anschluss/wissen.md, Frage 1.",
-          "prio": "später"
+          "prio": "später",
+          "k": "Heute steht bei vielen Quellen „belegt“, auch wenn nur das Abstract gelesen ist; von den 123 Quellen der Recherchen sind die meisten nur so gesehen. Mit einem Lesestand je Quelle sähe jedes Modell, wie tief eine Aussage geprüft ist, und „belegt“ gäbe es erst nach Lektüre. Folge bei Ja: ein Feld im Quellenverzeichnis, das der Build prüft. Dahinter steht dein Satz vom 30.10.: „Ich will nur nachfragen können und die KI hat dann die Provenienz und kann mit mir diskutieren.“"
         },
         {
           "id": "wi-belegpflicht",
@@ -2069,7 +2343,8 @@
           "stuetzt": [
             "wi-lesestand"
           ],
-          "prio": "später"
+          "prio": "später",
+          "k": "Der Skill „belegpflicht“ verlangt schon Zitat mit Fundstelle und Status. Schärfen hieße: Lesestand je Quelle, Hochstufung erst nach Lektüre, zwei Durchgänge (erst Wortlaut, dann ob er die Aussage deckt). Ein neuer Skill stellte eine zweite Schicht daneben. Meine Empfehlung: schärfen."
         },
         {
           "id": "wi-entwerfen",
@@ -2080,7 +2355,8 @@
           ],
           "t": "Sollen die fünf Bücher der Grundstock eines Fachpakets „Entwerfen“ werden, wenn die ersten Kapitel gelesen sind?",
           "g": "anschluss/wissen.md, Frage 3.",
-          "prio": "später"
+          "prio": "später",
+          "k": "Die fünf Bücher, die du am 30.10. bereitgestellt hast: Grabbe (Hrsg.), Designforschung und KI (2025); Held, Offenes Design DDR (2026); Grabbe und Held (Hrsg.), Designforschung und Designwissenschaft (2024); Schmitz, Häußling, Mareis, Groninger (Hrsg.), Manifestationen im Entwurf (2016); Dubberly, How Do You Design? Gelesen sind bisher nur Inhaltsverzeichnisse und Einleitungen. Meine Empfehlung: das Fachpaket erst, wenn mindestens zwei Kapitel im Original gelesen und von einem zweiten Modell gegengelesen sind."
         },
         {
           "id": "wi-pdfs",
@@ -2088,7 +2364,8 @@
           "n": "neu",
           "t": "Wo liegen die fünf PDFs, damit ein zweites Modell die Kapitel selbst lesen kann?",
           "g": "anschluss/wissen.md, Frage 4. PDFs kommen nicht ins öffentliche Repo.",
-          "prio": "später"
+          "prio": "später",
+          "k": "Die fünf Bücher aus der Frage davor lagen als PDF nur in einem ChatGPT-Chat vom 30.10.; ins öffentliche Labor dürfen sie nicht. Ohne Zugang kann kein zweites Modell eine Buchstelle prüfen, darum gilt alles dazu als „nicht geprüft“. Gesucht ist ein privater Ort, den du bestimmst."
         },
         {
           "id": "wi-pinterest",
@@ -2107,49 +2384,54 @@
       "punkte": [
         {
           "id": "vi-paket",
-          "s": "offen",
-          "n": "neu",
+          "s": "bestaetigt",
+          "n": "geändert",
           "auch": [
             "leitfaden"
           ],
-          "t": "Ein eigenes Fachpaket, getrennt von „Vermitteln“ (einzelne Darstellung gegen Gefüge)?",
-          "g": "anschluss/visualisierungssysteme.md, Frage 1.",
+          "t": "Visualisierungssysteme bekommen ein eigenes Fachpaket mit Schnittstellen zu „Vermitteln“ und zu Interaktion und Struktur.",
+          "g": "research/2026-11-voraussetzungen-fachwissen/analyse.md",
           "stuetzt": [
             "m-ausarbeiten"
           ],
           "stuetzt_warum": {
             "m-ausarbeiten": "Abgeleitet, Hypothese: Ein eigenes Paket für Visualisierungssysteme würde den Pilot berühren, der die Felder aus „Vermitteln“ als eigene Module schneidet."
           },
-          "prio": "später"
+          "prio": "später",
+          "f": "Eigenes Paket mit Schnittstellen (Auswahl im Chat, 14.11.)"
         },
         {
           "id": "vi-datensatz",
-          "s": "offen",
-          "n": "neu",
-          "t": "Erprobung an einem selbst gewählten, offenen Datensatz?",
-          "g": "anschluss/visualisierungssysteme.md, Frage 2.",
-          "prio": "später"
+          "s": "bestaetigt",
+          "n": "geändert",
+          "t": "Erprobt wird am Labor selbst und am aktuellen Projekt PixelPatrol.",
+          "g": "research/2026-11-voraussetzungen-fachwissen/analyse.md",
+          "prio": "später",
+          "f": "1 und auch am aktuellen Projekt PixelPatrol"
         },
         {
           "id": "vi-quellen",
-          "s": "offen",
-          "n": "neu",
+          "s": "bestaetigt",
+          "n": "geändert",
           "auch": [
             "wissen"
           ],
-          "t": "Welche Quellen liest ein Modell zuerst ganz? Vorschlag: Bertin, Segel/Heer, Bach et al.",
-          "g": "anschluss/visualisierungssysteme.md, Frage 3.",
-          "prio": "später"
+          "t": "Einzelne Quellen sind Bruchstücke. Vor dem Lesen kommen die Voraussetzungen: ein Modell für Fachwissen, eine Bestandskarte, ein transdisziplinäres Rechercheprogramm.",
+          "g": "research/2026-11-voraussetzungen-fachwissen/analyse.md",
+          "prio": "später",
+          "f": "die bisherigen Quellen sind doch nur Bruchstücke des themas .. denke daran, Fachpakete und Leitaden zusammenzudenken .. prüfe selbst, was sind die Vorraussetzungen, das diese arbeit sinnvoll starten kann"
         },
         {
           "id": "vi-prueffragen",
-          "s": "offen",
-          "n": "neu",
-          "t": "Sollen die vier Zielbild-Prüffragen aus dem Pilot in „fachpaket-vermitteln“ aufgenommen werden?",
-          "g": "anschluss/visualisierungssysteme.md, Frage 4; experiments/2026-11-zielbild-dataviz-inspiration/.",
-          "prio": "später"
+          "s": "bestaetigt",
+          "n": "geändert",
+          "t": "Die vier Prüffragen aus dem Pilot werden nicht übernommen: Sie zielen auf Einzelgrafiken, nicht auf das Verständnis von Visualisierung im Labor.",
+          "g": "research/2026-11-voraussetzungen-fachwissen/analyse.md",
+          "prio": "später",
+          "f": "weiß gerade nicht, was dahinter steckt .. ich erkenne keine Anforderung oder mein Verständnis von Dataviz .. ich rede nicht über Excel Plots"
         }
       ]
     }
-  ]
+  ],
+  "repo": "esany/design-lab"
 }

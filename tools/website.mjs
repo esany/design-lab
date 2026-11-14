@@ -11,7 +11,10 @@ import { fileURLToPath } from "node:url";
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 /** Was veröffentlicht wird. Eine Liste, damit Workflow und Prüfung nicht auseinanderlaufen. */
-export const INHALT = ["index.html", "assets", "studies", "leitfaden", "zielbild"];
+export const INHALT = ["index.html", "assets", "studies", "leitfaden"];
+/** Nie veröffentlicht: Zielbilder sind der Arbeitsplatz des Eigentümers, privat bei Cloudflare (Eigentümer 14.11.).
+ *  Die Daten liegen im öffentlichen Repo; die Seite holt esany/werke, functions/labor/index.js, aus dem Repo. */
+export const NICHT = (quelle) => !/(^|\/)zielbild(\/|$)/.test(relative(root, quelle));
 
 /** Archivierte Zielbilder im Labor: An ihrer alten Adresse steht eine erzeugte Hinweisseite, die mit
  *  veröffentlicht wird, damit früher genannte Adressen auf das eine Zielbild führen (Gegenprüfung des Baus, Probe 5). */
@@ -62,12 +65,9 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   mkdirSync(ziel, { recursive: true });
   for (const x of INHALT) {
     if (!existsSync(join(root, x))) { console.error(`✗ ${x} fehlt, wird aber veröffentlicht`); process.exit(1); }
-    cpSync(join(root, x), join(ziel, x), { recursive: true });
+    cpSync(join(root, x), join(ziel, x), { recursive: true, filter: NICHT });
   }
-  const archiv = archivSeiten();
-  for (const a of archiv) { mkdirSync(dirname(join(ziel, a)), { recursive: true }); cpSync(join(root, a), join(ziel, a)); }
   const fehler = pruefePaket(ziel);
-  for (const a of archiv) if (!existsSync(join(ziel, a))) fehler.push(`${a}: alte Zielbild-Adresse fehlt im Paket`);
   if (fehler.length) { console.error(`✗ ${fehler.length} tote(r) Link(s):\n  - ${fehler.join("\n  - ")}`); process.exit(1); }
-  console.log(`✓ Website zusammengestellt in ${relative(root, ziel) || ziel}: ${INHALT.join(", ")}; ${archiv.length} alte Zielbild-Adressen leiten weiter; alle Links führen auf veröffentlichte Seiten (nicht geprüft: die ausgelieferte Seite im Netz)`);
+  console.log(`✓ Website zusammengestellt in ${relative(root, ziel) || ziel}: ${INHALT.join(", ")}, ohne Zielbilder; alle Links führen auf veröffentlichte Seiten (nicht geprüft: die ausgelieferte Seite im Netz)`);
 }

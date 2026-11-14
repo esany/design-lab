@@ -1,13 +1,13 @@
 ---
 thema: Arbeitsweise mit KI · Wissensformen
 stand: Das eine Zielbild des Labors ist übernommen und veröffentlicht (zielbild/, 14.11.): sieben Stränge, Schnittstellen, drei Ansichten, Farbe als Rollen; Leitfaden und Bug #200 darin aufgegangen und archiviert. Beide Gegenprüfungen durch ChatGPT übernommen (#224, #232). Leitfaden Iteration 7; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
-naechster_schritt: Claude erhebt die Anforderungen an die Arbeitsoberfläche (Iteration 1 steht im Zielbild, research/2026-11-arbeitsoberflaeche/analyse.md); ChatGPT recherchiert Muster für KI-assistierende Oberflächen (#237) und wie Fachwissen wächst (#238); danach Iteration 2 und Entwurf. Unabhängig davon: Sitzung am Rechner (Cloudflare, Hauptzweig) beendet das Kopieren.
-offen: [180, 189, 200, 216, 237, 238]
+naechster_schritt: Der Eigentümer bestätigt Situationen, Kernlücke und Richtung der Arbeitsfläche (Zielbild, Punkt zu Situationen und Richtung; Herleitung research/2026-11-arbeitsoberflaeche/entwurf.md). Danach legt Claude den Inhalt der drei Ansichten fest und baut in der Reihenfolge der Voraussetzungen im Zielbild (Datenmodell, „Du bist dran“, „Stand“ und „Alles“, Körper der Punkte); parallel ist das Fachpaket Interaktion und Struktur startbereit. Weiter offen: Ergebnisse von ChatGPT prüfen (PR #256, #259, #267, #269), Verhaltensprüfungen (#271).
+offen: [180, 189, 200, 216, 238, 262, 263, 271, 273, 274, 280, 281, 282]
 ---
 
 # Thema: Arbeitsweise mit KI · Wissensformen
 
-**Zuletzt fortgeschrieben:** 14.11.2026 (Claude; das eine Zielbild gebaut, Gegenprüfung #224 eingelöst)
+**Zuletzt fortgeschrieben:** 14.11.2026 (Claude; Entwurfsgrundlage des Arbeitsplatzes vom Eigentümer aus, Varianten A bis C verworfen, Voraussetzungen und Blocker als Daten im Zielbild mit Prüfung)
 
 **Worum es geht:** Wie arbeitet der Gestalter mit KI so, dass echte Werke und Werkzeuge entstehen
 statt Textberge, und wie bleibt Wissen für jeden Chat erreichbar, ohne dass er alles lesen muss?
@@ -33,7 +33,7 @@ bedeutet (Wunsch des Eigentümers, 07./08.11.; [a:arbeitsweise-a28]).
 | Leitfaden | Zielbild, Strang Leitfaden, Iteration 7: Fachwissen als Wirknetz, Teil „Begriffe“; 0032 auf Probe bis 05.12. | Werkbuch bauen nach Freigabe; Recherche, Teil 2 (mit Frage 7), sobald „Kontext ist der Oberbegriff“ bestätigt ist |
 | KI-Fachpaket | Konzept, teils überholt | erst nach dem Leitfaden |
 
-**Zu beachten:** Der Build lässt nur ein Labor-Zielbild zu und meldet Farbrollen in falscher Bedeutung (0036, präzisiert 14.11.); `tools/website.mjs` findet tote Links. Offen: Rückweg ohne Kopie (nach dem Werk-Test), Studien nutzen noch die alte Akzentfarbe, Marke im Kopf der Startseite. Berichte: jede Zahl mit Bezug, Freigabe im Chat ([a:arbeitsweise-a43]).
+**Zu beachten:** Was zum Eigentümer geht, prüft der Build auf Kontext und nackte Nummern, „Stand gegen GitHub“ auf Aktualität; der geplante Orchestrierungslauf zieht das Zielbild nach (14.11., Analyse im Nachtrag der Einordnung). Der Build lässt nur ein Labor-Zielbild zu und meldet Farbrollen in falscher Bedeutung (0036, präzisiert 14.11.); `tools/website.mjs` findet tote Links. Rückweg ohne Kopie gebaut (14.11.): private Fassung bei Cloudflare mit „Senden“, wirksam seit 14.11., Probe in Labor und Werke angekommen (tools/zielbild/README.md). Offen: Studien nutzen noch die alte Akzentfarbe, Marke im Kopf der Startseite. Berichte: jede Zahl mit Bezug, Freigabe im Chat ([a:arbeitsweise-a43]).
 
 **Geparkt:** Radar als Daten und Ansicht (Matrix, Eigentümer 14.11.; Ringe als Spalten, Felder als Zeilen); Freigabe-Prüfung (#132);
 Hooks; Projektnotiz paleo-type; Radar-Zeile Basic Memory; bei Konflikt startet GitHub keine Prüfung.

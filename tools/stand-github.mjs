@@ -3,6 +3,7 @@ import { readFileSync, readdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { leseKopf, pruefeGitHub } from './gitter.mjs';
+import { laufendeNummern, pruefeAktualitaet } from './zielbild.mjs';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const token = process.env.GITHUB_TOKEN, repo = process.env.GITHUB_REPOSITORY;
@@ -37,6 +38,13 @@ if (isPR) {
     if (page >= 30) throw new Error('Mehr als 3000 PR-Dateien: Prüfung unvollständig');
   }
 }
-const errors = pruefeGitHub(themen, issues, isPR, dateien, labels);
+// Das Zielbild des Labors folgt dem Stand: was es als offen vorlegt, muss auf GitHub offen sein (14.11.).
+const zielbild = JSON.parse(readFileSync(join(root, 'zielbild', 'punkte.json'), 'utf8'));
+const zstaende = {};
+for (const n of laufendeNummern(zielbild).keys()) {
+  const x = await get(`/issues/${n}`);
+  zstaende[n] = x.pull_request?.merged_at ? 'merged' : x.state;
+}
+const errors = [...pruefeGitHub(themen, issues, isPR, dateien, labels), ...pruefeAktualitaet(zielbild, zstaende)];
 if (errors.length) { console.error('✗ ' + errors.join('\n✗ ')); process.exit(1); }
-console.log(`✓ ${Object.keys(issues).length} offene Issues und Verlauf geprüft`);
+console.log(`✓ ${Object.keys(issues).length} offene Issues, Verlauf und ${Object.keys(zstaende).length} Nummern im Zielbild geprüft`);
