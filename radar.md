@@ -28,6 +28,7 @@ Begründung (Skill `pflege`). Stand des Radars: **2026-11-14**.
 | Observable Plot, D3, Vega-Lite | Profistandard für Datenvisualisierung | — | 2026-10 |
 | Dataviz Inspiration (Yan Holtz) | Zielbild-Bestand: 462 kuratierte Beispiele, je mit Kontext- und Gestaltungsbeschreibung, 46 Diagrammtypen und Technik-Labels (Annotation, Direktbeschriftung, Unsicherheit …); Katalog CC BY 4.0, Bilder nicht frei; als [Zielbild-Pilot](experiments/2026-11-zielbild-dataviz-inspiration/README.md) übernommen | [Seite](https://www.dataviz-inspiration.com/) · [Repo, Lizenz](https://github.com/holtzy/dataviz-inspiration/blob/main/LICENSE) | 2026-11-11 |
 | Paged.js | Satz und Print aus Code; am Flyer erprobt: Seitenformat und Beschnitt ja, Textverkettung, Grundlinienraster und CMYK nur mit eigenen Ergänzungen | [Experiment](experiments/2026-10-print-pagedjs/README.md) | 2026-10-28 |
+| OpenDesign · Katalog, Regelwerke, Prüfwerkzeug | Steinbruch, Suchstelle und Negativfolie zugleich: 296 Design-Skills aus 84 Repos als erste Suchstelle vor dem Bau (A10); UX-Methoden für das Feld Interaktion und Struktur (0037); Mittelmaß als Prüfung mit Prüfgrenze (0038). Nur mit eigener Prüfung abbauen; Regelwerke kaum belegt. [Befund](research/2026-11-fundstueck-open-design/befund.md) | [Katalog](https://open-design.ai/de/skills/) · [Repo](https://github.com/nexu-io/open-design) | 2026-11-14 |
 | Typst | Satz als Code, Daten; CMYK und PDF/X nicht belegt | [typst.app](https://typst.app/blog/2025/automated-generation) | 2026-10 |
 | Scribus | freies Layoutprogramm mit CMYK, PDF/X-4, Python; nächster Vergleich am Flyer | [Wikipedia](https://en.wikipedia.org/wiki/Scribus) | 2026-10-28 |
 | Penpot + offizielles MCP | offener Design-Kanal, selbst hostbar | [penpot.app](https://penpot.app/penpot-mcp-server) | 2026-10 |
@@ -42,7 +43,6 @@ Begründung (Skill `pflege`). Stand des Radars: **2026-11-14**.
 
 | Was | Warum | Quelle | Stand |
 |---|---|---|---|
-| OpenDesign (Powerformer, Inc.) | Katalog von 296 Design-Skills aus 84 Repos mit Lizenz je Karte: erste Suchstelle vor dem Bau (A10); Arbeitsmuster Mittelmaß als Linter mit ausgewiesener Prüfgrenze. App nicht installieren: Telemetrie standardmäßig an, Cloud-Guthaben; Regelwerke kaum belegt. [Befund](research/2026-11-fundstueck-open-design/befund.md) | [Katalog](https://open-design.ai/de/skills/) · [Repo](https://github.com/nexu-io/open-design) | 2026-11-14 |
 | ComfyUI + Comfy MCP | steuerbare Bildgenerierung; offizieller MCP (Cloud, Beta) | [ComfyUI Wiki](https://comfyui-wiki.com/en/news/2026-06-30-comfy-mcp-agent-integration) | 2026-10 |
 | TouchDesigner + MCP | Echtzeit, Installation; nicht Open Source | [mcpservers.org](https://mcpservers.org/servers/8beeeaaat/touchdesigner-mcp) | 2026-10 |
 | cables.gl, Three.js | offene Echtzeit-Grafik | — | 2026-10 |
@@ -62,6 +62,7 @@ Begründung (Skill `pflege`). Stand des Radars: **2026-11-14**.
 
 | Was | Warum | Stand |
 |---|---|---|
+| OpenDesign · App und Cloud | Telemetrie standardmäßig an, ein Kanal nicht abschaltbar; Cloud-Abo; zweite Werkzeugschicht neben dem Labor (A15). Wissensteile siehe „Erproben“ | [PRIVACY.md](https://github.com/nexu-io/open-design/blob/main/PRIVACY.md) | 2026-11-14 |
 | NotebookLM als Wahrheitsquelle | willkürliche Inhalte erlebt; nur als Einstieg (Skill `belegpflicht`) | 2026-10 |
 | Bildgeneratoren ohne Steuerung | erzeugen Mittelmaß, keine Regel | 2026-10 |
 | Agentenschwärme, „KI-Agenturen“ | Lärm; kein Qualitätsgewinn belegt | 2026-10 |

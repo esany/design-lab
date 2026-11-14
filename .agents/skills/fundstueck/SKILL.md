@@ -7,11 +7,22 @@ dient: A01, A03, A04, A10, A15, A27
 # Fundstück bewerten
 
 Ein Fundstück kann wertvoll sein, ohne dass man es installiert. Ziel ist der
-Lerngewinn — nicht eine weitere Werkzeugschicht.
+Lerngewinn — nicht eine weitere Werkzeugschicht. **Wert und Übernahme sind zwei
+Fragen:** Wie viel ein Fundstück dem Labor bringt, misst sich am Ertrag, nicht daran,
+ob man es installiert. Ein Werkzeug, das man nicht einsetzt, kann ein reicher
+Steinbruch und eine gute Negativfolie sein.
 
 ## Ablauf
 
-1. **Was ist es?** Wirkprinzip in zwei Sätzen, Herkunft, Lizenz, Träger,
+0. **Gedächtnis zuerst:** Gab es das Fundstück oder seine Quellen schon im Labor?
+   Issues (auch geschlossene), `radar.md`, `research/`, `corpus/` durchsuchen. Eine
+   frühere Bewertung wird fortgeführt und ihre offenen Punkte erledigt, nicht neu
+   begonnen (Umsetzen vor Neuem).
+1. **Was ist es?** In **Bestandteile zerlegen** (z. B. App, Katalog, Regelwerke,
+   Prüfwerkzeug, Quellen dahinter); jeder Bestandteil wird für sich bewertet, ein
+   Risiko gilt nur für den Bestandteil, den es betrifft.
+   **Ganz sichten, bevor bewertet wird:** Ist eine Seite abgeschnitten oder nur eine
+   Stichprobe gelesen, steht das da, und die Bewertung bleibt vorläufig. Wirkprinzip in zwei Sätzen, Herkunft, Lizenz, Träger,
    Stand (Datum). Belegpflicht.
 2. **Prüffrage Bedarf — vor jedem Vergleich:** Welcher Anforderung im
    [Intent](../../../intent.md) dient es, und welche Lücke schließt es? Das
@@ -19,6 +30,12 @@ Lerngewinn — nicht eine weitere Werkzeugschicht.
    nicht nur auf die Skizze. Fehlt dem Labor ein Weg für diese Fähigkeit, ist
    das ein **Bedarf**, kein Zeichen für „passt nicht“ oder „geringe
    Überschneidung“. Antwort mit Anforderung (A..) und Status.
+   **Auch gegen das Feld prüfen, nicht nur gegen die Liste im Intent:** Deckt das
+   Fundstück ein Feld oder eine Methode ab, die das Labor gar nicht führt (Fall
+   OpenDesign: UX, Interaktionsgestaltung, Informationsarchitektur), ist das ein Bedarf
+   und eine Frage an den Eigentümer, ob der Intent erweitert wird.
+   Schwache Belege im Fundstück sind kein Ausschluss: Sie bestimmen, wie abgebaut wird
+   (nur mit eigener Prüfung), und machen es oft zur Negativfolie.
    Prüffall: [`evals/fundstueck-bedarf`](../../../evals/fundstueck-bedarf/aufgabe.md).
 3. **Fachlicher und methodischer Gehalt:** Welches Wissen trägt es, in
    Theorie und Praxis, auf welcher Ebene (vom Zweck bis zur Technik), für
@@ -41,13 +58,23 @@ Lerngewinn — nicht eine weitere Werkzeugschicht.
 5. **Prüfen:** Überschneidung mit Vorhandenem · Unabhängigkeit (offen,
    austauschbar?) · Sicherheit (Rechte, Datenwege, Marktplätze, bekannte
    Lücken) · Betrieb und Pflege · Rückbaubarkeit · Kosten.
-6. **Integrationsgrad wählen** — einer oder mehrere:
+6. **Ertrag vor Übernahme:** je Bestandteil eine Zeile *Ertrag · Zielort · Auftrag*.
+   Ertragsarten: `Steinbruch` (Wissen, Methoden, Muster aktiv abbauen) ·
+   `Negativfolie` (zeigt das erwartbare Mittelmaß, für `kritik` und Fachpakete) ·
+   `Suchstelle` (vor dem Bau nachsehen) · `Werkzeug`. Zielorte: Korpus, Fachpaket,
+   Skill, Prüfwerkzeug, Experiment, Radar. Jeder Ertrag endet als Auftrag (Issue),
+   nicht nur als Radarzeile.
+7. **Integrationsgrad wählen** — einer oder mehrere:
    `beobachten` · `Erkenntnis übernehmen` · `Arbeitsmuster übernehmen` ·
-   `begrenzter Pilot` · `integrieren` · `referenzieren`
-7. **Status setzen** — genau einer:
-   `beobachten` · `Pilot` · `integriert` · `bewusst bewahren` · `verwerfen`
-8. **Festhalten:** Eintrag in `radar.md` (oder bewusst nicht, wenn der Mensch
-   das so entscheidet) und Zeile in `stand.md`.
+   `abbauen` · `begrenzter Pilot` · `integrieren` · `referenzieren`
+8. **Status setzen** — je Bestandteil genau einer:
+   `beobachten` · `abbauen` · `Pilot` · `integriert` · `bewusst bewahren` · `verwerfen`.
+   `beobachten` und `verwerfen` brauchen eine Begründung, warum *jetzt kein Ertrag*
+   möglich ist. Haben sie einen Bedarf aus Schritt 2 gegen sich, liest ein **anderes
+   Modell** gegen, bevor die Bewertung gilt (A26).
+9. **Festhalten:** Befund in `research/`, Eintrag in `radar.md` je Bestandteil (oder
+   bewusst nicht, wenn der Mensch das so entscheidet), Aufträge als Issues.
+   Prüffall: [`evals/fundstueck-wert`](../../../evals/fundstueck-wert/aufgabe.md).
 
 ## Aus fremden Skills übernehmen (D-033)
 
@@ -71,3 +98,9 @@ agent-skills (Osmani, November 2026): zuerst als „nur Softwareentwicklung,
 beobachten“ abgelegt, weil das Labor keine Entwicklungsabläufe hatte. Der
 Eigentümer hat korrigiert: Genau diese Lücke ist der Bedarf (#180). Daraus
 entstand die Prüffrage Bedarf in Schritt 2.
+
+OpenDesign (29.10. als #98 und 14.11. erneut): zweimal als „beobachten“ abgelegt,
+weil die Risiken der App die ganze Bewertung bestimmten, die frühere Bewertung nicht
+gelesen wurde und UX und Informationsarchitektur im Intent fehlten. Der Eigentümer hat
+korrigiert: Es ist Steinbruch und Negativfolie zugleich. Daraus entstanden Schritt 0,
+die Zerlegung in Bestandteile, die Prüfung gegen das Feld und Schritt 6.
