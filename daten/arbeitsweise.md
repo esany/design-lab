@@ -17,7 +17,7 @@
 
 ## Aussagen
 
-### Belegt (31)
+### Belegt (32)
 
 - **arbeitsweise-a02** Im Labor folgte auf einen Vorfall meist eine neue Regel: 30 Entscheidungen in drei Tagen.
   *Beleg:* `research/2026-10-audit-zusammenarbeit/befunde.md`, In Worten, Punkt 4
@@ -108,6 +108,9 @@
 - **arbeitsweise-a75** Der Eigentümer will in jeder Antwort, die das Zielbild betrifft, direkt den Link zum Zielbild bekommen.
   *Beleg:* `AGENTS.md`, Grundmodell, Was zu ihm geht
   *Grenze:* Eigentümer im Chat 14.11.: „kannst du mir immer direkt einen Link zum Zielbild hier mitgeben?“ Im selben Schritt in AGENTS.md eingetragen.
+- **arbeitsweise-a76** Drei Orte mit Tabelle und Wegebeschreibung sind kein mentales Modell, das ihn unterstützt. Er will einen Einstieg: die Übersicht des Labors mit einem Link zu seinem geschützten Arbeitsplatz bei Cloudflare.
+  *Beleg:* `tools/build.mjs`, Eintrag „Bearbeiten und senden“ auf der Startseite
+  *Grenze:* Eigentümer im Chat 14.11.: „was soll das denn für ein mentales Modell sein .. geschweige denn mich unterstützen. Können wir nicht einen Link zum Cloudshare Zielbild in der Design-Lab Übersicht Seite erstellen?“ Umgesetzt im selben Schritt; die Adresse ist damit öffentlich, der Inhalt bleibt hinter Cloudflare Access.
 
 ### Abgeleitet (36)
 
