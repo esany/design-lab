@@ -22,6 +22,7 @@ evals/<fall>/
 | `parallel` | Start und Abschluss, wenn mehrere Chats parallel an verschiedenen Themen arbeiten (angelegt; erste Beobachtung: nicht bestanden) | Orchestrator, Skill `issue` |
 | `neustart-daten` | macht ein frischer Chat mit `daten/` richtig weiter, getrennt für Claude und Astra? Lesen und ein Testeintrag (angelegt 06.11., nicht getestet) | Pilot Datenmodell |
 | `fundstueck-bedarf` | erkennt ein Modell bei einem Fundstück zuerst den Bedarf aus dem Intent, statt eine Lücke im Labor als „passt nicht“ zu lesen? (angelegt 11.11.; Anlass: nicht bestanden, #180) | `fundstueck` |
+| `fundstueck-wert` | erkennt ein Modell den Wert eines Fundstücks, das als Werkzeug nicht übernommen wird (Steinbruch, Suchstelle, Negativfolie), und findet frühere Bewertungen? (angelegt 14.11.; Anlass: nicht bestanden, OpenDesign) | `fundstueck` |
 | `werkchat-lernen` | ruft ein Werkchat das Laborwissen ab, bleibt er in früher Phase im Gespräch, und führt er Korrekturen des Eigentümers sofort ins Labor zurück? (angelegt 11.11.; Anlass: nicht bestanden) | Leitbild Organismus, `fundstueck`, Leitfaden |
 | `beleg-kunstgeschichte` | 5 Fragen mit bekannten, belegbaren Antworten; erfindet das Modell Quellen? | `belegpflicht` |
 | `regel-umsetzen` | eine schriftlich formulierte Kompositionsregel exakt als Studie umsetzen | `konkrete-kunst`, `studie` |

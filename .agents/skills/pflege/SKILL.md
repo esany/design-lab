@@ -18,6 +18,11 @@ prüft den Pull Request und übernimmt ihn. Fragen an den Eigentümer stehen im 
 bringt sie ins Zielbild. Jede Pflege braucht einen Verlaufseintrag `verlauf/JJJJ-MM-TT-<kurz>.md`.
 `stand.md` wird aus den Merkzetteln erzeugt und nie von Hand geändert.
 
+**Altbestand frisch halten (0039):** Jede Pflege nimmt auch Bestehendes mit: Skills, Fachpakete,
+Radar und Quellen, die älter oder ungeprüft sind oder den Systemgrundsätzen nicht folgen (Beleg,
+`dient:`, Geltungsbereich), werden mit dem Skill `fundstueck` neu eingeordnet. Das gilt auch für
+fremde Skills und Plugins in der Arbeitsumgebung. Neues wird in Bestehendes eingearbeitet.
+
 ## Alle zwei Wochen: Radar-Scan
 
 1. Suche nach Neuem zu: KI-Agenten und MCP für Gestaltungswerkzeuge, offene

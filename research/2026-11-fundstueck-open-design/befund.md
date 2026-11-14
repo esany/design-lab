@@ -2,7 +2,7 @@
 dient: A04, A06, A10, A11, A15, A27
 datum: 2026-11-14
 modell: Claude Opus 5.5 (Claude-App, Cloud-Sitzung)
-status: Fundstück bewertet nach Skill `fundstueck`. Nicht gegengelesen. Keine Regel abgeleitet; eine Frage an den Eigentümer.
+status: Fundstück bewertet, am 14.11. vom Eigentümer korrigiert (Abschnitt 9). Gegenlesen durch ein anderes Modell beauftragt.
 ---
 
 # Fundstück OpenDesign (Skill-Katalog und Repo)
@@ -112,7 +112,7 @@ zugleich, und die beiden Seiten stützen sich gegenseitig:
   `Erkenntnis übernehmen` (Mittelmaß als Prüfung mit ausgewiesener Prüfgrenze; Regelbedarf
   im Skill-Kopf) · Negativfolie für `kritik` (Abschnitt 3a).
 - **Nicht:** App installieren, Skills oder Linter-Code übernehmen, Design-Systeme nutzen.
-- **Status:** `beobachten`. Radar-Ring „Beobachten“.
+- **Status:** ~~`beobachten`~~, korrigiert am 14.11., siehe Abschnitt 9.
 
 ## 7 · Frage an den Eigentümer
 
@@ -208,3 +208,39 @@ Beleg selbst tragen (Negativfolie). *abgeleitet*
    Struktur“; das Labor selbst ist der erste Prüffall.
 2. Gelten die drei Schichten (8.4) als Regelformat für Fachpakete, zuerst erprobt am Fachpaket
    Form mit dem Mittelmaß-Pilot? Empfehlung: ja, als Experiment.
+
+## 9 · Korrektur des Eigentümers und neue Einordnung (14.11.)
+
+**Korrektur (Chat, 14.11.):** „Es ist nicht so, dass das Fundstück nicht wertvoll für uns ist.
+Wiedermal hast du seinen Wert für das Labor unterschätzt.“ Die Einstufung „beobachten“ war falsch.
+
+**Ursachen (abgeleitet aus dem eigenen Ablauf, Prüffall `fundstueck-wert`):**
+1. **Gedächtnis nicht gelesen:** OpenDesign war seit 29.10. als #98 im Labor, mit demselben
+   Urteil und offenen Aufnahme-Punkten (gstack prüfen, Gegenlesen). Der Befund
+   [Fundstück-Passung](../2026-11-fundstueck-passung/befund.md) hatte #98 bereits als Fall genannt,
+   in dem technische Vorsicht den fachlichen Wert verdeckt.
+2. **Wert mit Übernahme verwechselt:** Die Statusliste im Skill beschrieb nur den Lebenszyklus
+   eines Werkzeugs; „beobachten“ war der sichere Ausgang für alles, was man nicht installiert.
+3. **Werkzeugrisiko färbte den Wissenswert:** Telemetrie und Abo der App bestimmten das
+   Gesamturteil, obwohl Katalog, Regelwerke und Methoden davon nicht betroffen sind.
+4. **Bedarf nur gegen die Liste im Intent:** UX und Informationsarchitektur standen dort nicht,
+   also wurde die Lücke im ersten Durchgang nicht gesehen.
+5. **Flache Sichtung:** bewertet auf einer abgeschnittenen Katalogseite (164 von 296 Einträgen).
+6. **Kein Gegenlesen:** Das in #98 vorgesehene Gegenlesen durch ein anderes Modell lief nie.
+
+**Neue Einordnung je Bestandteil:**
+
+| Bestandteil | Ertrag | Status | Zielort und Auftrag |
+|---|---|---|---|
+| Katalog (296 Skills, 84 Repos) | Suchstelle, Steinbruch | `abbauen` | erste Suchstelle vor jedem Bau (A10); UX-Methoden in die Recherche 0037 (#237) |
+| `designer-skills` (111 UX-Skills, MIT) | Steinbruch, teils Negativfolie | `abbauen` | Recherche 0037: Methoden übernehmen, Faustregeln einzeln prüfen |
+| `craft/`-Regelwerke | Negativfolie, Muster für zuschaltbare Abschnitte | `abbauen` | `kritik` und Fachpakete; Regelformat 0038 |
+| `lint-artifact` (Prüfwerkzeug) | Arbeitsmuster: Mittelmaß als Prüfung mit Prüfgrenze | `Pilot` | Pilot Mittelmaß-Prüfung am Fachpaket Form (0038) |
+| `design-brief` (acht Dimensionen) | Negativfolie: Entwurf als Parameterwahl | `abbauen` | `kritik`, Fachpaket Interaktion und Struktur |
+| Skill-Kopf `od:` (Eingaben, Ergebnis, `requires`) | Arbeitsmuster | `Pilot` | Fachpakete in Abschnitte teilen (0038) |
+| App und Cloud | – | `verwerfen` | Begründung: Telemetrie standardmäßig an, ein Kanal nicht abschaltbar, Abo; Werkzeugschicht neben dem Labor |
+| gstack (aus #98) | offen | `beobachten` | wird mit der Recherche 0037 mitgeprüft |
+
+**Entscheidungen daraus:** [0037](../../decisions/0037-feld-interaktion-und-struktur.md) ·
+[0038](../../decisions/0038-regeln-in-drei-schichten.md) ·
+[0039](../../decisions/0039-quellen-pruefen-und-frisch-halten.md).
