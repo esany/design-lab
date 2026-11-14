@@ -5,7 +5,7 @@
 
 **Stand:** Das eine Zielbild des Labors ist übernommen und veröffentlicht (zielbild/, 14.11.): sieben Stränge, Schnittstellen, drei Ansichten, Farbe als Rollen; Leitfaden und Bug #200 darin aufgegangen und archiviert. Beide Gegenprüfungen durch ChatGPT übernommen (#224, #232). Leitfaden Iteration 7; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
 
-**Nächster Schritt:** Der Eigentümer urteilt über Einordnung und drei Skizzen für das überarbeitete Zielbild (research/2026-11-zielbild-bausteine/einordnung-und-ueberarbeitung.md); danach baut Claude die Überarbeitung, ChatGPT prüft gegen mit der Frage „Wird es für den Eigentümer einfacher?“.
+**Nächster Schritt:** Claude erhebt die Anforderungen an die Arbeitsoberfläche (Iteration 1 steht im Zielbild, research/2026-11-arbeitsoberflaeche/analyse.md); ChatGPT recherchiert Muster für KI-assistierende Oberflächen (#237) und wie Fachwissen wächst (#238); danach Iteration 2 und Entwurf. Unabhängig davon: Sitzung am Rechner (Cloudflare, Hauptzweig) beendet das Kopieren.
 
 ## Offene Fragen an den Eigentümer (5)
 
@@ -17,7 +17,7 @@
 
 ## Aussagen
 
-### Belegt (19)
+### Belegt (20)
 
 - **arbeitsweise-a02** Im Labor folgte auf einen Vorfall meist eine neue Regel: 30 Entscheidungen in drei Tagen.
   *Beleg:* `research/2026-10-audit-zusammenarbeit/befunde.md`, In Worten, Punkt 4
@@ -72,6 +72,9 @@
 - **arbeitsweise-a63** Das gebaute Zielbild ist für den Eigentümer komplizierter statt übersichtlicher: Er muss immer noch kopieren, und UI und Informationsarchitektur beantworten nicht, was er wissen muss, was er braucht und was nicht. Der Bau zeigt wieder das Muster, Anforderungen einzeln anzuhängen (Filter, Legende, Begründungen, Priorität, Sammelurteil), statt das Ganze systematisch zu überarbeiten. Abgeleitet: „Du bist dran“ enthält Verwaltung (Issues, Regeln auf Probe, Startfälle), die nach dem Grundmodell beim Modell liegt.
   *Beleg:* `zielbild/punkte.json`, Stand nach PR #234; 25 Punkte mit dran: du, Ansicht mit Legende, Bilanz, drei Reitern, sieben Strangfiltern
   *Grenze:* Eigentümer im Chat, 14.11.: „Puh, ich sehe noch offene baustellen, kopieren muss ich Immer noch.. Was muss ich wissen, was brauche ich, was nicht.. ich finde das ui und die Informationsarchitektur noch nicht optimal gelöst.. es ist für mich komplizierter statt übersichtlicher geworden. Auch zeigt es wieder tendenzen Dinge mit neuen Anforderungen anzuklatschen, statt das systematisch und ganzheitlich zu betrachten und zu überarbeiten“. Gleiche Klasse wie F2 in Bug Flickenteppich (#216).
+- **arbeitsweise-a64** Rückmeldungen des Eigentümers zur Arbeitsoberfläche sind Anforderungen, keine Gesprächsthemen: Sie werden im Labor erhoben, festgehalten und iterativ überarbeitet. Skizze B ist keine Landkarte; Zusammenhänge darzustellen verlangt die Methoden der vorhandenen Fachpakete statt vorschneller, ungeprüfter Zuschreibungen. Gebraucht werden mehrere Perspektiven auf Entwurfsprozess und Systemzustand, individuelle Sichten mit priorisierten oder begrenzten Aufgaben und ein großer, mit Tags filterbarer Überblick zum Erkunden; Transparenz ermöglicht Arbeitsteilung und Vertrauen.
+  *Beleg:* `research/2026-11-zielbild-bausteine/einordnung-und-ueberarbeitung.md`, Abschnitt 5 (Skizzen) und Urteil
+  *Grenze:* Eigentümer im Chat, 14.11.2026: „Was ich dir mitgegeben habe sind anforderungen, das ist nichts, was ich hier mit dir nur wieder im ChatZwiegespräch temporär besprechen will - sondern echte PAIN. Dein Graph ist ein Anfang. Perspektivisch könnte das auch ein schönes Expriment werden um genau solche Technischen und komplexität in der Arbeitsteilung sichtbar zu machen, Welche UI Pattern und überhaupt erstmal Anforderungen sind an eine solches HMI (?) zu stellen. Vorerst können wir mit der Analyse starten und sammeln, bzw. iterativ Anforderungen erheben und überarbeiten. Ein Landkarte ist Skizze B für mch nicht. Du hast bereits begonnene Fachpakete zu Diagrammatik etc. da brauche ich keine Banalen oder vorschnellen unvaliden Zuschreibungen Skizze C finde ich auch gut. Aus meiner Sicht braucht es unterschiedliche Perspektiven auf den Entwurfsprozess und den Systemzustand. Transparenz ermöglicht erst die Arbeitsteilung und das Vertrauen. Und dann gern auch noch progressiv Disclosure. Was gibt es denn sonst noch für geeigente UI / UX Pattern gerade für AI assistierende Interfaces .. das wäre doch ein schöner sota Auftrag und auch eine wichtige Erweiterung der Fachpakete .. haben wir überhaupt schon eines zu Interaktionsgestaltung? Was haben wir überhaupt, und brauchen wir hier mehr Modellverständnis, oder wächst das alles bottom up als organisches Konstrukt und verknüpft sich dynamisch neu .. Auf welchen Regeln ? (Sota Recherche nötig.) Einen großen Überblick also nach dem Muster der aktuellen Seite mit filterbaren Tags braucht es auch noch .. Ich habe individuelle Sichten, mit priorisierten oder limitierten Aufgaben Aber auch das große Ganze, in dem ich Explorieren kann.“
 
 ### Abgeleitet (36)
 

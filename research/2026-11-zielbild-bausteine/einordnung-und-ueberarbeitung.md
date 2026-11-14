@@ -96,6 +96,10 @@ Gemeinsam (aus deinen drei Fragen): oben „Was du wissen musst“ in wenigen S�
 
 Heute (belegt, Eingänge in `daten/arbeitsweise.json`): Startprompt ohne Repo-Namen (a61); das Zielbild komplizierter gebaut statt übersichtlicher (a63); eine Nebenfrage als Hauptfrage gestellt (a62); bei „Du bist dran“ Verwaltung an dich gegeben, entgegen dem Grundmodell (a63). Gemeinsames Muster (abgeleitet): Ich prüfe gegen Einzelanforderungen, die ich aufgezählt habe, nicht gegen die Frage, ob es für dich einfacher wird. Gegenmittel in diesem Entwurf: Ich zeige dir zuerst Skizzen am echten Inhalt und baue erst nach deinem Urteil; die Gegenprüfung durch ChatGPT bekommt als erste Frage „Wird es für den Eigentümer einfacher?“.
 
+## Urteil des Eigentümers (14.11.)
+
+Skizze B ist keine Landkarte; die Fachpakete zur Diagrammatik gibt es, vorschnelle, ungeprüfte Zuschreibungen braucht er nicht. Skizze C gut. Dazu: Das sind Anforderungen, keine Gesprächsthemen; mehrere Perspektiven, individuelle Sichten, ein großer Überblick mit Tags. Weiter in der [Analyse der Arbeitsoberfläche](../2026-11-arbeitsoberflaeche/analyse.md); Wortlaut: `daten/arbeitsweise.json`, a64.
+
 ## Gegenprobe
 
 Gefahr: Auch diese Einordnung ist wieder ein langer Text. Gegenmittel: Sie ist als Inhalt für die Seite gedacht (Variante A oben, B darunter), nicht als Dokument zum Lesen. Diese Datei ist die Herkunft für Modelle und Entwickler.
