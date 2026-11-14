@@ -1,7 +1,7 @@
 ---
 thema: Interaktion und Struktur · UX, Interaktionsgestaltung, Informationsarchitektur
 stand: Feld beschlossen (0037), Regelformat in drei Schichten (0038), Quellenpflege (0039); Fundstück OpenDesign je Bestandteil eingeordnet; Bug zur Unterschätzung behoben, Prüffall fundstueck-wert angelegt
-naechster_schritt: ChatGPT recherchiert das Feld (#237) und liest die Neubewertung gegen (#246); Claude baut den Pilot Mittelmaß-Prüfung (#247) und prüft die Plugins im Konto (#248). Danach baut Claude das Fachpaket.
+naechster_schritt: Eingeordnet in die Einordnung über alle Stränge (Nachtrag 14.11.): ChatGPT liefert die Recherche #237 in zwei Teilen (erst für das Zielbild, dann für das Fachpaket) und liest gegen (#246); Claude prüft die Plugins im Hintergrund (#248); der Pilot Mittelmaß-Prüfung (#247) folgt nach Werkbuch und Experiment.
 offen: []
 ---
 

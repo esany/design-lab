@@ -2,7 +2,7 @@
 dient: A01, A04, A05, A07, A23
 datum: 2026-11-14
 modell: Claude Opus 5.5 (Claude-App, Cloud-Sitzung)
-status: Analyse; nichts beschlossen. Lesart des Eigentümers gespiegelt, Bestätigung offen.
+status: Analyse, eingeordnet in den bestehenden Plan (Einordnung, Schritt 6); keine eigene Reihenfolge. Abschnitt 3 ist überholt.
 ---
 
 # Voraussetzungen, damit die Arbeit an Fachpaketen sinnvoll starten kann
@@ -52,7 +52,10 @@ statt einseitig.
 | V5 | **Zugang zu den Grundlagen**: Volltexte, Lesestand je Quelle, Belegpflicht für Lesestand | Abstracts reichen nicht für Kanon; das Fachpaket braucht ganz gelesene Grundlagen | offen in „Wissen erschließen“ (Lesestand, PDFs, Belegpflicht) |
 | V6 | **Prüffälle**: das Labor selbst (Arbeitsoberfläche) und PixelPatrol | Wirkung am Werk ist der Maßstab (0038) | Labor bestätigt; PixelPatrol im Labor unbekannt |
 
-## 3 · Reihenfolge (Vorschlag)
+## 3 · Reihenfolge (überholt, 14.11.)
+
+Nicht gültig: Die Reihenfolge steht in der [Einordnung](../2026-11-zielbild-bausteine/einordnung-und-ueberarbeitung.md), Nachtrag 14.11. Der folgende Vorschlag stand daneben, statt sich einzuordnen.
+
 
 1. V3 spiegeln (Chat, jetzt) und V6 klären (PixelPatrol).
 2. V1 und V2 zusammen: Recherche Wissensnetz (#238) abwarten oder vorziehen, dann **einen** Entwurf des

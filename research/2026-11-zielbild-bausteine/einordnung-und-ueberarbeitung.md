@@ -103,3 +103,23 @@ Skizze B ist keine Landkarte; die Fachpakete zur Diagrammatik gibt es, vorschnel
 ## Gegenprobe
 
 Gefahr: Auch diese Einordnung ist wieder ein langer Text. Gegenmittel: Sie ist als Inhalt für die Seite gedacht (Variante A oben, B darunter), nicht als Dokument zum Lesen. Diese Datei ist die Herkunft für Modelle und Entwickler.
+
+## Nachtrag 14.11. (Claude, Orchestrator): Eingänge aus dem Chat zum Fundstück OpenDesign
+
+Am 14.11. kamen im Chat neue Entscheidungen und Aufträge dazu. Sie ändern die Reihenfolge oben nicht,
+sie werden darin einsortiert. Vorher hatte ich sie daneben gestellt, ohne diesen Plan zu lesen (a67).
+
+| Eingang | gehört zu Schritt | Folge |
+|---|---|---|
+| Recherche Arbeitsoberfläche (#237), erweitert um das Feld Interaktion und Struktur (0037) | 1 (Zielbild, Iteration 2 kommt mit den Recherchen) | Eine Recherche, zwei Lieferungen: erst Fragen 1–5 für das Zielbild, dann Fragen 6–8 für das Fachpaket. So verzögert die Erweiterung das Zielbild nicht. |
+| Recherche Wissensnetz (#238) | 1 und 6 | unverändert |
+| Gegenlesen Fundstück-Wert (#246) | 3 (Hintergrund) | ChatGPT, ohne dich |
+| Prüfung der Plugins im Konto (#248, 0039) | 3 (Hintergrund) | Claude, ohne dich |
+| Werkbuch, freigegeben 14.11. | 4 | wie geplant |
+| agent-skills (Osmani) als eigene Skills, entschieden 14.11. | 4 (Pilot an Raster als Programm) | wie geplant; die Wahl des Experiments bleibt deine |
+| Pilot Mittelmaß-Prüfung (#247, 0038) | nach 4 | fachliche Erweiterung; kommt nach Werkbuch und Experiment |
+| Visualisierungssysteme (4 Antworten), Voraussetzungen für Fachpakete, Lesart Visualisierung, PixelPatrol | 6 (gebündelt) | Die Analyse der Voraussetzungen ist Inhalt für „Fachpakete neu schneiden“, kein eigener Plan |
+| Prüftiefe in Stufen (a66) | 1 | geht in die Überarbeitung des Zielbilds ein |
+
+**Was als Nächstes dich braucht:** Schritt 2, die Sitzung am Rechner (Cloudflare und Hauptzweig, etwa
+20 Minuten). Alles davor läuft ohne dich.
