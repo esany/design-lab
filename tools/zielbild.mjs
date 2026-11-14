@@ -4,7 +4,9 @@
 // seines mit demselben Werkzeug in seinem eigenen Repo. Beschreibung der Daten und der Bausteine:
 // tools/zielbild/README.md; Herleitung: research/2026-11-zielbild-bausteine/befund.md.
 //
-//   node tools/zielbild.mjs <punkte.json> [--aus <seite.html>] [--check]
+//   node tools/zielbild.mjs <punkte.json> [--aus <seite.html>] [--check] [--senden <adresse> --ablage <ordner>]
+// --senden: Adresse des Dienstes, der die Rückmeldung als Datei ins Repo legt (nur private Fassung bei
+// Cloudflare, Zugang nur für den Eigentümer); --ablage: Ordner dafür im Ziel-Repo. Ohne --senden nur Kopieren.
 //
 // Ohne --aus entsteht index.html neben punkte.json. --check erzeugt nichts und meldet nur,
 // ob Daten gültig und die Seite aktuell ist. Keine Abhängigkeiten außer Node ≥ 18.
@@ -195,7 +197,7 @@ export function verweise(p, repo, wurzel = LABOR) {
 }
 
 /** Erzeugt die Seite. quelle: Pfad der Daten, nur für den Kopfkommentar. */
-export function erzeugen(z, { vorlage, tokens, quelle = "punkte.json" } = {}) {
+export function erzeugen(z, { vorlage, tokens, quelle = "punkte.json", senden = "", ablage = "" } = {}) {
   vorlage ??= readFileSync(join(hier, "zielbild/vorlage.html"), "utf8");
   tokens ??= JSON.parse(readFileSync(join(LABOR, "system/tokens/lab.tokens.json"), "utf8"));
   const [j, m, d] = [z.stand.slice(0, 4), z.stand.slice(5, 7), z.stand.slice(8, 10)];
@@ -207,6 +209,8 @@ export function erzeugen(z, { vorlage, tokens, quelle = "punkte.json" } = {}) {
     .replace("/*TOKENS*/", tokenCss(tokens))
     .replace("/*DATEN*/", JSON.stringify(daten).replace(/</g, "\\u003c"))
     .replaceAll("/*TITEL_JS*/", js(z.titel))
+    .replaceAll("/*SENDEN*/", js(senden))
+    .replaceAll("/*ABLAGE*/", js(ablage))
     .replaceAll("/*TITEL*/", html(z.titel))
     .replaceAll("/*ORT*/", html(z.ort))
     .replaceAll("/*VON*/", html(z.von ?? "Claude"))
@@ -226,7 +230,9 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   const args = process.argv.slice(2);
   const check = args.includes("--check");
   const ai = args.indexOf("--aus");
-  const daten = args.find((a, i) => !a.startsWith("--") && (ai < 0 || i !== ai + 1));
+  const wert = (n) => { const i = args.indexOf(n); return i >= 0 ? args[i + 1] : ""; };
+  const mitWert = new Set(["--aus", "--senden", "--ablage"].map((n) => args.indexOf(n)).filter((i) => i >= 0).map((i) => i + 1));
+  const daten = args.find((a, i) => !a.startsWith("--") && !mitWert.has(i));
   if (!daten) { console.error("Aufruf: node tools/zielbild.mjs <punkte.json> [--aus <seite.html>] [--check]"); process.exit(2); }
   const aus = ai >= 0 ? args[ai + 1] : join(dirname(daten), "index.html");
   let z;
@@ -234,7 +240,7 @@ if (process.argv[1] && resolve(process.argv[1]) === fileURLToPath(import.meta.ur
   const fehler = pruefen(z, daten);
   if (fehler.length) { console.error(fehler.join("\n")); process.exit(1); }
   const rel = relative(dirname(aus), daten);
-  const seite = erzeugen(z, { quelle: rel && !rel.startsWith("..") ? rel : basename(daten) });
+  const seite = erzeugen(z, { quelle: rel && !rel.startsWith("..") ? rel : basename(daten), senden: wert("--senden"), ablage: wert("--ablage") });
   const punkte = z.teile.reduce((n, t) => n + (t.punkte?.length ?? 0), 0);
   if (check) {
     const aktuell = existsSync(aus) && readFileSync(aus, "utf8") === seite;

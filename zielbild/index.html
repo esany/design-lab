@@ -87,6 +87,8 @@ textarea.zeigen,textarea.immer{display:block}
 .leer{color:var(--muted);font-size:.9375rem;margin:8px 0 0}
 .leiste{position:sticky;bottom:0;background:var(--bg);border-top:1px solid var(--line);padding:12px 16px;display:flex;gap:12px;align-items:center;justify-content:space-between;max-width:38rem;margin:0 auto}
 .leiste button{font:.9375rem var(--sans);background:var(--fg);color:var(--bg);border:0;border-radius:8px;padding:10px 16px;cursor:pointer}
+.leiste .knoepfe{display:flex;gap:8px}
+.leiste #kopieren:not(:only-child){background:transparent;color:var(--fg);border:1px solid var(--line)}
 .leiste .stand{font:.8125rem var(--mono);color:var(--muted)}
 .ausgabe{display:none;margin-top:16px;white-space:pre-wrap;font:.875rem/1.5 var(--mono);border:1px solid var(--line);border-radius:8px;padding:12px}
 .ausgabe.zeigen{display:block}
@@ -113,9 +115,9 @@ textarea.zeigen,textarea.immer{display:block}
 <div class="filter" id="art" role="group" aria-label="Art" hidden></div>
 <div id="inhalt"></div>
 <pre class="ausgabe" id="ausgabe"></pre>
-<p class="hinweis">Deine Markierungen bleiben nur in diesem Browser; was zählt, ist die kopierte Rückmeldung im Chat. Ein Sammelurteil gilt nicht als „passt“ für Punkte, die du nicht einzeln markiert hast.</p>
+<p class="hinweis">Deine Markierungen bleiben nur in diesem Browser; was zählt, ist die gesendete oder in den Chat kopierte Rückmeldung. Ein Sammelurteil gilt nicht als „passt“ für Punkte, die du nicht einzeln markiert hast.</p>
 </main>
-<div class="leiste"><span class="stand" id="stand">0 markiert</span><button id="kopieren">Rückmeldung kopieren</button></div>
+<div class="leiste"><span class="stand" id="stand">0 markiert</span><span class="knoepfe"><button id="senden" hidden>Rückmeldung senden</button><button id="kopieren">Rückmeldung kopieren</button></span></div>
 <script>
 const LABEL={bestaetigt:"von dir gesagt",ableitung:"meine Ableitung",vorschlag:"Vorschlag",befund:"Befund",offen:"Frage an dich",freigabe:"Freigabe",impuls:"Eingang",auftrag:"Auftrag"};
 const ROLLE={bestaetigt:"bestaetigt",ableitung:"ableitung",vorschlag:"vorschlag",befund:"befund"};
@@ -213,17 +215,37 @@ inhalt.addEventListener("click",e=>{
  const ta=b.closest(".punkt").querySelector("textarea");ta.classList.add("zeigen");if(u.v==="besser")ta.focus();zaehlen();
 });
 inhalt.addEventListener("input",e=>{const t=e.target;if(t.tagName!=="TEXTAREA")return;const u=urteil[t.dataset.id]||{};u.n=t.value;urteil[t.dataset.id]=u;speichern();zaehlen();});
-document.getElementById("kopieren").addEventListener("click",async()=>{
+function rueckmeldung(){
  const zeilen=[];const alle=(urteil._alle||{}).n;if(alle&&alle.trim())zeilen.push(`Zu allen offenen Punkten: ${alle.trim()}`);
  PUNKTE.forEach(p=>{const u=urteil[p.id];if(!u||!(u.v||u.n||u.p))return;
   const w=p.s==="auftrag"&&p.stand!=="startklar"?(u.v==="passt"?"erledigt":u.v==="besser"?"Frage dazu":"Notiz"):p.s==="auftrag"||p.s==="freigabe"?(u.v==="passt"?"freigegeben":u.v==="besser"?"anders":"Notiz"):p.s==="impuls"?(u.v==="passt"?"einverstanden":u.v==="besser"?"anders":"Notiz"):p.s==="offen"?(u.v==="passt"?"beantwortet":"Antwort"):(u.v==="passt"?"passt":u.v==="besser"?"muss besser":"Notiz");
   zeilen.push(`• ${D.einStrang?"":"["+strangName(p.heim)+"] "}${p.t}\n  → ${u.v||u.n?w:"Priorität"}${u.n?": "+u.n.trim():""}${u.p?` (Priorität: ${u.p})`:""}`)});
- const text=zeilen.length?"Rückmeldung Zielbild des Labors (Iteration 2):\n\n"+zeilen.join("\n"):"Noch nichts markiert.";
+ return zeilen.length?"Rückmeldung Zielbild des Labors (Iteration 2):\n\n"+zeilen.join("\n"):"";
+}
+document.getElementById("kopieren").addEventListener("click",async()=>{
+ const text=rueckmeldung()||"Noch nichts markiert.";
  const out=document.getElementById("ausgabe");out.textContent=text;out.classList.add("zeigen");
  const btn=document.getElementById("kopieren");
  try{await navigator.clipboard.writeText(text);btn.textContent="Kopiert";}catch(e){btn.textContent="Text oben markieren";}
  setTimeout(()=>btn.textContent="Rückmeldung kopieren",2500);
 });
+// Senden: nur in der privaten Fassung bei Cloudflare (Zugang nur für den Eigentümer). Der Dienst legt die
+// Rückmeldung als Datei im Repo ab; das orchestrierende Modell arbeitet sie ein.
+const SENDEN="",ABLAGE="";
+if(SENDEN){const btn=document.getElementById("senden");btn.hidden=false;
+ btn.addEventListener("click",async()=>{
+  const text=rueckmeldung();const out=document.getElementById("ausgabe");
+  if(!text){out.textContent="Noch nichts markiert.";out.classList.add("zeigen");return;}
+  btn.disabled=true;btn.textContent="Sendet …";
+  try{const r=await fetch(SENDEN,{method:"POST",headers:{"content-type":"application/json"},credentials:"same-origin",
+    body:JSON.stringify({ort:"design-lab",schluessel:"labor",titel:"Zielbild des Labors",iteration:2,ablage:ABLAGE,text})});
+   const a=await r.json().catch(()=>({}));
+   if(!r.ok)throw new Error(a.fehler||`Antwort ${r.status}`);
+   out.textContent=`Gesendet. Deine Rückmeldung liegt als Datei ${a.datei} im Repo; das orchestrierende Modell arbeitet sie ein. Deine Markierungen bleiben hier stehen.\n\n${text}`;
+   btn.textContent="Gesendet";
+  }catch(e){out.textContent=`Nicht gesendet: ${e.message}. Kopieren geht weiter wie bisher.\n\n${text}`;btn.textContent="Rückmeldung senden";}
+  out.classList.add("zeigen");btn.disabled=false;
+ });}
 lesenHash();render();
 </script>
 </body>
