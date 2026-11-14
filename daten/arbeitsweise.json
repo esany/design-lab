@@ -706,6 +706,19 @@
         }
       ],
       "notiz": "Eigentümer im Chat 14.11.: „was soll das denn für ein mentales Modell sein .. geschweige denn mich unterstützen. Können wir nicht einen Link zum Cloudshare Zielbild in der Design-Lab Übersicht Seite erstellen?“ Umgesetzt im selben Schritt; die Adresse ist damit öffentlich, der Inhalt bleibt hinter Cloudflare Access."
+    },
+    {
+      "id": "arbeitsweise-a77",
+      "aussage": "Das Zielbild gehört nicht zentral auf die öffentliche Seite. Die private Übersicht bei Cloudflare ist selbst Entwurfsgegenstand: Struktur, Informationsarchitektur, Kopf und Navigation müssen nach den Entwurfsgrundsätzen des Labors gestaltet sein; gleich funktionierende Zielbilder (Labor, Werke) gehören gleich behandelt. Änderungen am Zielbild als zentralem Baustein müssen generisch nachgezogen werden.",
+      "status": "belegt",
+      "seit": "2026-11-14",
+      "quellen": [
+        {
+          "datei": "verlauf/2026-11-14-zielbild-nicht-oeffentlich.md",
+          "stelle": "Warum"
+        }
+      ],
+      "notiz": "Eigentümer im Chat 14.11.: „Blödsinn. du hälst dich wiedermal nicht an Grundprinzipien des Labors im Arbeitsmodus. Das Zielbild sollte einfach gar nicht zentral auf der öffentlichen Seite abrufbar sein. … bricht mit allen Gestalterischen und Entwurfsgrundsätzen … auch das ist ein Entwurfsgegenstand. … Sie sind funktional doch genau gleich, aber werden hier komplett verschieden behandelt.“ Auftrag: Seitenstruktur und Gestaltung überarbeiten, als Test der Regeln; UX von Kopf und Navigation prüfen; fehlende Fachkompetenz benennen."
     }
   ],
   "fragen": [

@@ -17,7 +17,7 @@
 
 ## Aussagen
 
-### Belegt (32)
+### Belegt (33)
 
 - **arbeitsweise-a02** Im Labor folgte auf einen Vorfall meist eine neue Regel: 30 Entscheidungen in drei Tagen.
   *Beleg:* `research/2026-10-audit-zusammenarbeit/befunde.md`, In Worten, Punkt 4
@@ -111,6 +111,9 @@
 - **arbeitsweise-a76** Drei Orte mit Tabelle und Wegebeschreibung sind kein mentales Modell, das ihn unterstützt. Er will einen Einstieg: die Übersicht des Labors mit einem Link zu seinem geschützten Arbeitsplatz bei Cloudflare.
   *Beleg:* `tools/build.mjs`, Eintrag „Bearbeiten und senden“ auf der Startseite
   *Grenze:* Eigentümer im Chat 14.11.: „was soll das denn für ein mentales Modell sein .. geschweige denn mich unterstützen. Können wir nicht einen Link zum Cloudshare Zielbild in der Design-Lab Übersicht Seite erstellen?“ Umgesetzt im selben Schritt; die Adresse ist damit öffentlich, der Inhalt bleibt hinter Cloudflare Access.
+- **arbeitsweise-a77** Das Zielbild gehört nicht zentral auf die öffentliche Seite. Die private Übersicht bei Cloudflare ist selbst Entwurfsgegenstand: Struktur, Informationsarchitektur, Kopf und Navigation müssen nach den Entwurfsgrundsätzen des Labors gestaltet sein; gleich funktionierende Zielbilder (Labor, Werke) gehören gleich behandelt. Änderungen am Zielbild als zentralem Baustein müssen generisch nachgezogen werden.
+  *Beleg:* `verlauf/2026-11-14-zielbild-nicht-oeffentlich.md`, Warum
+  *Grenze:* Eigentümer im Chat 14.11.: „Blödsinn. du hälst dich wiedermal nicht an Grundprinzipien des Labors im Arbeitsmodus. Das Zielbild sollte einfach gar nicht zentral auf der öffentlichen Seite abrufbar sein. … bricht mit allen Gestalterischen und Entwurfsgrundsätzen … auch das ist ein Entwurfsgegenstand. … Sie sind funktional doch genau gleich, aber werden hier komplett verschieden behandelt.“ Auftrag: Seitenstruktur und Gestaltung überarbeiten, als Test der Regeln; UX von Kopf und Navigation prüfen; fehlende Fachkompetenz benennen.
 
 ### Abgeleitet (36)
 
