@@ -5,7 +5,7 @@
 
 **Stand:** Das eine Zielbild des Labors ist übernommen und veröffentlicht (zielbild/, 14.11.): sieben Stränge, Schnittstellen, drei Ansichten, Farbe als Rollen; Leitfaden und Bug #200 darin aufgegangen und archiviert. Beide Gegenprüfungen durch ChatGPT übernommen (#224, #232). Leitfaden Iteration 7; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
 
-**Nächster Schritt:** Nächste Claude-Sitzung: die fünf abgegebenen Ergebnisse von ChatGPT prüfen und übernehmen (PR #256, #257, #259, #267, #269), dann erste Läufe der Verhaltensprüfungen (#271), Pilot Mittelmaß (#247), Plugins (#248), Werkbuch, Betriebstexte. ChatGPT arbeitet ab: Neustart-Test (#109), Fundstück dataviz-skills (#178), Befunde berichtigen (#56), Issue-Pflege vorbereiten (#273), Abgleich Anforderungen gegen Recherchen (#274); danach Iteration 2 der Arbeitsoberfläche.
+**Nächster Schritt:** Nächste Claude-Sitzung: die fünf abgegebenen Ergebnisse von ChatGPT prüfen und übernehmen (PR #256, #257, #259, #267, #269), dann erste Läufe der Verhaltensprüfungen (#271), Pilot Mittelmaß (#247), Plugins (#248), Werkbuch, Betriebstexte. Neustart-Test (#109) als geplante frische Sitzung am 14.11. abends; ChatGPT arbeitet ab: Fundstück dataviz-skills (#178), Issue-Pflege vorbereiten (#273), Abgleich Anforderungen gegen Recherchen (#274); danach Iteration 2 der Arbeitsoberfläche.
 
 ## Offene Fragen an den Eigentümer (5)
 
@@ -185,8 +185,10 @@
 - **arbeitsweise-a23** Astra (ChatGPT) kann Code ausführen und über den GitHub-Connector schreiben.
   *Grenze:* Angabe des Eigentümers im Chat vom 06.11.; im Pilot (Schritt 4) zu prüfen.
 
-## Beantwortete Fragen (63, neueste zuerst)
+## Beantwortete Fragen (64, neueste zuerst)
 
+- **2026-11-14** Drei Blocker im Block geklärt: Neustart-Test, Audit der Fehlermuster, Schließen überholter Aufträge
+  → „Neustart-Test: „Geplante Sitzung“. Audit der Fehlermuster: „In den Bug aufgehen“. Überholte Aufträge: „Ja, Liste danach“.“ *(Chat (Claude), Auswahlfragen. Folgen: geplante Sitzung für #109; #56 geschlossen, aufgegangen in #200; Regel in Skill issue E4 (Claude schließt Erledigtes und Ersetztes selbst, zeigt die Liste danach; Streichungen aus Vorschlägen des Eigentümers weiter einzeln).)*
 - **2026-11-14** Rückmeldung zur Seite „Zielbild Review Pixel Patrol“, Iteration 6 (Werk, privat)
   → „Fünf Rückmeldungen: Schaltflächen bei offenen Fragen unklar („Mir ist nicht klar, was ich machen soll“), Prüfauftrag UX-Writing, Informationsarchitektur, Selbstwirksamkeit und Rückmeldung; visuelle Sprache ohne ausgewiesene Entwurfslogik, das flächige Warndreieck bricht die Bildsprache; keine Informationsarchitektur, Systementwicklung und Gestaltungsfragen vermischt; Arbeitsdokumente gelten die gleichen Prinzipien wie jedes Werk, anderer Nutzungskontext; Befunde in Code ist auch eine Frage der Übersetzung und der Datenstrukturen, die Wissen halten. Wortlaut in den Issues #280–#282 und im Kommentar an #262.“ *(Chat (Claude), 14.11.: als drei Bugs an das Labor (#280 Schaltflächen, #281 visuelle Sprache, #282 Informationsarchitektur) und als Facette an die Recherchen #262 und #259. Der Wortlaut mit Kundenbezug steht privat im Werk (esany/werke, koordination.md R22).)*
 - **2026-11-14** Rückmeldung zur Seite „Zielbild des Labors“, Iteration 1

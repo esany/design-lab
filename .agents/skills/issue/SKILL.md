@@ -122,6 +122,7 @@ eingeklappt darunter. Bei einer Übergabe schreibt ihn nur das orchestrierende M
   im Verlauf des alten.
 - Ein Pull Request mit mehreren Entscheidungen wird geteilt (Schreibregel 1).
 - Die Pflege sucht monatlich offene Issues ohne Bewegung und schlägt Schließen oder Teilen vor.
+- **Freigabe des Eigentümers (14.11.2026, f69):** Erledigte oder durch Neueres ersetzte Issues schließt Claude selbst und zeigt dem Eigentümer danach die Liste (Name, Grund, Ersatz). Streicht ein Abschluss einen Vorschlag oder ein Anliegen des Eigentümers, geht er vorher einzeln an ihn (E6).
 
 ### E5 · Befunde von außen (Audit, Review, Kritik)
 Sichern → nachprüfen → Fragen an den Menschen → erst nach seiner Antwort Issues verteilen. Bis
