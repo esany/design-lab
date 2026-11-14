@@ -2017,7 +2017,7 @@
           "id": "vf-verstaendnis",
           "s": "offen",
           "n": "neu",
-          "prio": "jetzt",
+          "prio": "später",
           "auch": [
             "visualisierung"
           ],
@@ -2028,20 +2028,12 @@
           "id": "vf-pixelpatrol",
           "s": "offen",
           "n": "neu",
-          "prio": "jetzt",
+          "prio": "später",
           "auch": [
             "werke"
           ],
           "t": "Was ist PixelPatrol, wo liegt es, und darf es im öffentlichen Labor genannt werden?",
           "g": "research/2026-11-voraussetzungen-fachwissen/analyse.md, V6."
-        },
-        {
-          "id": "vf-reihenfolge",
-          "s": "offen",
-          "n": "neu",
-          "prio": "jetzt",
-          "t": "Reihenfolge: erst Modell für Fachwissen und Bestandskarte (gemeinsam für Leitfaden und Fachpakete), dann ein Rechercheprogramm über die Felder, dann die Pakete?",
-          "g": "research/2026-11-voraussetzungen-fachwissen/analyse.md, Abschnitt 3."
         }
       ]
     },
