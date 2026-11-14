@@ -41,7 +41,7 @@ Punkte als Fragen in Alltagssprache vor (0018). Antworten trägt er hier ein.
 | 0024 | [Kein Wissen nur im Chat](0024-kein-wissen-nur-im-chat.md) | system | freigegeben (auf Probe) |
 | 0025 | [Arbeitsteilung zwischen Modellen, Übergaben als Issues](0025-arbeitsteilung-modelle.md) | system | gültig |
 | 0026 | [Werkdateien in einem eigenen privaten Repo](0026-werke-eigenes-repo.md) | system | freigegeben |
-| 0027 | [`main` technisch schützen](0027-main-schuetzen.md) | system | freigegeben, Einrichtung offen |
+| 0027 | [`main` technisch schützen](0027-main-schuetzen.md) | system | gültig (eingerichtet 14.11.) |
 | 0028 | [Hinweise statt Vorgaben](0028-hinweise-statt-vorgaben.md) | system | gültig |
 | 0029 | [Ein Merkzettel je Thema](0029-merkzettel-je-thema.md) | system | gültig |
 | 0030 | [Perspektive, Folgen und Alternativen in Entscheidungen](0030-perspektive-und-folgen-in-entscheidungen.md) | system | gültig |

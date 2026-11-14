@@ -775,14 +775,13 @@
         {
           "id": "st-main",
           "s": "freigabe",
-          "n": "neu",
           "t": "Der Hauptzweig wird technisch geschützt: Änderungen nur über eine Übernahme mit grünen Prüfungen, kein Überschreiben, kein Löschen.",
-          "k": "Deine Antwort, 13.11.: „da brauche ich deine Anleitung“. Am Rechner im Browser, einmal, etwa fünf Minuten: (1) github.com/esany/design-lab → Settings → links „Rules“ → „Rulesets“ → „New ruleset“ → „New branch ruleset“. (2) Name „main schützen“, Enforcement status „Active“. (3) Bypass list leer lassen: Alle Modelle arbeiten unter deinem Konto, eine Ausnahme für dich nähme sie mit aus. (4) Target branches → „Add target“ → „Include default branch“. (5) Angehakt: „Restrict deletions“, „Block force pushes“, „Require a pull request before merging“ mit Required approvals 0, „Require status checks to pass“ mit diesen fünf Prüfungen: „Tokens, Studien, Index“, „Interne Links“, „Stand gegen GitHub“, „Eingriffe und Lesekosten“, „Studien rendern“; „Require branches to be up to date“ nicht anhaken. (6) „Create“. Danach prüfe ich die Regel lesend. Was sich für dich ändert: nichts; abschalten kannst du sie jederzeit. Berichtigt 14.11.: Die frühere Fassung empfahl eine Ausnahme für Admins; das hätte den Schutz unwirksam gemacht (Kommentar in #40 vom 29.10.).",
+          "k": "Eingerichtet am 14.11. von dir, ohne Ausnahmen, mit fünf Pflichtprüfungen; von mir lesend geprüft und mit einer Probe bestätigt (Entscheidung 0027, jetzt gültig).",
           "g": "Aufgabe #40 (Audit Astra, 28.10.; Versuch Claude, 29.10.). Namen der Prüfungen aus .github/workflows/pruefen.yml.",
           "auch": [
             "system"
           ],
-          "prio": "jetzt"
+          "bestaetigt": "2026-11-14"
         },
         {
           "id": "st-arbeitsweise-alt",
