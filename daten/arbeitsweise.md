@@ -5,19 +5,19 @@
 
 **Stand:** Das eine Zielbild des Labors ist übernommen und veröffentlicht (zielbild/, 14.11.): sieben Stränge, Schnittstellen, drei Ansichten, Farbe als Rollen; Leitfaden und Bug #200 darin aufgegangen und archiviert. Beide Gegenprüfungen durch ChatGPT übernommen (#224, #232). Leitfaden Iteration 7; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
 
-**Nächster Schritt:** Nächste Claude-Sitzung: die fünf abgegebenen Ergebnisse von ChatGPT prüfen und übernehmen (PR #256, #257, #259, #267, #269), dann erste Läufe der Verhaltensprüfungen (#271), Pilot Mittelmaß (#247), Plugins (#248), Werkbuch, Betriebstexte. ChatGPT arbeitet ab: Neustart-Test (#109), Fundstück dataviz-skills (#178), Befunde berichtigen (#56), Issue-Pflege vorbereiten (#273), Abgleich Anforderungen gegen Recherchen (#274); danach Iteration 2 der Arbeitsoberfläche.
+**Nächster Schritt:** Der Eigentümer bestätigt Situationen, Kernlücke und Richtung der Arbeitsfläche (Zielbild, Punkt zu Situationen und Richtung; Herleitung research/2026-11-arbeitsoberflaeche/entwurf.md). Danach legt Claude den Inhalt der drei Ansichten fest und baut in der Reihenfolge der Voraussetzungen im Zielbild (Datenmodell, „Du bist dran“, „Stand“ und „Alles“, Körper der Punkte); parallel ist das Fachpaket Interaktion und Struktur startbereit. Weiter offen: Ergebnisse von ChatGPT prüfen (PR #256, #259, #267, #269), Verhaltensprüfungen (#271).
 
 ## Offene Fragen an den Eigentümer (5)
 
 - **arbeitsweise-f02** Gemeinsame Issue-Prüfung zuerst im Labor bauen? *(gestellt 2026-11-05)*
-- **arbeitsweise-f03** Befund zu paleo-type auf #408 notieren (dort gilt Pause)? *(gestellt 2026-11-05)*
+- **arbeitsweise-f03** Einen Befund aus dem Labor in der Ursachenanalyse von paleo-type notieren, obwohl dort eine Pause gilt? *(gestellt 2026-11-05)*
 - **arbeitsweise-f04** Dürfen Fremde im öffentlichen Labor Issues anlegen? *(gestellt 2026-11-05)*
 - **arbeitsweise-f17** Lief Codex für #141 im Reiter „Codex“ der ChatGPT-App (Cloud) oder in einem normalen Chat? *(gestellt 2026-11-07)*
 - **arbeitsweise-f26** Minimalform für den Leitfaden: Einträge mit freien Tags und drei Arten von Relationen, eine erzeugte Ansicht als Netz und Verlauf, erste Keime generisch – soll ich so anfangen? *(gestellt 2026-11-06)*
 
 ## Aussagen
 
-### Belegt (26)
+### Belegt (38)
 
 - **arbeitsweise-a02** Im Labor folgte auf einen Vorfall meist eine neue Regel: 30 Entscheidungen in drei Tagen.
   *Beleg:* `research/2026-10-audit-zusammenarbeit/befunde.md`, In Worten, Punkt 4
@@ -93,6 +93,42 @@
 - **arbeitsweise-a70** Geräteunabhängig arbeiten: so gut wie möglich auf jedem Gerät, bei allem vom Handy aus gedacht. Situationen (kurz entscheiden, ausführlich erkunden) sind nicht an Geräte gebunden.
   *Beleg:* `zielbild/punkte.json`, Punkt ao-situationen
   *Grenze:* Eigentümer im Chat, 14.11., beim Bestätigen der drei Ableitungen: „ja - mit einer Anmerkung .. bei allem Handy first .. ich will so gut wie möglich geräteunabhängig arbeiten können.“
+- **arbeitsweise-a71** Das Zielbild legte Fragen vor, die durch spätere Änderungen im Repo längst erledigt oder beantwortet waren (Regelpause, Neustart-Test, ruhende Entwürfe, nächstes Experiment, PixelPatrol). Ein Zielbild, das dem Stand nicht folgt, ist ein schwerer Bug.
+  *Beleg:* `daten/arbeitsweise.json`, Frage arbeitsweise-f67
+  *Grenze:* Eigentümer: „das Zielbild wird auch bei repoänderungen nicht mit aktualisiert oder bekommt veraltete Daten - schwerer Bug“; zu PixelPatrol: „Das ist bereits hinreichend geklärt . Ich werte das als schweren Bug! Anallysieren und beheben.“
+- **arbeitsweise-a72** Zahlen, Nummern und Verweise ohne Inhalt haben für den Eigentümer keine Bedeutung. Ein Punkt muss für sich verständlich sein und aktive Verweise (Hypertext) tragen; ein inaktiver Verweis ins Repo oder auf einen Chat ist keine Assistenz.
+  *Beleg:* `daten/arbeitsweise.json`, Frage arbeitsweise-f67
+  *Grenze:* Eigentümer: „kein Kontext bzw. Hypertext. So hat die Information keine Bedeutung für mich.“ und „Ein inaktiver Verweis ins repo ist keine Assistenz für mich .. das ist in diesem Punkt der einzige Kontext und bricht mit unseren REgeln.“
+- **arbeitsweise-a73** Bei der Erweiterung des Zielbilds wurden zentrale Grundlagen und Prinzipien missachtet, vergessen oder neu gewichtet: ein fundamentaler Fehler der Entwurfs- und Systementwicklung. Der Eigentümer fragt, ob die Prinzipien aktuell sind und gepflegt werden, ob die Infrastruktur auf ihnen beruht und wer das prüft und pflegt.
+  *Beleg:* `daten/arbeitsweise.json`, Frage arbeitsweise-f67
+  *Grenze:* Eigentümer: „Hier ist eine sehr schlechte erweiterung gelaufen. … sind die überhaupt aktuell und werden ebenfalls kontinuierlich gepflegt. Beruht die Infrastruktur über haupt auf diesen Regeln, oder ist sie überhaupt nicht kompatibel. Wer prüft das, wer pflegt das?“ Antwort im Chat 14.11. und in research/2026-11-zielbild-bausteine/einordnung-und-ueberarbeitung.md, Nachtrag „Rückmeldung zu Iteration 1“.
+- **arbeitsweise-a74** Der Eigentümer schickte dieselbe Rückmeldung zu Iteration 1 erneut, weil die veröffentlichte Seite des Zielbilds die Berichtigungen nicht zeigte: Sie lagen in einem offenen Pull Request, die Seite wird nur aus main gebaut. Berichtigungen an Punkten für ihn werden darum im selben Schritt übernommen, sobald die Prüfungen grün sind.
+  *Beleg:* `.github/workflows/website.yml`, Auslöser push auf main; `daten/arbeitsweise.json`, Frage arbeitsweise-f67
+  *Grenze:* Abgeleitet aus der zweiten, gleichlautenden Rückmeldung im Chat vom 14.11.; Abgleich Prinzipien, Grundmodell, Mechanismen in research/2026-11-zielbild-bausteine/einordnung-und-ueberarbeitung.md.
+- **arbeitsweise-a75** Der Eigentümer will in jeder Antwort, die das Zielbild betrifft, direkt den Link zum Zielbild bekommen.
+  *Beleg:* `AGENTS.md`, Grundmodell, Was zu ihm geht
+  *Grenze:* Eigentümer im Chat 14.11.: „kannst du mir immer direkt einen Link zum Zielbild hier mitgeben?“ Im selben Schritt in AGENTS.md eingetragen.
+- **arbeitsweise-a76** Drei Orte mit Tabelle und Wegebeschreibung sind kein mentales Modell, das ihn unterstützt. Er will einen Einstieg: die Übersicht des Labors mit einem Link zu seinem geschützten Arbeitsplatz bei Cloudflare.
+  *Beleg:* `tools/build.mjs`, Eintrag „Bearbeiten und senden“ auf der Startseite
+  *Grenze:* Eigentümer im Chat 14.11.: „was soll das denn für ein mentales Modell sein .. geschweige denn mich unterstützen. Können wir nicht einen Link zum Cloudshare Zielbild in der Design-Lab Übersicht Seite erstellen?“ Umgesetzt im selben Schritt; die Adresse ist damit öffentlich, der Inhalt bleibt hinter Cloudflare Access.
+- **arbeitsweise-a77** Das Zielbild gehört nicht zentral auf die öffentliche Seite. Die private Übersicht bei Cloudflare ist selbst Entwurfsgegenstand: Struktur, Informationsarchitektur, Kopf und Navigation müssen nach den Entwurfsgrundsätzen des Labors gestaltet sein; gleich funktionierende Zielbilder (Labor, Werke) gehören gleich behandelt. Änderungen am Zielbild als zentralem Baustein müssen generisch nachgezogen werden.
+  *Beleg:* `verlauf/2026-11-14-zielbild-nicht-oeffentlich.md`, Warum
+  *Grenze:* Eigentümer im Chat 14.11.: „Blödsinn. du hälst dich wiedermal nicht an Grundprinzipien des Labors im Arbeitsmodus. Das Zielbild sollte einfach gar nicht zentral auf der öffentlichen Seite abrufbar sein. … bricht mit allen Gestalterischen und Entwurfsgrundsätzen … auch das ist ein Entwurfsgegenstand. … Sie sind funktional doch genau gleich, aber werden hier komplett verschieden behandelt.“ Auftrag: Seitenstruktur und Gestaltung überarbeiten, als Test der Regeln; UX von Kopf und Navigation prüfen; fehlende Fachkompetenz benennen.
+- **arbeitsweise-a78** In einem Werk-Chat nannte das Modell den Link zum Zielbild des Labors statt zum Zielbild des Werks. Ursache: Die Link-Regel aus a75 steht in AGENTS.md mit der festen Adresse des Labor-Zielbilds, ohne zu unterscheiden, welches Zielbild eine Antwort betrifft; das Modell wandte sie mechanisch an. Gemeint ist immer das Zielbild, um das es geht.
+  *Beleg:* `AGENTS.md`, Grundmodell, Was zu ihm geht; `daten/arbeitsweise.json`, Aussage arbeitsweise-a75
+  *Grenze:* Korrektur des Eigentümers im Werk-Chat 14.11.: „es geht doch aber nicht um das Labor“. Werkinhalte bleiben im Werke-Repo. Prüffall evals/werkchat-lernen, Punkt 5. Klarstellung der Regel: Frage arbeitsweise-f70.
+- **arbeitsweise-a79** Der Eigentümer sieht in einzelnen Fehlern eines Werk-Chats Symptome schwerwiegender Fehler im System und verlangt eine ganzheitliche, systemische Ursachenprüfung statt einer Einzelkorrektur. Belegt sind vier Ursachen, die über F1 bis F5 hinausgehen: mehrere Schreiber ohne Takt, Tatsachen als Wortlaut an vielen Orten, ein mehrdeutiges „Zielbild“ und eine Kopplung von Labor und Werk ohne Vertrag. Dazu kommt eine Prüfkette, die nach einem Bot-Commit sperrt.
+  *Beleg:* `research/2026-11-anforderungspruefung/bug-flickenteppich.md`, Wiederauftreten am 14.11. im Werk-Chat
+  *Grenze:* Eigentümer im Werk-Chat 14.11.: „das sind Symptome von schwerwiegenden Fehlern - prüfe deren Ursache und behebe sie. Bzw. mach ihre Behebung möglich. Analysiere ganzheitlich und systemisch.“ Gehört zu #216 und #200.
+- **arbeitsweise-a81** Varianten für Seiten sind fragmentarisch, solange sie nicht vom Eigentümer ausgehen: von seinen Situationen, Aufgaben, seinem Wissen und seiner Erkenntnislücke, seinen Zielen, Bedürfnissen und Anforderungen und deren Zusammenhang. Erst daraus folgen Ansichtsarchitektur, Aufgabenpfade und visuelle Abbildung; vorher wird nichts umgebaut.
+  *Beleg:* `research/2026-11-arbeitsoberflaeche/entwurf.md`, Herkunft
+  *Grenze:* Eigentümer im Chat 14.11.: „ich weiß nicht a-C ist schon wieder fragmentatisch. Du sollst von mir und meiner Erkenntnislücke ausgehen. … Kurz mach doch einfach mal Entwurfsarbeit … Bevor wir hier nicht weiter kommen, müssen wir die Seite nicht umbauen.“
+- **arbeitsweise-a82** Voraussetzungen, Abhängigkeiten und Blocker von Aufträgen müssen vorab festgelegt und Teil der Infrastruktur sein; sonst entstehen viele Extrarunden. Die Einordnung von Aufgaben liegt beim orchestrierenden Modell.
+  *Beleg:* `tools/zielbild.mjs`, Prüfung „braucht“; `.agents/skills/issue/SKILL.md`, Abschnitt B, Blockiert durch
+  *Grenze:* Eigentümer im Chat 14.11.: „Wie sollte klare Vorraussetzungen bzw. Abhängigkeiten und Blocker für Aufträge bereits definiert haben. und diese als Teil der Infrastruktur übernommen haben. Sonst machen wir unglaublich viele Extra runden. BEi dir liegt die Orchestrierung die Einordnung von Aufgaben.“
+- **arbeitsweise-a83** Das Zielbild des Labors bildet den aktuellen Konzeptstand nicht ab, darum kann der Eigentümer ihn dort nicht prüfen. Neue Analyse- und Entwurfsarbeit berücksichtigt bestehende Ausarbeitungen zu Nutzerforschung und Analyse nicht systemisch und nicht über Relationen; er wertet das als Versagen der Fachpakete und des Orchestrators.
+  *Beleg:* `research/2026-11-arbeitsoberflaeche/entwurf.md`, Abschnitt 0; `zielbild/punkte.json`, u4, nk-laden
+  *Grenze:* Eigentümer im Chat 14.11.: „auf der anderen Seite bildet das Labor Zielbild auch nicht unseren aktuellen Konzeptstand ab - diesen kann ich damit nicht prüfen. Du berücksichtigst ihn bestimmt gerade auch nicht systemisch und prüfst auf Relationen. Auch hier gibt es ja zentrale Ausarbeitungen hinsichtlicher des User Researches und der Analyse. Das ist wieder ein versagen der Fachpakete bzw. des Orchestriers“
 
 ### Abgeleitet (36)
 
@@ -170,8 +206,24 @@
 - **arbeitsweise-a23** Astra (ChatGPT) kann Code ausführen und über den GitHub-Connector schreiben.
   *Grenze:* Angabe des Eigentümers im Chat vom 06.11.; im Pilot (Schritt 4) zu prüfen.
 
-## Beantwortete Fragen (61, neueste zuerst)
+## Beantwortete Fragen (69, neueste zuerst)
 
+- **2026-11-14** Darf Claude eine Lösung für die Sperre nach dem Bot-Commit vorbereiten (betrifft Schlüssel oder Schutzregeln)?
+  → „„Ja, vorbereiten“: Vorschlag vorlegen, Einbau erst nach seiner Entscheidung.“ *(Werk-Chat (Claude), Auswahlfragen. Erscheinung „Übernahme gesperrt nach dem Bot-Commit“ in bug-flickenteppich.md.)*
+- **2026-11-14** Was soll zwischen Labor und Werk gelten (Vorrang blockierender Bugs, feste Fassung, Link-Regel, ein Startweg)?
+  → „Gewählt: „Bugs, die ein Werk blockieren, haben Vorrang“. Nicht gewählt: feste Fassung des Generators, Klarstellung der Link-Regel, ein Startweg je Werk.“ *(Werk-Chat (Claude), Auswahlfragen. Ursachen F8, F9. Betrifft zuerst die drei Bugs zum Zielbild (Schaltflächen, visuelle Sprache, Informationsarchitektur).)*
+- **2026-11-14** Sollen Adressen und Pfade, die zum Eigentümer gehen, an genau einem Ort stehen, mit einer Prüfung auf abweichende und tote Adressen?
+  → „„Ja, an einem Ort“.“ *(Werk-Chat (Claude), Auswahlfragen. Ursache F7.)*
+- **2026-11-14** Mehrere Sitzungen schreiben gleichzeitig ins Labor. Wie soll das künftig laufen?
+  → „„Eine Sitzung zur Zeit“: Nur eine Sitzung übernimmt ins Labor, alle anderen liefern zu und geben ab.“ *(Werk-Chat (Claude), Auswahlfragen. Ursache F6 in bug-flickenteppich.md. Offen: welche Sitzung die eine ist und wie das technisch gesichert wird (Text allein hält kein Verhalten, F2).)*
+- **2026-11-14** Klarstellung der Link-Regel in AGENTS.md: „Jede Antwort, die ein Zielbild betrifft, nennt den Link zu genau diesem Zielbild auf seinem Arbeitsplatz: für das Labor https://werke-zielbilder-e7q.pages.dev/labor/, für ein Werk dessen Seite dort (werke/<ordner>/).“ So übernehmen?
+  → „Nicht gewählt (Mehrfachauswahl am 14.11. im Werk-Chat; gewählt war nur „Bugs, die ein Werk blockieren, haben Vorrang“). Offen, ob das Nein heißt oder später.“ *(Aus Aussage arbeitsweise-a78; neue Regel, darum Frage an den Eigentümer.)*
+- **2026-11-14** Drei Blocker im Block geklärt: Neustart-Test, Audit der Fehlermuster, Schließen überholter Aufträge
+  → „Neustart-Test: „Geplante Sitzung“. Audit der Fehlermuster: „In den Bug aufgehen“. Überholte Aufträge: „Ja, Liste danach“.“ *(Chat (Claude), Auswahlfragen. Folgen: geplante Sitzung für #109; #56 geschlossen, aufgegangen in #200; Regel in Skill issue E4 (Claude schließt Erledigtes und Ersetztes selbst, zeigt die Liste danach; Streichungen aus Vorschlägen des Eigentümers weiter einzeln).)*
+- **2026-11-14** Rückmeldung zur Seite „Zielbild Review Pixel Patrol“, Iteration 6 (Werk, privat)
+  → „Fünf Rückmeldungen: Schaltflächen bei offenen Fragen unklar („Mir ist nicht klar, was ich machen soll“), Prüfauftrag UX-Writing, Informationsarchitektur, Selbstwirksamkeit und Rückmeldung; visuelle Sprache ohne ausgewiesene Entwurfslogik, das flächige Warndreieck bricht die Bildsprache; keine Informationsarchitektur, Systementwicklung und Gestaltungsfragen vermischt; Arbeitsdokumente gelten die gleichen Prinzipien wie jedes Werk, anderer Nutzungskontext; Befunde in Code ist auch eine Frage der Übersetzung und der Datenstrukturen, die Wissen halten. Wortlaut in den Issues #280–#282 und im Kommentar an #262.“ *(Chat (Claude), 14.11.: als drei Bugs an das Labor (#280 Schaltflächen, #281 visuelle Sprache, #282 Informationsarchitektur) und als Facette an die Recherchen #262 und #259. Der Wortlaut mit Kundenbezug steht privat im Werk (esany/werke, koordination.md R22).)*
+- **2026-11-14** Rückmeldung zur Seite „Zielbild des Labors“, Iteration 1
+  → „Rückmeldung Zielbild des Labors (Iteration 1):  • [Arbeitsweise mit KI] Private Zielbild-Seiten der Werke bei Cloudflare einrichten.   → erledigt (Priorität: jetzt) • [Arbeitsweise mit KI] Gemeinsame Issue-Prüfung zuerst im Labor bauen?   → Priorität (Priorität: später) • [Leitfaden] Fragenliste in alten Chats finden (Issue #189).   → Priorität (Priorität: später) • [System und Pflege] Regelpause und Reihenfolge der Regelprüfung festlegen.   → Antwort: .. das Zielbild wird auch bei repoänderungen nicht mit aktualisiert oder bekommt veraltete Daten - schwerer Bug • [System und Pflege] Sieben Regeln auf Probe haben kein Auswertungsdatum (0003, 0004, 0007, 0013, 0016, 0018, 0024).   → muss besser: Bug .. hier nur zahlen ohne Semantik und Kontext .. was soll ich da verstehen. Hier ist eine sehr schlechte erweiterung gelaufen. Zentrale Grundlagen und Prinzipien wurden bei der Iteration bisachtet oder vergessen bzw. neu gewichtet. Fundamentaler Fehler von Entwurfs- und Systementwicklung - wiederspricht all meinen (unseren)  Prinzipien und Grundsätzen - sind die überhaupt aktuell und werden ebenfalls kontinuierlich gepflegt.    Beruht die Infrastruktur über haupt auf diesen Regeln, oder ist sie überhaupt nicht kompatibel. Wer prüft das, wer pflegt das? • [System und Pflege] Zwölf Issues mit Label „entwurf“ und PR #90 ruhen seit 28./29.10.   → muss besser: kann ich so überhaupt nichts mit anfangen .. kein Kontext bzw. Hypertext So hat die Information keine Bedeutung für mich. • [System und Pflege] Wie laufen die Startfälle frisch, ohne Projektkontext (#109)?   → Antwort: .. kann ich so überhaupt nichts mit anfangen .. kein Kontext bzw. Hypertext So hat die Information keine Bedeutung für mich. • [Leitfaden] Stimmt meine Lesart deines Verständnisses von Visualisierung? Siehe Chat vom 14.11.   → Antwort: .. Ein inaktiver Verweis ins repo ist keine Assistenz für mich .. das ist in diesem Punkt der einzige Kontext und bricht mit unseren REgeln. • [Leitfaden] Was ist PixelPatrol, wo liegt es, und darf es im öffentlichen Labor genannt werden?   → Antwort: Das ist bereits hinreichend geklärt . Ich werte das als schweren Bug! Anallysieren und beheben. • [Werke] Welches Experiment kommt als Nächstes?   → Antwort: veraltet - bug“ *(Chat (Claude), eingearbeitet in Iteration 2 am 14.11.; Analyse in research/2026-11-zielbild-bausteine/einordnung-und-ueberarbeitung.md, Nachtrag „Rückmeldung zu Iteration 1“.)*
 - **2026-11-14** Radar als Matrix (Empfehlung) oder Kreis?
   → „Matrix“ *(Merkzettel, gestellt im Chat; beantwortet im Chat, 14.11.)*
 - **2026-11-12** Rückmeldung zur Seite „Zielbild Bug #200: Prüfung des Ansatzes“, Iteration 1

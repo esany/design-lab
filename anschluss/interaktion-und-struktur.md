@@ -25,7 +25,7 @@ Durchschnitt.
 
 **Visualisierungssysteme (14.11.):** eigenes Fachpaket mit Schnittstellen; Prüffälle Labor und PixelPatrol; einzelne Quellen sind Bruchstücke, zuerst kommen die Voraussetzungen (Modell für Fachwissen, Bestandskarte, Rechercheprogramm), siehe `research/2026-11-voraussetzungen-fachwissen/analyse.md`; die vier Prüffragen aus dem Pilot werden nicht übernommen. Gebündelt in Schritt 6 der Einordnung.
 
-**Du entscheidest als Nächstes:** das nächste Experiment (Vorschlag: Raster als Programm). Später, gebündelt: Lesart von Visualisierung und was PixelPatrol ist.
+**Du entscheidest als Nächstes:** nichts Neues hier; das nächste Experiment ist Raster als Programm (14.11.), PixelPatrol ist beantwortet. Später: die Lesart von Visualisierung, im Zielbild ausformuliert.
 
 <details><summary>Für die Modelle: Fundstellen</summary>
 
