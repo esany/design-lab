@@ -220,18 +220,123 @@
         },
         {
           "id": "ao-rahmen",
-          "s": "vorschlag",
-          "dran": "du",
-          "n": "neu",
-          "prio": "jetzt",
-          "t": "Welche Variante soll der Arbeitsplatz bekommen: A (eine Liste nach Dringlichkeit), B (erst deine Entscheidungen, dann Laufendes, dann die Zielbilder; empfohlen) oder C (getrennt nach Labor und Werken)?",
-          "k": "Was das ist: der Rahmen um alle Zielbilder, also Einstieg, Kopf und Navigation; Labor und Werke werden darin gleich behandelt. Ansehen, am besten am Handy: https://werk-entwurf-arbeitsplatz.werke-zielbilder-e7q.pages.dev/entwurf/ (privat, mit deiner E-Mail). Eine unabhängige Prüfung empfiehlt B mit dem Umschalter aus C; das ist eingearbeitet. Alle drei nutzen echte Daten und haben denselben festen Kopf mit Rückweg und Link zu den Daten im Repo. Warum jetzt: Du hast die bisherige Übersicht als Bruch mit den Entwurfsgrundsätzen verworfen. Was aus deiner Antwort folgt: Ich baue die gewählte Variante in den Generator, damit sie in allen Zielbildern gilt, und gehe dann an den Körper der Seite (Schaltflächen, Zeichen, Gliederung).",
+          "s": "befund",
+          "dran": "",
+          "n": "geändert",
+          "t": "Die Varianten A bis C für den Arbeitsplatz sind verworfen: Sie ordneten Seiten, statt von dir, deinen Situationen und deiner Erkenntnislücke auszugehen.",
+          "k": "Du hast sie am 14.11. fragmentarisch genannt und Entwurfsarbeit verlangt, bevor etwas umgebaut wird. Daraus ist die Entwurfsgrundlage entstanden (research/2026-11-arbeitsoberflaeche/entwurf.md).",
           "g": "research/2026-11-arbeitsoberflaeche/analyse.md, Abschnitt „Iteration 2“; research/2026-11-arbeitsoberflaeche/recherche-muster.md; daten/arbeitsweise.json, arbeitsweise-a76 und arbeitsweise-a77.",
           "stuetzt": [
             "ao-reihenfolge",
             "ao-einfacher",
             "ao-situationen"
+          ],
+          "f": "ich weiß nicht a-C ist schon wieder fragmentatisch. Du sollst von mir und meiner Erkenntnislücke ausgehen. … Kurz mach doch einfach mal Entwurfsarbeit … Bevor wir hier nicht weiter kommen, müssen wir die Seite nicht umbauen."
+        },
+        {
+          "id": "ao-entwurf",
+          "s": "auftrag",
+          "stand": "fertig",
+          "wer": "Claude",
+          "n": "neu",
+          "t": "Entwurfsgrundlage für den Arbeitsplatz: von dir und deiner Erkenntnislücke über Situationen, Aufgaben, Informationen und Anforderungen bis zu Ansichten, Aufgabenpfaden und visueller Abbildung.",
+          "k": "Fertig am 14.11.: research/2026-11-arbeitsoberflaeche/entwurf.md. Nichts ist gebaut; zuerst brauche ich deine Antworten auf vier Fragen (nächster Punkt).",
+          "stuetzt": [
+            "ao-reihenfolge",
+            "ao-einfacher",
+            "ao-ganzheitlich",
+            "ao-tiefe"
           ]
+        },
+        {
+          "id": "ao-nutzermodell",
+          "s": "vorschlag",
+          "dran": "du",
+          "n": "neu",
+          "prio": "jetzt",
+          "t": "Stimmen die fünf Situationen und die Kernlücke, trägt die Richtung „eine Arbeitsfläche über alle Zielbilder, Labor und Werke als Bereiche“, soll „Stand“ in drei Teilen gefüllt werden, und willst du sofort je Antwort senden oder gesammelt am Ende?",
+          "k": "Die Situationen: zwischendurch entscheiden, nachsehen ob es angekommen ist, im Werk gestalterisch urteilen, prüfen ob das System trägt, das Ganze erkunden. Die Kernlücke: „Wo steht die Arbeit, gemessen an meiner Absicht, und wo braucht sie jetzt mein Urteil?“ Die Richtung: keine Übersicht über Seiten mehr, sondern eine Fläche mit deinen drei bestätigten Ansichten „Du bist dran“, „Stand“ und „Alles“; Labor und Werke sind Bereiche, die du eingrenzen kannst. „Stand“ zeigt, was aus deinen Worten wurde, was läuft und blockiert ist und wie die Stränge zusammenhängen. Herleitung mit Herkunft je Schritt: research/2026-11-arbeitsoberflaeche/entwurf.md, Abschnitte 1, 2, 6 und 9; unabhängig gegengeprüft. Warum jetzt: Die Situationen kann nur bestätigen, wer sie erlebt. Was folgt: Ich lege den Inhalt der Ansichten fest und baue in der Reihenfolge der Voraussetzungen.",
+          "g": "research/2026-11-arbeitsoberflaeche/entwurf.md; daten/arbeitsweise.json, a01 bis a78.",
+          "braucht": [
+            "ao-entwurf"
+          ],
+          "stuetzt": [
+            "ao-entwurf",
+            "ao-situationen",
+            "ao-reihenfolge"
+          ]
+        },
+        {
+          "id": "ao-ansichten",
+          "s": "auftrag",
+          "stand": "vorbereitet",
+          "wer": "Claude",
+          "n": "neu",
+          "t": "Den Inhalt der drei bestätigten Ansichten festlegen: Teile, Reihenfolge, Leerzustände, Rahmen.",
+          "k": "Wartet auf deine Antwort zu Situationen und Richtung.",
+          "braucht": [
+            "ao-nutzermodell"
+          ],
+          "stuetzt": [
+            "ao-entwurf"
+          ]
+        },
+        {
+          "id": "ao-datenmodell",
+          "s": "auftrag",
+          "stand": "vorbereitet",
+          "wer": "Claude",
+          "n": "neu",
+          "t": "Ein Datensatz über das Labor und alle Werke an einem privaten Ort, mit Voraussetzungen, Priorität und dem Datum deiner letzten Rückmeldung.",
+          "k": "Grundlage für „worauf es einzahlt“, „seit deinem letzten Blick“ und Labor und Werke als Bereiche. Werk-Inhalte bleiben privat.",
+          "braucht": [
+            "ao-nutzermodell"
+          ],
+          "stuetzt": [
+            "ao-entwurf"
+          ]
+        },
+        {
+          "id": "ao-fachpaket",
+          "s": "auftrag",
+          "stand": "freigegeben",
+          "wer": "Claude",
+          "n": "neu",
+          "t": "Fachpaket Interaktion und Struktur aus der übernommenen Recherche bauen, mit Mikrotext für Schaltflächen und Rückmeldungen.",
+          "k": "Freigegeben durch die Entscheidung zum Feld (0037). Es liefert die Wörter für Handlungen („Freigeben, Claude baut es“ statt „beantwortet“) und die Navigationsmuster.",
+          "braucht": [
+            "od-a-recherche"
+          ],
+          "stuetzt": [
+            "od-feld",
+            "od-regeln"
+          ]
+        },
+        {
+          "id": "ao-bau-fuer-dich",
+          "s": "auftrag",
+          "stand": "vorbereitet",
+          "wer": "Claude",
+          "n": "neu",
+          "t": "Die Ansicht „Für dich“ bauen, generisch für alle Bereiche, dann die übrigen Ansichten und den Körper der Punkte.",
+          "k": "Darin gehen die drei offenen Bugs zum Zielbild auf: unklare Schaltflächen, Zeichen ohne Entwurfslogik, fehlende Gliederung.",
+          "braucht": [
+            "ao-ansichten",
+            "ao-datenmodell",
+            "ao-fachpaket"
+          ],
+          "stuetzt": [
+            "ao-entwurf"
+          ]
+        },
+        {
+          "id": "ao-voraussetzungen",
+          "s": "befund",
+          "dran": "",
+          "n": "neu",
+          "t": "Voraussetzungen und Blocker sind jetzt Daten: Jeder Auftrag und jede Frage im Zielbild kann nennen, was vorher erledigt sein muss, und die Prüfung lässt nichts starten oder dir vorlegen, was daran hängt.",
+          "k": "Eingeführt am 14.11. auf deine Anforderung. Die Seite zeigt je Punkt „Braucht vorher“ und „Gibt frei“; der geplante Orchestrierungslauf ordnet danach. Kreise meldet die Prüfung.",
+          "f": "Wie sollte klare Vorraussetzungen bzw. Abhängigkeiten und Blocker für Aufträge bereits definiert haben. und diese als Teil der Infrastruktur übernommen haben. Sonst machen wir unglaublich viele Extra runden. BEi dir liegt die Orchestrierung die Einordnung von Aufgaben."
         },
         {
           "id": "ao-analyse",
@@ -240,7 +345,7 @@
           "wer": "Claude",
           "n": "geändert",
           "t": "Anforderungen an die Arbeitsoberfläche erheben und in Iterationen überarbeiten; die Überarbeitung des Zielbilds folgt daraus.",
-          "k": "Iteration 2 für den Rahmen liegt vor (14.11.): Befund am Bestand, sieben Anforderungen, drei Varianten mit echten Daten (research/2026-11-arbeitsoberflaeche/analyse.md, Abschnitt „Iteration 2“). Der Körper der Zielbild-Seite folgt mit den drei Bugs zu Schaltflächen, Zeichen und Gliederung.",
+          "k": "Iteration 3 (14.11.): Entwurfsgrundlage statt Varianten; als Nächstes legt Claude die Ansichten fest, sobald du Situationen und Richtung bestätigt hast.",
           "stuetzt": [
             "ao-anforderung",
             "ao-einfacher",

@@ -31,6 +31,13 @@ const tests = [
   ["Auftrag ohne wer", () => hat(mit((d) => { delete punkt(d, "a-quellen").wer; }), "ohne „wer“")],
   ["Auftrag beruht auf Unbekanntem", () => hat(mit((d) => { punkt(d, "a-quellen").stuetzt = ["gibt-es-nicht"]; }), "unbekanntem Punkt")],
   ["startklar auf Unbestätigtem", () => hat(mit((d) => { punkt(d, "a-entwurf").stand = "startklar"; }), "nicht bestätigt")],
+  // Voraussetzungen und Blocker (Eigentümer 14.11.)
+  ["braucht: Unbekanntes", () => hat(mit((d) => { punkt(d, "a-quellen").braucht = ["gibt-es-nicht"]; }), "braucht unbekannten Punkt")],
+  ["braucht: leere Liste", () => hat(mit((d) => { punkt(d, "a-quellen").braucht = []; }), "nicht leere Liste")],
+  ["braucht: laufender Auftrag an Unerledigtem blockiert", () => hat(mit((d) => { const a = punkt(d, "a-quellen"); a.stand = "läuft"; a.braucht = ["a-entwurf"]; }), "blockiert")],
+  ["braucht: an Erledigtem ist gültig", () => mit((d) => { punkt(d, "a-quellen").braucht = ["fokus"]; }).length === 0],
+  ["braucht: Frage an dich an Unerledigtem", () => hat(mit((d) => { const q = d.teile.flatMap((t) => t.punkte).find((p) => p.dran === "du" || (!p.dran && ["offen", "freigabe", "impuls"].includes(p.s))); q.braucht = ["a-entwurf"]; }), "erst fragen, wenn sie entscheidbar ist")],
+  ["braucht: Kreis", () => hat(mit((d) => { punkt(d, "a-quellen").braucht = ["a-entwurf"]; punkt(d, "a-entwurf").braucht = ["a-quellen"]; }), "im Kreis")],
   ["Seite ohne offene Platzhalter", () => !/\/\*[A-Z_]+\*\//.test(erzeugen(gut))],
   ["Titel wird maskiert", () => erzeugen({ ...gut, titel: "A <b>" }).includes("<h1>A &lt;b&gt;</h1>")],
   ["Farben als Rollen aus den Tokens", () => { const h = erzeugen(gut); return h.includes("--bg:#f4f2ed") && h.includes("--signal:#d92d17") && h.includes("--bestaetigt:#2f6b3a") && h.includes("--offen:#8a5a00") && !h.includes("--accent"); }],

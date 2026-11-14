@@ -749,6 +749,36 @@
         }
       ],
       "notiz": "Eigentümer im Werk-Chat 14.11.: „das sind Symptome von schwerwiegenden Fehlern - prüfe deren Ursache und behebe sie. Bzw. mach ihre Behebung möglich. Analysiere ganzheitlich und systemisch.“ Gehört zu #216 und #200."
+    },
+    {
+      "id": "arbeitsweise-a81",
+      "aussage": "Varianten für Seiten sind fragmentarisch, solange sie nicht vom Eigentümer ausgehen: von seinen Situationen, Aufgaben, seinem Wissen und seiner Erkenntnislücke, seinen Zielen, Bedürfnissen und Anforderungen und deren Zusammenhang. Erst daraus folgen Ansichtsarchitektur, Aufgabenpfade und visuelle Abbildung; vorher wird nichts umgebaut.",
+      "status": "belegt",
+      "seit": "2026-11-14",
+      "quellen": [
+        {
+          "datei": "research/2026-11-arbeitsoberflaeche/entwurf.md",
+          "stelle": "Herkunft"
+        }
+      ],
+      "notiz": "Eigentümer im Chat 14.11.: „ich weiß nicht a-C ist schon wieder fragmentatisch. Du sollst von mir und meiner Erkenntnislücke ausgehen. … Kurz mach doch einfach mal Entwurfsarbeit … Bevor wir hier nicht weiter kommen, müssen wir die Seite nicht umbauen.“"
+    },
+    {
+      "id": "arbeitsweise-a82",
+      "aussage": "Voraussetzungen, Abhängigkeiten und Blocker von Aufträgen müssen vorab festgelegt und Teil der Infrastruktur sein; sonst entstehen viele Extrarunden. Die Einordnung von Aufgaben liegt beim orchestrierenden Modell.",
+      "status": "belegt",
+      "seit": "2026-11-14",
+      "quellen": [
+        {
+          "datei": "tools/zielbild.mjs",
+          "stelle": "Prüfung „braucht“"
+        },
+        {
+          "datei": ".agents/skills/issue/SKILL.md",
+          "stelle": "Abschnitt B, Blockiert durch"
+        }
+      ],
+      "notiz": "Eigentümer im Chat 14.11.: „Wie sollte klare Vorraussetzungen bzw. Abhängigkeiten und Blocker für Aufträge bereits definiert haben. und diese als Teil der Infrastruktur übernommen haben. Sonst machen wir unglaublich viele Extra runden. BEi dir liegt die Orchestrierung die Einordnung von Aufgaben.“"
     }
   ],
   "fragen": [

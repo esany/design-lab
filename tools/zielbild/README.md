@@ -99,3 +99,10 @@ zweiter Stand. Werk-Zielbilder baut `seiten.sh` mit `--senden /api/rueckmeldung 
 (`functions/api/rueckmeldung.js`) legt die Rückmeldung als Datei auf einem Zweig `lab/rueckmeldung-*` ab
 (Labor: `zielbild/rueckmeldungen/`) und öffnet einen Pull Request; der geplante Orchestrierungslauf arbeitet
 sie ein (Schritt 2a). Herkunft: Entwurf „ein Zielbild“, Abschnitt 3, Variante A.
+
+## Voraussetzungen: `braucht` (14.11.)
+
+`braucht` nennt Punkte, die erledigt sein müssen (von dir bestätigt, Befund oder fertiger Auftrag). Die
+Prüfung meldet: unbekannte Punkte, Kreise, Aufträge „startklar“ oder „läuft“ an Unerledigtem und Fragen an
+den Eigentümer, die an Unerledigtem hängen. Die Seite zeigt je Punkt „Braucht vorher“ und „Gibt frei“.
+`stuetzt` bleibt die Begründung („beruht auf“), keine Voraussetzung.

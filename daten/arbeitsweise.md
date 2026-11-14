@@ -5,7 +5,7 @@
 
 **Stand:** Das eine Zielbild des Labors ist übernommen und veröffentlicht (zielbild/, 14.11.): sieben Stränge, Schnittstellen, drei Ansichten, Farbe als Rollen; Leitfaden und Bug #200 darin aufgegangen und archiviert. Beide Gegenprüfungen durch ChatGPT übernommen (#224, #232). Leitfaden Iteration 7; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
 
-**Nächster Schritt:** Der Eigentümer wählt die Variante für den Arbeitsplatz (Zielbild, Punkt „Welche Variante soll der Arbeitsplatz bekommen“; B empfohlen). Danach baut Claude sie in den Generator, dann den Körper der Zielbild-Seite (Bugs zu Schaltflächen, Zeichen, Gliederung) und das Fachpaket Interaktion und Struktur aus der übernommenen Recherche. Weiter offen: Ergebnisse von ChatGPT prüfen (PR #256, #259, #267, #269), Verhaltensprüfungen (#271).
+**Nächster Schritt:** Der Eigentümer bestätigt Situationen, Kernlücke und Richtung der Arbeitsfläche (Zielbild, Punkt zu Situationen und Richtung; Herleitung research/2026-11-arbeitsoberflaeche/entwurf.md). Danach legt Claude den Inhalt der drei Ansichten fest und baut in der Reihenfolge der Voraussetzungen im Zielbild (Datenmodell, „Du bist dran“, „Stand“ und „Alles“, Körper der Punkte); parallel ist das Fachpaket Interaktion und Struktur startbereit. Weiter offen: Ergebnisse von ChatGPT prüfen (PR #256, #259, #267, #269), Verhaltensprüfungen (#271).
 
 ## Offene Fragen an den Eigentümer (6)
 
@@ -18,7 +18,7 @@
 
 ## Aussagen
 
-### Belegt (35)
+### Belegt (37)
 
 - **arbeitsweise-a02** Im Labor folgte auf einen Vorfall meist eine neue Regel: 30 Entscheidungen in drei Tagen.
   *Beleg:* `research/2026-10-audit-zusammenarbeit/befunde.md`, In Worten, Punkt 4
@@ -121,6 +121,12 @@
 - **arbeitsweise-a79** Der Eigentümer sieht in einzelnen Fehlern eines Werk-Chats Symptome schwerwiegender Fehler im System und verlangt eine ganzheitliche, systemische Ursachenprüfung statt einer Einzelkorrektur. Belegt sind vier Ursachen, die über F1 bis F5 hinausgehen: mehrere Schreiber ohne Takt, Tatsachen als Wortlaut an vielen Orten, ein mehrdeutiges „Zielbild“ und eine Kopplung von Labor und Werk ohne Vertrag. Dazu kommt eine Prüfkette, die nach einem Bot-Commit sperrt.
   *Beleg:* `research/2026-11-anforderungspruefung/bug-flickenteppich.md`, Wiederauftreten am 14.11. im Werk-Chat
   *Grenze:* Eigentümer im Werk-Chat 14.11.: „das sind Symptome von schwerwiegenden Fehlern - prüfe deren Ursache und behebe sie. Bzw. mach ihre Behebung möglich. Analysiere ganzheitlich und systemisch.“ Gehört zu #216 und #200.
+- **arbeitsweise-a81** Varianten für Seiten sind fragmentarisch, solange sie nicht vom Eigentümer ausgehen: von seinen Situationen, Aufgaben, seinem Wissen und seiner Erkenntnislücke, seinen Zielen, Bedürfnissen und Anforderungen und deren Zusammenhang. Erst daraus folgen Ansichtsarchitektur, Aufgabenpfade und visuelle Abbildung; vorher wird nichts umgebaut.
+  *Beleg:* `research/2026-11-arbeitsoberflaeche/entwurf.md`, Herkunft
+  *Grenze:* Eigentümer im Chat 14.11.: „ich weiß nicht a-C ist schon wieder fragmentatisch. Du sollst von mir und meiner Erkenntnislücke ausgehen. … Kurz mach doch einfach mal Entwurfsarbeit … Bevor wir hier nicht weiter kommen, müssen wir die Seite nicht umbauen.“
+- **arbeitsweise-a82** Voraussetzungen, Abhängigkeiten und Blocker von Aufträgen müssen vorab festgelegt und Teil der Infrastruktur sein; sonst entstehen viele Extrarunden. Die Einordnung von Aufgaben liegt beim orchestrierenden Modell.
+  *Beleg:* `tools/zielbild.mjs`, Prüfung „braucht“; `.agents/skills/issue/SKILL.md`, Abschnitt B, Blockiert durch
+  *Grenze:* Eigentümer im Chat 14.11.: „Wie sollte klare Vorraussetzungen bzw. Abhängigkeiten und Blocker für Aufträge bereits definiert haben. und diese als Teil der Infrastruktur übernommen haben. Sonst machen wir unglaublich viele Extra runden. BEi dir liegt die Orchestrierung die Einordnung von Aufgaben.“
 
 ### Abgeleitet (36)
 

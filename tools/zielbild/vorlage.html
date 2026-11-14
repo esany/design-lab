@@ -132,7 +132,7 @@ const vt=(s,p)=>{const v=p&&p.vw;let h=esc(s);if(!v||!v.length)return h;const m=
 const STRANG=Object.fromEntries(D.straenge.map(s=>[s.id,s]));
 const PUNKTE=D.teile.flatMap(t=>t.punkte.map(p=>({...p,teil:t.teil,heim:t.strang,straenge:[t.strang,...(p.auch||[])]})));
 const ALLE=Object.fromEntries(PUNKTE.map(p=>[p.id,p]));
-const TRAEGT={};PUNKTE.forEach(p=>(p.stuetzt||[]).forEach(i=>(TRAEGT[i]=TRAEGT[i]||[]).push(p.id)));
+const TRAEGT={};PUNKTE.forEach(p=>(p.stuetzt||[]).forEach(i=>(TRAEGT[i]=TRAEGT[i]||[]).push(p.id)));const GIBTFREI={};PUNKTE.forEach(p=>(p.braucht||[]).forEach(i=>(GIBTFREI[i]=GIBTFREI[i]||[]).push(p.id)));
 const fest=p=>!!(p.bestaetigt&&!p.n);
 const duDran=p=>p.dran==="du";
 const pruefen=p=>!duDran(p)&&!!p.n&&p.s!=="auftrag";
@@ -151,7 +151,7 @@ function knoepfe(p){const u=urteil[p.id]||{};const a=p.s==="auftrag",selbst=a&&p
  return `<div class="urteil"><button data-id="${esc(p.id)}" data-v="passt" class="${u.v==="passt"?"an":""}" aria-pressed="${u.v==="passt"}">${l1}</button><button data-id="${esc(p.id)}" data-v="besser" class="${u.v==="besser"?"an":""}" aria-pressed="${u.v==="besser"}">${l2}</button></div>${prio}<textarea data-id="${esc(p.id)}" aria-label="Notiz" class="${u.v||u.n?"zeigen":""}" placeholder="Was genau? (optional)">${esc(u.n||"")}</textarea>`;}
 function karte(p,mitId){
  const idAttr=mitId?` id="p-${esc(p.id)}"`:"";const dd=p.bestaetigt?p.bestaetigt.slice(8,10)+"."+p.bestaetigt.slice(5,7)+".":"";
- const rel=bezugListe(p.stuetzt,"Beruht auf",p.stuetzt_warum)+bezugListe(TRAEGT[p.id],"Trägt",Object.fromEntries((TRAEGT[p.id]||[]).map(i=>[i,(ALLE[i].stuetzt_warum||{})[p.id]]).filter(([,w])=>w)));
+ const rel=bezugListe(p.braucht,"Braucht vorher")+bezugListe(GIBTFREI[p.id],"Gibt frei")+bezugListe(p.stuetzt,"Beruht auf",p.stuetzt_warum)+bezugListe(TRAEGT[p.id],"Trägt",Object.fromEntries((TRAEGT[p.id]||[]).map(i=>[i,(ALLE[i].stuetzt_warum||{})[p.id]]).filter(([,w])=>w)));
  if(fest(p)&&!duDran(p)){return `<article class="punkt fest"${idAttr}><span class="chip ${rolle(p)}">${esc(LABEL[p.s])}</span><span class="fest-mark">bestätigt ${dd}</span>${strangChips(p)}<h3>${esc(p.t)}</h3>${p.k||p.g||rel?`<details><summary>Mehr</summary>${p.k?`<p>${vt(p.k,p)}</p>`:""}${p.g?`<p>${vt(p.g,p)}</p>`:""}${rel}</details>`:""}</article>`;}
  const kl=["punkt",duDran(p)?"dran":p.n?"wandel":""].filter(Boolean).join(" ");
  const status=p.s==="auftrag"?`<span class="chip">Auftrag · ${p.stand==="startklar"?"wartet auf deine Freigabe":esc(p.stand)} · ${esc(p.wer)}</span>`:`<span class="chip ${rolle(p)}">${esc(LABEL[p.s])}</span>`;

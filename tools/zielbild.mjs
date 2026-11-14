@@ -133,6 +133,7 @@ export function pruefen(z, name = "punkte.json") {
         if (typeof p.stuetzt_warum !== "object" || Array.isArray(p.stuetzt_warum)) err.push(`${w}: „stuetzt_warum“ muss je Verbindung einen Satz nennen`);
         else for (const k of Object.keys(p.stuetzt_warum)) if (!(p.stuetzt ?? []).includes(k)) err.push(`${w}: Begründung für „${k}“, aber keine Verbindung dorthin`);
       }
+      if (p.braucht !== undefined && (!Array.isArray(p.braucht) || !p.braucht.length)) err.push(`${w}: „braucht“ (Voraussetzungen) muss eine nicht leere Liste von Punkten sein`);
       if (p.s === "auftrag") {
         if (!STAND.includes(p.stand)) err.push(`${w}: Auftrag mit Stand „${p.stand}“ (erlaubt: ${STAND.join(", ")})`);
         if (!p.wer) err.push(`${w}: Auftrag ohne „wer“`);
@@ -149,7 +150,32 @@ export function pruefen(z, name = "punkte.json") {
     else if (i === p.id) err.push(`${name}: Punkt „${p.id}“ beruht auf sich selbst`);
     else if (p.s === "auftrag" && p.stand === "startklar" && !(q.bestaetigt && !q.n)) err.push(`${name}: Auftrag „${p.id}“ ist „startklar“, aber Punkt „${i}“ ist nicht bestätigt`);
   }
+  // Voraussetzungen (Eigentümer 14.11.: „klare Voraussetzungen bzw. Abhängigkeiten und Blocker für Aufträge
+  // … als Teil der Infrastruktur“): „braucht“ nennt Punkte, die erledigt sein müssen. Ein Auftrag, der läuft
+  // oder startklar ist, und eine Frage an den Eigentümer dürfen nicht an Unerledigtem hängen; Kreise sind Fehler.
+  for (const p of alle.values()) for (const i of Array.isArray(p.braucht) ? p.braucht : []) {
+    const q = alle.get(i);
+    if (!q) { err.push(`${name}: Punkt „${p.id}“ braucht unbekannten Punkt „${i}“`); continue; }
+    if (i === p.id) { err.push(`${name}: Punkt „${p.id}“ braucht sich selbst`); continue; }
+    if (erledigt(q)) continue;
+    if (p.s === "auftrag" && ["startklar", "läuft"].includes(p.stand)) err.push(`${name}: Auftrag „${p.id}“ ist „${p.stand}“, aber seine Voraussetzung „${i}“ ist nicht erledigt: blockiert`);
+    if (dran(p) === "du") err.push(`${name}: Punkt „${p.id}“ legt dir eine Frage vor, die an „${i}“ hängt (nicht erledigt); erst fragen, wenn sie entscheidbar ist`);
+  }
+  const besucht = new Map();
+  const kreis = (id, pfad) => {
+    if (besucht.get(id) === 2) return null;
+    if (besucht.get(id) === 1) return [...pfad, id];
+    besucht.set(id, 1);
+    for (const i of alle.get(id)?.braucht ?? []) { const k = alle.has(i) && kreis(i, [...pfad, id]); if (k) return k; }
+    besucht.set(id, 2); return null;
+  };
+  for (const id of alle.keys()) { const k = kreis(id, []); if (k) { err.push(`${name}: Voraussetzungen im Kreis: ${k.join(" → ")}`); break; } }
   return err;
+}
+
+/** Erledigt im Sinn von „braucht“: von dir bestätigt, als Befund abgeschlossen oder ein fertiger Auftrag. */
+export function erledigt(p) {
+  return (!!p.bestaetigt && !p.n) || p.s === "bestaetigt" || p.s === "befund" || (p.s === "auftrag" && p.stand === "fertig");
 }
 
 /** CSS-Variablen der Seite aus den Tokens des Labors (DTCG), hell und dunkel. Farben nur als Rollen. */
