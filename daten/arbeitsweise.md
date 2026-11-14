@@ -17,7 +17,7 @@
 
 ## Aussagen
 
-### Belegt (25)
+### Belegt (26)
 
 - **arbeitsweise-a02** Im Labor folgte auf einen Vorfall meist eine neue Regel: 30 Entscheidungen in drei Tagen.
   *Beleg:* `research/2026-10-audit-zusammenarbeit/befunde.md`, In Worten, Punkt 4
@@ -90,6 +90,9 @@
 - **arbeitsweise-a69** Claude machte aus dem Qualitätsanspruch „für einen menschlichen Entwickler verstehbar und pflegbar“ einen vierten Akteur der Arbeitsoberfläche, den es nicht gibt. Ein Anspruch an das System ist keine Person; Ableitungen über Akteure brauchen einen belegten Akteur.
   *Beleg:* `zielbild/punkte.json`, Punkt ao-akteure, Fassung vorher
   *Grenze:* Eigentümer im Chat, 14.11.: „wer soll der menschliche Entwickler sein?“
+- **arbeitsweise-a70** Geräteunabhängig arbeiten: so gut wie möglich auf jedem Gerät, bei allem vom Handy aus gedacht. Situationen (kurz entscheiden, ausführlich erkunden) sind nicht an Geräte gebunden.
+  *Beleg:* `zielbild/punkte.json`, Punkt ao-situationen
+  *Grenze:* Eigentümer im Chat, 14.11., beim Bestätigen der drei Ableitungen: „ja - mit einer Anmerkung .. bei allem Handy first .. ich will so gut wie möglich geräteunabhängig arbeiten können.“
 
 ### Abgeleitet (36)
 

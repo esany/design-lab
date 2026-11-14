@@ -2,7 +2,7 @@
 dient: A01, A04, A14, A18, A22, A33
 datum: 2026-11-14
 modell: Claude Opus 5.5 (Orchestrator)
-status: Analyse, Iteration 1; nichts beschlossen, nichts umgebaut
+status: Analyse, Iteration 1 abgeschlossen (14.11.: Ableitungen bestätigt, Situationen geräteunabhängig); Iteration 2 nach #237 und #238
 ---
 
 # Die Arbeitsoberfläche des Labors: Analyse und Anforderungen, Iteration 1
@@ -35,8 +35,8 @@ Schreibweise der Anforderungen: ein Satz, Herkunft, Status (von dir gesagt · ab
 | Grundsätze | `ao-anforderung` (Anforderung, nicht Gespräch), `ao-einfacher` (wissen, brauchen, nicht brauchen), `ao-ganzheitlich` (einarbeiten statt anhängen) | von dir gesagt |
 | Perspektiven und Sichten | `ao-perspektiven` (Entwurfsprozess, Systemzustand), `ao-sichten` (individuell, priorisiert, begrenzt), `ao-ganzes` (Überblick mit Tags zum Erkunden), `ao-progressiv` (progressive Offenlegung), `ao-einzeln` (eins nach dem anderen) | von dir gesagt |
 | Darstellung | `ao-methodisch` (Zusammenhänge nur mit Methode und geprüft) | von dir gesagt |
-| Vertrauen | `ao-transparenz` (Transparenz ermöglicht Arbeitsteilung; du bist Product Owner), `ao-rechenschaft` (wer, was, warum, Ergebnis, Prüfung) | von dir gesagt · abgeleitet |
-| Kontext | `ao-akteure` (vier Akteure), `ao-situationen` (Handy entscheiden, Rechner erkunden) | abgeleitet |
+| Vertrauen | `ao-transparenz` (Transparenz ermöglicht Arbeitsteilung; du bist Product Owner), `ao-rechenschaft` (wer, was, warum, Ergebnis, Prüfung), `ao-tiefe` (Prüftiefe in Stufen) | von dir gesagt · bestätigt |
+| Kontext | `ao-akteure` (drei Akteure; der Entwickler ist Qualitätsanspruch), `ao-situationen` (geräteunabhängig, vom Handy aus gedacht) | von dir bestätigt, 14.11. |
 | Perspektive | `ao-experiment` (Arbeitsteilung sichtbar machen als Experiment) | von dir gesagt |
 
 **Schon gültig und hierher gehörig (belegt, Zielbild):** ein Zielbild für das Labor (`st-zentrale`, `ez-aufbau`), Farbe als Bedeutung (`st-farbe`), Rückmeldung ohne Kopieren (`st-rueckweg`), aus dem Leitfaden Erklären in Stufen (`stufen-anzeige`), Handy zuerst (`handy-zuerst`), Navigieren mit Tags (`tags-navigieren`), Status und Wandel sichtbar (`status-sichtbar`, `wandel-sichtbar`).
