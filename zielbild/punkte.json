@@ -776,7 +776,7 @@
           "id": "st-main",
           "s": "freigabe",
           "t": "Der Hauptzweig wird technisch geschützt: Änderungen nur über eine Übernahme mit grünen Prüfungen, kein Überschreiben, kein Löschen.",
-          "k": "Eingerichtet am 14.11. von dir, ohne Ausnahmen, mit fünf Pflichtprüfungen; von mir lesend geprüft und mit einer Probe bestätigt (Entscheidung 0027, jetzt gültig).",
+          "k": "Eingerichtet am 14.11.: Die Regel „main schützen“ ist auf GitHub aktiv; Übernahmen gehen nur noch mit grünen Prüfungen (bestätigt beim nächsten Merge, der an einer roten Prüfung abgewiesen wurde). Vorher: Eingerichtet am 14.11. von dir, ohne Ausnahmen, mit fünf Pflichtprüfungen; von mir lesend geprüft und mit einer Probe bestätigt (Entscheidung 0027, jetzt gültig).",
           "g": "Aufgabe #40 (Audit Astra, 28.10.; Versuch Claude, 29.10.). Namen der Prüfungen aus .github/workflows/pruefen.yml.",
           "auch": [
             "system"
@@ -921,11 +921,11 @@
         {
           "id": "a-verhaltenspruefung",
           "s": "auftrag",
-          "stand": "vorbereitet",
+          "stand": "freigegeben",
           "wer": "Claude (Opus) baut, ChatGPT prüft gegen, du nimmst Stichproben ab",
           "n": "neu",
-          "t": "Drei bis fünf Verhaltensprüfungen zu A14, A18 und A22 als Prüffälle in evals/.",
-          "k": "Je Fall: Eingabe aus einem echten Verlauf, erlaubtes und unerlaubtes Verhalten, sichtbares Ergebnis, Gegenbeispiel. Erste Kandidaten: Schickt eine Antwort dich auf GitHub? Steht eine Zahl ohne Bezug? Wird ein Einwand zu einer neuen Regel? Startklar mit deinem Urteil zur Reihenfolge.",
+          "t": "Vier Verhaltensprüfungen zum Grundmodell als Prüffälle in evals/ (Anforderungen A14, A18, A22).",
+          "k": "Deine Freigabe, 14.11.: „ja“, Reihenfolge wie vorgeschlagen. Gebaut am selben Tag, vier Fälle in evals/: Schickt eine Antwort dich auf GitHub? Wird ein Einwand zu einer neuen Regel? Wird ein Gestaltungsprinzip als starre Regel angewendet (Anlass: rote Marke)? Steht eine Zahl ohne Bezug? Offen: Gegenprüfung der Fälle durch ChatGPT, dann die ersten Läufe in frischen Sitzungen; bis dahin gilt jeder Fall als nicht getestet.",
           "stuetzt": [
             "o3",
             "o3-abnahme",
@@ -1162,13 +1162,13 @@
         {
           "id": "a-recherche-gestaltung-beschreiben",
           "s": "auftrag",
-          "stand": "vorbereitet",
+          "stand": "freigegeben",
           "prio": "jetzt",
           "wer": "ChatGPT recherchiert den Stand der Technik, Claude ordnet ins Labor ein",
           "n": "neu",
-          "t": "Recherche: Wie lässt sich Gestaltung beschreiben und in ihren Kontext stellen, sodass Mensch und Maschine darüber zusammenarbeiten können, und welche Impulse gibt die Semiologie dafür?",
-          "f": "eine wichtige gerade im kontext der zusammenarbeit mit der Maschine zu untersuchende Fragestellung ist die beschreibung und kontextualisierung von Gestaltung und wie weit die Semiologie hier wichtige Impulse geben kann. Das sind nur meine Ideen, das wird sicher weitaus reflektierter und differenzierter transdisziplinär untersucht worden sein. Das wäre aus meiner Sicht noch ein prüfenswerter Fachkandidat, für sota",
-          "k": "Anlass: die rote Marke (14.11.). Ich habe eine Farbregel ohne Kontext angewendet; eine Beschreibung von Gestaltung, die Funktion, Ort und Wirkung trägt, hätte das verhindert. Im Labor gibt es Teile davon, verstreut: Bertin (Zeichensystem der Grafik), Bildanalyse nach Panofsky, Itten, Kritik. Leitfragen (Vorschlag, abgeleitet): (1) Welche Ansätze beschreiben Gestaltung als Zeichen im Kontext? Zu prüfen u. a. Semiotik nach Peirce, Barthes, Eco; visuelle Semiotik (Groupe µ); Sozialsemiotik und Multimodalität (Kress/van Leeuwen); Produktsemantik (Krippendorff); Gestaltungsrhetorik (Bonsiepe); Bildwissenschaft. (2) Was davon ist für Maschinen beschreibbar und prüfbar, was nicht? Stand der Technik: wie Bild-Sprach-Modelle Gestaltung beschreiben und wo sie scheitern; Beschreibungssprachen für Gestaltung (Tokens, Ontologien, Kritik-Datensätze). (3) Wo reicht Semiologie nicht, und welche Disziplinen ergänzen sie (Wahrnehmung, Gestalt, Praxiswissen)? Ergebnis: ein Befund mit Belegstatus und eine Empfehlung, ob daraus ein Fachpaket wird oder ob es bestehende Pakete verbindet. Die Namen oben sind Suchstellen, keine geprüfte Auswahl.",
+          "t": "Recherche: Gestaltung beschreiben als Übersetzung zwischen dem intuitiv arbeitenden Gestalter und der Maschine. Was braucht jeder, um gut zu arbeiten, und welche Impulse gibt die Semiologie dafür?",
+          "f": "eine wichtige gerade im kontext der zusammenarbeit mit der Maschine zu untersuchende Fragestellung ist die beschreibung und kontextualisierung von Gestaltung und wie weit die Semiologie hier wichtige Impulse geben kann. Das sind nur meine Ideen, das wird sicher weitaus reflektierter und differenzierter transdisziplinär untersucht worden sein. Das wäre aus meiner Sicht noch ein prüfenswerter Fachkandidat, für sota. — Ergänzung, 14.11.: ich bin ein kreatives intutiv arbeitender Mensch .. du eine Maschine .. die Frage ist, was braucht jeder von uns, um gut arbeiten zu können. Es. ist eher eine Frage der Übersetzung",
+          "k": "Freigegeben im Chat, 14.11. („ja“), mit deiner Ergänzung: Es geht um Übersetzung in beide Richtungen, nicht um eine Beschreibungssprache, der du dich anpassen musst. Anlass: die rote Marke (14.11.). Ich habe eine Farbregel ohne Kontext angewendet; eine Beschreibung von Gestaltung, die Funktion, Ort und Wirkung trägt, hätte das verhindert. Im Labor gibt es Teile davon, verstreut: Bertin (Zeichensystem der Grafik), Bildanalyse nach Panofsky, Itten, Kritik. Leitfragen (Vorschlag, abgeleitet): (1) Welche Ansätze beschreiben Gestaltung als Zeichen im Kontext? Zu prüfen u. a. Semiotik nach Peirce, Barthes, Eco; visuelle Semiotik (Groupe µ); Sozialsemiotik und Multimodalität (Kress/van Leeuwen); Produktsemantik (Krippendorff); Gestaltungsrhetorik (Bonsiepe); Bildwissenschaft. (2) Was davon ist für Maschinen beschreibbar und prüfbar, was nicht? Stand der Technik: wie Bild-Sprach-Modelle Gestaltung beschreiben und wo sie scheitern; Beschreibungssprachen für Gestaltung (Tokens, Ontologien, Kritik-Datensätze). (3) Wo reicht Semiologie nicht, und welche Disziplinen ergänzen sie (Wahrnehmung, Gestalt, Praxiswissen)? Ergebnis: ein Befund mit Belegstatus und eine Empfehlung, ob daraus ein Fachpaket wird oder ob es bestehende Pakete verbindet. Die Namen oben sind Suchstellen, keine geprüfte Auswahl.",
           "g": "Dein Impuls im Chat, 14.11.; Eingang a67 (rote Marke).",
           "stuetzt": [
             "wechselwirkung",
