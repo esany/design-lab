@@ -2,7 +2,7 @@
 thema: Das System in Ordnung bringen
 stand: Geplante Läufe seit 14.11.: Claude „design-lab Orchestrierung“ zweimal täglich (7:34 und 19:34 Uhr) prüft und übernimmt Ergebnisse anderer Modelle und legt Radar (alle zwei Wochen) und Pflege (monatlich) als Aufträge an ChatGPT an; ChatGPT prüft alle drei Stunden auf Aufträge (Prompt im Skill issue, H); die alten Claude-Läufe Radar und Pflege sind pausiert. Umbau läuft – Stand als Datenquelle (#103), schlanker Kern (U3, #108), Audit paleo-type (#112) und Messen und warnen (#116) übernommen; Neustart-Test #110 geprüft, vier Fälle nicht getestet
 naechster_schritt: Neustart-Test (#109) läuft in einer frischen Claude-Sitzung (vom Eigentümer am 14.11. gestartet), der Orchestrierungslauf bewertet das Ergebnis; Claude prüft nach Astras Gegenlesen #100 und spezifiziert U4.
-offen: [62, 100, 109]
+offen: [62, 109]
 ---
 
 # Thema: Das System in Ordnung bringen
