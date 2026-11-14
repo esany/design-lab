@@ -17,7 +17,7 @@
 
 ## Aussagen
 
-### Belegt (30)
+### Belegt (31)
 
 - **arbeitsweise-a02** Im Labor folgte auf einen Vorfall meist eine neue Regel: 30 Entscheidungen in drei Tagen.
   *Beleg:* `research/2026-10-audit-zusammenarbeit/befunde.md`, In Worten, Punkt 4
@@ -105,6 +105,9 @@
 - **arbeitsweise-a74** Der Eigentümer schickte dieselbe Rückmeldung zu Iteration 1 erneut, weil die veröffentlichte Seite des Zielbilds die Berichtigungen nicht zeigte: Sie lagen in einem offenen Pull Request, die Seite wird nur aus main gebaut. Berichtigungen an Punkten für ihn werden darum im selben Schritt übernommen, sobald die Prüfungen grün sind.
   *Beleg:* `.github/workflows/website.yml`, Auslöser push auf main; `daten/arbeitsweise.json`, Frage arbeitsweise-f67
   *Grenze:* Abgeleitet aus der zweiten, gleichlautenden Rückmeldung im Chat vom 14.11.; Abgleich Prinzipien, Grundmodell, Mechanismen in research/2026-11-zielbild-bausteine/einordnung-und-ueberarbeitung.md.
+- **arbeitsweise-a75** Der Eigentümer will in jeder Antwort, die das Zielbild betrifft, direkt den Link zum Zielbild bekommen.
+  *Beleg:* `AGENTS.md`, Grundmodell, Was zu ihm geht
+  *Grenze:* Eigentümer im Chat 14.11.: „kannst du mir immer direkt einen Link zum Zielbild hier mitgeben?“ Im selben Schritt in AGENTS.md eingetragen.
 
 ### Abgeleitet (36)
 
