@@ -797,7 +797,7 @@
           "s": "auftrag",
           "stand": "vorbereitet",
           "wer": "ChatGPT",
-          "t": "Gegenprüfung des Baus vor der Übernahme: Daten, Ansichten, Farbe, Veröffentlichung.",
+          "t": "Gegenprüfung des Baus vor der Übernahme: Daten, Ansichten, Farbe, Veröffentlichung (#230).",
           "k": "Prüft am echten Beispiel, ob ein Urteil an einer Stelle überall gleich erscheint, ob „Du bist dran“ nur deine Entscheidungen zeigt und ob die Farben ihre Bedeutung halten.",
           "stuetzt": [
             "ez-bau"
