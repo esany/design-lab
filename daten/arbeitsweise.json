@@ -572,6 +572,19 @@
         }
       ],
       "notiz": "Eigentümer im Chat, 14.11., Auswahl zur Frage „Wie tief wollen Sie die Arbeit der Modelle prüfen?“ (1 Stichproben mit Begründung, 2 jeden Schritt mit Gegenprüfung, 3 nur Ergebnisse und Fragen): „erst 3 dann optional 1“."
+    },
+    {
+      "id": "arbeitsweise-a67",
+      "aussage": "Claude hat die Regel „jede Farbe trägt eine Bedeutung“ ohne Kontext angewendet und die rote Marke im Kopf entfernt; Farbwirkung entsteht aber im Zusammenspiel von Farbe, Form, Ort und Menge, und Rot hat als Marke eine andere Funktion als als Signal. Muster: Regel statt Gestaltungsurteil.",
+      "status": "belegt",
+      "seit": "2026-11-14",
+      "quellen": [
+        {
+          "datei": "zielbild/punkte.json",
+          "stelle": "Punkt sy-marke"
+        }
+      ],
+      "notiz": "Eigentümer im Chat, 14.11.: „17 wieder rot .. rot hat hier eine andere Funktion .. Bitte sei ein reflektierter Gestaltungsassistent und kein bornierter kleinkarierter Regelhüter .. vlt. brauchst du hier erstmal ein Grundverständnis von Farbgestaltung“. Gehört zu Bug #200 (Lesart auf eine Formel verkürzt). Gegenmittel (Vorschlag): Vor Farbentscheidungen den Skill farbkontraste-itten und das Fachpaket Form heranziehen; Regeln zur Farbe als Kriterien mit Kontext schreiben, nicht als Verbot."
     }
   ],
   "fragen": [

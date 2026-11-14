@@ -34,6 +34,7 @@
   --lab-line: #cfccc5;
   --lab-accent: #d92d17;
   --lab-signal: #d92d17;
+  --lab-marke: #d92d17;
   --lab-bestaetigt: #2f6b3a;
   --lab-offen: #8a5a00;
   color-scheme: light dark;
@@ -46,6 +47,7 @@
     --lab-line: #363533;
     --lab-accent: #d92d17;
     --lab-signal: #d92d17;
+    --lab-marke: #d92d17;
     --lab-bestaetigt: #7fbf8a;
     --lab-offen: #e0b060;
   }
@@ -57,6 +59,7 @@
   --lab-line: #363533;
   --lab-accent: #d92d17;
   --lab-signal: #d92d17;
+  --lab-marke: #d92d17;
   --lab-bestaetigt: #7fbf8a;
   --lab-offen: #e0b060;
 }

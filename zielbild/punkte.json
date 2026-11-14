@@ -747,7 +747,7 @@
         {
           "id": "st-farbe",
           "s": "bestaetigt",
-          "t": "Farbe semantisch prüfen: Jede Farbe trägt genau eine Bedeutung, und Signalfarben sind im ganzen Labor als Signal verbunden. Look and Feel vor Barrierefreiheit.",
+          "t": "Farbe semantisch prüfen: Jede Farbe trägt im jeweiligen Kontext eine Bedeutung, und Signalfarben sind im ganzen Labor als Signal verbunden. Look and Feel vor Barrierefreiheit.",
           "k": "Am 14.11. bestätigt, Fassung mit Ocker: Signalrot heißt nur „du bist dran“, Grün „von dir bestätigt“, Ocker „Vorschlag oder Hypothese“. Befund, Änderung und Zahlen stehen in der Grundfarbe. Die Farben sind in den Tokens als Rollen benannt, und der Build meldet eine andere Verwendung.",
           "g": "Messung mit axe-core 4 über Playwright; system/tokens/lab.tokens.json; research/2026-11-zielbild-bausteine/befund.md, Lücken; Aussage a44. Deine Rückmeldung 13.11.: „Barrierefreiheiheit ist gerade nicht prio 1 ! Mir ging es um look feel und eine semantische prüder Farbigkeit. Signalfarben sollten auch als solche konnektiert sein“ Urteil 14.11.: „passt“ (research/2026-11-zielbild-bausteine/entwurf-ein-zielbild.md, Abschnitt 6). Fassung vorher: „Farben der Zielbild-Seiten lesbar für alle machen: Grau und Signalrot sind bei kleiner Schrift zu schwach (WCAG AA verlangt 4,5:1).“",
           "bestaetigt": "2026-11-14",
@@ -1854,13 +1854,13 @@
         },
         {
           "id": "sy-marke",
-          "s": "offen",
-          "n": "neu",
+          "s": "bestaetigt",
+          "bestaetigt": "2026-11-14",
           "auch": [
             "arbeitsweise"
           ],
-          "t": "Soll die Marke im Kopf der Startseite wieder rot sein, als einzige Ausnahme von „Rot heißt: du bist dran“?",
-          "k": "Seit 14.11. steht sie in der Grundfarbe, weil Rot nach deinem Urteil nur noch heißt, dass du dran bist. Rot wäre sie das Erkennungszeichen des Labors, schwächt aber das Signal; in der Grundfarbe bleibt das Signal eindeutig. Meine Empfehlung: Grundfarbe lassen.",
+          "t": "Die Marke im Kopf ist wieder rot: Rot hat dort eine andere Funktion (Erkennungszeichen) als an Einträgen (du bist dran).",
+          "k": "Deine Antwort, 14.11.: „17 wieder rot .. rot hat hier eine andere Funktion“. Umgesetzt: eigene Rolle „marke“ in den Tokens, gleicher Ton wie das Signal; Form, Ort und Menge trennen die Bedeutungen. Meine Empfehlung „Grundfarbe lassen“ war falsch: Ich hatte „eine Farbe, eine Bedeutung“ ohne Kontext gelesen.",
           "g": "Gegenprüfung des Baus (ChatGPT, 14.11.), Probe 4: Die rote Marke war eine stille Ausnahme; das ist eine Gestaltungsfrage an dich. Deine Rückmeldung 14.11., nachdem ich sie im Chat als die eine Frage hervorgehoben hatte: „Das ist doch wohl nicht prio 1!“ Darum geparkt.",
           "stuetzt": [
             "st-farbe"
@@ -2079,6 +2079,7 @@
           "s": "offen",
           "n": "neu",
           "t": "Welche Pinterest-Boards je Feld, oder welche Beschreibung, verbindet die Sammlung?",
+          "k": "Deine Antwort, 14.11.: „erstmal pausieren“.",
           "g": "stand.md, Offene Fragen; Korpus-Eintrag pinterest-el0631.",
           "prio": "parken"
         }

@@ -17,7 +17,7 @@
 
 ## Aussagen
 
-### Belegt (22)
+### Belegt (23)
 
 - **arbeitsweise-a02** Im Labor folgte auf einen Vorfall meist eine neue Regel: 30 Entscheidungen in drei Tagen.
   *Beleg:* `research/2026-10-audit-zusammenarbeit/befunde.md`, In Worten, Punkt 4
@@ -81,6 +81,9 @@
 - **arbeitsweise-a66** Prüftiefe in Stufen: Standard sind nur Ergebnisse und Fragen an den Eigentümer; auf Wunsch öffnet er Stichproben mit Begründung und Gegenprüfung bei Wichtigem.
   *Beleg:* `zielbild/punkte.json`, Punkt ao-tiefe
   *Grenze:* Eigentümer im Chat, 14.11., Auswahl zur Frage „Wie tief wollen Sie die Arbeit der Modelle prüfen?“ (1 Stichproben mit Begründung, 2 jeden Schritt mit Gegenprüfung, 3 nur Ergebnisse und Fragen): „erst 3 dann optional 1“.
+- **arbeitsweise-a67** Claude hat die Regel „jede Farbe trägt eine Bedeutung“ ohne Kontext angewendet und die rote Marke im Kopf entfernt; Farbwirkung entsteht aber im Zusammenspiel von Farbe, Form, Ort und Menge, und Rot hat als Marke eine andere Funktion als als Signal. Muster: Regel statt Gestaltungsurteil.
+  *Beleg:* `zielbild/punkte.json`, Punkt sy-marke
+  *Grenze:* Eigentümer im Chat, 14.11.: „17 wieder rot .. rot hat hier eine andere Funktion .. Bitte sei ein reflektierter Gestaltungsassistent und kein bornierter kleinkarierter Regelhüter .. vlt. brauchst du hier erstmal ein Grundverständnis von Farbgestaltung“. Gehört zu Bug #200 (Lesart auf eine Formel verkürzt). Gegenmittel (Vorschlag): Vor Farbentscheidungen den Skill farbkontraste-itten und das Fachpaket Form heranziehen; Regeln zur Farbe als Kriterien mit Kontext schreiben, nicht als Verbot.
 
 ### Abgeleitet (36)
 

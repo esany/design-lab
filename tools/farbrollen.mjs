@@ -1,5 +1,7 @@
 // Farbe als Bedeutung (Eigentümer, 14.11.2026; Entwurf research/2026-11-zielbild-bausteine/entwurf-ein-zielbild.md, Abschnitt 4).
-// Jede Farbrolle trägt im ganzen Labor genau eine Bedeutung. Diese Prüfung liest die Stilangaben der
+// Bedeutung entsteht aus Farbe im Kontext: Dieselbe Farbe kann je nach Form, Ort und Menge eine andere
+// Funktion haben (Marke gegen Signal, Eigentümer 14.11.: „rot hat hier eine andere Funktion“). Jede Rolle
+// ist darum Farbe plus Ort; verbunden bleiben Signale untereinander. Diese Prüfung liest die Stilangaben der
 // Systemseiten und meldet, wenn eine Rolle an einer Stelle benutzt wird, deren Selektor eine andere
 // Bedeutung hat. Grenze: CSS sagt nicht, ob der Eigentümer wirklich dran ist; das entscheiden die
 // Daten (tools/zielbild.mjs, Funktion dran). Die gerenderte Seite muss trotzdem angesehen werden.
@@ -9,6 +11,7 @@ export const ROLLEN = {
   signal: { bedeutung: "du bist dran", selektor: /dran/ },
   bestaetigt: { bedeutung: "von dir bestätigt", selektor: /bestaetigt|passt|fest/ },
   offen: { bedeutung: "Vorschlag oder Hypothese", selektor: /vorschlag|ableitung|offen/ },
+  marke: { bedeutung: "Erkennungszeichen des Labors (Marke im Kopf)", selektor: /\.mark\b/ },
 };
 
 /** Ausdrückliche Ausnahmen mit Grund. Jede ist eine offene Frage an den Eigentümer, keine Regel. */
