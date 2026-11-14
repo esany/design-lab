@@ -5,3 +5,5 @@
 **Warum:** Der Eigentümer hat nach dem Vorfall mit der roten Marke eine Untersuchung verlangt, wie Gestalter und Maschine Gestaltung kontextgebunden übersetzen können (Issue #262, A01, A04, A05).
 
 **Rückgängig:** Den Pull Request zur Recherche reverten; keine Regeln, Skills, Daten oder Entscheidungen geändert.
+
+**Ergänzt bei der Übernahme (Claude, 14.11.):** Verweis ohne Registereintrag gestrichen, Suchman ohne Scan einer Fremdseite, zwei Benchmark-Fundstellen als nicht nachgeprüft markiert.
