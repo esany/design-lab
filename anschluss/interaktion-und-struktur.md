@@ -21,6 +21,8 @@ Durchschnitt.
 0039 (unbekannte Quellen prüfen, Altes frisch halten). Der Skill `fundstueck` trennt Wert von
 Übernahme.
 
+**Am 14.11. außerdem geklärt:** Werkbuch freigegeben; agent-skills (Osmani) als eigene Skills übernehmen; 0031 abgelöst; Prüftiefe in Stufen (zuerst nur Ergebnisse und Fragen, auf Wunsch Stichproben mit Begründung).
+
 **Du entscheidest gerade nichts.** Fragen kommen nach der Recherche ins Zielbild.
 
 <details><summary>Für die Modelle: Fundstellen</summary>

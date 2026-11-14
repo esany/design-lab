@@ -1,7 +1,7 @@
 ---
-status: Vorschlag
+status: abgelöst
 datum: 2026-10-29
-entschieden_von: (nach der Antwort des Menschen eintragen)
+entschieden_von: Eigentümer, Chat, 14.11.2026 („Als aufgegangen archivieren“); abgelöst durch den geänderten Skill fundstueck (Bug #244)
 dient: A04, A07, A10, A27
 perspektive: fach, system
 ---
