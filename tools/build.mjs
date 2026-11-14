@@ -419,7 +419,6 @@ const LABOR_ZIELBILD = "zielbild/punkte.json";
     }
   })(root, "");
   if (!funde.includes(LABOR_ZIELBILD)) errors.push(`${LABOR_ZIELBILD} fehlt: das Labor braucht sein eines Zielbild`);
-  let eintrag = "";
   for (const ZB of funde.sort()) {
     let z;
     try { z = JSON.parse(readFileSync(join(root, ZB), "utf8")); } catch (e) { errors.push(`${ZB}: ${e.message}`); continue; }
@@ -465,11 +464,8 @@ const LABOR_ZIELBILD = "zielbild/punkte.json";
     outputs.set(`${ordner}/index.html`, zielbildErzeugen(z, { quelle: ZB }));
     const punkte = z.teile.flatMap((t) => t.punkte);
     const du = punkte.filter((p) => zielbildDran(p) === "du").length;
-    eintrag = `        <li><a href="${esc(ordner)}/">${esc(z.titel)}</a> <span class="meta">${du} ${du === 1 ? "Punkt wartet" : "Punkte warten"} auf dich · ${punkte.length} Punkte in ${z.straenge.length} Strängen · Stand ${esc(z.stand.split("-").reverse().join("."))}</span></li>`;
-    // Arbeitsplatz des Eigentümers (Cloudflare, Zugang nur mit seiner E-Mail; Eigentümer 14.11.: Link hier).
-    eintrag += `\n        <li><a href="https://werke-zielbilder-e7q.pages.dev/">Bearbeiten und senden</a> <span class="meta">nur für den Eigentümer, Anmeldung mit Code per E-Mail · dasselbe Zielbild mit „Rückmeldung senden“, dazu die Zielbilder der Werke</span></li>`;
+    // Nicht auf der öffentlichen Startseite (Eigentümer 14.11.): Das Zielbild ist sein Arbeitsplatz, privat bei Cloudflare.
   }
-  if (outputs.has("index.html")) outputs.set("index.html", outputs.get("index.html").replace("<!--ZIELBILDER-->", eintrag || "        <li>Noch kein Zielbild.</li>"));
 }
 
 // ---------- Farbe als Bedeutung: jede Farbrolle trägt genau eine Bedeutung (tools/farbrollen.mjs) ----------

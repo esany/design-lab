@@ -4,7 +4,7 @@
 import { readFileSync } from "node:fs";
 import { pruefen, erzeugen, dran, verweise as punktVerweise, pruefeAktualitaet, nackteNummern } from "./zielbild.mjs";
 import { pruefeFarbrollen, stileAusHtml } from "./farbrollen.mjs";
-import { verweise, archivSeiten } from "./website.mjs";
+import { verweise, NICHT } from "./website.mjs";
 import { spawnSync } from "node:child_process";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -60,7 +60,7 @@ const tests = [
   ["Vorlage hält die Farbrollen", () => pruefeFarbrollen(stileAusHtml(readFileSync(join(hier, "zielbild/vorlage.html"), "utf8")), "vorlage").length === 0],
   // Website: tote Links (tools/website.mjs)
   ["Links: Weiterleitung zählt als Link", () => JSON.stringify(verweise('<meta http-equiv="refresh" content="0; url=../../zielbild/">')) === '["../../zielbild/"]'],
-  ["Alte Zielbild-Adressen werden mit veröffentlicht", () => { const a = archivSeiten(); return a.includes("leitfaden/zielbild/index.html") && a.includes("research/2026-11-anforderungspruefung/zielbild/index.html"); }],
+  ["Zielbilder werden nicht öffentlich ausgeliefert (Eigentümer 14.11.)", () => { const r = (p) => join(hier, "..", p); return !NICHT(r("zielbild/index.html")) && !NICHT(r("leitfaden/zielbild/index.html")) && NICHT(r("leitfaden/index.html")) && NICHT(r("studies")); }],
   ["Grün nur für Bestätigtes", () => /const rolle=p=>p\.s==="bestaetigt"&&!fest\(p\)\?"":/.test(readFileSync(join(hier, "zielbild/vorlage.html"), "utf8"))],
   ["Begründung nur für bestehende Verbindung", () => hat(mit((d) => { punkt(d, "farbe").stuetzt_warum = { fokus: "x" }; }), "keine Verbindung dorthin")],
   ["Links: extern, Anker und Skript zählen nicht", () => JSON.stringify(verweise('<a href="x/">a</a><a href="https://b">b</a><a href="#c">c</a><script>"<a href=\\"d\\">"</script>')) === '["x/"]'],
