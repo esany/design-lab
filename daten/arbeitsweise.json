@@ -520,6 +520,19 @@
         }
       ],
       "notiz": "Eigentümer im Chat, 14.11.: „Das ist doch wohl nicht prio 1!“ Gleiche Fehlerklasse wie b-lesart: Nebensache statt Rang im Ganzen."
+    },
+    {
+      "id": "arbeitsweise-a63",
+      "aussage": "Das gebaute Zielbild ist für den Eigentümer komplizierter statt übersichtlicher: Er muss immer noch kopieren, und UI und Informationsarchitektur beantworten nicht, was er wissen muss, was er braucht und was nicht. Der Bau zeigt wieder das Muster, Anforderungen einzeln anzuhängen (Filter, Legende, Begründungen, Priorität, Sammelurteil), statt das Ganze systematisch zu überarbeiten. Abgeleitet: „Du bist dran“ enthält Verwaltung (Issues, Regeln auf Probe, Startfälle), die nach dem Grundmodell beim Modell liegt.",
+      "status": "belegt",
+      "seit": "2026-11-14",
+      "quellen": [
+        {
+          "datei": "zielbild/punkte.json",
+          "stelle": "Stand nach PR #234; 25 Punkte mit dran: du, Ansicht mit Legende, Bilanz, drei Reitern, sieben Strangfiltern"
+        }
+      ],
+      "notiz": "Eigentümer im Chat, 14.11.: „Puh, ich sehe noch offene baustellen, kopieren muss ich Immer noch.. Was muss ich wissen, was brauche ich, was nicht.. ich finde das ui und die Informationsarchitektur noch nicht optimal gelöst.. es ist für mich komplizierter statt übersichtlicher geworden. Auch zeigt es wieder tendenzen Dinge mit neuen Anforderungen anzuklatschen, statt das systematisch und ganzheitlich zu betrachten und zu überarbeiten“. Gleiche Klasse wie F2 in Bug Flickenteppich (#216)."
     }
   ],
   "fragen": [

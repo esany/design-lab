@@ -17,7 +17,7 @@
 
 ## Aussagen
 
-### Belegt (18)
+### Belegt (19)
 
 - **arbeitsweise-a02** Im Labor folgte auf einen Vorfall meist eine neue Regel: 30 Entscheidungen in drei Tagen.
   *Beleg:* `research/2026-10-audit-zusammenarbeit/befunde.md`, In Worten, Punkt 4
@@ -69,6 +69,9 @@
 - **arbeitsweise-a62** Claude hob nach dem Bau des Zielbilds im Chat eine Nebenfrage (Farbe der Marke) als die eine Frage an den Eigentümer hervor, und im Zielbild hatte keiner seiner 25 Punkte eine vorgeschlagene Priorität, obwohl die Ansicht „nach Priorität geordnet“ verspricht. Eine Frage an ihn braucht ihren Rang im Ganzen; ohne Vorschlag zur Priorität ist „Du bist dran“ eine ungeordnete Liste.
   *Beleg:* `zielbild/punkte.json`, Punkt sy-marke; vor dem 14.11. abends trug kein Punkt mit „dran: du“ außer zwei ein Feld prio
   *Grenze:* Eigentümer im Chat, 14.11.: „Das ist doch wohl nicht prio 1!“ Gleiche Fehlerklasse wie b-lesart: Nebensache statt Rang im Ganzen.
+- **arbeitsweise-a63** Das gebaute Zielbild ist für den Eigentümer komplizierter statt übersichtlicher: Er muss immer noch kopieren, und UI und Informationsarchitektur beantworten nicht, was er wissen muss, was er braucht und was nicht. Der Bau zeigt wieder das Muster, Anforderungen einzeln anzuhängen (Filter, Legende, Begründungen, Priorität, Sammelurteil), statt das Ganze systematisch zu überarbeiten. Abgeleitet: „Du bist dran“ enthält Verwaltung (Issues, Regeln auf Probe, Startfälle), die nach dem Grundmodell beim Modell liegt.
+  *Beleg:* `zielbild/punkte.json`, Stand nach PR #234; 25 Punkte mit dran: du, Ansicht mit Legende, Bilanz, drei Reitern, sieben Strangfiltern
+  *Grenze:* Eigentümer im Chat, 14.11.: „Puh, ich sehe noch offene baustellen, kopieren muss ich Immer noch.. Was muss ich wissen, was brauche ich, was nicht.. ich finde das ui und die Informationsarchitektur noch nicht optimal gelöst.. es ist für mich komplizierter statt übersichtlicher geworden. Auch zeigt es wieder tendenzen Dinge mit neuen Anforderungen anzuklatschen, statt das systematisch und ganzheitlich zu betrachten und zu überarbeiten“. Gleiche Klasse wie F2 in Bug Flickenteppich (#216).
 
 ### Abgeleitet (36)
 
