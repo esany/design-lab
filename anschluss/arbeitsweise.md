@@ -1,8 +1,8 @@
 ---
 thema: Arbeitsweise mit KI · Wissensformen
 stand: Das eine Zielbild des Labors ist übernommen und veröffentlicht (zielbild/, 14.11.): sieben Stränge, Schnittstellen, drei Ansichten, Farbe als Rollen; Leitfaden und Bug #200 darin aufgegangen und archiviert. Beide Gegenprüfungen durch ChatGPT übernommen (#224, #232). Leitfaden Iteration 7; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
-naechster_schritt: ChatGPT prüft die vier Verhaltensprüfungen gegen (evals/verhalten-*) und recherchiert „Gestaltung beschreiben als Übersetzung“ (Semiologie); danach erste Läufe in frischen Sitzungen. Claude baut die Zielbild-Überarbeitung nach dem Urteil vom 14.11. (Skizze C gut, B keine Landkarte).
-offen: [180, 189, 200, 216, 237, 238]
+naechster_schritt: ChatGPT prüft die vier Verhaltensprüfungen gegen und recherchiert „Gestaltung beschreiben als Übersetzung“ (Semiologie). Danach startet Claude die ersten Läufe in frischen Sitzungen (freigegeben 14.11.) und legt dem Eigentümer eine Stichprobe ins Zielbild. Claude baut die Zielbild-Überarbeitung nach dem Urteil vom 14.11. (Skizze C gut, B keine Landkarte).
+offen: [180, 189, 200, 216, 237, 238, 262, 263, 271]
 ---
 
 # Thema: Arbeitsweise mit KI · Wissensformen
