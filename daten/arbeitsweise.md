@@ -5,7 +5,7 @@
 
 **Stand:** Das eine Zielbild des Labors ist übernommen und veröffentlicht (zielbild/, 14.11.): sieben Stränge, Schnittstellen, drei Ansichten, Farbe als Rollen; Leitfaden und Bug #200 darin aufgegangen und archiviert. Beide Gegenprüfungen durch ChatGPT übernommen (#224, #232). Leitfaden Iteration 7; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
 
-**Nächster Schritt:** Claude erhebt die Anforderungen an die Arbeitsoberfläche (Iteration 1 steht im Zielbild, research/2026-11-arbeitsoberflaeche/analyse.md); ChatGPT recherchiert Muster für KI-assistierende Oberflächen (#237) und wie Fachwissen wächst (#238); danach Iteration 2 und Entwurf. Unabhängig davon: Sitzung am Rechner (Cloudflare, Hauptzweig) beendet das Kopieren.
+**Nächster Schritt:** ChatGPT prüft die vier Verhaltensprüfungen gegen (evals/verhalten-*) und recherchiert „Gestaltung beschreiben als Übersetzung“ (Semiologie); danach erste Läufe in frischen Sitzungen. Claude baut die Zielbild-Überarbeitung nach dem Urteil vom 14.11. (Skizze C gut, B keine Landkarte).
 
 ## Offene Fragen an den Eigentümer (5)
 
