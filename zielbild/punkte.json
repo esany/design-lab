@@ -170,34 +170,27 @@
         {
           "id": "ao-akteure",
           "s": "ableitung",
-          "n": "geändert",
           "t": "Drei Akteure nutzen die Oberfläche verschieden: du als Product Owner und Gestalter, ich als Orchestrator, die ausführenden Modelle (ChatGPT, Codex). Dass ein menschlicher Entwickler das System verstehen und pflegen könnte, ist ein Qualitätsanspruch an das System, kein Nutzer der Oberfläche.",
-          "k": "Abgeleitet aus dem Grundmodell in AGENTS.md: „bleibt für einen menschlichen Entwickler verstehbar und pflegbar: keine Black Box“. Meine erste Fassung machte daraus eine vierte Person. Offen bleibt, ob die Modelle die Oberfläche brauchen oder die Dateien genügen. Bitte bestätigen oder korrigieren.",
+          "k": "Abgeleitet aus dem Grundmodell in AGENTS.md: „bleibt für einen menschlichen Entwickler verstehbar und pflegbar: keine Black Box“. Meine erste Fassung machte daraus eine vierte Person. Offen bleibt, ob die Modelle die Oberfläche brauchen oder die Dateien genügen.",
           "g": "research/2026-11-arbeitsoberflaeche/analyse.md; daten/arbeitsweise.json, a64.",
-          "dran": "du",
-          "prio": "jetzt",
-          "v": "Vier Akteure brauchen die Oberfläche verschieden: du als Product Owner und Gestalter, ich als Orchestrator, ausführende Modelle (ChatGPT, Codex), ein menschlicher Entwickler, der das System pflegt.",
-          "f": "wer soll der menschliche Entwickler sein?"
+          "bestaetigt": "2026-11-14"
         },
         {
           "id": "ao-situationen",
           "s": "ableitung",
-          "n": "neu",
-          "t": "Zwei Nutzungssituationen: kurz am Handy entscheiden; am Rechner erkunden, vergleichen und mich prüfen.",
-          "k": "Abgeleitet aus „Handy zuerst“ (Leitfaden) und deinem Wunsch, im großen Ganzen zu explorieren. Bitte bestätigen oder korrigieren: Das schließt Iteration 1 der Anforderungen ab.",
-          "g": "research/2026-11-arbeitsoberflaeche/analyse.md; daten/arbeitsweise.json, a64.",
+          "t": "Geräteunabhängig: Jede Sicht funktioniert auf Handy und Rechner, entworfen vom Handy aus. Kurz entscheiden und ausführlich erkunden sind Situationen, keine Geräte.",
+          "k": "Deine Anmerkung beim Bestätigen hat meine Fassung „am Handy entscheiden, am Rechner erkunden“ ersetzt.",
+          "g": "Eigentümer im Chat, 14.11.: „ja - mit einer Anmerkung .. bei allem Handy first .. ich will so gut wie möglich geräteunabhängig arbeiten können.“",
           "stuetzt": [
             "handy-zuerst"
           ],
-          "dran": "du",
-          "prio": "jetzt"
+          "bestaetigt": "2026-11-14"
         },
         {
           "id": "ao-rechenschaft",
           "s": "ableitung",
-          "n": "neu",
           "t": "Rechenschaft: Für jeden Schritt eines Modells ist sichtbar, wer was warum getan hat, mit welchem Ergebnis und welcher Prüfung.",
-          "k": "Abgeleitet aus „du musst dich verantworten“. Heute liegt das verstreut in Verlauf, Pull Requests und Issues, die du nicht siehst. Bitte bestätigen oder korrigieren: Das schließt Iteration 1 der Anforderungen ab.",
+          "k": "Abgeleitet aus „du musst dich verantworten“. Heute liegt das verstreut in Verlauf, Pull Requests und Issues, die du nicht siehst.",
           "g": "research/2026-11-arbeitsoberflaeche/analyse.md; daten/arbeitsweise.json, a64.",
           "stuetzt": [
             "ao-transparenz"
@@ -205,8 +198,7 @@
           "stuetzt_warum": {
             "ao-transparenz": "Belegt: dein Satz zu Prüfen, Bewerten und Verantworten."
           },
-          "dran": "du",
-          "prio": "jetzt"
+          "bestaetigt": "2026-11-14"
         },
         {
           "id": "ao-recherche-muster",
