@@ -598,6 +598,19 @@
         }
       ],
       "notiz": "Eigentümer im Chat, 14.11.: „ist das auch wieder nur Aktionismus, um irgend eine Lösung vorzuschlagen .. wir haben doch bereits einen Plan oder? Bist du noch der Orchestrator, oder jemand der gar keine ahnung hat“. Gegenmittel: Vor jedem Vorschlag zur Reihenfolge die Einordnung lesen und Neues dort einsortieren."
+    },
+    {
+      "id": "arbeitsweise-a69",
+      "aussage": "Claude machte aus dem Qualitätsanspruch „für einen menschlichen Entwickler verstehbar und pflegbar“ einen vierten Akteur der Arbeitsoberfläche, den es nicht gibt. Ein Anspruch an das System ist keine Person; Ableitungen über Akteure brauchen einen belegten Akteur.",
+      "status": "belegt",
+      "seit": "2026-11-14",
+      "quellen": [
+        {
+          "datei": "zielbild/punkte.json",
+          "stelle": "Punkt ao-akteure, Fassung vorher"
+        }
+      ],
+      "notiz": "Eigentümer im Chat, 14.11.: „wer soll der menschliche Entwickler sein?“"
     }
   ],
   "fragen": [

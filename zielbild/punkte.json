@@ -170,12 +170,14 @@
         {
           "id": "ao-akteure",
           "s": "ableitung",
-          "n": "neu",
-          "t": "Vier Akteure brauchen die Oberfläche verschieden: du als Product Owner und Gestalter, ich als Orchestrator, ausführende Modelle (ChatGPT, Codex), ein menschlicher Entwickler, der das System pflegt.",
-          "k": "Abgeleitet aus dem Grundmodell in AGENTS.md (Wer, Wo, keine Black Box). Ob Modelle und Entwickler dieselbe Oberfläche brauchen oder die Dateien genügen, ist offen. Bitte bestätigen oder korrigieren: Das schließt Iteration 1 der Anforderungen ab.",
+          "n": "geändert",
+          "t": "Drei Akteure nutzen die Oberfläche verschieden: du als Product Owner und Gestalter, ich als Orchestrator, die ausführenden Modelle (ChatGPT, Codex). Dass ein menschlicher Entwickler das System verstehen und pflegen könnte, ist ein Qualitätsanspruch an das System, kein Nutzer der Oberfläche.",
+          "k": "Abgeleitet aus dem Grundmodell in AGENTS.md: „bleibt für einen menschlichen Entwickler verstehbar und pflegbar: keine Black Box“. Meine erste Fassung machte daraus eine vierte Person. Offen bleibt, ob die Modelle die Oberfläche brauchen oder die Dateien genügen. Bitte bestätigen oder korrigieren.",
           "g": "research/2026-11-arbeitsoberflaeche/analyse.md; daten/arbeitsweise.json, a64.",
           "dran": "du",
-          "prio": "jetzt"
+          "prio": "jetzt",
+          "v": "Vier Akteure brauchen die Oberfläche verschieden: du als Product Owner und Gestalter, ich als Orchestrator, ausführende Modelle (ChatGPT, Codex), ein menschlicher Entwickler, der das System pflegt.",
+          "f": "wer soll der menschliche Entwickler sein?"
         },
         {
           "id": "ao-situationen",

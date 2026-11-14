@@ -17,7 +17,7 @@
 
 ## Aussagen
 
-### Belegt (24)
+### Belegt (25)
 
 - **arbeitsweise-a02** Im Labor folgte auf einen Vorfall meist eine neue Regel: 30 Entscheidungen in drei Tagen.
   *Beleg:* `research/2026-10-audit-zusammenarbeit/befunde.md`, In Worten, Punkt 4
@@ -87,6 +87,9 @@
 - **arbeitsweise-a68** Die KI hat als Orchestrator eigene Vorschläge zur Reihenfolge und neue Aufträge erzeugt, ohne den am selben Tag bestätigten Plan (Einordnung über alle Stränge) zu lesen; der Eigentümer nennt das Aktionismus.
   *Beleg:* `research/2026-11-zielbild-bausteine/einordnung-und-ueberarbeitung.md`, Nachtrag 14.11.
   *Grenze:* Eigentümer im Chat, 14.11.: „ist das auch wieder nur Aktionismus, um irgend eine Lösung vorzuschlagen .. wir haben doch bereits einen Plan oder? Bist du noch der Orchestrator, oder jemand der gar keine ahnung hat“. Gegenmittel: Vor jedem Vorschlag zur Reihenfolge die Einordnung lesen und Neues dort einsortieren.
+- **arbeitsweise-a69** Claude machte aus dem Qualitätsanspruch „für einen menschlichen Entwickler verstehbar und pflegbar“ einen vierten Akteur der Arbeitsoberfläche, den es nicht gibt. Ein Anspruch an das System ist keine Person; Ableitungen über Akteure brauchen einen belegten Akteur.
+  *Beleg:* `zielbild/punkte.json`, Punkt ao-akteure, Fassung vorher
+  *Grenze:* Eigentümer im Chat, 14.11.: „wer soll der menschliche Entwickler sein?“
 
 ### Abgeleitet (36)
 
