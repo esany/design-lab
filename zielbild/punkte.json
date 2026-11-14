@@ -1893,14 +1893,101 @@
         {
           "id": "fs-modus",
           "s": "offen",
-          "n": "neu",
+          "n": "geändert",
           "auch": [
             "system"
           ],
           "t": "Vorschlag 0031, Fundstücke als eigener Modus, wartet seit 29.10. auf deine Antwort.",
-          "k": "Empfehlung aus der Pflege: annehmen oder ablehnen, damit #98 weiterkann.",
+          "k": "#98 ist fortgeführt (Bug #244): Der Skill fundstueck trägt jetzt Gedächtnis, Zerlegung und Ertrag vor Übernahme. Empfehlung: 0031 nicht als eigenen Modus annehmen, sondern als in den Skill aufgegangen archivieren.",
           "g": "stand.md, Offene Fragen (Pflege 11/2026); decisions/0031.",
           "prio": "später"
+        }
+      ]
+    },
+    {
+      "teil": "Fundstück OpenDesign · Feld Interaktion und Struktur",
+      "strang": "fundstuecke",
+      "punkte": [
+        {
+          "id": "od-wert",
+          "s": "bestaetigt",
+          "n": "neu",
+          "t": "OpenDesign ist Steinbruch, Suchstelle und Negativfolie zugleich. Bewertet wird je Bestandteil; nur App und Cloud sind verworfen.",
+          "f": "Es ist nicht so das das Fundstück nicht wertvoll für uns ist. Wiedermal hast du seinen Wert für das Labor unterschätzt.",
+          "g": "research/2026-11-fundstueck-open-design/befund.md, Abschnitt 9; Bug #244."
+        },
+        {
+          "id": "od-feld",
+          "s": "bestaetigt",
+          "n": "neu",
+          "t": "Neues Feld UX, Interaktionsgestaltung, Informationsarchitektur mit einem Fachpaket aus einer ganzheitlichen Recherche: Kanon, Stand der Technik, Best Practice, Abbau der Steinbrüche.",
+          "f": "ja .. Eine Recherche, Tagebau und natürlich auch sota prüfung und best practice - ganzheitlich systemisch!",
+          "g": "decisions/0037-feld-interaktion-und-struktur.md; intent.md A01."
+        },
+        {
+          "id": "od-regeln",
+          "s": "bestaetigt",
+          "n": "neu",
+          "t": "Fachwissen in drei Schichten: Kanon mit Quelle, prüfbare Regel mit Geltungsbereich und Prüfgrenze, frisch gezogenes Wissen mit Datum. Maßstab: Die Regeln wirken am Werk.",
+          "f": "Unbedingt, sie müssen praktisch wirken.. optimal, nach allen Anforderungen",
+          "g": "decisions/0038-regeln-in-drei-schichten.md."
+        },
+        {
+          "id": "od-quellen",
+          "s": "bestaetigt",
+          "n": "neu",
+          "t": "Unbekannte Quellen, die den Systemgrundsätzen nicht folgen, werden geprüft und neu eingeordnet; Altes wird frisch gehalten; Wachstum organisch und systemisch.",
+          "f": "Wenn wir unbekannte Quellen haben, die nicht den Systemgrundsätzen folgen, ist das zu prüfen und neu einzuordnen. Altes ist auch immer frisch zu haten. Es muss organischem Wachstum, systemsichen folgen.",
+          "g": "decisions/0039-quellen-pruefen-und-frisch-halten.md; Skill pflege."
+        },
+        {
+          "id": "od-a-recherche",
+          "s": "auftrag",
+          "stand": "freigegeben",
+          "wer": "ChatGPT",
+          "n": "neu",
+          "t": "Die eine Recherche für das Feld Interaktion und Struktur (Issue #237, erweitert).",
+          "k": "Freigegeben durch 0037. Danach baut Claude das Fachpaket nach 0038.",
+          "stuetzt": [
+            "od-feld",
+            "od-regeln"
+          ]
+        },
+        {
+          "id": "od-a-gegenlesen",
+          "s": "auftrag",
+          "stand": "freigegeben",
+          "wer": "ChatGPT",
+          "n": "neu",
+          "t": "Gegenlesen: Neubewertung OpenDesign und geänderter Skill fundstueck (Issue #246).",
+          "k": "Absicherung nach Bug #244.",
+          "stuetzt": [
+            "od-wert"
+          ]
+        },
+        {
+          "id": "od-a-pilot",
+          "s": "auftrag",
+          "stand": "freigegeben",
+          "wer": "Claude",
+          "n": "neu",
+          "t": "Pilot: drei bis fünf Mittelmaß-Muster des Fachpakets Form als automatische Prüfung an Flyer und Studie (Issue #247).",
+          "k": "Freigegeben durch 0038.",
+          "stuetzt": [
+            "od-regeln"
+          ]
+        },
+        {
+          "id": "od-a-plugins",
+          "s": "auftrag",
+          "stand": "freigegeben",
+          "wer": "Claude",
+          "n": "neu",
+          "t": "Die fremden Design-Plugins in deinem Claude-Konto prüfen und einordnen (Issue #248).",
+          "k": "Freigegeben durch 0039.",
+          "stuetzt": [
+            "od-quellen"
+          ]
         }
       ]
     },
