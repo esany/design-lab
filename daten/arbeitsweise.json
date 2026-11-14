@@ -1343,7 +1343,41 @@
       "id": "arbeitsweise-f70",
       "frage": "Klarstellung der Link-Regel in AGENTS.md: „Jede Antwort, die ein Zielbild betrifft, nennt den Link zu genau diesem Zielbild auf seinem Arbeitsplatz: für das Labor https://werke-zielbilder-e7q.pages.dev/labor/, für ein Werk dessen Seite dort (werke/<ordner>/).“ So übernehmen?",
       "gestellt": "2026-11-14",
-      "notiz": "Aus Aussage arbeitsweise-a78; neue Regel, darum Frage an den Eigentümer."
+      "notiz": "Aus Aussage arbeitsweise-a78; neue Regel, darum Frage an den Eigentümer.",
+      "antwort": "Nicht gewählt (Mehrfachauswahl am 14.11. im Werk-Chat; gewählt war nur „Bugs, die ein Werk blockieren, haben Vorrang“). Offen, ob das Nein heißt oder später.",
+      "beantwortet": "2026-11-14"
+    },
+    {
+      "id": "arbeitsweise-f71",
+      "frage": "Mehrere Sitzungen schreiben gleichzeitig ins Labor. Wie soll das künftig laufen?",
+      "gestellt": "2026-11-14",
+      "antwort": "„Eine Sitzung zur Zeit“: Nur eine Sitzung übernimmt ins Labor, alle anderen liefern zu und geben ab.",
+      "beantwortet": "2026-11-14",
+      "notiz": "Werk-Chat (Claude), Auswahlfragen. Ursache F6 in bug-flickenteppich.md. Offen: welche Sitzung die eine ist und wie das technisch gesichert wird (Text allein hält kein Verhalten, F2)."
+    },
+    {
+      "id": "arbeitsweise-f72",
+      "frage": "Sollen Adressen und Pfade, die zum Eigentümer gehen, an genau einem Ort stehen, mit einer Prüfung auf abweichende und tote Adressen?",
+      "gestellt": "2026-11-14",
+      "antwort": "„Ja, an einem Ort“.",
+      "beantwortet": "2026-11-14",
+      "notiz": "Werk-Chat (Claude), Auswahlfragen. Ursache F7."
+    },
+    {
+      "id": "arbeitsweise-f73",
+      "frage": "Was soll zwischen Labor und Werk gelten (Vorrang blockierender Bugs, feste Fassung, Link-Regel, ein Startweg)?",
+      "gestellt": "2026-11-14",
+      "antwort": "Gewählt: „Bugs, die ein Werk blockieren, haben Vorrang“. Nicht gewählt: feste Fassung des Generators, Klarstellung der Link-Regel, ein Startweg je Werk.",
+      "beantwortet": "2026-11-14",
+      "notiz": "Werk-Chat (Claude), Auswahlfragen. Ursachen F8, F9. Betrifft zuerst die drei Bugs zum Zielbild (Schaltflächen, visuelle Sprache, Informationsarchitektur)."
+    },
+    {
+      "id": "arbeitsweise-f74",
+      "frage": "Darf Claude eine Lösung für die Sperre nach dem Bot-Commit vorbereiten (betrifft Schlüssel oder Schutzregeln)?",
+      "gestellt": "2026-11-14",
+      "antwort": "„Ja, vorbereiten“: Vorschlag vorlegen, Einbau erst nach seiner Entscheidung.",
+      "beantwortet": "2026-11-14",
+      "notiz": "Werk-Chat (Claude), Auswahlfragen. Erscheinung „Übernahme gesperrt nach dem Bot-Commit“ in bug-flickenteppich.md."
     }
   ]
 }
