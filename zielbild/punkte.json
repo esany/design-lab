@@ -777,7 +777,7 @@
           "s": "freigabe",
           "n": "neu",
           "t": "Der Hauptzweig wird technisch geschützt: Änderungen nur über eine Übernahme mit grünen Prüfungen, kein Überschreiben, kein Löschen.",
-          "k": "Deine Antwort, 13.11.: „da brauche ich deine Anleitung“. Am Rechner im Browser, einmal, etwa fünf Minuten: (1) github.com/esany/design-lab öffnen → Settings → links „Rules“ → „Rulesets“ → „New ruleset“ → „New branch ruleset“. (2) Name: „main schützen“; Enforcement status: „Active“. (3) Bypass list → „Add bypass“ → „Repository admin“ (Always allow). So sperrst du dich nie selbst aus. (4) Target branches → „Add target“ → „Include default branch“. (5) Rules: „Restrict deletions“ und „Block force pushes“ angehakt lassen; „Require a pull request before merging“ anhaken, Required approvals auf 0; „Require status checks to pass“ anhaken, über „Add checks“ diese vier hinzufügen: „Tokens, Studien, Index“, „Interne Links“, „Stand gegen GitHub“, „Eingriffe und Lesekosten“. „Require branches to be up to date“ nicht anhaken. (6) Unten „Create“. Danach schreib mir „eingerichtet“; ich prüfe die Regel und mache eine Probe-Übernahme. Was sich für dich ändert: nichts. Warum: Heute hält nur Regeltext die Modelle davon ab, direkt auf den Hauptzweig zu schreiben (belegt, Prüfung vom 28.10.); ich selbst kann die Einstellung nicht setzen (getestet 29.10.). Alternative: Ich führe es in deinem Chrome aus, während du zusiehst, wenn die Erweiterung Claude in Chrome läuft.",
+          "k": "Deine Antwort, 13.11.: „da brauche ich deine Anleitung“. Am Rechner im Browser, einmal, etwa fünf Minuten: (1) github.com/esany/design-lab → Settings → links „Rules“ → „Rulesets“ → „New ruleset“ → „New branch ruleset“. (2) Name „main schützen“, Enforcement status „Active“. (3) Bypass list leer lassen: Alle Modelle arbeiten unter deinem Konto, eine Ausnahme für dich nähme sie mit aus. (4) Target branches → „Add target“ → „Include default branch“. (5) Angehakt: „Restrict deletions“, „Block force pushes“, „Require a pull request before merging“ mit Required approvals 0, „Require status checks to pass“ mit diesen fünf Prüfungen: „Tokens, Studien, Index“, „Interne Links“, „Stand gegen GitHub“, „Eingriffe und Lesekosten“, „Studien rendern“; „Require branches to be up to date“ nicht anhaken. (6) „Create“. Danach prüfe ich die Regel lesend. Was sich für dich ändert: nichts; abschalten kannst du sie jederzeit. Berichtigt 14.11.: Die frühere Fassung empfahl eine Ausnahme für Admins; das hätte den Schutz unwirksam gemacht (Kommentar in #40 vom 29.10.).",
           "g": "Aufgabe #40 (Audit Astra, 28.10.; Versuch Claude, 29.10.). Namen der Prüfungen aus .github/workflows/pruefen.yml.",
           "auch": [
             "system"
@@ -1158,6 +1158,22 @@
           "auch": [
             "wissen",
             "visualisierung"
+          ]
+        },
+        {
+          "id": "a-recherche-gestaltung-beschreiben",
+          "s": "auftrag",
+          "stand": "vorbereitet",
+          "prio": "jetzt",
+          "wer": "ChatGPT recherchiert den Stand der Technik, Claude ordnet ins Labor ein",
+          "n": "neu",
+          "t": "Recherche: Wie lässt sich Gestaltung beschreiben und in ihren Kontext stellen, sodass Mensch und Maschine darüber zusammenarbeiten können, und welche Impulse gibt die Semiologie dafür?",
+          "f": "eine wichtige gerade im kontext der zusammenarbeit mit der Maschine zu untersuchende Fragestellung ist die beschreibung und kontextualisierung von Gestaltung und wie weit die Semiologie hier wichtige Impulse geben kann. Das sind nur meine Ideen, das wird sicher weitaus reflektierter und differenzierter transdisziplinär untersucht worden sein. Das wäre aus meiner Sicht noch ein prüfenswerter Fachkandidat, für sota",
+          "k": "Anlass: die rote Marke (14.11.). Ich habe eine Farbregel ohne Kontext angewendet; eine Beschreibung von Gestaltung, die Funktion, Ort und Wirkung trägt, hätte das verhindert. Im Labor gibt es Teile davon, verstreut: Bertin (Zeichensystem der Grafik), Bildanalyse nach Panofsky, Itten, Kritik. Leitfragen (Vorschlag, abgeleitet): (1) Welche Ansätze beschreiben Gestaltung als Zeichen im Kontext? Zu prüfen u. a. Semiotik nach Peirce, Barthes, Eco; visuelle Semiotik (Groupe µ); Sozialsemiotik und Multimodalität (Kress/van Leeuwen); Produktsemantik (Krippendorff); Gestaltungsrhetorik (Bonsiepe); Bildwissenschaft. (2) Was davon ist für Maschinen beschreibbar und prüfbar, was nicht? Stand der Technik: wie Bild-Sprach-Modelle Gestaltung beschreiben und wo sie scheitern; Beschreibungssprachen für Gestaltung (Tokens, Ontologien, Kritik-Datensätze). (3) Wo reicht Semiologie nicht, und welche Disziplinen ergänzen sie (Wahrnehmung, Gestalt, Praxiswissen)? Ergebnis: ein Befund mit Belegstatus und eine Empfehlung, ob daraus ein Fachpaket wird oder ob es bestehende Pakete verbindet. Die Namen oben sind Suchstellen, keine geprüfte Auswahl.",
+          "g": "Dein Impuls im Chat, 14.11.; Eingang a67 (rote Marke).",
+          "stuetzt": [
+            "wechselwirkung",
+            "transdisziplinaer"
           ]
         },
         {
