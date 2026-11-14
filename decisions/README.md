@@ -45,7 +45,10 @@ Punkte als Fragen in Alltagssprache vor (0018). Antworten trägt er hier ein.
 | 0028 | [Hinweise statt Vorgaben](0028-hinweise-statt-vorgaben.md) | system | gültig |
 | 0029 | [Ein Merkzettel je Thema](0029-merkzettel-je-thema.md) | system | gültig |
 | 0030 | [Perspektive, Folgen und Alternativen in Entscheidungen](0030-perspektive-und-folgen-in-entscheidungen.md) | system | gültig |
-| 0031 | [Fundstücke als fester Modus](0031-fundstuecke-als-modus.md) | gebrauch, system | Vorschlag |
+| 0031 | [Fundstücke als fester Modus](0031-fundstuecke-als-modus.md) | gebrauch, system | abgelöst durch Skill fundstueck (14.11.) |
 | 0032 | [Leitfaden „Mit KI arbeiten“ auf der Labor-Website](0032-leitfaden-mit-ki-arbeiten.md) | fach, system | freigegeben (auf Probe); Gegenstand überholt durch Konzeptstand 08.11. |
 | 0033 | [Die automatische Prüfung baut die Übersichten selbst](0033-pruefung-baut-uebersichten.md) | system | freigegeben (auf Probe) |
 | 0034 | [Verlauf als einzelne Dateien; die Prüfung meldet Rot selbst](0034-verlauf-als-dateien-und-meldung.md) | system | freigegeben (auf Probe) |
+| 0037 | [Feld Interaktion und Struktur](0037-feld-interaktion-und-struktur.md) | fach | gültig |
+| 0038 | [Regeln in drei Schichten](0038-regeln-in-drei-schichten.md) | fach, system | gültig |
+| 0039 | [Quellen prüfen und frisch halten](0039-quellen-pruefen-und-frisch-halten.md) | system | gültig |

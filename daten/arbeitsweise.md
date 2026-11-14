@@ -17,7 +17,7 @@
 
 ## Aussagen
 
-### Belegt (21)
+### Belegt (22)
 
 - **arbeitsweise-a02** Im Labor folgte auf einen Vorfall meist eine neue Regel: 30 Entscheidungen in drei Tagen.
   *Beleg:* `research/2026-10-audit-zusammenarbeit/befunde.md`, In Worten, Punkt 4
@@ -78,6 +78,9 @@
 - **arbeitsweise-a65** Reihenfolge der Arbeitsoberfläche: Einstieg ist, welchen Input der Eigentümer in welcher Priorität liefern muss, je mit dem, worauf die Entscheidung einzahlt und was danach da ist; Ziel ist, die Systementwicklung des Labors so schnell wie möglich voranzubringen. Dann: woran gerade gearbeitet wird und wie die Stränge zusammenhängen. Am Schluss: das große Ganze explorativ prüfen.
   *Beleg:* `research/2026-11-arbeitsoberflaeche/analyse.md`, Abschnitt 3, Spannung 1
   *Grenze:* Eigentümer im Chat, 14.11.: „einstieg ist, was muss ich in welcher prio als input liefern? Ziel Systementwicklung am Labor schnell wie möglich voranbringen (prüfen, auf was zahlt die Entscheidung ein, was haben wir danach)- dann woran arbeiten wir gerade, wie hängen die Stänge zu samen (relation) .. am schluß eher Explorativ das große ganze prüfen“
+- **arbeitsweise-a66** Prüftiefe in Stufen: Standard sind nur Ergebnisse und Fragen an den Eigentümer; auf Wunsch öffnet er Stichproben mit Begründung und Gegenprüfung bei Wichtigem.
+  *Beleg:* `zielbild/punkte.json`, Punkt ao-tiefe
+  *Grenze:* Eigentümer im Chat, 14.11., Auswahl zur Frage „Wie tief wollen Sie die Arbeit der Modelle prüfen?“ (1 Stichproben mit Begründung, 2 jeden Schritt mit Gegenprüfung, 3 nur Ergebnisse und Fragen): „erst 3 dann optional 1“.
 
 ### Abgeleitet (36)
 

@@ -559,6 +559,19 @@
         }
       ],
       "notiz": "Eigentümer im Chat, 14.11.: „einstieg ist, was muss ich in welcher prio als input liefern? Ziel Systementwicklung am Labor schnell wie möglich voranbringen (prüfen, auf was zahlt die Entscheidung ein, was haben wir danach)- dann woran arbeiten wir gerade, wie hängen die Stänge zu samen (relation) .. am schluß eher Explorativ das große ganze prüfen“"
+    },
+    {
+      "id": "arbeitsweise-a66",
+      "aussage": "Prüftiefe in Stufen: Standard sind nur Ergebnisse und Fragen an den Eigentümer; auf Wunsch öffnet er Stichproben mit Begründung und Gegenprüfung bei Wichtigem.",
+      "status": "belegt",
+      "seit": "2026-11-14",
+      "quellen": [
+        {
+          "datei": "zielbild/punkte.json",
+          "stelle": "Punkt ao-tiefe"
+        }
+      ],
+      "notiz": "Eigentümer im Chat, 14.11., Auswahl zur Frage „Wie tief wollen Sie die Arbeit der Modelle prüfen?“ (1 Stichproben mit Begründung, 2 jeden Schritt mit Gegenprüfung, 3 nur Ergebnisse und Fragen): „erst 3 dann optional 1“."
     }
   ],
   "fragen": [
