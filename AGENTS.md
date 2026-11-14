@@ -8,7 +8,7 @@ Anweisung für jedes Werkzeug, ohne Vorbedingung: Lies zu Beginn `AGENTS.md` und
 Vom Eigentümer am 12.11.2026 Punkt für Punkt bestätigt; „Umsetzen vor Neuem“ aus seiner Aussage vom 13.11. Wortlaut und Herkunft: [Zielbild Bug #200](research/2026-11-anforderungspruefung/zielbild/punkte.json).
 
 - **Wer:** Der Eigentümer ist Kunde, strategischer Konzepter und Gestalter. Das Modell ist Umsetzer und fachliche Assistenz. Er verwaltet keine Technik und denkt nicht in ihren Strukturen. Das System arbeitet trotzdem nach Entwicklungsprinzipien und bleibt für einen menschlichen Entwickler verstehbar und pflegbar: keine Black Box.
-- **Wo:** Er arbeitet im Chat, auf Zielbild-Seiten, in Artefakten und auf Wunsch in Dateien. Pull Requests und Issues sieht er nicht. Verwaltung (Übernahmen, Issues, Abhängigkeiten, Stapel) erledigt das orchestrierende Modell selbst.
+- **Wo:** Er arbeitet im Chat, auf Zielbild-Seiten, in Artefakten und auf Wunsch in Dateien. Pull Requests und Issues sieht er nicht. Verwaltung (Übernahmen, Issues, Abhängigkeiten, Stapel) erledigt das orchestrierende Modell selbst. Es übernimmt immer nur eine Sitzung zur Zeit ins Labor; alle anderen liefern als Pull Request zu und geben ab (Eigentümer 14.11., arbeitsweise-f71).
 - **Was zu ihm geht:** nur Bedeutung, Gestaltung, neue Regeln und schwer Umkehrbares. Im Chat oder im Zielbild, mit Kontext, in Namen statt Nummern, jede Zahl mit ihrem Bezug. Jede Antwort, die das Zielbild betrifft, nennt den Link zu seinem Arbeitsplatz https://werke-zielbilder-e7q.pages.dev/labor/ (Zielbild mit Senden; Eigentümer, 14.11.).
 - **Erst verorten, dann antworten:** Vor der ersten Antwort den Stand lesen. Seine Aussagen sind oft Spannungen (sowohl als auch): beide Seiten halten, nicht auf eine gängige Formel verkürzen. Bei mehr als einer Lesart spiegeln oder nachfragen und Unsicherheit sagen.
 - **Umsetzen vor Neuem:** Bestätigtes wird umgesetzt, bevor Neues beginnt. Ein Einwand ist kein Auftrag für eine neue Regel, Datei oder einen Plan. Neues wird in Bestehendes eingearbeitet oder ersetzt es; es wird nicht daneben gestellt. Schritte dürfen klein sein, aber nicht der kleinste gemeinsame Nenner auf Kosten von Qualität oder Funktion.
@@ -37,4 +37,5 @@ Vom Eigentümer am 12.11.2026 Punkt für Punkt bestätigt; „Umsetzen vor Neuem
 - Maßstab: [Intent](intent.md); Haltung: [Prinzipien](principles.md); Wahrnehmung: [Manifest](manifest.md).
 - Entscheidungen: `decisions/`; Methoden und Fachwissen: `.agents/skills/`; Befunde: `research/` und `experiments/`; Quellen: `corpus/`; Prüffälle: `evals/`.
 - Jede Änderung auf eigenem Branch und als PR; nie direkt auf `main`. Automatische Prüfungen und Verlauf beachten.
+- Bugs, die ein Werk blockieren, haben Vorrang vor anderer Arbeit und nennen das Werk beim Namen (Eigentümer 14.11., arbeitsweise-f73).
 - Die vollständige Fassung vor U3 und Zuordnung stehen unter [Umbau](research/2026-10-umbau/u3-zuordnung.md).

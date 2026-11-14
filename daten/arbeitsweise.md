@@ -7,14 +7,13 @@
 
 **Nächster Schritt:** Der Eigentümer bestätigt Situationen, Kernlücke und Richtung der Arbeitsfläche (Zielbild, Punkt zu Situationen und Richtung; Herleitung research/2026-11-arbeitsoberflaeche/entwurf.md). Danach legt Claude den Inhalt der drei Ansichten fest und baut in der Reihenfolge der Voraussetzungen im Zielbild (Datenmodell, „Du bist dran“, „Stand“ und „Alles“, Körper der Punkte); parallel ist das Fachpaket Interaktion und Struktur startbereit. Weiter offen: Ergebnisse von ChatGPT prüfen (PR #256, #259, #267, #269), Verhaltensprüfungen (#271).
 
-## Offene Fragen an den Eigentümer (6)
+## Offene Fragen an den Eigentümer (5)
 
 - **arbeitsweise-f02** Gemeinsame Issue-Prüfung zuerst im Labor bauen? *(gestellt 2026-11-05)*
 - **arbeitsweise-f03** Einen Befund aus dem Labor in der Ursachenanalyse von paleo-type notieren, obwohl dort eine Pause gilt? *(gestellt 2026-11-05)*
 - **arbeitsweise-f04** Dürfen Fremde im öffentlichen Labor Issues anlegen? *(gestellt 2026-11-05)*
 - **arbeitsweise-f17** Lief Codex für #141 im Reiter „Codex“ der ChatGPT-App (Cloud) oder in einem normalen Chat? *(gestellt 2026-11-07)*
 - **arbeitsweise-f26** Minimalform für den Leitfaden: Einträge mit freien Tags und drei Arten von Relationen, eine erzeugte Ansicht als Netz und Verlauf, erste Keime generisch – soll ich so anfangen? *(gestellt 2026-11-06)*
-- **arbeitsweise-f70** Klarstellung der Link-Regel in AGENTS.md: „Jede Antwort, die ein Zielbild betrifft, nennt den Link zu genau diesem Zielbild auf seinem Arbeitsplatz: für das Labor https://werke-zielbilder-e7q.pages.dev/labor/, für ein Werk dessen Seite dort (werke/<ordner>/).“ So übernehmen? *(gestellt 2026-11-14)*
 
 ## Aussagen
 
@@ -204,8 +203,18 @@
 - **arbeitsweise-a23** Astra (ChatGPT) kann Code ausführen und über den GitHub-Connector schreiben.
   *Grenze:* Angabe des Eigentümers im Chat vom 06.11.; im Pilot (Schritt 4) zu prüfen.
 
-## Beantwortete Fragen (64, neueste zuerst)
+## Beantwortete Fragen (69, neueste zuerst)
 
+- **2026-11-14** Darf Claude eine Lösung für die Sperre nach dem Bot-Commit vorbereiten (betrifft Schlüssel oder Schutzregeln)?
+  → „„Ja, vorbereiten“: Vorschlag vorlegen, Einbau erst nach seiner Entscheidung.“ *(Werk-Chat (Claude), Auswahlfragen. Erscheinung „Übernahme gesperrt nach dem Bot-Commit“ in bug-flickenteppich.md.)*
+- **2026-11-14** Was soll zwischen Labor und Werk gelten (Vorrang blockierender Bugs, feste Fassung, Link-Regel, ein Startweg)?
+  → „Gewählt: „Bugs, die ein Werk blockieren, haben Vorrang“. Nicht gewählt: feste Fassung des Generators, Klarstellung der Link-Regel, ein Startweg je Werk.“ *(Werk-Chat (Claude), Auswahlfragen. Ursachen F8, F9. Betrifft zuerst die drei Bugs zum Zielbild (Schaltflächen, visuelle Sprache, Informationsarchitektur).)*
+- **2026-11-14** Sollen Adressen und Pfade, die zum Eigentümer gehen, an genau einem Ort stehen, mit einer Prüfung auf abweichende und tote Adressen?
+  → „„Ja, an einem Ort“.“ *(Werk-Chat (Claude), Auswahlfragen. Ursache F7.)*
+- **2026-11-14** Mehrere Sitzungen schreiben gleichzeitig ins Labor. Wie soll das künftig laufen?
+  → „„Eine Sitzung zur Zeit“: Nur eine Sitzung übernimmt ins Labor, alle anderen liefern zu und geben ab.“ *(Werk-Chat (Claude), Auswahlfragen. Ursache F6 in bug-flickenteppich.md. Offen: welche Sitzung die eine ist und wie das technisch gesichert wird (Text allein hält kein Verhalten, F2).)*
+- **2026-11-14** Klarstellung der Link-Regel in AGENTS.md: „Jede Antwort, die ein Zielbild betrifft, nennt den Link zu genau diesem Zielbild auf seinem Arbeitsplatz: für das Labor https://werke-zielbilder-e7q.pages.dev/labor/, für ein Werk dessen Seite dort (werke/<ordner>/).“ So übernehmen?
+  → „Nicht gewählt (Mehrfachauswahl am 14.11. im Werk-Chat; gewählt war nur „Bugs, die ein Werk blockieren, haben Vorrang“). Offen, ob das Nein heißt oder später.“ *(Aus Aussage arbeitsweise-a78; neue Regel, darum Frage an den Eigentümer.)*
 - **2026-11-14** Drei Blocker im Block geklärt: Neustart-Test, Audit der Fehlermuster, Schließen überholter Aufträge
   → „Neustart-Test: „Geplante Sitzung“. Audit der Fehlermuster: „In den Bug aufgehen“. Überholte Aufträge: „Ja, Liste danach“.“ *(Chat (Claude), Auswahlfragen. Folgen: geplante Sitzung für #109; #56 geschlossen, aufgegangen in #200; Regel in Skill issue E4 (Claude schließt Erledigtes und Ersetztes selbst, zeigt die Liste danach; Streichungen aus Vorschlägen des Eigentümers weiter einzeln).)*
 - **2026-11-14** Rückmeldung zur Seite „Zielbild Review Pixel Patrol“, Iteration 6 (Werk, privat)
