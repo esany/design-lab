@@ -426,7 +426,8 @@ const LABOR_ZIELBILD = "zielbild/punkte.json";
     const ordner = dirname(ZB);
     if (ZB !== LABOR_ZIELBILD) {
       if (!z.archiviert) { errors.push(`${ZB}: zweites Zielbild im Labor. Das Labor hat eines (${LABOR_ZIELBILD}); Neues gehört dort als Strang oder Teil hinein, ein Werk baut seines in esany/werke.`); continue; }
-      const ziel = "../".repeat(ordner.split("/").length) + "zielbild/" + (z.archiviert.strang ? `#alles&strang=${z.archiviert.strang}` : "");
+      // Ohne Anker: Die Linkprüfung (lychee, --include-fragments) kennt nur Anker im HTML, nicht die Ansichten der Seite.
+      const ziel = "../".repeat(ordner.split("/").length) + "zielbild/";
       outputs.set(`${ordner}/index.html`, `<!DOCTYPE html>
 <html lang="de">
 <head>
