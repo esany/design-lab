@@ -7,17 +7,18 @@
 
 **Nächster Schritt:** Der Eigentümer wählt die Variante für den Arbeitsplatz (Zielbild, Punkt „Welche Variante soll der Arbeitsplatz bekommen“; B empfohlen). Danach baut Claude sie in den Generator, dann den Körper der Zielbild-Seite (Bugs zu Schaltflächen, Zeichen, Gliederung) und das Fachpaket Interaktion und Struktur aus der übernommenen Recherche. Weiter offen: Ergebnisse von ChatGPT prüfen (PR #256, #259, #267, #269), Verhaltensprüfungen (#271).
 
-## Offene Fragen an den Eigentümer (5)
+## Offene Fragen an den Eigentümer (6)
 
 - **arbeitsweise-f02** Gemeinsame Issue-Prüfung zuerst im Labor bauen? *(gestellt 2026-11-05)*
 - **arbeitsweise-f03** Einen Befund aus dem Labor in der Ursachenanalyse von paleo-type notieren, obwohl dort eine Pause gilt? *(gestellt 2026-11-05)*
 - **arbeitsweise-f04** Dürfen Fremde im öffentlichen Labor Issues anlegen? *(gestellt 2026-11-05)*
 - **arbeitsweise-f17** Lief Codex für #141 im Reiter „Codex“ der ChatGPT-App (Cloud) oder in einem normalen Chat? *(gestellt 2026-11-07)*
 - **arbeitsweise-f26** Minimalform für den Leitfaden: Einträge mit freien Tags und drei Arten von Relationen, eine erzeugte Ansicht als Netz und Verlauf, erste Keime generisch – soll ich so anfangen? *(gestellt 2026-11-06)*
+- **arbeitsweise-f70** Klarstellung der Link-Regel in AGENTS.md: „Jede Antwort, die ein Zielbild betrifft, nennt den Link zu genau diesem Zielbild auf seinem Arbeitsplatz: für das Labor https://werke-zielbilder-e7q.pages.dev/labor/, für ein Werk dessen Seite dort (werke/<ordner>/).“ So übernehmen? *(gestellt 2026-11-14)*
 
 ## Aussagen
 
-### Belegt (33)
+### Belegt (34)
 
 - **arbeitsweise-a02** Im Labor folgte auf einen Vorfall meist eine neue Regel: 30 Entscheidungen in drei Tagen.
   *Beleg:* `research/2026-10-audit-zusammenarbeit/befunde.md`, In Worten, Punkt 4
@@ -114,6 +115,9 @@
 - **arbeitsweise-a77** Das Zielbild gehört nicht zentral auf die öffentliche Seite. Die private Übersicht bei Cloudflare ist selbst Entwurfsgegenstand: Struktur, Informationsarchitektur, Kopf und Navigation müssen nach den Entwurfsgrundsätzen des Labors gestaltet sein; gleich funktionierende Zielbilder (Labor, Werke) gehören gleich behandelt. Änderungen am Zielbild als zentralem Baustein müssen generisch nachgezogen werden.
   *Beleg:* `verlauf/2026-11-14-zielbild-nicht-oeffentlich.md`, Warum
   *Grenze:* Eigentümer im Chat 14.11.: „Blödsinn. du hälst dich wiedermal nicht an Grundprinzipien des Labors im Arbeitsmodus. Das Zielbild sollte einfach gar nicht zentral auf der öffentlichen Seite abrufbar sein. … bricht mit allen Gestalterischen und Entwurfsgrundsätzen … auch das ist ein Entwurfsgegenstand. … Sie sind funktional doch genau gleich, aber werden hier komplett verschieden behandelt.“ Auftrag: Seitenstruktur und Gestaltung überarbeiten, als Test der Regeln; UX von Kopf und Navigation prüfen; fehlende Fachkompetenz benennen.
+- **arbeitsweise-a78** In einem Werk-Chat nannte das Modell den Link zum Zielbild des Labors statt zum Zielbild des Werks. Ursache: Die Link-Regel aus a75 steht in AGENTS.md mit der festen Adresse des Labor-Zielbilds, ohne zu unterscheiden, welches Zielbild eine Antwort betrifft; das Modell wandte sie mechanisch an. Gemeint ist immer das Zielbild, um das es geht.
+  *Beleg:* `AGENTS.md`, Grundmodell, Was zu ihm geht; `daten/arbeitsweise.json`, Aussage arbeitsweise-a75
+  *Grenze:* Korrektur des Eigentümers im Werk-Chat 14.11.: „es geht doch aber nicht um das Labor“. Werkinhalte bleiben im Werke-Repo. Prüffall evals/werkchat-lernen, Punkt 5. Klarstellung der Regel: Frage arbeitsweise-f70.
 
 ### Abgeleitet (36)
 
