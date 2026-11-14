@@ -37,6 +37,10 @@ Alle Punkte müssen stimmen, sonst nicht anfangen:
 - **Fertig, wenn:** zwei bis fünf Ja-Nein-Sätze.
 - **Blockiert durch:** im Text nennen **und** als GitHub-Abhängigkeit setzen. GitHub verknüpft
   nur Issues, keine Pull Requests; hängt etwas an einem Pull Request, nimm dessen Issue.
+  Dieselbe Voraussetzung steht im Zielbild als `braucht` am Auftrag (Eigentümer 14.11.: Voraussetzungen
+  und Blocker sind Infrastruktur). Claude legt sie **beim Anlegen** fest, nicht hinterher. Die Prüfung
+  im Build lässt keinen Auftrag „startklar“ oder „läuft“ und keine Frage an den Eigentümer zu, die an
+  Unerledigtem hängt, und meldet Kreise. Reihenfolge der Arbeit folgt diesen Voraussetzungen.
 - Eine Aufgabe, ein Modell, ein Pull Request. Wird es mehr: Unter-Issues.
 
 ## B1 · Auftragsformat für kleinere Modelle (Hinweise, 0028; #82)

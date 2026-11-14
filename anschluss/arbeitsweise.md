@@ -1,13 +1,13 @@
 ---
 thema: Arbeitsweise mit KI · Wissensformen
 stand: Das eine Zielbild des Labors ist übernommen und veröffentlicht (zielbild/, 14.11.): sieben Stränge, Schnittstellen, drei Ansichten, Farbe als Rollen; Leitfaden und Bug #200 darin aufgegangen und archiviert. Beide Gegenprüfungen durch ChatGPT übernommen (#224, #232). Leitfaden Iteration 7; Auftrag Werkbuch startklar; KI-Fachpaket wartet.
-naechster_schritt: Der Eigentümer wählt die Variante für den Arbeitsplatz (Zielbild, Punkt „Welche Variante soll der Arbeitsplatz bekommen“; B empfohlen). Danach baut Claude sie in den Generator, dann den Körper der Zielbild-Seite (Bugs zu Schaltflächen, Zeichen, Gliederung) und das Fachpaket Interaktion und Struktur aus der übernommenen Recherche. Weiter offen: Ergebnisse von ChatGPT prüfen (PR #256, #259, #267, #269), Verhaltensprüfungen (#271).
+naechster_schritt: Der Eigentümer bestätigt Situationen, Kernlücke und Richtung der Arbeitsfläche (Zielbild, Punkt zu Situationen und Richtung; Herleitung research/2026-11-arbeitsoberflaeche/entwurf.md). Danach legt Claude den Inhalt der drei Ansichten fest und baut in der Reihenfolge der Voraussetzungen im Zielbild (Datenmodell, „Du bist dran“, „Stand“ und „Alles“, Körper der Punkte); parallel ist das Fachpaket Interaktion und Struktur startbereit. Weiter offen: Ergebnisse von ChatGPT prüfen (PR #256, #259, #267, #269), Verhaltensprüfungen (#271).
 offen: [180, 189, 200, 216, 238, 262, 263, 271, 273, 274, 280, 281, 282]
 ---
 
 # Thema: Arbeitsweise mit KI · Wissensformen
 
-**Zuletzt fortgeschrieben:** 14.11.2026 (Claude; Zielbild nicht mehr öffentlich, Senden aus dem privaten Arbeitsplatz, Iteration 2 des Rahmens mit drei Varianten, Recherche Interaktion und Struktur übernommen)
+**Zuletzt fortgeschrieben:** 14.11.2026 (Claude; Entwurfsgrundlage des Arbeitsplatzes vom Eigentümer aus, Varianten A bis C verworfen, Voraussetzungen und Blocker als Daten im Zielbild mit Prüfung)
 
 **Worum es geht:** Wie arbeitet der Gestalter mit KI so, dass echte Werke und Werkzeuge entstehen
 statt Textberge, und wie bleibt Wissen für jeden Chat erreichbar, ohne dass er alles lesen muss?
