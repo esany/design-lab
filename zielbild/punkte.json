@@ -776,7 +776,7 @@
           "id": "st-main",
           "s": "freigabe",
           "t": "Der Hauptzweig wird technisch geschützt: Änderungen nur über eine Übernahme mit grünen Prüfungen, kein Überschreiben, kein Löschen.",
-          "k": "Eingerichtet am 14.11. von dir, ohne Ausnahmen, mit fünf Pflichtprüfungen; von mir lesend geprüft und mit einer Probe bestätigt (Entscheidung 0027, jetzt gültig).",
+          "k": "Eingerichtet am 14.11.: Die Regel „main schützen“ ist auf GitHub aktiv; Übernahmen gehen nur noch mit grünen Prüfungen (bestätigt beim nächsten Merge, der an einer roten Prüfung abgewiesen wurde). Vorher: Eingerichtet am 14.11. von dir, ohne Ausnahmen, mit fünf Pflichtprüfungen; von mir lesend geprüft und mit einer Probe bestätigt (Entscheidung 0027, jetzt gültig).",
           "g": "Aufgabe #40 (Audit Astra, 28.10.; Versuch Claude, 29.10.). Namen der Prüfungen aus .github/workflows/pruefen.yml.",
           "auch": [
             "system"
