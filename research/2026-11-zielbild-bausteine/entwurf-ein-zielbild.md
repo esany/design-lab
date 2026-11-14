@@ -1,6 +1,6 @@
 # Entwurf: ein Zielbild für das Labor
 
-**13.11.2026 · Claude (Opus 5.5) · Entwurf, vom Eigentümer am 14.11. beurteilt (Abschnitt 6), nichts umgesetzt · Folgt aus Bug Flickenteppich (#216) · Dient A01, A14, A18, A22, A33**
+**13.11.2026 · Claude (Opus 5.5) · Entwurf, vom Eigentümer am 14.11. beurteilt (Abschnitt 6), am 14.11. gebaut ([zielbild/](../../zielbild/punkte.json); Gegenprüfung des Baus offen) · Folgt aus Bug Flickenteppich (#216) · Dient A01, A14, A18, A22, A33**
 
 **Herkunft:**
 - Eigentümer, 13.11.: „Ich will nicht mehrere Zielbildseiten sondern eine … organische, ganzheitliche, systemische, transdisziplinäre Entwicklung und Entwurfsarbeit … kein Flickenteppich“.

@@ -1,7 +1,8 @@
 # Zielbild-Generator
 
 Macht aus einer Datei `punkte.json` eine Seite, auf der die KI zeigt, was sie verstanden hat, und
-der Mensch je Punkt urteilt. Für jedes Werk und für das Labor selbst. Warum die Seite so aussieht:
+der Mensch je Punkt urteilt. Das Labor hat genau ein Zielbild: [`zielbild/punkte.json`](../../zielbild/punkte.json),
+mit Strängen als Dimension. Ein Werk baut seines mit demselben Werkzeug in seinem eigenen Repo. Warum die Seite so aussieht:
 [Bausteine](../../research/2026-11-zielbild-bausteine/befund.md).
 
 ## Benutzen
@@ -32,7 +33,9 @@ Kopf:
 | `rueckmeldung` | nein | Datum der letzten Rückmeldung, frei, z. B. „11.11.“ |
 | `von` | nein | wer verstanden hat; Vorgabe „Claude“ |
 | `hinweis` | nein | Notiz für die Pflege, wird nicht angezeigt |
-| `teile` | ja | Liste von Teilen: `teil` (Überschrift) und `punkte` |
+| `straenge` | nein | Liste von Strängen: `id`, `name`, `iteration` (je Strang), `rueckmeldung`. Das Labor-Zielbild braucht sie; ohne sie ist die ganze Seite ein Strang (Werke). |
+| `teile` | ja | Liste von Teilen: `teil` (Überschrift), `strang` (mit `straenge` Pflicht) und `punkte` |
+| `archiviert` | nein | nur im Labor: `am`, `nach`, `strang`, `grund`. Der Build erzeugt dann statt der Seite einen Hinweis auf das eine Zielbild. |
 
 Punkt:
 
@@ -47,14 +50,29 @@ Punkt:
 | `v` | der Satz vorher (nur mit `n`) |
 | `f` | Rückmeldung des Menschen im Wortlaut (nur mit `n`) |
 | `bestaetigt` | Datum der Bestätigung; nicht zusammen mit `n` |
-| `prio` | bei `impuls` Pflicht: `jetzt` · `später` · `parken` |
+| `prio` | Vorschlag zur Priorität: `jetzt` · `später` · `parken`; bei `impuls` Pflicht. Der Eigentümer setzt seine auf der Seite. |
 | `stand` | bei `auftrag`: `vorbereitet` · `startklar` · `freigegeben` · `läuft` · `fertig` |
 | `wer` | bei `auftrag`: wer ihn ausführt |
-| `stuetzt` | bei `auftrag`: Kennungen der Punkte, auf denen er beruht; `startklar` nur, wenn alle bestätigt sind |
+| `stuetzt` | Kennungen der Punkte, auf denen dieser beruht, auch über Stränge hinweg; bei `auftrag` Pflicht, `startklar` nur, wenn alle bestätigt sind. Die Seite zeigt beide Richtungen („Beruht auf“, „Trägt“). |
+| `auch` | Schnittstelle: weitere Stränge, in denen derselbe Punkt erscheint, mit demselben Stand und derselben Rückmeldung |
+| `dran` | wer jetzt handeln muss: `du` (der Eigentümer), ein Name oder leer. Ohne das Feld abgeleitet: offene Frage, Freigabe, Eingang und startklarer Auftrag → du; laufender Auftrag → `wer`; sonst niemand. Eine Korrektur („muss besser“) macht nicht den Eigentümer zuständig. |
+| `frage` | nur im Labor: Kennung einer Frage in `daten/<thema>.json`; der Build holt Wortlaut und Antwort von dort, `t` bleibt leer |
 | `offen` | bei `auftrag`: was bewusst offen bleibt |
+
+## Die Seite
+
+Drei Ansichten derselben Punkte: **Du bist dran** (Entscheidungen des Eigentümers nach Priorität, darunter
+was sich seit seiner Rückmeldung geändert hat), **Stand** (je Strang: dran, läuft, offen gedacht,
+Schnittstellen, gilt, erledigt) und **Alles** (Filter nach Strang und Art). Ein Urteil gilt für den
+Punkt, nicht für die Ansicht. Ein Querverweis auf einen ausgeblendeten Punkt springt in „Alles“.
+
+Farbe trägt Bedeutung: Signalrot nur „du bist dran“, Grün nur „von dir bestätigt“, Ocker nur
+„Vorschlag oder Hypothese“; Befund, Änderung und Zahlen in Grundfarbe und Form. Die Werte kommen als
+Rollen aus den Tokens; `tools/farbrollen.mjs` prüft im Build, dass die Vorlage sie nur so nutzt.
 
 ## Was der Generator prüft
 
-Pflichtfelder, Kennungen, erlaubte Werte, `v` und `f` nur mit `n`, keine Bestätigung bei Änderung,
-Aufträge mit `wer`, `stuetzt` und gültigem Stand, „startklar“ nur auf Bestätigtem. Farben und
+Pflichtfelder, Kennungen (eindeutig über alle Stränge), erlaubte Werte, `v` und `f` nur mit `n`, keine
+Bestätigung bei Änderung, Stränge und Schnittstellen nur zu bekannten Strängen, Verbindungen nur zu
+bekannten Punkten, Aufträge mit `wer`, `stuetzt` und gültigem Stand, „startklar“ nur auf Bestätigtem. Farben und
 Schriften kommen aus `system/tokens/lab.tokens.json`; Text aus den Daten wird maskiert.

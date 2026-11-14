@@ -814,7 +814,9 @@
       "id": "arbeitsweise-f40",
       "frage": "Soll ein Werkchat das Labor mit Schreibrecht für Eingänge (daten/, verlauf/, Issues) anhängen statt nur lesend? (decisions/0035)",
       "gestellt": "2026-11-11",
-      "notiz": "Aus dem Werkchat vom 11.11., Anlass a33."
+      "notiz": "Aus dem Werkchat vom 11.11., Anlass a33. Beantwortet mit der Freigabe von decisions/0035 (Eigentümer im Chat, 11.11.); dort Punkt 1, Schreibrecht für Eingänge. Nachgetragen 14.11.",
+      "antwort": "freigabe",
+      "beantwortet": "2026-11-11"
     },
     {
       "id": "arbeitsweise-f41",

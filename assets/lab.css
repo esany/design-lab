@@ -1,4 +1,7 @@
-/* design-lab — Grundgestaltung. Werte ausschließlich aus assets/tokens.css. */
+/* design-lab — Grundgestaltung. Werte ausschließlich aus assets/tokens.css.
+   Farbe trägt Bedeutung (Eigentümer, 14.11.2026): --lab-signal nur „du bist dran“, --lab-bestaetigt
+   nur „von dir bestätigt“, --lab-offen nur „Vorschlag oder Hypothese“. Alles andere in Grundfarben
+   und Form. Die Prüfung im Build (tools/farbrollen.mjs) meldet jede andere Verwendung. */
 
 *, *::before, *::after { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
@@ -14,8 +17,8 @@ body {
 @media (min-width: 48rem) { body { padding-inline: var(--lab-space-6); } }
 
 a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
-a:hover { color: var(--lab-accent); }
-:focus-visible { outline: 2px solid var(--lab-accent); outline-offset: 3px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 2px solid var(--lab-fg); outline-offset: 3px; }
 
 h1, h2 { margin: 0; font-weight: 700; letter-spacing: -0.01em; }
 h2 { font-size: var(--lab-size-text-m); }
@@ -32,7 +35,7 @@ figure { margin: 0; }
 }
 .mark {
   width: var(--lab-space-8); aspect-ratio: 1;
-  background: var(--lab-accent);
+  background: var(--lab-fg); /* Grundfarbe seit 14.11.: Rot heißt nur „du bist dran“. Frage im Zielbild, Punkt „Marke“. */
   transform: rotate(-8deg);
   margin-top: var(--lab-space-1);
 }
@@ -68,7 +71,7 @@ main section { padding-block: var(--lab-space-6); border-bottom: 1px solid var(-
   background: var(--lab-line);
   border: 1px solid var(--lab-line);
 }
-.study a:hover img { outline: 2px solid var(--lab-accent); outline-offset: -2px; }
+.study a:hover img { outline: 2px solid var(--lab-fg); outline-offset: -2px; }
 .study .meta { font: var(--lab-size-text-s) var(--lab-font-mono); color: var(--lab-muted); }
 .study .title { font-weight: 700; line-height: 1.25; }
 .status-behalten { color: var(--lab-fg); }
@@ -83,7 +86,7 @@ main section { padding-block: var(--lab-space-6); border-bottom: 1px solid var(-
   background: var(--lab-line); border: 1px solid var(--lab-line);
 }
 .pipeline li { background: var(--lab-bg); padding: var(--lab-space-2); display: grid; gap: 2px; }
-.pipeline li:first-child b, .pipeline li:nth-child(5) b { color: var(--lab-accent); }
+.pipeline li.dran b { color: var(--lab-signal); }
 .pipeline span { font: var(--lab-size-text-s) var(--lab-font-mono); color: var(--lab-muted); }
 
 /* Links & Fuß ----------------------------------------------------------- */
@@ -108,10 +111,10 @@ footer {
 .tipp details { margin-top: var(--lab-space-2); }
 .tipp details details { margin-top: var(--lab-space-2); padding-left: var(--lab-space-2); border-left: 1px solid var(--lab-line); }
 .tipp summary { cursor: pointer; font-weight: 700; width: fit-content; }
-.tipp summary:hover { color: var(--lab-accent); }
+.tipp summary:hover { text-decoration: underline; text-underline-offset: 0.2em; }
 .tipp details p { margin: var(--lab-space-1) 0 0; }
-.tipp:target h3 { color: var(--lab-accent); }
-.tipp-veraltet h3 { text-decoration: line-through; text-decoration-thickness: 2px; text-decoration-color: var(--lab-accent); }
+.tipp:target h3 { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 0.15em; }
+.tipp-veraltet h3 { text-decoration: line-through; text-decoration-thickness: 2px; text-decoration-color: var(--lab-muted); }
 .statt { margin: var(--lab-space-1) 0 0; }
 .statt a { font-weight: 700; }
 .beispiel { display: grid; grid-template-columns: auto 1fr; gap: var(--lab-space-1) var(--lab-space-2); margin: var(--lab-space-2) 0 0; }
