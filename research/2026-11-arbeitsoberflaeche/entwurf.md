@@ -1,7 +1,7 @@
 ---
 dient: A01, A04, A14, A18, A22
 datum: 2026-11-14
-status: Entwurfsgrundlage, Iteration 3 der Arbeitsoberfläche; nichts gebaut
+status: Herleitung, Iteration 3 der Arbeitsoberfläche; was gilt oder zu entscheiden ist, steht im Zielbild des Labors; nichts gebaut
 ---
 
 # Entwurfsgrundlage: der Arbeitsplatz des Eigentümers
@@ -13,6 +13,29 @@ status: Entwurfsgrundlage, Iteration 3 der Arbeitsoberfläche; nichts gebaut
 **Schreibweise:** `[a65]` heißt: gesicherte Aussage des Eigentümers in `daten/arbeitsweise.json`. `[ao-…]`, `[st-…]` und ähnliche sind Punkte im Zielbild des Labors. `[R1 §n]` ist die übernommene [Recherche zu Interaktion und Struktur](recherche-muster.md). **Hypothese** steht ausdrücklich dabei, wo ich ableite und nichts belegt ist.
 
 ---
+
+**Wo der Stand liegt:** Diese Datei ist die Herleitung, keine eigene Quelle. Erkenntnislücke und Situationen stehen im Zielbild im Teil „Dein Nutzungskontext (Grundmodell)“ (`nk-kernluecke`, `nk-situationen`), Arbeitsfläche, „Stand“ und Senden im Teil „Anforderungen an die Arbeitsoberfläche“ (`ao-flaeche`, `ao-stand-teile`, `ao-senden`), je mit Voraussetzungen.
+
+## 0 · Bezug zum Bestand (nachgetragen 14.11. nach dem Einwand des Eigentümers)
+
+Der Eigentümer stellte fest, dass diese Grundlage den Konzeptstand nicht systemisch berücksichtigte und im Zielbild nicht prüfbar war. Belegt: Ich hatte die bestehende Ausarbeitung zu seinem Nutzungskontext und die Analyse des Bugs „Modelle verfehlen deine Anforderungen“ (`research/2026-11-anforderungspruefung/befund.md`, Zielbild-Teile „Dein Nutzungskontext“ und „Ursachen und Zusammenwirken“) nicht geladen. Abgleich:
+
+| Bestand | Was er sagt | Bezug hier |
+|---|---|---|
+| `nk-rolle`, `nk-orte`, `nk-verwaltung` | Rollen, Orte, Verwaltung beim Modell | Grundlage von Abschnitt 1; unverändert |
+| `nk-format` | Das Zielbild ist das Austauschformat, auch für Befunde | **verletzt** durch eine Grundlage nur als Datei; behoben durch die Punkte oben |
+| `nk-komplex` | iterativ, nicht der kleinste gemeinsame Nenner | Reihenfolge über Voraussetzungen statt Gesamtumbau |
+| `nk-dialogisch` | keine einfachen Wahrheiten | Spannungen bleiben benannt (Abschnitt 5), nichts auf eine Formel verkürzt |
+| `nk-prueffall` | er ist der reale Prüffall | Situationen sind Hypothesen, die er bestätigt |
+| `nk-xai` | keine Black Box | Herkunft je Schritt; Datenmodell im Repo |
+| `u4` | Nutzerbild verstreut, nie als Ganzes geladen | **wieder aufgetreten**; Vorschlag `nk-laden` |
+| `u6-priorisierung` | es fehlt ein Zielmodell: was worauf einzahlt, mit Gewichtung (Impact Mapping) | Ordnung nach Hebel in „Du bist dran“; Voraussetzungen (`braucht`) sind der erste Baustein |
+| `u-tiefer`, `o2` | Modell aus Akteuren, Zielen, Anforderungen; keine zweite, konkurrierende Quelle neben dem Grundmodell | Grundmodell in `AGENTS.md` bleibt Kern; neue Elemente stehen im Teil „Dein Nutzungskontext“, nicht hier |
+| `b-zerlegen` | Teilziele, die aufs Ganze einzahlen | Kette der Aufträge mit Voraussetzungen |
+| `ao-*` (Analyse, Iteration 1) | Anforderungen an die Arbeitsoberfläche | Abschnitt 4, K1 bis K10 |
+| `ez-aufbau` | drei Ansichten, ein Datensatz, Stränge als Dimension | Abschnitt 6 hält sie |
+
+**Warum es passiert ist (abgeleitet):** Kein Mechanismus zwingt vor Entwurfsarbeit dazu, den Nutzungskontext und die daran hängenden Befunde zu laden; die Fachpakete enthalten keinen Schritt „vorhandene Nutzerforschung und Analyse sichten“; das Fachpaket Interaktion und Struktur, in das dieser Schritt gehört, gibt es noch nicht. Die Regel stand im Text, nicht in der Technik (`a03`).
 
 ## 1 · Der Mensch
 
@@ -189,17 +212,7 @@ Die Situationen sind **Hypothesen** aus seinen Aussagen. Bestätigen kann nur er
 
 ## 9 · Was ich von dir brauche
 
-1. **Stimmen die fünf Situationen?** Wann schaust du wirklich hin, und fehlt eine?
-2. **Stimmt die Kernlücke** („Wo steht die Arbeit, gemessen an meiner Absicht, und wo braucht sie mein Urteil?“)?
-3. **Eine Arbeitsfläche über alle Zielbilder, Labor und Werke als Bereiche:** trägt diese Richtung?
-4. **„Stand“ in drei Teilen** (was aus deinen Worten wurde, was läuft, wie es zusammenhängt): so füllen?
-5. Senden **sofort je Antwort** oder **gesammelt am Ende**?
-
-Mit deinen Antworten lege ich den Inhalt der drei Ansichten fest. Danach baue ich in der Reihenfolge der Voraussetzungen, die im Zielbild stehen:
-1. das Datenmodell (Voraussetzungen, ein Datensatz über Labor und Werke);
-2. „Du bist dran“;
-3. „Stand“ und „Alles“;
-4. den Körper der Punkte mit dem Mikrotext aus dem Fachpaket.
+Die Fragen stehen im Zielbild, je mit Kontext und Voraussetzungen: `nk-kernluecke`, `nk-situationen`, `ao-flaeche`, `ao-stand-teile`, `ao-senden` und der Vorschlag `nk-laden`. Mit deinen Antworten lege ich den Inhalt der drei Ansichten fest (`ao-ansichten`); danach folgen Datenmodell, „Du bist dran“, „Stand“ und „Alles“, dann der Körper der Punkte.
 
 ## Geprüft und nicht geprüft
 

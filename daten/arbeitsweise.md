@@ -18,7 +18,7 @@
 
 ## Aussagen
 
-### Belegt (37)
+### Belegt (38)
 
 - **arbeitsweise-a02** Im Labor folgte auf einen Vorfall meist eine neue Regel: 30 Entscheidungen in drei Tagen.
   *Beleg:* `research/2026-10-audit-zusammenarbeit/befunde.md`, In Worten, Punkt 4
@@ -127,6 +127,9 @@
 - **arbeitsweise-a82** Voraussetzungen, Abhängigkeiten und Blocker von Aufträgen müssen vorab festgelegt und Teil der Infrastruktur sein; sonst entstehen viele Extrarunden. Die Einordnung von Aufgaben liegt beim orchestrierenden Modell.
   *Beleg:* `tools/zielbild.mjs`, Prüfung „braucht“; `.agents/skills/issue/SKILL.md`, Abschnitt B, Blockiert durch
   *Grenze:* Eigentümer im Chat 14.11.: „Wie sollte klare Vorraussetzungen bzw. Abhängigkeiten und Blocker für Aufträge bereits definiert haben. und diese als Teil der Infrastruktur übernommen haben. Sonst machen wir unglaublich viele Extra runden. BEi dir liegt die Orchestrierung die Einordnung von Aufgaben.“
+- **arbeitsweise-a83** Das Zielbild des Labors bildet den aktuellen Konzeptstand nicht ab, darum kann der Eigentümer ihn dort nicht prüfen. Neue Analyse- und Entwurfsarbeit berücksichtigt bestehende Ausarbeitungen zu Nutzerforschung und Analyse nicht systemisch und nicht über Relationen; er wertet das als Versagen der Fachpakete und des Orchestrators.
+  *Beleg:* `research/2026-11-arbeitsoberflaeche/entwurf.md`, Abschnitt 0; `zielbild/punkte.json`, u4, nk-laden
+  *Grenze:* Eigentümer im Chat 14.11.: „auf der anderen Seite bildet das Labor Zielbild auch nicht unseren aktuellen Konzeptstand ab - diesen kann ich damit nicht prüfen. Du berücksichtigst ihn bestimmt gerade auch nicht systemisch und prüfst auf Relationen. Auch hier gibt es ja zentrale Ausarbeitungen hinsichtlicher des User Researches und der Analyse. Das ist wieder ein versagen der Fachpakete bzw. des Orchestriers“
 
 ### Abgeleitet (36)
 
